@@ -1,9 +1,10 @@
 # Chipathon 2023 
-# Working Area for the LTC1 Team
+# Working Area for the Bracolin Team
+Team Leaders: (Brazil) Deni Alves / Gabriel M. | (Colombia) Juan S. Moya
 Team members:
 
-    - Scope input & MUX: Pakistan3
-    - ADC: Pakistan4	
-    - DAC: Pakistan1	
-    - AWG output & MUX: Pakistan5	
-    - Clocking: Pakistan2/6
+    - ADC: Colombia (SAR)	
+    - Clocking: Brazil (Clock Ref.) 
+    - Current Source: Brazil
+    - Voltage Reference: Brazil
+    - Current Sensing: Brazil (TIA)
