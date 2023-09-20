@@ -9,4 +9,4 @@ Team members:
     - Voltage Reference: Brazil
     - Current Sensing: Brazil (TIA)
     
-[Slide presentation:](https://docs.google.com/presentation/d/1iIIuWxDULkuIupzypLsfGI96Au4B5P6BPbgq90l5cP4/edit?usp=sharing)
+[BRACOLIN Slide presentation](https://docs.google.com/presentation/d/1iIIuWxDULkuIupzypLsfGI96Au4B5P6BPbgq90l5cP4/edit?usp=sharing)
