@@ -2,6 +2,7 @@ Description:
  - run_ex.sh : Script to run PEX on magic
  - gf180mcu_fd_io__asig_noESD.gds : Analog IO Cell with no ESD protection  - v0.1
  - IO_Cells_test: Schematics to test individual IO Cells (Pre and Post(to do) Layout Simulations)
+ - BRACOLIN_PADFRAME.gds : Chip PAD frame, currently under development - v0.1
 
 
 Please put the common padframe in this folder.
