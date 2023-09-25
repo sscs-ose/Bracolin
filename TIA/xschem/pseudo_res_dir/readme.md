@@ -1,5 +1,7 @@
 # Pseudo Resistor simulation files
 
+Single PR simulations, to achieve higher range of operation a serialization will occur.
+
 ## DC Simulation
 ![DC Simulation](dc_single_pseudo_res.png)
 
