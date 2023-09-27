@@ -40,7 +40,7 @@ linewidth_mult=4
 divy=5
 subdivy=3
 x2=2.80722
-y1=9.99n
+y1=9.7n
 y2=10.05n
 digital=0
 rainbow=0}
@@ -163,13 +163,13 @@ value="
 .include /home/gmaranhao/Desktop/gf180_work/Pads/gf180mcu_fd_io__asig_5p0_extracted.spice
 .include /home/gmaranhao/Desktop/gf180_work/Pads/gf180mcu_fd_io__asig_5p0_gab.spice
 
-.include /home/gmaranhao/Desktop/gf180_work/Pads/asig5v_io_cell.spice
+*.include /home/gmaranhao/Desktop/gf180_work/Pads/asig5v_io_cell.spice
 
 
-*Xclosed DVSS DVDD VSS VDD ASIG ASIG gf180mcu_fd_io__asig_5p0_extracted
+Xclosed DVSS DVDD VSS VDD ASIG ASIG gf180mcu_fd_io__asig_5p0_extracted
 *Xopen DVSS DVDD ASIG DVDD VSS VDD gf180mcu_fd_io__asig_5p0
 
-Xopen_gab VSS VDD ASIG DVSS DVDD gf180mcu_fd_io__asig_5p0
+*Xopen_gab VSS VDD ASIG DVSS DVDD gf180mcu_fd_io__asig_5p0
 
 "}
 C {devices/vsource.sym} 1050 -160 0 0 {name=V1 value=3.3}

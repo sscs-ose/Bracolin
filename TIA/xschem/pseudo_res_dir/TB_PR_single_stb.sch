@@ -109,6 +109,10 @@ rainbow=1
 digital=0
 x1=-2
 x2=3}
+T {Stability Analysis of the OpAmp
+that bias the Pseudo-Resistor
+Gain = 40db
+Ft =~ 100Hz} 1290 -820 0 0 0.4 0.4 { layer=3}
 N 320 -460 360 -460 {
 lab=VDD}
 N 330 -190 330 -150 {
@@ -321,14 +325,14 @@ value="
 .endc
 .save all
 "}
-C {devices/launcher.sym} 875 -305 0 0 {name=h4
+C {devices/launcher.sym} 745 -525 0 0 {name=h4
 descr="Load/unload 
 waveforms"
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw ac
 "
 }
-C {devices/launcher.sym} 870 -350 0 0 {name=h2
+C {devices/launcher.sym} 740 -570 0 0 {name=h2
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }

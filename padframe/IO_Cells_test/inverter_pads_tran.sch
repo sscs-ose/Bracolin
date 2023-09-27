@@ -173,7 +173,7 @@ value="
 .include /home/gmaranhao/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/spice/gf180mcu_fd_io.spice
 
 *Xc1 DVDD DVSS VDD VSS gf180mcu_fd_io__cor
-*Xf1 DVDD DVSS VDD VSS gf180mcu_fd_io__fill5
+Xf1 DVDD DVSS VDD VSS gf180mcu_fd_io__fill5
 Xf2 DVDD DVSS VDD VSS gf180mcu_fd_io__fill10
 
 Xsup1 DVDD DVSS VSS gf180mcu_fd_io__dvdd
@@ -198,7 +198,7 @@ value="
 
 .control
  save all
- tran 10n 10u
+ tran 100n 10u
  
  write inverter_pads_tran.raw
 

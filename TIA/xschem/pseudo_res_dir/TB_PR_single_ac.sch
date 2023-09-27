@@ -61,6 +61,9 @@ linewidth_mult=4.0
 
 y2=200G
 y1=50G}
+T {AC simulation - Impedance of a single 
+Pseudo-Resistor ~185Gohm
+versus frequency} 1330 -490 0 0 0.4 0.4 { layer=3}
 N 320 -490 360 -490 {
 lab=VDD}
 N 330 -220 330 -180 {

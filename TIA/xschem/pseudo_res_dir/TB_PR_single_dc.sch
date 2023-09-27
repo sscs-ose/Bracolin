@@ -113,6 +113,9 @@ vg_p"
 y2=4
 x1=-40m
 x2=40m}
+T {DC operation a single 
+Pseudo-Resistor ~185Gohm
+Work Range -20m to 20m with VCM =1.65V} 1430 -630 0 0 0.4 0.4 { layer=3}
 N 500 -300 540 -300 {
 lab=VDD}
 N 510 -30 510 10 {
@@ -395,7 +398,7 @@ C {/home/gmaranhao/Desktop/gf180_work/auxLib/ampOp_ideal.sym} -620 250 0 0 {name
 C {/home/gmaranhao/Desktop/gf180_work/auxLib/ampOp_ideal.sym} -360 250 0 0 {name=x6}
 C {devices/ammeter.sym} 570 -370 0 0 {name=Vai}
 C {devices/ammeter.sym} 570 -180 2 0 {name=Vbi}
-C {devices/launcher.sym} 745 -495 0 0 {name=h1
+C {devices/launcher.sym} 675 -505 0 0 {name=h1
 descr="Click left mouse button here with control key
 pressed to load/unload waveforms in graph."
 tclcommand="
@@ -403,7 +406,7 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 "
 }
 C {devices/gnd.sym} 540 100 0 0 {name=l5 lab=GND}
-C {devices/launcher.sym} 740 -440 0 0 {name=h2
+C {devices/launcher.sym} 670 -450 0 0 {name=h2
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
