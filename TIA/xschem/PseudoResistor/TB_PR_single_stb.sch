@@ -1,4 +1,4 @@
-v {xschem version=3.4.2 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -234,8 +234,8 @@ value="
 "}
 C {devices/lab_wire.sym} 320 -460 0 0 {name=p2 sig_type=std_logic lab=VDD}
 C {symbols/nfet_03v3.sym} 310 -120 0 0 {name=M1
-L=10u
-W=1u
+L=2u
+W=2u
 nf=1
 m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -248,8 +248,8 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 580 120 0 1 {name=M2
-L=10u
-W=1u
+L=2u
+W=2u
 nf=1
 m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
