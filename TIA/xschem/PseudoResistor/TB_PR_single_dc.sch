@@ -187,26 +187,10 @@ N 800 -40 800 -20 {
 lab=VDD}
 N 800 -40 840 -40 {
 lab=VDD}
-N 620 -440 650 -440 {
+N 490 -450 520 -450 {
 lab=VDD}
-N 620 -330 660 -330 {
+N 620 -320 660 -320 {
 lab=GND}
-N 480 -390 520 -390 {
-lab=VC}
-N 450 -410 520 -410 {
-lab=vg_p}
-N 430 -430 520 -430 {
-lab=vg_n}
-N 370 -430 430 -430 {
-lab=vg_n}
-N 400 -410 450 -410 {
-lab=vg_p}
-N 420 -390 480 -390 {
-lab=VC}
-N 440 -360 520 -360 {
-lab=ib_n}
-N 460 -340 520 -340 {
-lab=ib_p}
 N 330 -80 400 -80 {
 lab=vg_n}
 N -510 -310 -510 -290 {
@@ -261,15 +245,26 @@ N -790 40 -740 40 {
 lab=VB}
 N -530 40 -480 40 {
 lab=VA}
+N 500 -410 520 -410 {
+lab=vg_n}
+N 620 -410 640 -410 {
+lab=vg_p}
+N 500 -380 520 -380 {
+lab=VC}
+N 500 -350 520 -350 {
+lab=ib_n}
+N 620 -350 640 -350 {
+lab=ib_p}
+N -600 -270 -600 -250 {}
 C {devices/code_shown.sym} -430 -450 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
-C {devices/lab_wire.sym} 650 -440 0 1 {name=p2 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 490 -450 0 0 {name=p2 sig_type=std_logic lab=VDD}
 C {devices/isource.sym} 460 150 0 0 {name=I0 value=\{ibias\}}
-C {devices/lab_wire.sym} 420 -390 2 1 {name=p4 sig_type=std_logic lab=VC}
+C {devices/lab_wire.sym} 500 -380 0 0 {name=p4 sig_type=std_logic lab=VC}
 C {devices/lab_wire.sym} 160 -110 0 0 {name=p5 sig_type=std_logic lab=VC}
 C {devices/lab_wire.sym} 940 70 2 0 {name=p6 sig_type=std_logic lab=VC}
 C {devices/lab_wire.sym} 650 110 0 1 {name=p9 sig_type=std_logic lab=vg_p}
@@ -322,22 +317,18 @@ C {devices/launcher.sym} 870 -400 0 0 {name=h2
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {/home/gmaranhao/Desktop/gf180_work/pseudo_res/DiffAmp_nmos.sym} 150 -80 0 0 {name=x2}
 C {devices/lab_wire.sym} 270 -170 0 0 {name=p15 sig_type=std_logic lab=VDD}
 C {devices/isource.sym} 800 10 0 1 {name=I2 value=\{it_amp\}}
 C {devices/gnd.sym} 280 50 0 1 {name=l6 lab=GND}
 C {devices/gnd.sym} 850 190 0 0 {name=l7 lab=GND}
 C {devices/lab_wire.sym} 850 10 0 1 {name=p16 sig_type=std_logic lab=VDD}
-C {/home/gmaranhao/Desktop/gf180_work/pseudo_res/DiffAmp_pmos.sym} 950 110 0 1 {name=x3}
 C {devices/isource.sym} 280 20 0 0 {name=I3 value=\{it_amp\}}
 C {devices/lab_wire.sym} 810 -40 0 1 {name=p25 sig_type=std_logic lab=VDD}
-C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PR_single.sym} 620 -200 0 0 {name=x1
-}
-C {devices/gnd.sym} 660 -330 0 0 {name=l3 lab=GND}
-C {devices/lab_wire.sym} 370 -430 2 1 {name=p7 sig_type=std_logic lab=vg_n}
-C {devices/lab_wire.sym} 400 -410 2 1 {name=p8 sig_type=std_logic lab=vg_p}
-C {devices/lab_wire.sym} 440 -360 2 1 {name=p26 sig_type=std_logic lab=ib_n}
-C {devices/lab_wire.sym} 460 -340 2 1 {name=p27 sig_type=std_logic lab=ib_p}
+C {devices/gnd.sym} 660 -320 0 0 {name=l3 lab=GND}
+C {devices/lab_wire.sym} 500 -410 0 0 {name=p7 sig_type=std_logic lab=vg_n}
+C {devices/lab_wire.sym} 640 -410 0 1 {name=p8 sig_type=std_logic lab=vg_p}
+C {devices/lab_wire.sym} 500 -350 0 0 {name=p26 sig_type=std_logic lab=ib_n}
+C {devices/lab_wire.sym} 640 -350 0 1 {name=p27 sig_type=std_logic lab=ib_p}
 C {devices/lab_wire.sym} 460 40 2 1 {name=p3 sig_type=std_logic lab=ib_n}
 C {devices/lab_wire.sym} 750 -70 2 1 {name=p17 sig_type=std_logic lab=ib_p}
 C {devices/vsource.sym} -750 -180 0 0 {name=VX value=0}
@@ -348,7 +339,7 @@ C {devices/lab_wire.sym} -720 -220 0 0 {name=p21 sig_type=std_logic lab=Vxa
 C {devices/lab_wire.sym} -510 -310 0 0 {name=p22 sig_type=std_logic lab=Vxb}
 C {devices/vsource.sym} -510 -170 0 0 {name=VB value=3.3}
 C {devices/gnd.sym} -750 -70 0 0 {name=l11 lab=GND}
-C {devices/gnd.sym} -600 -250 2 0 {name=l14 lab=GND}
+C {devices/gnd.sym} -600 -270 2 0 {name=l14 lab=GND}
 C {devices/res.sym} -670 -210 1 0 {name=R1
 value=100k
 footprint=1206
@@ -374,6 +365,9 @@ C {devices/lab_wire.sym} -740 40 0 1 {name=p23 sig_type=std_logic lab=VB
 C {devices/lab_wire.sym} -480 40 0 1 {name=p24 sig_type=std_logic lab=VA
 
 }
-C {/home/gmaranhao/Desktop/gf180_work/auxLib/ampOp_ideal.sym} -640 -200 0 0 {name=x4}
-C {/home/gmaranhao/Desktop/gf180_work/auxLib/ampOp_ideal.sym} -920 70 0 0 {name=x5}
-C {/home/gmaranhao/Desktop/gf180_work/auxLib/ampOp_ideal.sym} -660 70 0 0 {name=x6}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PR_net.sym} 430 -290 0 0 {name=x7}
+C {/home/gmaranhao/Desktop/gf180_work/pseudo_res/DiffAmp_nmos.sym} 150 -80 0 0 {name=x1}
+C {/home/gmaranhao/Desktop/gf180_work/pseudo_res/DiffAmp_pmos.sym} 950 110 0 1 {name=x8}
+C {/home/gmaranhao/Desktop/gf180_work/auxLib/ampOp_ideal.sym} -920 70 0 0 {name=x2}
+C {/home/gmaranhao/Desktop/gf180_work/auxLib/ampOp_ideal.sym} -660 70 0 0 {name=x3}
+C {/home/gmaranhao/Desktop/gf180_work/auxLib/ampOp_ideal.sym} -640 -200 0 0 {name=x9}

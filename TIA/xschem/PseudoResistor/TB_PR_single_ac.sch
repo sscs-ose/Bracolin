@@ -219,8 +219,6 @@ C {devices/lab_wire.sym} 300 -580 2 1 {name=p20 sig_type=std_logic lab=VC}
 C {devices/lab_wire.sym} 450 -750 0 1 {name=p21 sig_type=std_logic lab=VA}
 C {devices/ammeter.sym} 450 -700 0 0 {name=Vai1}
 C {devices/ammeter.sym} 450 -440 2 0 {name=Vbi1}
-C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PR_single.sym} 500 -390 0 0 {name=x4
-}
 C {devices/gnd.sym} 540 -520 0 0 {name=l10 lab=GND}
 C {devices/lab_wire.sym} 250 -620 2 1 {name=p22 sig_type=std_logic lab=vg_n}
 C {devices/lab_wire.sym} 280 -600 2 1 {name=p23 sig_type=std_logic lab=vg_p}
