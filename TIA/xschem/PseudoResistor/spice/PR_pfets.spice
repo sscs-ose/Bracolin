@@ -1,0 +1,53 @@
+** sch_path: /home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PR_pfets.sch
+.subckt PR_pfets VD1 VS1 VS2_A VS2_B VG VC_A VC_B VB
+*.PININFO VD1:B VS1:B VS2_A:B VS2_B:B VG:B VC_A:B VC_B:B VB:B
+M1 net3 VG VS1 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M2 VD1 VG net3 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M5 net4 VG VS1 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M6 VD1 VG net4 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M7 net5 VG VS1 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M9 VD1 VG net5 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M10 net6 VG VS1 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M11 VD1 VG net6 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M12 net1 VG VS2_A VB pfet_03v3 L=2u W=2u nf=1 m=1
+M13 VC_A VG net1 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M14 net2 VG VS2_A VB pfet_03v3 L=2u W=2u nf=1 m=1
+M15 VC_A VG net2 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M16 VC_B VG net7 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M17 net7 VG VS2_B VB pfet_03v3 L=2u W=2u nf=1 m=1
+M18 VC_B VG net8 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M19 net8 VG VS2_B VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[1] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[2] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[3] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[4] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[5] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[6] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[7] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[8] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[9] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[10] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[11] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[12] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[13] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[14] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[15] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[16] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[17] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[18] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[19] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[20] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[21] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[22] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[23] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[24] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[25] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[26] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[27] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[28] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[29] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[30] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[31] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[32] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+.ends
+.end

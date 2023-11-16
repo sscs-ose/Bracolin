@@ -21,8 +21,6 @@ N 150 -120 150 -80 {
 lab=IB_N}
 N 390 -200 390 -160 {
 lab=IB_P}
-N 150 -210 150 -180 {
-lab=VDD}
 N 390 -100 390 -70 {
 lab=VSS}
 N 260 -120 270 -120 {
@@ -30,6 +28,8 @@ lab=VC}
 N 130 -150 140 -150 {
 lab=VSS}
 N 400 -130 430 -130 {
+lab=VDD}
+N 150 -210 150 -180 {
 lab=VDD}
 C {devices/iopin.sym} -80 -210 0 1 {name=p1 lab=VA}
 C {devices/iopin.sym} -80 -190 0 1 {name=p2 lab=VB}

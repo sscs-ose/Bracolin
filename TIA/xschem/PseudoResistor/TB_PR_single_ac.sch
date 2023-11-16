@@ -59,8 +59,8 @@ x1=-1
 
 linewidth_mult=4.0
 
-y2=2.1e+11
-y1=4.9e+10}
+y2=4.2e+11
+y1=1.2e+10}
 T {AC simulation - Impedance of a single 
 Pseudo-Resistor ~185Gohm
 versus frequency} 1330 -490 0 0 0.4 0.4 { layer=3}
@@ -83,29 +83,9 @@ lab=VA}
 N 450 -750 450 -730 {
 lab=VA}
 N 450 -670 450 -650 {
-lab=#net2}
+lab=VA__i}
 N 450 -500 450 -470 {
-lab=#net3}
-N 500 -630 530 -630 {
-lab=VDD}
-N 500 -520 540 -520 {
-lab=GND}
-N 360 -580 400 -580 {
-lab=VC}
-N 330 -600 400 -600 {
-lab=vg_p}
-N 310 -620 400 -620 {
-lab=vg_n}
-N 250 -620 310 -620 {
-lab=vg_n}
-N 280 -600 330 -600 {
-lab=vg_p}
-N 300 -580 360 -580 {
-lab=VC}
-N 320 -550 400 -550 {
-lab=ib_n}
-N 340 -530 400 -530 {
-lab=ib_p}
+lab=VB__i}
 N 10 -140 40 -140 {
 lab=VC}
 N 710 60 750 60 {
@@ -135,7 +115,7 @@ lab=ib_n}
 N 40 80 310 80 {
 lab=ib_n}
 N 130 -70 130 -40 {
-lab=#net4}
+lab=#net2}
 N 710 140 820 140 {
 lab=ib_p}
 N 820 -50 820 140 {
@@ -153,19 +133,31 @@ lab=ib_p}
 N 560 -120 820 -120 {
 lab=ib_p}
 N 610 30 610 50 {
-lab=#net5}
+lab=#net3}
 N 610 -50 610 -30 {
 lab=VDD}
 N 610 -50 650 -50 {
 lab=VDD}
 N 180 -110 250 -110 {
 lab=vg_n}
-C {devices/code_shown.sym} -310 -490 0 0 {name=MODELS only_toplevel=true
-format="tcleval( @value )"
-value="
-.include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
-"}
+N 450 -670 450 -650 {
+lab=VA__i}
+N 450 -500 450 -470 {
+lab=VB__i}
+N 370 -640 400 -640 {
+lab=VDD}
+N 500 -510 540 -510 {
+lab=GND}
+N 380 -600 400 -600 {
+lab=vg_n}
+N 500 -600 520 -600 {
+lab=vg_p}
+N 380 -570 400 -570 {
+lab=VC}
+N 380 -540 400 -540 {
+lab=ib_n}
+N 500 -540 520 -540 {
+lab=ib_p}
 C {devices/lab_wire.sym} 450 -380 0 0 {name=p13 sig_type=std_logic lab=VB}
 C {devices/vsource.sym} 20 -320 0 0 {name=VDD1 value=3.3}
 C {devices/gnd.sym} 20 -270 0 0 {name=l9 lab=GND}
@@ -214,16 +206,9 @@ tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw ac
 "
 }
-C {devices/lab_wire.sym} 530 -630 0 1 {name=p19 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 300 -580 2 1 {name=p20 sig_type=std_logic lab=VC}
 C {devices/lab_wire.sym} 450 -750 0 1 {name=p21 sig_type=std_logic lab=VA}
 C {devices/ammeter.sym} 450 -700 0 0 {name=Vai1}
 C {devices/ammeter.sym} 450 -440 2 0 {name=Vbi1}
-C {devices/gnd.sym} 540 -520 0 0 {name=l10 lab=GND}
-C {devices/lab_wire.sym} 250 -620 2 1 {name=p22 sig_type=std_logic lab=vg_n}
-C {devices/lab_wire.sym} 280 -600 2 1 {name=p23 sig_type=std_logic lab=vg_p}
-C {devices/lab_wire.sym} 320 -550 2 1 {name=p26 sig_type=std_logic lab=ib_n}
-C {devices/lab_wire.sym} 340 -530 2 1 {name=p27 sig_type=std_logic lab=ib_p}
 C {devices/isource.sym} 310 120 0 0 {name=I0 value=\{ibias\}}
 C {devices/lab_wire.sym} 10 -140 0 0 {name=p5 sig_type=std_logic lab=VC}
 C {devices/lab_wire.sym} 750 60 2 0 {name=p6 sig_type=std_logic lab=VC}
@@ -244,3 +229,24 @@ C {devices/isource.sym} 130 -10 0 0 {name=I3 value=\{it_amp\}}
 C {devices/lab_wire.sym} 620 -50 0 1 {name=p25 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 310 10 2 1 {name=p3 sig_type=std_logic lab=ib_n}
 C {devices/lab_wire.sym} 560 -80 2 1 {name=p17 sig_type=std_logic lab=ib_p}
+C {devices/lab_wire.sym} 370 -640 0 0 {name=p2 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 380 -570 0 0 {name=p4 sig_type=std_logic lab=VC}
+C {devices/gnd.sym} 540 -510 0 0 {name=l4 lab=GND}
+C {devices/lab_wire.sym} 380 -600 0 0 {name=p7 sig_type=std_logic lab=vg_n}
+C {devices/lab_wire.sym} 520 -600 0 1 {name=p8 sig_type=std_logic lab=vg_p}
+C {devices/lab_wire.sym} 380 -540 0 0 {name=p10 sig_type=std_logic lab=ib_n}
+C {devices/lab_wire.sym} 520 -540 0 1 {name=p12 sig_type=std_logic lab=ib_p}
+C {devices/lab_wire.sym} 450 -480 0 0 {name=p14 sig_type=std_logic lab=VB__i}
+C {devices/lab_wire.sym} 450 -650 0 1 {name=p24 sig_type=std_logic lab=VA__i}
+C {devices/code_shown.sym} -640 -610 0 0 {name=MODELS1 only_toplevel=true
+format="tcleval( @value )"
+value="
+.include $::180MCU_MODELS/design.ngspice
+.lib $::180MCU_MODELS/sm141064.ngspice typical
+
+.include /home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/layout/spice/PR_net_pex.spice
+
+*.subckt PR_net VDD VSS VB VC VA VG_N IB_N IB_P VG_P
+X1 VDD 0 VB__i VC VA__i vg_n ib_n ib_p vg_p PR_net
+
+"}
