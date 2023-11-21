@@ -38,8 +38,8 @@ hilight_wave=-1
 
 
 divx=10
-y1=0.007
-y2=1
+y1=-44
+y2=110
 
 
 rainbow=0
@@ -56,60 +56,68 @@ sim_type=op
 
 
 color=4
-node=vout}
+node="\\"vout db20()\\""}
 N -190 140 -190 160 {
 lab=GND}
 N -190 60 -190 80 {
 lab=AVDD}
 N -220 60 -190 60 {
 lab=AVDD}
-N 410 -80 410 -60 {
+N 600 -350 600 -330 {
 lab=AVDD}
-N 410 -80 420 -80 {
+N 600 -350 610 -350 {
 lab=AVDD}
-N 410 20 410 40 {
+N 600 -250 600 -230 {
 lab=GND}
-N 410 40 420 40 {
+N 600 -230 610 -230 {
 lab=GND}
-N 350 50 350 80 {
+N 540 -220 540 -190 {
 lab=#net1}
-N 350 140 350 160 {
+N 540 -130 540 -110 {
 lab=GND}
-N 240 20 310 20 {
+N 820 -290 860 -290 {
 lab=Vout}
-N 240 20 240 80 {
-lab=Vout}
-N 580 -20 620 -20 {
-lab=Vout}
-N -80 -60 110 -60 {
+N 110 -330 300 -330 {
 lab=Vin}
-N 470 -20 490 -20 {
+N 660 -290 680 -290 {
+lab=Vout}
+N 790 -290 820 -290 {
+lab=Vout}
+N 300 -330 400 -330 {
+lab=Vin}
+N 400 -330 500 -330 {
+lab=Vin}
+N 540 -110 540 -90 {
+lab=GND}
+N 860 -290 890 -290 {
+lab=Vout}
+N 110 -270 110 -250 {
+lab=GND}
+N 390 -250 500 -250 {
+lab=Vin_neg}
+N 680 -290 740 -290 {
+lab=Vout}
+N 390 40 390 60 {
+lab=GND}
+N 390 -190 390 -20 {
 lab=#net2}
-N 550 -20 580 -20 {
+N 710 -40 780 -40 {
 lab=Vout}
-N 110 -60 210 -60 {
-lab=Vin}
-N 210 -60 310 -60 {
-lab=Vin}
-N 350 160 350 180 {
-lab=GND}
-N 240 80 240 220 {
+N 390 -40 650 -40 {
+lab=#net2}
+N 740 -290 790 -290 {
 lab=Vout}
-N 240 220 620 220 {
+N 780 -40 820 -40 {
 lab=Vout}
-N 620 -20 620 220 {
+N 820 -290 820 -40 {
 lab=Vout}
-N 620 -20 650 -20 {
-lab=Vout}
-N -80 0 -80 20 {
-lab=GND}
 C {devices/code_shown.sym} -600 -310 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
-.param sw_stat_mismatch=1
-.param sw_stat_global=1
+.param sw_stat_mismatch=0
+.param sw_stat_global=0
 "}
 C {devices/launcher.sym} -145 265 0 0 {name=h1
 descr="Click left mouse button here with control key
@@ -122,27 +130,25 @@ C {devices/launcher.sym} -150 320 0 0 {name=h2
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {/home/gmaranhao/Desktop/gf180_work/TIA/FoldedCascode.sym} 410 -20 0 0 {name=x1}
 C {devices/vsource.sym} -190 110 0 0 {name=VDD value=3.3}
-C {devices/isource.sym} 350 110 0 0 {name=Iref value=2.3u}
+C {devices/isource.sym} 540 -160 0 0 {name=Iref value=5u}
 C {devices/gnd.sym} -190 160 0 0 {name=l1 lab=GND}
 C {devices/lab_wire.sym} -190 60 0 0 {name=p1 sig_type=std_logic lab=AVDD}
-C {devices/lab_wire.sym} 420 -80 0 1 {name=p3 sig_type=std_logic lab=AVDD}
-C {devices/lab_pin.sym} 650 -20 0 1 {name=p5 sig_type=std_logic lab=Vout}
-C {devices/ammeter.sym} 520 -20 3 0 {name=Vmeas2}
-C {devices/gnd.sym} 420 40 0 0 {name=l7 lab=GND}
-C {devices/lab_wire.sym} 190 -60 0 1 {name=p2 sig_type=std_logic lab=Vin}
-C {devices/gnd.sym} 350 180 0 0 {name=l3 lab=GND}
-C {devices/vsource.sym} -80 -30 0 1 {name=V1 value="1.65 DC 1 AC"
+C {devices/lab_wire.sym} 610 -350 0 1 {name=p3 sig_type=std_logic lab=AVDD}
+C {devices/lab_pin.sym} 890 -290 0 1 {name=p5 sig_type=std_logic lab=Vout}
+C {devices/gnd.sym} 610 -230 0 0 {name=l7 lab=GND}
+C {devices/lab_wire.sym} 380 -330 0 1 {name=p2 sig_type=std_logic lab=Vin}
+C {devices/gnd.sym} 540 -90 0 0 {name=l3 lab=GND}
+C {devices/vsource.sym} 110 -300 0 1 {name=V1 value=1.65
 }
-C {devices/gnd.sym} -80 20 0 0 {name=l2 lab=GND
+C {devices/gnd.sym} 110 -250 0 0 {name=l2 lab=GND
 }
-C {devices/capa.sym} 640 10 0 0 {name=C2
+C {devices/capa.sym} 880 -260 0 0 {name=C2
 m=1
 value=5p
 footprint=1206
 device="ceramic capacitor"}
-C {devices/gnd.sym} 640 40 0 0 {name=l11 lab=GND}
+C {devices/gnd.sym} 880 -230 0 0 {name=l11 lab=GND}
 C {devices/code_shown.sym} -560 -160 0 0 {name=NGSPICE only_toplevel=true
 value="
 .option gmin=1e-18
@@ -167,3 +173,18 @@ write TB_TIA_ac.raw
 
 .endc
 "}
+C {/home/lci-ufsc/Desktop/work_gf180/TIA/FoldedCascode.sym} 600 -290 0 0 {name=x1}
+C {devices/vsource.sym} 390 -220 0 1 {name=V2 value="0 DC 1 AC"
+}
+C {devices/capa.sym} 390 10 0 0 {name=C1
+m=1
+value=10T
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} 390 60 0 0 {name=l4 lab=GND}
+C {devices/res.sym} 680 -40 1 0 {name=R1
+value=100T
+footprint=1206
+device=resistor
+m=1}
+C {devices/lab_wire.sym} 440 -250 0 0 {name=p4 sig_type=std_logic lab=Vin_neg}

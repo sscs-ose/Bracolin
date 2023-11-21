@@ -189,7 +189,6 @@ C {devices/launcher.sym} -90 340 0 0 {name=h2
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {/home/gmaranhao/Desktop/gf180_work/TIA/FoldedCascode.sym} 470 0 0 0 {name=x1}
 C {devices/vsource.sym} -130 130 0 0 {name=VDD value=3.3}
 C {devices/isource.sym} 410 130 0 0 {name=Iref value=2.3u}
 C {devices/gnd.sym} -130 180 0 0 {name=l1 lab=GND}
@@ -223,3 +222,4 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 }
 C {devices/lab_wire.sym} 250 -40 0 1 {name=p2 sig_type=std_logic lab=Vin}
 C {devices/gnd.sym} 410 200 0 0 {name=l3 lab=GND}
+C {/home/lci-ufsc/Desktop/work_gf180/TIA/FoldedCascode.sym} 470 0 0 0 {name=x1}

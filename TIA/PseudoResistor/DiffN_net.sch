@@ -31,8 +31,8 @@ N 140 -310 140 -280 {
 lab=VDD}
 N 220 -10 220 10 {
 lab=VSS}
-C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/DiffN_nfets.sym} 20 0 0 0 {name=x1}
-C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/DiffN_pfets.sym} 50 -160 0 0 {name=x2}
+C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/DiffN_nfets.sym} 20 0 0 0 {name=x1}
+C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/DiffN_pfets.sym} 50 -160 0 0 {name=x2}
 C {devices/iopin.sym} -100 -280 0 0 {name=p1 lab=VN}
 C {devices/iopin.sym} -100 -260 0 0 {name=p2 lab=VP}
 C {devices/iopin.sym} -100 -240 0 0 {name=p3 lab=OUT}
