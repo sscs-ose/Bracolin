@@ -469,15 +469,39 @@ C {devices/iopin.sym} -240 -280 0 0 {name=p5 lab=VG}
 C {devices/iopin.sym} -240 -260 0 0 {name=p6 lab=VC}
 C {devices/iopin.sym} -240 -240 0 0 {name=p7 lab=VB}
 C {devices/lab_wire.sym} 200 -300 0 0 {name=p8 sig_type=std_logic lab=VB}
-C {devices/lab_wire.sym} 60 120 0 0 {name=p9 sig_type=std_logic lab=VB}
-C {devices/lab_wire.sym} 350 120 0 0 {name=p10 sig_type=std_logic lab=VB}
-C {devices/lab_wire.sym} 740 170 0 0 {name=p11 sig_type=std_logic lab=VB}
-C {devices/lab_wire.sym} 740 -100 0 0 {name=p12 sig_type=std_logic lab=VB}
-C {devices/lab_wire.sym} 70 -140 0 0 {name=p13 sig_type=std_logic lab=VD1}
-C {devices/lab_wire.sym} 80 300 0 0 {name=p14 sig_type=std_logic lab=VS1}
-C {devices/lab_wire.sym} 610 -230 0 0 {name=p15 sig_type=std_logic lab=VD2}
-C {devices/lab_wire.sym} 610 330 0 0 {name=p16 sig_type=std_logic lab=VS2}
-C {devices/lab_wire.sym} -220 60 0 0 {name=p17 sig_type=std_logic lab=VG}
-C {devices/lab_wire.sym} 80 60 0 0 {name=p18 sig_type=std_logic lab=VG}
-C {devices/lab_wire.sym} 450 50 0 0 {name=p19 sig_type=std_logic lab=VG}
-C {devices/lab_wire.sym} 610 40 0 1 {name=p20 sig_type=std_logic lab=VC}
+C {devices/lab_wire.sym} 60 120 0 0 {name=p9 sig_type=std_logic lab=VB
+L=2u
+W=2u}
+C {devices/lab_wire.sym} 350 120 0 0 {name=p10 sig_type=std_logic lab=VB
+L=2u
+W=2u}
+C {devices/lab_wire.sym} 740 170 0 0 {name=p11 sig_type=std_logic lab=VB
+L=2u
+W=2u}
+C {devices/lab_wire.sym} 740 -100 0 0 {name=p12 sig_type=std_logic lab=VB
+L=2u
+W=2u}
+C {devices/lab_wire.sym} 70 -140 0 0 {name=p13 sig_type=std_logic lab=VD1
+L=2u
+W=2u}
+C {devices/lab_wire.sym} 80 300 0 0 {name=p14 sig_type=std_logic lab=VS1
+L=2u
+W=2u}
+C {devices/lab_wire.sym} 610 -230 0 0 {name=p15 sig_type=std_logic lab=VD2
+L=10u
+W=1u}
+C {devices/lab_wire.sym} 610 330 0 0 {name=p16 sig_type=std_logic lab=VS2
+L=10u
+W=1u}
+C {devices/lab_wire.sym} -220 60 0 0 {name=p17 sig_type=std_logic lab=VG
+L=2u
+W=2u}
+C {devices/lab_wire.sym} 80 60 0 0 {name=p18 sig_type=std_logic lab=VG
+L=2u
+W=2u}
+C {devices/lab_wire.sym} 450 50 0 0 {name=p19 sig_type=std_logic lab=VG
+L=2u
+W=2u}
+C {devices/lab_wire.sym} 610 40 0 1 {name=p20 sig_type=std_logic lab=VC
+L=2u
+W=2u}

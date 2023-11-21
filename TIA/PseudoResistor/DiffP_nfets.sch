@@ -6,13 +6,13 @@ V {}
 S {}
 E {}
 N 200 -170 200 -130 {
-lab=#net2}
+lab=#net1}
 N 320 -170 320 -130 {
-lab=#net3}
+lab=#net2}
 N 430 -170 430 -130 {
-lab=#net4}
+lab=#net3}
 N 550 -170 550 -130 {
-lab=#net5}
+lab=#net4}
 N 200 -240 200 -230 {
 lab=D1}
 N 200 -240 550 -240 {
@@ -34,15 +34,15 @@ lab=S}
 N 320 -70 320 -60 {
 lab=S}
 N 750 -70 750 -60 {
-lab=#net6}
+lab=S}
 N 750 -60 1100 -60 {
-lab=#net6}
+lab=S}
 N 1100 -70 1100 -60 {
-lab=#net6}
+lab=S}
 N 980 -70 980 -60 {
-lab=#net6}
+lab=S}
 N 870 -70 870 -60 {
-lab=#net6}
+lab=S}
 N 750 -240 750 -230 {
 lab=D2}
 N 750 -240 1100 -240 {
@@ -54,13 +54,13 @@ lab=D2}
 N 870 -240 870 -230 {
 lab=D2}
 N 750 -170 750 -130 {
-lab=#net7}
+lab=#net5}
 N 870 -170 870 -130 {
-lab=#net8}
+lab=#net6}
 N 980 -170 980 -130 {
-lab=#net9}
+lab=#net7}
 N 1100 -170 1100 -130 {
-lab=#net10}
+lab=#net8}
 N 240 -200 250 -200 {
 lab=G}
 N 250 -200 250 -100 {
@@ -122,11 +122,11 @@ lab=B}
 N 870 -100 880 -100 {
 lab=B}
 N 980 -200 990 -200 {
-lab=#net11}
+lab=B}
 N 990 -200 990 -100 {
-lab=#net11}
+lab=B}
 N 980 -100 990 -100 {
-lab=#net11}
+lab=B}
 N 1100 -200 1110 -200 {
 lab=B}
 N 1110 -200 1110 -100 {
@@ -164,7 +164,7 @@ lab=D2}
 N 370 -60 370 -10 {
 lab=S}
 N 920 -60 920 -10 {
-lab=#net6}
+lab=S}
 N 600 -150 700 -150 {
 lab=G}
 N 140 -150 190 -150 {
@@ -418,3 +418,4 @@ C {devices/lab_wire.sym} 880 -150 0 1 {name=p22 sig_type=std_logic lab=B}
 C {devices/lab_wire.sym} 1140 -150 0 1 {name=p23 sig_type=std_logic lab=B}
 C {devices/lab_wire.sym} 920 -10 0 0 {name=p24 sig_type=std_logic lab=S}
 C {devices/lab_wire.sym} 370 -10 0 0 {name=p25 sig_type=std_logic lab=S}
+C {devices/lab_wire.sym} 990 -150 0 1 {name=p9 sig_type=std_logic lab=B}

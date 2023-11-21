@@ -468,16 +468,42 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {devices/lab_wire.sym} 250 -620 0 0 {name=p9 sig_type=std_logic lab=VB}
-C {devices/lab_wire.sym} 540 50 0 0 {name=p13 sig_type=std_logic lab=VD1}
-C {devices/lab_wire.sym} 550 -330 0 0 {name=p10 sig_type=std_logic lab=VS1}
-C {devices/lab_wire.sym} 520 -140 0 0 {name=p11 sig_type=std_logic lab=VG}
-C {devices/lab_wire.sym} 870 -140 0 0 {name=p12 sig_type=std_logic lab=VG}
-C {devices/lab_wire.sym} 170 -150 0 0 {name=p14 sig_type=std_logic lab=VG}
-C {devices/lab_wire.sym} 250 -150 0 0 {name=p15 sig_type=std_logic lab=VB}
-C {devices/lab_wire.sym} 600 -150 0 0 {name=p16 sig_type=std_logic lab=VB}
-C {devices/lab_wire.sym} -120 30 0 0 {name=p17 sig_type=std_logic lab=VB}
-C {devices/lab_wire.sym} -130 -290 0 0 {name=p18 sig_type=std_logic lab=VB}
-C {devices/lab_wire.sym} -10 -440 0 0 {name=p19 sig_type=std_logic lab=VS2_A}
-C {devices/lab_wire.sym} -10 170 0 0 {name=p20 sig_type=std_logic lab=VS2_B}
-C {devices/lab_wire.sym} -10 -160 0 0 {name=p21 sig_type=std_logic lab=VC_A}
-C {devices/lab_wire.sym} -10 -90 0 0 {name=p22 sig_type=std_logic lab=VC_B}
+C {devices/lab_wire.sym} 540 50 0 0 {name=p13 sig_type=std_logic lab=VD1
+L=2u
+W=2u}
+C {devices/lab_wire.sym} 550 -330 0 0 {name=p10 sig_type=std_logic lab=VS1
+L=2u
+W=2u}
+C {devices/lab_wire.sym} 520 -140 0 0 {name=p11 sig_type=std_logic lab=VG
+L=2u
+W=2u}
+C {devices/lab_wire.sym} 870 -140 0 0 {name=p12 sig_type=std_logic lab=VG
+L=2u
+W=2u}
+C {devices/lab_wire.sym} 170 -150 0 0 {name=p14 sig_type=std_logic lab=VG
+L=2u
+W=2u}
+C {devices/lab_wire.sym} 250 -150 0 0 {name=p15 sig_type=std_logic lab=VB
+L=2u
+W=2u}
+C {devices/lab_wire.sym} 600 -150 0 0 {name=p16 sig_type=std_logic lab=VB
+L=2u
+W=2u}
+C {devices/lab_wire.sym} -120 30 0 0 {name=p17 sig_type=std_logic lab=VB
+L=2u
+W=2u}
+C {devices/lab_wire.sym} -130 -290 0 0 {name=p18 sig_type=std_logic lab=VB
+L=2u
+W=2u}
+C {devices/lab_wire.sym} -10 -440 0 0 {name=p19 sig_type=std_logic lab=VS2_A
+L=2u
+W=2u}
+C {devices/lab_wire.sym} -10 170 0 0 {name=p20 sig_type=std_logic lab=VS2_B
+L=2u
+W=2u}
+C {devices/lab_wire.sym} -10 -160 0 0 {name=p21 sig_type=std_logic lab=VC_A
+L=2u
+W=2u}
+C {devices/lab_wire.sym} -10 -90 0 0 {name=p22 sig_type=std_logic lab=VC_B
+L=2u
+W=2u}
