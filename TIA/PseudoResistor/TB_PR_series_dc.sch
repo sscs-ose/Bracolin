@@ -415,9 +415,9 @@ C {devices/lab_wire.sym} -730 50 0 1 {name=p23 sig_type=std_logic lab=VB
 C {devices/lab_wire.sym} -470 50 0 1 {name=p24 sig_type=std_logic lab=VA
 
 }
-C {/home/lci-ufsc/Desktop/work_gf180/auxLib/ampOp_ideal.sym} -910 80 0 0 {name=x2}
-C {/home/lci-ufsc/Desktop/work_gf180/auxLib/ampOp_ideal.sym} -650 80 0 0 {name=x3}
-C {/home/lci-ufsc/Desktop/work_gf180/auxLib/ampOp_ideal.sym} -630 -190 0 0 {name=x9}
+C {/home/gmaranhao/Desktop/gf180_work/auxLib/ampOp_ideal.sym} -910 80 0 0 {name=x2}
+C {/home/gmaranhao/Desktop/gf180_work/auxLib/ampOp_ideal.sym} -650 80 0 0 {name=x3}
+C {/home/gmaranhao/Desktop/gf180_work/auxLib/ampOp_ideal.sym} -630 -190 0 0 {name=x9}
 C {devices/lab_wire.sym} 580 -620 0 1 {name=p14 sig_type=std_logic lab=VA__i
 }
 C {devices/ammeter.sym} 580 -670 0 0 {name=Vai
@@ -460,7 +460,7 @@ end
 .save idiff Rdiff
 "
 spice_ignore=true}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/PRbiased_net.sym} 500 -550 0 0 {name=x6}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PRbiased_net.sym} 500 -550 0 0 {name=x6}
 C {devices/isource.sym} 350 -500 0 1 {name=I4 value=\{it_amp\}}
 C {devices/isource.sym} 380 -490 2 1 {name=I5 value=\{it_amp\}}
 C {devices/isource.sym} 210 -550 0 1 {name=I6 value=\{ibias\}}
@@ -471,7 +471,7 @@ C {devices/lab_wire.sym} 250 -490 2 1 {name=p28 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 380 -450 2 0 {name=p29 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 510 -610 0 0 {name=p30 sig_type=std_logic lab=VDD}
 C {devices/gnd.sym} 650 -480 0 0 {name=l8 lab=GND}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/PRbiased_net.sym} 500 -370 0 0 {name=x1}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PRbiased_net.sym} 500 -370 0 0 {name=x1}
 C {devices/isource.sym} 350 -320 0 1 {name=I1 value=\{it_amp\}}
 C {devices/isource.sym} 380 -310 2 1 {name=I2 value=\{it_amp\}}
 C {devices/isource.sym} 210 -370 0 1 {name=I3 value=\{ibias\}}
@@ -482,7 +482,7 @@ C {devices/lab_wire.sym} 250 -310 2 1 {name=p5 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 380 -270 2 0 {name=p6 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 510 -430 0 0 {name=p7 sig_type=std_logic lab=VDD}
 C {devices/gnd.sym} 650 -300 0 0 {name=l3 lab=GND}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/PRbiased_net.sym} 500 -190 0 0 {name=x4}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PRbiased_net.sym} 500 -190 0 0 {name=x4}
 C {devices/isource.sym} 350 -140 0 1 {name=I9 value=\{it_amp\}}
 C {devices/isource.sym} 380 -130 2 1 {name=I10 value=\{it_amp\}}
 C {devices/isource.sym} 210 -190 0 1 {name=I11 value=\{ibias\}}
@@ -493,7 +493,7 @@ C {devices/lab_wire.sym} 250 -130 2 1 {name=p16 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 380 -90 2 0 {name=p17 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 510 -250 0 0 {name=p25 sig_type=std_logic lab=VDD}
 C {devices/gnd.sym} 650 -120 0 0 {name=l15 lab=GND}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/PRbiased_net.sym} 500 -10 0 0 {name=x5}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PRbiased_net.sym} 500 -10 0 0 {name=x5}
 C {devices/isource.sym} 350 40 0 1 {name=I13 value=\{it_amp\}}
 C {devices/isource.sym} 380 50 2 1 {name=I14 value=\{it_amp\}}
 C {devices/isource.sym} 210 -10 0 1 {name=I15 value=\{ibias\}}
@@ -504,7 +504,7 @@ C {devices/lab_wire.sym} 250 50 2 1 {name=p33 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 380 90 2 0 {name=p34 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 510 -70 0 0 {name=p35 sig_type=std_logic lab=VDD}
 C {devices/gnd.sym} 650 60 0 0 {name=l18 lab=GND}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/PRbiased_net.sym} 500 160 0 0 {name=x7}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PRbiased_net.sym} 500 160 0 0 {name=x7}
 C {devices/isource.sym} 350 210 0 1 {name=I17 value=\{it_amp\}}
 C {devices/isource.sym} 380 220 2 1 {name=I18 value=\{it_amp\}}
 C {devices/isource.sym} 210 160 0 1 {name=I19 value=\{ibias\}}

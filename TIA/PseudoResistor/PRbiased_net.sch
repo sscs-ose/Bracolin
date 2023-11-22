@@ -44,9 +44,9 @@ lab=ITN}
 N 550 20 550 50 {
 lab=VSS}
 N 510 -130 510 -80 {
-lab=#net3}
+lab=ITP}
 N 480 -130 510 -130 {
-lab=#net3}
+lab=ITP}
 N 550 -180 550 -100 {
 lab=VDD}
 N 480 -180 550 -180 {
@@ -77,9 +77,9 @@ N 530 50 550 50 {
 lab=VSS}
 N 290 50 330 50 {
 lab=VSS}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/PR_net.sym} 100 80 0 0 {name=x1}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/DiffN_net.sym} -130 30 0 0 {name=x2}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/DiffP_net.sym} 640 -30 0 1 {name=x3}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PR_net.sym} 100 80 0 0 {name=x1}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/DiffN_net.sym} -130 30 0 0 {name=x2}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/DiffP_net.sym} 640 -30 0 1 {name=x3}
 C {devices/iopin.sym} 230 -370 0 0 {name=p1 lab=VA}
 C {devices/iopin.sym} 230 -350 0 0 {name=p2 lab=VB}
 C {devices/iopin.sym} 230 -330 0 0 {name=p3 lab=IBN}

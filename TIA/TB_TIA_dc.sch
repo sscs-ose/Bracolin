@@ -49,63 +49,10 @@ subdivx=8
 subdivy=1
 
 
-x1=0
-x2=9
+x1=-2.09618e+09
+x2=-1.09618e+09
 color=5
 node="\\"vout db20()\\""}
-B 2 670 360 1470 760 {flags=graph
-
-
-ypos1=0
-ypos2=2
-
-
-unity=1
-
-
-
-
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=0
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-hilight_wave=-1
-
-
-
-
-divx=10
-y1=0.5
-y2=3
-
-
-rainbow=0
-linewidth_mult=4.0
-divy=10
-subdivx=4
-subdivy=1
-
-
-x1=1
-x2=1e+09
-
-
-color="4 5"
-node="Vin
-Vout"
-sim_type=tran
-sweep=time}
 N -130 160 -130 180 {
 lab=GND}
 N -130 80 -130 100 {
@@ -213,13 +160,6 @@ C {devices/vsource.sym} 190 -10 0 1 {name=V2 value="sin(1.65 0.01m 1k 0 0 0)"
 spice_ignore=true}
 C {devices/gnd.sym} -20 40 0 0 {name=l2 lab=GND
 }
-C {devices/launcher.sym} 725 275 0 0 {name=h3
-descr="Click left mouse button here with control key
-pressed to load/unload waveforms in graph."
-tclcommand="
-xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw tran
-"
-}
 C {devices/lab_wire.sym} 250 -40 0 1 {name=p2 sig_type=std_logic lab=Vin}
 C {devices/gnd.sym} 410 200 0 0 {name=l3 lab=GND}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/FoldedCascode.sym} 470 0 0 0 {name=x1}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/FoldedCascode.sym} 470 0 0 0 {name=x1}

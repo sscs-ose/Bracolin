@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 -190 340 610 740 {flags=graph
+B 2 -230 270 350 850 {flags=graph
 
 
 ypos1=0
@@ -21,7 +21,7 @@ xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=0
+
 unitx=1
 logx=1
 logy=0
@@ -42,7 +42,7 @@ y1=-29
 y2=43
 
 
-rainbow=0
+rainbow=1
 linewidth_mult=4.0
 divy=10
 subdivx=8
@@ -52,11 +52,12 @@ subdivy=1
 x1=-3
 x2=8
 
-sim_type=op
+sim_type=ac
 
 
 color=4
-node="\\"vout db20()\\""}
+node="\\"vout db20()\\""
+dataset=2}
 N -700 -70 -700 -50 {
 lab=GND}
 N -700 -150 -700 -130 {
@@ -403,14 +404,14 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 "}
-C {devices/launcher.sym} -125 265 0 0 {name=h1
+C {devices/launcher.sym} -165 165 0 0 {name=h1
 descr="Click left mouse button here with control key
 pressed to load/unload waveforms in graph."
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw ac
 "
 }
-C {devices/launcher.sym} -130 320 0 0 {name=h2
+C {devices/launcher.sym} -170 220 0 0 {name=h2
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
@@ -443,52 +444,39 @@ value="
 .control
 save all
 
+let sample_index = -27
+
 *tran 10u 10m
 *remzerovec
 *write TB_TIA_ac.raw
 *set appendwrite
 
-op
-remzerovec 
-write TB_filter_ac.raw
-set appendwrite
+*op
+*remzerovec 
+*write TB_filter_ac.raw
+*set appendwrite
+
+while sample_index < 110
+reset
+set temp = $&sample_index
 
 ac dec 10 1m 1e8
 remzerovec
 write TB_filter_ac.raw
+set appendwrite
+
+let sample_index = sample_index + 27
+end
 
 
 .endc
+.save all
 "}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/FoldedCascode.sym} 620 -290 0 0 {name=x1}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/FoldedCascode.sym} 620 -290 0 0 {name=x1}
 C {devices/lab_wire.sym} -420 40 0 0 {name=p4 sig_type=std_logic lab=Vin_neg}
-C {symbols/cap_mim_2p0fF.sym} 600 -50 3 0 {name=C3
-W=10e-6
-L=10e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/PRbiased_net.sym} 1690 -770 3 0 {name=x6}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PRbiased_net.sym} 1690 -770 3 0 {name=x6}
 C {devices/gnd.sym} 1800 -900 0 0 {name=l2 lab=GND}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/PRbiased_net.sym} 1260 -1870 0 0 {name=x2}
-C {symbols/cap_mim_2p0fF.sym} 270 -260 0 0 {name=C4
-W=10e-6
-L=10e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {symbols/cap_mim_2p0fF.sym} -350 40 1 0 {name=C5
-W=100e-6
-L=100e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {symbols/cap_mim_2p0fF.sym} -350 -330 1 0 {name=C1
-W=100e-6
-L=100e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PRbiased_net.sym} 1260 -1870 0 0 {name=x2}
 C {devices/isource.sym} 560 -170 0 1 {name=I0 value=0.25u}
 C {devices/gnd.sym} 560 -130 0 1 {name=l3 lab=GND}
 C {devices/isource.sym} 1710 -750 0 0 {name=I4 value=\{it_amp\}}
@@ -521,7 +509,7 @@ value=10T
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} -530 200 0 0 {name=l13 lab=GND}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/PRbiased_net.sym} 1910 -770 3 0 {name=x3}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PRbiased_net.sym} 1910 -770 3 0 {name=x3}
 C {devices/gnd.sym} 2020 -900 0 0 {name=l14 lab=GND
 }
 C {devices/isource.sym} 1930 -750 0 0 {name=I9 value=\{it_amp\}}
@@ -532,7 +520,7 @@ C {devices/gnd.sym} 1880 -710 0 1 {name=l15 lab=GND}
 C {devices/gnd.sym} 1930 -710 0 1 {name=l16 lab=GND}
 C {devices/lab_wire.sym} 1890 -610 2 1 {name=p10 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1940 -620 2 0 {name=p11 sig_type=std_logic lab=VDD}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/PRbiased_net.sym} 2110 -770 3 0 {name=x4
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PRbiased_net.sym} 2110 -770 3 0 {name=x4
 }
 C {devices/gnd.sym} 2200 -900 0 0 {name=l17 lab=GND
 }
@@ -552,7 +540,7 @@ C {devices/lab_wire.sym} 2090 -610 2 1 {name=p12 sig_type=std_logic lab=VDD
 }
 C {devices/lab_wire.sym} 2140 -620 2 0 {name=p13 sig_type=std_logic lab=VDD
 }
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/PRbiased_net.sym} 2330 -770 3 0 {name=x5
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PRbiased_net.sym} 2330 -770 3 0 {name=x5
 }
 C {devices/gnd.sym} 2440 -900 0 0 {name=l20 lab=GND
 }
@@ -572,7 +560,7 @@ C {devices/lab_wire.sym} 2310 -610 2 1 {name=p14 sig_type=std_logic lab=VDD
 }
 C {devices/lab_wire.sym} 2360 -620 2 0 {name=p15 sig_type=std_logic lab=VDD
 }
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/PRbiased_net.sym} 2550 -770 3 0 {name=x7
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PRbiased_net.sym} 2550 -770 3 0 {name=x7
 }
 C {devices/gnd.sym} 2660 -900 0 0 {name=l23 lab=GND
 }
@@ -592,7 +580,7 @@ C {devices/lab_wire.sym} 2530 -610 2 1 {name=p16 sig_type=std_logic lab=VDD
 }
 C {devices/lab_wire.sym} 2580 -620 2 0 {name=p17 sig_type=std_logic lab=VDD
 }
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/PRbiased_net.sym} 1260 -1690 0 0 {name=x8}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PRbiased_net.sym} 1260 -1690 0 0 {name=x8}
 C {devices/gnd.sym} 1400 -1620 0 1 {name=l26 lab=GND}
 C {devices/lab_wire.sym} 1270 -1750 2 1 {name=p18 sig_type=std_logic lab=VDD}
 C {devices/isource.sym} 1190 -1640 0 1 {name=I25 value=\{it_amp\}}
@@ -603,7 +591,7 @@ C {devices/gnd.sym} 1050 -1650 0 1 {name=l27 lab=GND}
 C {devices/gnd.sym} 1190 -1600 0 1 {name=l28 lab=GND}
 C {devices/lab_wire.sym} 1090 -1630 2 1 {name=p19 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1220 -1590 2 0 {name=p20 sig_type=std_logic lab=VDD}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/PRbiased_net.sym} 1260 -1510 0 0 {name=x9
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PRbiased_net.sym} 1260 -1510 0 0 {name=x9
 }
 C {devices/gnd.sym} 1400 -1440 0 1 {name=l29 lab=GND
 }
@@ -625,7 +613,7 @@ C {devices/lab_wire.sym} 1090 -1450 2 1 {name=p22 sig_type=std_logic lab=VDD
 }
 C {devices/lab_wire.sym} 1220 -1410 2 0 {name=p23 sig_type=std_logic lab=VDD
 }
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/PRbiased_net.sym} 1260 -1330 0 0 {name=x10
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PRbiased_net.sym} 1260 -1330 0 0 {name=x10
 }
 C {devices/gnd.sym} 1400 -1260 0 1 {name=l32 lab=GND
 }
@@ -647,7 +635,7 @@ C {devices/lab_wire.sym} 1090 -1270 2 1 {name=p25 sig_type=std_logic lab=VDD
 }
 C {devices/lab_wire.sym} 1220 -1230 2 0 {name=p26 sig_type=std_logic lab=VDD
 }
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/PRbiased_net.sym} 1260 -1120 0 0 {name=x11
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PRbiased_net.sym} 1260 -1120 0 0 {name=x11
 }
 C {devices/gnd.sym} 1400 -1050 0 1 {name=l35 lab=GND
 }
@@ -686,3 +674,27 @@ C {devices/lab_pin.sym} 2910 -850 0 1 {name=p41 sig_type=std_logic lab=Vout
 }
 C {devices/lab_wire.sym} 1340 -800 2 1 {name=p49 sig_type=std_logic lab=VB_PR1
 }
+C {symbols/cap_mim_2p0fF.sym} -350 -330 1 0 {name=C4
+W=100e-6
+L=100e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {symbols/cap_mim_2p0fF.sym} -350 40 1 0 {name=C1
+W=100e-6
+L=100e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {symbols/cap_mim_2p0fF.sym} 270 -260 0 0 {name=C3
+W=10e-6
+L=10e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {symbols/cap_mim_2p0fF.sym} 600 -50 1 0 {name=C5
+W=10e-6
+L=10e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}

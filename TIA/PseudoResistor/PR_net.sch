@@ -51,5 +51,5 @@ C {devices/lab_pin.sym} 390 -70 0 1 {name=p17 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 130 -150 2 1 {name=p18 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 430 -130 2 0 {name=p19 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 270 -120 2 0 {name=p20 sig_type=std_logic lab=VC}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/PR_nfets.sym} 130 -40 0 0 {name=x1}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/PR_pfets.sym} 150 -100 0 0 {name=x2}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PR_nfets.sym} 130 -40 0 0 {name=x1}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PR_pfets.sym} 150 -100 0 0 {name=x2}

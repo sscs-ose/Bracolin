@@ -461,9 +461,9 @@ C {devices/lab_wire.sym} -740 40 0 1 {name=p23 sig_type=std_logic lab=VB
 C {devices/lab_wire.sym} -480 40 0 1 {name=p24 sig_type=std_logic lab=VA
 
 }
-C {/home/lci-ufsc/Desktop/work_gf180/auxLib/ampOp_ideal.sym} -920 70 0 0 {name=x2}
-C {/home/lci-ufsc/Desktop/work_gf180/auxLib/ampOp_ideal.sym} -660 70 0 0 {name=x3}
-C {/home/lci-ufsc/Desktop/work_gf180/auxLib/ampOp_ideal.sym} -640 -200 0 0 {name=x9}
+C {/home/gmaranhao/Desktop/gf180_work/auxLib/ampOp_ideal.sym} -920 70 0 0 {name=x2}
+C {/home/gmaranhao/Desktop/gf180_work/auxLib/ampOp_ideal.sym} -660 70 0 0 {name=x3}
+C {/home/gmaranhao/Desktop/gf180_work/auxLib/ampOp_ideal.sym} -640 -200 0 0 {name=x9}
 C {devices/lab_wire.sym} 280 -330 0 0 {name=p10 sig_type=std_logic lab=VB__i
 }
 C {devices/lab_wire.sym} 280 -500 0 1 {name=p14 sig_type=std_logic lab=VA__i
@@ -472,11 +472,11 @@ C {devices/ammeter.sym} 280 -290 2 0 {name=Vbi
 }
 C {devices/ammeter.sym} 280 -550 0 0 {name=Vai
 }
-C {/home/lci-ufsc/Desktop/work_gf180//TIA/PseudoResistor/PR_net.sym} 460 -320 0 0 {name=x4
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PR_net.sym} 460 -320 0 0 {name=x4
 spice_ignore=true}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/DiffN_net.sym} 150 -10 0 0 {name=x1
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/DiffN_net.sym} 150 -10 0 0 {name=x1
 spice_ignore=true}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/DiffP_net.sym} 920 120 0 1 {name=x5
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/DiffP_net.sym} 920 120 0 1 {name=x5
 spice_ignore=true}
 C {devices/code_shown.sym} -400 340 0 0 {name=NGSPICE1 only_toplevel=true
 value="
@@ -516,7 +516,7 @@ end
 .save idiff Rdiff
 "
 spice_ignore=true}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/PseudoResistor/PRbiased_net.sym} 200 -430 0 0 {name=x6}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PRbiased_net.sym} 200 -430 0 0 {name=x6}
 C {devices/isource.sym} 50 -380 0 1 {name=I4 value=\{it_amp\}}
 C {devices/isource.sym} 80 -370 2 1 {name=I5 value=\{it_amp\}}
 C {devices/isource.sym} -90 -430 0 1 {name=I6 value=\{ibias\}}

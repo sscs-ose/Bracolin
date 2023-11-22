@@ -49,8 +49,8 @@ subdivx=8
 subdivy=1
 
 
-x1=-3
-x2=8
+x1=-3.67818
+x2=7.32182
 
 sim_type=op
 
@@ -99,8 +99,6 @@ N 420 40 530 40 {
 lab=VA_PR2}
 N 810 -50 810 40 {
 lab=Vout}
-N 680 40 810 40 {
-lab=Vout}
 N 180 -330 320 -330 {
 lab=VA_PR1}
 N 270 -330 270 -290 {
@@ -145,14 +143,18 @@ N -530 40 -440 40 {
 lab=Vin_neg}
 N 140 -150 180 -150 {
 lab=VB_PR1}
+N 140 -330 140 -310 {
+lab=VA_PR1}
+N 140 -250 140 -220 {
+lab=#net3}
+N 140 -160 140 -150 {
+lab=VB_PR1}
 N 530 40 580 40 {
 lab=VA_PR2}
-N 640 40 680 40 {
+N 640 40 670 40 {
+lab=#net4}
+N 730 40 810 40 {
 lab=Vout}
-N 140 -330 140 -250 {
-lab=VA_PR1}
-N 140 -190 140 -150 {
-lab=VB_PR1}
 C {devices/code_shown.sym} -1210 -360 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -214,7 +216,7 @@ write TB_filter_noPR_ac.raw
 
 .endc
 "}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/FoldedCascode.sym} 620 -290 0 0 {name=x1}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/FoldedCascode.sym} 620 -290 0 0 {name=x1}
 C {devices/lab_wire.sym} -420 40 0 0 {name=p4 sig_type=std_logic lab=Vin_neg}
 C {symbols/cap_mim_2p0fF.sym} 600 -50 3 0 {name=C3
 W=10e-6
@@ -258,12 +260,22 @@ C {devices/lab_wire.sym} 140 -330 2 1 {name=p32 sig_type=std_logic lab=VA_PR1}
 C {devices/lab_wire.sym} 140 -150 2 1 {name=p33 sig_type=std_logic lab=VB_PR1}
 C {devices/lab_wire.sym} 530 40 2 1 {name=p40 sig_type=std_logic lab=VA_PR2}
 C {devices/res.sym} 610 40 1 0 {name=R1
-value=1T
+value=0.5T
 footprint=1206
 device=resistor
 m=1}
-C {devices/res.sym} 140 -220 2 0 {name=R2
-value=1T
+C {devices/res.sym} 140 -280 2 0 {name=R2
+value=0.5T
+footprint=1206
+device=resistor
+m=1}
+C {devices/res.sym} 140 -190 2 0 {name=R3
+value=0.5T
+footprint=1206
+device=resistor
+m=1}
+C {devices/res.sym} 700 40 1 0 {name=R4
+value=0.5T
 footprint=1206
 device=resistor
 m=1}
