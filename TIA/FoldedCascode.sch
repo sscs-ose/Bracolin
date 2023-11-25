@@ -412,8 +412,8 @@ C {devices/ammeter.sym} 380 -660 0 0 {name=V_it14}
 C {devices/ammeter.sym} 580 -660 0 1 {name=V_it15}
 C {devices/lab_wire.sym} 120 -380 0 1 {name=p49 sig_type=std_logic lab=M11_S}
 C {symbols/nfet_03v3.sym} 100 690 0 0 {name=M16
-L=10u
-W=1u
+L=12u
+W=1.2u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -468,8 +468,8 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 600 480 0 1 {name=M15
-L=16u
-W=1u
+L=26u
+W=1.2u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"

@@ -38,8 +38,8 @@ hilight_wave=-1
 
 
 divx=10
-y1=-25
-y2=40
+y1=-47
+y2=76
 
 
 rainbow=0
@@ -49,8 +49,8 @@ subdivx=8
 subdivy=1
 
 
-x1=-3.67818
-x2=7.32182
+x1=-3
+x2=8
 
 sim_type=op
 
@@ -219,34 +219,34 @@ write TB_filter_noPR_ac.raw
 C {/home/gmaranhao/Desktop/gf180_work/TIA/FoldedCascode.sym} 620 -290 0 0 {name=x1}
 C {devices/lab_wire.sym} -420 40 0 0 {name=p4 sig_type=std_logic lab=Vin_neg}
 C {symbols/cap_mim_2p0fF.sym} 600 -50 3 0 {name=C3
-W=10e-6
-L=10e-6
+W=15e-6
+L=15e-6
 model=cap_mim_2f0fF
 spiceprefix=X
 m=1}
 C {symbols/cap_mim_2p0fF.sym} 270 -260 0 0 {name=C4
-W=10e-6
-L=10e-6
+W=15e-6
+L=15e-6
 model=cap_mim_2f0fF
 spiceprefix=X
 m=1}
 C {symbols/cap_mim_2p0fF.sym} -350 40 1 0 {name=C5
-W=100e-6
-L=100e-6
+W=150e-6
+L=150e-6
 model=cap_mim_2f0fF
 spiceprefix=X
 m=1}
 C {symbols/cap_mim_2p0fF.sym} -350 -330 1 0 {name=C1
-W=100e-6
-L=100e-6
+W=150e-6
+L=150e-6
 model=cap_mim_2f0fF
 spiceprefix=X
 m=1}
-C {devices/isource.sym} 560 -170 0 1 {name=I0 value=0.25u}
+C {devices/isource.sym} 560 -170 0 1 {name=I0 value=250n}
 C {devices/gnd.sym} 560 -130 0 1 {name=l3 lab=GND}
 C {devices/vsource.sym} 220 -120 0 0 {name=Vcm value=1.65}
 C {devices/gnd.sym} 220 -60 0 1 {name=l6 lab=GND}
-C {devices/vsource.sym} -530 -300 0 0 {name=Vin1 value=1.65}
+C {devices/vsource.sym} -530 -300 0 0 {name=Vin1 value=1.64965}
 C {devices/gnd.sym} -530 -240 0 1 {name=l12 lab=GND}
 C {devices/vsource.sym} -530 70 0 1 {name=V2 value="0 DC 1 AC"
 }

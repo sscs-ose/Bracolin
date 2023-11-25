@@ -53,9 +53,9 @@ subdivy=1
 
 
 x1=-0.2
-x2=0.2
-y1=-1.1e-12
-y2=1.1e-12
+x2=0.196
+y1=-6.4e-13
+y2=6.4e-13
 dataset=-1}
 B 2 1230 -140 2030 260 {flags=graph
 
@@ -101,13 +101,15 @@ divy=7
 
 rainbow=1
 
+
+
+
+y1=2.1e+11
+y2=6.8e+11
+
+dataset=-1
 x1=-40m
-x2=40m
-
-y1=50G
-y2=300G
-
-dataset=-1}
+x2=40m}
 B 2 1230 270 2030 670 {flags=graph
 
 
@@ -134,7 +136,7 @@ logy=0
 
 y2=1.9
 x1=-0.2
-x2=0.2
+x2=0.196
 y1=1.4
 color="4 5"
 node="vxb
@@ -144,80 +146,12 @@ dataset=0}
 T {DC operation a single 
 Pseudo-Resistor ~185Gohm
 Work Range -20m to 20m with VCM =1.65V} 1430 -630 0 0 0.4 0.4 { layer=3}
-N 160 -110 190 -110 {
-lab=#net1}
-N 880 80 920 80 {
-lab=#net2}
-N 640 110 740 110 {
-lab=#net3}
-N 190 -50 190 20 {
-lab=#net4}
-N 460 180 460 210 {
-lab=#net5}
-N 750 -200 750 -180 {
-lab=#net6}
-N 750 -200 770 -200 {
-lab=#net6}
-N 280 -600 300 -600 {
-lab=VA}
-N 260 -230 280 -230 {
-lab=VB}
 N -890 -220 -890 -200 {
 lab=VDD}
 N -890 -220 -860 -220 {
 lab=VDD}
 N -890 -140 -890 -120 {
 lab=GND}
-N 280 -600 280 -580 {
-lab=VA}
-N 280 -520 280 -500 {
-lab=VA__i}
-N 280 -350 280 -320 {
-lab=VB__i}
-N 280 -260 280 -230 {
-lab=VB}
-N 190 20 190 40 {
-lab=#net4}
-N 240 -20 240 0 {
-lab=#net7}
-N 240 -170 240 -140 {
-lab=#net8}
-N 240 -170 270 -170 {
-lab=#net8}
-N 460 40 460 120 {
-lab=#net4}
-N 190 40 190 110 {
-lab=#net4}
-N 190 110 460 110 {
-lab=#net4}
-N 280 -40 280 -10 {
-lab=#net9}
-N 900 140 1010 140 {
-lab=#net10}
-N 830 170 830 180 {
-lab=#net11}
-N 830 20 830 50 {
-lab=#net12}
-N 830 20 860 20 {
-lab=#net12}
-N 750 -120 750 -70 {
-lab=#net10}
-N 1010 -110 1010 -40 {
-lab=#net10}
-N 750 -110 1010 -110 {
-lab=#net10}
-N 790 50 790 70 {
-lab=#net13}
-N 790 -30 790 -10 {
-lab=#net14}
-N 790 -30 830 -30 {
-lab=#net14}
-N 520 -480 550 -480 {
-lab=#net15}
-N 650 -350 690 -350 {
-lab=#net16}
-N 330 -80 400 -80 {
-lab=#net17}
 N -510 -310 -510 -290 {
 lab=Vxb}
 N -720 -220 -720 -210 {
@@ -225,21 +159,21 @@ lab=Vxa}
 N -750 -210 -700 -210 {
 lab=Vxa}
 N -640 -210 -600 -210 {
-lab=#net18}
+lab=#net1}
 N -620 -210 -620 -140 {
-lab=#net18}
+lab=#net1}
 N -620 -140 -620 -110 {
-lab=#net18}
+lab=#net1}
 N -620 -110 -590 -110 {
-lab=#net18}
+lab=#net1}
 N -530 -110 -510 -110 {
-lab=#net19}
+lab=#net2}
 N -510 -290 -510 -230 {
 lab=Vxb}
 N -510 -230 -510 -200 {
 lab=Vxb}
 N -510 -140 -510 -110 {
-lab=#net19}
+lab=#net2}
 N -750 -90 -750 -70 {
 lab=GND}
 N -650 60 -620 60 {
@@ -270,42 +204,40 @@ N -790 40 -740 40 {
 lab=VB}
 N -530 40 -480 40 {
 lab=VA}
-N 530 -440 550 -440 {
-lab=#net20}
-N 650 -440 670 -440 {
-lab=#net21}
-N 530 -410 550 -410 {
-lab=#net22}
-N 530 -380 550 -380 {
-lab=#net23}
-N 650 -380 670 -380 {
-lab=#net24}
 N -600 -270 -600 -250 {
 lab=GND}
-N 880 140 900 140 {
-lab=#net10}
-N 1010 -40 1010 140 {
-lab=#net10}
-N 50 -410 230 -410 {
-lab=#net25}
-N 80 -400 230 -400 {
-lab=#net26}
-N -90 -460 230 -460 {
-lab=#net27}
-N -50 -450 230 -450 {
-lab=#net28}
-N 50 -350 50 -340 {
+N 320 -130 500 -130 {
+lab=#net3}
+N 350 -120 500 -120 {
+lab=#net4}
+N 180 -180 500 -180 {
+lab=#net5}
+N 220 -170 500 -170 {
+lab=#net6}
+N 320 -70 320 -60 {
 lab=GND}
-N -90 -400 -90 -390 {
+N 180 -120 180 -110 {
 lab=GND}
-N -50 -390 -50 -370 {
+N 220 -110 220 -90 {
 lab=VDD}
-N 80 -340 80 -330 {
+N 350 -60 350 -50 {
 lab=VDD}
-N 210 -490 230 -490 {
+N 480 -210 500 -210 {
 lab=VDD}
-N 330 -360 350 -360 {
+N 600 -80 620 -80 {
 lab=GND}
+N 550 -320 570 -320 {
+lab=VA}
+N 550 -320 550 -300 {
+lab=VA}
+N 550 -240 550 -220 {
+lab=VA__i}
+N 530 50 550 50 {
+lab=VB}
+N 550 -70 550 -40 {
+lab=VB__i}
+N 550 20 550 50 {
+lab=VB}
 C {devices/code_shown.sym} -1090 -940 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -328,32 +260,6 @@ value="
 
 
 "}
-C {devices/lab_wire.sym} 520 -480 0 0 {name=p2 sig_type=std_logic lab=VDD
-spice_ignore=true}
-C {devices/isource.sym} 460 150 0 0 {name=I0 value=\{ibias\}
-spice_ignore=true}
-C {devices/lab_wire.sym} 530 -410 0 0 {name=p4 sig_type=std_logic lab=VC
-spice_ignore=true}
-C {devices/lab_wire.sym} 160 -110 0 0 {name=p5 sig_type=std_logic lab=VC
-spice_ignore=true}
-C {devices/lab_wire.sym} 920 80 2 0 {name=p6 sig_type=std_logic lab=VC
-spice_ignore=true}
-C {devices/lab_wire.sym} 650 110 0 1 {name=p9 sig_type=std_logic lab=vg_p
-spice_ignore=true}
-C {devices/gnd.sym} 460 210 0 0 {name=l1 lab=GND
-spice_ignore=true}
-C {devices/gnd.sym} 240 0 0 1 {name=l2 lab=GND
-spice_ignore=true}
-C {devices/isource.sym} 750 -150 0 0 {name=I1 value=\{ibias\}
-spice_ignore=true}
-C {devices/lab_wire.sym} 750 -200 0 1 {name=p11 sig_type=std_logic lab=VDD
-spice_ignore=true}
-C {devices/lab_wire.sym} 390 -80 0 0 {name=p1 sig_type=std_logic lab=vg_n
-spice_ignore=true}
-C {devices/lab_wire.sym} 280 -600 0 1 {name=p12 sig_type=std_logic lab=VA
-}
-C {devices/lab_wire.sym} 280 -230 0 0 {name=p13 sig_type=std_logic lab=VB
-}
 C {devices/code_shown.sym} -420 -300 0 0 {name=NGSPICE only_toplevel=true
 value="
 *.option savecurrents
@@ -399,34 +305,6 @@ C {devices/launcher.sym} 870 -400 0 0 {name=h2
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {devices/lab_wire.sym} 270 -170 0 0 {name=p15 sig_type=std_logic lab=VDD
-spice_ignore=true}
-C {devices/isource.sym} 790 20 0 1 {name=I2 value=\{it_amp\}
-spice_ignore=true}
-C {devices/gnd.sym} 280 50 0 1 {name=l6 lab=GND
-spice_ignore=true}
-C {devices/gnd.sym} 830 180 0 0 {name=l7 lab=GND
-spice_ignore=true}
-C {devices/lab_wire.sym} 830 20 0 1 {name=p16 sig_type=std_logic lab=VDD
-spice_ignore=true}
-C {devices/isource.sym} 280 20 0 0 {name=I3 value=\{it_amp\}
-spice_ignore=true}
-C {devices/lab_wire.sym} 800 -30 0 1 {name=p25 sig_type=std_logic lab=VDD
-spice_ignore=true}
-C {devices/gnd.sym} 690 -350 0 0 {name=l3 lab=GND
-spice_ignore=true}
-C {devices/lab_wire.sym} 530 -440 0 0 {name=p7 sig_type=std_logic lab=vg_n
-spice_ignore=true}
-C {devices/lab_wire.sym} 670 -440 0 1 {name=p8 sig_type=std_logic lab=vg_p
-spice_ignore=true}
-C {devices/lab_wire.sym} 530 -380 0 0 {name=p26 sig_type=std_logic lab=ib_n
-spice_ignore=true}
-C {devices/lab_wire.sym} 670 -380 0 1 {name=p27 sig_type=std_logic lab=ib_p
-spice_ignore=true}
-C {devices/lab_wire.sym} 460 40 2 1 {name=p3 sig_type=std_logic lab=ib_n
-spice_ignore=true}
-C {devices/lab_wire.sym} 750 -70 2 1 {name=p17 sig_type=std_logic lab=ib_p
-spice_ignore=true}
 C {devices/vsource.sym} -750 -180 0 0 {name=VX value=0}
 C {devices/gnd.sym} -560 -190 0 0 {name=l12 lab=GND}
 C {devices/lab_wire.sym} -720 -220 0 0 {name=p21 sig_type=std_logic lab=Vxa
@@ -464,20 +342,6 @@ C {devices/lab_wire.sym} -480 40 0 1 {name=p24 sig_type=std_logic lab=VA
 C {/home/gmaranhao/Desktop/gf180_work/auxLib/ampOp_ideal.sym} -920 70 0 0 {name=x2}
 C {/home/gmaranhao/Desktop/gf180_work/auxLib/ampOp_ideal.sym} -660 70 0 0 {name=x3}
 C {/home/gmaranhao/Desktop/gf180_work/auxLib/ampOp_ideal.sym} -640 -200 0 0 {name=x9}
-C {devices/lab_wire.sym} 280 -330 0 0 {name=p10 sig_type=std_logic lab=VB__i
-}
-C {devices/lab_wire.sym} 280 -500 0 1 {name=p14 sig_type=std_logic lab=VA__i
-}
-C {devices/ammeter.sym} 280 -290 2 0 {name=Vbi
-}
-C {devices/ammeter.sym} 280 -550 0 0 {name=Vai
-}
-C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PR_net.sym} 460 -320 0 0 {name=x4
-spice_ignore=true}
-C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/DiffN_net.sym} 150 -10 0 0 {name=x1
-spice_ignore=true}
-C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/DiffP_net.sym} 920 120 0 1 {name=x5
-spice_ignore=true}
 C {devices/code_shown.sym} -400 340 0 0 {name=NGSPICE1 only_toplevel=true
 value="
 *.option savecurrents
@@ -516,14 +380,26 @@ end
 .save idiff Rdiff
 "
 spice_ignore=true}
-C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PRbiased_net.sym} 200 -430 0 0 {name=x6}
-C {devices/isource.sym} 50 -380 0 1 {name=I4 value=\{it_amp\}}
-C {devices/isource.sym} 80 -370 2 1 {name=I5 value=\{it_amp\}}
-C {devices/isource.sym} -90 -430 0 1 {name=I6 value=\{ibias\}}
-C {devices/isource.sym} -50 -420 2 1 {name=I7 value=\{ibias\}}
-C {devices/gnd.sym} -90 -390 0 1 {name=l4 lab=GND}
-C {devices/gnd.sym} 50 -340 0 1 {name=l5 lab=GND}
-C {devices/lab_wire.sym} -50 -370 2 1 {name=p28 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 80 -330 2 0 {name=p29 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 210 -490 0 0 {name=p30 sig_type=std_logic lab=VDD}
-C {devices/gnd.sym} 350 -360 0 0 {name=l8 lab=GND}
+C {/home/gmaranhao/Desktop/gf180_work/TIA/PseudoResistor/PRbiased_net.sym} 470 -150 0 0 {name=x6}
+C {devices/isource.sym} 320 -100 0 1 {name=I4 value=\{it_amp\}}
+C {devices/isource.sym} 350 -90 2 1 {name=I5 value=\{it_amp\}}
+C {devices/isource.sym} 180 -150 0 1 {name=I6 value=\{ibias\}}
+C {devices/isource.sym} 220 -140 2 1 {name=I7 value=\{ibias\}}
+C {devices/gnd.sym} 180 -110 0 1 {name=l4 lab=GND}
+C {devices/gnd.sym} 320 -60 0 1 {name=l5 lab=GND}
+C {devices/lab_wire.sym} 220 -90 2 1 {name=p28 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 350 -50 2 0 {name=p29 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 480 -210 0 0 {name=p30 sig_type=std_logic lab=VDD}
+C {devices/gnd.sym} 620 -80 0 0 {name=l8 lab=GND}
+C {devices/lab_wire.sym} 550 -320 0 1 {name=p2 sig_type=std_logic lab=VA
+}
+C {devices/lab_wire.sym} 550 -220 0 1 {name=p14 sig_type=std_logic lab=VA__i
+}
+C {devices/ammeter.sym} 550 -270 0 0 {name=Vai
+}
+C {devices/lab_wire.sym} 550 50 0 0 {name=p13 sig_type=std_logic lab=VB
+}
+C {devices/lab_wire.sym} 550 -50 0 0 {name=p10 sig_type=std_logic lab=VB__i
+}
+C {devices/ammeter.sym} 550 -10 2 0 {name=Vbi
+}

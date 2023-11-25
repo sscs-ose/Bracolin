@@ -102,15 +102,19 @@ divy=7
 rainbow=1
 
 
-x2=0.2
+
 
 
 
 
 dataset=-1
-x1=-0.2
-y1=0.5T
-y2=6T}
+
+
+
+x1=-50m
+x2=50m
+y1=0.9T
+y2=1.5T}
 B 2 1240 280 2040 680 {flags=graph
 
 
@@ -337,13 +341,14 @@ C {devices/lab_wire.sym} 580 -720 0 1 {name=p12 sig_type=std_logic lab=VA
 }
 C {devices/code_shown.sym} -410 -290 0 0 {name=NGSPICE only_toplevel=true
 value="
-.option gmin=1e-18
-.OPTION ABSTOL=1e2
+*.OPTION ABSTOL=1e2
+.option gmin=1e-32
+.option RSHUNT=1e35
 
 *.nodeset v(Vin_neg)=1.65
 *.nodeset v(vout)=1.65
 
-.nodeset all=1.65
+*.nodeset all=1.65
 
 .param ibias = 1p
 .param it_amp = 2p
@@ -356,7 +361,7 @@ remzerovec
 write TB_PR_series_dc.raw
 set appendwrite
 
-dc VX -200m 200m 12m
+dc VX -200m 200m 6m
 
 let idiff = i(vai)-i(vbi)
 let Rdiff = 4/deriv(idiff)

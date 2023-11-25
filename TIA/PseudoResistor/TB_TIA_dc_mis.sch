@@ -153,7 +153,7 @@ tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
 C {/home/gmaranhao/Desktop/gf180_work/TIA/FoldedCascode.sym} 410 -20 0 0 {name=x1}
 C {devices/vsource.sym} -190 110 0 0 {name=VDD value=3.3}
-C {devices/isource.sym} 350 110 0 0 {name=Iref value=1u}
+C {devices/isource.sym} 350 110 0 0 {name=Iref value=0.25u}
 C {devices/gnd.sym} -190 160 0 0 {name=l1 lab=GND}
 C {devices/lab_wire.sym} -190 60 0 0 {name=p1 sig_type=std_logic lab=AVDD}
 C {devices/lab_wire.sym} 420 -80 0 1 {name=p3 sig_type=std_logic lab=AVDD}
