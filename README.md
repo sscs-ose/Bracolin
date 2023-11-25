@@ -6,7 +6,7 @@ Team members:
     - ADC: Colombia (SAR)	
     - Clocking: Brazil (Clock Ref.) 
     - Current Source: Brazil
-    - Voltage Reference: Brazil
-    - Current Sensing: Brazil (TIA)
+    - Voltage Reference + LDO: Brazil
+    - Filter + Current Sensing (TIA): Brazil 
     
 [BRACOLIN Slide presentation](https://docs.google.com/presentation/d/1iIIuWxDULkuIupzypLsfGI96Au4B5P6BPbgq90l5cP4/edit?usp=sharing)
