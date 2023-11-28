@@ -171,6 +171,22 @@ N 140 -150 190 -150 {
 lab=B}
 N 1110 -150 1150 -150 {
 lab=B}
+N 230 -380 250 -380 {
+lab=#net9}
+N 230 -420 230 -380 {
+lab=#net9}
+N 230 -420 320 -420 {
+lab=#net9}
+N 320 -420 320 -370 {
+lab=#net9}
+N 230 -370 320 -370 {
+lab=#net9}
+N 230 -380 230 -370 {
+lab=#net9}
+N 280 -380 280 -370 {
+lab=#net9}
+N 310 -380 320 -380 {
+lab=#net9}
 C {symbols/nfet_03v3.sym} 570 -200 0 1 {name=M1
 L=2u
 W=2u
@@ -419,3 +435,18 @@ C {devices/lab_wire.sym} 1140 -150 0 1 {name=p23 sig_type=std_logic lab=B}
 C {devices/lab_wire.sym} 920 -10 0 0 {name=p24 sig_type=std_logic lab=S}
 C {devices/lab_wire.sym} 370 -10 0 0 {name=p25 sig_type=std_logic lab=S}
 C {devices/lab_wire.sym} 990 -150 0 1 {name=p9 sig_type=std_logic lab=B}
+C {symbols/nfet_03v3.sym} 280 -400 3 1 {name=M3[1:32]
+L=2u
+W=2u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {devices/lab_wire.sym} 320 -420 0 0 {name=p12 sig_type=std_logic lab=B}

@@ -62,17 +62,17 @@ lab=B}
 N 420 -150 430 -150 {
 lab=B}
 N 550 -250 560 -250 {
-lab=#net1}
+lab=B}
 N 550 -250 550 -150 {
-lab=#net1}
+lab=B}
 N 550 -150 560 -150 {
-lab=#net1}
+lab=B}
 N 680 -250 690 -250 {
-lab=#net2}
+lab=B}
 N 680 -250 680 -150 {
-lab=#net2}
+lab=B}
 N 680 -150 690 -150 {
-lab=#net2}
+lab=B}
 N 730 -250 740 -250 {
 lab=G2}
 N 740 -250 740 -150 {
@@ -122,21 +122,21 @@ lab=G1}
 N -370 -150 -360 -150 {
 lab=G1}
 N -320 -220 -320 -180 {
-lab=#net3}
+lab=#net1}
 N -190 -220 -190 -180 {
-lab=#net4}
+lab=#net2}
 N -60 -220 -60 -180 {
-lab=#net5}
+lab=#net3}
 N 70 -220 70 -180 {
-lab=#net6}
+lab=#net4}
 N 300 -220 300 -180 {
-lab=#net7}
+lab=#net5}
 N 430 -220 430 -180 {
-lab=#net8}
+lab=#net6}
 N 560 -220 560 -180 {
-lab=#net9}
+lab=#net7}
 N 690 -220 690 -180 {
-lab=#net10}
+lab=#net8}
 N 80 -210 290 -210 {
 lab=B}
 N -320 -120 -320 -110 {
@@ -171,6 +171,24 @@ N -420 -200 -370 -200 {
 lab=G1}
 N 740 -200 800 -200 {
 lab=G2}
+N -330 -480 -320 -480 {
+lab=#net9}
+N -330 -480 -330 -460 {
+lab=#net9}
+N -330 -460 -250 -460 {
+lab=#net9}
+N -250 -480 -250 -460 {
+lab=#net9}
+N -260 -480 -250 -480 {
+lab=#net9}
+N -250 -520 -250 -480 {
+lab=#net9}
+N -330 -520 -250 -520 {
+lab=#net9}
+N -330 -520 -330 -480 {
+lab=#net9}
+N -290 -480 -290 -460 {
+lab=#net9}
 C {symbols/pfet_03v3.sym} 50 -250 0 0 {name=M1
 L=2u
 W=2u
@@ -421,3 +439,18 @@ C {devices/lab_wire.sym} 180 -210 2 0 {name=p23 sig_type=std_logic lab=B}
 C {devices/lab_wire.sym} 420 -190 2 1 {name=p24 sig_type=std_logic lab=B}
 C {devices/lab_wire.sym} 550 -190 2 1 {name=p25 sig_type=std_logic lab=B}
 C {devices/lab_wire.sym} 680 -190 2 1 {name=p26 sig_type=std_logic lab=B}
+C {symbols/pfet_03v3.sym} -290 -500 1 0 {name=M3[1:32]
+L=2u
+W=2u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {devices/lab_wire.sym} -330 -520 0 1 {name=p27 sig_type=std_logic lab=B}

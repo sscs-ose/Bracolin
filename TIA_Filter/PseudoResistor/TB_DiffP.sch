@@ -30,14 +30,10 @@ divy=6
 subdivy=1
 rainbow=1
 linewidth_mult=4}
-N -100 -170 -100 -150 {
-lab=VDD}
-N -100 -90 -100 -70 {
-lab=GND}
 N 220 140 250 140 {
-lab=#net1}
+lab=VN}
 N 160 80 250 80 {
-lab=#net2}
+lab=VP}
 N 160 140 160 160 {
 lab=VSS}
 N 220 200 220 210 {
@@ -45,30 +41,38 @@ lab=VSS}
 N 300 170 300 190 {
 lab=VSS}
 N 300 20 300 50 {
-lab=VDD2}
+lab=VDD}
 N 390 110 470 110 {
 lab=out_p}
-N 340 -20 340 0 {
-lab=VDD2}
+N 340 -60 340 -40 {
+lab=VDD}
 N 340 60 340 70 {
-lab=#net3}
-N -30 -10 -30 10 {
-lab=VDD2}
-N -30 70 -30 90 {
-lab=GND}
-N -240 -90 -240 -70 {
-lab=GND}
-N -240 -180 -240 -150 {
-lab=VSS}
+lab=IT}
 N 160 160 160 180 {
 lab=VSS}
-C {devices/code_shown.sym} -590 -410 0 0 {name=MODELS only_toplevel=true
+N -70 -120 -70 -100 {
+lab=VDD}
+N -70 -40 -70 -20 {
+lab=GND}
+N -210 -40 -210 -20 {
+lab=GND}
+N -210 -130 -210 -100 {
+lab=VSS}
+N 340 20 340 60 {
+lab=IT}
+C {devices/code_shown.sym} -600 -540 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
-.param sw_stat_mismatch=0
-.param sw_stat_global=0
+
+*.include /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/spice/DiffP_net_pex.spice
+
+
+*.subckt DiffP_net IT VN VDD VP VSS OUT
+
+*Xpex IT VN VDD VP VSS out_p DiffP_net
+
 "}
 C {devices/code_shown.sym} -580 -260 0 0 {name=NGSPICE only_toplevel=true
 value="
@@ -78,7 +82,7 @@ value="
 .param it_amp = 2p
 
 .control
-  save all
+ save all
 
  op
  remzerovec 
@@ -91,14 +95,7 @@ value="
 
 
 .endc
-.save all
 "}
-C {devices/vsource.sym} -100 -120 0 1 {name=VDD value=3.3
-}
-C {devices/lab_wire.sym} -100 -170 0 0 {name=p4 sig_type=std_logic lab=VDD
-}
-C {devices/gnd.sym} -100 -70 0 0 {name=l6 lab=GND
-}
 C {devices/launcher.sym} 95 -285 0 0 {name=h3
 descr="Load/unload waveforms in graph."
 tclcommand="
@@ -113,28 +110,34 @@ C {devices/vsource.sym} 160 110 0 1 {name=V1 value="1.65 DC 1 AC"
 }
 C {devices/vsource.sym} 220 170 0 1 {name=V4 value=1.65
 }
-C {devices/isource.sym} 340 30 0 0 {name=I1 value="\{it_amp\}"
+C {devices/isource.sym} 340 -10 0 0 {name=I1 value="\{it_amp\}"
 }
 C {devices/lab_wire.sym} 420 110 0 0 {name=p2 sig_type=std_logic lab=out_p
 }
 C {DiffP_net.sym} 210 120 0 0 {name=x1
 }
-C {devices/vsource.sym} -30 40 0 1 {name=VDD2 value=3.3
+C {devices/lab_wire.sym} 300 20 0 0 {name=p1 sig_type=std_logic lab=VDD
 }
-C {devices/lab_wire.sym} -30 -10 0 0 {name=p7 sig_type=std_logic lab=VDD2
+C {devices/lab_wire.sym} 340 -60 0 0 {name=p3 sig_type=std_logic lab=VDD
 }
-C {devices/gnd.sym} -30 90 0 0 {name=l8 lab=GND
-}
-C {devices/lab_wire.sym} 300 20 0 0 {name=p1 sig_type=std_logic lab=VDD2
-}
-C {devices/lab_wire.sym} 340 -20 0 0 {name=p3 sig_type=std_logic lab=VDD2
-}
-C {devices/vsource.sym} -240 -120 0 1 {name=VDD1 value=0}
-C {devices/gnd.sym} -240 -70 0 0 {name=l9 lab=GND}
-C {devices/lab_wire.sym} -240 -170 0 0 {name=p8 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 300 190 2 1 {name=p9 sig_type=std_logic lab=VSS
 }
 C {devices/lab_wire.sym} 220 210 2 1 {name=p10 sig_type=std_logic lab=VSS
 }
 C {devices/lab_wire.sym} 160 180 2 1 {name=p11 sig_type=std_logic lab=VSS
+}
+C {devices/vsource.sym} -70 -70 0 1 {name=VDD value=3.3
+}
+C {devices/lab_wire.sym} -70 -120 0 0 {name=p4 sig_type=std_logic lab=VDD
+}
+C {devices/gnd.sym} -70 -20 0 0 {name=l6 lab=GND
+}
+C {devices/vsource.sym} -210 -70 0 1 {name=VDD1 value=0}
+C {devices/gnd.sym} -210 -20 0 0 {name=l9 lab=GND}
+C {devices/lab_wire.sym} -210 -120 0 0 {name=p8 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 220 80 0 0 {name=p5 sig_type=std_logic lab=VP
+}
+C {devices/lab_wire.sym} 240 140 0 0 {name=p6 sig_type=std_logic lab=VN
+}
+C {devices/lab_wire.sym} 340 50 0 1 {name=p7 sig_type=std_logic lab=IT
 }

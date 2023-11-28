@@ -173,6 +173,20 @@ N -250 -150 -250 -130 {
 lab=D1}
 N -120 -150 -120 -130 {
 lab=D1}
+N -270 -470 -260 -470 {
+lab=#net9}
+N -270 -510 -270 -470 {
+lab=#net9}
+N -270 -510 -200 -510 {
+lab=#net9}
+N -200 -510 -200 -460 {
+lab=#net9}
+N -270 -460 -200 -460 {
+lab=#net9}
+N -270 -470 -270 -460 {
+lab=#net9}
+N -230 -470 -230 -460 {
+lab=#net9}
 C {symbols/pfet_03v3.sym} 20 -280 0 1 {name=M1
 L=2u
 W=2u
@@ -454,5 +468,22 @@ C {devices/lab_wire.sym} 420 -230 0 1 {name=p31 sig_type=std_logic lab=G
 L=2u
 W=2u}
 C {devices/lab_wire.sym} 530 -230 0 1 {name=p32 sig_type=std_logic lab=G
+L=2u
+W=2u}
+C {symbols/pfet_03v3.sym} -230 -490 3 1 {name=M17[1:32]
+L=2u
+W=2u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {devices/lab_wire.sym} -200 -510 0 0 {name=p6 sig_type=std_logic lab=B
 L=2u
 W=2u}

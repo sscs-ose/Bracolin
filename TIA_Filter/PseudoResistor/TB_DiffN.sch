@@ -6,22 +6,21 @@ V {}
 S {}
 E {}
 B 2 520 -300 1090 220 {flags=graph
-y1=-94.9145
-y2=101.484
+y1=-31
+y2=38
 ypos1=0
 ypos2=2
 
 
 unity=1
-x1=-3.62348
-x2=12.92
+x1=-3
+x2=7
 
 subdivx=8
 xlabmag=1.0
 ylabmag=1.0
-node="\\"out_n db20()\\"
-\\"out_P db20()\\""
-color="4 5"
+node="\\"out_n db20()\\""
+color=4
 dataset=-1
 unitx=1
 logx=1
@@ -36,9 +35,9 @@ lab=VDD}
 N -80 -70 -80 -50 {
 lab=GND}
 N 170 -10 200 -10 {
-lab=#net1}
+lab=VN}
 N 110 -70 200 -70 {
-lab=#net2}
+lab=VP}
 N 110 -10 110 10 {
 lab=GND}
 N 170 50 170 60 {
@@ -48,7 +47,7 @@ lab=GND}
 N 290 80 290 90 {
 lab=GND}
 N 290 0 290 20 {
-lab=#net3}
+lab=IT}
 N 250 -130 250 -100 {
 lab=VDD}
 N 340 -40 420 -40 {
@@ -57,20 +56,29 @@ N -220 -70 -220 -50 {
 lab=GND}
 N -220 -160 -220 -130 {
 lab=VSS}
-C {devices/code_shown.sym} -590 -410 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} -590 -590 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
-.param sw_stat_mismatch=0
-.param sw_stat_global=0
+
+*.include /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/spice/DiffN_net.spice
+*.include /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/spice/DiffN_net_pex.spice
+
+*.subckt DiffN_net VN VP OUT IT VDD VSS ----  NORMAL
+
+*Xdut VN VP out_n IT VDD VSS DiffN_net
+
+*subckt DiffN_net VSS VDD VN IT OUT VP ---- PEX
+
+*Xpex VSS VDD VN IT out_n VP DiffN_net
+
 "}
 C {devices/code_shown.sym} -580 -260 0 0 {name=NGSPICE only_toplevel=true
 value="
-.option gmin=1e-18
+.option gmin=1e-12
 
-.param ibias = 1p
-.param it_amp = 2p
+.param it_amp = 20p
 
 .control
   save all
@@ -127,3 +135,9 @@ C {devices/lab_wire.sym} 370 -40 0 0 {name=p6 sig_type=std_logic lab=out_n
 C {devices/vsource.sym} -220 -100 0 1 {name=VDD1 value=0}
 C {devices/gnd.sym} -220 -50 0 0 {name=l9 lab=GND}
 C {devices/lab_wire.sym} -220 -150 0 0 {name=p8 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 190 -10 0 1 {name=p1 sig_type=std_logic lab=VN
+}
+C {devices/lab_wire.sym} 170 -70 0 1 {name=p2 sig_type=std_logic lab=VP
+}
+C {devices/lab_wire.sym} 290 0 0 1 {name=p3 sig_type=std_logic lab=IT
+}

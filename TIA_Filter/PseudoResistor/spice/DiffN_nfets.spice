@@ -1,0 +1,53 @@
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffN_nfets.sch
+.subckt DiffN_nfets D1 D2 G1 G2 S B
+*.PININFO D1:B D2:B G1:B G2:B S:B B:B
+M1 D1 G1 net1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2 D2 G2 net5 B nfet_03v3 L=2u W=2u nf=1 m=1
+M3 D1 G1 net2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M4 D1 G1 net3 B nfet_03v3 L=2u W=2u nf=1 m=1
+M5 D1 G1 net4 B nfet_03v3 L=2u W=2u nf=1 m=1
+M6 net1 G1 S B nfet_03v3 L=2u W=2u nf=1 m=1
+M7 net2 G1 S B nfet_03v3 L=2u W=2u nf=1 m=1
+M8 net3 G1 S B nfet_03v3 L=2u W=2u nf=1 m=1
+M9 net4 G1 S B nfet_03v3 L=2u W=2u nf=1 m=1
+M10 D2 G2 net6 B nfet_03v3 L=2u W=2u nf=1 m=1
+M11 D2 G2 net7 B nfet_03v3 L=2u W=2u nf=1 m=1
+M12 D2 G2 net8 B nfet_03v3 L=2u W=2u nf=1 m=1
+M13 net5 G2 S B nfet_03v3 L=2u W=2u nf=1 m=1
+M14 net6 G2 S B nfet_03v3 L=2u W=2u nf=1 m=1
+M15 net7 G2 S B nfet_03v3 L=2u W=2u nf=1 m=1
+M16 net8 G2 S B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[1] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[2] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[3] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[4] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[5] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[6] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[7] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[8] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[9] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[10] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[11] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[12] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[13] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[14] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[15] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[16] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[17] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[18] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[19] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[20] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[21] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[22] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[23] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[24] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[25] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[26] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[27] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[28] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[29] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[30] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[31] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[32] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+.ends
+.end
