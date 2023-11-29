@@ -218,35 +218,11 @@ write TB_filter_noPR_ac.raw
 "}
 C {Folded/FoldedCascode.sym} 620 -290 0 0 {name=x1}
 C {devices/lab_wire.sym} -420 40 0 0 {name=p4 sig_type=std_logic lab=Vin_neg}
-C {symbols/cap_mim_2p0fF.sym} 600 -50 3 0 {name=C3
-W=15e-6
-L=15e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {symbols/cap_mim_2p0fF.sym} 270 -260 0 0 {name=C4
-W=15e-6
-L=15e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {symbols/cap_mim_2p0fF.sym} -350 40 1 0 {name=C5
-W=150e-6
-L=150e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {symbols/cap_mim_2p0fF.sym} -350 -330 1 0 {name=C1
-W=150e-6
-L=150e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
 C {devices/isource.sym} 560 -170 0 1 {name=I0 value=250n}
 C {devices/gnd.sym} 560 -130 0 1 {name=l3 lab=GND}
 C {devices/vsource.sym} 220 -120 0 0 {name=Vcm value=1.65}
 C {devices/gnd.sym} 220 -60 0 1 {name=l6 lab=GND}
-C {devices/vsource.sym} -530 -300 0 0 {name=Vin1 value=1.64965}
+C {devices/vsource.sym} -530 -300 0 0 {name=Vin1 value=1.64982}
 C {devices/gnd.sym} -530 -240 0 1 {name=l12 lab=GND}
 C {devices/vsource.sym} -530 70 0 1 {name=V2 value="0 DC 1 AC"
 }
@@ -279,3 +255,31 @@ value=0.5T
 footprint=1206
 device=resistor
 m=1}
+C {symbols/cap_mim_2p0fF.sym} 270 -260 0 0 {name=C8
+W=9.8e-6
+L=9.8e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1
+}
+C {symbols/cap_mim_2p0fF.sym} 600 -50 1 1 {name=C7
+W=9.8e-6
+L=9.8e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1
+}
+C {symbols/cap_mim_2p0fF.sym} -350 -330 3 1 {name=C3
+W=100e-6
+L=100e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1
+}
+C {symbols/cap_mim_2p0fF.sym} -350 40 1 0 {name=C4
+W=100e-6
+L=100e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1
+}

@@ -38,8 +38,8 @@ hilight_wave=-1
 
 
 divx=10
-y1=-49
-y2=82
+y1=-58
+y2=97
 
 
 rainbow=0
@@ -86,8 +86,8 @@ hilight_wave=-1
 
 
 divx=10
-y1=0.046
-y2=3.3
+y1=0.0013
+y2=70000
 
 
 rainbow=0
@@ -97,13 +97,14 @@ subdivx=4
 subdivy=4
 
 
-x1=0.001
-x2=1e+09
+x1=0.00131079
+x2=69878.9
 
 
 sim_type=dc
 color=4
-node=vout}
+node=vout
+sweep=vout}
 N -130 160 -130 180 {
 lab=GND}
 N -130 80 -130 100 {
@@ -166,16 +167,16 @@ save all
 
 op
 remzerovec 
-write TB_TIA_dc.raw
+write TB_Folded_dc.raw
 set appendwrite
 
-dc V1 1.64 1.66 0.001m
-remzerovec
-write TB_TIA_dc.raw
+*dc V1 1.64 1.66 0.001m
+*remzerovec
+*write TB_Folded_dc.raw
 
 ac dec 10 1m 1e9
 remzerovec
-write TB_TIA_dc.raw
+write TB_Folded_dc.raw
 
 
 .endc
@@ -206,15 +207,11 @@ value=5p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 660 90 0 0 {name=l5 lab=GND}
-C {devices/gnd.sym} 190 40 0 0 {name=l6 lab=GND
-spice_ignore=true}
 C {devices/gnd.sym} 480 60 0 0 {name=l7 lab=GND}
-C {devices/vsource.sym} 190 -10 0 0 {name=V2 value="sin(1.65 0.01m 1k 0 0 0)"
-spice_ignore=true}
 C {devices/lab_wire.sym} 250 -40 0 1 {name=p2 sig_type=std_logic lab=Vin}
 C {devices/gnd.sym} 410 200 0 0 {name=l3 lab=GND}
 C {FoldedCascode.sym} 470 0 0 0 {name=x1}
-C {devices/vsource.sym} -20 -10 0 1 {name=V1 value="1.64985 DC 1 AC"
+C {devices/vsource.sym} -20 -10 0 1 {name=V1 value="1.64982 DC 1 AC"
 }
 C {devices/gnd.sym} -20 40 0 0 {name=l2 lab=GND
 }

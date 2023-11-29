@@ -453,11 +453,11 @@ C {devices/iopin.sym} -210 -560 0 0 {name=p5 lab=VG}
 C {devices/iopin.sym} -210 -540 0 0 {name=p6 lab=VC_A}
 C {devices/iopin.sym} -210 -520 0 0 {name=p7 lab=VC_B}
 C {devices/iopin.sym} -210 -500 0 0 {name=p8 lab=VB}
-C {symbols/pfet_03v3.sym} 200 -600 3 1 {name=M3
+C {symbols/pfet_03v3.sym} 200 -600 3 1 {name=M3[1:32]
 L=2u
 W=2u
 nf=1
-m=32
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"

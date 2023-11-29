@@ -223,11 +223,11 @@ N 80 280 80 300 {
 lab=VS1}
 N 430 50 440 50 {
 lab=VG}
-C {symbols/nfet_03v3.sym} 150 -280 3 1 {name=M5
+C {symbols/nfet_03v3.sym} 150 -280 3 1 {name=M5[1:32]
 L=2u
 W=2u
 nf=1
-m=32
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"

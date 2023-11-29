@@ -207,13 +207,13 @@ lab=VA}
 N -600 -270 -600 -250 {
 lab=GND}
 N 320 -130 500 -130 {
-lab=#net3}
+lab=ITN}
 N 350 -120 500 -120 {
-lab=#net4}
+lab=ITP}
 N 180 -180 500 -180 {
-lab=#net5}
+lab=IBN}
 N 220 -170 500 -170 {
-lab=#net6}
+lab=IBP}
 N 320 -70 320 -60 {
 lab=GND}
 N 180 -120 180 -110 {
@@ -238,25 +238,32 @@ N 550 -70 550 -40 {
 lab=VB__i}
 N 550 20 550 50 {
 lab=VB}
-C {devices/code_shown.sym} -1090 -940 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} -420 -590 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 
+*.include  /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/layout/spice/PRbiased_net_pex.spice
+
+*.subckt PRbiased_net VSS VDD ITN IBN VA IBP VB ITP
+
+*Xpex 0 VDD ITN IBN VA__i IBP VB__i ITP PRbiased_net
 
 "}
 C {devices/code_shown.sym} -420 -300 0 0 {name=NGSPICE only_toplevel=true
 value="
 *.option savecurrents
-.option gmin=1e-32
-.option RSHUNT=1e35
+.option gmin=1e-21
+*.option RSHUNT=1e35
 *.option RELTOL=1e-9
-*.OPTION ABSTOL=1e-14
+*.OPTION ABSTOL=1e2
 *.option vntol = 1e-9
 
 .param ibias = 1p
 .param it_amp = 2p
+
+.nodeset V(IBP)=1.65
 
 .control
 save all
@@ -363,7 +370,8 @@ end
 .save idiff Rdiff
 "
 spice_ignore=true}
-C {PRbiased_net.sym} 470 -150 0 0 {name=x6}
+C {PRbiased_net.sym} 470 -150 0 0 {name=x6
+}
 C {devices/isource.sym} 320 -100 0 1 {name=I4 value=\{it_amp\}}
 C {devices/isource.sym} 350 -90 2 1 {name=I5 value=\{it_amp\}}
 C {devices/isource.sym} 180 -150 0 1 {name=I6 value=\{ibias\}}
@@ -386,6 +394,10 @@ C {devices/lab_wire.sym} 550 -50 0 0 {name=p10 sig_type=std_logic lab=VB__i
 }
 C {devices/ammeter.sym} 550 -10 2 0 {name=Vbi
 }
-C {/home/lci-ufsc/Desktop/Bracolin/TIA_Filter/auxLib/ampOp_ideal.sym} -640 -200 0 0 {name=x1}
-C {/home/lci-ufsc/Desktop/Bracolin/TIA_Filter/auxLib/ampOp_ideal.sym} -920 70 0 0 {name=x2}
-C {/home/lci-ufsc/Desktop/Bracolin/TIA_Filter/auxLib/ampOp_ideal.sym} -660 70 0 0 {name=x3}
+C {/home/gmaranhao/Desktop/Bracolin/TIA_Filter/auxLib/ampOp_ideal.sym} -640 -200 0 0 {name=x1}
+C {/home/gmaranhao/Desktop/Bracolin/TIA_Filter/auxLib/ampOp_ideal.sym} -920 70 0 0 {name=x2}
+C {/home/gmaranhao/Desktop/Bracolin/TIA_Filter/auxLib/ampOp_ideal.sym} -660 70 0 0 {name=x3}
+C {devices/lab_wire.sym} 290 -180 0 0 {name=p1 sig_type=std_logic lab=IBN}
+C {devices/lab_wire.sym} 290 -170 2 1 {name=p3 sig_type=std_logic lab=IBP}
+C {devices/lab_wire.sym} 440 -120 2 1 {name=p4 sig_type=std_logic lab=ITP}
+C {devices/lab_wire.sym} 440 -130 0 0 {name=p5 sig_type=std_logic lab=ITN}
