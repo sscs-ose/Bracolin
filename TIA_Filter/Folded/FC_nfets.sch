@@ -25,6 +25,18 @@ N 80 -110 90 -110 {
 lab=G1}
 N 130 -110 160 -110 {
 lab=B}
+N 160 -360 160 -320 {
+lab=#net1}
+N 160 -360 220 -360 {
+lab=#net1}
+N 220 -360 220 -300 {
+lab=#net1}
+N 160 -300 220 -300 {
+lab=#net1}
+N 160 -320 160 -300 {
+lab=#net1}
+N 190 -320 190 -300 {
+lab=#net1}
 C {devices/iopin.sym} 40 -410 0 0 {name=p1 lab=S1}
 C {devices/iopin.sym} 40 -390 0 0 {name=p2 lab=S2}
 C {devices/iopin.sym} 40 -370 0 0 {name=p3 lab=D1}
@@ -67,3 +79,18 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
+C {symbols/nfet_03v3.sym} 190 -340 1 0 {name=M3[1:30]
+L=2u
+W=2u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {devices/lab_wire.sym} 170 -360 0 0 {name=p15 sig_type=std_logic lab=B}

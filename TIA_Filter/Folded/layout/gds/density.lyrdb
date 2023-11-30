@@ -3,8 +3,32 @@
  <description>GF180 DENSITY DRC Run Report at</description>
  <original-file/>
  <generator>drc: script='/home/gmaranhao/pdk/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
- <top-cell>FC_pfets</top-cell>
+ <top-cell>FC_nfets_x2</top-cell>
  <tags>
+  <tag>
+   <name>red</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>green</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>blue</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>yellow</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>waived</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>important</name>
+   <description/>
+  </tag>
  </tags>
  <categories>
   <category>
@@ -50,7 +74,7 @@
  </categories>
  <cells>
   <cell>
-   <name>FC_pfets</name>
+   <name>FC_nfets_x2</name>
    <variant/>
    <references>
    </references>
@@ -60,265 +84,331 @@
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (-0.45,-3.99;-0.45,-3.59;33.975,-3.59;33.975,-3.99)</value>
+    <value>polygon: (-0.555,-5.615;-0.555,-5.215;70.455,-5.215;70.455,-5.615)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (-0.48,-3.19;-0.48,-2.79;35.25,-2.79;35.25,-3.19)</value>
+    <value>polygon: (-0.555,-4.815;-0.555,-4.415;70.455,-4.415;70.455,-4.815)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (-0.53,-2.39;-0.53,-1.99;33.975,-1.99;33.975,-2.39)</value>
+    <value>polygon: (-0.555,-4.015;-0.555,-3.615;70.455,-3.615;70.455,-4.015)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (-0.545,-1.59;-0.545,-1.19;33.975,-1.19;33.975,-1.59)</value>
+    <value>polygon: (-0.555,-3.215;-0.555,-2.815;70.455,-2.815;70.455,-3.215)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (0.77,1.8;0.77,2.2;33.975,2.2;33.975,1.8)</value>
+    <value>polygon: (-0.555,0.175;-0.555,0.575;70.455,0.575;70.455,0.175)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (-0.03,2.745;-0.03,3.145;33.965,3.145;33.965,2.745)</value>
+    <value>polygon: (-0.555,1.12;-0.555,1.52;70.455,1.52;70.455,1.12)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (0.77,3.77;0.77,4.17;33.975,4.17;33.975,3.77)</value>
+    <value>polygon: (-0.555,2.145;-0.555,2.545;70.455,2.545;70.455,2.145)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (-0.015,7.225;-0.015,7.625;35.295,7.625;35.295,7.225)</value>
+    <value>polygon: (-0.555,5.6;-0.555,6;70.455,6;70.455,5.6)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (-0.1,8.025;-0.1,8.425;35.305,8.425;35.305,8.025)</value>
+    <value>polygon: (-0.555,6.4;-0.555,6.8;70.455,6.8;70.455,6.4)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (-0.45,8.825;-0.45,9.225;35.305,9.225;35.305,8.825)</value>
+    <value>polygon: (-0.555,7.2;-0.555,7.6;70.455,7.6;70.455,7.2)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (-0.065,9.625;-0.065,10.025;35.325,10.025;35.325,9.625)</value>
+    <value>polygon: (-0.555,8;-0.555,8.4;70.455,8.4;70.455,8)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (0.77,13.15;0.77,13.55;33.975,13.55;33.975,13.15)</value>
+    <value>polygon: (-0.555,11.525;-0.555,11.925;70.455,11.925;70.455,11.525)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (-0.03,14.095;-0.03,14.495;33.965,14.495;33.965,14.095)</value>
+    <value>polygon: (-0.555,12.47;-0.555,12.87;70.455,12.87;70.455,12.47)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (0.77,15.12;0.77,15.52;33.975,15.52;33.975,15.12)</value>
+    <value>polygon: (-0.555,13.495;-0.555,13.895;70.455,13.895;70.455,13.495)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (-0.45,18.535;-0.45,18.935;33.975,18.935;33.975,18.535)</value>
+    <value>polygon: (-0.555,16.91;-0.555,17.31;70.455,17.31;70.455,16.91)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (-0.48,19.335;-0.48,19.735;35.25,19.735;35.25,19.335)</value>
+    <value>polygon: (-0.555,17.71;-0.555,18.11;70.455,18.11;70.455,17.71)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (-0.53,20.135;-0.53,20.535;35.22,20.535;35.22,20.135)</value>
+    <value>polygon: (-0.555,18.51;-0.555,18.91;70.455,18.91;70.455,18.51)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (-0.545,20.935;-0.545,21.335;33.975,21.335;33.975,20.935)</value>
+    <value>polygon: (-0.555,19.31;-0.555,19.71;70.455,19.71;70.455,19.31)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M3.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (1.48,-5.56;1.48,21.605;2.96,21.605;2.96,-5.56)</value>
+    <value>polygon: (-0.555,-7.185;-0.555,19.98;0.925,19.98;0.925,-7.185)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M3.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (7.48,-5.56;7.48,21.695;8.96,21.695;8.96,-5.56)</value>
+    <value>polygon: (38.975,-7.185;38.975,19.98;40.455,19.98;40.455,-7.185)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M3.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (13.48,-5.56;13.48,21.74;14.96,21.74;14.96,-5.56)</value>
+    <value>polygon: (5.445,-7.185;5.445,20.07;6.925,20.07;6.925,-7.185)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M3.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (19.48,-5.56;19.48,21.74;20.96,21.74;20.96,-5.56)</value>
+    <value>polygon: (44.975,-7.185;44.975,20.07;46.455,20.07;46.455,-7.185)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M3.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (25.48,-5.56;25.48,21.775;26.96,21.775;26.96,-5.56)</value>
+    <value>polygon: (11.445,-7.185;11.445,20.115;12.925,20.115;12.925,-7.185)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M3.4'</category>
-   <cell>FC_pfets</cell>
+   <cell>FC_nfets_x2</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (31.48,-5.56;31.48,21.815;32.96,21.815;32.96,-5.56)</value>
+    <value>polygon: (17.445,-7.185;17.445,20.115;18.925,20.115;18.925,-7.185)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>FC_nfets_x2</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (50.975,-7.185;50.975,20.115;52.455,20.115;52.455,-7.185)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>FC_nfets_x2</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (56.975,-7.185;56.975,20.115;58.455,20.115;58.455,-7.185)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>FC_nfets_x2</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (23.445,-7.185;23.445,20.15;24.925,20.15;24.925,-7.185)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>FC_nfets_x2</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (62.975,-7.185;62.975,20.15;64.455,20.15;64.455,-7.185)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>FC_nfets_x2</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (29.445,-7.185;29.445,20.19;30.925,20.19;30.925,-7.185)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>FC_nfets_x2</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (68.975,-7.185;68.975,20.19;70.455,20.19;70.455,-7.185)</value>
    </values>
   </item>
  </items>

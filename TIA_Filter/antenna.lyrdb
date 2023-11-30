@@ -3,32 +3,8 @@
  <description>GF180 ANTENNA DRC Run Report at</description>
  <original-file/>
  <generator>drc: script='/home/gmaranhao/pdk/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
- <top-cell>FC_nfets_x2</top-cell>
+ <top-cell>FC_pfets_x4</top-cell>
  <tags>
-  <tag>
-   <name>red</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>green</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>blue</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>yellow</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>waived</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>important</name>
-   <description/>
-  </tag>
  </tags>
  <categories>
   <category>
@@ -187,7 +163,7 @@
  </categories>
  <cells>
   <cell>
-   <name>FC_nfets_x2</name>
+   <name>FC_pfets_x4</name>
    <variant/>
    <references>
    </references>
