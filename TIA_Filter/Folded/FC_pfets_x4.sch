@@ -19,7 +19,6 @@ N 360 -80 390 -80 {
 lab=G2}
 N 210 -190 210 -170 {
 lab=B}
-C {/home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_pfets.sym} 210 -80 0 0 {name=x1[1:4]}
 C {devices/iopin.sym} 30 -390 0 0 {name=p1 lab=S1}
 C {devices/iopin.sym} 30 -370 0 0 {name=p2 lab=S2}
 C {devices/iopin.sym} 30 -350 0 0 {name=p3 lab=D1}
@@ -34,3 +33,4 @@ C {devices/lab_wire.sym} 290 50 0 0 {name=p10 sig_type=std_logic lab=D2}
 C {devices/lab_wire.sym} 210 -170 0 0 {name=p12 sig_type=std_logic lab=B}
 C {devices/lab_wire.sym} 370 -80 0 1 {name=p14 sig_type=std_logic lab=G2}
 C {devices/lab_wire.sym} 50 -80 0 0 {name=p15 sig_type=std_logic lab=G1}
+C {FC_pfets.sym} 210 -80 0 0 {name=x1[1:4]}

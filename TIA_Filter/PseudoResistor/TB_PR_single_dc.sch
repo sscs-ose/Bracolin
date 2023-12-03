@@ -394,9 +394,9 @@ C {devices/lab_wire.sym} 550 -50 0 0 {name=p10 sig_type=std_logic lab=VB__i
 }
 C {devices/ammeter.sym} 550 -10 2 0 {name=Vbi
 }
-C {/home/gmaranhao/Desktop/Bracolin/TIA_Filter/auxLib/ampOp_ideal.sym} -640 -200 0 0 {name=x1}
-C {/home/gmaranhao/Desktop/Bracolin/TIA_Filter/auxLib/ampOp_ideal.sym} -920 70 0 0 {name=x2}
-C {/home/gmaranhao/Desktop/Bracolin/TIA_Filter/auxLib/ampOp_ideal.sym} -660 70 0 0 {name=x3}
+C {auxLib/ampOp_ideal.sym} -640 -200 0 0 {name=x1}
+C {auxLib/ampOp_ideal.sym} -920 70 0 0 {name=x2}
+C {auxLib/ampOp_ideal.sym} -660 70 0 0 {name=x3}
 C {devices/lab_wire.sym} 290 -180 0 0 {name=p1 sig_type=std_logic lab=IBN}
 C {devices/lab_wire.sym} 290 -170 2 1 {name=p3 sig_type=std_logic lab=IBP}
 C {devices/lab_wire.sym} 440 -120 2 1 {name=p4 sig_type=std_logic lab=ITP}

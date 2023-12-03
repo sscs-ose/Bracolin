@@ -86,8 +86,8 @@ hilight_wave=-1
 
 
 divx=10
-y1=0.0013
-y2=70000
+y1=0.085
+y2=3.1
 
 
 rainbow=0
@@ -97,14 +97,14 @@ subdivx=4
 subdivy=4
 
 
-x1=0.00131079
-x2=69878.9
+x1=0.001
+x2=1e+09
 
 
 sim_type=dc
 color=4
 node=vout
-sweep=vout}
+}
 N -130 160 -130 180 {
 lab=GND}
 N -130 80 -130 100 {
@@ -160,17 +160,12 @@ value="
 .control
 save all
 
-*tran 10u 10m
-*remzerovec
-*write TB_TIA_dc.raw
-*set appendwrite
-
 op
 remzerovec 
 write TB_Folded_dc.raw
 set appendwrite
 
-*dc V1 1.64 1.66 0.001m
+*dc V1 1.648 1.651 0.001m
 *remzerovec
 *write TB_Folded_dc.raw
 
