@@ -5,16 +5,16 @@ K {}
 V {}
 S {}
 E {}
-B 2 1950 -160 2750 240 {flags=graph
-y1=-0.024
-y2=3.4
+B 2 1410 -360 2210 40 {flags=graph
+y1=-0.079
+y2=3.7
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=5e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -26,27 +26,52 @@ unitx=1
 logx=0
 logy=0
 rainbow=1
-dataset=2}
-N 690 -510 710 -510 {
-lab=R}
+
+linewidth_mult=4
+dataset=1}
+B 2 1410 40 2210 440 {flags=graph
+
+
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=5e-06
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node=i(vvdd)
+color=4
+
+unitx=1
+logx=0
+logy=0
+rainbow=1
+
+linewidth_mult=4
+dataset=0
+y1=-300u
+y2=100u}
+P 4 5 -100 -220 1230 -220 1230 -120 -100 -120 -100 -220 {}
+P 4 5 -100 -100 1230 -100 1230 40 -100 40 -100 -100 {}
+T {**A
+} -40 20 0 0 0.4 0.4 {}
+T {M1} 540 -210 0 0 0.4 0.4 {}
+T {M2
+} 540 -80 0 0 0.4 0.4 {}
+T {Inserir Dummies*} -290 -180 0 0 0.4 0.4 {}
+T {Inserir Dummies*} -290 -40 0 0 0.4 0.4 {}
 N 710 -510 710 -450 {
 lab=R}
 N 710 -450 730 -450 {
 lab=R}
-N 690 -330 710 -330 {
-lab=S}
-N 710 -380 710 -330 {
-lab=S}
 N 710 -380 730 -380 {
 lab=S}
-N 480 -300 520 -300 {
-lab=vcap}
 N 480 -540 480 -300 {
 lab=vcap}
-N 480 -540 520 -540 {
-lab=vcap}
-N 620 -600 620 -550 {
-lab=vdd}
 N 190 -390 190 -360 {
 lab=lref}
 N 190 -480 190 -450 {
@@ -55,22 +80,14 @@ N 390 -650 390 -620 {
 lab=#net1}
 N 350 -620 390 -620 {
 lab=#net1}
-N 300 -360 520 -360 {
+N 300 -370 520 -370 {
 lab=lref}
-N 300 -480 520 -480 {
-lab=href}
 N 300 -690 620 -690 {
 lab=vdd}
 N 190 -740 190 -690 {
 lab=vdd}
 N 190 -360 190 -200 {
 lab=lref}
-N 620 -390 620 -370 {
-lab=vdd}
-N 620 -470 620 -450 {
-lab=#net1}
-N 620 -290 620 -270 {
-lab=#net1}
 N 780 -600 780 -480 {
 lab=vdd}
 N 620 -690 780 -690 {
@@ -251,23 +268,35 @@ N 340 -650 350 -650 {
 lab=vdd}
 N 190 -690 300 -690 {
 lab=vdd}
-N 190 -480 300 -480 {
-lab=href}
-N 190 -360 300 -360 {
+N 190 -370 300 -370 {
 lab=lref}
 N 1280 -140 1280 -120 {
 lab=vcap}
 N 1280 -60 1280 -40 {
 lab=icap}
-N 1280 -120 1570 -120 {
-lab=vcap}
-N 1280 -60 1570 -60 {
-lab=icap}
 N 1280 -190 1280 -140 {
 lab=vcap}
+N 480 -550 570 -550 {
+lab=vcap}
+N 480 -550 480 -540 {
+lab=vcap}
+N 190 -490 570 -490 {
+lab=href}
+N 710 -520 710 -510 {
+lab=R}
+N 620 -600 620 -590 {
+lab=vdd}
+N 620 -410 650 -410 {
+lab=vdd}
+N 520 -370 570 -370 {
+lab=lref}
+N 480 -310 570 -310 {
+lab=vcap}
+N 710 -380 710 -340 {
+lab=S}
 C {symbols/pfet_03v3.sym} 370 -650 0 1 {name=M1
-L=4u
-W=5u
+L=2u
+W=2u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -281,7 +310,7 @@ spiceprefix=X
 }
 C {devices/gnd.sym} 190 -30 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 190 -740 0 0 {name=p1 sig_type=std_logic lab=vdd}
-C {devices/code_shown.sym} 2160 -580 0 0 {name=SPICE1 only_toplevel=false
+C {devices/code_shown.sym} 2220 -580 0 0 {name=SPICE1 only_toplevel=false
 value="
 vvdd vdd 0 3.3
 vcurr curr 0 0
@@ -290,40 +319,51 @@ v2ibias 2ibias 0 0
 vicap icap 0 0
 
 .control
-let temperature = -10
+save all
 
-while temperature<85
-set temp = $&temperature
-tran 50p 500n
+let temperature = -40
 
-write clockGenerator.raw
-*wrdata /home/cesaralbuquerque/Desktop/out/transient[$&temperature].txt V(out)
-set appendwrite
-let temperature = temperature + 20
+while temperature<130
+ reset
+ set temp = $&temperature
+ remzerovec
+ tran 1n 5000n
+ write clockGenerator.raw
+ set appendwrite
+
+ *wrdata /home/cesaralbuquerque/Desktop/out/transient[$&temperature].txt V(out)
+ let temperature = temperature + 20
 end
-
-
 .endc
 .save all
 "
 
+.save all
+
+"
+
+
+
+
+
+
 }
 C {devices/lab_pin.sym} 1090 -490 3 1 {name=p2 sig_type=std_logic lab=out
 }
-C {devices/lab_pin.sym} 410 -480 1 0 {name=p3 sig_type=std_logic lab=href}
+C {devices/lab_pin.sym} 410 -490 1 0 {name=p3 sig_type=std_logic lab=href}
 C {devices/lab_pin.sym} 1280 -280 2 0 {name=p5 sig_type=std_logic lab=vcap
 }
-C {devices/lab_pin.sym} 410 -360 1 0 {name=p4 sig_type=std_logic lab=lref}
+C {devices/lab_pin.sym} 410 -370 1 0 {name=p4 sig_type=std_logic lab=lref}
 C {devices/lab_pin.sym} 1070 -330 3 1 {name=p6 sig_type=std_logic lab=outnt
 }
 C {devices/lab_pin.sym} 710 -480 0 0 {name=p8 sig_type=std_logic lab=R}
 C {devices/lab_pin.sym} 710 -360 0 0 {name=p9 sig_type=std_logic lab=S}
-C {devices/lab_pin.sym} 620 -390 1 0 {name=p7 sig_type=std_logic lab=vdd}
+C {devices/lab_pin.sym} 650 -410 1 0 {name=p7 sig_type=std_logic lab=vdd}
 C {symbols/nfet_03v3.sym} 830 -170 0 0 {name=M2
-L=500n
-W=500n
+L=2u
+W=2u
 nf=1
-m=3
+m=4
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -334,10 +374,10 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 1120 -170 0 1 {name=M3
-L=500n
-W=500n
+L=2u
+W=2u
 nf=1
-m=6
+m=8
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -348,8 +388,8 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 170 -170 0 0 {name=M4
-L=500n
-W=500n
+L=2u
+W=2u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -363,8 +403,8 @@ spiceprefix=X
 }
 C {devices/gnd.sym} 20 -30 0 1 {name=l5 lab=GND}
 C {symbols/nfet_03v3.sym} 40 -170 0 1 {name=M5
-L=500n
-W=500n
+L=2u
+W=2u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -382,10 +422,10 @@ C {devices/lab_pin.sym} 110 -170 1 0 {name=p10 sig_type=std_logic lab=vbias
 C {devices/lab_pin.sym} 1160 -170 2 0 {name=p11 sig_type=std_logic lab=vbias}
 C {devices/lab_pin.sym} 790 -170 2 1 {name=p12 sig_type=std_logic lab=vbias}
 C {symbols/nfet_03v3.sym} 830 -60 0 0 {name=M6
-L=3u
-W=10u
+L=2u
+W=2u
 nf=1
-m=3
+m=24
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -396,8 +436,22 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 1120 -60 0 1 {name=M7
-L=3u
-W=10u
+L=2u
+W=2u
+nf=1
+m=48
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 170 -60 0 0 {name=M8
+L=2u
+W=2u
 nf=1
 m=6
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -409,25 +463,11 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/nfet_03v3.sym} 170 -60 0 0 {name=M8
-L=3u
-W=10u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=nfet_03v3
-spiceprefix=X
-}
 C {symbols/nfet_03v3.sym} 40 -60 0 1 {name=M9
-L=3u
-W=10u
+L=2u
+W=2u
 nf=1
-m=1
+m=6
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -467,10 +507,10 @@ spiceprefix=X
 }
 C {devices/gnd.sym} 350 -30 0 1 {name=l1 lab=GND}
 C {symbols/nfet_03v3.sym} 370 -60 0 1 {name=M11
-L=3u
-W=5u
+L=2u
+W=2u
 nf=1
-m=1
+m=6
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -486,40 +526,28 @@ C {devices/lab_pin.sym} 1280 -20 1 1 {name=p19 sig_type=std_logic lab=icap
 }
 C {symbols/cap_mim_2p0fF.sym} 1280 -90 0 0 {name=C2
 W=10e-6
-L=4.2e-6
+L=42e-6
 model=cap_mim_2f0fF
 spiceprefix=X
-m=1}
+m=4}
 C {devices/code_shown.sym} 1550 -570 0 0 {name=MODELS1 only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice SS
+.lib $::180MCU_MODELS/sm141064.ngspice typical
 .lib $::180MCU_MODELS/sm141064.ngspice res_typical
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice cap_mim
-* .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
+*.lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 *.param sw_stat_mismatch=1
 *.param sw_stat_global=1
 "}
-C {symbols/cap_mim_2p0fF.sym} 1420 -90 0 0 {name=C1
-W=10e-6
-L=4.2e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {symbols/cap_mim_2p0fF.sym} 1570 -90 0 0 {name=C3
-W=10e-6
-L=4.2e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {symbols/VCIS.sym} 1270 -410 0 0 {name=x4}
-C {symbols/RS.sym} 690 -410 0 0 {name=x3}
-C {symbols/comparator.sym} 670 -330 0 0 {name=x1}
-C {symbols/comparator.sym} 670 -510 0 0 {name=x2}
-C {devices/launcher.sym} 2015 295 0 0 {name=h1
+C {symbols_clock/VCIS.sym} 1270 -410 0 0 {name=x3}
+C {symbols_clock/RS.sym} 690 -410 0 0 {name=x4}
+C {symbols_clock/comparatornew.sym} 560 -520 0 0 {name=x5}
+C {symbols_clock/comparatornew.sym} 560 -340 0 0 {name=x1}
+C {devices/launcher.sym} 1475 495 0 0 {name=h1
 descr="Click left mouse button here with control key
 pressed to load/unload waveforms in graph."
 tclcommand="

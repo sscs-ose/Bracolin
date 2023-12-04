@@ -1,4 +1,4 @@
-v {xschem version=3.4.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -96,8 +96,8 @@ lab=Q}
 N 250 -240 250 -180 {
 lab=vdd}
 C {symbols/pfet_03v3.sym} 150 -50 0 1 {name=M1
-L=0.28u
-W=0.22u
+L=600n
+W=600n
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -110,8 +110,8 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} -100 50 0 0 {name=M2
-L=0.28u
-W=0.22u
+L=600n
+W=600n
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -124,8 +124,8 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 150 50 0 1 {name=M3
-L=0.28u
-W=0.22u
+L=600n
+W=600n
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -138,8 +138,8 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 110 -150 0 0 {name=M4
-L=0.28u
-W=0.22u
+L=600n
+W=600n
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -152,8 +152,8 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 340 -50 0 0 {name=M5
-L=0.28u
-W=0.22u
+L=600n
+W=600n
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -166,8 +166,8 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 340 50 0 0 {name=M6
-L=0.28u
-W=0.22u
+L=600n
+W=600n
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -180,8 +180,8 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 380 -150 0 1 {name=M7
-L=0.28u
-W=0.22u
+L=600n
+W=600n
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -194,8 +194,8 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 590 50 0 1 {name=M8
-L=0.28u
-W=0.22u
+L=600n
+W=600n
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -213,9 +213,3 @@ C {devices/iopin.sym} 250 -240 1 1 {name=p3 lab=vdd}
 C {devices/iopin.sym} -80 -40 1 1 {name=p4 lab=notQ}
 C {devices/iopin.sym} 570 -40 1 1 {name=p5 lab=Q}
 C {devices/gnd.sym} 240 80 0 0 {name=l1 lab=GND}
-C {devices/code_shown.sym} 10 130 0 0 {name=MODELS only_toplevel=true
-format="tcleval( @value )"
-value="
-.include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
-"}
