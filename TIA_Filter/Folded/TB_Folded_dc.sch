@@ -38,8 +38,8 @@ hilight_wave=-1
 
 
 divx=10
-y1=-58
-y2=95
+y1=-60
+y2=93
 
 
 rainbow=0
@@ -153,7 +153,7 @@ value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 
-.include /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/layout/spice/FC_top_pex.spice
+.include /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/layout/spice/FC_top_pex2.spice
 
 *subckt FC_top VP VN VOUT IREF AVSS AVDD
 
@@ -161,10 +161,7 @@ Xpex Vin VN Vout IREF 0 AVDD FC_top
 "}
 C {devices/code_shown.sym} -480 -120 0 0 {name=NGSPICE only_toplevel=true
 value="
-.option gmin=1e-26
-
-.option abstol=1e2
-.option retol=1e-15
+.option gmin=1e-18
 
 .control
 save all

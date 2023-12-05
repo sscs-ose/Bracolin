@@ -15,16 +15,11 @@ load $1_flat
 select top cell
 cellname delete $1
 cellname rename $1_flat $1
-extract path extfiles
+extract no all
+extract do local
 extract all
-ext2sim labels on
-ext2sim -p extfiles
-extresist tolerance 100
-extresist
 ext2spice lvs
-ext2spice cthresh 0
-ext2spice extresist on
-ext2spice -p extfiles
+ext2spice
 quit
 EOF
 exit 0
