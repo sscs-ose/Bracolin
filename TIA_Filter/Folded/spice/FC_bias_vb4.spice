@@ -1,0 +1,41 @@
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_vb4.sch
+.subckt FC_bias_vb4 VDD VB4
+*.PININFO VDD:B VB4:B
+M3 net1 VB4 VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M4 net3 VB4 net1 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M5 net2 VB4 net3 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M6 net7 VB4 net2 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M7 net4 VB4 net7 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M8 net6 VB4 net4 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M9 net5 VB4 net6 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M10 net8 VB4 net5 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M11 net12 VB4 net8 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M12 net9 VB4 net12 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M13 net11 VB4 net9 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M14 net10 VB4 net11 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M17 VB4 VB4 net10 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[1] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[2] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[3] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[4] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[5] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[6] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[7] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[8] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[9] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[10] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[11] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[12] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[13] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[14] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[15] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[16] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[17] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[18] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[19] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[20] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[21] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[22] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[23] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+.ends
+.end

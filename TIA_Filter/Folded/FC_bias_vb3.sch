@@ -16,19 +16,19 @@ lab=#net4}
 N 360 90 360 120 {
 lab=#net5}
 N 360 -210 370 -210 {
-lab=VB3}
+lab=VSS}
 N 370 -210 370 240 {
-lab=VB3}
+lab=VSS}
 N 360 240 370 240 {
-lab=VB3}
+lab=VSS}
 N 360 150 370 150 {
-lab=VB3}
+lab=VSS}
 N 360 60 370 60 {
-lab=VB3}
+lab=VSS}
 N 360 -30 370 -30 {
-lab=VB3}
+lab=VSS}
 N 360 -120 370 -120 {
-lab=VB3}
+lab=VSS}
 N 310 -210 320 -210 {
 lab=VB3}
 N 310 -210 310 150 {
@@ -42,11 +42,11 @@ lab=VB3}
 N 310 -120 320 -120 {
 lab=VB3}
 N 360 270 360 300 {
-lab=VB3}
+lab=VSS}
 N 370 240 370 300 {
-lab=VB3}
+lab=VSS}
 N 360 300 370 300 {
-lab=VB3}
+lab=VSS}
 N 360 -270 360 -240 {
 lab=VB3}
 N 310 150 310 240 {
@@ -60,7 +60,21 @@ lab=VB3}
 N 360 -290 360 -270 {
 lab=VB3}
 N 360 300 360 340 {
-lab=VB3}
+lab=VSS}
+N 560 -160 570 -160 {
+lab=VSS}
+N 560 -160 560 -130 {
+lab=VSS}
+N 560 -130 630 -130 {
+lab=VSS}
+N 630 -200 630 -130 {
+lab=VSS}
+N 560 -200 630 -200 {
+lab=VSS}
+N 560 -200 560 -160 {
+lab=VSS}
+N 600 -160 600 -130 {
+lab=VSS}
 C {symbols/nfet_03v3.sym} 340 -210 0 0 {name=M1
 L=2u
 W=1.2u
@@ -149,3 +163,18 @@ C {devices/iopin.sym} 220 -100 0 1 {name=p21 lab=VSS}
 C {devices/iopin.sym} 220 -120 0 1 {name=p23 lab=VB3}
 C {devices/lab_wire.sym} 360 -290 0 0 {name=p3 sig_type=std_logic lab=VB3}
 C {devices/lab_wire.sym} 360 340 2 1 {name=p1 sig_type=std_logic lab=VSS}
+C {symbols/nfet_03v3.sym} 600 -180 1 0 {name=M3[1:14]
+L=2u
+W=1.2u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {devices/lab_wire.sym} 590 -200 0 0 {name=p2 sig_type=std_logic lab=VSS}

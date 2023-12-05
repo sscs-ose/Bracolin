@@ -38,11 +38,11 @@ lab=VDD}
 N 420 -630 420 -610 {
 lab=VDD}
 N 460 -580 480 -580 {
-lab=vb4}
+lab=VB4}
 N 480 -580 480 380 {
-lab=vb4}
+lab=VB4}
 N 460 380 480 380 {
-lab=vb4}
+lab=VB4}
 N 410 -580 410 380 {
 lab=VDD}
 N 410 380 420 380 {
@@ -70,39 +70,51 @@ lab=VDD}
 N 410 -500 420 -500 {
 lab=VDD}
 N 460 -500 470 -500 {
-lab=vb4}
+lab=VB4}
 N 470 -500 480 -500 {
-lab=vb4}
+lab=VB4}
 N 460 -420 470 -420 {
-lab=vb4}
+lab=VB4}
 N 470 -420 480 -420 {
-lab=vb4}
+lab=VB4}
 N 460 -340 480 -340 {
-lab=vb4}
+lab=VB4}
 N 460 -260 480 -260 {
-lab=vb4}
+lab=VB4}
 N 460 -180 480 -180 {
-lab=vb4}
+lab=VB4}
 N 460 -100 480 -100 {
-lab=vb4}
+lab=VB4}
 N 460 -20 480 -20 {
-lab=vb4}
+lab=VB4}
 N 460 60 480 60 {
-lab=vb4}
+lab=VB4}
 N 460 140 480 140 {
-lab=vb4}
+lab=VB4}
 N 460 220 480 220 {
-lab=vb4}
+lab=VB4}
 N 460 300 480 300 {
-lab=vb4}
+lab=VB4}
 N 420 410 420 450 {
-lab=vb4}
+lab=VB4}
 N 420 450 440 450 {
-lab=vb4}
+lab=VB4}
 N 440 450 480 450 {
-lab=vb4}
+lab=VB4}
 N 480 380 480 450 {
-lab=vb4}
+lab=VB4}
+N 620 -610 620 -570 {
+lab=VDD}
+N 620 -610 680 -610 {
+lab=VDD}
+N 680 -610 680 -550 {
+lab=VDD}
+N 620 -550 680 -550 {
+lab=VDD}
+N 620 -570 620 -550 {
+lab=VDD}
+N 650 -580 650 -550 {
+lab=VDD}
 C {symbols/pfet_03v3.sym} 440 -580 0 1 {name=M3
 L=2u
 W=1.2u
@@ -292,3 +304,20 @@ C {devices/lab_wire.sym} 480 -550 0 1 {name=p2 sig_type=std_logic lab=VB4
 }
 C {devices/iopin.sym} 200 -350 0 1 {name=p21 lab=VDD}
 C {devices/iopin.sym} 200 -370 0 1 {name=p23 lab=VB4}
+C {symbols/pfet_03v3.sym} 650 -590 3 1 {name=M1[1:23]
+L=2u
+W=1.2u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {devices/lab_wire.sym} 670 -610 0 1 {name=p3 sig_type=std_logic lab=VDD
+
+}
