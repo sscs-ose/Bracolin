@@ -255,7 +255,7 @@ C {devices/code_shown.sym} -420 -300 0 0 {name=NGSPICE only_toplevel=true
 value="
 *.option savecurrents
 .option gmin=1e-21
-*.option RSHUNT=1e35
+.option RSHUNT=1e35
 *.option RELTOL=1e-9
 *.OPTION ABSTOL=1e2
 *.option vntol = 1e-9

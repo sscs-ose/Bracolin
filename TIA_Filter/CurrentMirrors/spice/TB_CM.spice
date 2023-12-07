@@ -1,0 +1,182 @@
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/TB_CM.sch
+.subckt TB_CM
+
+I35 VDDn IN {i_n}
+Vddn VDDn GND 3.3
+x2 IN net1 net2 GND CM_nfets
+x3 IN net3 net4 GND CM_nfets
+x4 IN net5 net6 GND CM_nfets
+x5 IN net7 net8 GND CM_nfets
+x6 IN net9 net10 GND CM_nfets
+V1 V1 VDDn 0
+.save i(v1)
+V2 V2 VDDn 0
+.save i(v2)
+V3 net1 VDDn 0
+.save i(v3)
+V4 net2 VDDn 0
+.save i(v4)
+V5 net3 VDDn 0
+.save i(v5)
+V6 net4 VDDn 0
+.save i(v6)
+V7 net5 VDDn 0
+.save i(v7)
+V8 net6 VDDn 0
+.save i(v8)
+V9 net7 VDDn 0
+.save i(v9)
+V10 net8 VDDn 0
+.save i(v10)
+V11 net9 VDDn 0
+.save i(v11)
+V12 net10 VDDn 0
+.save i(v12)
+x1 IN V1 V2 GND CM_nfets
+**** begin user architecture code
+
+.include /home/gmaranhao/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /home/gmaranhao/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+*.param sw_stat_mismatch=1
+*.param sw_stat_global=1
+
+*.include /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/layout/spice/CM_nfets_pex.spice
+
+*.subckt CM_nfets VSS OUT1 OUT2 IN
+
+*X1 0 V1 V2 IN CM_nfets
+*X1
+*X1
+*X1
+*X1
+*X1
+
+
+
+.option gmin=1e-18
+.param i_n=1n
+
+.control
+save all
+
+let sample_num = 0
+
+*while sample_num<151
+
+reset
+op
+remzerovec
+write TB_CM.raw
+*wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/out_cm.txt i(V1) i(V2) i(V3)
+*+ i(V4) i(V5) i(V6) i(V7) i(V8) i(V9) i(V
+10) i(V11) i(V12)
+set appendwrite
+
+*let sample_num = sample_num + 1
+*end
+
+
+.endc
+.save all
+
+
+**** end user architecture code
+.ends
+
+* expanding   symbol:  CurrentMirrors/CM_nfets.sym # of pins=4
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_nfets.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_nfets.sch
+.subckt CM_nfets IN OUT1 OUT2 VSS
+*.PININFO IN:B OUT1:B OUT2:B VSS:B
+M2[1] IN IN VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M2[2] IN IN VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M2[3] IN IN VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M2[4] IN IN VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M2[5] IN IN VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M2[6] IN IN VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M2 OUT1 IN net3 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M11 net4 IN net6 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M12 net6 IN net7 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M13 net7 IN net8 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M14 net8 IN net9 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M15 net9 IN net10 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M16 net10 IN net11 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M17 net11 IN net12 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M18 net12 IN net13 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M19 net13 IN net14 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M20 net14 IN net1 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M21 net1 IN net15 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M22 net15 IN net16 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M23 net16 IN net17 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M24 net17 IN net18 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M25 net18 IN net19 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M26 net19 IN net20 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M27 net20 IN net21 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M28 net21 IN net22 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M29 net22 IN net23 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M30 net23 IN net2 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M31 net2 IN net24 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M32 net24 IN net25 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M33 net25 IN net26 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M34 net26 IN net27 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M35 net27 IN net28 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M36 net28 IN net29 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1 net29 IN net30 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M37 net30 IN net31 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M38 net31 IN net32 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M9 net32 IN VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M5 net3 IN net4 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M8 net5 IN net33 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M10 net33 IN net34 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M39 net34 IN net35 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M40 net35 IN net36 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M41 net36 IN net37 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M42 net37 IN net38 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M43 net38 IN net39 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M44 net39 IN net40 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M45 net40 IN net41 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M46 net41 IN VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M47 OUT2 IN net42 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M48 net42 IN net43 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M49 net43 IN net44 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M50 net44 IN net45 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M51 net45 IN net46 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M52 net46 IN net5 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[1] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[2] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[3] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[4] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[5] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[6] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[7] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[8] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[9] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[10] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[11] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[12] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[13] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[14] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[15] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[16] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[17] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[18] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[19] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[20] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[21] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[22] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[23] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[24] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[25] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[26] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[27] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[28] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[29] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[30] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[31] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[32] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[33] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[34] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+.ends
+
+.GLOBAL GND
+.end
