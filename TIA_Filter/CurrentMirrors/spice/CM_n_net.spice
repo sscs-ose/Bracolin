@@ -1,86 +1,13 @@
-** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/TB_CM.sch
-.subckt TB_CM
-
-I35 VDDn IN {i_n}
-Vddn VDDn GND 3.3
-x2 IN net1 net2 GND CM_nfets
-x3 IN net3 net4 GND CM_nfets
-x4 IN net5 net6 GND CM_nfets
-x5 IN net7 net8 GND CM_nfets
-x6 IN net9 net10 GND CM_nfets
-V1 V1 VDDn 0
-.save i(v1)
-V2 V2 VDDn 0
-.save i(v2)
-V3 net1 VDDn 0
-.save i(v3)
-V4 net2 VDDn 0
-.save i(v4)
-V5 net3 VDDn 0
-.save i(v5)
-V6 net4 VDDn 0
-.save i(v6)
-V7 net5 VDDn 0
-.save i(v7)
-V8 net6 VDDn 0
-.save i(v8)
-V9 net7 VDDn 0
-.save i(v9)
-V10 net8 VDDn 0
-.save i(v10)
-V11 net9 VDDn 0
-.save i(v11)
-V12 net10 VDDn 0
-.save i(v12)
-x1 IN V1 V2 GND CM_nfets
-**** begin user architecture code
-
-.include /home/gmaranhao/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
-.lib /home/gmaranhao/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
-*.param sw_stat_mismatch=1
-*.param sw_stat_global=1
-
-*.include /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/layout/spice/CM_nfets_pex.spice
-
-*.subckt CM_nfets VSS OUT1 OUT2 IN
-
-*X1 0 V1 V2 IN CM_nfets
-*X1
-*X1
-*X1
-*X1
-*X1
-
-
-
-.option gmin=1e-18
-.param i_n=1n
-
-.control
-save all
-
-let sample_num = 0
-
-*while sample_num<151
-
-reset
-op
-remzerovec
-write TB_CM.raw
-*wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/out_cm.txt i(V1) i(V2) i(V3)
-*+ i(V4) i(V5) i(V6) i(V7) i(V8) i(V9) i(V
-10) i(V11) i(V12)
-set appendwrite
-
-*let sample_num = sample_num + 1
-*end
-
-
-.endc
-.save all
-
-
-**** end user architecture code
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_n_net.sch
+.subckt CM_n_net IN OUT1 OUT2 VSS OUT3 OUT4 OUT5 OUT6 OUT7 OUT8 OUT9 OUT10 OUT11 OUT12
+*.PININFO IN:B OUT1:B OUT2:B VSS:B OUT3:B OUT4:B OUT5:B OUT6:B OUT7:B OUT8:B OUT9:B OUT10:B OUT11:B
+*+ OUT12:B
+x1 IN OUT1 OUT2 VSS CM_nfets
+x2 IN OUT3 OUT4 VSS CM_nfets
+x4 IN OUT9 OUT10 VSS CM_nfets
+x5 IN OUT7 OUT8 VSS CM_nfets
+x3 IN OUT5 OUT6 VSS CM_nfets
+x7 IN OUT11 OUT12 VSS CM_nfets
 .ends
 
 * expanding   symbol:  CurrentMirrors/CM_nfets.sym # of pins=4
@@ -178,5 +105,4 @@ M1[33] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
 M1[34] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
 .ends
 
-.GLOBAL GND
 .end
