@@ -130,30 +130,6 @@
    </categories>
   </category>
   <category>
-   <name>ANT.16_i_ANT.13</name>
-   <description>ANT.16_i_ANT.13: Maximum ratio of Via5 area to related thin gate oxide area: 20</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>ANT.16_ii_ANT.13</name>
-   <description>ANT.16_ii_ANT.13: Maximum ratio of Via5 area to related thick gate oxide area: 20</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>ANT.16_i_ANT.7</name>
-   <description>ANT.16_i_ANT.7: Maximum ratio of Metaltop perimeter area to related thin gate oxide area: 400</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>ANT.16_ii_ANT.7</name>
-   <description>ANT.16_ii_ANT.7: Maximum ratio of Metaltop perimeter area to related thick gate oxide area: 400</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
    <name>ANT.16_iii_ANT.14_MT_MIMB</name>
    <description>ANT.16_iii_ANT.14_MT_MIMB: Maximum ratio of each of the Top metal layer perimeter
                     area to related MIM area is 400</description>

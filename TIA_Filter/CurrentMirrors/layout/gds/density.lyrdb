@@ -318,6 +318,17 @@
    <multiplicity>1</multiplicity>
    <image/>
    <values>
+    <value>polygon: (-10.41,39.505;-10.41,40.4;74.91,40.4;74.91,39.505)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>CM_p_net</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
     <value>polygon: (24.33,47.08;24.33,47.48;40.165,47.48;40.165,47.08)</value>
    </values>
   </item>
@@ -1407,17 +1418,6 @@
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (-4.16,23.415;-4.16,23.815;11.675,23.815;11.675,23.415)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M2.4'</category>
-   <cell>CM_p_net</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
     <value>polygon: (-5.43,-10.02;-5.43,-9.035;-4.485,-9.035;-4.485,-10.02)</value>
    </values>
   </item>
@@ -1825,7 +1825,7 @@
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (52.82,-3.735;52.82,-3.335;68.655,-3.335;68.655,-3.735)</value>
+    <value>polygon: (-4.16,23.415;-4.16,23.815;11.675,23.815;11.675,23.415)</value>
    </values>
   </item>
   <item>
@@ -2237,6 +2237,17 @@
   </item>
   <item>
    <tags/>
+   <category>'M2.4'</category>
+   <cell>CM_p_net</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (52.82,-3.735;52.82,-3.335;68.655,-3.335;68.655,-3.735)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
    <category>'M3.4'</category>
    <cell>CM_p_net</cell>
    <visited>false</visited>
@@ -2365,39 +2376,6 @@
    <image/>
    <values>
     <value>polygon: (51.55,12.355;51.55,31.68;52.495,31.68;52.495,12.355)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M3.4'</category>
-   <cell>CM_p_net</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>polygon: (3.04,-12.07;3.04,33.795;4.52,33.795;4.52,-12.07)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M3.4'</category>
-   <cell>CM_p_net</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>polygon: (31.53,-12.07;31.53,33.795;33.01,33.795;33.01,-12.07)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M3.4'</category>
-   <cell>CM_p_net</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>polygon: (60.02,-12.07;60.02,33.795;61.5,33.795;61.5,-12.07)</value>
    </values>
   </item>
   <item>
@@ -2606,7 +2584,7 @@
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (3.04,46.23;3.04,92.095;4.52,92.095;4.52,46.23)</value>
+    <value>polygon: (3.04,-12.07;3.04,92.095;4.52,92.095;4.52,-12.07)</value>
    </values>
   </item>
   <item>
@@ -2617,7 +2595,7 @@
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (31.53,46.23;31.53,92.095;33.01,92.095;33.01,46.23)</value>
+    <value>polygon: (31.53,-12.07;31.53,92.095;33.01,92.095;33.01,-12.07)</value>
    </values>
   </item>
   <item>
@@ -2628,7 +2606,7 @@
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (60.02,46.23;60.02,92.095;61.5,92.095;61.5,46.23)</value>
+    <value>polygon: (60.02,-12.07;60.02,92.095;61.5,92.095;61.5,-12.07)</value>
    </values>
   </item>
   <item>
