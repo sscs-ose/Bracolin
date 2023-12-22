@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 }
 G {}
 K {}
@@ -44,7 +44,7 @@ N 70 -100 70 -70 {
 lab=vdd}
 N 140 -10 210 -10 {
 lab=vref}
-C {symbols/Voltage_Reference.sym} 140 -10 0 0 {name=x1}
+C {symbols_vr/Voltege_Reference.sym} 140 -10 0 0 {name=x1}
 C {devices/code_shown.sym} -830 -420 0 0 {name=SPICE1 only_toplevel=false
 value="
 .option gmin = 1e-15

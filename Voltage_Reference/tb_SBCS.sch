@@ -71,7 +71,7 @@ C {devices/launcher.sym} 160 -50 0 0 {name=h1
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"}
 C {devices/lab_wire.sym} -50 10 0 0 {name=p27 sig_type=std_logic lab=test}
-C {symbols/SBCS.sym} -60 -90 0 0 {name=x1}
+C {symbols_vr/SBCS.sym} -60 -90 0 0 {name=x1}
 C {devices/launcher.sym} 155 35 0 0 {name=h2
 descr="Ctrl + botão esquerdo para carregar"
 tclcommand="
@@ -91,14 +91,14 @@ save all
 *write tb_SBCS.raw
 *set appendwrite
 
-*remzerovec
-*set temp = -40
-*op
-*write tb_SBCS.raw
-
 remzerovec
-dc TEMP -40 125 5
+set temp = 27
+op
 write tb_SBCS.raw
+
+*remzerovec
+*dc TEMP -40 125 5
+*write tb_SBCS.raw
 
 .endc
 "}
