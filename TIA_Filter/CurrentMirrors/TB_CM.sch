@@ -27,7 +27,7 @@ unitx=1
 logx=0
 logy=0
 rainbow=1}
-B 2 1200 250 2000 650 {flags=graph
+B 2 1260 -20 2060 380 {flags=graph
 y1=1e-12
 y2=2.3e-12
 ypos1=0
@@ -121,41 +121,41 @@ N 410 -310 470 -310 {
 lab=Voutn}
 N 390 -270 450 -270 {
 lab=Voutn}
-N 1170 -400 1220 -400 {
+N 1170 -530 1220 -530 {
 lab=VDD}
-N 1290 -310 1290 -30 {
+N 1290 -440 1290 -160 {
 lab=#net1}
-N 1310 -310 1310 -210 {
+N 1310 -440 1310 -340 {
 lab=#net2}
-N 1350 -310 1350 -30 {
+N 1350 -440 1350 -160 {
 lab=#net3}
-N 1370 -310 1370 -210 {
+N 1370 -440 1370 -340 {
 lab=#net4}
-N 1410 -310 1410 -30 {
+N 1410 -440 1410 -160 {
 lab=#net5}
-N 1430 -310 1430 -210 {
+N 1430 -440 1430 -340 {
 lab=#net6}
-N 1470 -310 1470 -30 {
+N 1470 -440 1470 -160 {
 lab=#net7}
-N 1490 -310 1490 -210 {
+N 1490 -440 1490 -340 {
 lab=#net8}
-N 1530 -310 1530 -30 {
+N 1530 -440 1530 -160 {
 lab=#net9}
-N 1550 -310 1550 -210 {
+N 1550 -440 1550 -340 {
 lab=#net10}
-N 1590 -310 1590 -30 {
+N 1590 -440 1590 -160 {
 lab=#net11}
-N 1610 -310 1610 -210 {
+N 1610 -440 1610 -340 {
 lab=#net12}
-N 1230 30 1590 30 {
+N 1230 -100 1590 -100 {
 lab=Voutp}
-N 1310 -150 1670 -150 {
+N 1310 -280 1670 -280 {
 lab=Voutp}
 N 290 -200 290 -190 {
 lab=o6}
 N 290 -240 290 -200 {
 lab=o6}
-N 1250 -310 1250 -270 {
+N 1250 -440 1250 -400 {
 lab=INp}
 N -50 -220 -50 -200 {
 lab=GND}
@@ -163,37 +163,37 @@ N -70 -310 -50 -310 {
 lab=Voutp}
 N -50 -310 -50 -280 {
 lab=Voutp}
-N 1770 -410 1820 -410 {
+N 1770 -540 1820 -540 {
 lab=VDD}
-N 1890 -320 1890 -40 {
+N 1890 -450 1890 -170 {
 lab=#net13}
-N 1910 -320 1910 -220 {
+N 1910 -450 1910 -350 {
 lab=#net14}
-N 1950 -320 1950 -40 {
+N 1950 -450 1950 -170 {
 lab=#net15}
-N 1970 -320 1970 -220 {
+N 1970 -450 1970 -350 {
 lab=#net16}
-N 2010 -320 2010 -40 {
+N 2010 -450 2010 -170 {
 lab=#net17}
-N 2030 -320 2030 -220 {
+N 2030 -450 2030 -350 {
 lab=#net18}
-N 2070 -320 2070 -40 {
+N 2070 -450 2070 -170 {
 lab=#net19}
-N 2090 -320 2090 -220 {
+N 2090 -450 2090 -350 {
 lab=#net20}
-N 2130 -320 2130 -40 {
+N 2130 -450 2130 -170 {
 lab=#net21}
-N 2150 -320 2150 -220 {
+N 2150 -450 2150 -350 {
 lab=#net22}
-N 2190 -320 2190 -40 {
+N 2190 -450 2190 -170 {
 lab=#net23}
-N 2210 -320 2210 -220 {
+N 2210 -450 2210 -350 {
 lab=#net24}
-N 1830 20 2190 20 {
+N 1830 -110 2190 -110 {
 lab=Voutp2}
-N 1910 -160 2270 -160 {
-lab=Voutp}
-N 1850 -320 1850 -280 {
+N 1910 -290 2270 -290 {
+lab=Voutp2}
+N 1850 -450 1850 -410 {
 lab=INp2}
 N 600 -260 600 -200 {
 lab=INn2}
@@ -441,7 +441,7 @@ C {devices/gnd.sym} -230 -200 0 1 {name=l1 lab=GND
 }
 C {devices/code_shown.sym} -1280 -130 0 0 {name=NGSPICE only_toplevel=true
 value="
-.option gmin=1e-16
+.option gmin=1e-15
 *.option abstol=1e-18
 *.option retol=1e-15
 
@@ -543,51 +543,47 @@ C {CurrentMirrors/CM_n_net.sym} -180 160 0 0 {name=x1
 }
 C {devices/gnd.sym} 60 -100 0 1 {name=l2 lab=GND
 }
-C {devices/ammeter.sym} 1290 0 0 0 {name=V13 savecurrent=true
+C {devices/ammeter.sym} 1290 -130 0 0 {name=V13 savecurrent=true
 }
-C {devices/ammeter.sym} 1310 -180 0 0 {name=V14 savecurrent=true
+C {devices/ammeter.sym} 1310 -310 0 0 {name=V14 savecurrent=true
 }
-C {devices/launcher.sym} 1210 180 0 0 {name=h3
-descr="Annotate OP" 
-tclcommand="set show_hidden_texts 1; xschem annotate_op"
-}
-C {devices/launcher.sym} 1285 715 0 0 {name=h4
+C {devices/launcher.sym} 1345 445 0 0 {name=h4
 descr="Click left mouse button here with control key
 pressed to load/unload waveforms in graph."
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw dc
 "
 }
-C {CurrentMirrors/CM_p_net.sym} 1460 -270 0 0 {name=x2
+C {CurrentMirrors/CM_p_net.sym} 1460 -400 0 0 {name=x2
 }
-C {devices/lab_wire.sym} 1170 -400 0 0 {name=p5 sig_type=std_logic lab=VDD
+C {devices/lab_wire.sym} 1170 -530 0 0 {name=p5 sig_type=std_logic lab=VDD
 }
-C {devices/ammeter.sym} 1350 0 0 0 {name=V15 savecurrent=true
+C {devices/ammeter.sym} 1350 -130 0 0 {name=V15 savecurrent=true
 }
-C {devices/ammeter.sym} 1370 -180 0 0 {name=V16 savecurrent=true
+C {devices/ammeter.sym} 1370 -310 0 0 {name=V16 savecurrent=true
 }
-C {devices/ammeter.sym} 1410 0 0 0 {name=V17 savecurrent=true
+C {devices/ammeter.sym} 1410 -130 0 0 {name=V17 savecurrent=true
 }
-C {devices/ammeter.sym} 1430 -180 0 0 {name=V18 savecurrent=true
+C {devices/ammeter.sym} 1430 -310 0 0 {name=V18 savecurrent=true
 }
-C {devices/ammeter.sym} 1470 0 0 0 {name=V19 savecurrent=true
+C {devices/ammeter.sym} 1470 -130 0 0 {name=V19 savecurrent=true
 }
-C {devices/ammeter.sym} 1490 -180 0 0 {name=V20 savecurrent=true
+C {devices/ammeter.sym} 1490 -310 0 0 {name=V20 savecurrent=true
 }
-C {devices/ammeter.sym} 1530 0 0 0 {name=V21 savecurrent=true
+C {devices/ammeter.sym} 1530 -130 0 0 {name=V21 savecurrent=true
 }
-C {devices/ammeter.sym} 1550 -180 0 0 {name=V22 savecurrent=true
+C {devices/ammeter.sym} 1550 -310 0 0 {name=V22 savecurrent=true
 }
-C {devices/ammeter.sym} 1590 0 0 0 {name=V23 savecurrent=true
+C {devices/ammeter.sym} 1590 -130 0 0 {name=V23 savecurrent=true
 }
-C {devices/ammeter.sym} 1610 -180 0 0 {name=V24 savecurrent=true
+C {devices/ammeter.sym} 1610 -310 0 0 {name=V24 savecurrent=true
 }
 C {devices/lab_wire.sym} 110 -260 0 1 {name=p26 sig_type=std_logic lab=INn
 }
-C {devices/lab_wire.sym} 1670 -150 0 1 {name=p3 sig_type=std_logic lab=Voutp}
-C {devices/lab_wire.sym} 1250 -270 0 0 {name=p7 sig_type=std_logic lab=INp
+C {devices/lab_wire.sym} 1670 -280 0 1 {name=p3 sig_type=std_logic lab=Voutp}
+C {devices/lab_wire.sym} 1250 -400 0 0 {name=p7 sig_type=std_logic lab=INp
 }
-C {devices/lab_wire.sym} 1240 30 0 0 {name=p6 sig_type=std_logic lab=Voutp
+C {devices/lab_wire.sym} 1240 -100 0 0 {name=p6 sig_type=std_logic lab=Voutp
 }
 C {devices/vsource.sym} -50 -250 0 0 {name=Vo1 value=1.65
 }
@@ -595,38 +591,38 @@ C {devices/gnd.sym} -50 -200 0 1 {name=l5 lab=GND
 }
 C {devices/lab_wire.sym} -50 -310 0 0 {name=p27 sig_type=std_logic lab=Voutp
 }
-C {devices/ammeter.sym} 1890 -10 0 0 {name=V28 savecurrent=true
+C {devices/ammeter.sym} 1890 -140 0 0 {name=V28 savecurrent=true
 }
-C {devices/ammeter.sym} 1910 -190 0 0 {name=V29 savecurrent=true
+C {devices/ammeter.sym} 1910 -320 0 0 {name=V29 savecurrent=true
 }
-C {CurrentMirrors/CM_p_net.sym} 2060 -280 0 0 {name=x3
+C {CurrentMirrors/CM_p_net.sym} 2060 -410 0 0 {name=x3
 }
-C {devices/lab_wire.sym} 1770 -410 0 0 {name=p28 sig_type=std_logic lab=VDD
+C {devices/lab_wire.sym} 1770 -540 0 0 {name=p28 sig_type=std_logic lab=VDD
 }
-C {devices/ammeter.sym} 1950 -10 0 0 {name=V30 savecurrent=true
+C {devices/ammeter.sym} 1950 -140 0 0 {name=V30 savecurrent=true
 }
-C {devices/ammeter.sym} 1970 -190 0 0 {name=V31 savecurrent=true
+C {devices/ammeter.sym} 1970 -320 0 0 {name=V31 savecurrent=true
 }
-C {devices/ammeter.sym} 2010 -10 0 0 {name=V32 savecurrent=true
+C {devices/ammeter.sym} 2010 -140 0 0 {name=V32 savecurrent=true
 }
-C {devices/ammeter.sym} 2030 -190 0 0 {name=V33 savecurrent=true
+C {devices/ammeter.sym} 2030 -320 0 0 {name=V33 savecurrent=true
 }
-C {devices/ammeter.sym} 2070 -10 0 0 {name=V34 savecurrent=true
+C {devices/ammeter.sym} 2070 -140 0 0 {name=V34 savecurrent=true
 }
-C {devices/ammeter.sym} 2090 -190 0 0 {name=V35 savecurrent=true
+C {devices/ammeter.sym} 2090 -320 0 0 {name=V35 savecurrent=true
 }
-C {devices/ammeter.sym} 2130 -10 0 0 {name=V36 savecurrent=true
+C {devices/ammeter.sym} 2130 -140 0 0 {name=V36 savecurrent=true
 }
-C {devices/ammeter.sym} 2150 -190 0 0 {name=V37 savecurrent=true
+C {devices/ammeter.sym} 2150 -320 0 0 {name=V37 savecurrent=true
 }
-C {devices/ammeter.sym} 2190 -10 0 0 {name=V38 savecurrent=true
+C {devices/ammeter.sym} 2190 -140 0 0 {name=V38 savecurrent=true
 }
-C {devices/ammeter.sym} 2210 -190 0 0 {name=V39 savecurrent=true
+C {devices/ammeter.sym} 2210 -320 0 0 {name=V39 savecurrent=true
 }
-C {devices/lab_wire.sym} 2270 -160 0 1 {name=p29 sig_type=std_logic lab=Voutp}
-C {devices/lab_wire.sym} 1850 -280 0 0 {name=p30 sig_type=std_logic lab=INp2
+C {devices/lab_wire.sym} 2270 -290 0 1 {name=p29 sig_type=std_logic lab=Voutp2}
+C {devices/lab_wire.sym} 1850 -410 0 0 {name=p30 sig_type=std_logic lab=INp2
 }
-C {devices/lab_wire.sym} 1840 20 0 0 {name=p31 sig_type=std_logic lab=Voutp2
+C {devices/lab_wire.sym} 1840 -110 0 0 {name=p31 sig_type=std_logic lab=Voutp2
 }
 C {devices/ammeter.sym} 640 -240 2 0 {name=V40 savecurrent=true
 }
@@ -664,7 +660,7 @@ C {devices/launcher.sym} 800 -1020 0 0 {name=h2
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 spice_ignore=true}
-C {symbols/nfet_03v3.sym} 720 -810 0 1 {name=M10[1:16]
+C {symbols/nfet_03v3.sym} 720 -810 0 1 {name=M10[1:2]
 L=6u
 W=2u
 nf=1
@@ -684,7 +680,7 @@ C {devices/lab_wire.sym} 810 -810 0 0 {name=p2 sig_type=std_logic lab=Vg
 }
 C {devices/lab_wire.sym} 1070 -810 0 0 {name=p4 sig_type=std_logic lab=Vg
 }
-C {symbols/nfet_03v3.sym} 860 -810 0 0 {name=M12[1:16]
+C {symbols/nfet_03v3.sym} 860 -810 0 0 {name=M1[1:2]
 L=6u
 W=2u
 nf=1
@@ -698,7 +694,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_03v3.sym} 1150 -1050 0 1 {name=M13[1:16]
+C {symbols/pfet_03v3.sym} 1150 -1050 0 1 {name=M2[1:2]
 L=6u
 W=2u
 nf=1
@@ -712,7 +708,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/nfet_03v3.sym} 1110 -810 0 0 {name=M14[1:16]
+C {symbols/nfet_03v3.sym} 1110 -810 0 0 {name=M3[1:2]
 L=6u
 W=2u
 nf=1
@@ -726,7 +722,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_03v3.sym} 1270 -1050 0 0 {name=M15[1:16]
+C {symbols/pfet_03v3.sym} 1270 -1050 0 0 {name=M4[1:2]
 L=6u
 W=2u
 nf=1
@@ -754,7 +750,7 @@ C {devices/ammeter.sym} 1290 -870 2 0 {name=V27 savecurrent=true
 }
 C {devices/lab_wire.sym} 1210 -1110 0 0 {name=p25 sig_type=std_logic lab=VDD
 }
-C {symbols/nfet_03v3.sym} 720 -730 0 1 {name=M16[1:16]
+C {symbols/nfet_03v3.sym} 720 -730 0 1 {name=M5[1:2]
 L=6u
 W=2u
 nf=1
@@ -768,7 +764,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/nfet_03v3.sym} 860 -730 0 0 {name=M17[1:16]
+C {symbols/nfet_03v3.sym} 860 -730 0 0 {name=M6[1:2]
 L=6u
 W=2u
 nf=1
@@ -782,7 +778,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/nfet_03v3.sym} 1110 -730 0 0 {name=M18[1:16]
+C {symbols/nfet_03v3.sym} 1110 -730 0 0 {name=M7[1:2]
 L=6u
 W=2u
 nf=1
@@ -798,7 +794,7 @@ spiceprefix=X
 }
 C {devices/gnd.sym} 810 -700 0 1 {name=l4 lab=GND
 }
-C {symbols/pfet_03v3.sym} 1150 -980 0 1 {name=M19[1:16]
+C {symbols/pfet_03v3.sym} 1150 -980 0 1 {name=M8[1:2]
 L=6u
 W=2u
 nf=1
@@ -812,7 +808,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_03v3.sym} 1270 -980 0 0 {name=M20[1:16]
+C {symbols/pfet_03v3.sym} 1270 -980 0 0 {name=M9[1:2]
 L=6u
 W=2u
 nf=1
@@ -826,7 +822,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/nfet_03v3.sym} 980 -810 0 0 {name=M21[1:16]
+C {symbols/nfet_03v3.sym} 980 -810 0 0 {name=M11[1:2]
 L=6u
 W=2u
 nf=1
@@ -844,7 +840,7 @@ C {devices/lab_wire.sym} 1000 -920 0 0 {name=p32 sig_type=std_logic lab=INp2
 }
 C {devices/ammeter.sym} 1000 -880 0 0 {name=V52 savecurrent=true
 }
-C {symbols/nfet_03v3.sym} 980 -730 0 0 {name=M22[1:16]
+C {symbols/nfet_03v3.sym} 980 -730 0 0 {name=M12[1:2]
 L=6u
 W=2u
 nf=1
@@ -860,7 +856,7 @@ spiceprefix=X
 }
 C {devices/lab_wire.sym} 940 -810 0 0 {name=p33 sig_type=std_logic lab=Vg
 }
-C {symbols/pfet_03v3.sym} 1430 -1050 0 0 {name=M23[1:16]
+C {symbols/pfet_03v3.sym} 1430 -1050 0 0 {name=M13[1:2]
 L=6u
 W=2u
 nf=1
@@ -878,7 +874,7 @@ C {devices/lab_wire.sym} 1450 -820 0 0 {name=p34 sig_type=std_logic lab=INn2
 }
 C {devices/ammeter.sym} 1450 -870 2 0 {name=V53 savecurrent=true
 }
-C {symbols/pfet_03v3.sym} 1430 -980 0 0 {name=M24[1:16]
+C {symbols/pfet_03v3.sym} 1430 -980 0 0 {name=M14[1:2]
 L=6u
 W=2u
 nf=1
