@@ -146,66 +146,6 @@ dataset=0}
 T {DC operation a single 
 Pseudo-Resistor ~185Gohm
 Work Range -20m to 20m with VCM =1.65V} 1430 -630 0 0 0.4 0.4 { layer=3}
-N -890 -220 -890 -200 {
-lab=VDD}
-N -890 -220 -860 -220 {
-lab=VDD}
-N -890 -140 -890 -120 {
-lab=GND}
-N -510 -310 -510 -290 {
-lab=Vxb}
-N -720 -220 -720 -210 {
-lab=Vxa}
-N -750 -210 -700 -210 {
-lab=Vxa}
-N -640 -210 -600 -210 {
-lab=#net1}
-N -620 -210 -620 -140 {
-lab=#net1}
-N -620 -140 -620 -110 {
-lab=#net1}
-N -620 -110 -590 -110 {
-lab=#net1}
-N -530 -110 -510 -110 {
-lab=#net2}
-N -510 -290 -510 -230 {
-lab=Vxb}
-N -510 -230 -510 -200 {
-lab=Vxb}
-N -510 -140 -510 -110 {
-lab=#net2}
-N -750 -90 -750 -70 {
-lab=GND}
-N -650 60 -620 60 {
-lab=VA}
-N -650 60 -650 120 {
-lab=VA}
-N -650 120 -530 120 {
-lab=VA}
-N -530 40 -530 120 {
-lab=VA}
-N -700 20 -620 20 {
-lab=Vxa}
-N -700 10 -700 20 {
-lab=Vxa}
-N -910 60 -880 60 {
-lab=VB}
-N -910 60 -910 120 {
-lab=VB}
-N -910 120 -790 120 {
-lab=VB}
-N -790 40 -790 120 {
-lab=VB}
-N -960 20 -880 20 {
-lab=Vxb}
-N -960 10 -960 20 {
-lab=Vxb}
-N -790 40 -740 40 {
-lab=VB}
-N -530 40 -480 40 {
-lab=VA}
-N -600 -270 -600 -250 {
-lab=GND}
 N 320 -130 500 -130 {
 lab=ITN}
 N 350 -120 500 -120 {
@@ -238,6 +178,66 @@ N 550 -70 550 -40 {
 lab=VB__i}
 N 550 20 550 50 {
 lab=VB}
+N -920 -155 -920 -135 {
+lab=VDD}
+N -920 -155 -890 -155 {
+lab=VDD}
+N -920 -75 -920 -55 {
+lab=GND}
+N -540 -245 -540 -225 {
+lab=Vxb}
+N -750 -155 -750 -145 {
+lab=Vxa}
+N -780 -145 -730 -145 {
+lab=Vxa}
+N -670 -145 -630 -145 {
+lab=#net1}
+N -650 -145 -650 -75 {
+lab=#net1}
+N -650 -75 -650 -45 {
+lab=#net1}
+N -650 -45 -620 -45 {
+lab=#net1}
+N -560 -45 -540 -45 {
+lab=#net2}
+N -540 -225 -540 -165 {
+lab=Vxb}
+N -540 -165 -540 -135 {
+lab=Vxb}
+N -540 -75 -540 -45 {
+lab=#net2}
+N -780 -25 -780 -5 {
+lab=GND}
+N -680 125 -650 125 {
+lab=VA}
+N -680 125 -680 185 {
+lab=VA}
+N -680 185 -560 185 {
+lab=VA}
+N -560 105 -560 185 {
+lab=VA}
+N -730 85 -650 85 {
+lab=Vxa}
+N -730 75 -730 85 {
+lab=Vxa}
+N -940 125 -910 125 {
+lab=VB}
+N -940 125 -940 185 {
+lab=VB}
+N -940 185 -820 185 {
+lab=VB}
+N -820 105 -820 185 {
+lab=VB}
+N -990 85 -910 85 {
+lab=Vxb}
+N -990 75 -990 85 {
+lab=Vxb}
+N -820 105 -770 105 {
+lab=VB}
+N -560 105 -510 105 {
+lab=VA}
+N -630 -205 -630 -185 {
+lab=GND}
 C {devices/code_shown.sym} -420 -590 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -255,7 +255,7 @@ C {devices/code_shown.sym} -420 -300 0 0 {name=NGSPICE only_toplevel=true
 value="
 *.option savecurrents
 .option gmin=1e-21
-.option RSHUNT=1e35
+*.option RSHUNT=1e35
 *.option RELTOL=1e-9
 *.OPTION ABSTOL=1e2
 *.option vntol = 1e-9
@@ -263,7 +263,7 @@ value="
 .param ibias = 1p
 .param it_amp = 2p
 
-.nodeset V(IBP)=1.65
+*.nodeset V(IBP)=1.65
 
 .control
 save all
@@ -273,7 +273,7 @@ remzerovec
 write TB_PR_single_dc.raw
 set appendwrite
 
-dc VX -200m 200m 6m
+dc VX1 -200m 200m 6m
 
 let idiff = i(vai)-i(vbi)
 let Rdiff = 4/deriv(idiff)
@@ -285,9 +285,6 @@ write TB_PR_single_dc.raw
 .endc
 "
 }
-C {devices/vsource.sym} -890 -170 0 0 {name=VDD1 value=3.3}
-C {devices/gnd.sym} -890 -120 0 0 {name=l9 lab=GND}
-C {devices/lab_wire.sym} -860 -220 0 1 {name=p18 sig_type=std_logic lab=VDD}
 C {devices/launcher.sym} 865 -445 0 0 {name=h1
 descr="Load/unload waveforms in graph."
 tclcommand="
@@ -297,40 +294,6 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 C {devices/launcher.sym} 870 -400 0 0 {name=h2
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
-}
-C {devices/vsource.sym} -750 -180 0 0 {name=VX value=0}
-C {devices/gnd.sym} -560 -190 0 0 {name=l12 lab=GND}
-C {devices/lab_wire.sym} -720 -220 0 0 {name=p21 sig_type=std_logic lab=Vxa
-
-}
-C {devices/lab_wire.sym} -510 -310 0 0 {name=p22 sig_type=std_logic lab=Vxb}
-C {devices/vsource.sym} -510 -170 0 0 {name=VB value=3.3}
-C {devices/gnd.sym} -750 -70 0 0 {name=l11 lab=GND}
-C {devices/gnd.sym} -600 -270 2 0 {name=l14 lab=GND}
-C {devices/res.sym} -670 -210 1 0 {name=R1
-value=100k
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} -560 -110 1 0 {name=R2
-value=100k
-footprint=1206
-device=resistor
-m=1}
-C {devices/vsource.sym} -750 -120 0 0 {name=VB1 value=1.65}
-C {devices/lab_wire.sym} -700 10 0 0 {name=p19 sig_type=std_logic lab=Vxa
-
-}
-C {devices/gnd.sym} -580 80 0 0 {name=l10 lab=GND}
-C {devices/lab_wire.sym} -960 10 0 0 {name=p20 sig_type=std_logic lab=Vxb
-
-}
-C {devices/gnd.sym} -840 80 0 0 {name=l13 lab=GND}
-C {devices/lab_wire.sym} -740 40 0 1 {name=p23 sig_type=std_logic lab=VB
-
-}
-C {devices/lab_wire.sym} -480 40 0 1 {name=p24 sig_type=std_logic lab=VA
-
 }
 C {devices/code_shown.sym} -400 340 0 0 {name=NGSPICE1 only_toplevel=true
 value="
@@ -394,10 +357,47 @@ C {devices/lab_wire.sym} 550 -50 0 0 {name=p10 sig_type=std_logic lab=VB__i
 }
 C {devices/ammeter.sym} 550 -10 2 0 {name=Vbi
 }
-C {auxLib/ampOp_ideal.sym} -640 -200 0 0 {name=x1}
-C {auxLib/ampOp_ideal.sym} -920 70 0 0 {name=x2}
-C {auxLib/ampOp_ideal.sym} -660 70 0 0 {name=x3}
 C {devices/lab_wire.sym} 290 -180 0 0 {name=p1 sig_type=std_logic lab=IBN}
 C {devices/lab_wire.sym} 290 -170 2 1 {name=p3 sig_type=std_logic lab=IBP}
 C {devices/lab_wire.sym} 440 -120 2 1 {name=p4 sig_type=std_logic lab=ITP}
 C {devices/lab_wire.sym} 440 -130 0 0 {name=p5 sig_type=std_logic lab=ITN}
+C {devices/vsource.sym} -920 -105 0 0 {name=VDD1 value=3.3}
+C {devices/gnd.sym} -920 -55 0 0 {name=l9 lab=GND}
+C {devices/lab_wire.sym} -890 -155 0 1 {name=p18 sig_type=std_logic lab=VDD}
+C {devices/vsource.sym} -780 -115 0 0 {name=VX1 value=0}
+C {devices/gnd.sym} -590 -125 0 0 {name=l12 lab=GND}
+C {devices/lab_wire.sym} -750 -155 0 0 {name=p21 sig_type=std_logic lab=Vxa
+
+}
+C {devices/lab_wire.sym} -540 -245 0 0 {name=p22 sig_type=std_logic lab=Vxb}
+C {devices/vsource.sym} -540 -105 0 0 {name=VB1 value=3.3}
+C {devices/gnd.sym} -780 -5 0 0 {name=l11 lab=GND}
+C {devices/gnd.sym} -630 -205 2 0 {name=l14 lab=GND}
+C {devices/res.sym} -700 -145 1 0 {name=R1
+value=100k
+footprint=1206
+device=resistor
+m=1}
+C {devices/res.sym} -590 -45 1 0 {name=R2
+value=100k
+footprint=1206
+device=resistor
+m=1}
+C {devices/vsource.sym} -780 -55 0 0 {name=VB2 value=1.65}
+C {devices/lab_wire.sym} -730 75 0 0 {name=p19 sig_type=std_logic lab=Vxa
+
+}
+C {devices/gnd.sym} -610 145 0 0 {name=l10 lab=GND}
+C {devices/lab_wire.sym} -990 75 0 0 {name=p20 sig_type=std_logic lab=Vxb
+
+}
+C {devices/gnd.sym} -870 145 0 0 {name=l13 lab=GND}
+C {devices/lab_wire.sym} -770 105 0 1 {name=p23 sig_type=std_logic lab=VB
+
+}
+C {devices/lab_wire.sym} -510 105 0 1 {name=p24 sig_type=std_logic lab=VA
+
+}
+C {auxLib/ampOp_ideal.sym} -950 135 0 0 {name=x2}
+C {auxLib/ampOp_ideal.sym} -690 135 0 0 {name=x3}
+C {auxLib/ampOp_ideal.sym} -670 -135 0 0 {name=x9}

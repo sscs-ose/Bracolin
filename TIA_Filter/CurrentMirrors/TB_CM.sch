@@ -28,8 +28,8 @@ logx=0
 logy=0
 rainbow=1}
 B 2 1260 -20 2060 380 {flags=graph
-y1=1e-12
-y2=2.4e-12
+y1=1.28e-12
+y2=2.68e-12
 ypos1=0
 ypos2=2
 divy=5
@@ -362,29 +362,29 @@ set appendwrite
 "}
 C {devices/lab_wire.sym} -400 -310 0 0 {name=p1 sig_type=std_logic lab=VDD
 }
-C {devices/ammeter.sym} 150 -240 2 0 {name=V1 savecurrent=true
+C {devices/ammeter.sym} 150 -240 0 1 {name=V1 savecurrent=true
 }
-C {devices/ammeter.sym} 170 -280 2 0 {name=V2 savecurrent=true
+C {devices/ammeter.sym} 170 -280 0 1 {name=V2 savecurrent=true
 }
-C {devices/ammeter.sym} 210 -240 2 0 {name=V3 savecurrent=true
+C {devices/ammeter.sym} 210 -240 0 1 {name=V3 savecurrent=true
 }
-C {devices/ammeter.sym} 230 -280 2 0 {name=V4 savecurrent=true
+C {devices/ammeter.sym} 230 -280 0 1 {name=V4 savecurrent=true
 }
-C {devices/ammeter.sym} 270 -240 2 0 {name=V5 savecurrent=true
+C {devices/ammeter.sym} 270 -240 0 1 {name=V5 savecurrent=true
 }
-C {devices/ammeter.sym} 290 -280 2 0 {name=V6 savecurrent=true
+C {devices/ammeter.sym} 290 -280 0 1 {name=V6 savecurrent=true
 }
-C {devices/ammeter.sym} 330 -240 2 0 {name=V7 savecurrent=true
+C {devices/ammeter.sym} 330 -240 0 1 {name=V7 savecurrent=true
 }
-C {devices/ammeter.sym} 350 -280 2 0 {name=V8 savecurrent=true
+C {devices/ammeter.sym} 350 -280 0 1 {name=V8 savecurrent=true
 }
-C {devices/ammeter.sym} 390 -240 2 0 {name=V9 savecurrent=true
+C {devices/ammeter.sym} 390 -240 0 1 {name=V9 savecurrent=true
 }
-C {devices/ammeter.sym} 410 -280 2 0 {name=V10 savecurrent=true
+C {devices/ammeter.sym} 410 -280 0 1 {name=V10 savecurrent=true
 }
-C {devices/ammeter.sym} 450 -240 2 0 {name=V11 savecurrent=true
+C {devices/ammeter.sym} 450 -240 0 1 {name=V11 savecurrent=true
 }
-C {devices/ammeter.sym} 470 -280 2 0 {name=V12 savecurrent=true
+C {devices/ammeter.sym} 470 -280 0 1 {name=V12 savecurrent=true
 }
 C {devices/lab_wire.sym} 150 -200 0 0 {name=p10 sig_type=std_logic lab=o1
 }
@@ -508,27 +508,27 @@ C {devices/lab_wire.sym} 1850 -410 0 0 {name=p30 sig_type=std_logic lab=INp2
 }
 C {devices/lab_wire.sym} 1840 -110 0 0 {name=p31 sig_type=std_logic lab=Voutp2
 }
-C {devices/ammeter.sym} 640 -240 2 0 {name=V40 savecurrent=true
+C {devices/ammeter.sym} 640 -240 0 1 {name=V40 savecurrent=true
 }
-C {devices/ammeter.sym} 660 -280 2 0 {name=V41 savecurrent=true
+C {devices/ammeter.sym} 660 -280 0 1 {name=V41 savecurrent=true
 }
-C {devices/ammeter.sym} 700 -240 2 0 {name=V42 savecurrent=true
+C {devices/ammeter.sym} 700 -240 0 1 {name=V42 savecurrent=true
 }
-C {devices/ammeter.sym} 720 -280 2 0 {name=V43 savecurrent=true
+C {devices/ammeter.sym} 720 -280 0 1 {name=V43 savecurrent=true
 }
-C {devices/ammeter.sym} 760 -240 2 0 {name=V44 savecurrent=true
+C {devices/ammeter.sym} 760 -240 0 1 {name=V44 savecurrent=true
 }
-C {devices/ammeter.sym} 780 -280 2 0 {name=V45 savecurrent=true
+C {devices/ammeter.sym} 780 -280 0 1 {name=V45 savecurrent=true
 }
-C {devices/ammeter.sym} 820 -240 2 0 {name=V46 savecurrent=true
+C {devices/ammeter.sym} 820 -240 0 1 {name=V46 savecurrent=true
 }
-C {devices/ammeter.sym} 840 -280 2 0 {name=V47 savecurrent=true
+C {devices/ammeter.sym} 840 -280 0 1 {name=V47 savecurrent=true
 }
-C {devices/ammeter.sym} 880 -240 2 0 {name=V48 savecurrent=true
+C {devices/ammeter.sym} 880 -240 0 1 {name=V48 savecurrent=true
 }
-C {devices/ammeter.sym} 900 -280 2 0 {name=V49 savecurrent=true
+C {devices/ammeter.sym} 900 -280 0 1 {name=V49 savecurrent=true
 }
-C {devices/ammeter.sym} 960 -280 2 0 {name=V51 savecurrent=true
+C {devices/ammeter.sym} 960 -280 0 1 {name=V51 savecurrent=true
 }
 C {devices/lab_wire.sym} 670 -390 0 0 {name=p44 sig_type=std_logic lab=Voutn2
 }
@@ -538,7 +538,7 @@ C {devices/gnd.sym} 550 -100 0 1 {name=l6 lab=GND
 }
 C {devices/lab_wire.sym} 600 -260 0 1 {name=p45 sig_type=std_logic lab=INn2
 }
-C {devices/ammeter.sym} 940 -240 2 0 {name=V50 savecurrent=true
+C {devices/ammeter.sym} 940 -240 0 1 {name=V50 savecurrent=true
 }
 C {devices/launcher.sym} 380 -1160 0 0 {name=h2
 descr="Annotate OP" 
