@@ -1,0 +1,696 @@
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PR_CM_net.sch
+.subckt PR_CM_net ISBCS A2 B2 A1 B1 CMOUTN CMOUTP VDD VSS
+*.PININFO ISBCS:B A2:B B2:B A1:B B1:B CMOUTN:B CMOUTP:B VDD:B VSS:B
+x9 net1 net3 net4 net5 net12 net6 net7 net8 net9 net10 net11 CMOUTN VSS VSS CM_n_net
+x10 net2 net13 net14 net15 net16 net17 net18 net19 net20 net21 net22 CMOUTP VDD VDD CM_p_net
+x11 A1 B1 net6 net5 net3 net10 net8 net17 net15 net19 net13 net21 net7 net4 net11 net12 net9 net22 net16 net14 net20 net18 VDD VSS
++ PRbiased_net_x5
+x12 net23 net2 net24 net1 ISBCS VDD VSS CM_input
+x1 net23 net35 net36 net37 net38 net39 net40 net41 net42 net43 net44 VDD VDD VDD CM_p_net
+x2 net24 net25 net26 net27 net28 net29 net30 net31 net32 net33 net34 VSS VSS VSS CM_n_net
+x3 A2 B2 net29 net27 net25 net33 net31 net39 net37 net41 net35 net43 net30 net26 net34 net28 net32 net44 net38 net36 net42 net40
++ VDD VSS PRbiased_net_x5
+.ends
+
+* expanding   symbol:  CurrentMirrors/CM_n_net.sym # of pins=14
+** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_n_net.sym
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_n_net.sch
+.subckt CM_n_net IN OUT1 OUT2 OUT3 OUT4 OUT5 OUT6 OUT7 OUT8 OUT9 OUT10 OUT11 OUT12 VSS
+*.PININFO IN:B OUT1:B OUT2:B VSS:B OUT3:B OUT4:B OUT5:B OUT6:B OUT7:B OUT8:B OUT9:B OUT10:B OUT11:B OUT12:B
+x1 IN OUT1 OUT2 VSS CM_nfets
+x2 IN OUT3 OUT4 VSS CM_nfets
+x4 IN OUT9 OUT10 VSS CM_nfets
+x5 IN OUT7 OUT8 VSS CM_nfets
+x3 IN OUT5 OUT6 VSS CM_nfets
+x7 IN OUT11 OUT12 VSS CM_nfets
+.ends
+
+
+* expanding   symbol:  CurrentMirrors/CM_p_net.sym # of pins=14
+** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_p_net.sym
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_p_net.sch
+.subckt CM_p_net IN OUT1 OUT2 OUT3 OUT4 OUT5 OUT6 OUT7 OUT8 OUT9 OUT10 OUT11 OUT12 VDD
+*.PININFO IN:B OUT1:B OUT2:B VDD:B OUT3:B OUT4:B OUT5:B OUT6:B OUT7:B OUT8:B OUT9:B OUT10:B OUT11:B OUT12:B
+x1 IN OUT1 OUT2 VDD CM_pfets
+x2 IN OUT3 OUT4 VDD CM_pfets
+x3 IN OUT5 OUT6 VDD CM_pfets
+x4 IN OUT7 OUT8 VDD CM_pfets
+x5 IN OUT9 OUT10 VDD CM_pfets
+x6 IN OUT11 OUT12 VDD CM_pfets
+.ends
+
+
+* expanding   symbol:  PseudoResistor/PRbiased_net_x5.sym # of pins=24
+** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PRbiased_net_x5.sym
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PRbiased_net_x5.sch
+.subckt PRbiased_net_x5 VA VB IBN3 IBN2 IBN1 IBN5 IBN4 IBP3 IBP2 IBP4 IBP1 IBP5 ITN3 ITN1 ITN5 ITN2 ITN4 ITP5 ITP2 ITP1 ITP4 ITP3
++ VDD VSS
+*.PININFO VA:B VB:B IBN1:B IBP1:B ITN1:B ITP1:B VDD:B VSS:B IBN2:B IBP2:B ITN2:B ITP2:B IBN3:B IBP3:B ITN3:B ITP3:B IBN4:B IBP4:B
+*+ ITN4:B ITP4:B IBN5:B IBP5:B ITN5:B ITP5:B
+x1 VA net1 IBN1 IBP1 ITN1 ITP1 VDD VSS PRbiased_net
+x2 net1 net2 IBN2 IBP2 ITN2 ITP2 VDD VSS PRbiased_net
+x3 net2 net3 IBN3 IBP3 ITN3 ITP3 VDD VSS PRbiased_net
+x4 net3 net4 IBN4 IBP4 ITN4 ITP4 VDD VSS PRbiased_net
+x5 net4 VB IBN5 IBP5 ITN5 ITP5 VDD VSS PRbiased_net
+.ends
+
+
+* expanding   symbol:  CurrentMirrors/CM_input.sym # of pins=7
+** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_input.sym
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_input.sch
+.subckt CM_input IP IP2 IN IN2 ISBCS VDD VSS
+*.PININFO IP:B IP2:B IN:B IN2:B ISBCS:B VDD:B VSS:B
+M1[1] ISBCS ISBCS net1[1] VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M1[2] ISBCS ISBCS net1[0] VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M2[1] vgp vgp net5[1] VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M2[2] vgp vgp net5[0] VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M3[1] net1[1] ISBCS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M3[2] net1[0] ISBCS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M4[1] IP ISBCS net2[1] VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M4[2] IP ISBCS net2[0] VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M5[1] net2[1] ISBCS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M5[2] net2[0] ISBCS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M6[1] IP2 ISBCS net3[1] VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M6[2] IP2 ISBCS net3[0] VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[1] net3[1] ISBCS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[2] net3[0] ISBCS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M8[1] vgp ISBCS net4[1] VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M8[2] vgp ISBCS net4[0] VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M9[1] net4[1] ISBCS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M9[2] net4[0] ISBCS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M10[1] net5[1] vgp VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M10[2] net5[0] vgp VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M11[1] IN vgp net6[1] VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M11[2] IN vgp net6[0] VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M12[1] net6[1] vgp VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M12[2] net6[0] vgp VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M13[1] IN2 vgp net7[1] VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M13[2] IN2 vgp net7[0] VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M16[1] net7[1] vgp VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M16[2] net7[0] vgp VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M14[1] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M14[2] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M14[3] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M14[4] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M14[5] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M14[6] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M14[7] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M14[8] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M14[9] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M14[10] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M14[11] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M14[12] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M14[13] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M14[14] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M14[15] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M14[16] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M14[17] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M14[18] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M14[19] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M14[20] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M15[1] VDD VDD VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M15[2] VDD VDD VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M15[3] VDD VDD VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M15[4] VDD VDD VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M15[5] VDD VDD VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M15[6] VDD VDD VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M15[7] VDD VDD VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M15[8] VDD VDD VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M15[9] VDD VDD VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M15[10] VDD VDD VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M15[11] VDD VDD VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M15[12] VDD VDD VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M15[13] VDD VDD VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M15[14] VDD VDD VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M15[15] VDD VDD VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M15[16] VDD VDD VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M15[17] VDD VDD VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+M15[18] VDD VDD VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  CurrentMirrors/CM_nfets.sym # of pins=4
+** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_nfets.sym
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_nfets.sch
+.subckt CM_nfets IN OUT1 OUT2 VSS
+*.PININFO IN:B OUT1:B OUT2:B VSS:B
+M2[1] IN IN VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M2[2] IN IN VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M2[3] IN IN VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M2[4] IN IN VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M2[5] IN IN VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M2[6] IN IN VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M2 OUT1 IN net3 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M11 net4 IN net6 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M12 net6 IN net7 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M13 net7 IN net8 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M14 net8 IN net9 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M15 net9 IN net10 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M16 net10 IN net11 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M17 net11 IN net12 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M18 net12 IN net13 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M19 net13 IN net14 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M20 net14 IN net1 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M21 net1 IN net15 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M22 net15 IN net16 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M23 net16 IN net17 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M24 net17 IN net18 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M25 net18 IN net19 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M26 net19 IN net20 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M27 net20 IN net21 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M28 net21 IN net22 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M29 net22 IN net23 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M30 net23 IN net2 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M31 net2 IN net24 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M32 net24 IN net25 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M33 net25 IN net26 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M34 net26 IN net27 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M35 net27 IN net28 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M36 net28 IN net29 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1 net29 IN net30 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M37 net30 IN net31 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M38 net31 IN net32 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M9 net32 IN VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M5 net3 IN net4 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M8 net5 IN net33 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M10 net33 IN net34 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M39 net34 IN net35 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M40 net35 IN net36 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M41 net36 IN net37 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M42 net37 IN net38 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M43 net38 IN net39 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M44 net39 IN net40 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M45 net40 IN net41 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M46 net41 IN VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M47 OUT2 IN net42 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M48 net42 IN net43 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M49 net43 IN net44 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M50 net44 IN net45 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M51 net45 IN net46 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M52 net46 IN net5 VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[1] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[2] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[3] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[4] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[5] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[6] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[7] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[8] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[9] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[10] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[11] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[12] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[13] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[14] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[15] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[16] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[17] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[18] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[19] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[20] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[21] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[22] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[23] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[24] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[25] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[26] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[27] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[28] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[29] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[30] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[31] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[32] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[33] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+M1[34] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  CurrentMirrors/CM_pfets.sym # of pins=4
+** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_pfets.sym
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_pfets.sch
+.subckt CM_pfets IN OUT1 OUT2 VDD
+*.PININFO IN:B OUT1:B OUT2:B VDD:B
+M1[1] IN IN VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[2] IN IN VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[3] IN IN VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[4] IN IN VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[5] IN IN VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[6] IN IN VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2 net4 IN VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1 net5 IN net4 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M3 net6 IN net5 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M4 net7 IN net6 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M5 net8 IN net7 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M6 net9 IN net8 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M7 net10 IN net9 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M8 net11 IN net10 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M9 net12 IN net11 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M10 net1 IN net12 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M11 net13 IN net1 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M12 net14 IN net13 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13 net15 IN net14 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14 net16 IN net15 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15 net17 IN net16 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M16 net18 IN net17 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M17 net19 IN net18 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M18 net20 IN net19 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M19 net21 IN net20 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M20 net2 IN net21 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M21 net22 IN net2 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M22 net23 IN net22 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M23 net24 IN net23 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M24 net25 IN net24 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M25 net26 IN net25 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M26 net27 IN net26 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M27 net28 IN net27 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M28 net29 IN net28 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M29 net30 IN net29 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M30 OUT1 IN net30 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M31 net31 IN VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M32 net32 IN net31 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M33 net33 IN net32 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M34 net34 IN net33 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M35 net35 IN net34 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M36 net36 IN net35 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M37 net37 IN net36 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M38 net38 IN net37 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M39 net39 IN net38 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M40 net3 IN net39 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M41 net40 IN net3 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M42 net41 IN net40 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M43 net42 IN net41 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M44 OUT2 IN net42 VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[1] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[2] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[3] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[4] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[5] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[6] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[7] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[8] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[9] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[10] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[11] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[12] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[13] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[14] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[15] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[16] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[17] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[18] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[19] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[20] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[21] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[22] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[23] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[24] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[25] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[26] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[27] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[28] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[29] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[30] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[31] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[32] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[33] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M2[34] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PseudoResistor/PRbiased_net.sym # of pins=8
+** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PRbiased_net.sym
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PRbiased_net.sch
+.subckt PRbiased_net VA VB IBN IBP ITN ITP VDD VSS
+*.PININFO VA:B VB:B IBN:B IBP:B ITN:B ITP:B VDD:B VSS:B
+x1 VA VB net1 net2 IBN IBP vc VDD VSS PR_net
+x2 IBN vc net1 ITN VDD VSS DiffN_net
+x3 IBP vc net2 ITP VDD VSS DiffP_net
+.ends
+
+
+* expanding   symbol:  PseudoResistor/PR_net.sym # of pins=9
+** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PR_net.sym
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PR_net.sch
+.subckt PR_net VA VB VG_N VG_P IB_N IB_P VC VDD VSS
+*.PININFO VA:B VB:B VG_N:B VG_P:B IB_N:B IB_P:B VC:B VDD:B VSS:B
+x1 VDD net1 IB_N net2 VG_N VC VSS PR_nfets
+x2 IB_P VSS VA VB VG_P net1 net2 VDD PR_pfets
+.ends
+
+
+* expanding   symbol:  PseudoResistor/DiffN_net.sym # of pins=6
+** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffN_net.sym
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffN_net.sch
+.subckt DiffN_net VN VP OUT IT VDD VSS
+*.PININFO VN:B VP:B OUT:B IT:B VDD:B VSS:B
+x1 net1 OUT VP VN IT VSS DiffN_nfets
+x2 net1 OUT net1 VDD VDD DiffN_pfets
+.ends
+
+
+* expanding   symbol:  PseudoResistor/DiffP_net.sym # of pins=6
+** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffP_net.sym
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffP_net.sch
+.subckt DiffP_net VN VP OUT IT VDD VSS
+*.PININFO VN:B VP:B OUT:B IT:B VDD:B VSS:B
+x1 net1 OUT net1 VSS VSS DiffP_nfets
+x2 net1 OUT VP VN IT VDD DiffP_pfets
+.ends
+
+
+* expanding   symbol:  PseudoResistor/PR_nfets.sym # of pins=7
+** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PR_nfets.sym
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PR_nfets.sch
+.subckt PR_nfets VD1 VD2 VS1 VS2 VG VC VB
+*.PININFO VD1:B VD2:B VS1:B VS2:B VG:B VC:B VB:B
+M5[1] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[2] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[3] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[4] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[5] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[6] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[7] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[8] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[9] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[10] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[11] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[12] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[13] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[14] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[15] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[16] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[17] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[18] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[19] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[20] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[21] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[22] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[23] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[24] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[25] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[26] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[27] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[28] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[29] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[30] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[31] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M5[32] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
+M3 VD2 VG net1 VB nfet_03v3 L=2u W=2u nf=1 m=1
+M4 net1 VG VC VB nfet_03v3 L=2u W=2u nf=1 m=1
+M6 VD2 VG net2 VB nfet_03v3 L=2u W=2u nf=1 m=1
+M8 net2 VG VC VB nfet_03v3 L=2u W=2u nf=1 m=1
+M1 VC VG net3 VB nfet_03v3 L=2u W=2u nf=1 m=1
+M9 net3 VG VS2 VB nfet_03v3 L=2u W=2u nf=1 m=1
+M10 VC VG net4 VB nfet_03v3 L=2u W=2u nf=1 m=1
+M11 net4 VG VS2 VB nfet_03v3 L=2u W=2u nf=1 m=1
+M2 VD1 VG net5 VB nfet_03v3 L=2u W=2u nf=1 m=1
+M12 net5 VG VS1 VB nfet_03v3 L=2u W=2u nf=1 m=1
+M13 VD1 VG net6 VB nfet_03v3 L=2u W=2u nf=1 m=1
+M14 net6 VG VS1 VB nfet_03v3 L=2u W=2u nf=1 m=1
+M7 VD1 VG net7 VB nfet_03v3 L=2u W=2u nf=1 m=1
+M15 net7 VG VS1 VB nfet_03v3 L=2u W=2u nf=1 m=1
+M16 VD1 VG net8 VB nfet_03v3 L=2u W=2u nf=1 m=1
+M17 net8 VG VS1 VB nfet_03v3 L=2u W=2u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PseudoResistor/PR_pfets.sym # of pins=8
+** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PR_pfets.sym
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PR_pfets.sch
+.subckt PR_pfets VD1 VS1 VS2_A VS2_B VG VC_A VC_B VB
+*.PININFO VD1:B VS1:B VS2_A:B VS2_B:B VG:B VC_A:B VC_B:B VB:B
+M1 net3 VG VS1 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M2 VD1 VG net3 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M5 net4 VG VS1 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M6 VD1 VG net4 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M7 net5 VG VS1 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M9 VD1 VG net5 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M10 net6 VG VS1 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M11 VD1 VG net6 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M12 net1 VG VS2_A VB pfet_03v3 L=2u W=2u nf=1 m=1
+M13 VC_A VG net1 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M14 net2 VG VS2_A VB pfet_03v3 L=2u W=2u nf=1 m=1
+M15 VC_A VG net2 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M16 VC_B VG net7 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M17 net7 VG VS2_B VB pfet_03v3 L=2u W=2u nf=1 m=1
+M18 VC_B VG net8 VB pfet_03v3 L=2u W=2u nf=1 m=1
+M19 net8 VG VS2_B VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[1] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[2] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[3] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[4] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[5] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[6] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[7] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[8] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[9] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[10] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[11] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[12] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[13] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[14] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[15] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[16] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[17] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[18] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[19] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[20] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[21] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[22] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[23] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[24] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[25] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[26] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[27] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[28] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[29] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[30] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[31] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+M3[32] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PseudoResistor/DiffN_nfets.sym # of pins=6
+** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffN_nfets.sym
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffN_nfets.sch
+.subckt DiffN_nfets D1 D2 G1 G2 S B
+*.PININFO D1:B D2:B G1:B G2:B S:B B:B
+M1 D1 G1 net1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2 D2 G2 net5 B nfet_03v3 L=2u W=2u nf=1 m=1
+M3 D1 G1 net2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M4 D1 G1 net3 B nfet_03v3 L=2u W=2u nf=1 m=1
+M5 D1 G1 net4 B nfet_03v3 L=2u W=2u nf=1 m=1
+M6 net1 G1 S B nfet_03v3 L=2u W=2u nf=1 m=1
+M7 net2 G1 S B nfet_03v3 L=2u W=2u nf=1 m=1
+M8 net3 G1 S B nfet_03v3 L=2u W=2u nf=1 m=1
+M9 net4 G1 S B nfet_03v3 L=2u W=2u nf=1 m=1
+M10 D2 G2 net6 B nfet_03v3 L=2u W=2u nf=1 m=1
+M11 D2 G2 net7 B nfet_03v3 L=2u W=2u nf=1 m=1
+M12 D2 G2 net8 B nfet_03v3 L=2u W=2u nf=1 m=1
+M13 net5 G2 S B nfet_03v3 L=2u W=2u nf=1 m=1
+M14 net6 G2 S B nfet_03v3 L=2u W=2u nf=1 m=1
+M15 net7 G2 S B nfet_03v3 L=2u W=2u nf=1 m=1
+M16 net8 G2 S B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[1] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[2] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[3] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[4] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[5] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[6] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[7] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[8] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[9] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[10] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[11] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[12] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[13] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[14] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[15] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[16] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[17] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[18] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[19] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[20] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[21] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[22] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[23] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[24] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[25] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[26] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[27] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[28] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[29] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[30] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[31] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M17[32] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PseudoResistor/DiffN_pfets.sym # of pins=5
+** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffN_pfets.sym
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffN_pfets.sch
+.subckt DiffN_pfets D1 D2 G S B
+*.PININFO D1:B D2:B G:B S:B B:B
+M1 net4 G S B pfet_03v3 L=2u W=2u nf=1 m=1
+M2 net5 G S B pfet_03v3 L=2u W=2u nf=1 m=1
+M3 net3 G S B pfet_03v3 L=2u W=2u nf=1 m=1
+M4 net2 G S B pfet_03v3 L=2u W=2u nf=1 m=1
+M5 net1 G S B pfet_03v3 L=2u W=2u nf=1 m=1
+M6 D1 G net4 B pfet_03v3 L=2u W=2u nf=1 m=1
+M7 D1 G net3 B pfet_03v3 L=2u W=2u nf=1 m=1
+M8 D1 G net2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M9 D1 G net1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M10 net6 G S B pfet_03v3 L=2u W=2u nf=1 m=1
+M11 net7 G S B pfet_03v3 L=2u W=2u nf=1 m=1
+M12 net8 G S B pfet_03v3 L=2u W=2u nf=1 m=1
+M13 D2 G net5 B pfet_03v3 L=2u W=2u nf=1 m=1
+M14 D2 G net6 B pfet_03v3 L=2u W=2u nf=1 m=1
+M15 D2 G net7 B pfet_03v3 L=2u W=2u nf=1 m=1
+M16 D2 G net8 B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[1] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[2] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[3] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[4] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[5] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[6] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[7] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[8] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[9] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[10] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[11] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[12] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[13] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[14] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[15] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[16] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[17] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[18] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[19] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[20] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[21] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[22] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[23] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[24] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[25] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[26] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[27] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[28] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[29] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[30] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[31] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M17[32] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PseudoResistor/DiffP_nfets.sym # of pins=5
+** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffP_nfets.sym
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffP_nfets.sch
+.subckt DiffP_nfets D1 D2 G S B
+*.PININFO D1:B D2:B G:B S:B B:B
+M1 D1 G net4 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2 D2 G net5 B nfet_03v3 L=2u W=2u nf=1 m=1
+M5 D1 G net3 B nfet_03v3 L=2u W=2u nf=1 m=1
+M6 D1 G net2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M7 D1 G net1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M8 net4 G S B nfet_03v3 L=2u W=2u nf=1 m=1
+M9 net3 G S B nfet_03v3 L=2u W=2u nf=1 m=1
+M10 net2 G S B nfet_03v3 L=2u W=2u nf=1 m=1
+M11 net1 G S B nfet_03v3 L=2u W=2u nf=1 m=1
+M12 D2 G net6 B nfet_03v3 L=2u W=2u nf=1 m=1
+M13 D2 G net7 B nfet_03v3 L=2u W=2u nf=1 m=1
+M14 D2 G net8 B nfet_03v3 L=2u W=2u nf=1 m=1
+M15 net5 G S B nfet_03v3 L=2u W=2u nf=1 m=1
+M16 net6 G S B nfet_03v3 L=2u W=2u nf=1 m=1
+M17 net7 G S B nfet_03v3 L=2u W=2u nf=1 m=1
+M18 net8 G S B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[1] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[2] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[3] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[4] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[5] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[6] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[7] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[8] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[9] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[10] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[11] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[12] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[13] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[14] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[15] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[16] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[17] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[18] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[19] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[20] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[21] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[22] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[23] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[24] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[25] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[26] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[27] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[28] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[29] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[30] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[31] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[32] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PseudoResistor/DiffP_pfets.sym # of pins=6
+** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffP_pfets.sym
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffP_pfets.sch
+.subckt DiffP_pfets D1 D2 G1 G2 S B
+*.PININFO D1:B D2:B G1:B G2:B S:B B:B
+M1 net4 G1 S B pfet_03v3 L=2u W=2u nf=1 m=1
+M2 net5 G2 S B pfet_03v3 L=2u W=2u nf=1 m=1
+M5 net3 G1 S B pfet_03v3 L=2u W=2u nf=1 m=1
+M6 net2 G1 S B pfet_03v3 L=2u W=2u nf=1 m=1
+M7 net1 G1 S B pfet_03v3 L=2u W=2u nf=1 m=1
+M8 D1 G1 net4 B pfet_03v3 L=2u W=2u nf=1 m=1
+M9 D1 G1 net3 B pfet_03v3 L=2u W=2u nf=1 m=1
+M10 D1 G1 net2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M11 D1 G1 net1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M12 net6 G2 S B pfet_03v3 L=2u W=2u nf=1 m=1
+M15 D2 G2 net5 B pfet_03v3 L=2u W=2u nf=1 m=1
+M16 D2 G2 net6 B pfet_03v3 L=2u W=2u nf=1 m=1
+M19 net7 G2 S B pfet_03v3 L=2u W=2u nf=1 m=1
+M20 net8 G2 S B pfet_03v3 L=2u W=2u nf=1 m=1
+M21 D2 G2 net7 B pfet_03v3 L=2u W=2u nf=1 m=1
+M22 D2 G2 net8 B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[1] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[2] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[3] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[4] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[5] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[6] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[7] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[8] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[9] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[10] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[11] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[12] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[13] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[14] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[15] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[16] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[17] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[18] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[19] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[20] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[21] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[22] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[23] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[24] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[25] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[26] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[27] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[28] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[29] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[30] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[31] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[32] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+.ends
+
+.end

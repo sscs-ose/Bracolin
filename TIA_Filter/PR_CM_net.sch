@@ -95,10 +95,6 @@ N 430 -680 430 -300 {
 lab=#net3}
 N 450 -640 450 -300 {
 lab=#net4}
-N 730 -230 810 -230 {
-lab=#net23}
-N 720 -700 770 -700 {
-lab=#net24}
 N 510 -550 510 -520 {
 lab=#net12}
 N 430 -300 430 -230 {
@@ -110,13 +106,13 @@ lab=#net1}
 N 380 -620 380 -560 {
 lab=#net2}
 N 210 -700 350 -700 {
-lab=#net25}
+lab=#net23}
 N 350 -700 350 -530 {
-lab=#net25}
+lab=#net23}
 N 220 -230 350 -230 {
-lab=#net26}
+lab=#net24}
 N 350 -390 350 -230 {
-lab=#net26}
+lab=#net24}
 N 250 -140 360 -140 {
 lab=VSS}
 N 240 -790 350 -790 {
@@ -124,83 +120,83 @@ lab=VDD}
 N -180 -230 -120 -230 {
 lab=VSS}
 N 180 -680 180 -230 {
-lab=#net27}
+lab=#net25}
 N 160 -640 160 -230 {
-lab=#net28}
+lab=#net26}
 N -220 -640 160 -640 {
-lab=#net28}
+lab=#net26}
 N -220 -590 120 -590 {
-lab=#net29}
+lab=#net27}
 N 120 -590 120 -230 {
-lab=#net29}
+lab=#net27}
 N 100 -550 100 -230 {
-lab=#net30}
+lab=#net28}
 N -220 -550 100 -550 {
-lab=#net30}
+lab=#net28}
 N -220 -500 60 -500 {
-lab=#net31}
+lab=#net29}
 N 60 -500 60 -230 {
-lab=#net31}
+lab=#net29}
 N 40 -460 40 -230 {
-lab=#net32}
+lab=#net30}
 N -220 -460 40 -460 {
-lab=#net32}
+lab=#net30}
 N -220 -410 -0 -410 {
-lab=#net33}
+lab=#net31}
 N -0 -410 -0 -230 {
-lab=#net33}
+lab=#net31}
 N -20 -370 -20 -230 {
-lab=#net34}
+lab=#net32}
 N -220 -370 -20 -370 {
-lab=#net34}
+lab=#net32}
 N -220 -320 -60 -320 {
-lab=#net35}
+lab=#net33}
 N -60 -320 -60 -230 {
-lab=#net35}
+lab=#net33}
 N -80 -280 -80 -230 {
-lab=#net36}
+lab=#net34}
 N -220 -280 -80 -280 {
-lab=#net36}
+lab=#net34}
 N 170 -700 170 -660 {
-lab=#net37}
+lab=#net35}
 N -220 -660 170 -660 {
-lab=#net37}
+lab=#net35}
 N -220 -620 150 -620 {
-lab=#net38}
+lab=#net36}
 N 150 -700 150 -620 {
-lab=#net38}
+lab=#net36}
 N -220 -570 110 -570 {
-lab=#net39}
+lab=#net37}
 N 110 -700 110 -570 {
-lab=#net39}
+lab=#net37}
 N -220 -530 90 -530 {
-lab=#net40}
+lab=#net38}
 N 90 -700 90 -530 {
-lab=#net40}
+lab=#net38}
 N -220 -480 50 -480 {
-lab=#net41}
+lab=#net39}
 N 50 -700 50 -480 {
-lab=#net41}
+lab=#net39}
 N 30 -700 30 -440 {
-lab=#net42}
+lab=#net40}
 N -220 -440 30 -440 {
-lab=#net42}
+lab=#net40}
 N -10 -700 -10 -390 {
-lab=#net43}
+lab=#net41}
 N -220 -390 -10 -390 {
-lab=#net43}
+lab=#net41}
 N -30 -700 -30 -350 {
-lab=#net44}
+lab=#net42}
 N -220 -350 -30 -350 {
-lab=#net44}
+lab=#net42}
 N -70 -700 -70 -300 {
-lab=#net45}
+lab=#net43}
 N -220 -300 -70 -300 {
-lab=#net45}
+lab=#net43}
 N -90 -700 -90 -260 {
-lab=#net46}
+lab=#net44}
 N -220 -260 -90 -260 {
-lab=#net46}
+lab=#net44}
 N 300 -570 300 -530 {
 lab=ISBCS}
 N 250 -490 270 -490 {
@@ -218,7 +214,7 @@ lab=VSS}
 N 950 -360 980 -360 {
 lab=VSS}
 N -220 -680 180 -680 {
-lab=#net27}
+lab=#net25}
 N 900 -730 900 -710 {
 lab=A1}
 N 900 -230 900 -210 {
@@ -226,7 +222,17 @@ lab=B1}
 N -270 -730 -270 -710 {
 lab=A2}
 N -270 -230 -270 -200 {
-lab=A2}
+lab=B2}
+N 750 -230 800 -230 {
+lab=VSS}
+N 800 -230 800 -180 {
+lab=VSS}
+N 730 -240 730 -230 {
+lab=CMOUTN}
+N 720 -700 720 -690 {
+lab=CMOUTP}
+N 740 -700 780 -700 {
+lab=VDD}
 C {CurrentMirrors/CM_n_net.sym} 100 120 0 0 {name=x9}
 C {CurrentMirrors/CM_p_net.sym} 590 -660 0 0 {name=x10}
 C {PseudoResistor/PRbiased_net_x5.sym} 860 -480 1 0 {name=x11}
@@ -239,8 +245,8 @@ C {devices/iopin.sym} 160 -1010 0 0 {name=p2 lab=A2}
 C {devices/iopin.sym} 160 -990 0 0 {name=p3 lab=B2}
 C {devices/iopin.sym} 310 -1010 0 0 {name=p4 lab=A1}
 C {devices/iopin.sym} 310 -990 0 0 {name=p5 lab=B1}
-C {devices/iopin.sym} 240 -960 0 0 {name=p6 lab=IN}
-C {devices/iopin.sym} 240 -940 0 0 {name=p7 lab=IN}
+C {devices/iopin.sym} 240 -960 0 0 {name=p6 lab=CMOUTN}
+C {devices/iopin.sym} 240 -940 0 0 {name=p7 lab=CMOUTP}
 C {devices/iopin.sym} 240 -900 0 0 {name=p8 lab=VDD}
 C {devices/iopin.sym} 240 -880 0 0 {name=p9 lab=VSS}
 C {devices/lab_wire.sym} 310 -790 0 0 {name=p10 sig_type=std_logic lab=VDD}
@@ -258,3 +264,7 @@ C {devices/lab_wire.sym} 900 -730 0 1 {name=p21 sig_type=std_logic lab=A1}
 C {devices/lab_wire.sym} 900 -210 2 0 {name=p22 sig_type=std_logic lab=B1}
 C {devices/lab_wire.sym} -270 -730 0 0 {name=p23 sig_type=std_logic lab=A2}
 C {devices/lab_wire.sym} -270 -200 2 1 {name=p24 sig_type=std_logic lab=B2}
+C {devices/lab_wire.sym} 730 -240 0 1 {name=p25 sig_type=std_logic lab=CMOUTN}
+C {devices/lab_wire.sym} 800 -180 0 1 {name=p26 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 720 -690 2 0 {name=p27 sig_type=std_logic lab=CMOUTP}
+C {devices/lab_wire.sym} 780 -700 0 1 {name=p28 sig_type=std_logic lab=VDD}

@@ -1,0 +1,2304 @@
+Title: ** sch_path: /home/lci-ufsc/desktop/bracolin/tia_filter/pseudoresistor/tb_pr_series_dc.sch
+Date: Fri Dec 29 00:16:25  2023
+Plotname: Operating Point
+Flags: real
+No. Variables: 1709
+No. Points: 1
+Variables:
+	0	v(vdd)	voltage
+	1	i(e.x1.e1)	current
+	2	i(e.x2.e1)	current
+	3	i(e.x3.e1)	current
+	4	i(e.x7.e1)	current
+	5	i(e.x8.e1)	current
+	6	v(net1)	voltage
+	7	v(net2)	voltage
+	8	v(net3)	voltage
+	9	v(net4)	voltage
+	10	v(net5)	voltage
+	11	v(net6)	voltage
+	12	v(net7)	voltage
+	13	v(net8)	voltage
+	14	v(net9)	voltage
+	15	i(v1)	current
+	16	i(v2)	current
+	17	v(va)	voltage
+	18	v(va2)	voltage
+	19	v(va__i)	voltage
+	20	i(vai)	current
+	21	i(vai2)	current
+	22	v(vb)	voltage
+	23	i(vb1)	current
+	24	v(vb2)	voltage
+	25	i(vb2)	current
+	26	v(vb2__i)	voltage
+	27	v(vb__i)	voltage
+	28	i(vbi)	current
+	29	i(vbi2)	current
+	30	i(vdd)	current
+	31	i(vinn6)	current
+	32	i(vinp3)	current
+	33	i(vx)	current
+	34	v(vxa)	voltage
+	35	v(vxb)	voltage
+	36	v(x13.net1)	voltage
+	37	v(x13.net2)	voltage
+	38	v(x13.net3)	voltage
+	39	v(x13.net4)	voltage
+	40	v(x13.net5)	voltage
+	41	v(x13.net6)	voltage
+	42	v(x13.net7)	voltage
+	43	v(x13.net8)	voltage
+	44	v(x13.net9)	voltage
+	45	v(x13.net10)	voltage
+	46	v(x13.net11)	voltage
+	47	v(x13.net12)	voltage
+	48	v(x13.net13)	voltage
+	49	v(x13.net14)	voltage
+	50	v(x13.net15)	voltage
+	51	v(x13.net16)	voltage
+	52	v(x13.net17)	voltage
+	53	v(x13.net18)	voltage
+	54	v(x13.net19)	voltage
+	55	v(x13.net20)	voltage
+	56	v(x13.net21)	voltage
+	57	v(x13.net22)	voltage
+	58	v(x13.net23)	voltage
+	59	v(x13.net24)	voltage
+	60	v(x13.net25)	voltage
+	61	v(x13.net26)	voltage
+	62	v(x13.net27)	voltage
+	63	v(x13.net28)	voltage
+	64	v(x13.net29)	voltage
+	65	v(x13.net30)	voltage
+	66	v(x13.net31)	voltage
+	67	v(x13.net32)	voltage
+	68	v(x13.net33)	voltage
+	69	v(x13.net34)	voltage
+	70	v(x13.net35)	voltage
+	71	v(x13.net36)	voltage
+	72	v(x13.net37)	voltage
+	73	v(x13.net38)	voltage
+	74	v(x13.net39)	voltage
+	75	v(x13.net40)	voltage
+	76	v(x13.net41)	voltage
+	77	v(x13.net42)	voltage
+	78	v(x13.net43)	voltage
+	79	v(x13.net44)	voltage
+	80	v(x13.x1.x1.net1)	voltage
+	81	v(x13.x1.x1.net2)	voltage
+	82	v(x13.x1.x1.net3)	voltage
+	83	v(x13.x1.x1.net4)	voltage
+	84	v(x13.x1.x1.net5)	voltage
+	85	v(x13.x1.x1.net6)	voltage
+	86	v(x13.x1.x1.net7)	voltage
+	87	v(x13.x1.x1.net8)	voltage
+	88	v(x13.x1.x1.net9)	voltage
+	89	v(x13.x1.x1.net10)	voltage
+	90	v(x13.x1.x1.net11)	voltage
+	91	v(x13.x1.x1.net12)	voltage
+	92	v(x13.x1.x1.net13)	voltage
+	93	v(x13.x1.x1.net14)	voltage
+	94	v(x13.x1.x1.net15)	voltage
+	95	v(x13.x1.x1.net16)	voltage
+	96	v(x13.x1.x1.net17)	voltage
+	97	v(x13.x1.x1.net18)	voltage
+	98	v(x13.x1.x1.net19)	voltage
+	99	v(x13.x1.x1.net20)	voltage
+	100	v(x13.x1.x1.net21)	voltage
+	101	v(x13.x1.x1.net22)	voltage
+	102	v(x13.x1.x1.net23)	voltage
+	103	v(x13.x1.x1.net24)	voltage
+	104	v(x13.x1.x1.net25)	voltage
+	105	v(x13.x1.x1.net26)	voltage
+	106	v(x13.x1.x1.net27)	voltage
+	107	v(x13.x1.x1.net28)	voltage
+	108	v(x13.x1.x1.net29)	voltage
+	109	v(x13.x1.x1.net30)	voltage
+	110	v(x13.x1.x1.net31)	voltage
+	111	v(x13.x1.x1.net32)	voltage
+	112	v(x13.x1.x1.net33)	voltage
+	113	v(x13.x1.x1.net34)	voltage
+	114	v(x13.x1.x1.net35)	voltage
+	115	v(x13.x1.x1.net36)	voltage
+	116	v(x13.x1.x1.net37)	voltage
+	117	v(x13.x1.x1.net38)	voltage
+	118	v(x13.x1.x1.net39)	voltage
+	119	v(x13.x1.x1.net40)	voltage
+	120	v(x13.x1.x1.net41)	voltage
+	121	v(x13.x1.x1.net42)	voltage
+	122	v(x13.x1.x2.net1)	voltage
+	123	v(x13.x1.x2.net2)	voltage
+	124	v(x13.x1.x2.net3)	voltage
+	125	v(x13.x1.x2.net4)	voltage
+	126	v(x13.x1.x2.net5)	voltage
+	127	v(x13.x1.x2.net6)	voltage
+	128	v(x13.x1.x2.net7)	voltage
+	129	v(x13.x1.x2.net8)	voltage
+	130	v(x13.x1.x2.net9)	voltage
+	131	v(x13.x1.x2.net10)	voltage
+	132	v(x13.x1.x2.net11)	voltage
+	133	v(x13.x1.x2.net12)	voltage
+	134	v(x13.x1.x2.net13)	voltage
+	135	v(x13.x1.x2.net14)	voltage
+	136	v(x13.x1.x2.net15)	voltage
+	137	v(x13.x1.x2.net16)	voltage
+	138	v(x13.x1.x2.net17)	voltage
+	139	v(x13.x1.x2.net18)	voltage
+	140	v(x13.x1.x2.net19)	voltage
+	141	v(x13.x1.x2.net20)	voltage
+	142	v(x13.x1.x2.net21)	voltage
+	143	v(x13.x1.x2.net22)	voltage
+	144	v(x13.x1.x2.net23)	voltage
+	145	v(x13.x1.x2.net24)	voltage
+	146	v(x13.x1.x2.net25)	voltage
+	147	v(x13.x1.x2.net26)	voltage
+	148	v(x13.x1.x2.net27)	voltage
+	149	v(x13.x1.x2.net28)	voltage
+	150	v(x13.x1.x2.net29)	voltage
+	151	v(x13.x1.x2.net30)	voltage
+	152	v(x13.x1.x2.net31)	voltage
+	153	v(x13.x1.x2.net32)	voltage
+	154	v(x13.x1.x2.net33)	voltage
+	155	v(x13.x1.x2.net34)	voltage
+	156	v(x13.x1.x2.net35)	voltage
+	157	v(x13.x1.x2.net36)	voltage
+	158	v(x13.x1.x2.net37)	voltage
+	159	v(x13.x1.x2.net38)	voltage
+	160	v(x13.x1.x2.net39)	voltage
+	161	v(x13.x1.x2.net40)	voltage
+	162	v(x13.x1.x2.net41)	voltage
+	163	v(x13.x1.x2.net42)	voltage
+	164	v(x13.x1.x3.net1)	voltage
+	165	v(x13.x1.x3.net2)	voltage
+	166	v(x13.x1.x3.net3)	voltage
+	167	v(x13.x1.x3.net4)	voltage
+	168	v(x13.x1.x3.net5)	voltage
+	169	v(x13.x1.x3.net6)	voltage
+	170	v(x13.x1.x3.net7)	voltage
+	171	v(x13.x1.x3.net8)	voltage
+	172	v(x13.x1.x3.net9)	voltage
+	173	v(x13.x1.x3.net10)	voltage
+	174	v(x13.x1.x3.net11)	voltage
+	175	v(x13.x1.x3.net12)	voltage
+	176	v(x13.x1.x3.net13)	voltage
+	177	v(x13.x1.x3.net14)	voltage
+	178	v(x13.x1.x3.net15)	voltage
+	179	v(x13.x1.x3.net16)	voltage
+	180	v(x13.x1.x3.net17)	voltage
+	181	v(x13.x1.x3.net18)	voltage
+	182	v(x13.x1.x3.net19)	voltage
+	183	v(x13.x1.x3.net20)	voltage
+	184	v(x13.x1.x3.net21)	voltage
+	185	v(x13.x1.x3.net22)	voltage
+	186	v(x13.x1.x3.net23)	voltage
+	187	v(x13.x1.x3.net24)	voltage
+	188	v(x13.x1.x3.net25)	voltage
+	189	v(x13.x1.x3.net26)	voltage
+	190	v(x13.x1.x3.net27)	voltage
+	191	v(x13.x1.x3.net28)	voltage
+	192	v(x13.x1.x3.net29)	voltage
+	193	v(x13.x1.x3.net30)	voltage
+	194	v(x13.x1.x3.net31)	voltage
+	195	v(x13.x1.x3.net32)	voltage
+	196	v(x13.x1.x3.net33)	voltage
+	197	v(x13.x1.x3.net34)	voltage
+	198	v(x13.x1.x3.net35)	voltage
+	199	v(x13.x1.x3.net36)	voltage
+	200	v(x13.x1.x3.net37)	voltage
+	201	v(x13.x1.x3.net38)	voltage
+	202	v(x13.x1.x3.net39)	voltage
+	203	v(x13.x1.x3.net40)	voltage
+	204	v(x13.x1.x3.net41)	voltage
+	205	v(x13.x1.x3.net42)	voltage
+	206	v(x13.x1.x4.net1)	voltage
+	207	v(x13.x1.x4.net2)	voltage
+	208	v(x13.x1.x4.net3)	voltage
+	209	v(x13.x1.x4.net4)	voltage
+	210	v(x13.x1.x4.net5)	voltage
+	211	v(x13.x1.x4.net6)	voltage
+	212	v(x13.x1.x4.net7)	voltage
+	213	v(x13.x1.x4.net8)	voltage
+	214	v(x13.x1.x4.net9)	voltage
+	215	v(x13.x1.x4.net10)	voltage
+	216	v(x13.x1.x4.net11)	voltage
+	217	v(x13.x1.x4.net12)	voltage
+	218	v(x13.x1.x4.net13)	voltage
+	219	v(x13.x1.x4.net14)	voltage
+	220	v(x13.x1.x4.net15)	voltage
+	221	v(x13.x1.x4.net16)	voltage
+	222	v(x13.x1.x4.net17)	voltage
+	223	v(x13.x1.x4.net18)	voltage
+	224	v(x13.x1.x4.net19)	voltage
+	225	v(x13.x1.x4.net20)	voltage
+	226	v(x13.x1.x4.net21)	voltage
+	227	v(x13.x1.x4.net22)	voltage
+	228	v(x13.x1.x4.net23)	voltage
+	229	v(x13.x1.x4.net24)	voltage
+	230	v(x13.x1.x4.net25)	voltage
+	231	v(x13.x1.x4.net26)	voltage
+	232	v(x13.x1.x4.net27)	voltage
+	233	v(x13.x1.x4.net28)	voltage
+	234	v(x13.x1.x4.net29)	voltage
+	235	v(x13.x1.x4.net30)	voltage
+	236	v(x13.x1.x4.net31)	voltage
+	237	v(x13.x1.x4.net32)	voltage
+	238	v(x13.x1.x4.net33)	voltage
+	239	v(x13.x1.x4.net34)	voltage
+	240	v(x13.x1.x4.net35)	voltage
+	241	v(x13.x1.x4.net36)	voltage
+	242	v(x13.x1.x4.net37)	voltage
+	243	v(x13.x1.x4.net38)	voltage
+	244	v(x13.x1.x4.net39)	voltage
+	245	v(x13.x1.x4.net40)	voltage
+	246	v(x13.x1.x4.net41)	voltage
+	247	v(x13.x1.x4.net42)	voltage
+	248	v(x13.x1.x5.net1)	voltage
+	249	v(x13.x1.x5.net2)	voltage
+	250	v(x13.x1.x5.net3)	voltage
+	251	v(x13.x1.x5.net4)	voltage
+	252	v(x13.x1.x5.net5)	voltage
+	253	v(x13.x1.x5.net6)	voltage
+	254	v(x13.x1.x5.net7)	voltage
+	255	v(x13.x1.x5.net8)	voltage
+	256	v(x13.x1.x5.net9)	voltage
+	257	v(x13.x1.x5.net10)	voltage
+	258	v(x13.x1.x5.net11)	voltage
+	259	v(x13.x1.x5.net12)	voltage
+	260	v(x13.x1.x5.net13)	voltage
+	261	v(x13.x1.x5.net14)	voltage
+	262	v(x13.x1.x5.net15)	voltage
+	263	v(x13.x1.x5.net16)	voltage
+	264	v(x13.x1.x5.net17)	voltage
+	265	v(x13.x1.x5.net18)	voltage
+	266	v(x13.x1.x5.net19)	voltage
+	267	v(x13.x1.x5.net20)	voltage
+	268	v(x13.x1.x5.net21)	voltage
+	269	v(x13.x1.x5.net22)	voltage
+	270	v(x13.x1.x5.net23)	voltage
+	271	v(x13.x1.x5.net24)	voltage
+	272	v(x13.x1.x5.net25)	voltage
+	273	v(x13.x1.x5.net26)	voltage
+	274	v(x13.x1.x5.net27)	voltage
+	275	v(x13.x1.x5.net28)	voltage
+	276	v(x13.x1.x5.net29)	voltage
+	277	v(x13.x1.x5.net30)	voltage
+	278	v(x13.x1.x5.net31)	voltage
+	279	v(x13.x1.x5.net32)	voltage
+	280	v(x13.x1.x5.net33)	voltage
+	281	v(x13.x1.x5.net34)	voltage
+	282	v(x13.x1.x5.net35)	voltage
+	283	v(x13.x1.x5.net36)	voltage
+	284	v(x13.x1.x5.net37)	voltage
+	285	v(x13.x1.x5.net38)	voltage
+	286	v(x13.x1.x5.net39)	voltage
+	287	v(x13.x1.x5.net40)	voltage
+	288	v(x13.x1.x5.net41)	voltage
+	289	v(x13.x1.x5.net42)	voltage
+	290	v(x13.x1.x6.net1)	voltage
+	291	v(x13.x1.x6.net2)	voltage
+	292	v(x13.x1.x6.net3)	voltage
+	293	v(x13.x1.x6.net4)	voltage
+	294	v(x13.x1.x6.net5)	voltage
+	295	v(x13.x1.x6.net6)	voltage
+	296	v(x13.x1.x6.net7)	voltage
+	297	v(x13.x1.x6.net8)	voltage
+	298	v(x13.x1.x6.net9)	voltage
+	299	v(x13.x1.x6.net10)	voltage
+	300	v(x13.x1.x6.net11)	voltage
+	301	v(x13.x1.x6.net12)	voltage
+	302	v(x13.x1.x6.net13)	voltage
+	303	v(x13.x1.x6.net14)	voltage
+	304	v(x13.x1.x6.net15)	voltage
+	305	v(x13.x1.x6.net16)	voltage
+	306	v(x13.x1.x6.net17)	voltage
+	307	v(x13.x1.x6.net18)	voltage
+	308	v(x13.x1.x6.net19)	voltage
+	309	v(x13.x1.x6.net20)	voltage
+	310	v(x13.x1.x6.net21)	voltage
+	311	v(x13.x1.x6.net22)	voltage
+	312	v(x13.x1.x6.net23)	voltage
+	313	v(x13.x1.x6.net24)	voltage
+	314	v(x13.x1.x6.net25)	voltage
+	315	v(x13.x1.x6.net26)	voltage
+	316	v(x13.x1.x6.net27)	voltage
+	317	v(x13.x1.x6.net28)	voltage
+	318	v(x13.x1.x6.net29)	voltage
+	319	v(x13.x1.x6.net30)	voltage
+	320	v(x13.x1.x6.net31)	voltage
+	321	v(x13.x1.x6.net32)	voltage
+	322	v(x13.x1.x6.net33)	voltage
+	323	v(x13.x1.x6.net34)	voltage
+	324	v(x13.x1.x6.net35)	voltage
+	325	v(x13.x1.x6.net36)	voltage
+	326	v(x13.x1.x6.net37)	voltage
+	327	v(x13.x1.x6.net38)	voltage
+	328	v(x13.x1.x6.net39)	voltage
+	329	v(x13.x1.x6.net40)	voltage
+	330	v(x13.x1.x6.net41)	voltage
+	331	v(x13.x1.x6.net42)	voltage
+	332	v(x13.x2.x1.net1)	voltage
+	333	v(x13.x2.x1.net2)	voltage
+	334	v(x13.x2.x1.net3)	voltage
+	335	v(x13.x2.x1.net4)	voltage
+	336	v(x13.x2.x1.net5)	voltage
+	337	v(x13.x2.x1.net6)	voltage
+	338	v(x13.x2.x1.net7)	voltage
+	339	v(x13.x2.x1.net8)	voltage
+	340	v(x13.x2.x1.net9)	voltage
+	341	v(x13.x2.x1.net10)	voltage
+	342	v(x13.x2.x1.net11)	voltage
+	343	v(x13.x2.x1.net12)	voltage
+	344	v(x13.x2.x1.net13)	voltage
+	345	v(x13.x2.x1.net14)	voltage
+	346	v(x13.x2.x1.net15)	voltage
+	347	v(x13.x2.x1.net16)	voltage
+	348	v(x13.x2.x1.net17)	voltage
+	349	v(x13.x2.x1.net18)	voltage
+	350	v(x13.x2.x1.net19)	voltage
+	351	v(x13.x2.x1.net20)	voltage
+	352	v(x13.x2.x1.net21)	voltage
+	353	v(x13.x2.x1.net22)	voltage
+	354	v(x13.x2.x1.net23)	voltage
+	355	v(x13.x2.x1.net24)	voltage
+	356	v(x13.x2.x1.net25)	voltage
+	357	v(x13.x2.x1.net26)	voltage
+	358	v(x13.x2.x1.net27)	voltage
+	359	v(x13.x2.x1.net28)	voltage
+	360	v(x13.x2.x1.net29)	voltage
+	361	v(x13.x2.x1.net30)	voltage
+	362	v(x13.x2.x1.net31)	voltage
+	363	v(x13.x2.x1.net32)	voltage
+	364	v(x13.x2.x1.net33)	voltage
+	365	v(x13.x2.x1.net34)	voltage
+	366	v(x13.x2.x1.net35)	voltage
+	367	v(x13.x2.x1.net36)	voltage
+	368	v(x13.x2.x1.net37)	voltage
+	369	v(x13.x2.x1.net38)	voltage
+	370	v(x13.x2.x1.net39)	voltage
+	371	v(x13.x2.x1.net40)	voltage
+	372	v(x13.x2.x1.net41)	voltage
+	373	v(x13.x2.x1.net42)	voltage
+	374	v(x13.x2.x1.net43)	voltage
+	375	v(x13.x2.x1.net44)	voltage
+	376	v(x13.x2.x1.net45)	voltage
+	377	v(x13.x2.x1.net46)	voltage
+	378	v(x13.x2.x2.net1)	voltage
+	379	v(x13.x2.x2.net2)	voltage
+	380	v(x13.x2.x2.net3)	voltage
+	381	v(x13.x2.x2.net4)	voltage
+	382	v(x13.x2.x2.net5)	voltage
+	383	v(x13.x2.x2.net6)	voltage
+	384	v(x13.x2.x2.net7)	voltage
+	385	v(x13.x2.x2.net8)	voltage
+	386	v(x13.x2.x2.net9)	voltage
+	387	v(x13.x2.x2.net10)	voltage
+	388	v(x13.x2.x2.net11)	voltage
+	389	v(x13.x2.x2.net12)	voltage
+	390	v(x13.x2.x2.net13)	voltage
+	391	v(x13.x2.x2.net14)	voltage
+	392	v(x13.x2.x2.net15)	voltage
+	393	v(x13.x2.x2.net16)	voltage
+	394	v(x13.x2.x2.net17)	voltage
+	395	v(x13.x2.x2.net18)	voltage
+	396	v(x13.x2.x2.net19)	voltage
+	397	v(x13.x2.x2.net20)	voltage
+	398	v(x13.x2.x2.net21)	voltage
+	399	v(x13.x2.x2.net22)	voltage
+	400	v(x13.x2.x2.net23)	voltage
+	401	v(x13.x2.x2.net24)	voltage
+	402	v(x13.x2.x2.net25)	voltage
+	403	v(x13.x2.x2.net26)	voltage
+	404	v(x13.x2.x2.net27)	voltage
+	405	v(x13.x2.x2.net28)	voltage
+	406	v(x13.x2.x2.net29)	voltage
+	407	v(x13.x2.x2.net30)	voltage
+	408	v(x13.x2.x2.net31)	voltage
+	409	v(x13.x2.x2.net32)	voltage
+	410	v(x13.x2.x2.net33)	voltage
+	411	v(x13.x2.x2.net34)	voltage
+	412	v(x13.x2.x2.net35)	voltage
+	413	v(x13.x2.x2.net36)	voltage
+	414	v(x13.x2.x2.net37)	voltage
+	415	v(x13.x2.x2.net38)	voltage
+	416	v(x13.x2.x2.net39)	voltage
+	417	v(x13.x2.x2.net40)	voltage
+	418	v(x13.x2.x2.net41)	voltage
+	419	v(x13.x2.x2.net42)	voltage
+	420	v(x13.x2.x2.net43)	voltage
+	421	v(x13.x2.x2.net44)	voltage
+	422	v(x13.x2.x2.net45)	voltage
+	423	v(x13.x2.x2.net46)	voltage
+	424	v(x13.x2.x3.net1)	voltage
+	425	v(x13.x2.x3.net2)	voltage
+	426	v(x13.x2.x3.net3)	voltage
+	427	v(x13.x2.x3.net4)	voltage
+	428	v(x13.x2.x3.net5)	voltage
+	429	v(x13.x2.x3.net6)	voltage
+	430	v(x13.x2.x3.net7)	voltage
+	431	v(x13.x2.x3.net8)	voltage
+	432	v(x13.x2.x3.net9)	voltage
+	433	v(x13.x2.x3.net10)	voltage
+	434	v(x13.x2.x3.net11)	voltage
+	435	v(x13.x2.x3.net12)	voltage
+	436	v(x13.x2.x3.net13)	voltage
+	437	v(x13.x2.x3.net14)	voltage
+	438	v(x13.x2.x3.net15)	voltage
+	439	v(x13.x2.x3.net16)	voltage
+	440	v(x13.x2.x3.net17)	voltage
+	441	v(x13.x2.x3.net18)	voltage
+	442	v(x13.x2.x3.net19)	voltage
+	443	v(x13.x2.x3.net20)	voltage
+	444	v(x13.x2.x3.net21)	voltage
+	445	v(x13.x2.x3.net22)	voltage
+	446	v(x13.x2.x3.net23)	voltage
+	447	v(x13.x2.x3.net24)	voltage
+	448	v(x13.x2.x3.net25)	voltage
+	449	v(x13.x2.x3.net26)	voltage
+	450	v(x13.x2.x3.net27)	voltage
+	451	v(x13.x2.x3.net28)	voltage
+	452	v(x13.x2.x3.net29)	voltage
+	453	v(x13.x2.x3.net30)	voltage
+	454	v(x13.x2.x3.net31)	voltage
+	455	v(x13.x2.x3.net32)	voltage
+	456	v(x13.x2.x3.net33)	voltage
+	457	v(x13.x2.x3.net34)	voltage
+	458	v(x13.x2.x3.net35)	voltage
+	459	v(x13.x2.x3.net36)	voltage
+	460	v(x13.x2.x3.net37)	voltage
+	461	v(x13.x2.x3.net38)	voltage
+	462	v(x13.x2.x3.net39)	voltage
+	463	v(x13.x2.x3.net40)	voltage
+	464	v(x13.x2.x3.net41)	voltage
+	465	v(x13.x2.x3.net42)	voltage
+	466	v(x13.x2.x3.net43)	voltage
+	467	v(x13.x2.x3.net44)	voltage
+	468	v(x13.x2.x3.net45)	voltage
+	469	v(x13.x2.x3.net46)	voltage
+	470	v(x13.x2.x4.net1)	voltage
+	471	v(x13.x2.x4.net2)	voltage
+	472	v(x13.x2.x4.net3)	voltage
+	473	v(x13.x2.x4.net4)	voltage
+	474	v(x13.x2.x4.net5)	voltage
+	475	v(x13.x2.x4.net6)	voltage
+	476	v(x13.x2.x4.net7)	voltage
+	477	v(x13.x2.x4.net8)	voltage
+	478	v(x13.x2.x4.net9)	voltage
+	479	v(x13.x2.x4.net10)	voltage
+	480	v(x13.x2.x4.net11)	voltage
+	481	v(x13.x2.x4.net12)	voltage
+	482	v(x13.x2.x4.net13)	voltage
+	483	v(x13.x2.x4.net14)	voltage
+	484	v(x13.x2.x4.net15)	voltage
+	485	v(x13.x2.x4.net16)	voltage
+	486	v(x13.x2.x4.net17)	voltage
+	487	v(x13.x2.x4.net18)	voltage
+	488	v(x13.x2.x4.net19)	voltage
+	489	v(x13.x2.x4.net20)	voltage
+	490	v(x13.x2.x4.net21)	voltage
+	491	v(x13.x2.x4.net22)	voltage
+	492	v(x13.x2.x4.net23)	voltage
+	493	v(x13.x2.x4.net24)	voltage
+	494	v(x13.x2.x4.net25)	voltage
+	495	v(x13.x2.x4.net26)	voltage
+	496	v(x13.x2.x4.net27)	voltage
+	497	v(x13.x2.x4.net28)	voltage
+	498	v(x13.x2.x4.net29)	voltage
+	499	v(x13.x2.x4.net30)	voltage
+	500	v(x13.x2.x4.net31)	voltage
+	501	v(x13.x2.x4.net32)	voltage
+	502	v(x13.x2.x4.net33)	voltage
+	503	v(x13.x2.x4.net34)	voltage
+	504	v(x13.x2.x4.net35)	voltage
+	505	v(x13.x2.x4.net36)	voltage
+	506	v(x13.x2.x4.net37)	voltage
+	507	v(x13.x2.x4.net38)	voltage
+	508	v(x13.x2.x4.net39)	voltage
+	509	v(x13.x2.x4.net40)	voltage
+	510	v(x13.x2.x4.net41)	voltage
+	511	v(x13.x2.x4.net42)	voltage
+	512	v(x13.x2.x4.net43)	voltage
+	513	v(x13.x2.x4.net44)	voltage
+	514	v(x13.x2.x4.net45)	voltage
+	515	v(x13.x2.x4.net46)	voltage
+	516	v(x13.x2.x5.net1)	voltage
+	517	v(x13.x2.x5.net2)	voltage
+	518	v(x13.x2.x5.net3)	voltage
+	519	v(x13.x2.x5.net4)	voltage
+	520	v(x13.x2.x5.net5)	voltage
+	521	v(x13.x2.x5.net6)	voltage
+	522	v(x13.x2.x5.net7)	voltage
+	523	v(x13.x2.x5.net8)	voltage
+	524	v(x13.x2.x5.net9)	voltage
+	525	v(x13.x2.x5.net10)	voltage
+	526	v(x13.x2.x5.net11)	voltage
+	527	v(x13.x2.x5.net12)	voltage
+	528	v(x13.x2.x5.net13)	voltage
+	529	v(x13.x2.x5.net14)	voltage
+	530	v(x13.x2.x5.net15)	voltage
+	531	v(x13.x2.x5.net16)	voltage
+	532	v(x13.x2.x5.net17)	voltage
+	533	v(x13.x2.x5.net18)	voltage
+	534	v(x13.x2.x5.net19)	voltage
+	535	v(x13.x2.x5.net20)	voltage
+	536	v(x13.x2.x5.net21)	voltage
+	537	v(x13.x2.x5.net22)	voltage
+	538	v(x13.x2.x5.net23)	voltage
+	539	v(x13.x2.x5.net24)	voltage
+	540	v(x13.x2.x5.net25)	voltage
+	541	v(x13.x2.x5.net26)	voltage
+	542	v(x13.x2.x5.net27)	voltage
+	543	v(x13.x2.x5.net28)	voltage
+	544	v(x13.x2.x5.net29)	voltage
+	545	v(x13.x2.x5.net30)	voltage
+	546	v(x13.x2.x5.net31)	voltage
+	547	v(x13.x2.x5.net32)	voltage
+	548	v(x13.x2.x5.net33)	voltage
+	549	v(x13.x2.x5.net34)	voltage
+	550	v(x13.x2.x5.net35)	voltage
+	551	v(x13.x2.x5.net36)	voltage
+	552	v(x13.x2.x5.net37)	voltage
+	553	v(x13.x2.x5.net38)	voltage
+	554	v(x13.x2.x5.net39)	voltage
+	555	v(x13.x2.x5.net40)	voltage
+	556	v(x13.x2.x5.net41)	voltage
+	557	v(x13.x2.x5.net42)	voltage
+	558	v(x13.x2.x5.net43)	voltage
+	559	v(x13.x2.x5.net44)	voltage
+	560	v(x13.x2.x5.net45)	voltage
+	561	v(x13.x2.x5.net46)	voltage
+	562	v(x13.x2.x7.net1)	voltage
+	563	v(x13.x2.x7.net2)	voltage
+	564	v(x13.x2.x7.net3)	voltage
+	565	v(x13.x2.x7.net4)	voltage
+	566	v(x13.x2.x7.net5)	voltage
+	567	v(x13.x2.x7.net6)	voltage
+	568	v(x13.x2.x7.net7)	voltage
+	569	v(x13.x2.x7.net8)	voltage
+	570	v(x13.x2.x7.net9)	voltage
+	571	v(x13.x2.x7.net10)	voltage
+	572	v(x13.x2.x7.net11)	voltage
+	573	v(x13.x2.x7.net12)	voltage
+	574	v(x13.x2.x7.net13)	voltage
+	575	v(x13.x2.x7.net14)	voltage
+	576	v(x13.x2.x7.net15)	voltage
+	577	v(x13.x2.x7.net16)	voltage
+	578	v(x13.x2.x7.net17)	voltage
+	579	v(x13.x2.x7.net18)	voltage
+	580	v(x13.x2.x7.net19)	voltage
+	581	v(x13.x2.x7.net20)	voltage
+	582	v(x13.x2.x7.net21)	voltage
+	583	v(x13.x2.x7.net22)	voltage
+	584	v(x13.x2.x7.net23)	voltage
+	585	v(x13.x2.x7.net24)	voltage
+	586	v(x13.x2.x7.net25)	voltage
+	587	v(x13.x2.x7.net26)	voltage
+	588	v(x13.x2.x7.net27)	voltage
+	589	v(x13.x2.x7.net28)	voltage
+	590	v(x13.x2.x7.net29)	voltage
+	591	v(x13.x2.x7.net30)	voltage
+	592	v(x13.x2.x7.net31)	voltage
+	593	v(x13.x2.x7.net32)	voltage
+	594	v(x13.x2.x7.net33)	voltage
+	595	v(x13.x2.x7.net34)	voltage
+	596	v(x13.x2.x7.net35)	voltage
+	597	v(x13.x2.x7.net36)	voltage
+	598	v(x13.x2.x7.net37)	voltage
+	599	v(x13.x2.x7.net38)	voltage
+	600	v(x13.x2.x7.net39)	voltage
+	601	v(x13.x2.x7.net40)	voltage
+	602	v(x13.x2.x7.net41)	voltage
+	603	v(x13.x2.x7.net42)	voltage
+	604	v(x13.x2.x7.net43)	voltage
+	605	v(x13.x2.x7.net44)	voltage
+	606	v(x13.x2.x7.net45)	voltage
+	607	v(x13.x2.x7.net46)	voltage
+	608	v(x13.x3.net1)	voltage
+	609	v(x13.x3.net2)	voltage
+	610	v(x13.x3.net3)	voltage
+	611	v(x13.x3.net4)	voltage
+	612	v(x13.x3.x1.net1)	voltage
+	613	v(x13.x3.x1.net2)	voltage
+	614	v(x13.x3.x1.vc)	voltage
+	615	v(x13.x3.x1.x1.net1)	voltage
+	616	v(x13.x3.x1.x1.net2)	voltage
+	617	v(x13.x3.x1.x1.x1.net1)	voltage
+	618	v(x13.x3.x1.x1.x1.net2)	voltage
+	619	v(x13.x3.x1.x1.x1.net3)	voltage
+	620	v(x13.x3.x1.x1.x1.net4)	voltage
+	621	v(x13.x3.x1.x1.x1.net5)	voltage
+	622	v(x13.x3.x1.x1.x1.net6)	voltage
+	623	v(x13.x3.x1.x1.x1.net7)	voltage
+	624	v(x13.x3.x1.x1.x1.net8)	voltage
+	625	v(x13.x3.x1.x1.x2.net1)	voltage
+	626	v(x13.x3.x1.x1.x2.net2)	voltage
+	627	v(x13.x3.x1.x1.x2.net3)	voltage
+	628	v(x13.x3.x1.x1.x2.net4)	voltage
+	629	v(x13.x3.x1.x1.x2.net5)	voltage
+	630	v(x13.x3.x1.x1.x2.net6)	voltage
+	631	v(x13.x3.x1.x1.x2.net7)	voltage
+	632	v(x13.x3.x1.x1.x2.net8)	voltage
+	633	v(x13.x3.x1.x2.net1)	voltage
+	634	v(x13.x3.x1.x2.x1.net1)	voltage
+	635	v(x13.x3.x1.x2.x1.net2)	voltage
+	636	v(x13.x3.x1.x2.x1.net3)	voltage
+	637	v(x13.x3.x1.x2.x1.net4)	voltage
+	638	v(x13.x3.x1.x2.x1.net5)	voltage
+	639	v(x13.x3.x1.x2.x1.net6)	voltage
+	640	v(x13.x3.x1.x2.x1.net7)	voltage
+	641	v(x13.x3.x1.x2.x1.net8)	voltage
+	642	v(x13.x3.x1.x2.x2.net1)	voltage
+	643	v(x13.x3.x1.x2.x2.net2)	voltage
+	644	v(x13.x3.x1.x2.x2.net3)	voltage
+	645	v(x13.x3.x1.x2.x2.net4)	voltage
+	646	v(x13.x3.x1.x2.x2.net5)	voltage
+	647	v(x13.x3.x1.x2.x2.net6)	voltage
+	648	v(x13.x3.x1.x2.x2.net7)	voltage
+	649	v(x13.x3.x1.x2.x2.net8)	voltage
+	650	v(x13.x3.x1.x3.net1)	voltage
+	651	v(x13.x3.x1.x3.x1.net1)	voltage
+	652	v(x13.x3.x1.x3.x1.net2)	voltage
+	653	v(x13.x3.x1.x3.x1.net3)	voltage
+	654	v(x13.x3.x1.x3.x1.net4)	voltage
+	655	v(x13.x3.x1.x3.x1.net5)	voltage
+	656	v(x13.x3.x1.x3.x1.net6)	voltage
+	657	v(x13.x3.x1.x3.x1.net7)	voltage
+	658	v(x13.x3.x1.x3.x1.net8)	voltage
+	659	v(x13.x3.x1.x3.x2.net1)	voltage
+	660	v(x13.x3.x1.x3.x2.net2)	voltage
+	661	v(x13.x3.x1.x3.x2.net3)	voltage
+	662	v(x13.x3.x1.x3.x2.net4)	voltage
+	663	v(x13.x3.x1.x3.x2.net5)	voltage
+	664	v(x13.x3.x1.x3.x2.net6)	voltage
+	665	v(x13.x3.x1.x3.x2.net7)	voltage
+	666	v(x13.x3.x1.x3.x2.net8)	voltage
+	667	v(x13.x3.x2.net1)	voltage
+	668	v(x13.x3.x2.net2)	voltage
+	669	v(x13.x3.x2.vc)	voltage
+	670	v(x13.x3.x2.x1.net1)	voltage
+	671	v(x13.x3.x2.x1.net2)	voltage
+	672	v(x13.x3.x2.x1.x1.net1)	voltage
+	673	v(x13.x3.x2.x1.x1.net2)	voltage
+	674	v(x13.x3.x2.x1.x1.net3)	voltage
+	675	v(x13.x3.x2.x1.x1.net4)	voltage
+	676	v(x13.x3.x2.x1.x1.net5)	voltage
+	677	v(x13.x3.x2.x1.x1.net6)	voltage
+	678	v(x13.x3.x2.x1.x1.net7)	voltage
+	679	v(x13.x3.x2.x1.x1.net8)	voltage
+	680	v(x13.x3.x2.x1.x2.net1)	voltage
+	681	v(x13.x3.x2.x1.x2.net2)	voltage
+	682	v(x13.x3.x2.x1.x2.net3)	voltage
+	683	v(x13.x3.x2.x1.x2.net4)	voltage
+	684	v(x13.x3.x2.x1.x2.net5)	voltage
+	685	v(x13.x3.x2.x1.x2.net6)	voltage
+	686	v(x13.x3.x2.x1.x2.net7)	voltage
+	687	v(x13.x3.x2.x1.x2.net8)	voltage
+	688	v(x13.x3.x2.x2.net1)	voltage
+	689	v(x13.x3.x2.x2.x1.net1)	voltage
+	690	v(x13.x3.x2.x2.x1.net2)	voltage
+	691	v(x13.x3.x2.x2.x1.net3)	voltage
+	692	v(x13.x3.x2.x2.x1.net4)	voltage
+	693	v(x13.x3.x2.x2.x1.net5)	voltage
+	694	v(x13.x3.x2.x2.x1.net6)	voltage
+	695	v(x13.x3.x2.x2.x1.net7)	voltage
+	696	v(x13.x3.x2.x2.x1.net8)	voltage
+	697	v(x13.x3.x2.x2.x2.net1)	voltage
+	698	v(x13.x3.x2.x2.x2.net2)	voltage
+	699	v(x13.x3.x2.x2.x2.net3)	voltage
+	700	v(x13.x3.x2.x2.x2.net4)	voltage
+	701	v(x13.x3.x2.x2.x2.net5)	voltage
+	702	v(x13.x3.x2.x2.x2.net6)	voltage
+	703	v(x13.x3.x2.x2.x2.net7)	voltage
+	704	v(x13.x3.x2.x2.x2.net8)	voltage
+	705	v(x13.x3.x2.x3.net1)	voltage
+	706	v(x13.x3.x2.x3.x1.net1)	voltage
+	707	v(x13.x3.x2.x3.x1.net2)	voltage
+	708	v(x13.x3.x2.x3.x1.net3)	voltage
+	709	v(x13.x3.x2.x3.x1.net4)	voltage
+	710	v(x13.x3.x2.x3.x1.net5)	voltage
+	711	v(x13.x3.x2.x3.x1.net6)	voltage
+	712	v(x13.x3.x2.x3.x1.net7)	voltage
+	713	v(x13.x3.x2.x3.x1.net8)	voltage
+	714	v(x13.x3.x2.x3.x2.net1)	voltage
+	715	v(x13.x3.x2.x3.x2.net2)	voltage
+	716	v(x13.x3.x2.x3.x2.net3)	voltage
+	717	v(x13.x3.x2.x3.x2.net4)	voltage
+	718	v(x13.x3.x2.x3.x2.net5)	voltage
+	719	v(x13.x3.x2.x3.x2.net6)	voltage
+	720	v(x13.x3.x2.x3.x2.net7)	voltage
+	721	v(x13.x3.x2.x3.x2.net8)	voltage
+	722	v(x13.x3.x3.net1)	voltage
+	723	v(x13.x3.x3.net2)	voltage
+	724	v(x13.x3.x3.vc)	voltage
+	725	v(x13.x3.x3.x1.net1)	voltage
+	726	v(x13.x3.x3.x1.net2)	voltage
+	727	v(x13.x3.x3.x1.x1.net1)	voltage
+	728	v(x13.x3.x3.x1.x1.net2)	voltage
+	729	v(x13.x3.x3.x1.x1.net3)	voltage
+	730	v(x13.x3.x3.x1.x1.net4)	voltage
+	731	v(x13.x3.x3.x1.x1.net5)	voltage
+	732	v(x13.x3.x3.x1.x1.net6)	voltage
+	733	v(x13.x3.x3.x1.x1.net7)	voltage
+	734	v(x13.x3.x3.x1.x1.net8)	voltage
+	735	v(x13.x3.x3.x1.x2.net1)	voltage
+	736	v(x13.x3.x3.x1.x2.net2)	voltage
+	737	v(x13.x3.x3.x1.x2.net3)	voltage
+	738	v(x13.x3.x3.x1.x2.net4)	voltage
+	739	v(x13.x3.x3.x1.x2.net5)	voltage
+	740	v(x13.x3.x3.x1.x2.net6)	voltage
+	741	v(x13.x3.x3.x1.x2.net7)	voltage
+	742	v(x13.x3.x3.x1.x2.net8)	voltage
+	743	v(x13.x3.x3.x2.net1)	voltage
+	744	v(x13.x3.x3.x2.x1.net1)	voltage
+	745	v(x13.x3.x3.x2.x1.net2)	voltage
+	746	v(x13.x3.x3.x2.x1.net3)	voltage
+	747	v(x13.x3.x3.x2.x1.net4)	voltage
+	748	v(x13.x3.x3.x2.x1.net5)	voltage
+	749	v(x13.x3.x3.x2.x1.net6)	voltage
+	750	v(x13.x3.x3.x2.x1.net7)	voltage
+	751	v(x13.x3.x3.x2.x1.net8)	voltage
+	752	v(x13.x3.x3.x2.x2.net1)	voltage
+	753	v(x13.x3.x3.x2.x2.net2)	voltage
+	754	v(x13.x3.x3.x2.x2.net3)	voltage
+	755	v(x13.x3.x3.x2.x2.net4)	voltage
+	756	v(x13.x3.x3.x2.x2.net5)	voltage
+	757	v(x13.x3.x3.x2.x2.net6)	voltage
+	758	v(x13.x3.x3.x2.x2.net7)	voltage
+	759	v(x13.x3.x3.x2.x2.net8)	voltage
+	760	v(x13.x3.x3.x3.net1)	voltage
+	761	v(x13.x3.x3.x3.x1.net1)	voltage
+	762	v(x13.x3.x3.x3.x1.net2)	voltage
+	763	v(x13.x3.x3.x3.x1.net3)	voltage
+	764	v(x13.x3.x3.x3.x1.net4)	voltage
+	765	v(x13.x3.x3.x3.x1.net5)	voltage
+	766	v(x13.x3.x3.x3.x1.net6)	voltage
+	767	v(x13.x3.x3.x3.x1.net7)	voltage
+	768	v(x13.x3.x3.x3.x1.net8)	voltage
+	769	v(x13.x3.x3.x3.x2.net1)	voltage
+	770	v(x13.x3.x3.x3.x2.net2)	voltage
+	771	v(x13.x3.x3.x3.x2.net3)	voltage
+	772	v(x13.x3.x3.x3.x2.net4)	voltage
+	773	v(x13.x3.x3.x3.x2.net5)	voltage
+	774	v(x13.x3.x3.x3.x2.net6)	voltage
+	775	v(x13.x3.x3.x3.x2.net7)	voltage
+	776	v(x13.x3.x3.x3.x2.net8)	voltage
+	777	v(x13.x3.x4.net1)	voltage
+	778	v(x13.x3.x4.net2)	voltage
+	779	v(x13.x3.x4.vc)	voltage
+	780	v(x13.x3.x4.x1.net1)	voltage
+	781	v(x13.x3.x4.x1.net2)	voltage
+	782	v(x13.x3.x4.x1.x1.net1)	voltage
+	783	v(x13.x3.x4.x1.x1.net2)	voltage
+	784	v(x13.x3.x4.x1.x1.net3)	voltage
+	785	v(x13.x3.x4.x1.x1.net4)	voltage
+	786	v(x13.x3.x4.x1.x1.net5)	voltage
+	787	v(x13.x3.x4.x1.x1.net6)	voltage
+	788	v(x13.x3.x4.x1.x1.net7)	voltage
+	789	v(x13.x3.x4.x1.x1.net8)	voltage
+	790	v(x13.x3.x4.x1.x2.net1)	voltage
+	791	v(x13.x3.x4.x1.x2.net2)	voltage
+	792	v(x13.x3.x4.x1.x2.net3)	voltage
+	793	v(x13.x3.x4.x1.x2.net4)	voltage
+	794	v(x13.x3.x4.x1.x2.net5)	voltage
+	795	v(x13.x3.x4.x1.x2.net6)	voltage
+	796	v(x13.x3.x4.x1.x2.net7)	voltage
+	797	v(x13.x3.x4.x1.x2.net8)	voltage
+	798	v(x13.x3.x4.x2.net1)	voltage
+	799	v(x13.x3.x4.x2.x1.net1)	voltage
+	800	v(x13.x3.x4.x2.x1.net2)	voltage
+	801	v(x13.x3.x4.x2.x1.net3)	voltage
+	802	v(x13.x3.x4.x2.x1.net4)	voltage
+	803	v(x13.x3.x4.x2.x1.net5)	voltage
+	804	v(x13.x3.x4.x2.x1.net6)	voltage
+	805	v(x13.x3.x4.x2.x1.net7)	voltage
+	806	v(x13.x3.x4.x2.x1.net8)	voltage
+	807	v(x13.x3.x4.x2.x2.net1)	voltage
+	808	v(x13.x3.x4.x2.x2.net2)	voltage
+	809	v(x13.x3.x4.x2.x2.net3)	voltage
+	810	v(x13.x3.x4.x2.x2.net4)	voltage
+	811	v(x13.x3.x4.x2.x2.net5)	voltage
+	812	v(x13.x3.x4.x2.x2.net6)	voltage
+	813	v(x13.x3.x4.x2.x2.net7)	voltage
+	814	v(x13.x3.x4.x2.x2.net8)	voltage
+	815	v(x13.x3.x4.x3.net1)	voltage
+	816	v(x13.x3.x4.x3.x1.net1)	voltage
+	817	v(x13.x3.x4.x3.x1.net2)	voltage
+	818	v(x13.x3.x4.x3.x1.net3)	voltage
+	819	v(x13.x3.x4.x3.x1.net4)	voltage
+	820	v(x13.x3.x4.x3.x1.net5)	voltage
+	821	v(x13.x3.x4.x3.x1.net6)	voltage
+	822	v(x13.x3.x4.x3.x1.net7)	voltage
+	823	v(x13.x3.x4.x3.x1.net8)	voltage
+	824	v(x13.x3.x4.x3.x2.net1)	voltage
+	825	v(x13.x3.x4.x3.x2.net2)	voltage
+	826	v(x13.x3.x4.x3.x2.net3)	voltage
+	827	v(x13.x3.x4.x3.x2.net4)	voltage
+	828	v(x13.x3.x4.x3.x2.net5)	voltage
+	829	v(x13.x3.x4.x3.x2.net6)	voltage
+	830	v(x13.x3.x4.x3.x2.net7)	voltage
+	831	v(x13.x3.x4.x3.x2.net8)	voltage
+	832	v(x13.x3.x5.net1)	voltage
+	833	v(x13.x3.x5.net2)	voltage
+	834	v(x13.x3.x5.vc)	voltage
+	835	v(x13.x3.x5.x1.net1)	voltage
+	836	v(x13.x3.x5.x1.net2)	voltage
+	837	v(x13.x3.x5.x1.x1.net1)	voltage
+	838	v(x13.x3.x5.x1.x1.net2)	voltage
+	839	v(x13.x3.x5.x1.x1.net3)	voltage
+	840	v(x13.x3.x5.x1.x1.net4)	voltage
+	841	v(x13.x3.x5.x1.x1.net5)	voltage
+	842	v(x13.x3.x5.x1.x1.net6)	voltage
+	843	v(x13.x3.x5.x1.x1.net7)	voltage
+	844	v(x13.x3.x5.x1.x1.net8)	voltage
+	845	v(x13.x3.x5.x1.x2.net1)	voltage
+	846	v(x13.x3.x5.x1.x2.net2)	voltage
+	847	v(x13.x3.x5.x1.x2.net3)	voltage
+	848	v(x13.x3.x5.x1.x2.net4)	voltage
+	849	v(x13.x3.x5.x1.x2.net5)	voltage
+	850	v(x13.x3.x5.x1.x2.net6)	voltage
+	851	v(x13.x3.x5.x1.x2.net7)	voltage
+	852	v(x13.x3.x5.x1.x2.net8)	voltage
+	853	v(x13.x3.x5.x2.net1)	voltage
+	854	v(x13.x3.x5.x2.x1.net1)	voltage
+	855	v(x13.x3.x5.x2.x1.net2)	voltage
+	856	v(x13.x3.x5.x2.x1.net3)	voltage
+	857	v(x13.x3.x5.x2.x1.net4)	voltage
+	858	v(x13.x3.x5.x2.x1.net5)	voltage
+	859	v(x13.x3.x5.x2.x1.net6)	voltage
+	860	v(x13.x3.x5.x2.x1.net7)	voltage
+	861	v(x13.x3.x5.x2.x1.net8)	voltage
+	862	v(x13.x3.x5.x2.x2.net1)	voltage
+	863	v(x13.x3.x5.x2.x2.net2)	voltage
+	864	v(x13.x3.x5.x2.x2.net3)	voltage
+	865	v(x13.x3.x5.x2.x2.net4)	voltage
+	866	v(x13.x3.x5.x2.x2.net5)	voltage
+	867	v(x13.x3.x5.x2.x2.net6)	voltage
+	868	v(x13.x3.x5.x2.x2.net7)	voltage
+	869	v(x13.x3.x5.x2.x2.net8)	voltage
+	870	v(x13.x3.x5.x3.net1)	voltage
+	871	v(x13.x3.x5.x3.x1.net1)	voltage
+	872	v(x13.x3.x5.x3.x1.net2)	voltage
+	873	v(x13.x3.x5.x3.x1.net3)	voltage
+	874	v(x13.x3.x5.x3.x1.net4)	voltage
+	875	v(x13.x3.x5.x3.x1.net5)	voltage
+	876	v(x13.x3.x5.x3.x1.net6)	voltage
+	877	v(x13.x3.x5.x3.x1.net7)	voltage
+	878	v(x13.x3.x5.x3.x1.net8)	voltage
+	879	v(x13.x3.x5.x3.x2.net1)	voltage
+	880	v(x13.x3.x5.x3.x2.net2)	voltage
+	881	v(x13.x3.x5.x3.x2.net3)	voltage
+	882	v(x13.x3.x5.x3.x2.net4)	voltage
+	883	v(x13.x3.x5.x3.x2.net5)	voltage
+	884	v(x13.x3.x5.x3.x2.net6)	voltage
+	885	v(x13.x3.x5.x3.x2.net7)	voltage
+	886	v(x13.x3.x5.x3.x2.net8)	voltage
+	887	v(x13.x9.x1.net1)	voltage
+	888	v(x13.x9.x1.net2)	voltage
+	889	v(x13.x9.x1.net3)	voltage
+	890	v(x13.x9.x1.net4)	voltage
+	891	v(x13.x9.x1.net5)	voltage
+	892	v(x13.x9.x1.net6)	voltage
+	893	v(x13.x9.x1.net7)	voltage
+	894	v(x13.x9.x1.net8)	voltage
+	895	v(x13.x9.x1.net9)	voltage
+	896	v(x13.x9.x1.net10)	voltage
+	897	v(x13.x9.x1.net11)	voltage
+	898	v(x13.x9.x1.net12)	voltage
+	899	v(x13.x9.x1.net13)	voltage
+	900	v(x13.x9.x1.net14)	voltage
+	901	v(x13.x9.x1.net15)	voltage
+	902	v(x13.x9.x1.net16)	voltage
+	903	v(x13.x9.x1.net17)	voltage
+	904	v(x13.x9.x1.net18)	voltage
+	905	v(x13.x9.x1.net19)	voltage
+	906	v(x13.x9.x1.net20)	voltage
+	907	v(x13.x9.x1.net21)	voltage
+	908	v(x13.x9.x1.net22)	voltage
+	909	v(x13.x9.x1.net23)	voltage
+	910	v(x13.x9.x1.net24)	voltage
+	911	v(x13.x9.x1.net25)	voltage
+	912	v(x13.x9.x1.net26)	voltage
+	913	v(x13.x9.x1.net27)	voltage
+	914	v(x13.x9.x1.net28)	voltage
+	915	v(x13.x9.x1.net29)	voltage
+	916	v(x13.x9.x1.net30)	voltage
+	917	v(x13.x9.x1.net31)	voltage
+	918	v(x13.x9.x1.net32)	voltage
+	919	v(x13.x9.x1.net33)	voltage
+	920	v(x13.x9.x1.net34)	voltage
+	921	v(x13.x9.x1.net35)	voltage
+	922	v(x13.x9.x1.net36)	voltage
+	923	v(x13.x9.x1.net37)	voltage
+	924	v(x13.x9.x1.net38)	voltage
+	925	v(x13.x9.x1.net39)	voltage
+	926	v(x13.x9.x1.net40)	voltage
+	927	v(x13.x9.x1.net41)	voltage
+	928	v(x13.x9.x1.net42)	voltage
+	929	v(x13.x9.x1.net43)	voltage
+	930	v(x13.x9.x1.net44)	voltage
+	931	v(x13.x9.x1.net45)	voltage
+	932	v(x13.x9.x1.net46)	voltage
+	933	v(x13.x9.x2.net1)	voltage
+	934	v(x13.x9.x2.net2)	voltage
+	935	v(x13.x9.x2.net3)	voltage
+	936	v(x13.x9.x2.net4)	voltage
+	937	v(x13.x9.x2.net5)	voltage
+	938	v(x13.x9.x2.net6)	voltage
+	939	v(x13.x9.x2.net7)	voltage
+	940	v(x13.x9.x2.net8)	voltage
+	941	v(x13.x9.x2.net9)	voltage
+	942	v(x13.x9.x2.net10)	voltage
+	943	v(x13.x9.x2.net11)	voltage
+	944	v(x13.x9.x2.net12)	voltage
+	945	v(x13.x9.x2.net13)	voltage
+	946	v(x13.x9.x2.net14)	voltage
+	947	v(x13.x9.x2.net15)	voltage
+	948	v(x13.x9.x2.net16)	voltage
+	949	v(x13.x9.x2.net17)	voltage
+	950	v(x13.x9.x2.net18)	voltage
+	951	v(x13.x9.x2.net19)	voltage
+	952	v(x13.x9.x2.net20)	voltage
+	953	v(x13.x9.x2.net21)	voltage
+	954	v(x13.x9.x2.net22)	voltage
+	955	v(x13.x9.x2.net23)	voltage
+	956	v(x13.x9.x2.net24)	voltage
+	957	v(x13.x9.x2.net25)	voltage
+	958	v(x13.x9.x2.net26)	voltage
+	959	v(x13.x9.x2.net27)	voltage
+	960	v(x13.x9.x2.net28)	voltage
+	961	v(x13.x9.x2.net29)	voltage
+	962	v(x13.x9.x2.net30)	voltage
+	963	v(x13.x9.x2.net31)	voltage
+	964	v(x13.x9.x2.net32)	voltage
+	965	v(x13.x9.x2.net33)	voltage
+	966	v(x13.x9.x2.net34)	voltage
+	967	v(x13.x9.x2.net35)	voltage
+	968	v(x13.x9.x2.net36)	voltage
+	969	v(x13.x9.x2.net37)	voltage
+	970	v(x13.x9.x2.net38)	voltage
+	971	v(x13.x9.x2.net39)	voltage
+	972	v(x13.x9.x2.net40)	voltage
+	973	v(x13.x9.x2.net41)	voltage
+	974	v(x13.x9.x2.net42)	voltage
+	975	v(x13.x9.x2.net43)	voltage
+	976	v(x13.x9.x2.net44)	voltage
+	977	v(x13.x9.x2.net45)	voltage
+	978	v(x13.x9.x2.net46)	voltage
+	979	v(x13.x9.x3.net1)	voltage
+	980	v(x13.x9.x3.net2)	voltage
+	981	v(x13.x9.x3.net3)	voltage
+	982	v(x13.x9.x3.net4)	voltage
+	983	v(x13.x9.x3.net5)	voltage
+	984	v(x13.x9.x3.net6)	voltage
+	985	v(x13.x9.x3.net7)	voltage
+	986	v(x13.x9.x3.net8)	voltage
+	987	v(x13.x9.x3.net9)	voltage
+	988	v(x13.x9.x3.net10)	voltage
+	989	v(x13.x9.x3.net11)	voltage
+	990	v(x13.x9.x3.net12)	voltage
+	991	v(x13.x9.x3.net13)	voltage
+	992	v(x13.x9.x3.net14)	voltage
+	993	v(x13.x9.x3.net15)	voltage
+	994	v(x13.x9.x3.net16)	voltage
+	995	v(x13.x9.x3.net17)	voltage
+	996	v(x13.x9.x3.net18)	voltage
+	997	v(x13.x9.x3.net19)	voltage
+	998	v(x13.x9.x3.net20)	voltage
+	999	v(x13.x9.x3.net21)	voltage
+	1000	v(x13.x9.x3.net22)	voltage
+	1001	v(x13.x9.x3.net23)	voltage
+	1002	v(x13.x9.x3.net24)	voltage
+	1003	v(x13.x9.x3.net25)	voltage
+	1004	v(x13.x9.x3.net26)	voltage
+	1005	v(x13.x9.x3.net27)	voltage
+	1006	v(x13.x9.x3.net28)	voltage
+	1007	v(x13.x9.x3.net29)	voltage
+	1008	v(x13.x9.x3.net30)	voltage
+	1009	v(x13.x9.x3.net31)	voltage
+	1010	v(x13.x9.x3.net32)	voltage
+	1011	v(x13.x9.x3.net33)	voltage
+	1012	v(x13.x9.x3.net34)	voltage
+	1013	v(x13.x9.x3.net35)	voltage
+	1014	v(x13.x9.x3.net36)	voltage
+	1015	v(x13.x9.x3.net37)	voltage
+	1016	v(x13.x9.x3.net38)	voltage
+	1017	v(x13.x9.x3.net39)	voltage
+	1018	v(x13.x9.x3.net40)	voltage
+	1019	v(x13.x9.x3.net41)	voltage
+	1020	v(x13.x9.x3.net42)	voltage
+	1021	v(x13.x9.x3.net43)	voltage
+	1022	v(x13.x9.x3.net44)	voltage
+	1023	v(x13.x9.x3.net45)	voltage
+	1024	v(x13.x9.x3.net46)	voltage
+	1025	v(x13.x9.x4.net1)	voltage
+	1026	v(x13.x9.x4.net2)	voltage
+	1027	v(x13.x9.x4.net3)	voltage
+	1028	v(x13.x9.x4.net4)	voltage
+	1029	v(x13.x9.x4.net5)	voltage
+	1030	v(x13.x9.x4.net6)	voltage
+	1031	v(x13.x9.x4.net7)	voltage
+	1032	v(x13.x9.x4.net8)	voltage
+	1033	v(x13.x9.x4.net9)	voltage
+	1034	v(x13.x9.x4.net10)	voltage
+	1035	v(x13.x9.x4.net11)	voltage
+	1036	v(x13.x9.x4.net12)	voltage
+	1037	v(x13.x9.x4.net13)	voltage
+	1038	v(x13.x9.x4.net14)	voltage
+	1039	v(x13.x9.x4.net15)	voltage
+	1040	v(x13.x9.x4.net16)	voltage
+	1041	v(x13.x9.x4.net17)	voltage
+	1042	v(x13.x9.x4.net18)	voltage
+	1043	v(x13.x9.x4.net19)	voltage
+	1044	v(x13.x9.x4.net20)	voltage
+	1045	v(x13.x9.x4.net21)	voltage
+	1046	v(x13.x9.x4.net22)	voltage
+	1047	v(x13.x9.x4.net23)	voltage
+	1048	v(x13.x9.x4.net24)	voltage
+	1049	v(x13.x9.x4.net25)	voltage
+	1050	v(x13.x9.x4.net26)	voltage
+	1051	v(x13.x9.x4.net27)	voltage
+	1052	v(x13.x9.x4.net28)	voltage
+	1053	v(x13.x9.x4.net29)	voltage
+	1054	v(x13.x9.x4.net30)	voltage
+	1055	v(x13.x9.x4.net31)	voltage
+	1056	v(x13.x9.x4.net32)	voltage
+	1057	v(x13.x9.x4.net33)	voltage
+	1058	v(x13.x9.x4.net34)	voltage
+	1059	v(x13.x9.x4.net35)	voltage
+	1060	v(x13.x9.x4.net36)	voltage
+	1061	v(x13.x9.x4.net37)	voltage
+	1062	v(x13.x9.x4.net38)	voltage
+	1063	v(x13.x9.x4.net39)	voltage
+	1064	v(x13.x9.x4.net40)	voltage
+	1065	v(x13.x9.x4.net41)	voltage
+	1066	v(x13.x9.x4.net42)	voltage
+	1067	v(x13.x9.x4.net43)	voltage
+	1068	v(x13.x9.x4.net44)	voltage
+	1069	v(x13.x9.x4.net45)	voltage
+	1070	v(x13.x9.x4.net46)	voltage
+	1071	v(x13.x9.x5.net1)	voltage
+	1072	v(x13.x9.x5.net2)	voltage
+	1073	v(x13.x9.x5.net3)	voltage
+	1074	v(x13.x9.x5.net4)	voltage
+	1075	v(x13.x9.x5.net5)	voltage
+	1076	v(x13.x9.x5.net6)	voltage
+	1077	v(x13.x9.x5.net7)	voltage
+	1078	v(x13.x9.x5.net8)	voltage
+	1079	v(x13.x9.x5.net9)	voltage
+	1080	v(x13.x9.x5.net10)	voltage
+	1081	v(x13.x9.x5.net11)	voltage
+	1082	v(x13.x9.x5.net12)	voltage
+	1083	v(x13.x9.x5.net13)	voltage
+	1084	v(x13.x9.x5.net14)	voltage
+	1085	v(x13.x9.x5.net15)	voltage
+	1086	v(x13.x9.x5.net16)	voltage
+	1087	v(x13.x9.x5.net17)	voltage
+	1088	v(x13.x9.x5.net18)	voltage
+	1089	v(x13.x9.x5.net19)	voltage
+	1090	v(x13.x9.x5.net20)	voltage
+	1091	v(x13.x9.x5.net21)	voltage
+	1092	v(x13.x9.x5.net22)	voltage
+	1093	v(x13.x9.x5.net23)	voltage
+	1094	v(x13.x9.x5.net24)	voltage
+	1095	v(x13.x9.x5.net25)	voltage
+	1096	v(x13.x9.x5.net26)	voltage
+	1097	v(x13.x9.x5.net27)	voltage
+	1098	v(x13.x9.x5.net28)	voltage
+	1099	v(x13.x9.x5.net29)	voltage
+	1100	v(x13.x9.x5.net30)	voltage
+	1101	v(x13.x9.x5.net31)	voltage
+	1102	v(x13.x9.x5.net32)	voltage
+	1103	v(x13.x9.x5.net33)	voltage
+	1104	v(x13.x9.x5.net34)	voltage
+	1105	v(x13.x9.x5.net35)	voltage
+	1106	v(x13.x9.x5.net36)	voltage
+	1107	v(x13.x9.x5.net37)	voltage
+	1108	v(x13.x9.x5.net38)	voltage
+	1109	v(x13.x9.x5.net39)	voltage
+	1110	v(x13.x9.x5.net40)	voltage
+	1111	v(x13.x9.x5.net41)	voltage
+	1112	v(x13.x9.x5.net42)	voltage
+	1113	v(x13.x9.x5.net43)	voltage
+	1114	v(x13.x9.x5.net44)	voltage
+	1115	v(x13.x9.x5.net45)	voltage
+	1116	v(x13.x9.x5.net46)	voltage
+	1117	v(x13.x9.x7.net1)	voltage
+	1118	v(x13.x9.x7.net2)	voltage
+	1119	v(x13.x9.x7.net3)	voltage
+	1120	v(x13.x9.x7.net4)	voltage
+	1121	v(x13.x9.x7.net5)	voltage
+	1122	v(x13.x9.x7.net6)	voltage
+	1123	v(x13.x9.x7.net7)	voltage
+	1124	v(x13.x9.x7.net8)	voltage
+	1125	v(x13.x9.x7.net9)	voltage
+	1126	v(x13.x9.x7.net10)	voltage
+	1127	v(x13.x9.x7.net11)	voltage
+	1128	v(x13.x9.x7.net12)	voltage
+	1129	v(x13.x9.x7.net13)	voltage
+	1130	v(x13.x9.x7.net14)	voltage
+	1131	v(x13.x9.x7.net15)	voltage
+	1132	v(x13.x9.x7.net16)	voltage
+	1133	v(x13.x9.x7.net17)	voltage
+	1134	v(x13.x9.x7.net18)	voltage
+	1135	v(x13.x9.x7.net19)	voltage
+	1136	v(x13.x9.x7.net20)	voltage
+	1137	v(x13.x9.x7.net21)	voltage
+	1138	v(x13.x9.x7.net22)	voltage
+	1139	v(x13.x9.x7.net23)	voltage
+	1140	v(x13.x9.x7.net24)	voltage
+	1141	v(x13.x9.x7.net25)	voltage
+	1142	v(x13.x9.x7.net26)	voltage
+	1143	v(x13.x9.x7.net27)	voltage
+	1144	v(x13.x9.x7.net28)	voltage
+	1145	v(x13.x9.x7.net29)	voltage
+	1146	v(x13.x9.x7.net30)	voltage
+	1147	v(x13.x9.x7.net31)	voltage
+	1148	v(x13.x9.x7.net32)	voltage
+	1149	v(x13.x9.x7.net33)	voltage
+	1150	v(x13.x9.x7.net34)	voltage
+	1151	v(x13.x9.x7.net35)	voltage
+	1152	v(x13.x9.x7.net36)	voltage
+	1153	v(x13.x9.x7.net37)	voltage
+	1154	v(x13.x9.x7.net38)	voltage
+	1155	v(x13.x9.x7.net39)	voltage
+	1156	v(x13.x9.x7.net40)	voltage
+	1157	v(x13.x9.x7.net41)	voltage
+	1158	v(x13.x9.x7.net42)	voltage
+	1159	v(x13.x9.x7.net43)	voltage
+	1160	v(x13.x9.x7.net44)	voltage
+	1161	v(x13.x9.x7.net45)	voltage
+	1162	v(x13.x9.x7.net46)	voltage
+	1163	v(x13.x10.x1.net1)	voltage
+	1164	v(x13.x10.x1.net2)	voltage
+	1165	v(x13.x10.x1.net3)	voltage
+	1166	v(x13.x10.x1.net4)	voltage
+	1167	v(x13.x10.x1.net5)	voltage
+	1168	v(x13.x10.x1.net6)	voltage
+	1169	v(x13.x10.x1.net7)	voltage
+	1170	v(x13.x10.x1.net8)	voltage
+	1171	v(x13.x10.x1.net9)	voltage
+	1172	v(x13.x10.x1.net10)	voltage
+	1173	v(x13.x10.x1.net11)	voltage
+	1174	v(x13.x10.x1.net12)	voltage
+	1175	v(x13.x10.x1.net13)	voltage
+	1176	v(x13.x10.x1.net14)	voltage
+	1177	v(x13.x10.x1.net15)	voltage
+	1178	v(x13.x10.x1.net16)	voltage
+	1179	v(x13.x10.x1.net17)	voltage
+	1180	v(x13.x10.x1.net18)	voltage
+	1181	v(x13.x10.x1.net19)	voltage
+	1182	v(x13.x10.x1.net20)	voltage
+	1183	v(x13.x10.x1.net21)	voltage
+	1184	v(x13.x10.x1.net22)	voltage
+	1185	v(x13.x10.x1.net23)	voltage
+	1186	v(x13.x10.x1.net24)	voltage
+	1187	v(x13.x10.x1.net25)	voltage
+	1188	v(x13.x10.x1.net26)	voltage
+	1189	v(x13.x10.x1.net27)	voltage
+	1190	v(x13.x10.x1.net28)	voltage
+	1191	v(x13.x10.x1.net29)	voltage
+	1192	v(x13.x10.x1.net30)	voltage
+	1193	v(x13.x10.x1.net31)	voltage
+	1194	v(x13.x10.x1.net32)	voltage
+	1195	v(x13.x10.x1.net33)	voltage
+	1196	v(x13.x10.x1.net34)	voltage
+	1197	v(x13.x10.x1.net35)	voltage
+	1198	v(x13.x10.x1.net36)	voltage
+	1199	v(x13.x10.x1.net37)	voltage
+	1200	v(x13.x10.x1.net38)	voltage
+	1201	v(x13.x10.x1.net39)	voltage
+	1202	v(x13.x10.x1.net40)	voltage
+	1203	v(x13.x10.x1.net41)	voltage
+	1204	v(x13.x10.x1.net42)	voltage
+	1205	v(x13.x10.x2.net1)	voltage
+	1206	v(x13.x10.x2.net2)	voltage
+	1207	v(x13.x10.x2.net3)	voltage
+	1208	v(x13.x10.x2.net4)	voltage
+	1209	v(x13.x10.x2.net5)	voltage
+	1210	v(x13.x10.x2.net6)	voltage
+	1211	v(x13.x10.x2.net7)	voltage
+	1212	v(x13.x10.x2.net8)	voltage
+	1213	v(x13.x10.x2.net9)	voltage
+	1214	v(x13.x10.x2.net10)	voltage
+	1215	v(x13.x10.x2.net11)	voltage
+	1216	v(x13.x10.x2.net12)	voltage
+	1217	v(x13.x10.x2.net13)	voltage
+	1218	v(x13.x10.x2.net14)	voltage
+	1219	v(x13.x10.x2.net15)	voltage
+	1220	v(x13.x10.x2.net16)	voltage
+	1221	v(x13.x10.x2.net17)	voltage
+	1222	v(x13.x10.x2.net18)	voltage
+	1223	v(x13.x10.x2.net19)	voltage
+	1224	v(x13.x10.x2.net20)	voltage
+	1225	v(x13.x10.x2.net21)	voltage
+	1226	v(x13.x10.x2.net22)	voltage
+	1227	v(x13.x10.x2.net23)	voltage
+	1228	v(x13.x10.x2.net24)	voltage
+	1229	v(x13.x10.x2.net25)	voltage
+	1230	v(x13.x10.x2.net26)	voltage
+	1231	v(x13.x10.x2.net27)	voltage
+	1232	v(x13.x10.x2.net28)	voltage
+	1233	v(x13.x10.x2.net29)	voltage
+	1234	v(x13.x10.x2.net30)	voltage
+	1235	v(x13.x10.x2.net31)	voltage
+	1236	v(x13.x10.x2.net32)	voltage
+	1237	v(x13.x10.x2.net33)	voltage
+	1238	v(x13.x10.x2.net34)	voltage
+	1239	v(x13.x10.x2.net35)	voltage
+	1240	v(x13.x10.x2.net36)	voltage
+	1241	v(x13.x10.x2.net37)	voltage
+	1242	v(x13.x10.x2.net38)	voltage
+	1243	v(x13.x10.x2.net39)	voltage
+	1244	v(x13.x10.x2.net40)	voltage
+	1245	v(x13.x10.x2.net41)	voltage
+	1246	v(x13.x10.x2.net42)	voltage
+	1247	v(x13.x10.x3.net1)	voltage
+	1248	v(x13.x10.x3.net2)	voltage
+	1249	v(x13.x10.x3.net3)	voltage
+	1250	v(x13.x10.x3.net4)	voltage
+	1251	v(x13.x10.x3.net5)	voltage
+	1252	v(x13.x10.x3.net6)	voltage
+	1253	v(x13.x10.x3.net7)	voltage
+	1254	v(x13.x10.x3.net8)	voltage
+	1255	v(x13.x10.x3.net9)	voltage
+	1256	v(x13.x10.x3.net10)	voltage
+	1257	v(x13.x10.x3.net11)	voltage
+	1258	v(x13.x10.x3.net12)	voltage
+	1259	v(x13.x10.x3.net13)	voltage
+	1260	v(x13.x10.x3.net14)	voltage
+	1261	v(x13.x10.x3.net15)	voltage
+	1262	v(x13.x10.x3.net16)	voltage
+	1263	v(x13.x10.x3.net17)	voltage
+	1264	v(x13.x10.x3.net18)	voltage
+	1265	v(x13.x10.x3.net19)	voltage
+	1266	v(x13.x10.x3.net20)	voltage
+	1267	v(x13.x10.x3.net21)	voltage
+	1268	v(x13.x10.x3.net22)	voltage
+	1269	v(x13.x10.x3.net23)	voltage
+	1270	v(x13.x10.x3.net24)	voltage
+	1271	v(x13.x10.x3.net25)	voltage
+	1272	v(x13.x10.x3.net26)	voltage
+	1273	v(x13.x10.x3.net27)	voltage
+	1274	v(x13.x10.x3.net28)	voltage
+	1275	v(x13.x10.x3.net29)	voltage
+	1276	v(x13.x10.x3.net30)	voltage
+	1277	v(x13.x10.x3.net31)	voltage
+	1278	v(x13.x10.x3.net32)	voltage
+	1279	v(x13.x10.x3.net33)	voltage
+	1280	v(x13.x10.x3.net34)	voltage
+	1281	v(x13.x10.x3.net35)	voltage
+	1282	v(x13.x10.x3.net36)	voltage
+	1283	v(x13.x10.x3.net37)	voltage
+	1284	v(x13.x10.x3.net38)	voltage
+	1285	v(x13.x10.x3.net39)	voltage
+	1286	v(x13.x10.x3.net40)	voltage
+	1287	v(x13.x10.x3.net41)	voltage
+	1288	v(x13.x10.x3.net42)	voltage
+	1289	v(x13.x10.x4.net1)	voltage
+	1290	v(x13.x10.x4.net2)	voltage
+	1291	v(x13.x10.x4.net3)	voltage
+	1292	v(x13.x10.x4.net4)	voltage
+	1293	v(x13.x10.x4.net5)	voltage
+	1294	v(x13.x10.x4.net6)	voltage
+	1295	v(x13.x10.x4.net7)	voltage
+	1296	v(x13.x10.x4.net8)	voltage
+	1297	v(x13.x10.x4.net9)	voltage
+	1298	v(x13.x10.x4.net10)	voltage
+	1299	v(x13.x10.x4.net11)	voltage
+	1300	v(x13.x10.x4.net12)	voltage
+	1301	v(x13.x10.x4.net13)	voltage
+	1302	v(x13.x10.x4.net14)	voltage
+	1303	v(x13.x10.x4.net15)	voltage
+	1304	v(x13.x10.x4.net16)	voltage
+	1305	v(x13.x10.x4.net17)	voltage
+	1306	v(x13.x10.x4.net18)	voltage
+	1307	v(x13.x10.x4.net19)	voltage
+	1308	v(x13.x10.x4.net20)	voltage
+	1309	v(x13.x10.x4.net21)	voltage
+	1310	v(x13.x10.x4.net22)	voltage
+	1311	v(x13.x10.x4.net23)	voltage
+	1312	v(x13.x10.x4.net24)	voltage
+	1313	v(x13.x10.x4.net25)	voltage
+	1314	v(x13.x10.x4.net26)	voltage
+	1315	v(x13.x10.x4.net27)	voltage
+	1316	v(x13.x10.x4.net28)	voltage
+	1317	v(x13.x10.x4.net29)	voltage
+	1318	v(x13.x10.x4.net30)	voltage
+	1319	v(x13.x10.x4.net31)	voltage
+	1320	v(x13.x10.x4.net32)	voltage
+	1321	v(x13.x10.x4.net33)	voltage
+	1322	v(x13.x10.x4.net34)	voltage
+	1323	v(x13.x10.x4.net35)	voltage
+	1324	v(x13.x10.x4.net36)	voltage
+	1325	v(x13.x10.x4.net37)	voltage
+	1326	v(x13.x10.x4.net38)	voltage
+	1327	v(x13.x10.x4.net39)	voltage
+	1328	v(x13.x10.x4.net40)	voltage
+	1329	v(x13.x10.x4.net41)	voltage
+	1330	v(x13.x10.x4.net42)	voltage
+	1331	v(x13.x10.x5.net1)	voltage
+	1332	v(x13.x10.x5.net2)	voltage
+	1333	v(x13.x10.x5.net3)	voltage
+	1334	v(x13.x10.x5.net4)	voltage
+	1335	v(x13.x10.x5.net5)	voltage
+	1336	v(x13.x10.x5.net6)	voltage
+	1337	v(x13.x10.x5.net7)	voltage
+	1338	v(x13.x10.x5.net8)	voltage
+	1339	v(x13.x10.x5.net9)	voltage
+	1340	v(x13.x10.x5.net10)	voltage
+	1341	v(x13.x10.x5.net11)	voltage
+	1342	v(x13.x10.x5.net12)	voltage
+	1343	v(x13.x10.x5.net13)	voltage
+	1344	v(x13.x10.x5.net14)	voltage
+	1345	v(x13.x10.x5.net15)	voltage
+	1346	v(x13.x10.x5.net16)	voltage
+	1347	v(x13.x10.x5.net17)	voltage
+	1348	v(x13.x10.x5.net18)	voltage
+	1349	v(x13.x10.x5.net19)	voltage
+	1350	v(x13.x10.x5.net20)	voltage
+	1351	v(x13.x10.x5.net21)	voltage
+	1352	v(x13.x10.x5.net22)	voltage
+	1353	v(x13.x10.x5.net23)	voltage
+	1354	v(x13.x10.x5.net24)	voltage
+	1355	v(x13.x10.x5.net25)	voltage
+	1356	v(x13.x10.x5.net26)	voltage
+	1357	v(x13.x10.x5.net27)	voltage
+	1358	v(x13.x10.x5.net28)	voltage
+	1359	v(x13.x10.x5.net29)	voltage
+	1360	v(x13.x10.x5.net30)	voltage
+	1361	v(x13.x10.x5.net31)	voltage
+	1362	v(x13.x10.x5.net32)	voltage
+	1363	v(x13.x10.x5.net33)	voltage
+	1364	v(x13.x10.x5.net34)	voltage
+	1365	v(x13.x10.x5.net35)	voltage
+	1366	v(x13.x10.x5.net36)	voltage
+	1367	v(x13.x10.x5.net37)	voltage
+	1368	v(x13.x10.x5.net38)	voltage
+	1369	v(x13.x10.x5.net39)	voltage
+	1370	v(x13.x10.x5.net40)	voltage
+	1371	v(x13.x10.x5.net41)	voltage
+	1372	v(x13.x10.x5.net42)	voltage
+	1373	v(x13.x10.x6.net1)	voltage
+	1374	v(x13.x10.x6.net2)	voltage
+	1375	v(x13.x10.x6.net3)	voltage
+	1376	v(x13.x10.x6.net4)	voltage
+	1377	v(x13.x10.x6.net5)	voltage
+	1378	v(x13.x10.x6.net6)	voltage
+	1379	v(x13.x10.x6.net7)	voltage
+	1380	v(x13.x10.x6.net8)	voltage
+	1381	v(x13.x10.x6.net9)	voltage
+	1382	v(x13.x10.x6.net10)	voltage
+	1383	v(x13.x10.x6.net11)	voltage
+	1384	v(x13.x10.x6.net12)	voltage
+	1385	v(x13.x10.x6.net13)	voltage
+	1386	v(x13.x10.x6.net14)	voltage
+	1387	v(x13.x10.x6.net15)	voltage
+	1388	v(x13.x10.x6.net16)	voltage
+	1389	v(x13.x10.x6.net17)	voltage
+	1390	v(x13.x10.x6.net18)	voltage
+	1391	v(x13.x10.x6.net19)	voltage
+	1392	v(x13.x10.x6.net20)	voltage
+	1393	v(x13.x10.x6.net21)	voltage
+	1394	v(x13.x10.x6.net22)	voltage
+	1395	v(x13.x10.x6.net23)	voltage
+	1396	v(x13.x10.x6.net24)	voltage
+	1397	v(x13.x10.x6.net25)	voltage
+	1398	v(x13.x10.x6.net26)	voltage
+	1399	v(x13.x10.x6.net27)	voltage
+	1400	v(x13.x10.x6.net28)	voltage
+	1401	v(x13.x10.x6.net29)	voltage
+	1402	v(x13.x10.x6.net30)	voltage
+	1403	v(x13.x10.x6.net31)	voltage
+	1404	v(x13.x10.x6.net32)	voltage
+	1405	v(x13.x10.x6.net33)	voltage
+	1406	v(x13.x10.x6.net34)	voltage
+	1407	v(x13.x10.x6.net35)	voltage
+	1408	v(x13.x10.x6.net36)	voltage
+	1409	v(x13.x10.x6.net37)	voltage
+	1410	v(x13.x10.x6.net38)	voltage
+	1411	v(x13.x10.x6.net39)	voltage
+	1412	v(x13.x10.x6.net40)	voltage
+	1413	v(x13.x10.x6.net41)	voltage
+	1414	v(x13.x10.x6.net42)	voltage
+	1415	v(x13.x11.net1)	voltage
+	1416	v(x13.x11.net2)	voltage
+	1417	v(x13.x11.net3)	voltage
+	1418	v(x13.x11.net4)	voltage
+	1419	v(x13.x11.x1.net1)	voltage
+	1420	v(x13.x11.x1.net2)	voltage
+	1421	v(x13.x11.x1.vc)	voltage
+	1422	v(x13.x11.x1.x1.net1)	voltage
+	1423	v(x13.x11.x1.x1.net2)	voltage
+	1424	v(x13.x11.x1.x1.x1.net1)	voltage
+	1425	v(x13.x11.x1.x1.x1.net2)	voltage
+	1426	v(x13.x11.x1.x1.x1.net3)	voltage
+	1427	v(x13.x11.x1.x1.x1.net4)	voltage
+	1428	v(x13.x11.x1.x1.x1.net5)	voltage
+	1429	v(x13.x11.x1.x1.x1.net6)	voltage
+	1430	v(x13.x11.x1.x1.x1.net7)	voltage
+	1431	v(x13.x11.x1.x1.x1.net8)	voltage
+	1432	v(x13.x11.x1.x1.x2.net1)	voltage
+	1433	v(x13.x11.x1.x1.x2.net2)	voltage
+	1434	v(x13.x11.x1.x1.x2.net3)	voltage
+	1435	v(x13.x11.x1.x1.x2.net4)	voltage
+	1436	v(x13.x11.x1.x1.x2.net5)	voltage
+	1437	v(x13.x11.x1.x1.x2.net6)	voltage
+	1438	v(x13.x11.x1.x1.x2.net7)	voltage
+	1439	v(x13.x11.x1.x1.x2.net8)	voltage
+	1440	v(x13.x11.x1.x2.net1)	voltage
+	1441	v(x13.x11.x1.x2.x1.net1)	voltage
+	1442	v(x13.x11.x1.x2.x1.net2)	voltage
+	1443	v(x13.x11.x1.x2.x1.net3)	voltage
+	1444	v(x13.x11.x1.x2.x1.net4)	voltage
+	1445	v(x13.x11.x1.x2.x1.net5)	voltage
+	1446	v(x13.x11.x1.x2.x1.net6)	voltage
+	1447	v(x13.x11.x1.x2.x1.net7)	voltage
+	1448	v(x13.x11.x1.x2.x1.net8)	voltage
+	1449	v(x13.x11.x1.x2.x2.net1)	voltage
+	1450	v(x13.x11.x1.x2.x2.net2)	voltage
+	1451	v(x13.x11.x1.x2.x2.net3)	voltage
+	1452	v(x13.x11.x1.x2.x2.net4)	voltage
+	1453	v(x13.x11.x1.x2.x2.net5)	voltage
+	1454	v(x13.x11.x1.x2.x2.net6)	voltage
+	1455	v(x13.x11.x1.x2.x2.net7)	voltage
+	1456	v(x13.x11.x1.x2.x2.net8)	voltage
+	1457	v(x13.x11.x1.x3.net1)	voltage
+	1458	v(x13.x11.x1.x3.x1.net1)	voltage
+	1459	v(x13.x11.x1.x3.x1.net2)	voltage
+	1460	v(x13.x11.x1.x3.x1.net3)	voltage
+	1461	v(x13.x11.x1.x3.x1.net4)	voltage
+	1462	v(x13.x11.x1.x3.x1.net5)	voltage
+	1463	v(x13.x11.x1.x3.x1.net6)	voltage
+	1464	v(x13.x11.x1.x3.x1.net7)	voltage
+	1465	v(x13.x11.x1.x3.x1.net8)	voltage
+	1466	v(x13.x11.x1.x3.x2.net1)	voltage
+	1467	v(x13.x11.x1.x3.x2.net2)	voltage
+	1468	v(x13.x11.x1.x3.x2.net3)	voltage
+	1469	v(x13.x11.x1.x3.x2.net4)	voltage
+	1470	v(x13.x11.x1.x3.x2.net5)	voltage
+	1471	v(x13.x11.x1.x3.x2.net6)	voltage
+	1472	v(x13.x11.x1.x3.x2.net7)	voltage
+	1473	v(x13.x11.x1.x3.x2.net8)	voltage
+	1474	v(x13.x11.x2.net1)	voltage
+	1475	v(x13.x11.x2.net2)	voltage
+	1476	v(x13.x11.x2.vc)	voltage
+	1477	v(x13.x11.x2.x1.net1)	voltage
+	1478	v(x13.x11.x2.x1.net2)	voltage
+	1479	v(x13.x11.x2.x1.x1.net1)	voltage
+	1480	v(x13.x11.x2.x1.x1.net2)	voltage
+	1481	v(x13.x11.x2.x1.x1.net3)	voltage
+	1482	v(x13.x11.x2.x1.x1.net4)	voltage
+	1483	v(x13.x11.x2.x1.x1.net5)	voltage
+	1484	v(x13.x11.x2.x1.x1.net6)	voltage
+	1485	v(x13.x11.x2.x1.x1.net7)	voltage
+	1486	v(x13.x11.x2.x1.x1.net8)	voltage
+	1487	v(x13.x11.x2.x1.x2.net1)	voltage
+	1488	v(x13.x11.x2.x1.x2.net2)	voltage
+	1489	v(x13.x11.x2.x1.x2.net3)	voltage
+	1490	v(x13.x11.x2.x1.x2.net4)	voltage
+	1491	v(x13.x11.x2.x1.x2.net5)	voltage
+	1492	v(x13.x11.x2.x1.x2.net6)	voltage
+	1493	v(x13.x11.x2.x1.x2.net7)	voltage
+	1494	v(x13.x11.x2.x1.x2.net8)	voltage
+	1495	v(x13.x11.x2.x2.net1)	voltage
+	1496	v(x13.x11.x2.x2.x1.net1)	voltage
+	1497	v(x13.x11.x2.x2.x1.net2)	voltage
+	1498	v(x13.x11.x2.x2.x1.net3)	voltage
+	1499	v(x13.x11.x2.x2.x1.net4)	voltage
+	1500	v(x13.x11.x2.x2.x1.net5)	voltage
+	1501	v(x13.x11.x2.x2.x1.net6)	voltage
+	1502	v(x13.x11.x2.x2.x1.net7)	voltage
+	1503	v(x13.x11.x2.x2.x1.net8)	voltage
+	1504	v(x13.x11.x2.x2.x2.net1)	voltage
+	1505	v(x13.x11.x2.x2.x2.net2)	voltage
+	1506	v(x13.x11.x2.x2.x2.net3)	voltage
+	1507	v(x13.x11.x2.x2.x2.net4)	voltage
+	1508	v(x13.x11.x2.x2.x2.net5)	voltage
+	1509	v(x13.x11.x2.x2.x2.net6)	voltage
+	1510	v(x13.x11.x2.x2.x2.net7)	voltage
+	1511	v(x13.x11.x2.x2.x2.net8)	voltage
+	1512	v(x13.x11.x2.x3.net1)	voltage
+	1513	v(x13.x11.x2.x3.x1.net1)	voltage
+	1514	v(x13.x11.x2.x3.x1.net2)	voltage
+	1515	v(x13.x11.x2.x3.x1.net3)	voltage
+	1516	v(x13.x11.x2.x3.x1.net4)	voltage
+	1517	v(x13.x11.x2.x3.x1.net5)	voltage
+	1518	v(x13.x11.x2.x3.x1.net6)	voltage
+	1519	v(x13.x11.x2.x3.x1.net7)	voltage
+	1520	v(x13.x11.x2.x3.x1.net8)	voltage
+	1521	v(x13.x11.x2.x3.x2.net1)	voltage
+	1522	v(x13.x11.x2.x3.x2.net2)	voltage
+	1523	v(x13.x11.x2.x3.x2.net3)	voltage
+	1524	v(x13.x11.x2.x3.x2.net4)	voltage
+	1525	v(x13.x11.x2.x3.x2.net5)	voltage
+	1526	v(x13.x11.x2.x3.x2.net6)	voltage
+	1527	v(x13.x11.x2.x3.x2.net7)	voltage
+	1528	v(x13.x11.x2.x3.x2.net8)	voltage
+	1529	v(x13.x11.x3.net1)	voltage
+	1530	v(x13.x11.x3.net2)	voltage
+	1531	v(x13.x11.x3.vc)	voltage
+	1532	v(x13.x11.x3.x1.net1)	voltage
+	1533	v(x13.x11.x3.x1.net2)	voltage
+	1534	v(x13.x11.x3.x1.x1.net1)	voltage
+	1535	v(x13.x11.x3.x1.x1.net2)	voltage
+	1536	v(x13.x11.x3.x1.x1.net3)	voltage
+	1537	v(x13.x11.x3.x1.x1.net4)	voltage
+	1538	v(x13.x11.x3.x1.x1.net5)	voltage
+	1539	v(x13.x11.x3.x1.x1.net6)	voltage
+	1540	v(x13.x11.x3.x1.x1.net7)	voltage
+	1541	v(x13.x11.x3.x1.x1.net8)	voltage
+	1542	v(x13.x11.x3.x1.x2.net1)	voltage
+	1543	v(x13.x11.x3.x1.x2.net2)	voltage
+	1544	v(x13.x11.x3.x1.x2.net3)	voltage
+	1545	v(x13.x11.x3.x1.x2.net4)	voltage
+	1546	v(x13.x11.x3.x1.x2.net5)	voltage
+	1547	v(x13.x11.x3.x1.x2.net6)	voltage
+	1548	v(x13.x11.x3.x1.x2.net7)	voltage
+	1549	v(x13.x11.x3.x1.x2.net8)	voltage
+	1550	v(x13.x11.x3.x2.net1)	voltage
+	1551	v(x13.x11.x3.x2.x1.net1)	voltage
+	1552	v(x13.x11.x3.x2.x1.net2)	voltage
+	1553	v(x13.x11.x3.x2.x1.net3)	voltage
+	1554	v(x13.x11.x3.x2.x1.net4)	voltage
+	1555	v(x13.x11.x3.x2.x1.net5)	voltage
+	1556	v(x13.x11.x3.x2.x1.net6)	voltage
+	1557	v(x13.x11.x3.x2.x1.net7)	voltage
+	1558	v(x13.x11.x3.x2.x1.net8)	voltage
+	1559	v(x13.x11.x3.x2.x2.net1)	voltage
+	1560	v(x13.x11.x3.x2.x2.net2)	voltage
+	1561	v(x13.x11.x3.x2.x2.net3)	voltage
+	1562	v(x13.x11.x3.x2.x2.net4)	voltage
+	1563	v(x13.x11.x3.x2.x2.net5)	voltage
+	1564	v(x13.x11.x3.x2.x2.net6)	voltage
+	1565	v(x13.x11.x3.x2.x2.net7)	voltage
+	1566	v(x13.x11.x3.x2.x2.net8)	voltage
+	1567	v(x13.x11.x3.x3.net1)	voltage
+	1568	v(x13.x11.x3.x3.x1.net1)	voltage
+	1569	v(x13.x11.x3.x3.x1.net2)	voltage
+	1570	v(x13.x11.x3.x3.x1.net3)	voltage
+	1571	v(x13.x11.x3.x3.x1.net4)	voltage
+	1572	v(x13.x11.x3.x3.x1.net5)	voltage
+	1573	v(x13.x11.x3.x3.x1.net6)	voltage
+	1574	v(x13.x11.x3.x3.x1.net7)	voltage
+	1575	v(x13.x11.x3.x3.x1.net8)	voltage
+	1576	v(x13.x11.x3.x3.x2.net1)	voltage
+	1577	v(x13.x11.x3.x3.x2.net2)	voltage
+	1578	v(x13.x11.x3.x3.x2.net3)	voltage
+	1579	v(x13.x11.x3.x3.x2.net4)	voltage
+	1580	v(x13.x11.x3.x3.x2.net5)	voltage
+	1581	v(x13.x11.x3.x3.x2.net6)	voltage
+	1582	v(x13.x11.x3.x3.x2.net7)	voltage
+	1583	v(x13.x11.x3.x3.x2.net8)	voltage
+	1584	v(x13.x11.x4.net1)	voltage
+	1585	v(x13.x11.x4.net2)	voltage
+	1586	v(x13.x11.x4.vc)	voltage
+	1587	v(x13.x11.x4.x1.net1)	voltage
+	1588	v(x13.x11.x4.x1.net2)	voltage
+	1589	v(x13.x11.x4.x1.x1.net1)	voltage
+	1590	v(x13.x11.x4.x1.x1.net2)	voltage
+	1591	v(x13.x11.x4.x1.x1.net3)	voltage
+	1592	v(x13.x11.x4.x1.x1.net4)	voltage
+	1593	v(x13.x11.x4.x1.x1.net5)	voltage
+	1594	v(x13.x11.x4.x1.x1.net6)	voltage
+	1595	v(x13.x11.x4.x1.x1.net7)	voltage
+	1596	v(x13.x11.x4.x1.x1.net8)	voltage
+	1597	v(x13.x11.x4.x1.x2.net1)	voltage
+	1598	v(x13.x11.x4.x1.x2.net2)	voltage
+	1599	v(x13.x11.x4.x1.x2.net3)	voltage
+	1600	v(x13.x11.x4.x1.x2.net4)	voltage
+	1601	v(x13.x11.x4.x1.x2.net5)	voltage
+	1602	v(x13.x11.x4.x1.x2.net6)	voltage
+	1603	v(x13.x11.x4.x1.x2.net7)	voltage
+	1604	v(x13.x11.x4.x1.x2.net8)	voltage
+	1605	v(x13.x11.x4.x2.net1)	voltage
+	1606	v(x13.x11.x4.x2.x1.net1)	voltage
+	1607	v(x13.x11.x4.x2.x1.net2)	voltage
+	1608	v(x13.x11.x4.x2.x1.net3)	voltage
+	1609	v(x13.x11.x4.x2.x1.net4)	voltage
+	1610	v(x13.x11.x4.x2.x1.net5)	voltage
+	1611	v(x13.x11.x4.x2.x1.net6)	voltage
+	1612	v(x13.x11.x4.x2.x1.net7)	voltage
+	1613	v(x13.x11.x4.x2.x1.net8)	voltage
+	1614	v(x13.x11.x4.x2.x2.net1)	voltage
+	1615	v(x13.x11.x4.x2.x2.net2)	voltage
+	1616	v(x13.x11.x4.x2.x2.net3)	voltage
+	1617	v(x13.x11.x4.x2.x2.net4)	voltage
+	1618	v(x13.x11.x4.x2.x2.net5)	voltage
+	1619	v(x13.x11.x4.x2.x2.net6)	voltage
+	1620	v(x13.x11.x4.x2.x2.net7)	voltage
+	1621	v(x13.x11.x4.x2.x2.net8)	voltage
+	1622	v(x13.x11.x4.x3.net1)	voltage
+	1623	v(x13.x11.x4.x3.x1.net1)	voltage
+	1624	v(x13.x11.x4.x3.x1.net2)	voltage
+	1625	v(x13.x11.x4.x3.x1.net3)	voltage
+	1626	v(x13.x11.x4.x3.x1.net4)	voltage
+	1627	v(x13.x11.x4.x3.x1.net5)	voltage
+	1628	v(x13.x11.x4.x3.x1.net6)	voltage
+	1629	v(x13.x11.x4.x3.x1.net7)	voltage
+	1630	v(x13.x11.x4.x3.x1.net8)	voltage
+	1631	v(x13.x11.x4.x3.x2.net1)	voltage
+	1632	v(x13.x11.x4.x3.x2.net2)	voltage
+	1633	v(x13.x11.x4.x3.x2.net3)	voltage
+	1634	v(x13.x11.x4.x3.x2.net4)	voltage
+	1635	v(x13.x11.x4.x3.x2.net5)	voltage
+	1636	v(x13.x11.x4.x3.x2.net6)	voltage
+	1637	v(x13.x11.x4.x3.x2.net7)	voltage
+	1638	v(x13.x11.x4.x3.x2.net8)	voltage
+	1639	v(x13.x11.x5.net1)	voltage
+	1640	v(x13.x11.x5.net2)	voltage
+	1641	v(x13.x11.x5.vc)	voltage
+	1642	v(x13.x11.x5.x1.net1)	voltage
+	1643	v(x13.x11.x5.x1.net2)	voltage
+	1644	v(x13.x11.x5.x1.x1.net1)	voltage
+	1645	v(x13.x11.x5.x1.x1.net2)	voltage
+	1646	v(x13.x11.x5.x1.x1.net3)	voltage
+	1647	v(x13.x11.x5.x1.x1.net4)	voltage
+	1648	v(x13.x11.x5.x1.x1.net5)	voltage
+	1649	v(x13.x11.x5.x1.x1.net6)	voltage
+	1650	v(x13.x11.x5.x1.x1.net7)	voltage
+	1651	v(x13.x11.x5.x1.x1.net8)	voltage
+	1652	v(x13.x11.x5.x1.x2.net1)	voltage
+	1653	v(x13.x11.x5.x1.x2.net2)	voltage
+	1654	v(x13.x11.x5.x1.x2.net3)	voltage
+	1655	v(x13.x11.x5.x1.x2.net4)	voltage
+	1656	v(x13.x11.x5.x1.x2.net5)	voltage
+	1657	v(x13.x11.x5.x1.x2.net6)	voltage
+	1658	v(x13.x11.x5.x1.x2.net7)	voltage
+	1659	v(x13.x11.x5.x1.x2.net8)	voltage
+	1660	v(x13.x11.x5.x2.net1)	voltage
+	1661	v(x13.x11.x5.x2.x1.net1)	voltage
+	1662	v(x13.x11.x5.x2.x1.net2)	voltage
+	1663	v(x13.x11.x5.x2.x1.net3)	voltage
+	1664	v(x13.x11.x5.x2.x1.net4)	voltage
+	1665	v(x13.x11.x5.x2.x1.net5)	voltage
+	1666	v(x13.x11.x5.x2.x1.net6)	voltage
+	1667	v(x13.x11.x5.x2.x1.net7)	voltage
+	1668	v(x13.x11.x5.x2.x1.net8)	voltage
+	1669	v(x13.x11.x5.x2.x2.net1)	voltage
+	1670	v(x13.x11.x5.x2.x2.net2)	voltage
+	1671	v(x13.x11.x5.x2.x2.net3)	voltage
+	1672	v(x13.x11.x5.x2.x2.net4)	voltage
+	1673	v(x13.x11.x5.x2.x2.net5)	voltage
+	1674	v(x13.x11.x5.x2.x2.net6)	voltage
+	1675	v(x13.x11.x5.x2.x2.net7)	voltage
+	1676	v(x13.x11.x5.x2.x2.net8)	voltage
+	1677	v(x13.x11.x5.x3.net1)	voltage
+	1678	v(x13.x11.x5.x3.x1.net1)	voltage
+	1679	v(x13.x11.x5.x3.x1.net2)	voltage
+	1680	v(x13.x11.x5.x3.x1.net3)	voltage
+	1681	v(x13.x11.x5.x3.x1.net4)	voltage
+	1682	v(x13.x11.x5.x3.x1.net5)	voltage
+	1683	v(x13.x11.x5.x3.x1.net6)	voltage
+	1684	v(x13.x11.x5.x3.x1.net7)	voltage
+	1685	v(x13.x11.x5.x3.x1.net8)	voltage
+	1686	v(x13.x11.x5.x3.x2.net1)	voltage
+	1687	v(x13.x11.x5.x3.x2.net2)	voltage
+	1688	v(x13.x11.x5.x3.x2.net3)	voltage
+	1689	v(x13.x11.x5.x3.x2.net4)	voltage
+	1690	v(x13.x11.x5.x3.x2.net5)	voltage
+	1691	v(x13.x11.x5.x3.x2.net6)	voltage
+	1692	v(x13.x11.x5.x3.x2.net7)	voltage
+	1693	v(x13.x11.x5.x3.x2.net8)	voltage
+	1694	v(x13.x12.net1[0])	voltage
+	1695	v(x13.x12.net1[1])	voltage
+	1696	v(x13.x12.net2[0])	voltage
+	1697	v(x13.x12.net2[1])	voltage
+	1698	v(x13.x12.net3[0])	voltage
+	1699	v(x13.x12.net3[1])	voltage
+	1700	v(x13.x12.net4[0])	voltage
+	1701	v(x13.x12.net4[1])	voltage
+	1702	v(x13.x12.net5[0])	voltage
+	1703	v(x13.x12.net5[1])	voltage
+	1704	v(x13.x12.net6[0])	voltage
+	1705	v(x13.x12.net6[1])	voltage
+	1706	v(x13.x12.net7[0])	voltage
+	1707	v(x13.x12.net7[1])	voltage
+	1708	v(x13.x12.vgp)	voltage
+Binary:
+gfffff
+@Âz/Mñ>°7KïT!=      !=     €"=      !=%Ýò[%†¾¤Òû¾ffú¿ÿ¯:ffú?04÷Ý?gfffffú?gfffffú?gfffffú?gfffffú?gfffffú?     ’r=     Fr½ÿ¯:ffú?ÿ¯:ffú?ÿ¯:ffú?      !½      !½WD†áefú?Âz/Mñ¾WD†áefú?Âz/Mñ¾WD†áefú?YD†áefú?°7KïT!½     €"½oD@	0§9¾     Fr=     ’r=Âz/Mñ¾gfffffú?*úÐffú?ñó*î'\Ó?€lÃfn¶@¹žÌ¢-tú?pÙ³yÄñ?oxWhmƒú?f3T6‰ú?Wer&ŽÔñ?nfGE|‚ú?{®Ïñ?ûm—•$sú? XK^òÃñ?ª UmDÐñ?[\ü&lú?sûOÅÐô@R_m6“{ú?¥5éRú@­a0ð€ú?˜”¢«ü@üórV{ú?í—¬ì]ú@A·^Qlú?4±ÄqÑô@™Òô’k¶@îL%\Ó?o¬]¦ìtú?Šu•ÊÄñ?¦•Xç¥ú?@ÜÙÄPÏñ?ìíà¡n†ú?º½»JüÒñ?håÌ»U…ú?ý“Ð5*Ññ?ZuÅ—tú?©¹ äÄñ?ÀÛ…[lú?¹!”êô@†le»zú?T×¿fWú@ä`äŽÀú?°\ü@,Âw|ú?[¢àÀú@cñue7mú?Š•PŽ%õ@¯ö¥VR
+@ ¤¼P‡/
+@EŠ'F(
+@Ò¡¿´d
+@—"-Äób
+@HDX"a
+@PûC?_
+@M·I]
+@>«(>[
+@Äp†ÔY
+@4LeãV
+@¼ñûÂT
+@BáÎŽO
+@R‰‹®ÚL
+@†êW2ÿI
+@†¸†÷F
+@÷U`^¾C
+@ŠõuM@
+@€ò@bš<
+@ñÍ¼œ8
+@jåÀ3F4
+@î¨„I*
+@Ñ9 zo$
+@*]6Ð
+@[07.
+@F°Ô.
+@÷gN
+6
+@®Ý+ô	@Dæ{þžà	@<R§ À	@ð òG±b
+@¡q±^
+@JHŽ´XZ
+@ä]ì~—U
+@žÍôWP
+@éú':|J
+@ÊÍõÛC
+@•J:9<
+@ïõ²Ÿ:3
+@À[ª·C
+@*#âØÎ
+@þâ$h–æ	@;Y-R
+@'aæC‰/
+@^t=ªK(
+@€ñ‘´d
+@TìúVòb
+@ÒXWo a
+@ƒSÃÏ<_
+@65 F]
+@/þæ;[
+@¸õ{ßY
+@–n°àV
+@õM<T
+@æ™®&O
+@‚2ÚL
+@€²ÑŽÿI
+@"ÒÉ‹øF
+@m¼´™¿C
+@`TÆM@
+@_üJ›<
+@í6¨Ç8
+@Ü‘óÁG4
+@¨–hL*
+@öSyŽs$
+@ºAÕ
+@‚áìÙ4
+@LX6
+@NZq?
+@¹uM@4ô	@|Ï×Q¨à	@üy¨ƒ"À	@˜æÛ²b
+@¢s{²^
+@#ã`ZZ
+@¸Þ¯s™U
+@@@Ë'ZP
+@n|»ÿ~J
+@Ú"}ÞC
+@\ü0=<
+@zjM?3
+@_@pI
+@ž°­Ô
+@2Ðˆ±œæ	@RA.§R
+@b¸¼é„/
+@$*(MH(
+@ê‰¶³d
+@rÉ'ñb
+@ç¾­˜a
+@#ki8_
+@lóx¯@]
+@X¥Q¤4[
+@|L+Y
+@.¡Vu×V
+@:+â‚T
+@BO
+@¾Ò–_ÍL
+@Ñì!¼òI
+@âÙ^ìF
+@1#U´C
+@·:ÙD@
+@—G”<
+@6Ò0˜8
+@6âC4
+@Ð *PH*
+@¹ÁäHo$
+@Pl|!Ñ
+@ ¡1
+@›“ß2
+@®ùo;
+@Rò]0ô	@ôÁ Ç¤à	@´Ëf}!À	@%‹À±b
+@nZÍÕ±^
+@Ø¨ØYZ
+@^†œB™U
+@ŒM#"ZP
+@E-J
+@Fdë=ÞC
+@ÄDI2<<
+@à!X=3
+@°obýD
+@:ä@Î
+@Ü!“æ	@ÛˆÊS"R
+@0ŽXW”/
+@lÚ™àD(
+@,É¸È³d
+@%IX2òb
+@Ãe}; a
+@}­=_
+@ÇÐâ>G]
+@ØÞ>=[
+@²$ 7Y
+@0êåV
+@Ÿ!Î)’T
+@Më“’O
+@0ˆuƒßL
+@bðeJ
+@øÏÉ=ÿF
+@ç4Î<ÇC
+@PXwV@
+@_±ÕØ¤<
+@˜sT¨8
+@h+XS4
+@¾Àô>W*
+@‡¬Ùð}$
+@†uZØÞ
+@wt"'=
+@ü×Ë¾;
+@ÙDògA
+@Ýq3ô	@ò<´£à	@Œ;8
+À	@Àw`ú°b
+@ÏB°^
+@} ³vWZ
+@ÓrT,–U
+@6µmpVP
+@ìB·zJ
+@ÆË'ÓÙC
+@þÕä8<
+@Ž793
+@¬®H1B
+@Š¯€AÌ
+@<Ð!“æ	@ NÉR
+@ápN‡/
+@Æ>O©H(
+@,ðj³d
+@Yø	Oñb
+@Ý*ma
+@¸ík:_
+@œà›C]
+@v³D8[
+@àþäY
+@œyÝV
+@!'ì5‰T
+@<A¯‡O
+@´žP6ÔL
+@æÙ¯ùI
+@Ûé‘ôòF
+@R|3…ºC
+@V<ò¯I@
+@:àñ™—<
+@Ì£0Tš8
+@:¸ðSE4
+@ÃI*
+@GòÎño$
+@Éúè¹Ð
+@/Ìµ!0
+@ å0
+@¢ã~¹;
+@Æ@gd3ô	@>“Ï
+ªà	@Dð9a(À	@ìV­x±b
+@/ñV±^
+@µÛó™YZ
+@xhXD™U
+@qSxZP
+@°hº~J
+@¢ÞC
+@ÌÍr<<
+@-Uñt=3
+@Š’¨E
+@†Ì9ÒÎ
+@à R!”æ	@¥žbhf
+@˜^Ñif
+@¤`úff
+@[õb6ff
+@¸„®Off
+@l/»Mff
+@ÞE%ff
+@ç¾§1ff
+@tAff
+@‰Ðöff
+@–¿Írgf
+@Çû~Øgf
+@Æ‘zdhf
+@JjL¦hf
+@‰Ÿäúhf
+@~3Iif
+@ÿ&Zif
+@8uOif
+@þ{if
+@¸Ã†­if
+@¥Õif
+@
+±Ûif
+@L»Ñóif
+@†SiËif
+@T>0´if
+@xxü`if
+@fVif
+@r•¦hf
+@“·hf
+@Ë•qgf
+@/ÞŸ]ff
+@ãÈ’_ff
+@¥)œZff
+@­1ff
+@:ERjff
+@ØPóžff
+@
+ð–ff
+@7Þsiff
+@¤!ff
+@éZff
+@s%Vff
+@¨)€Dff
+@nœ¿†Üt™?>c‘¸ýsƒ?g©Üýµ?-|í¯¯Ñ±?I•´:*_™? ¿èwW®? _\Ùçª?Íè<«©¨?ì-6Ã²¥?8·’„Xµ£?Ï!HËPû¡?m({1út ?bPì/ž?Ï´®¡Š¶›?˜<¢Oa—?Ùì¼u•?1éOîÂª“?šÄ²þý‘?ÔcÈ4k?^]]¾×Þ?¾y…T‹?Mck©fˆ?6)ùö>Þ…?»#"7%?ÉwS{)ß}?ŠÜfó¢y?G`-ˆu?³ÅËU¤q?Žâ…;»k?Óþx} qd?Æ„yŸÎZ?»cŸ‰Ù_J?uGÎá¿g•?McâÝêõ‘?q{ôÆcÕ?èèÓ}aˆ?”µ7·qƒ?£WÈgÝ}?ž4ç)u?;€5Š„¼k?ªN¼ö×ÐZ?’_GÃU±?ºXVcª?±(uR~¥?f‰\Ä›Ý¡?¢9‹Bž?ëhàít™?%ü°tƒ?ÒŽÔ)þµ?Äg¸êÖÑ±?&WA_™?»e¦È®?µùœèª?¤bïŠÌ¨?ôØjÞ²¥?`>Q³mµ£?²oZbû¡?*bIvu ?cÏþ,/ž?(èÒñž¶›?‹ù^a—?,=G‹"u•?bß'-Ðª“?² 
+þ‘?°Àÿc=k?† þ-èÞ?<i+…c‹?X'ò,·fˆ?¡æ]KÞ…?˜ª7ë@%?Ý¡ýT:ß}?tÙN. ¢y?4<ˆ”u?â¤Ï_¤q?<[vCI»k?ª
+ªqd?.ðX¶ŽÎZ?B©>\æ_J?x'¬fÑg•?¾Úá4øõ‘?„b?ÓwÕ?SV aˆ?œÀéqƒ?|äxÝ}?£B³>Šu?Ç)B’¼k?¾K×äÐZ?Êr¿úU±?…¼Å˜ª?|U6s~¥?~r;þ°Ý¡?XH»ž?À¨–èût™?¶š²€tƒ?¦aCBSþµ?ÖÖÌðÑ±?¨—sñM_™?$WKe¯®?N
+Çèª?3'þwÛ¨??øðŸê²¥?¨ìãþxµ£?Õclû¡?Jùu ?¶@/ž?ÜÂÉS¯¶›?¤z’¥ia—?*™Î(*u•?(üæ×Õª“?xÎ¨ªþ‘? ´DÉAk?‡ï«ˆïÞ?5ýi‹?îq „»fˆ?‰—$öNÞ…?z	)
+C%?*5¨=ß}?Š«Á"¢y?Låáã•u?ð)†`¤q?‚õ›àK»k?bÛÖ‚¬qd?þsÏd‘ÎZ?ŒIÁè_J?¢·—ƒÛg•?ÔH0 ö‘?”Äƒ^…Õ?’çwÄ—aˆ?de ^•qƒ?æl¦ª„Ý}?£]:“u?"³2f¼k?ÀFïÐZ?Îe´NV±?'l^L¯ª?ÄÎM‚~¥?6
+ é»Ý¡?½w^SÌž?oÂ°ùt™?vj¢¿tƒ?_%/êýµ?Ìª‹è¸Ñ±?Ú©zu'_™?ºÔ!Ah®?õêçª?2Ûm•»¨?-õÊ£Ô²¥?ªGÄ*jµ£?:×Ðbû¡?óð®Wu ?|C8/ž?`	UÂª¶›?®Åia—?®R),u•?dpÂ Øª“?d&Tëþ‘?B+Ek?ÆÞ˜õÞ?.óö¥n‹?<¤Àfˆ?âÛ[RÞ…?Ú‰•D%?Þ9á¸?ß}?Nêš=$¢y?ØyÂ–u?,Ñia¤q?IEà´L»k?Vž¾­qd?.°-’ÎZ?hPá§é_J?"'‚½g•?êù–»èõ‘?2Åù_Õ?°_{aˆ?k.÷¾qƒ?j„2eÝ}?c?}u?"E^;‚¼k?
+oªÕÐZ?œÔ¿U±? K†è^ª?+¦<ŸO~¥?Œ‘Ù[™Ý¡?ºq³™ž?éÑËþt™?r&>‰tƒ?þÊ¨Pþµ?ÕInŸñÑ±?ÊŸûUG_™?”=mç´®?ù­L	"èª?¢î¤Mã¨?8pVËñ²¥?5ú|ã~µ£?–jW²pû¡?î^u ?möDD/ž?í©A½²¶›?ØÏLma—?û¸~%.u•?EóÚª“?zÕÞùþ‘?|R•Ek?˜–BöÞ?AÞ’n‹?²òôÀfˆ?ÖÌ*uRÞ…?âj©E%?¾oÿûAß}?¯¥ù1&¢y?¢„m˜u?†Ázb¤q?ÑÖd|N»k??ç4®qd? ûH“ÎZ?Ñ½ôŽê_J?=¢Ög•?Î³Rîûõ‘?>“]}Õ?_a‘aˆ?œâ'qƒ?Ö=z¨|Ý}?ØÂá}u?¸¾D–¼k?woð”èÐZ?Øn§V±?
+®g¤ª?o~ðz~¥?Ô¥ë¶Ý¡?&ÖÄž?                                                                                                                                                                                                                                                                                                                                                                                Ž\íÕ€zú?¯ÙÛË„ú?›<’l#…ú?†Â7A{ú?õ;î–¸@@„[R šæ?”bÕècqú?>#/)@lú?ž•0Õvú?¿Xû`Ænú?/Ò¼Ånú?Í&ÙŸtú?¹–Žðtú?2æˆ,‚¼ú?nîá^l¼ú?KL…¼ú?ô‚¼z¼ú?°÷GŸŒiú?ÇQ%h„iú?Ê«%ú?`ÒU¶¥%ú?pÚ)±%ú?Ê«%ú?Ç	?ÂÒxú?Ç	?ÂÒxú?* 0Çì@X5²Êò?&‹èñÊò?êü›Æò?.Ìz8Èò?jƒáTL
+ò?#ÅeU
+ò?Ó”F
+ò?ðf´TL
+ò?ÏfÚF
+@ÏfÚF
+@ÏfÚF
+@ÏfÚF
+@#T,‚F
+@#T,‚F
+@#T,‚F
+@#T,‚F
+@Mß5¾1Ä?&f‹$<êŽ?&f‹$<êŽ?&f‹$<êŽ?&f‹$<êŽ?²µÚo%Ù?²µÚo%Ù?²µÚo%Ù?›ÿÙ?ì±¦SNÒ@ì±¦SNÒ@ì±¦SNÒ@ì±¦SNÒ@^¼þ2xÒ@^¼þ2xÒ@^¼þ2xÒ@^¼þ2xÒ@#‰ÝŽÀ@t{“z¿æ?Bú!Õú?†Ççe}ú?z}üîb‚ú?4Žµš~ú?cñð¦~ú?NX•ñú?F`×Îú?ô§Ò<Éú?0vç$Éú?ºOý0+Éú?àŽT.Éú?ºÂu |ú?Yò3|ú?™]–4ú?™]–4ú?™]–4ú?™]–4ú?R¾õèMƒú?R¾õèMƒú?·|™õì@#† "Nò?æÈ Tò?ƒDQò?¤Û{áIò?(¬ÞÐò?èkŸ®Öò?õÕzÓò?ó‰BÍò?îïÇÇÞF
+@îïÇÇÞF
+@îïÇÇÞF
+@‘1ˆõáF
+@®*„‹tF
+@®*„‹tF
+@®*„‹tF
+@®*„‹tF
+@B#0Œ3Ä?ÐP¿¨jêŽ?ÐP¿¨jêŽ?ÐP¿¨jêŽ?ÐP¿¨jêŽ?„ª…ÛÚ?„ª…ÛÚ?„ª…ÛÚ?„ª…ÛÚ?>SÏÀ¹×@2Q¼µ×@2Q¼µ×@2Q¼µ×@Æ£„ï×@´.¢Ø×@^'º=Ý×@´.¢Ø×@#|ü\{Ã@—Z÷3™Ëæ?‡ã†Ø„ú?¬ä9©„ú?ªÇsÍ6…ú?_yVÆ„ú?O¦@µ„ú?œ _û…ú?Cí
+…ú?DqTõÍú?Âl†ôÍú?TêUh÷Íú?~jüÍú?> ^w„ú?È/¨y„ú?Ó/h0%9ú?Ó/h0%9ú?Ó/h0%9ú?Ó/h0%9ú?Ë½P…ú?àÕûS…ú?ÉDr-éì@âÉJóò?¬Èò?²€=büò?‰~!þò?Fµ7¦wò?]à=¤vò?]à=¤vò?v¹p†wò?Ì£lÒæF
+@Ì£lÒæF
+@Ì£lÒæF
+@ï_nàF
+@P¼¶ævF
+@P¼¶ævF
+@P¼¶ævF
+@P¼¶ævF
+@øUÛ /Ä?IJé72êŽ?IJé72êŽ?IJé72êŽ?IJé72êŽ?âTéxdÛ?âTéxdÛ?âTéxdÛ?âTéxdÛ?‚·?ZÙ@ÎUBdÙ@U³Ì|fÙ@RM5‹mÙ@24œÒÙ@à–þAÙ@gª-”Ù@*AÉ“Ù@0&¿ÝÂ@ ƒiŒÂæ?öMÏÍCú?¿š'†Óƒú?\£)su~ú?°•
+_•‚ú?Æh"Œ‚ú?¥&¶GÝú?Èæº¿Öú?R{¼áÌú?OÅÄ…ÔÌú?69§¿ÛÌú?°¥V7ÑÌú?~ÀpX¨„ú?Vã$Æ„ú?ŠýèEV5ú?ŠýèEV5ú?ŠýèEV5ú?ŠýèEV5ú?IíÒ}ú?\^È}ú?þ‘iì@ˆr0ˆ+ò?©i±!ò?íè›%ò?âoQ)ò?rHƒ®ò?ºË'¯ò?â¡xè¬ò?H@!¨²ò?]+Ž¹ÞF
+@]+Ž¹ÞF
+@]+Ž¹ÞF
+@]+Ž¹ÞF
+@1•ó|F
+@hÑqzF
+@hÑqzF
+@hÑqzF
+@XˆNÓp1Ä?ÌY?êŽ?ÌY?êŽ?ÌY?êŽ?ÌY?êŽ?€v«
+ùÚ?€v«
+ùÚ?€v«
+ùÚ?€v«
+ùÚ?"Q%H&Ø@"Q%H&Ø@"Q%H&Ø@"Q%H&Ø@`%« @Ø@`%« @Ø@`%« @Ø@`%« @Ø@ ß“”¸@Ì œæ?Ü2¼üqú?Éˆ4(ewú?ã;I/»lú?ï¥tú?vÃ¨tú?Š)ÐQoú?©x¼¨Soú?êè¶J¼ú?êè¶J¼ú?êè¶J¼ú?;_ß¼ú?¼ëº syú?H›%ä{yú??ET&}&ú?jìÕ’‡&ú?jìÕ’‡&ú??ET&}&ú?4*{¼Èiú?œß¸íÈiú?B¢'3í@*°G#Ùò?ö ˆÛò?ûöpEàò?"Ý4éò?]Žzo
+ò?›“Qb
+ò?”¿3¾k
+ò?´@F€`
+ò?È
+ØUçF
+@‘äƒmÙF
+@‘äƒmÙF
+@‘äƒmÙF
+@,² ÅˆF
+@,Ï’‚ŠF
+@,Ï’‚ŠF
+@,Ï’‚ŠF
+@(¹Ó¦0Ä?•±ÿ¹GêŽ?•±ÿ¹GêŽ?•±ÿ¹GêŽ?±ÿ¹GêŽ?­<H.Ù?­<H.Ù?­<H.Ù?­<H.Ù?r|™í}Ò@r|™í}Ò@r|™í}Ò@r|™í}Ò@¤€q»Ò@¤€q»Ò@w©¢´Ò@¼èÝX¸Ò@(ýÄðt™?F$½ôtƒ?;§­‘óýµ?Âe)QÃÑ±?ìJÚ®)_™?Ï_Ww®?îÜ#ôçª?‹¿¨?7¼Ö²¥?út|›hµ£?PÂùî_û¡?ˆœ†u ?€ºP//ž?=>Ü¢¶›?©{Áeaa—?ÈØÃ5$u•?š]_ÝÐª“?=¼Œ—
+þ‘?i:iì=k?l†;ÆèÞ?ƒ[Dÿb‹?S!ä,¶fˆ?V¹5ìIÞ…?˜XAè>%?³å6ß}?‘ñE¢y?Ï6ucu?ür+\¤q?`SñD»k?·{a§qd?¼tW»ŠÎZ?€ìqjâ_J?»>¾g•?–Aéõ‘?ð'$`Õ?Ø°Yzaˆ?¤«j±~qƒ?ÊXcÝ}?õÀ:|u?mÀª€¼k?ä8;ÔÐZ?†~,ËÂU±?P²ûÐcª?ìV?S~¥?ÞN'œÝ¡?–RÔ0ž?f4éˆþt™?w²tƒ?¼±<þµ?6\¬PåÑ±?Z@D‘B_™?Ä“G¡®?øïTŽèª?
+‰<×¨?fW›cè²¥?Ûîwµ£?¨AHlû¡?B‡Äïu ?Lò¤A/ž?rT<%±¶›?mô«¬ma—?£!<”/u•?~\ß2Üª“?ÔØ©þ‘?>g-²Hk?Go>ýÞ?ªÌ1v‹?ˆ/ÐÇfˆ?9™AZÞ…?R± ×K%?-l„ùLß}?úËì/¢y?Ø è¡u?žté²i¤q?ÃüHZ»k?D5$¿¶qd?HÂˆbžÎZ?¢Øüvõ_J?`j’ÀÑg•?E{ò`øõ‘?ÂýwÕ?ÒyhÄŒaˆ?ûJ·Œqƒ?ð*…wÝ}?(Do Šu?ýðæ’¼k?4í‘äÐZ?z»ÕýU±?©B‹Wœª?—j,u~¥?:AtÒ²Ý¡?ÅZá>¾ž?‚Kæt™?’qP[ûsƒ?qI*Jþµ?„%öíâÑ±?§(
+T_™?ÚÎ©•®?>/óèª?½<Ï®È¨?ÚL·ÍÙ²¥?8|}iµ£?þ*^û¡?9Éu ?öõÉ)&/ž?é$z—¶›?6|Va—?8¬uu•?]ŸÆª“?_Mµ« þ‘?j„¯4k?¢ ¡×Þ?ÁµbpS‹?PýV ¨fˆ?úd =Þ…?>;ý4%?›Q·›%ß}?;ÍZ¢y?ºb6Ü„u?gæ’¾R¤q?˜·Éu6»k?£ä´œqd?6…ƒè|ÎZ?{)#Õ_J?@Ï3Þßg•?Ó×âTö‘?¡m‰Õ?m [šaˆ?úl!—qƒ?Ðœƒ¹†Ý}?Ýd”u?–øYÑž¼k?>¯…‹ðÐZ?Ep|V±?(ÂÛf¸ª?È¿Kæ‡~¥?±gèåÀÝ¡?øçªÔž?.!¤²t™?l ûåsƒ?o|Äýµ? Ñ³—Ñ±?_-ãJ!_™?ˆlZg+®?-|š²çª?—¾v…¨?€vŠœ¡²¥?æâ,¢8µ£?Õû&3û¡?°z[7ßt ?0jáÍã.ž?,Ë˜F]¶›?‹£O9)a—?‚)Õâñt•?2½Œ¤ª“?®Lûgãý‘?À*ºk?ÇÄàK­Þ?p÷+ò/‹?>¿÷‰fˆ?b©Ô#Þ…?˜ùž"%?”ÝSìß}?I"bó¡y?ô˜\nu?Ê¹+É@¤q?gÆ¼l»k?B-Úsˆqd?ÂšÇbÎZ?›`™µ»_J?*E	¹g•?>:¨åõ‘?HpW[Õ?ž5×waˆ?ðÅy¶|qƒ?ËFŒÖ`Ý}?&ìðmzu?N/ýˆ~¼k?²ãIÒÐZ? zMÓ¸U±?o0¾ëVª?Ø<÷$I~¥?ê 4õ“Ý¡?Ãã7‘ž?íÝ }Øt™?¾P¬3ósƒ?Úw0þµ?¼Ã§ÙÑ±?>î*nB_™?z¹¹Þ‹®?¨¢>Åüçª?ÏgìÁ¨?Rì¶¿Ò²¥?ÿrV"bµ£?U¸ìpVû¡?1	Éýt ?:XG/ž?Ø˜ˆ¶›?˜Ü;NJa—?\azu•?~Â ½ª“?z‚2Aøý‘?8ñ-k?ˆC­ÉÞ?z¦3êF‹?0Y=œfˆ?2&À 3Þ…?]ì+.%?ç Tß}?ü1Ã1¢y?Ø:B}u?•Æ<M¤q?·|-»k?s9h%–qd?ô¡ËItÎZ?ê ŽÌ_J?~yŸÑg•?'Úâ^øõ‘?jk†wÕ?eE;7Œaˆ?Hyù‹qƒ?Ü’û
+vÝ}?ÄÇlÅˆu?ø¨ÜH¼k?}Ñ11ãÐZ?†ÂNýU±?fÿk›ª?B³I$u~¥?OŽÿý²Ý¡?f!;†¾ž?‡êA…Çt™?òD­'ósƒ?ìë—	ýµ?¬ov…Ñ±?        ¢ã`ù®?^–­çª?€áÚÊ‡¨?%	`¼¦²¥?.Zk<@µ£?ˆ@A<û¡?E‹•/ét ?33ž®ø.ž?Þr¶›?¡òÇ€=a—?«r÷u•??¯5¶ª“?¨…]óý‘?ú†*k?!	ŽÆÞ?Ðí¼E‹?$¾Ø›fˆ?vó3Þ…?f?–Ë-%?Ÿ#Âìß}?„ªœ¢y?ÎØ£ |u?½™¤K¤q?N§ðo+»k?~FŒÿ”qd?7ßþrÎZ?½FXË_J?                                                                                                                ·sQR
+@é‹“/
+@,»(G;(
+@¬®ET´d
+@Á0ŠÕòb
+@vý$!a
+@aNXâ=_
+@”;FG]
+@ØÓ|°<[
+@Rg«œY
+@ÆjtâV
+@¼"´ŽT
+@ƒ‰0…O
+@þ“¦qÚL
+@ßÿ>A J
+@pê×úF
+@±EÂC
+@Ùüª_R@
+@®†©p¡<
+@>Ê¡l¥8
+@^mü›P4
+@T½ß;V*
+@Vk]|$
+@°‘UÛ
+@ÐF8
+@||#š6
+@<¥ÑË>
+@µÉ¤P2ô	@la6³¥à	@×ÕÀ	@UkºÜ°b
+@D%:ô¯^
+@V«]ÃVZ
+@…íþŒ”U
+@¼šºSP
+@jæ‰vJ
+@ýûÇÓC
+@°^T=0<
+@ºe03
+@w8¨C9
+@eìlÄ
+@ª¸‹æ	@Ÿ­ R
+@¼+“v/
+@ôùi1A(
+@¢KÚÑ²d
+@Lô)ðb
+@¶Ra
+@†EP9_
+@6þ°B]
+@k&X¦7[
+@"ÈžY
+@çzµÝV
+@!ÈdŠT
+@Äq‰O
+@<BTÕÕL
+@žÅÕðúI
+@ÒÔ^CôF
+@S§5¼C
+@&óNûK@
+@Zò4*›<
+@>ê±Ÿ8
+@CÂï(K4
+@ð~w+Q*
+@)Eüx$
+@m,^Ù
+@Põ×ñ9
+@°¡xÌ<
+@ZtKF
+@j“ª->ô	@‘OÅ'µà	@c9•2À	@”xe³°b
+@6wš—¯^
+@a¾¾$VZ
+@þhE”U
+@NƒÇèSP
+@ÜI§wJ
+@
+"“ÖC
+@€EÀ…4<
+@À§³H53
+@Šz¢À>
+@M“VÉ
+@ÖyÇ‘æ	@ÌnAóR
+@Mïqß‹/
+@@fÏ~J(
+@LX¼Ë²d
+@~Ÿðb
+@å½Ha
+@¦co:9_
+@-Å7vB]
+@ÒÒï37[
+@ÏaáY
+@Ïåc˜ÜV
+@nB¸‰T
+@DAÒ$‰O
+@ÞÃaóÕL
+@º©:?ûI
+@¬‡XÏôF
+@Â«wÄ¼C
+@#CÚ L@
+@™øAÔš<
+@“Z»Mž8
+@¥mðœI4
+@t§itO*
+@Všø&w$
+@B?¯Ù
+@ÕŸ(T8
+@“”+ë9
+@„äjC
+@®ÕYf:ô	@.EQy®à	@þðöÖ)À	@ž^J²b
+@¶S²ã²^
+@¸·+[Z
+@¬Lè‹šU
+@±Ï>[P
+@°ÿ•!€J
+@Y½ßC
+@/D‘t><
+@¸íu“?3
+@#?%G
+@:Žb<Ð
+@¡A”A–æ	@Uvž5R
+@)ÍHÈ‰/
+@Zç&¡H(
+@Ê[Ìn³d
+@ª+ ñb
+@z´¢a
+@¾DÒj<_
+@Æ8—]F]
+@]rÛ;[
+@0mçY
+@fšäáV
+@-~ŽT
+@îiìŒO
+@ŸVb’ØL
+@Ø:±týI
+@"Ò}§öF
+@Ê¶5¾C
+@ú‰¸M@
+@—|aäš<
+@„¸	Þ8
+@%fè5H4
+@Ì&ˆÀK*
+@Þ"q$
+@„Fï{Ð
+@¿í„J-
+@×¬8,
+@.--º2
+@[ÝÈë&ô	@,†ÚX›à	@xàµÀ	@j,n&±b
+@¥=€±^
+@2&pøXZ
+@sä4"˜U
+@$ŒXP
+@	}J
+@€*—9ÜC
+@L€”;<
+@LÇ{†<3
+@"¼¡JG
+@eðÒ
+@èŸÞÛšæ	@¡f3R
+@ªÜìÕw/
+@À1¼I(
+@Ô}Û©³d
+@êMEŽñb
+@äØÌa
+@:LÛ;_
+@NAÙdD]
+@ê9,µ9[
+@ã{»äY
+@g¶åÓßV
+@’÷ùyŒT
+@j¾Æi‹O
+@T²Qd×L
+@,ã”ûI
+@¬þuóF
+@ÿ{ƒ¹C
+@­¥&aF@
+@6X8’<
+@Þ„’8
+@.®’94
+@ôUÝ¹7*
+@=Åz[$
+@V]WÂ¹
+@Ïæ_u
+@²ý-X
+@ ƒÙØ
+@jƒ)ô	@'eaŒà	@•]À	@˜2.œ±b
+@.+æº±^
+@’‹ZZ
+@H…ø³™U
+@ìKÖ†ZP
+@ôswGJ
+@®d>ãÞC
+@Ô¼fÿ<<
+@€	G>3
+@pª»G
+@8•ÝÑ
+@vwA]™æ	@, ÑR
+@þéÐõ‚/
+@¯Cgf
+@Q²d
+@EA&–ïb
+@´Fza
+@Ù>Ú7_
+@*nÑ@]
+@j1t5[
+@XÀ÷ÕY
+@IžbÕÙV
+@wÀ›…T
+@Å‡t„O
+@~Ú­ÐÏL
+@Ê3„ôI
+@&ó—íF
+@•G¨ZµC
+@~¨=¯D@
+@h8¦†’<
+@ö‰7^•8
+@bö‰l@4
+@P}wF*
+@€_ý,n$
+@RZ2Ð
+@[£ÜÊ/
+@Æ&i1
+@lw£¹;
+@–!Â1ô	@8z°C§à	@‰†k"À	@ì¼?gf
+@â*‰½gf
+@”d„2hf
+@E{Yhf
+@‹ûshf
+@Ð÷gvhf
+@Êìkbhf
+@ÏZhf
+@¸”Ëgf
+@.Ž€	gf
+@ŠîŠff
+@ê/cgff
+@ïcúð±zú?äŠ$y…ú?âÐW¬Q…ú?W`¯C zú?zü³(¸@Ú¨U¯@™æ?ŒBk`qú?`ƒÌ@lú?bÑ.CÀvú?v¬ßæÃnú?v¬ßæÃnú?÷*gâtú?óÁ™¿tú?|Iê-´»ú?$Q<Å»ú?8¤þà¢»ú?äNŸ¸»ú?b…v—†iú?,ÓÝiú?Ê£µ#o%ú?Ê£µ#o%ú?Ê£µ#o%ú?Ê£µ#o%ú?š)$9áxú?ÒTÑßxú?Í1ÿ¿ì@òógæoò?Ð%.^hò?sÞoósò?¿\µ¼jò?ÆxWò	ò?ÆÓ*û	ò?ÆÓ*û	ò?ÆÓ*û	ò?/ÕF
+@/ÕF
+@/ÕF
+@/ÕF
+@òi:Ø}F
+@òi:Ø}F
+@òi:Ø}F
+@òi:Ø}F
+@Js,/Ä?Â[ÍO2êŽ?Â[ÍO2êŽ?Â[ÍO2êŽ?Â[ÍO2êŽ?˜¨XÙ?ÂxBÙ?¼xBÙ?šxBÙ?Ðþ0»'Ò@ô?|A4Ò@:2Ò@¥ONÝ)Ò@=	ƒ×OÒ@Ÿãq­RÒ@¾Ë?ÕTÒ@Å°³`Ò@ÓÝ¢wÖÁ@¹î#‘«Àæ?à¬_ »€ú?ú…?è}ú? U€˜ƒú?kKRú?kKRú?qàR$‚ú?jóØë!‚ú?ßq!òÊú?<:¨ƒíÊú?¬9VFöÊú?r‚ÞèÊú?)Áx¨w|ú?š/z|ú?B*8„ê4ú?B*8„ê4ú?B*8„ê4ú?B*8„ê4ú?^l¤«µ„ú?ðÂ¦„ú?þr6~¾ì@	í4K9ò?ÍC:ò?„”û<ò?ødZ–6ò?¢ÑÁOÂò?>s¾€·ò?>s¾€·ò?>s¾€·ò?Cu2ºçF
+@Øƒ[_ÝF
+@Cu2ºçF
+@Cu2ºçF
+@ñKà‚F
+@ñKà‚F
+@ñKà‚F
+@ñKà‚F
+@øÖt:1Ä?ú³-u]êŽ?ú³-u]êŽ?¦üùJêŽ?ú³-u]êŽ?¬ÅJêßÚ?©…KêßÚ?+.wíãÚ?+.wíãÚ?iÀ|î×@Ñ€‡Ýî×@iÀ|î×@q(ñ×@ýíE3Ø@pV{Ø@ žGeØ@h…ºŒ"Ø@<«xØAÅ@[¢žðÎæ?åÝÛw†ú?8Ÿ÷ÿþ…ú?ëÛ~Þ†ú?õŒU	†ú?õŒU	†ú?¬/ÅÓ†ú?¸¾¹†ú?ðÿÞmÁÐú?Žó¢þ«Ðú?Š’”C½Ðú?ìƒÉÐú?RÌjá…ú?qòõöÜ…ú?zÄD:ú?zÄD:ú?zÄD:ú?zÄD:ú?êW°Ï…ú?@g5Ü…ú?÷µíaœì@[<Lr…ò?dÞ6;Œò?ãÎä\~ò?Æ\HB‰ò?woäò?woäò?woäò?woäò?b—¶0åF
+@b—¶0åF
+@b—¶0åF
+@b—¶0åF
+@öè|F
+@öè|F
+@öè|F
+@öè|F
+@°Wt§õ3Ä?‡úÂ eêŽ?‡úÂ eêŽ?‡úÂ eêŽ?¸Ã eêŽ?<Iÿ Û?fIÿ Û?fIÿ Û?<Iÿ Û?¤¹£Ú@#tµ
+Ú@\ÙÀ\Ú@¤²bÚ@Â^¿š/Ú@(7ô/7Ú@—“ÞJ2Ú@Ép6Ú@£¯Ñô4Á@¨|£y!Áæ?Ü3ëC€ú?)ÿoƒú?H¸˜¦}ú?j½Ä»Øú?j½Ä»Øú?2:[cê~ú?ÊŸù-ï~ú? ÁjÊú?¢f1ôÉú?¦†é÷Éú?Q†¼+Êú?¦Zð5‡„ú?ÜP¡¤„ú?ŽŽ¾d4ú?ŽŽ¾d4ú?ŽŽ¾d4ú?ŽŽ¾d4ú?Bš˜G|ú?3N|ú?óßf<Lí@÷NŠ²ò?²ÿžé¦ò?ò”‘²¤ò?àà0á±ò?úßúi8ò?àóz/ò?àóz/ò? bþ	+ò?ˆÍŸŽäF
+@ˆÍŸŽäF
+@ˆÍŸŽäF
+@ˆÍŸŽäF
+@Flé ƒF
+@wØì[ˆF
+@!ì1ÆˆF
+@ý0\Ø†F
+@ð_›˜0Ä?à†ÔJêŽ?à†ÔJêŽ?à†ÔJêŽ?à†ÔJêŽ? –)ðÚ?Ô–)ðÚ?Ô–)ðÚ? –)ðÚ?8‹œV¿×@(]\xµ×@i/ùvÀ×@ˆm1³×@PÑŽÆõ×@Pj¨é×@Pj¨é×@Pj¨é×@˜Ðè‰·@lq]½?šæ?E§#aLqú?6T„©¾vú?^3I”>lú?dù	túsú?Ä7-šüsú?ÒCèÛ¾nú?Íªq¹nú?€¬i¨ºú?—&4ö±ºú?¾€‘´±ºú?h*MOªºú?è”äÜxú?ò»ðÛxú?ù×¤%ú?ù×¤%ú?ù×¤%ú?ù×¤%ú?]Ë~3ƒiú?&Îš¡‡iú?ÂÞ£;&í@î±ìvò
+ò?%¦n¥ó
+ò?Œ¦4Íú
+ò?¦^±šò
+ò?¼éÛ(x	ò?²3Ï`v	ò?ôSs	ò?ÎÈkm	ò?Ä!Ç)àF
+@Ä!Ç)àF
+@Ä!Ç)àF
+@Ä!Ç)àF
+@€zø‹F
+@€zø‹F
+@€zø‹F
+@€zø‹F
+@@ÆJE¸/Ä?¢ö|IêŽ?<¢ö|IêŽ?<¢ö|IêŽ?<¢ö|IêŽ?Œ]n!#Ù?Œ]n!#Ù?Œ]n!#Ù?Œ]n!#Ù?œB®d-Ò@l+$b/Ò@l+$b/Ò@l+$b/Ò@ð‡ÌÐYÒ@ËdEkÒ@fK®”ZÒ@šê'm`Ò@o&;P¿£Ž?»m¿S¿£Ž?6ô²íïW?6ô²íïW?¾MŸðW?¾MŸðW?¦‡n=xD?¦‡n=xD?#éêD
+@#éêD
+@«‘ TŸC
+@‡ÜƒRŸC
+@F5UŸC
+@"ú5SŸC
+@“bùe
+A@

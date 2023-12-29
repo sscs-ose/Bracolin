@@ -77,9 +77,9 @@ N 530 50 550 50 {
 lab=VSS}
 N 290 50 330 50 {
 lab=VSS}
-C {PR_net.sym} 100 80 0 0 {name=x1}
-C {DiffN_net.sym} -130 30 0 0 {name=x2}
-C {DiffP_net.sym} 640 -30 0 1 {name=x3}
+C {PseudoResistor/PR_net.sym} 100 80 0 0 {name=x1}
+C {PseudoResistor/DiffN_net.sym} -130 30 0 0 {name=x2}
+C {PseudoResistor/DiffP_net.sym} 640 -30 0 1 {name=x3}
 C {devices/iopin.sym} 230 -370 0 0 {name=p1 lab=VA}
 C {devices/iopin.sym} 230 -350 0 0 {name=p2 lab=VB}
 C {devices/iopin.sym} 230 -330 0 0 {name=p3 lab=IBN}
