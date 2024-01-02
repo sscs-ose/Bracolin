@@ -39,7 +39,7 @@ hilight_wave=-1
 
 divx=10
 y1=-60
-y2=93
+y2=96
 
 
 rainbow=0
@@ -115,14 +115,8 @@ N 470 -60 470 -40 {
 lab=AVDD}
 N 470 -60 480 -60 {
 lab=AVDD}
-N 470 40 470 60 {
-lab=GND}
-N 470 60 480 60 {
-lab=GND}
 N 410 70 410 100 {
 lab=IREF}
-N 410 160 410 180 {
-lab=GND}
 N 300 40 370 40 {
 lab=VN}
 N 300 160 300 180 {
@@ -143,21 +137,31 @@ N 170 -40 270 -40 {
 lab=Vin}
 N 270 -40 370 -40 {
 lab=Vin}
-N 410 180 410 200 {
-lab=GND}
 N -20 20 -20 40 {
 lab=GND}
+N 410 100 410 120 {
+lab=IREF}
+N 470 170 470 180 {
+lab=#net1}
+N 440 270 440 290 {
+lab=GND}
+N 470 110 510 110 {
+lab=AVDD}
+N 470 40 500 40 {
+lab=GND}
+N 410 170 410 180 {
+lab=#net2}
 C {devices/code_shown.sym} -480 -350 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 
-.include /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/layout/spice/FC_top_pex2.spice
+*.include /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/layout/spice/FC_top_pex2.spice
 
 *subckt FC_top VP VN VOUT IREF AVSS AVDD
 
-Xpex Vin VN Vout IREF 0 AVDD FC_top
+*Xpex Vin VN Vout IREF 0 AVDD FC_top
 "}
 C {devices/code_shown.sym} -480 -120 0 0 {name=NGSPICE only_toplevel=true
 value="
@@ -194,7 +198,7 @@ descr="Annotate OP"
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
 C {devices/vsource.sym} -130 130 0 0 {name=VDD value=3.3}
-C {devices/isource.sym} 410 130 0 0 {name=Iref value=250n}
+C {devices/isource.sym} 470 140 0 0 {name=Iref value=1u}
 C {devices/gnd.sym} -130 180 0 0 {name=l1 lab=GND}
 C {devices/lab_wire.sym} -130 80 0 0 {name=p1 sig_type=std_logic lab=AVDD}
 C {devices/lab_wire.sym} 480 -60 0 1 {name=p3 sig_type=std_logic lab=AVDD}
@@ -208,11 +212,11 @@ value=5p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 660 90 0 0 {name=l5 lab=GND}
-C {devices/gnd.sym} 480 60 0 0 {name=l7 lab=GND}
+C {devices/gnd.sym} 500 40 0 0 {name=l7 lab=GND}
 C {devices/lab_wire.sym} 250 -40 0 1 {name=p2 sig_type=std_logic lab=Vin}
-C {devices/gnd.sym} 410 200 0 0 {name=l3 lab=GND}
-C {FoldedCascode.sym} 700 -230 0 0 {name=x1
-spice_ignore=true}
+C {devices/gnd.sym} 440 290 0 0 {name=l3 lab=GND}
+C {FoldedCascode.sym} 470 0 0 0 {name=x1
+}
 C {devices/vsource.sym} -20 -10 0 1 {name=V1 value="1.64982 DC 1 AC"
 }
 C {devices/gnd.sym} -20 40 0 0 {name=l2 lab=GND
@@ -227,3 +231,6 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 C {devices/lab_wire.sym} 310 40 0 1 {name=p4 sig_type=std_logic lab=VN}
 C {devices/lab_wire.sym} 410 90 0 1 {name=p6 sig_type=std_logic lab=IREF}
 C {devices/lab_wire.sym} 530 0 2 0 {name=p7 sig_type=std_logic lab=Vout}
+C {CurrentMirrors/CM_iref.sym} 500 270 0 1 {name=x2}
+C {devices/lab_wire.sym} 510 110 0 1 {name=p8 sig_type=std_logic lab=AVDD}
+C {devices/ammeter.sym} 410 140 0 1 {name=Vmeas savecurrent=true}

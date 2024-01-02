@@ -173,7 +173,6 @@ write TB_TIA_ac.raw
 
 .endc
 "}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/FoldedCascode.sym} 600 -290 0 0 {name=x1}
 C {devices/vsource.sym} 390 -220 0 1 {name=V2 value="0 DC 1 AC"
 }
 C {devices/capa.sym} 390 10 0 0 {name=C1
@@ -188,3 +187,4 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/lab_wire.sym} 440 -250 0 0 {name=p4 sig_type=std_logic lab=Vin_neg}
+C {Folded/FoldedCascode.sym} 600 -290 0 0 {name=x1}

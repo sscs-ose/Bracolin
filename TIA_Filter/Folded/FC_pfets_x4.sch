@@ -33,4 +33,4 @@ C {devices/lab_wire.sym} 290 50 0 0 {name=p10 sig_type=std_logic lab=D2}
 C {devices/lab_wire.sym} 210 -170 0 0 {name=p12 sig_type=std_logic lab=B}
 C {devices/lab_wire.sym} 370 -80 0 1 {name=p14 sig_type=std_logic lab=G2}
 C {devices/lab_wire.sym} 50 -80 0 0 {name=p15 sig_type=std_logic lab=G1}
-C {FC_pfets.sym} 210 -80 0 0 {name=x1[1:4]}
+C {Folded/FC_pfets.sym} 210 -80 0 0 {name=x1[1:4]}

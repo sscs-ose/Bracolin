@@ -18,11 +18,11 @@ lab=#net1}
 N 0 -590 0 -580 {
 lab=AVDD}
 N -80 -400 -80 -370 {
-lab=#net2}
+lab=v2}
 N -80 -310 -80 -270 {
-lab=#net2}
+lab=v2}
 N 80 -400 80 -370 {
-lab=#net3}
+lab=v1}
 N -80 -800 -80 -770 {
 lab=#net1}
 N -80 -770 80 -770 {
@@ -56,9 +56,9 @@ lab=M3_D}
 N 780 -900 840 -900 {
 lab=M3_D}
 N 550 -810 550 -750 {
-lab=#net4}
+lab=#net2}
 N 710 -810 710 -750 {
-lab=#net5}
+lab=#net3}
 N 550 -570 550 -470 {
 lab=M3_D}
 N 710 -570 710 -470 {
@@ -78,19 +78,19 @@ lab=vb3}
 N 780 -350 810 -350 {
 lab=vb3}
 N 710 -260 710 -210 {
-lab=#net3}
+lab=v1}
 N 550 -260 550 -210 {
-lab=#net2}
+lab=v2}
 N 630 -260 630 -230 {
 lab=AVSS}
 N 710 -210 710 -140 {
-lab=#net3}
+lab=v1}
 N 550 -210 550 -140 {
-lab=#net2}
+lab=v2}
 N 550 -80 550 -50 {
-lab=#net2}
+lab=v2}
 N 710 -80 710 -50 {
-lab=#net3}
+lab=v1}
 N 440 40 480 40 {
 lab=vb2}
 N 780 40 820 40 {
@@ -134,23 +134,23 @@ lab=IREF}
 N 0 -720 -0 -660 {
 lab=#net1}
 N -80 -370 -80 -310 {
-lab=#net2}
+lab=v2}
 N 80 -370 80 -300 {
-lab=#net3}
+lab=v1}
 N 80 -300 80 -270 {
-lab=#net3}
+lab=v1}
 N 550 -140 550 -80 {
-lab=#net2}
+lab=v2}
 N 710 -140 710 -80 {
-lab=#net3}
+lab=v1}
 N 80 -270 80 -190 {
-lab=#net3}
+lab=v1}
 N 80 -190 710 -190 {
-lab=#net3}
+lab=v1}
 N -80 -270 -80 -90 {
-lab=#net2}
+lab=v2}
 N -80 -90 550 -90 {
-lab=#net2}
+lab=v2}
 N 370 -900 420 -900 {
 lab=M3_D}
 N 370 -900 370 -540 {
@@ -207,12 +207,12 @@ C {devices/lab_wire.sym} 820 40 0 1 {name=p33 sig_type=std_logic lab=vb2}
 C {devices/lab_wire.sym} 550 170 2 0 {name=p34 sig_type=std_logic lab=AVSS
 
 }
-C {FC_nfets.sym} 630 -330 0 0 {name=x7}
-C {FC_nfets_x2.sym} 630 40 0 0 {name=x5}
-C {FC_pfets_x4.sym} 10 -870 0 0 {name=x1}
-C {FC_pfets_x4.sym} 10 -470 0 0 {name=x2}
-C {FC_pfets_x4.sym} 640 -640 0 0 {name=x3}
-C {FC_pfets_x4.sym} 640 -880 0 0 {name=x4}
+C {Folded/FC_nfets.sym} 630 -330 0 0 {name=x7}
+C {Folded/FC_nfets_x2.sym} 630 40 0 0 {name=x5}
+C {Folded/FC_pfets_x4.sym} 10 -870 0 0 {name=x1}
+C {Folded/FC_pfets_x4.sym} 10 -470 0 0 {name=x2}
+C {Folded/FC_pfets_x4.sym} 640 -640 0 0 {name=x3}
+C {Folded/FC_pfets_x4.sym} 640 -880 0 0 {name=x4}
 C {devices/lab_wire.sym} 60 180 0 1 {name=p2 sig_type=std_logic lab=AVDD
 
 }
@@ -231,4 +231,10 @@ C {Folded/FC_bias_net.sym} 130 290 0 0 {name=x11}
 C {devices/lab_wire.sym} 210 -890 2 0 {name=p35 sig_type=std_logic lab=IREF
 }
 C {devices/lab_wire.sym} -210 -890 2 1 {name=p9 sig_type=std_logic lab=IREF
+}
+C {devices/lab_wire.sym} 440 -190 0 1 {name=p1 sig_type=std_logic lab=v1
+
+}
+C {devices/lab_wire.sym} 430 -90 0 1 {name=p5 sig_type=std_logic lab=v2
+
 }

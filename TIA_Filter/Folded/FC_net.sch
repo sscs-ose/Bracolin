@@ -130,15 +130,15 @@ C {devices/lab_wire.sym} -400 -300 0 0 {name=p4 sig_type=std_logic lab=VP}
 C {devices/lab_wire.sym} -210 -400 0 1 {name=p6 sig_type=std_logic lab=AVDD
 
 }
-C {/home/gmaranhao/Desktop/Bracolin/TIA_Filter/FC_pfets_x4.sym} -200 -280 0 0 {name=x1}
-C {/home/gmaranhao/Desktop/Bracolin/TIA_Filter/FC_pfets_x4.sym} -200 -680 0 0 {name=x2}
+C {Folded/FC_pfets_x4.sym} -200 -280 0 0 {name=x1}
+C {Folded/FC_pfets_x4.sym} -200 -680 0 0 {name=x2}
 C {devices/lab_wire.sym} -420 -700 0 1 {name=p9 sig_type=std_logic lab=VB1}
 C {devices/lab_wire.sym} 0 -700 0 1 {name=p10 sig_type=std_logic lab=VB1}
 C {devices/lab_wire.sym} -170 -830 0 1 {name=p11 sig_type=std_logic lab=AVDD
 
 }
-C {/home/gmaranhao/Desktop/Bracolin/TIA_Filter/FC_pfets_x4.sym} 320 -680 0 0 {name=x3}
-C {/home/gmaranhao/Desktop/Bracolin/TIA_Filter/FC_pfets_x4.sym} 320 -440 0 0 {name=x4}
+C {Folded/FC_pfets_x4.sym} 320 -680 0 0 {name=x3}
+C {Folded/FC_pfets_x4.sym} 320 -440 0 0 {name=x4}
 C {devices/lab_wire.sym} 350 -830 0 1 {name=p12 sig_type=std_logic lab=AVDD
 
 }
@@ -159,7 +159,7 @@ C {devices/lab_wire.sym} 390 -300 0 1 {name=p20 sig_type=std_logic lab=VOUT
 C {devices/lab_wire.sym} 310 -580 0 1 {name=p24 sig_type=std_logic lab=AVDD
 
 }
-C {/home/gmaranhao/Desktop/Bracolin/TIA_Filter/FC_nfets.sym} 310 -130 0 0 {name=x5}
+C {Folded/FC_nfets.sym} 310 -130 0 0 {name=x5}
 C {devices/lab_wire.sym} 130 -150 0 1 {name=p25 sig_type=std_logic lab=VB3
 
 }
@@ -169,7 +169,7 @@ C {devices/lab_wire.sym} 490 -150 0 0 {name=p27 sig_type=std_logic lab=VB3
 C {devices/lab_wire.sym} 310 -30 0 1 {name=p31 sig_type=std_logic lab=AVSS
 
 }
-C {/home/gmaranhao/Desktop/Bracolin/TIA_Filter/FC_nfets_x2.sym} 310 240 0 0 {name=x6}
+C {Folded/FC_nfets_x2.sym} 310 240 0 0 {name=x6}
 C {devices/lab_wire.sym} 120 240 0 0 {name=p32 sig_type=std_logic lab=VB2}
 C {devices/lab_wire.sym} 500 240 0 1 {name=p33 sig_type=std_logic lab=VB2}
 C {devices/lab_wire.sym} 230 370 2 0 {name=p34 sig_type=std_logic lab=AVSS

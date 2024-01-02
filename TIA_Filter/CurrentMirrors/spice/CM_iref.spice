@@ -1,0 +1,29 @@
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_iref.sch
+.subckt CM_iref ISBCS2 IREF VSS
+*.PININFO ISBCS2:B IREF:B VSS:B
+M6 ISBCS2 ISBCS2 VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M5 IREF ISBCS2 net3 VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M1 net3 ISBCS2 net2 VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M2 net2 ISBCS2 net1 VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M3 net1 ISBCS2 net4 VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M4 net4 ISBCS2 VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[1] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[2] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[3] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[4] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[5] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[6] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[7] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[8] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[9] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[10] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[11] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[12] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[13] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[14] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[15] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[16] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[17] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+M7[18] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
+.ends
+.end
