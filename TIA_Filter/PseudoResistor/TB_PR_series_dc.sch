@@ -422,7 +422,7 @@ let Rdiff2 = 4/deriv(idiff2)
 save idiff Rdiff idiff2 Rdiff2
 remzerovec
 write TB_PR_series_dc.raw
-wrdata /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/plot_data/TB_PR_series_dc.txt idiff Rdiff idiff2 Rdiff2 V(vxb) V(vxa) I(Vinp3)  I(Vinn6)
+*wrdata /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/plot_data/TB_PR_series_dc.txt idiff Rdiff idiff2 Rdiff2 V(vxb) V(vxa) I(Vinp3)  I(Vinn6)
 
 .endc
 "

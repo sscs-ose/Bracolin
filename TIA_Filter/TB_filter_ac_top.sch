@@ -220,7 +220,7 @@ tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
 C {devices/code_shown.sym} -1130 -200 0 0 {name=NGSPICE only_toplevel=true
 value="
-.option gmin=1e-14
+.option gmin=1e-15
 *.option abstol=1e-2
 .option klu
 
