@@ -391,7 +391,7 @@ value="
 C {devices/code_shown.sym} -590 -990 0 0 {name=NGSPICE only_toplevel=true
 value="
 *.OPTION ABSTOL=1e-2
-.option gmin=1e-16
+.option gmin=1e-15
 *.option RSHUNT=1e35
 .option klu
 

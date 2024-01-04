@@ -119,10 +119,6 @@ N -440 40 -430 40 {
 lab=Vin_neg}
 N 420 -250 520 -250 {
 lab=VA_PR2}
-N 560 -220 560 -200 {
-lab=#net1}
-N 560 -140 560 -130 {
-lab=GND}
 N 220 -90 220 -60 {
 lab=GND}
 N 810 -290 840 -290 {
@@ -138,7 +134,7 @@ lab=Vin_pos}
 N -530 180 -530 200 {
 lab=GND}
 N -530 100 -530 120 {
-lab=#net2}
+lab=#net1}
 N -530 40 -440 40 {
 lab=Vin_neg}
 N 140 -150 180 -150 {
@@ -146,15 +142,25 @@ lab=VB_PR1}
 N 140 -330 140 -310 {
 lab=VA_PR1}
 N 140 -250 140 -220 {
-lab=#net3}
+lab=#net2}
 N 140 -160 140 -150 {
 lab=VB_PR1}
 N 530 40 580 40 {
 lab=VA_PR2}
 N 640 40 670 40 {
-lab=#net4}
+lab=#net3}
 N 730 40 810 40 {
 lab=Vout}
+N 330 -540 330 -510 {
+lab=#net4}
+N 360 -420 360 -410 {
+lab=GND}
+N 330 -620 330 -600 {
+lab=VDD}
+N 390 -550 390 -510 {
+lab=iref}
+N 560 -220 560 -190 {
+lab=iref}
 C {devices/code_shown.sym} -1210 -360 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -218,11 +224,11 @@ write TB_filter_noPR_ac.raw
 "}
 C {Folded/FoldedCascode.sym} 620 -290 0 0 {name=x1}
 C {devices/lab_wire.sym} -420 40 0 0 {name=p4 sig_type=std_logic lab=Vin_neg}
-C {devices/isource.sym} 560 -170 0 1 {name=I0 value=250n}
-C {devices/gnd.sym} 560 -130 0 1 {name=l3 lab=GND}
+C {devices/isource.sym} 330 -570 0 1 {name=I0 value=1u}
+C {devices/gnd.sym} 360 -410 0 1 {name=l3 lab=GND}
 C {devices/vsource.sym} 220 -120 0 0 {name=Vcm value=1.65}
 C {devices/gnd.sym} 220 -60 0 1 {name=l6 lab=GND}
-C {devices/vsource.sym} -530 -300 0 0 {name=Vin1 value=1.64982}
+C {devices/vsource.sym} -530 -300 0 0 {name=Vin1 value=1.65}
 C {devices/gnd.sym} -530 -240 0 1 {name=l12 lab=GND}
 C {devices/vsource.sym} -530 70 0 1 {name=V2 value="0 DC 1 AC"
 }
@@ -255,31 +261,31 @@ value=0.5T
 footprint=1206
 device=resistor
 m=1}
-C {symbols/cap_mim_2p0fF.sym} 270 -260 0 0 {name=C8
+C {symbols/cap_mim_analog.sym} 270 -260 0 0 {name=C1
 W=9.8e-6
 L=9.8e-6
-model=cap_mim_2f0fF
+model=cap_mim_2f0_m4m5_noshield
 spiceprefix=X
-m=1
-}
-C {symbols/cap_mim_2p0fF.sym} 600 -50 1 1 {name=C7
+m=1}
+C {symbols/cap_mim_analog.sym} 600 -50 1 1 {name=C5
 W=9.8e-6
 L=9.8e-6
-model=cap_mim_2f0fF
+model=cap_mim_2f0_m4m5_noshield
 spiceprefix=X
-m=1
-}
-C {symbols/cap_mim_2p0fF.sym} -350 -330 3 1 {name=C3
+m=1}
+C {symbols/cap_mim_analog.sym} -350 -330 3 0 {name=C3
 W=100e-6
 L=100e-6
-model=cap_mim_2f0fF
+model=cap_mim_2f0_m4m5_noshield
 spiceprefix=X
-m=1
-}
-C {symbols/cap_mim_2p0fF.sym} -350 40 1 0 {name=C4
+m=1}
+C {symbols/cap_mim_analog.sym} -350 40 3 0 {name=C4
 W=100e-6
 L=100e-6
-model=cap_mim_2f0fF
+model=cap_mim_2f0_m4m5_noshield
 spiceprefix=X
-m=1
-}
+m=1}
+C {CurrentMirrors/CM_iref.sym} 300 -420 0 0 {name=x3}
+C {devices/lab_wire.sym} 330 -620 0 0 {name=p6 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 390 -550 0 1 {name=p7 sig_type=std_logic lab=iref}
+C {devices/lab_pin.sym} 560 -190 0 0 {name=p8 sig_type=std_logic lab=iref}

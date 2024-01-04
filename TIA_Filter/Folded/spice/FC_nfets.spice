@@ -1,4 +1,4 @@
-** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_nfets.sch
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FC_nfets.sch
 .subckt FC_nfets S1 S2 D1 D2 G1 G2 B
 *.PININFO S1:B S2:B D1:B D2:B G1:B G2:B B:B
 M1[1] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
