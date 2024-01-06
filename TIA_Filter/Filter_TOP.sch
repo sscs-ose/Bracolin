@@ -85,14 +85,12 @@ N -260 -400 -220 -400 {
 lab=IN_POS}
 N -270 -280 -230 -280 {
 lab=IN_NEG}
-C {PR_CM_net.sym} 390 10 0 0 {name=x1}
 C {symbols/cap_mim_analog.sym} 480 -110 0 0 {name=C1
 W=9.8e-6
 L=9.8e-6
 model=cap_mim_2f0_m4m5_noshield
 spiceprefix=X
 m=1}
-C {Folded/FoldedCascode.sym} 440 -360 0 0 {name=x2}
 C {symbols/cap_mim_analog.sym} -10 -110 0 1 {name=C2
 W=9.8e-6
 L=9.8e-6
@@ -115,7 +113,6 @@ C {devices/iopin.sym} 10 -620 0 0 {name=p1 lab=IN_POS}
 C {devices/iopin.sym} 10 -600 0 0 {name=p2 lab=IN_NEG}
 C {devices/iopin.sym} 10 -510 0 0 {name=p3 lab=I1N}
 C {devices/iopin.sym} 10 -490 0 0 {name=p4 lab=I1U}
-C {CurrentMirrors/CM_iref.sym} 470 -170 0 1 {name=x3}
 C {devices/iopin.sym} 10 -580 0 0 {name=p5 lab=VCM}
 C {devices/iopin.sym} 10 -560 0 0 {name=p6 lab=OUT}
 C {devices/iopin.sym} 10 -460 0 0 {name=p7 lab=IBNOUT}
@@ -135,3 +132,6 @@ C {devices/lab_wire.sym} 650 -360 0 1 {name=p20 sig_type=std_logic lab=OUT}
 C {devices/lab_wire.sym} 230 100 0 1 {name=p21 sig_type=std_logic lab=VCM}
 C {devices/lab_wire.sym} -260 -400 2 1 {name=p22 sig_type=std_logic lab=IN_POS}
 C {devices/lab_wire.sym} -270 -280 2 1 {name=p23 sig_type=std_logic lab=IN_NEG}
+C {/home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FoldedCascode.sym} 440 -360 0 0 {name=x2}
+C {/home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_iref.sym} 470 -170 0 1 {name=x3}
+C {/home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PR_CM_net.sym} 390 10 0 0 {name=x1}
