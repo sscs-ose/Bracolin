@@ -1,4 +1,4 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 24/12/2023 18:44
+* Extracted by KLayout with GF180MCU LVS runset on : 08/01/2024 18:52
 
 .SUBCKT CM_input ISBCS IP IP2 VDD IN IN2 VSS
 M$1 VDD VDD VDD VDD pfet_03v3 L=6U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U

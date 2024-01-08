@@ -1,18 +1,18 @@
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Filter_TOP.sch
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Filter_TOP.sch
 .subckt Filter_TOP IN_POS IN_NEG VCM OUT VDD VSS I1N I1U IBNOUT IBPOUT
 *.PININFO IN_POS:B IN_NEG:B I1N:B I1U:B VCM:B OUT:B IBNOUT:B IBPOUT:B VDD:B VSS:B
-C1 net1 OUT 1.9208e-13 cap_mim_2f0_m4m5_noshield A=96.04P P=39.2U
-C2 net2 VCM 1.9208e-13 cap_mim_2f0_m4m5_noshield A=96.04P P=39.2U
-C3 IN_POS net2 2e-11 cap_mim_2f0_m4m5_noshield A=10000P P=400U
-C4 IN_NEG net1 2e-11 cap_mim_2f0_m4m5_noshield A=10000P P=400U
+XC1 net1 OUT 1.9208e-13 cap_mim_2f0_m4m5_noshield A=96.04P P=39.2U
+XC2 net2 VCM 1.9208e-13 cap_mim_2f0_m4m5_noshield A=96.04P P=39.2U
+XC3 IN_POS net2 2e-11 cap_mim_2f0_m4m5_noshield A=10000P P=400U
+XC4 IN_NEG net1 2e-11 cap_mim_2f0_m4m5_noshield A=10000P P=400U
 x2 net2 net1 OUT net3 VDD VSS FoldedCascode
 x3 I1U net3 VSS CM_iref
 x1 I1N net1 net2 VCM OUT IBNOUT IBPOUT VDD VSS PR_CM_net
 .ends
 
 * expanding   symbol:  Folded/FoldedCascode.sym # of pins=6
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FoldedCascode.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FoldedCascode.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FoldedCascode.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FoldedCascode.sch
 .subckt FoldedCascode VP VN vout IREF AVDD AVSS
 *.PININFO AVDD:B AVSS:B vout:B VP:B VN:B IREF:B
 x7 v2 v1 M3_D vout vb3 vb3 AVSS FC_nfets
@@ -26,8 +26,8 @@ x11 IREF IREF vb2 vb3 vb4 AVDD AVSS FC_bias_net
 
 
 * expanding   symbol:  CurrentMirrors/CM_iref.sym # of pins=3
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_iref.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_iref.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_iref.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_iref.sch
 .subckt CM_iref ISBCS2 IREF VSS
 *.PININFO ISBCS2:B IREF:B VSS:B
 M6 ISBCS2 ISBCS2 VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
@@ -58,8 +58,8 @@ M7[18] VSS VSS VSS VSS nfet_03v3 L=6u W=2u nf=1 m=1
 
 
 * expanding   symbol:  PR_CM_net.sym # of pins=9
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PR_CM_net.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PR_CM_net.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PR_CM_net.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PR_CM_net.sch
 .subckt PR_CM_net ISBCS A1 A2 B2 B1 CMOUTN CMOUTP VDD VSS
 *.PININFO ISBCS:B A2:B B2:B A1:B B1:B CMOUTN:B CMOUTP:B VDD:B VSS:B
 x9 net1 net3 net4 net5 net12 net6 net7 net8 net9 net10 net11 CMOUTN VSS VSS CM_n_net
@@ -75,8 +75,8 @@ x3 A2 B2 net29 net27 net25 net33 net31 net39 net37 net41 net35 net43 net30 net26
 
 
 * expanding   symbol:  Folded/FC_nfets.sym # of pins=7
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FC_nfets.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FC_nfets.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_nfets.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_nfets.sch
 .subckt FC_nfets S1 S2 D1 D2 G1 G2 B
 *.PININFO S1:B S2:B D1:B D2:B G1:B G2:B B:B
 M1[1] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
@@ -149,8 +149,8 @@ M3[30] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
 
 
 * expanding   symbol:  Folded/FC_nfets_x2.sym # of pins=7
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FC_nfets_x2.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FC_nfets_x2.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_nfets_x2.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_nfets_x2.sch
 .subckt FC_nfets_x2 S1 S2 D1 D2 G1 G2 B
 *.PININFO S1:B S2:B D1:B D2:B G1:B G2:B B:B
 x1[1] S1 S2 D1 D2 G1 G2 B FC_nfets
@@ -159,8 +159,8 @@ x1[2] S1 S2 D1 D2 G1 G2 B FC_nfets
 
 
 * expanding   symbol:  Folded/FC_pfets_x4.sym # of pins=7
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FC_pfets_x4.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FC_pfets_x4.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_pfets_x4.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_pfets_x4.sch
 .subckt FC_pfets_x4 S1 S2 D1 D2 G1 G2 B
 *.PININFO S1:B S2:B D1:B D2:B G1:B G2:B B:B
 x1[1] S1 S2 D1 D2 G1 G2 B FC_pfets
@@ -171,8 +171,8 @@ x1[4] S1 S2 D1 D2 G1 G2 B FC_pfets
 
 
 * expanding   symbol:  Folded/FC_bias_net.sym # of pins=7
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_net.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_net.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_net.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_net.sch
 .subckt FC_bias_net IREF VB1 VB2 VB3 VB4 VDD VSS
 *.PININFO VDD:B VSS:B VB2:B IREF:B VB3:B VB4:B VB1:B
 x8 VB3 VSS FC_bias_vb3
@@ -183,8 +183,8 @@ x1 VB1 VB2 VB3 IREF VDD FC_bias_pfets
 
 
 * expanding   symbol:  CurrentMirrors/CM_n_net.sym # of pins=14
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_n_net.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_n_net.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_n_net.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_n_net.sch
 .subckt CM_n_net IN OUT1 OUT2 OUT3 OUT4 OUT5 OUT6 OUT7 OUT8 OUT9 OUT10 OUT11 OUT12 VSS
 *.PININFO IN:B OUT1:B OUT2:B VSS:B OUT3:B OUT4:B OUT5:B OUT6:B OUT7:B OUT8:B OUT9:B OUT10:B OUT11:B OUT12:B
 x1 IN OUT1 OUT2 VSS CM_nfets
@@ -197,8 +197,8 @@ x7 IN OUT11 OUT12 VSS CM_nfets
 
 
 * expanding   symbol:  CurrentMirrors/CM_p_net.sym # of pins=14
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_p_net.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_p_net.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_p_net.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_p_net.sch
 .subckt CM_p_net IN OUT1 OUT2 OUT3 OUT4 OUT5 OUT6 OUT7 OUT8 OUT9 OUT10 OUT11 OUT12 VDD
 *.PININFO IN:B OUT1:B OUT2:B VDD:B OUT3:B OUT4:B OUT5:B OUT6:B OUT7:B OUT8:B OUT9:B OUT10:B OUT11:B OUT12:B
 x1 IN OUT1 OUT2 VDD CM_pfets
@@ -211,8 +211,8 @@ x6 IN OUT11 OUT12 VDD CM_pfets
 
 
 * expanding   symbol:  PseudoResistor/PRbiased_net_x5.sym # of pins=24
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PRbiased_net_x5.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PRbiased_net_x5.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/PRbiased_net_x5.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/PRbiased_net_x5.sch
 .subckt PRbiased_net_x5 VA VB IBN3 IBN2 IBN1 IBN5 IBN4 IBP3 IBP2 IBP4 IBP1 IBP5 ITN3 ITN1 ITN5 ITN2 ITN4 ITP5 ITP2 ITP1 ITP4 ITP3
 + VDD VSS
 *.PININFO VA:B VB:B IBN1:B IBP1:B ITN1:B ITP1:B VDD:B VSS:B IBN2:B IBP2:B ITN2:B ITP2:B IBN3:B IBP3:B ITN3:B ITP3:B IBN4:B IBP4:B
@@ -226,8 +226,8 @@ x5 net4 VB IBN5 IBP5 ITN5 ITP5 VDD VSS PRbiased_net
 
 
 * expanding   symbol:  CurrentMirrors/CM_input.sym # of pins=7
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_input.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_input.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_input.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_input.sch
 .subckt CM_input IP IP2 IN IN2 ISBCS VDD VSS
 *.PININFO IP:B IP2:B IN:B IN2:B ISBCS:B VDD:B VSS:B
 M1[1] ISBCS ISBCS net1[1] VSS nfet_03v3 L=6u W=2u nf=1 m=1
@@ -300,8 +300,8 @@ M15[18] VDD VDD VDD VDD pfet_03v3 L=6u W=2u nf=1 m=1
 
 
 * expanding   symbol:  Folded/FC_pfets.sym # of pins=7
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FC_pfets.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FC_pfets.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_pfets.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_pfets.sch
 .subckt FC_pfets S1 S2 D1 D2 G1 G2 B
 *.PININFO S1:B S2:B D1:B D2:B G1:B G2:B B:B
 M1[1] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
@@ -386,8 +386,8 @@ M3[34] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
 
 
 * expanding   symbol:  Folded/FC_bias_vb3.sym # of pins=2
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_vb3.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_vb3.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_vb3.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_vb3.sch
 .subckt FC_bias_vb3 VB3 VSS
 *.PININFO VSS:B VB3:B
 M1 VB3 VB3 net1 VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
@@ -414,8 +414,8 @@ M3[14] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
 
 
 * expanding   symbol:  Folded/FC_bias_vb4.sym # of pins=2
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_vb4.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_vb4.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_vb4.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_vb4.sch
 .subckt FC_bias_vb4 VB4 VDD
 *.PININFO VDD:B VB4:B
 M3 net1 VB4 VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
@@ -458,8 +458,8 @@ M1[23] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
 
 
 * expanding   symbol:  Folded/FC_bias_nfets.sym # of pins=3
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_nfets.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_nfets.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_nfets.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_nfets.sch
 .subckt FC_bias_nfets VB2 VB4 VSS
 *.PININFO VB4:B VB2:B VSS:B
 M17[1] VB2 VB2 VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
@@ -490,8 +490,8 @@ M1[16] VSS VSS VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
 
 
 * expanding   symbol:  Folded/FC_bias_pfets.sym # of pins=5
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_pfets.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_pfets.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_pfets.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_pfets.sch
 .subckt FC_bias_pfets VB1 VB2 VB3 IREF VDD
 *.PININFO IREF:B VDD:B VB1:B VB2:B VB3:B
 M13[1] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
@@ -602,8 +602,8 @@ M1[38] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
 
 
 * expanding   symbol:  CurrentMirrors/CM_nfets.sym # of pins=4
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_nfets.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_nfets.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_nfets.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_nfets.sch
 .subckt CM_nfets IN OUT1 OUT2 VSS
 *.PININFO IN:B OUT1:B OUT2:B VSS:B
 M2[1] IN IN VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
@@ -698,8 +698,8 @@ M1[34] VSS VSS VSS VSS nfet_03v3 L=2u W=2u nf=1 m=1
 
 
 * expanding   symbol:  CurrentMirrors/CM_pfets.sym # of pins=4
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_pfets.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_pfets.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_pfets.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_pfets.sch
 .subckt CM_pfets IN OUT1 OUT2 VDD
 *.PININFO IN:B OUT1:B OUT2:B VDD:B
 M1[1] IN IN VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
@@ -790,8 +790,8 @@ M2[34] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
 
 
 * expanding   symbol:  PseudoResistor/PRbiased_net.sym # of pins=8
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PRbiased_net.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PRbiased_net.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/PRbiased_net.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/PRbiased_net.sch
 .subckt PRbiased_net VA VB IBN IBP ITN ITP VDD VSS
 *.PININFO VA:B VB:B IBN:B IBP:B ITN:B ITP:B VDD:B VSS:B
 x1 VA VB net1 net2 IBN IBP vc VDD VSS PR_net
@@ -801,8 +801,8 @@ x3 IBP vc net2 ITP VDD VSS DiffP_net
 
 
 * expanding   symbol:  PseudoResistor/PR_net.sym # of pins=9
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PR_net.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PR_net.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/PR_net.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/PR_net.sch
 .subckt PR_net VA VB VG_N VG_P IB_N IB_P VC VDD VSS
 *.PININFO VA:B VB:B VG_N:B VG_P:B IB_N:B IB_P:B VC:B VDD:B VSS:B
 x1 VDD net1 IB_N net2 VG_N VC VSS PR_nfets
@@ -811,8 +811,8 @@ x2 IB_P VSS VA VB VG_P net1 net2 VDD PR_pfets
 
 
 * expanding   symbol:  PseudoResistor/DiffN_net.sym # of pins=6
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffN_net.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffN_net.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffN_net.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffN_net.sch
 .subckt DiffN_net VN VP OUT IT VDD VSS
 *.PININFO VN:B VP:B OUT:B IT:B VDD:B VSS:B
 x1 net1 OUT VP VN IT VSS DiffN_nfets
@@ -821,8 +821,8 @@ x2 net1 OUT net1 VDD VDD DiffN_pfets
 
 
 * expanding   symbol:  PseudoResistor/DiffP_net.sym # of pins=6
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffP_net.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffP_net.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffP_net.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffP_net.sch
 .subckt DiffP_net VN VP OUT IT VDD VSS
 *.PININFO VN:B VP:B OUT:B IT:B VDD:B VSS:B
 x1 net1 OUT net1 VSS VSS DiffP_nfets
@@ -831,8 +831,8 @@ x2 net1 OUT VP VN IT VDD DiffP_pfets
 
 
 * expanding   symbol:  PseudoResistor/PR_nfets.sym # of pins=7
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PR_nfets.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PR_nfets.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/PR_nfets.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/PR_nfets.sch
 .subckt PR_nfets VD1 VD2 VS1 VS2 VG VC VB
 *.PININFO VD1:B VD2:B VS1:B VS2:B VG:B VC:B VB:B
 M5[1] VB VB VB VB nfet_03v3 L=2u W=2u nf=1 m=1
@@ -887,8 +887,8 @@ M17 net8 VG VS1 VB nfet_03v3 L=2u W=2u nf=1 m=1
 
 
 * expanding   symbol:  PseudoResistor/PR_pfets.sym # of pins=8
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PR_pfets.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/PR_pfets.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/PR_pfets.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/PR_pfets.sch
 .subckt PR_pfets VD1 VS1 VS2_A VS2_B VG VC_A VC_B VB
 *.PININFO VD1:B VS1:B VS2_A:B VS2_B:B VG:B VC_A:B VC_B:B VB:B
 M1 net3 VG VS1 VB pfet_03v3 L=2u W=2u nf=1 m=1
@@ -943,8 +943,8 @@ M3[32] VB VB VB VB pfet_03v3 L=2u W=2u nf=1 m=1
 
 
 * expanding   symbol:  PseudoResistor/DiffN_nfets.sym # of pins=6
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffN_nfets.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffN_nfets.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffN_nfets.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffN_nfets.sch
 .subckt DiffN_nfets D1 D2 G1 G2 S B
 *.PININFO D1:B D2:B G1:B G2:B S:B B:B
 M1 D1 G1 net1 B nfet_03v3 L=2u W=2u nf=1 m=1
@@ -999,8 +999,8 @@ M17[32] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
 
 
 * expanding   symbol:  PseudoResistor/DiffN_pfets.sym # of pins=5
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffN_pfets.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffN_pfets.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffN_pfets.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffN_pfets.sch
 .subckt DiffN_pfets D1 D2 G S B
 *.PININFO D1:B D2:B G:B S:B B:B
 M1 net4 G S B pfet_03v3 L=2u W=2u nf=1 m=1
@@ -1055,8 +1055,8 @@ M17[32] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
 
 
 * expanding   symbol:  PseudoResistor/DiffP_nfets.sym # of pins=5
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffP_nfets.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffP_nfets.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffP_nfets.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffP_nfets.sch
 .subckt DiffP_nfets D1 D2 G S B
 *.PININFO D1:B D2:B G:B S:B B:B
 M1 D1 G net4 B nfet_03v3 L=2u W=2u nf=1 m=1
@@ -1111,8 +1111,8 @@ M3[32] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
 
 
 * expanding   symbol:  PseudoResistor/DiffP_pfets.sym # of pins=6
-** sym_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffP_pfets.sym
-** sch_path: /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffP_pfets.sch
+** sym_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffP_pfets.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/DiffP_pfets.sch
 .subckt DiffP_pfets D1 D2 G1 G2 S B
 *.PININFO D1:B D2:B G1:B G2:B S:B B:B
 M1 net4 G1 S B pfet_03v3 L=2u W=2u nf=1 m=1

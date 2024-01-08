@@ -132,6 +132,6 @@ C {devices/lab_wire.sym} 650 -360 0 1 {name=p20 sig_type=std_logic lab=OUT}
 C {devices/lab_wire.sym} 230 100 0 1 {name=p21 sig_type=std_logic lab=VCM}
 C {devices/lab_wire.sym} -260 -400 2 1 {name=p22 sig_type=std_logic lab=IN_POS}
 C {devices/lab_wire.sym} -270 -280 2 1 {name=p23 sig_type=std_logic lab=IN_NEG}
-C {/home/lci-ufsc/Desktop/Bracolin/TIA_Filter/Folded/FoldedCascode.sym} 440 -360 0 0 {name=x2}
-C {/home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/CM_iref.sym} 470 -170 0 1 {name=x3}
-C {/home/lci-ufsc/Desktop/Bracolin/TIA_Filter/PR_CM_net.sym} 390 10 0 0 {name=x1}
+C {Folded/FoldedCascode.sym} 440 -360 0 0 {name=x2}
+C {CurrentMirrors/CM_iref.sym} 470 -170 0 1 {name=x3}
+C {PR_CM_net.sym} 390 10 0 0 {name=x1}
