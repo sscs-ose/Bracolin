@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-40
-x2=125
+x1=-10
+x2=80
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -29,15 +29,15 @@ linewidth_mult=4.0
 color=4
 node=vref}
 B 2 1040 940 1840 1340 {flags=graph
-y1=7.2e-10
-y2=1.5e-09
+y1=8.6e-10
+y2=1.2e-09
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-40
-x2=125
+x1=-10
+x2=80
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -60,8 +60,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-40
-x2=125
+x1=-10
+x2=80
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -87,8 +87,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-40
-x2=125
+x1=-10
+x2=80
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -115,8 +115,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-40
-x2=125
+x1=-10
+x2=80
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -142,8 +142,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-40
-x2=125
+x1=-10
+x2=80
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -169,8 +169,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-40
-x2=125
+x1=-10
+x2=80
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -220,6 +220,7 @@ value="
 .option gmin = 1e-15
 *.option reltol = 1e2
 *.option abstol = 1e-13
+.option klu
 
 .control
 save all
@@ -237,7 +238,7 @@ remzerovec
 let vds1 = v(x1.vx2) -v(x1.vx3)   
 
 
-dc TEMP -10 80 2
+dc TEMP -10 80 5
 save vds1
 write tb_voltage_reference_2.raw
 

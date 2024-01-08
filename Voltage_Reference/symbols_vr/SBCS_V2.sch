@@ -653,6 +653,46 @@ N -60 3360 -60 3450 {
 lab=VG_SCM_M_I}
 N 110 3360 110 3450 {
 lab=gnd}
+N 810 -90 850 -90 {
+lab=VG_M6}
+N 890 -60 890 -30 {
+lab=VG_M6}
+N 890 -150 890 -120 {
+lab=#net4}
+N 890 -90 960 -90 {
+lab=#net3}
+N 1120 -90 1160 -90 {
+lab=VG_M6}
+N 1200 -90 1270 -90 {
+lab=#net7}
+N 1200 -150 1200 -120 {
+lab=vdd}
+N 1200 -60 1200 -30 {
+lab=#net6}
+N 2560 -90 2600 -90 {
+lab=VG_M6}
+N 2640 -150 2640 -120 {
+lab=vdd}
+N 2640 -90 2710 -90 {
+lab=#net11}
+N 2640 -60 2640 -30 {
+lab=#net10}
+N 1960 -90 2000 -90 {
+lab=VG_M6}
+N 2040 -150 2040 -120 {
+lab=vdd}
+N 2040 -60 2040 -30 {
+lab=#net8}
+N 2040 -90 2110 -90 {
+lab=#net9}
+N -30 -90 10 -90 {
+lab=VG_M6}
+N 50 -150 50 -120 {
+lab=#net14}
+N 50 -90 120 -90 {
+lab=#net13}
+N 50 -60 50 -30 {
+lab=#net5}
 C {devices/lab_wire.sym} 2110 320 0 0 {name=p8 sig_type=std_logic lab=gnd}
 C {devices/lab_wire.sym} 2110 730 0 0 {name=p24 sig_type=std_logic lab=gnd}
 C {devices/lab_wire.sym} 960 360 0 0 {name=p26 sig_type=std_logic lab=gnd}
@@ -691,11 +731,6 @@ C {devices/ammeter.sym} 2110 -270 0 0 {name=Vmeas9}
 C {devices/lab_wire.sym} 2560 20 0 0 {name=p2 sig_type=std_logic lab=VG_M6}
 C {devices/ammeter.sym} 2640 90 0 0 {name=Vmeas12}
 C {devices/ammeter.sym} 2710 -270 0 0 {name=Vmeas13}
-C {symbols_vr/PMOS_association_1.sym} 890 -90 0 0 {name=x6[1:2]}
-C {symbols_vr/PMOS_association_2.sym} 1200 -90 0 0 {name=x4[1:8]}
-C {symbols_vr/PMOS_association_2.sym} 2040 -90 0 0 {name=x1[1:8]}
-C {symbols_vr/PMOS_association_2.sym} 2640 -90 0 0 {name=x2[1:8]}
-C {symbols_vr/PMOS_association_2.sym} 50 -90 0 0 {name=x3[1:20]}
 C {symbols_vr/NMOS_association_MI_1.sym} 50 410 0 0 {name=x6}
 C {symbols_vr/NMOS_association_MI_1.sym} 50 690 0 0 {name=x1}
 C {symbols_vr/NMOS_association_MI_1.sym} 50 850 0 0 {name=x2}
@@ -1459,3 +1494,8 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
+C {symbols_vr/PMOS_association_current_mirror.sym} 870 -90 0 0 {name=x7[1:2]}
+C {symbols_vr/PMOS_association_current_mirror_2.sym} 1180 -90 0 0 {name=x6[1:8]}
+C {symbols_vr/PMOS_association_current_mirror_2.sym} 2020 -90 0 0 {name=x1[1:8]}
+C {symbols_vr/PMOS_association_current_mirror_2.sym} 2620 -90 0 0 {name=x2[1:8]}
+C {symbols_vr/PMOS_association_current_mirror_2.sym} 30 -90 0 0 {name=x4[1:20]}

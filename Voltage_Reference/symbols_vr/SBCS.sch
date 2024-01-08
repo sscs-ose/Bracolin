@@ -625,14 +625,14 @@ N 1970 320 1970 510 {
 lab=VX}
 N 2440 -370 3140 -370 {}
 N 3140 -370 3210 -370 {}
-C {symbols_vr/10_NMOS_series.sym} -490 160 0 0 {name=x1}
-C {symbols_vr/10_NMOS_series.sym} -490 300 0 0 {name=x2}
-C {symbols_vr/10_NMOS_series.sym} -490 440 0 0 {name=x3}
+C {10_NMOS_series.sym} -490 160 0 0 {name=x1}
+C {10_NMOS_series.sym} -490 300 0 0 {name=x2}
+C {10_NMOS_series.sym} -490 440 0 0 {name=x3}
 C {devices/lab_wire.sym} -470 370 2 0 {name=p3 sig_type=std_logic lab=gnd}
-C {symbols_vr/10_NMOS_series.sym} -460 2840 0 0 {name=x9}
-C {symbols_vr/10_NMOS_series.sym} -460 2980 0 0 {name=x10}
-C {symbols_vr/10_NMOS_series.sym} -460 3120 0 0 {name=x11}
-C {symbols_vr/10_NMOS_series.sym} -460 3270 0 0 {name=x12}
+C {10_NMOS_series.sym} -460 2840 0 0 {name=x9}
+C {10_NMOS_series.sym} -460 2980 0 0 {name=x10}
+C {10_NMOS_series.sym} -460 3120 0 0 {name=x11}
+C {10_NMOS_series.sym} -460 3270 0 0 {name=x12}
 C {devices/lab_wire.sym} -440 3050 2 0 {name=p7 sig_type=std_logic lab=gnd}
 C {devices/lab_wire.sym} 2440 130 0 0 {name=p8 sig_type=std_logic lab=gnd}
 C {devices/lab_wire.sym} 2440 480 0 0 {name=p24 sig_type=std_logic lab=gnd}
@@ -660,18 +660,18 @@ C {devices/lab_wire.sym} 1450 -200 0 0 {name=p51 sig_type=std_logic lab=VG_M6}
 C {devices/lab_wire.sym} 2370 220 0 0 {name=p52 sig_type=std_logic lab=VX}
 C {devices/lab_wire.sym} 2290 -200 0 0 {name=p54 sig_type=std_logic lab=VG_M6}
 C {devices/lab_wire.sym} 3060 -200 0 0 {name=p53 sig_type=std_logic lab=VG_M6}
-C {symbols_vr/NMOS_association_10u_6u_V2.sym} -90 260 0 0 {name=x25}
-C {symbols_vr/NMOS_association_10u_6u_V2.sym} 90 260 0 0 {name=x26}
-C {symbols_vr/NMOS_association_10u_6u_V2.sym} 270 260 0 0 {name=x27}
-C {symbols_vr/NMOS_association_10u_6u_V2.sym} 450 260 0 0 {name=x28}
-C {symbols_vr/NMOS_association_10u_6u_V2.sym} 630 260 0 0 {name=x29}
-C {symbols_vr/NMOS_association_10u_6u_V2.sym} 810 260 0 0 {name=x24[1:20]}
-C {symbols_vr/NMOS_association_10u_6u_V2.sym} 1150 260 0 0 {name=x40[1:20]}
-C {symbols_vr/NMOS_association_10u_6u_V2.sym} 1330 260 0 0 {name=x32}
-C {symbols_vr/NMOS_association_10u_6u_V2.sym} 1510 260 0 0 {name=x33}
-C {symbols_vr/NMOS_association_10u_6u_V2.sym} 1690 260 0 0 {name=x34}
-C {symbols_vr/NMOS_association_10u_6u_V2.sym} 1870 260 0 0 {name=x35}
-C {symbols_vr/NMOS_association_10u_6u_V2.sym} 2050 260 0 0 {name=x36}
+C {NMOS_association_10u_6u_V2.sym} -90 260 0 0 {name=x25}
+C {NMOS_association_10u_6u_V2.sym} 90 260 0 0 {name=x26}
+C {NMOS_association_10u_6u_V2.sym} 270 260 0 0 {name=x27}
+C {NMOS_association_10u_6u_V2.sym} 450 260 0 0 {name=x28}
+C {NMOS_association_10u_6u_V2.sym} 630 260 0 0 {name=x29}
+C {NMOS_association_10u_6u_V2.sym} 810 260 0 0 {name=x24[1:20]}
+C {NMOS_association_10u_6u_V2.sym} 1150 260 0 0 {name=x40[1:20]}
+C {NMOS_association_10u_6u_V2.sym} 1330 260 0 0 {name=x32}
+C {NMOS_association_10u_6u_V2.sym} 1510 260 0 0 {name=x33}
+C {NMOS_association_10u_6u_V2.sym} 1690 260 0 0 {name=x34}
+C {NMOS_association_10u_6u_V2.sym} 1870 260 0 0 {name=x35}
+C {NMOS_association_10u_6u_V2.sym} 2050 260 0 0 {name=x36}
 C {devices/lab_wire.sym} 650 -370 0 0 {name=p57 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} -560 60 0 1 {name=p58 sig_type=std_logic lab=VG_SCM_M_I}
 C {devices/ammeter.sym} 2370 -100 0 0 {name=Vmeas1}
@@ -700,19 +700,19 @@ value="
 
 }
 C {devices/lab_wire.sym} 2490 1020 0 0 {name=p77 sig_type=std_logic lab=gnd}
-C {symbols_vr/10_NMOS_series.sym} -460 3410 0 0 {name=x51}
-C {symbols_vr/10_NMOS_series.sym} -460 3560 0 0 {name=x52}
+C {10_NMOS_series.sym} -460 3410 0 0 {name=x51}
+C {10_NMOS_series.sym} -460 3560 0 0 {name=x52}
 C {devices/lab_wire.sym} -440 3340 2 0 {name=p76 sig_type=std_logic lab=gnd}
 C {devices/lab_wire.sym} -640 -200 0 0 {name=p40 sig_type=std_logic lab=VG_M6}
-C {symbols_vr/NMOS_association_13u_2u.sym} 2370 140 0 0 {name=x5[1:6]}
-C {symbols_vr/NMOS_association_18u_5u.sym} 2500 560 0 0 {name=x7}
+C {NMOS_association_13u_2u.sym} 2370 140 0 0 {name=x5[1:6]}
+C {NMOS_association_18u_5u.sym} 2500 560 0 0 {name=x7}
 C {devices/ammeter.sym} -490 -320 0 0 {name=Vmeas11}
-C {symbols_vr/PMOS_association_4u_10u.sym} -260 -130 0 0 {name=x1[1:10]}
-C {symbols_vr/PMOS_association_4u_10u.sym} 580 -90 0 0 {name=x5}
-C {symbols_vr/PMOS_association_4u_10u.sym} 1830 -130 0 0 {name=x6}
-C {symbols_vr/PMOS_association_4u_10u.sym} 2670 -130 0 0 {name=x8}
-C {symbols_vr/PMOS_association_4u_10u.sym} 3440 -130 0 0 {name=x13}
-C {symbols_vr/10_NMOS_series.sym} -490 590 0 0 {name=x16}
+C {PMOS_association_4u_10u.sym} -260 -130 0 0 {name=x1[1:10]}
+C {PMOS_association_4u_10u.sym} 580 -90 0 0 {name=x5}
+C {PMOS_association_4u_10u.sym} 1830 -130 0 0 {name=x6}
+C {PMOS_association_4u_10u.sym} 2670 -130 0 0 {name=x8}
+C {PMOS_association_4u_10u.sym} 3440 -130 0 0 {name=x13}
+C {10_NMOS_series.sym} -490 590 0 0 {name=x16}
 C {symbols/nfet_03v3.sym} -580 1830 0 0 {name=MN17
 L=2u
 W=2u
@@ -998,8 +998,8 @@ spiceprefix=X
 C {devices/lab_wire.sym} -290 2540 2 0 {name=p15 sig_type=std_logic lab=gnd}
 C {devices/lab_wire.sym} -400 2530 2 0 {name=p16 sig_type=std_logic lab=VG_SCM_M_I}
 C {devices/lab_wire.sym} -470 2040 2 0 {name=p17 sig_type=std_logic lab=gnd}
-C {symbols_vr/10_NMOS_series.sym} -460 3700 0 0 {name=x4}
-C {symbols_vr/10_NMOS_series.sym} -490 750 0 0 {name=x15}
-C {symbols_vr/10_NMOS_series.sym} -490 900 0 0 {name=x17}
-C {symbols_vr/10_NMOS_series.sym} -490 1060 0 0 {name=x19}
-C {symbols_vr/10_NMOS_series.sym} -490 1220 0 0 {name=x20}
+C {10_NMOS_series.sym} -460 3700 0 0 {name=x4}
+C {10_NMOS_series.sym} -490 750 0 0 {name=x15}
+C {10_NMOS_series.sym} -490 900 0 0 {name=x17}
+C {10_NMOS_series.sym} -490 1060 0 0 {name=x19}
+C {10_NMOS_series.sym} -490 1220 0 0 {name=x20}

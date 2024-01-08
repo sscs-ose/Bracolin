@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 660 170 1460 570 {flags=graph
-y1=4.8e-13
-y2=9.7e-10
+y1=-4.3e-10
+y2=1.7e-09
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=2.15782
-x2=72.1578
+x1=0
+x2=3.3
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -80,8 +80,8 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 C {devices/code_shown.sym} -170 -120 0 0 {name=SPICE1 only_toplevel=false
 value="
 .option gmin = 1e-15
-*.option reltol = 1e2
-*.option abstol = 1e-13
+.option reltol = 1e2
+.option abstol = 1e-13
 
 .control
 save all
@@ -90,19 +90,18 @@ save all
 *write tb_SBCS_V2.raw
 *set appendwrite
 
-remzerovec
-set temp = 27
-op
-write tb_SBCS_V2.raw
-set appendwrite
+*remzerovec
+*set temp = 27
+*op
+*write tb_SBCS_V2.raw
 
 *remzerovec
 *dc TEMP 0 70 5
 *write tb_SBCS_V2.raw
 
-*remzerovec
-*dc V1 0 3.3 0.03
-*write tb_SBCS_V2.raw
+remzerovec
+dc V1 0 3.3 0.03
+write tb_SBCS_V2.raw
 
 
 
