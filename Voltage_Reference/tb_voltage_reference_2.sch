@@ -224,22 +224,16 @@ value="
 
 .control
 save all
-*remzerovec
-*tran 1n 1.2n
-*write tb_voltage_reference_2.raw
-*set appendwrite
-
-*remzerovec
-*set temp = 27
-*op
-*write tb_voltage_reference_2.raw
 
 remzerovec
-let vds1 = v(x1.vx2) -v(x1.vx3)   
+set temp = 27
+op
+write tb_voltage_reference_2.raw
+set appendwrite
 
-
+  
+remzerovec
 dc TEMP -10 80 5
-save vds1
 write tb_voltage_reference_2.raw
 
 .endc
