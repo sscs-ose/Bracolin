@@ -82,7 +82,6 @@ value="
 .option gmin = 1e-15
 *.option reltol = 1e2
 *.option abstol = 1e-13
-.option klu
 
 .control
 save all
