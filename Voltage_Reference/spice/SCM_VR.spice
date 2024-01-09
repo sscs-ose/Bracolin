@@ -1,0 +1,29 @@
+** sch_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/symbols_vr/SCM_VR.sch
+.subckt SCM_VR VD VX1 VX2 B
+*.PININFO VD:B VX1:B VX2:B B:B
+MN1[1] VD VD VX2 B nfet_03v3 L=2u W=2u nf=1 m=1
+MN1[2] VD VD VX2 B nfet_03v3 L=2u W=2u nf=1 m=1
+MN1[3] VD VD VX2 B nfet_03v3 L=2u W=2u nf=1 m=1
+MN1[4] VD VD VX2 B nfet_03v3 L=2u W=2u nf=1 m=1
+MN1[5] VD VD VX2 B nfet_03v3 L=2u W=2u nf=1 m=1
+MN2 VX2 VD VX1 B nfet_03v3 L=2u W=2u nf=1 m=1
+MN2[1] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN2[2] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN2[3] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN2[4] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN2[5] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN2[6] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN2[7] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN2[8] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN2[9] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN2[10] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN2[11] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN2[12] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN2[13] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN2[14] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN2[15] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN2[16] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN2[17] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN2[18] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+.ends
+.end

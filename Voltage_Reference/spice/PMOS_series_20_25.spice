@@ -1,0 +1,80 @@
+** sch_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/symbols_vr/PMOS_series_20_25.sch
+.subckt PMOS_series_20_25 S D G
+*.PININFO S:B D:B G:B
+x1[1] S D S G PMOS_series_20
+x1[2] S D S G PMOS_series_20
+x1[3] S D S G PMOS_series_20
+x1[4] S D S G PMOS_series_20
+x1[5] S D S G PMOS_series_20
+x1[6] S D S G PMOS_series_20
+x1[7] S D S G PMOS_series_20
+x1[8] S D S G PMOS_series_20
+x1[9] S D S G PMOS_series_20
+x1[10] S D S G PMOS_series_20
+x1[11] S D S G PMOS_series_20
+x1[12] S D S G PMOS_series_20
+x1[13] S D S G PMOS_series_20
+x1[14] S D S G PMOS_series_20
+x1[15] S D S G PMOS_series_20
+x1[16] S D S G PMOS_series_20
+x1[17] S D S G PMOS_series_20
+x1[18] S D S G PMOS_series_20
+x1[19] S D S G PMOS_series_20
+x1[20] S D S G PMOS_series_20
+x1[21] S D S G PMOS_series_20
+x1[22] S D S G PMOS_series_20
+x1[23] S D S G PMOS_series_20
+x1[24] S D S G PMOS_series_20
+x1[25] S D S G PMOS_series_20
+.ends
+
+* expanding   symbol:  symbols_vr/PMOS_series_20.sym # of pins=4
+** sym_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/symbols_vr/PMOS_series_20.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/symbols_vr/PMOS_series_20.sch
+.subckt PMOS_series_20 S D B G
+*.PININFO S:B D:B B:B G:B
+MP1 net1 G S B pfet_03v3 L=2u W=2u nf=1 m=1
+MP2 net3 G net1 B pfet_03v3 L=2u W=2u nf=1 m=1
+MP3 net2 G net3 B pfet_03v3 L=2u W=2u nf=1 m=1
+MP4 net5 G net2 B pfet_03v3 L=2u W=2u nf=1 m=1
+MP5 net4 G net5 B pfet_03v3 L=2u W=2u nf=1 m=1
+MP6 net7 G net4 B pfet_03v3 L=2u W=2u nf=1 m=1
+MP7 net6 G net7 B pfet_03v3 L=2u W=2u nf=1 m=1
+MP8 net9 G net6 B pfet_03v3 L=2u W=2u nf=1 m=1
+MP9 net8 G net9 B pfet_03v3 L=2u W=2u nf=1 m=1
+MP10 net19 G net8 B pfet_03v3 L=2u W=2u nf=1 m=1
+MP11 net10 G net19 B pfet_03v3 L=2u W=2u nf=1 m=1
+MP12 net12 G net10 B pfet_03v3 L=2u W=2u nf=1 m=1
+MP13 net11 G net12 B pfet_03v3 L=2u W=2u nf=1 m=1
+MP14 net14 G net11 B pfet_03v3 L=2u W=2u nf=1 m=1
+MP15 net13 G net14 B pfet_03v3 L=2u W=2u nf=1 m=1
+MP16 net16 G net13 B pfet_03v3 L=2u W=2u nf=1 m=1
+MP17 net15 G net16 B pfet_03v3 L=2u W=2u nf=1 m=1
+MP18 net18 G net15 B pfet_03v3 L=2u W=2u nf=1 m=1
+MP19 net17 G net18 B pfet_03v3 L=2u W=2u nf=1 m=1
+MP20 D G net17 B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[1] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[2] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[3] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[4] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[5] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[6] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[7] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[8] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[9] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[10] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[11] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[12] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[13] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[14] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[15] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[16] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[17] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[18] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[19] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[20] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[21] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+MP21[22] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+.ends
+
+.end

@@ -445,7 +445,7 @@ C {devices/lab_wire.sym} 130 -30 0 1 {name=p7 sig_type=std_logic lab=G}
 C {devices/lab_wire.sym} 320 580 0 1 {name=p8 sig_type=std_logic lab=D}
 C {devices/lab_wire.sym} 80 190 0 0 {name=p9 sig_type=std_logic lab=B}
 C {devices/lab_wire.sym} 240 190 0 0 {name=p10 sig_type=std_logic lab=B}
-C {symbols/pfet_03v3.sym} -110 240 3 1 {name=MP21[1:25]
+C {symbols/pfet_03v3.sym} -110 240 3 1 {name=MP21[1:22]
 L=2u
 W=2u
 nf=1
