@@ -1,0 +1,21 @@
+** sch_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/symbols_vr/CM_in.sch
+.subckt CM_in IIN IOUT B
+*.PININFO IIN:B IOUT:B B:B
+MN7 IOUT IIN net1 B nfet_03v3 L=2u W=2u nf=1 m=1
+MN8 net1 net2 B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN11 IIN IIN net2 B nfet_03v3 L=2u W=2u nf=1 m=1
+MN12 net2 net2 B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN1[1] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN1[2] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN1[3] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN1[4] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN1[5] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN1[6] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN1[7] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN1[8] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN1[9] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN1[10] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN1[11] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+MN1[12] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+.ends
+.end
