@@ -181,7 +181,6 @@ C {devices/launcher.sym} -150 320 0 0 {name=h2
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {/home/gmaranhao/Desktop/gf180_work/TIA/FoldedCascode.sym} 410 -20 2 1 {name=x1}
 C {devices/vsource.sym} -190 110 0 0 {name=VDD value=3.3}
 C {devices/isource.sym} 350 -150 2 0 {name=Iref value=1u}
 C {devices/gnd.sym} -190 160 0 0 {name=l1 lab=GND}
