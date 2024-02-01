@@ -273,6 +273,7 @@ remzerovec
 write TB_PR_single_dc.raw
 set appendwrite
 
+set temp 27
 dc VX1 -200m 200m 6m
 
 let idiff = i(vai)-i(vbi)
@@ -281,6 +282,7 @@ let Rdiff = 4/deriv(idiff)
 save idiff Rdiff
 remzerovec
 write TB_PR_single_dc.raw
+*wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/plots/data_DC/PR_single_DC.txt idiff Rdiff
 
 .endc
 "

@@ -39,7 +39,7 @@ hilight_wave=-1
 
 divx=10
 y1=-30
-y2=45
+y2=43
 
 
 rainbow=1
@@ -197,6 +197,22 @@ N -390 80 -390 100 {
 lab=VDD}
 N -420 80 -390 80 {
 lab=VDD}
+N -330 -240 -330 -170 {
+lab=Vin_neg}
+N -270 -240 -270 -170 {
+lab=#net1}
+N -270 -360 -270 -290 {
+lab=#net2}
+N -330 -360 -330 -290 {
+lab=Vin_pos}
+N 340 -100 390 -100 {
+lab=#net1}
+N 340 -40 390 -40 {
+lab=Vout}
+N -220 -100 -150 -100 {
+lab=#net2}
+N -220 -40 -150 -40 {
+lab=VCM}
 C {devices/code_shown.sym} -1220 -390 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -229,7 +245,7 @@ value="
 *.nodeset V(Vin_neg)=1.65
 
 .param iref = 1u
-.param ipr = 1n
+.param ipr = 0.96n
 
 .control
 save all
@@ -261,31 +277,35 @@ C {devices/vsource.sym} -480 -210 0 1 {name=V2 value="1.65 DC 1 AC"
 }
 C {devices/gnd.sym} -480 -80 0 0 {name=l13 lab=GND}
 C {PR_CM_net.sym} 250 50 0 0 {name=x1}
-C {symbols/cap_mim_analog.sym} 340 -70 0 0 {name=C1
+C {symbols/cap_mim_analog.sym} 340 -70 0 1 {name=C1
 W=9.8e-6
 L=9.8e-6
 model=cap_mim_2f0_m4m5_noshield
 spiceprefix=X
-m=1}
+m=1
+spice_ignore=true}
 C {Folded/FoldedCascode.sym} 300 -320 0 0 {name=x2}
-C {symbols/cap_mim_analog.sym} -150 -70 0 1 {name=C3
+C {symbols/cap_mim_analog.sym} -150 -70 0 0 {name=C3
 W=9.8e-6
 L=9.8e-6
 model=cap_mim_2f0_m4m5_noshield
 spiceprefix=X
-m=1}
+m=1
+spice_ignore=true}
 C {symbols/cap_mim_analog.sym} -300 -360 3 0 {name=C4
 W=100e-6
 L=100e-6
 model=cap_mim_2f0_m4m5_noshield
 spiceprefix=X
-m=1}
+m=1
+spice_ignore=true}
 C {symbols/cap_mim_analog.sym} -300 -240 3 1 {name=C5
 W=100e-6
 L=100e-6
 model=cap_mim_2f0_m4m5_noshield
 spiceprefix=X
-m=1}
+m=1
+spice_ignore=true}
 C {CurrentMirrors/CM_iref.sym} 330 -130 0 1 {name=x3}
 C {devices/lab_wire.sym} 300 -380 0 0 {name=p11 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 270 -40 0 1 {name=p13 sig_type=std_logic lab=VDD}
@@ -310,3 +330,23 @@ C {devices/gnd.sym} -30 270 0 1 {name=l7 lab=GND}
 C {devices/vsource.sym} -390 130 0 0 {name=VDD value=3.3}
 C {devices/gnd.sym} -390 180 0 0 {name=l1 lab=GND}
 C {devices/lab_wire.sym} -390 80 0 0 {name=p1 sig_type=std_logic lab=VDD}
+C {devices/capa.sym} -300 -290 3 0 {name=C6
+m=1
+value=200p
+footprint=1206
+device="ceramic capacitor"}
+C {devices/capa.sym} -300 -170 3 0 {name=C7
+m=1
+value=200p
+footprint=1206
+device="ceramic capacitor"}
+C {devices/capa.sym} 390 -70 0 0 {name=C8
+m=1
+value=2000f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/capa.sym} -220 -70 0 1 {name=C9
+m=1
+value=2000f
+footprint=1206
+device="ceramic capacitor"}

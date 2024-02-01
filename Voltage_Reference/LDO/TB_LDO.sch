@@ -49,7 +49,7 @@ subdivx=4
 subdivy=1
 
 
-x1=-15
+x1=-10
 x2=80
 
 color=4
@@ -134,13 +134,11 @@ N 690 40 690 50 {
 lab=Vout}
 N 690 180 690 220 {
 lab=vref_off}
-N 650 150 670 150 {
-lab=GND}
-N 690 110 690 120 {
-lab=#net5}
-N 650 80 670 80 {
-lab=GND}
-N 650 80 650 150 {
+N 690 50 690 90 {
+lab=Vout}
+N 690 140 690 180 {
+lab=vref_off}
+N 670 110 670 140 {
 lab=GND}
 C {devices/code_shown.sym} -810 -360 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
@@ -151,24 +149,6 @@ value="
 *.lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 *.param sw_stat_mismatch=1
 *.param sw_stat_global=1
-"}
-C {devices/code_shown.sym} -800 -150 0 0 {name=NGSPICE only_toplevel=true
-value="
-.option gmin=1e-18
-
-.control
-save all
-
-reset
-dc TEMP -15 100 1
-remzerovec 
-write TB_LDO.raw
-set appendwrite
-
-
-
-.endc
-.save all
 "}
 C {devices/launcher.sym} -145 265 0 0 {name=h1
 descr="Click left mouse button here with control key
@@ -188,7 +168,7 @@ C {devices/lab_wire.sym} -190 60 0 0 {name=p1 sig_type=std_logic lab=AVDD}
 C {devices/lab_wire.sym} 430 40 0 1 {name=p3 sig_type=std_logic lab=AVDD}
 C {devices/lab_wire.sym} 770 30 0 1 {name=p5 sig_type=std_logic lab=Vout}
 C {devices/ammeter.sym} 690 420 0 0 {name=Vmeas2}
-C {devices/vsource.sym} -80 -30 0 1 {name=V1 value=1.36
+C {devices/vsource.sym} -80 -30 0 1 {name=V1 value=1.3626
 }
 C {devices/gnd.sym} 430 -90 0 0 {name=l7 lab=GND}
 C {devices/gnd.sym} -80 20 0 0 {name=l2 lab=GND
@@ -217,29 +197,11 @@ C {devices/gnd.sym} 860 110 0 0 {name=l5 lab=GND}
 C {devices/ammeter.sym} 690 -160 0 0 {name=Vmeas3}
 C {devices/lab_wire.sym} 570 -20 0 1 {name=p6 sig_type=std_logic lab=vg}
 C {devices/lab_wire.sym} 420 220 0 1 {name=p7 sig_type=std_logic lab=vref_off}
-C {symbols/nwell.sym} 690 330 0 1 {name=R3
-W=1e-6
-L=55e-6
-model=nwell
-spiceprefix=X
-m=1}
 C {devices/gnd.sym} 750 330 0 0 {name=l6 lab=GND}
-C {symbols/nwell.sym} 690 150 0 0 {name=R4
-W=1e-6
-L=11e-6
-model=nwell
-spiceprefix=X
-m=1}
-C {devices/gnd.sym} 650 150 0 1 {name=l8 lab=GND}
-C {symbols/nplus_u.sym} 690 80 0 0 {name=R1
-W=0.99e-6
-L=11e-6
-model=nplus_u
-spiceprefix=X
-m=1}
-C {devices/code_shown.sym} -1380 -150 0 0 {name=NGSPICE1 only_toplevel=true
+C {devices/code_shown.sym} -1810 -190 0 0 {name=NGSPICE1 only_toplevel=true
 value="
-.option gmin=1e-15
+.option gmin=1e-16
+.option klu
 
 .control
 save all
@@ -262,3 +224,36 @@ end
 .save all
 "
 spice_ignore=true}
+C {LDO/Folded/FoldedCascode.sym} 410 -20 2 1 {name=x1}
+C {devices/code_shown.sym} -790 -150 0 0 {name=NGSPICE2 only_toplevel=true
+value="
+.option gmin=1e-18
+.option klu
+
+.control
+save all
+
+reset
+dc TEMP -10 80 5
+remzerovec 
+write TB_LDO.raw
+set appendwrite
+
+
+
+.endc
+.save all
+"}
+C {symbols/ppolyf_u_1k.sym} 690 330 0 1 {name=R1
+W=1e-6
+L=38.5e-6
+model=ppolyf_u_1k
+spiceprefix=X
+m=1}
+C {devices/gnd.sym} 670 140 0 1 {name=l8 lab=GND}
+C {symbols/ppolyf_u_1k.sym} 690 110 0 0 {name=R2
+W=1e-6
+L=8e-6
+model=ppolyf_u_1k
+spiceprefix=X
+m=1}

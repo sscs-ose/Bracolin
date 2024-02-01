@@ -59,8 +59,8 @@ x1=-1
 
 linewidth_mult=4.0
 
-y2=2.1e+13
-y1=2.4e+09}
+y2=2.2e+11
+y1=2.3e+10}
 T {AC simulation - Impedance of a single 
 Pseudo-Resistor ~185Gohm
 versus frequency} 1330 -490 0 0 0.4 0.4 { layer=3}
@@ -134,12 +134,14 @@ value="
   remzerovec 
   write TB_PR_single_ac.raw
   set appendwrite
-
+  
+  set temp = 27
   ac dec 100 1m 1e7
   let imped = -V(va)/i(va)
   save imped
   remzerovec
   write TB_PR_single_ac.raw
+  *wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/plots/data_DC/PR_single_AC.txt I(VA) imped
 
 .endc
 .save all
