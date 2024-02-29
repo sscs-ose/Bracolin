@@ -137,7 +137,7 @@ lab=VDD}
 N 590 -40 630 -40 {
 lab=VDD}
 N 170 -110 240 -110 {
-lab=vg_n}
+lab=vg_n1}
 N -110 -830 -110 -810 {
 lab=VA__i}
 N -110 -660 -110 -630 {
@@ -572,6 +572,8 @@ N 1540 -910 1540 -890 {
 lab=VDD}
 N 1540 -890 1540 -870 {
 lab=VDD}
+N 300 -110 360 -110 {
+lab=vg_n}
 C {devices/lab_wire.sym} -110 -540 0 0 {name=p13 sig_type=std_logic lab=VB}
 C {devices/vsource.sym} 10 -320 0 0 {name=VDD1 value=3.3}
 C {devices/gnd.sym} 10 -270 0 0 {name=l9 lab=GND}
@@ -584,11 +586,13 @@ C {devices/code_shown.sym} -670 -320 0 0 {name=NGSPICE
 simulator=ngspice
 only_toplevel=false 
 value="
-.option gmin=1e-32
+.option gmin=1e-22
 *.option RSHUNT=1e35
 *.option RELTOL=1e-9
-.OPTION ABSTOL=1e-16
-.option vntol = 1e-9
+*.OPTION ABSTOL=1e-16
+*.option vntol = 1e-9
+
+.option klu 
 
 .param ibias = 1p
 .param it_amp = 2p
@@ -628,7 +632,7 @@ C {devices/gnd.sym} 300 180 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 80 -30 0 1 {name=l2 lab=GND}
 C {devices/isource.sym} 550 -160 0 0 {name=I1 value=\{ibias\}}
 C {devices/lab_wire.sym} 550 -210 0 1 {name=p11 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 230 -110 0 0 {name=p1 sig_type=std_logic lab=vg_n}
+C {devices/lab_wire.sym} 230 -110 0 0 {name=p1 sig_type=std_logic lab=vg_n1}
 C {devices/lab_wire.sym} 110 -200 0 0 {name=p15 sig_type=std_logic lab=VDD}
 C {devices/isource.sym} 590 10 0 1 {name=I2 value=\{it_amp\}}
 C {devices/gnd.sym} 120 20 0 1 {name=l6 lab=GND}
@@ -1135,3 +1139,5 @@ C {devices/lab_wire.sym} 2310 -970 0 0 {name=p49 sig_type=std_logic lab=VDD}
 C {devices/gnd.sym} 2270 -770 0 0 {name=l10 lab=GND}
 C {devices/lab_wire.sym} 2280 -1140 2 1 {name=p20 sig_type=std_logic lab=ib_p}
 C {devices/lab_wire.sym} 1990 -970 0 0 {name=p28 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 360 -110 0 1 {name=p29 sig_type=std_logic lab=vg_n}
+C {devices/ammeter.sym} 270 -110 3 0 {name=Vmeas savecurrent=true}

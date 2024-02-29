@@ -28,12 +28,12 @@ logy=1
 
 
 
-x1=-1
+x1=-2
 
 linewidth_mult=4.0
 y1=-14
 y2=-9.3
-x2=3}
+x2=5}
 B 2 1080 0 1880 400 {flags=graph
 
 
@@ -43,7 +43,7 @@ divy=5
 subdivy=1
 unity=G
 
-x2=3
+x2=5
 divx=5
 subdivx=8
 xlabmag=1.0
@@ -54,15 +54,16 @@ dataset=-1
 unitx=1
 logx=1
 logy=0
-x1=-1
+x1=-2
 
 
 linewidth_mult=4.0
 
 y2=2.2e+11
-y1=2.3e+10}
+y1=4.4e+08
+rainbow=1}
 T {AC simulation - Impedance of a single 
-Pseudo-Resistor ~185Gohm
+Pseudo-Resistor ~210Gohm
 versus frequency} 1330 -490 0 0 0.4 0.4 { layer=3}
 N 20 -370 20 -350 {
 lab=VDD}
@@ -72,8 +73,6 @@ N 20 -290 20 -270 {
 lab=GND}
 N 710 -250 710 -230 {
 lab=#net1}
-N 540 -310 710 -310 {
-lab=VA}
 N 290 -120 470 -120 {
 lab=ITN}
 N 320 -110 470 -110 {
@@ -94,7 +93,7 @@ N 450 -200 470 -200 {
 lab=VDD}
 N 570 -70 590 -70 {
 lab=GND}
-N 520 -310 540 -310 {
+N 520 -310 710 -310 {
 lab=VA}
 N 520 -310 520 -290 {
 lab=VA}
@@ -145,7 +144,8 @@ value="
 
 .endc
 .save all
-"}
+"
+spice_ignore=true}
 C {devices/launcher.sym} 860 -320 0 0 {name=h2
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
@@ -162,6 +162,9 @@ format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
+
+*.param sw_stat_mismatch=1
+*.param sw_stat_global=1
 
 "}
 C {PRbiased_net.sym} 440 -140 0 0 {name=x6
@@ -192,3 +195,83 @@ C {devices/lab_wire.sym} 260 -170 0 0 {name=p26 sig_type=std_logic lab=IBN}
 C {devices/lab_wire.sym} 260 -160 2 1 {name=p27 sig_type=std_logic lab=IBP}
 C {devices/lab_wire.sym} 410 -110 2 1 {name=p31 sig_type=std_logic lab=ITP}
 C {devices/lab_wire.sym} 410 -120 0 0 {name=p32 sig_type=std_logic lab=ITN}
+C {devices/code_shown.sym} -2170 -500 0 0 {name=NGSPICE1
+simulator=ngspice
+only_toplevel=false 
+value="
+.option savecurrents
+.option gmin=1e-24
+
+.param ibias = 1p
+.param it_amp = 2p
+
+.nodeset all=1.65
+
+.control
+
+let sample_index = 0
+
+while sample_index < 250
+reset
+
+  op
+  let imped = 0
+  save imped
+  remzerovec 
+  write TB_PR_single_ac.raw
+  set appendwrite
+  
+  set temp = 27
+  ac dec 1 100m 1
+  let imped = -V(va)/i(va)
+
+  meas ac imped_at FIND imped AT=0.5
+  save imped imped_at
+  remzerovec
+  write TB_PR_single_ac.raw
+  set appendwrite
+
+
+  wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/plots/data_DC/PR_single_AC_misMC.txt imped_at 
+  
+
+let sample_index = sample_index + 1
+end
+
+.endc
+.save all
+"
+spice_ignore=true}
+C {devices/code_shown.sym} -300 340 0 0 {name=NGSPICE2
+simulator=ngspice
+only_toplevel=false 
+value="
+.option savecurrents
+.option gmin=1e-24
+
+.param ibias = 1p
+.param it_amp = 2p
+
+.nodeset all=1.65
+
+.control
+
+  op
+  let imped = 27
+  save imped
+  remzerovec 
+  write TB_PR_single_ac.raw
+  set appendwrite
+  
+  set temp = 85
+  ac dec 10 10m 1e5
+  let imped = -V(va)/i(va)
+  save imped
+  remzerovec
+  write TB_PR_single_ac.raw
+  wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/plots/data_DC/PR_single_AC_85.txt I(VA) imped
+
+.endc
+.save all
+"
+}

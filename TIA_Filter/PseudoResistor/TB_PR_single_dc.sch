@@ -143,6 +143,58 @@ node="vxb
 vxa"
 rainbow=1
 dataset=0}
+B 2 2060 -550 2860 -150 {flags=graph
+
+
+ypos1=0
+ypos2=2
+
+
+unity=f
+
+
+
+
+xlabmag=1.0
+ylabmag=1.0
+
+
+
+unitx=m
+logx=0
+logy=0
+
+
+
+
+
+
+
+hilight_wave=-1
+
+
+
+
+divx=10
+
+
+
+
+rainbow=1
+linewidth_mult=4.0
+divy=10
+subdivx=5
+subdivy=1
+
+
+
+
+
+x1=-0.2
+x2=0.196
+y1=-6.4e-13
+y2=6.4e-13
+dataset=-1}
 T {DC operation a single 
 Pseudo-Resistor ~185Gohm
 Work Range -20m to 20m with VCM =1.65V} 1430 -630 0 0 0.4 0.4 { layer=3}
@@ -254,7 +306,7 @@ value="
 C {devices/code_shown.sym} -420 -300 0 0 {name=NGSPICE only_toplevel=true
 value="
 *.option savecurrents
-.option gmin=1e-21
+.option gmin=1e-24
 *.option RSHUNT=1e35
 *.option RELTOL=1e-9
 *.OPTION ABSTOL=1e2
@@ -273,7 +325,7 @@ remzerovec
 write TB_PR_single_dc.raw
 set appendwrite
 
-set temp 27
+set temp=27
 dc VX1 -200m 200m 6m
 
 let idiff = i(vai)-i(vbi)
@@ -297,44 +349,6 @@ C {devices/launcher.sym} 870 -400 0 0 {name=h2
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {devices/code_shown.sym} -400 340 0 0 {name=NGSPICE1 only_toplevel=true
-value="
-*.option savecurrents
-.option gmin=1e-32
-.option RSHUNT=1e35
-*.option RELTOL=1e-9
-*.OPTION ABSTOL=1e-14
-*.option vntol = 1e-9
-
-.param ibias = 1p
-.param it_amp = 2p
-
-.control
-
-let sample_index = -54
-
-
-while sample_index < 136
- reset
- set temp = $&sample_index
- dc VX -200m 200m 6m
-
- let idiff = i(vai)-i(vbi)
- let Rdiff = 4/deriv(idiff)
-
- save idiff Rdiff
- remzerovec
- write TB_PR_single_dc.raw
- set appendwrite
-
- let sample_index = sample_index + 27
-end
-
-.endc
-.save all
-.save idiff Rdiff
-"
-spice_ignore=true}
 C {PRbiased_net.sym} 470 -150 0 0 {name=x6
 }
 C {devices/isource.sym} 320 -100 0 1 {name=I4 value=\{it_amp\}}
@@ -403,3 +417,40 @@ C {devices/lab_wire.sym} -510 105 0 1 {name=p24 sig_type=std_logic lab=VA
 C {auxLib/ampOp_ideal.sym} -950 135 0 0 {name=x2}
 C {auxLib/ampOp_ideal.sym} -690 135 0 0 {name=x3}
 C {auxLib/ampOp_ideal.sym} -670 -135 0 0 {name=x9}
+C {devices/code_shown.sym} -2080 -330 0 0 {name=NGSPICE1 only_toplevel=true
+value="
+*.option savecurrents
+.option gmin=1e-21
+*.option RSHUNT=1e35
+*.option RELTOL=1e-9
+*.OPTION ABSTOL=1e2
+*.option vntol = 1e-9
+
+.param ibias = 1p
+.param it_amp = 2p
+
+*.nodeset V(IBP)=1.65
+
+.control
+save all
+
+op
+remzerovec 
+write TB_PR_single_dc.raw
+set appendwrite
+
+set temp=27
+dc VX1 -200m 200m 6m
+
+let idiff = i(vai)-i(vbi)
+let Rdiff = 4/deriv(idiff)
+
+save idiff Rdiff
+remzerovec
+write TB_PR_single_dc.raw
+
+*wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/plots/data_DC/PR_single_DC_27.txt idiff Rdiff
+
+.endc
+"
+spice_ignore=true}

@@ -71,8 +71,6 @@ N -380 -240 -330 -240 {
 lab=Vin_neg}
 N -390 -240 -380 -240 {
 lab=Vin_neg}
-N 510 -320 540 -320 {
-lab=Vout}
 N -510 -300 -510 -270 {
 lab=GND}
 N -510 -360 -420 -360 {
@@ -86,27 +84,27 @@ lab=Vin_neg}
 N 200 -200 200 -80 {
 lab=#net1}
 N 200 40 460 40 {
-lab=Vout}
+lab=#net2}
 N 460 -240 460 40 {
-lab=Vout}
+lab=#net2}
 N 360 -320 460 -320 {
-lab=Vout}
+lab=#net2}
 N 90 -360 200 -360 {
-lab=#net2}
+lab=#net3}
 N 90 -280 90 -80 {
-lab=#net2}
+lab=#net3}
 N 90 40 90 140 {
 lab=VCM}
 N -100 -360 90 -360 {
-lab=#net2}
+lab=#net3}
 N -100 -240 200 -240 {
 lab=#net1}
 N 200 -100 340 -100 {
 lab=#net1}
 N 340 -40 340 40 {
-lab=Vout}
-N -20 -100 90 -100 {
 lab=#net2}
+N -20 -100 90 -100 {
+lab=#net3}
 N -20 70 90 70 {
 lab=VCM}
 N -150 70 -120 70 {
@@ -114,23 +112,23 @@ lab=VCM}
 N -150 -30 -150 70 {
 lab=VCM}
 N -150 -100 -120 -100 {
-lab=#net2}
+lab=#net3}
 N -150 -40 -150 -30 {
 lab=VCM}
 N -270 -360 -100 -360 {
-lab=#net2}
+lab=#net3}
 N -270 -240 -100 -240 {
 lab=#net1}
 N 90 -360 90 -280 {
-lab=#net2}
+lab=#net3}
 N 200 -280 200 -200 {
 lab=#net1}
 N 240 -250 240 -220 {
-lab=#net3}
+lab=#net4}
 N -360 -360 -330 -360 {
 lab=Vin_pos}
 N 460 -320 460 -240 {
-lab=Vout}
+lab=#net2}
 N 300 -380 300 -360 {
 lab=VDD}
 N 260 -40 270 -40 {
@@ -140,35 +138,35 @@ lab=GND}
 N 270 -130 290 -130 {
 lab=GND}
 N 300 -230 300 -220 {
-lab=#net4}
+lab=#net5}
 N -120 -100 -20 -100 {
-lab=#net2}
+lab=#net3}
 N -120 70 -20 70 {
 lab=VCM}
 N 20 -50 30 -50 {
-lab=#net5}
+lab=#net6}
 N 0 -10 30 -10 {
 lab=IBNOUT}
 N 0 10 30 10 {
 lab=IBPOUT}
 N 300 -230 340 -230 {
-lab=#net4}
+lab=#net5}
 N 340 -230 340 -220 {
-lab=#net4}
+lab=#net5}
 N 340 -220 400 -220 {
-lab=#net4}
+lab=#net5}
 N 400 -290 400 -280 {
 lab=VDD}
 N 20 -50 20 -30 {
-lab=#net5}
+lab=#net6}
 N -50 -80 -50 -30 {
-lab=#net5}
+lab=#net6}
 N -50 -30 20 -30 {
-lab=#net5}
+lab=#net6}
 N -50 -160 -50 -140 {
 lab=VDD}
 N 460 -320 510 -320 {
-lab=Vout}
+lab=#net2}
 N 0 10 0 90 {
 lab=IBPOUT}
 N -30 -10 0 -10 {
@@ -182,9 +180,9 @@ lab=VCM}
 N 160 200 190 200 {
 lab=GND}
 N -30 150 -30 190 {
-lab=#net6}
-N 0 150 0 190 {
 lab=#net7}
+N 0 150 0 190 {
+lab=#net8}
 N 0 250 0 270 {
 lab=GND}
 N -30 250 -30 270 {
@@ -197,22 +195,7 @@ N -390 80 -390 100 {
 lab=VDD}
 N -420 80 -390 80 {
 lab=VDD}
-N -330 -240 -330 -170 {
-lab=Vin_neg}
-N -270 -240 -270 -170 {
-lab=#net1}
-N -270 -360 -270 -290 {
-lab=#net2}
-N -330 -360 -330 -290 {
-lab=Vin_pos}
-N 340 -100 390 -100 {
-lab=#net1}
-N 340 -40 390 -40 {
-lab=Vout}
-N -220 -100 -150 -100 {
-lab=#net2}
-N -220 -40 -150 -40 {
-lab=VCM}
+N 510 -320 540 -320 {}
 C {devices/code_shown.sym} -1220 -390 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -236,7 +219,7 @@ tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
 C {devices/code_shown.sym} -1130 -200 0 0 {name=NGSPICE only_toplevel=true
 value="
-.option gmin=1e-15
+.option gmin=1e-14
 *.option abstol=1e-2
 .option klu
 
@@ -271,7 +254,7 @@ footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 600 -260 0 0 {name=l11 lab=GND}
 C {devices/lab_wire.sym} -370 -240 0 0 {name=p4 sig_type=std_logic lab=Vin_neg}
-C {devices/vsource.sym} -510 -330 0 0 {name=Vin1 value=1.64985}
+C {devices/vsource.sym} -510 -330 0 0 {name=Vin1 value=1.6498199}
 C {devices/gnd.sym} -510 -270 0 1 {name=l12 lab=GND}
 C {devices/vsource.sym} -480 -210 0 1 {name=V2 value="1.65 DC 1 AC"
 }
@@ -283,7 +266,7 @@ L=9.8e-6
 model=cap_mim_2f0_m4m5_noshield
 spiceprefix=X
 m=1
-spice_ignore=true}
+}
 C {Folded/FoldedCascode.sym} 300 -320 0 0 {name=x2}
 C {symbols/cap_mim_analog.sym} -150 -70 0 0 {name=C3
 W=9.8e-6
@@ -291,21 +274,21 @@ L=9.8e-6
 model=cap_mim_2f0_m4m5_noshield
 spiceprefix=X
 m=1
-spice_ignore=true}
+}
 C {symbols/cap_mim_analog.sym} -300 -360 3 0 {name=C4
 W=100e-6
 L=100e-6
 model=cap_mim_2f0_m4m5_noshield
 spiceprefix=X
 m=1
-spice_ignore=true}
+}
 C {symbols/cap_mim_analog.sym} -300 -240 3 1 {name=C5
 W=100e-6
 L=100e-6
 model=cap_mim_2f0_m4m5_noshield
 spiceprefix=X
 m=1
-spice_ignore=true}
+}
 C {CurrentMirrors/CM_iref.sym} 330 -130 0 1 {name=x3}
 C {devices/lab_wire.sym} 300 -380 0 0 {name=p11 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 270 -40 0 1 {name=p13 sig_type=std_logic lab=VDD}
@@ -330,23 +313,3 @@ C {devices/gnd.sym} -30 270 0 1 {name=l7 lab=GND}
 C {devices/vsource.sym} -390 130 0 0 {name=VDD value=3.3}
 C {devices/gnd.sym} -390 180 0 0 {name=l1 lab=GND}
 C {devices/lab_wire.sym} -390 80 0 0 {name=p1 sig_type=std_logic lab=VDD}
-C {devices/capa.sym} -300 -290 3 0 {name=C6
-m=1
-value=200p
-footprint=1206
-device="ceramic capacitor"}
-C {devices/capa.sym} -300 -170 3 0 {name=C7
-m=1
-value=200p
-footprint=1206
-device="ceramic capacitor"}
-C {devices/capa.sym} 390 -70 0 0 {name=C8
-m=1
-value=2000f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/capa.sym} -220 -70 0 1 {name=C9
-m=1
-value=2000f
-footprint=1206
-device="ceramic capacitor"}

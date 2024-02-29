@@ -53,7 +53,8 @@ N -430 -500 -430 -480 {
 lab=Voutn}
 C {devices/code_shown.sym} -1090 -570 0 0 {name=NGSPICE only_toplevel=true
 value="
-.option gmin=1e-15
+.option gmin=1e-16
+.option klu 
 
 .param i_ref=1u
 

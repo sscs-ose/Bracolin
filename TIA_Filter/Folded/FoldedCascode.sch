@@ -18,11 +18,11 @@ lab=#net1}
 N 0 -590 0 -580 {
 lab=AVDD}
 N -80 -400 -80 -370 {
-lab=v2}
+lab=#net2}
 N -80 -310 -80 -270 {
 lab=v2}
 N 80 -400 80 -370 {
-lab=v1}
+lab=#net3}
 N -80 -800 -80 -770 {
 lab=#net1}
 N -80 -770 80 -770 {
@@ -56,9 +56,9 @@ lab=M3_D}
 N 780 -900 840 -900 {
 lab=M3_D}
 N 550 -810 550 -750 {
-lab=#net2}
+lab=#net4}
 N 710 -810 710 -750 {
-lab=#net3}
+lab=#net5}
 N 550 -570 550 -470 {
 lab=M3_D}
 N 710 -570 710 -470 {
@@ -69,10 +69,6 @@ N 780 -660 820 -660 {
 lab=vb4}
 N 630 -780 630 -750 {
 lab=AVDD}
-N 550 -470 550 -440 {
-lab=M3_D}
-N 710 -470 710 -440 {
-lab=vout}
 N 450 -350 480 -350 {
 lab=vb3}
 N 780 -350 810 -350 {
@@ -95,11 +91,7 @@ N 440 40 480 40 {
 lab=vb2}
 N 780 40 820 40 {
 lab=vb2}
-N 550 130 550 170 {
-lab=AVSS}
 N 550 170 710 170 {
-lab=AVSS}
-N 710 130 710 170 {
 lab=AVSS}
 N 630 130 630 170 {
 lab=AVSS}
@@ -133,10 +125,6 @@ N 150 250 150 260 {
 lab=IREF}
 N 0 -720 -0 -660 {
 lab=#net1}
-N -80 -370 -80 -310 {
-lab=v2}
-N 80 -370 80 -300 {
-lab=v1}
 N 80 -300 80 -270 {
 lab=v1}
 N 550 -140 550 -80 {
@@ -165,6 +153,26 @@ N 370 -1060 790 -1060 {
 lab=M3_D}
 N 790 -1060 790 -900 {
 lab=M3_D}
+N -80 -310 -60 -280 {
+lab=v2}
+N -80 -370 -60 -340 {
+lab=#net2}
+N 80 -370 90 -340 {
+lab=#net3}
+N 80 -300 90 -280 {
+lab=v1}
+N 500 -490 550 -470 {
+lab=M3_D}
+N 500 -430 550 -440 {
+lab=#net6}
+N 710 -470 760 -490 {
+lab=vout}
+N 710 -440 760 -430 {
+lab=#net7}
+N 710 130 760 130 {}
+N 710 170 760 190 {}
+N 510 140 550 130 {}
+N 510 200 550 170 {}
 C {devices/iopin.sym} -200 190 0 1 {name=p15 lab=AVDD}
 C {devices/iopin.sym} -200 220 0 1 {name=p16 lab=AVSS}
 C {devices/iopin.sym} -200 120 0 1 {name=p21 lab=vout}
@@ -238,3 +246,9 @@ C {devices/lab_wire.sym} 440 -190 0 1 {name=p1 sig_type=std_logic lab=v1
 C {devices/lab_wire.sym} 430 -90 0 1 {name=p5 sig_type=std_logic lab=v2
 
 }
+C {devices/ammeter.sym} -60 -310 0 0 {name=Vmeas savecurrent=true}
+C {devices/ammeter.sym} 90 -310 0 0 {name=Vmeas1 savecurrent=true}
+C {devices/ammeter.sym} 760 -460 0 0 {name=Vmeas2 savecurrent=true}
+C {devices/ammeter.sym} 500 -460 0 1 {name=Vmeas3 savecurrent=true}
+C {devices/ammeter.sym} 760 160 0 0 {name=Vmeas4 savecurrent=true}
+C {devices/ammeter.sym} 510 170 0 1 {name=Vmeas5 savecurrent=true}

@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=3.3
+x1=0.145339
+x2=2.78534
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -35,8 +35,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=3.3
+x1=0.145339
+x2=2.78534
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -51,6 +51,54 @@ rainbow=1
 color="4 5"
 node="i(v13)
 i(v14)"}
+B 2 1240 -1270 2100 -860 {flags=graph
+y1=1.05822e-09
+y2=1.05826e-09
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0.145339
+x2=2.78534
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+rainbow=1
+color="5 4"
+node="i(v25)
+i(v26)"}
+B 2 2160 -1270 2960 -870 {flags=graph
+y1=1.05519e-09
+y2=1.05522e-09
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0.145339
+x2=2.78534
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+rainbow=1
+color="4 5"
+node="i(v27)
+i(v52)"}
 N -400 -220 -400 -200 {
 lab=GND}
 N -400 -310 -400 -280 {
@@ -330,6 +378,8 @@ value="
 .option gmin=1e-15
 *.option abstol=1e-18
 *.option retol=1e-15
+
+.option klu 
 
 .param i_sbcs=1n
 

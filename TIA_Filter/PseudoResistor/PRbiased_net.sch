@@ -75,7 +75,7 @@ N 150 -80 160 -80 {
 lab=VDD}
 N 530 50 550 50 {
 lab=VSS}
-N 290 50 330 50 {
+N 290 50 300 50 {
 lab=VSS}
 C {PseudoResistor/PR_net.sym} 100 80 0 0 {name=x1}
 C {PseudoResistor/DiffN_net.sym} -130 30 0 0 {name=x2}
@@ -93,8 +93,8 @@ C {devices/lab_wire.sym} 620 -70 0 1 {name=p14 sig_type=std_logic lab=vc}
 C {devices/lab_wire.sym} -120 -70 0 0 {name=p15 sig_type=std_logic lab=vc}
 C {devices/lab_wire.sym} 20 -180 0 0 {name=p9 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 510 -180 0 0 {name=p10 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 180 -80 0 0 {name=p11 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 330 50 0 0 {name=p12 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 150 -80 0 0 {name=p11 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 300 50 0 1 {name=p12 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -40 50 0 0 {name=p16 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 550 50 0 0 {name=p17 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 240 -120 0 0 {name=p18 sig_type=std_logic lab=VA}
