@@ -5,98 +5,226 @@ K {}
 V {}
 S {}
 E {}
-B 2 990 -510 1790 -110 {flags=graph
+B 2 750 -1050 1530 -630 {flags=graph
 
 
-ypos1=0
-ypos2=2
-divy=5
-subdivy=8
-unity=p
 
 
-divx=5
-subdivx=8
+
+
+unity=1
+
+
+
+
 xlabmag=1.0
-ylabmag=1.0
-node=i(va)
-color=4
+
+node="a
+pad0
+y0"
+color="4 5 21"
 dataset=-1
 unitx=1
-logx=1
-logy=1
+logx=0
+logy=0
 
 
 
-x1=-2
+x1=0
 
-linewidth_mult=4.0
-y1=-12
-y2=-8.6
-x2=5}
-N 150 -490 150 -470 {
+
+
+
+x2=1e-07
+digital=1
+subdivx=5
+
+divx=5
+rainbow=0
+
+linewidth_mult=4
+ylabmag=0.7
+divy=2
+subdivy=10}
+B 2 750 -630 1530 -210 {flags=graph
+
+
+
+
+
+subdivy=3
+unity=1
+
+
+
+
+xlabmag=1.0
+
+node="pad1
+y1"
+color="5 21"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+x1=0
+
+
+
+
+x2=1e-07
+digital=1
+subdivx=5
+
+divx=5
+rainbow=0
+divy=1
+linewidth_mult=4
+ylabmag=0.7}
+B 2 1530 -1050 2310 -630 {flags=graph
+
+
+
+
+
+subdivy=3
+unity=1
+
+
+
+
+xlabmag=1.0
+
+node="pad2
+y2"
+color="5 21"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+x1=0
+
+
+
+
+x2=1e-07
+digital=1
+subdivx=5
+
+divx=5
+rainbow=0
+divy=1
+linewidth_mult=4
+ylabmag=0.7}
+B 2 1530 -630 2310 -210 {flags=graph
+
+
+
+
+
+subdivy=3
+unity=1
+
+
+
+
+xlabmag=1.0
+
+node="pad3
+y3"
+color="5 21"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+x1=0
+
+
+
+
+x2=1e-07
+digital=1
+subdivx=5
+
+divx=5
+rainbow=0
+divy=1
+linewidth_mult=4
+ylabmag=0.7}
+P 7 7 1660 -1270 1660 -1220 1650 -1220 1660 -1200 1670 -1220 1660 -1220 1660 -1270 {}
+T {Change PATH} 1670 -1280 0 0 0.7 0.7 { layer=7}
+N 840 -1120 840 -1100 {
 lab=GND}
-N 150 -610 150 -550 {
+N 840 -1240 840 -1180 {
 lab=DVDD}
-N 210 -490 210 -470 {
+N 900 -1120 900 -1100 {
 lab=GND}
-N 210 -610 210 -550 {
+N 900 -1240 900 -1180 {
 lab=VDD}
-N 150 -470 210 -470 {
+N 840 -1100 900 -1100 {
 lab=GND}
-N 270 -490 270 -470 {
+N 960 -1120 960 -1100 {
 lab=GND}
-N 270 -610 270 -550 {
+N 960 -1240 960 -1180 {
 lab=DVSS}
-N 330 -490 330 -470 {
+N 1020 -1120 1020 -1100 {
 lab=GND}
-N 330 -610 330 -550 {
+N 1020 -1240 1020 -1180 {
 lab=VSS}
-N 270 -470 330 -470 {
+N 960 -1100 1020 -1100 {
 lab=GND}
-N 210 -470 270 -470 {
+N 900 -1100 960 -1100 {
 lab=GND}
-N 390 -300 390 -280 {
+N 680 -1050 680 -1030 {
 lab=GND}
-N 390 -420 390 -360 {
+N 680 -1170 680 -1110 {
 lab=A}
-N 510 -490 510 -470 {
+N 1200 -1120 1200 -1100 {
 lab=GND}
-N 510 -610 510 -550 {
+N 1200 -1240 1200 -1180 {
 lab=IE}
-N 570 -490 570 -470 {
+N 1260 -1120 1260 -1100 {
 lab=GND}
-N 510 -470 570 -470 {
+N 1200 -1100 1260 -1100 {
 lab=GND}
-N 570 -610 570 -550 {
+N 1260 -1240 1260 -1180 {
 lab=OE}
-N 630 -490 630 -470 {
+N 1320 -1120 1320 -1100 {
 lab=GND}
-N 570 -470 630 -470 {
+N 1260 -1100 1320 -1100 {
 lab=GND}
-N 630 -610 630 -550 {
+N 1320 -1240 1320 -1180 {
 lab=PU}
-N 690 -490 690 -470 {
+N 1380 -1120 1380 -1100 {
 lab=GND}
-N 630 -470 690 -470 {
+N 1320 -1100 1380 -1100 {
 lab=GND}
-N 690 -610 690 -550 {
+N 1380 -1240 1380 -1180 {
 lab=PD}
-N 750 -490 750 -470 {
+N 1440 -1120 1440 -1100 {
 lab=GND}
-N 690 -470 750 -470 {
+N 1380 -1100 1440 -1100 {
 lab=GND}
-N 750 -610 750 -550 {
+N 1440 -1240 1440 -1180 {
 lab=SL}
-N 810 -490 810 -470 {
+N 1500 -1120 1500 -1100 {
 lab=GND}
-N 750 -470 810 -470 {
+N 1440 -1100 1500 -1100 {
 lab=GND}
-N 810 -610 810 -550 {
+N 1500 -1240 1500 -1180 {
 lab=CS}
-N 330 -470 510 -470 {
+N 1020 -1100 1200 -1100 {
 lab=GND}
-C {devices/code_shown.sym} 980 -860 0 0 {name=s1
+C {devices/code_shown.sym} 390 -880 0 0 {name=s1
 only_toplevel=false
 value="
 .option klu
@@ -104,17 +232,14 @@ value="
 .control
 save all
 
-
 tran 100p 100n
 remzerovec
 write digital_io_switching.raw
 
-*display
-*plot A PAD0 Y0
-*plot PAD0 PAD1 PAD2 PAD3
 .endc
-"}
-C {devices/code_shown.sym} -610 -800 0 0 {name=MODELS only_toplevel=true
+"
+}
+C {devices/code_shown.sym} 730 -1490 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
@@ -123,8 +248,9 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice res_typical
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
-"}
-C {devices/code_shown.sym} 90 -780 0 0 {name=DUT only_toplevel=true
+"
+}
+C {devices/code_shown.sym} 1550 -1210 0 0 {name=DUT only_toplevel=true
 format="tcleval( @value )"
 value="
 .include "/home/gmaranhao/Desktop/Bracolin/padframe/openfasoc-io-tb/gf180mcu_fd_io.spice"
@@ -132,32 +258,57 @@ XDUT0 A CS DVDD DVSS IE OE PAD0 PD VSS VSS PU SL VDD VSS Y0 gf180mcu_fd_io__bi_t
 XDUT1 A CS DVDD DVSS IE OE PAD1 PD VDD VSS PU SL VDD VSS Y1 gf180mcu_fd_io__bi_t
 XDUT2 A CS DVDD DVSS IE OE PAD2 PD VSS VDD PU SL VDD VSS Y2 gf180mcu_fd_io__bi_t
 XDUT3 A CS DVDD DVSS IE OE PAD3 PD VDD VDD PU SL VDD VSS Y3 gf180mcu_fd_io__bi_t
-"}
-C {devices/vsource.sym} 150 -520 0 0 {name=V1 value=3}
-C {devices/gnd.sym} 150 -470 0 0 {name=l1 lab=GND}
-C {devices/lab_wire.sym} 150 -590 0 0 {name=p1 sig_type=std_logic lab=DVDD}
-C {devices/vsource.sym} 210 -520 0 0 {name=V2 value=3}
-C {devices/lab_wire.sym} 210 -590 0 0 {name=p2 sig_type=std_logic lab=VDD}
-C {devices/vsource.sym} 270 -520 0 0 {name=V3 value=0}
-C {devices/lab_wire.sym} 270 -590 0 0 {name=p3 sig_type=std_logic lab=DVSS}
-C {devices/vsource.sym} 330 -520 0 0 {name=V4 value=0}
-C {devices/lab_wire.sym} 330 -590 0 0 {name=p4 sig_type=std_logic lab=VSS}
-C {devices/vsource.sym} 390 -330 0 0 {name=V5 value="PULSE(0 3 10n 100p 100p 10n 20n)"}
-C {devices/lab_wire.sym} 390 -400 0 0 {name=p5 sig_type=std_logic lab=A}
-C {devices/vsource.sym} 510 -520 0 0 {name=V7 value=3}
-C {devices/lab_wire.sym} 510 -590 0 0 {name=p7 sig_type=std_logic lab=IE}
-C {devices/vsource.sym} 570 -520 0 0 {name=V8 value=3}
-C {devices/lab_wire.sym} 570 -590 0 0 {name=p8 sig_type=std_logic lab=OE}
-C {devices/vsource.sym} 630 -520 0 0 {name=V9 value=0}
-C {devices/lab_wire.sym} 630 -590 0 0 {name=p9 sig_type=std_logic lab=PU}
-C {devices/vsource.sym} 690 -520 0 0 {name=V10 value=0}
-C {devices/lab_wire.sym} 690 -590 0 0 {name=p10 sig_type=std_logic lab=PD}
-C {devices/vsource.sym} 750 -520 0 0 {name=V11 value=0}
-C {devices/lab_wire.sym} 750 -590 0 0 {name=p11 sig_type=std_logic lab=SL}
-C {devices/gnd.sym} 390 -280 0 0 {name=l2 lab=GND}
-C {devices/vsource.sym} 810 -520 0 0 {name=V13 value=3.3}
-C {devices/lab_wire.sym} 810 -590 0 0 {name=p13 sig_type=std_logic lab=CS}
-C {devices/launcher.sym} 1055 -545 0 0 {name=h1
+"
+}
+C {devices/vsource.sym} 840 -1150 0 0 {name=V1 value=3.3
+}
+C {devices/gnd.sym} 840 -1100 0 0 {name=l1 lab=GND
+}
+C {devices/lab_wire.sym} 840 -1220 0 0 {name=p1 sig_type=std_logic lab=DVDD
+}
+C {devices/vsource.sym} 900 -1150 0 0 {name=V2 value=3.3
+}
+C {devices/lab_wire.sym} 900 -1220 0 0 {name=p2 sig_type=std_logic lab=VDD
+}
+C {devices/vsource.sym} 960 -1150 0 0 {name=V3 value=0
+}
+C {devices/lab_wire.sym} 960 -1220 0 0 {name=p3 sig_type=std_logic lab=DVSS
+}
+C {devices/vsource.sym} 1020 -1150 0 0 {name=V4 value=0
+}
+C {devices/lab_wire.sym} 1020 -1220 0 0 {name=p4 sig_type=std_logic lab=VSS
+}
+C {devices/vsource.sym} 680 -1080 0 0 {name=V5 value="PULSE(0 3.3 10n 100p 100p 10n 20n)"
+}
+C {devices/lab_wire.sym} 680 -1150 0 0 {name=p5 sig_type=std_logic lab=A
+}
+C {devices/vsource.sym} 1200 -1150 0 0 {name=V7 value=3.3
+}
+C {devices/lab_wire.sym} 1200 -1220 0 0 {name=p7 sig_type=std_logic lab=IE
+}
+C {devices/vsource.sym} 1260 -1150 0 0 {name=V8 value=3.3
+}
+C {devices/lab_wire.sym} 1260 -1220 0 0 {name=p8 sig_type=std_logic lab=OE
+}
+C {devices/vsource.sym} 1320 -1150 0 0 {name=V9 value=0
+}
+C {devices/lab_wire.sym} 1320 -1220 0 0 {name=p9 sig_type=std_logic lab=PU
+}
+C {devices/vsource.sym} 1380 -1150 0 0 {name=V10 value=0
+}
+C {devices/lab_wire.sym} 1380 -1220 0 0 {name=p10 sig_type=std_logic lab=PD
+}
+C {devices/vsource.sym} 1440 -1150 0 0 {name=V11 value=0
+}
+C {devices/lab_wire.sym} 1440 -1220 0 0 {name=p11 sig_type=std_logic lab=SL
+}
+C {devices/gnd.sym} 680 -1030 0 0 {name=l2 lab=GND
+}
+C {devices/vsource.sym} 1500 -1150 0 0 {name=V13 value=3.3
+}
+C {devices/lab_wire.sym} 1500 -1220 0 0 {name=p13 sig_type=std_logic lab=CS
+}
+C {devices/launcher.sym} 445 -945 0 0 {name=h1
 descr="Load/unload waveforms."
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
