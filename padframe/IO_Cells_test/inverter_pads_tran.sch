@@ -1,4 +1,4 @@
-v {xschem version=3.4.2 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -100,7 +100,7 @@ simulation do not work
 T {This is a simple inverter simulation where it was added some PAD RING cells 
 (schematic view) to test them, since they add a lot of passive componentes to 
 the netlist. The simulation become sensitive ("time step too small") by 
-adding de __cor and __fill5 cells.} -650 -450 0 0 0.4 0.4 { layer=18}
+adding de __cor.} -650 -450 0 0 0.4 0.4 { layer=18}
 N 270 90 270 95 {
 lab=GND}
 N 270 -45 270 15 {
@@ -157,7 +157,7 @@ N 270 -190 270 -130 {
 lab=DVSS}
 N 270 75 270 90 {
 lab=GND}
-C {devices/code_shown.sym} -680 -90 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} -780 -90 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
@@ -195,6 +195,8 @@ footprint=1206
 device="ceramic capacitor"}
 C {devices/code_shown.sym} -165 -90 0 0 {name=NGSPICE only_toplevel=true
 value="
+
+.option klu
 
 .control
  save all

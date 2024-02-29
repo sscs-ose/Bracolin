@@ -5,6 +5,56 @@ K {}
 V {}
 S {}
 E {}
+B 2 1410 -360 2210 40 {flags=graph
+y1=-0.079
+y2=3.7
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=5e-06
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node=out
+color=4
+
+unitx=1
+logx=0
+logy=0
+rainbow=1
+
+linewidth_mult=4
+dataset=1}
+B 2 1410 40 2210 440 {flags=graph
+
+
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=5e-06
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node=i(vvdd)
+color=4
+
+unitx=1
+logx=0
+logy=0
+rainbow=1
+
+linewidth_mult=4
+dataset=0
+y1=-300u
+y2=100u}
 P 4 5 -100 -220 1230 -220 1230 -120 -100 -120 -100 -220 {}
 P 4 5 -100 -100 1230 -100 1230 40 -100 40 -100 -100 {}
 T {**A
@@ -74,6 +124,10 @@ N 20 -200 60 -200 {
 lab=vbias}
 N 20 -350 20 -200 {
 lab=vbias}
+N 20 -600 20 -410 {
+lab=vdd}
+N 20 -690 190 -690 {
+lab=vdd}
 N 1280 -330 1280 -250 {
 lab=vcap}
 N 850 -170 860 -170 {
@@ -166,6 +220,8 @@ N 480 -250 1280 -250 {
 lab=vcap}
 N 390 -620 390 -530 {
 lab=#net1}
+N 20 -690 20 -600 {
+lab=vdd}
 N 230 -550 230 -520 {
 lab=href}
 N 190 -520 230 -520 {
@@ -238,12 +294,6 @@ N 480 -310 570 -310 {
 lab=vcap}
 N 710 -380 710 -340 {
 lab=S}
-N 150 -420 170 -420 {
-lab=GND}
-N 150 -420 150 -410 {
-lab=GND}
-N 170 -690 190 -690 {
-lab=vdd}
 C {symbols/pfet_03v3.sym} 370 -650 0 1 {name=M1
 L=2u
 W=2u
@@ -260,6 +310,44 @@ spiceprefix=X
 }
 C {devices/gnd.sym} 190 -30 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 190 -740 0 0 {name=p1 sig_type=std_logic lab=vdd}
+C {devices/code_shown.sym} 2220 -580 0 0 {name=SPICE1 only_toplevel=false
+value="
+vvdd vdd 0 3.3
+vcurr curr 0 0
+vibias ibias 0 0
+v2ibias 2ibias 0 0
+vicap icap 0 0
+
+.control
+save all
+
+let temperature = -40
+
+while temperature<130
+ reset
+ set temp = $&temperature
+ remzerovec
+ tran 1n 5000n
+ write clockGenerator.raw
+ set appendwrite
+
+ *wrdata /home/cesaralbuquerque/Desktop/out/transient[$&temperature].txt V(out)
+ let temperature = temperature + 20
+end
+.endc
+.save all
+"
+
+.save all
+
+"
+
+
+
+
+
+
+}
 C {devices/lab_pin.sym} 1090 -490 3 1 {name=p2 sig_type=std_logic lab=out
 }
 C {devices/lab_pin.sym} 410 -490 1 0 {name=p3 sig_type=std_logic lab=href}
@@ -328,6 +416,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
+C {devices/isource.sym} 20 -380 0 0 {name=I0 value=2u}
 C {devices/lab_pin.sym} 110 -170 1 0 {name=p10 sig_type=std_logic lab=vbias
 }
 C {devices/lab_pin.sym} 1160 -170 2 0 {name=p11 sig_type=std_logic lab=vbias}
@@ -441,8 +530,27 @@ L=42e-6
 model=cap_mim_2f0fF
 spiceprefix=X
 m=4}
+C {devices/code_shown.sym} 1550 -570 0 0 {name=MODELS1 only_toplevel=true
+format="tcleval( @value )"
+value="
+.include $::180MCU_MODELS/design.ngspice
+.lib $::180MCU_MODELS/sm141064.ngspice typical
+.lib $::180MCU_MODELS/sm141064.ngspice res_typical
+.lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
+.lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+.lib $::180MCU_MODELS/sm141064.ngspice cap_mim
+*.lib $::180MCU_MODELS/sm141064.ngspice res_statistical
+*.param sw_stat_mismatch=1
+*.param sw_stat_global=1
+"}
 C {symbols_clock/VCIS.sym} 1270 -410 0 0 {name=x3}
 C {symbols_clock/RS.sym} 690 -410 0 0 {name=x4}
 C {symbols_clock/comparatornew.sym} 560 -520 0 0 {name=x5}
 C {symbols_clock/comparatornew.sym} 560 -340 0 0 {name=x1}
-C {devices/gnd.sym} 150 -410 0 0 {name=l3 lab=GND}
+C {devices/launcher.sym} 1475 495 0 0 {name=h1
+descr="Click left mouse button here with control key
+pressed to load/unload waveforms in graph."
+tclcommand="
+xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
+"
+}
