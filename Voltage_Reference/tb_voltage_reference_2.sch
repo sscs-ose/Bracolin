@@ -214,6 +214,8 @@ N 750 280 750 290 {
 lab=v_1}
 N 750 350 750 360 {
 lab=#net1}
+N 1000 370 1000 380 {
+lab=vref}
 C {symbols_vr/Voltage_Reference.sym} 930 370 0 0 {name=x1}
 C {devices/code_shown.sym} -40 -40 0 0 {name=SPICE1 only_toplevel=false
 value="
