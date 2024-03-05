@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>GF180 DENSITY DRC Run Report at</description>
+ <original-file/>
+ <generator>drc: script='/home/gmaranhao/pdk/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
+ <top-cell>TOP</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>PL.8</name>
+   <description>PL.8 : Poly2 coverage over the entire die shall be 14%.
+                Dummy poly2 lines must be added to meet the minimum poly2 density requirement. : 14%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M1.4</name>
+   <description>M1.4 : Metal1 coverage over the entire die shall be &gt;30%
+                (Refer to section 13.0 for Dummy Metal fill guidelines.
+                 Customer needs to ensure enough dummy metal to satisfy Metal1 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M2.4</name>
+   <description>M2.4 : Metal2 coverage over the entire die shall be &gt;30%
+                (Refer to section 13.0 for Dummy Metal fill guidelines.
+                 Customer needs to ensure enough dummy metal to satisfy Metal2 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M3.4</name>
+   <description>M3.4 : metal3 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal3 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M4.4</name>
+   <description>M4.4 : metal4 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal4 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M5.4</name>
+   <description>M5.4 : metal5 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal5 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MT.3</name>
+   <description>MT.3 : MetalTop coverage over the entire die shall be &gt;30%
+                                (Refer to section 10.3 for Dummy Metal-fill guidelines.
+                                Customer needs to ensure enough dummy metal to satisfy Metaln coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>TOP</name>
+   <variant/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>TOP</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (13,1.475;13,3.795;14,3.795;14,1.475)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>TOP</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (13.31,1.464;13.31,1.846;13.69,1.846;13.69,1.464)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>TOP</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0.685,2.064;0.685,2.446;1.065,2.446;1.065,2.064)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>TOP</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (12.41,2.444;12.41,2.826;12.79,2.826;12.79,2.444)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>TOP</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (14.21,2.444;14.21,2.826;14.59,2.826;14.59,2.444)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>TOP</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (13.31,3.424;13.31,3.806;13.69,3.806;13.69,3.424)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>TOP</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (11.53,0.774;11.53,4.496;15.47,4.496;15.47,0.774/11.91,1.154;15.09,1.154;15.09,4.116;11.91,4.116)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>TOP</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-2.835,-1.555;-2.835,6.065;4.585,6.065;4.585,-1.555/-2.475,-1.195;4.225,-1.195;4.225,5.705;-2.475,5.705)</value>
+   </values>
+  </item>
+ </items>
+</report-database>
