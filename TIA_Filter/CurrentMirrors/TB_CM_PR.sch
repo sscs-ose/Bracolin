@@ -29,7 +29,7 @@ logy=0
 rainbow=1
 linewidth_mult=4}
 B 2 920 20 1720 420 {flags=graph
-y1=1e-12
+y1=1.7e-15
 y2=2.3e-12
 ypos1=0
 ypos2=2
@@ -173,14 +173,14 @@ N 670 -390 670 -350 {
 lab=INp}
 N 670 -290 670 -260 {
 lab=GND}
-C {devices/code_shown.sym} -450 -610 0 0 {name=MODELS only_toplevel=true
+C {devices/code_shown.sym} -1140 -250 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice sf
+.lib $::180MCU_MODELS/sm141064.ngspice typical
 
-*.param sw_stat_mismatch=1
-*.param sw_stat_global=1
+.param sw_stat_mismatch=1
+.param sw_stat_global=1
 
 "}
 C {devices/vsource.sym} -410 -230 0 0 {name=Vdd value=3.3
@@ -205,7 +205,7 @@ remzerovec
 write TB_CM_PR.raw
 set appendwrite
 
-dc Vo 0 3.3 10m
+dc Vo2 0 3.3 10m
 remzerovec 
 write TB_CM_PR.raw
 wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/plots/CM_input_data/CM_PR_dc_SF.txt i(v1) i(v2) i(v13) i(v14)
@@ -214,7 +214,8 @@ set appendwrite
 
 .endc
 .save all
-"}
+"
+spice_ignore=true}
 C {devices/lab_wire.sym} -410 -290 0 0 {name=p1 sig_type=std_logic lab=VDD
 }
 C {devices/ammeter.sym} 140 -220 0 1 {name=V1 savecurrent=true
@@ -265,7 +266,7 @@ C {devices/lab_wire.sym} 440 -180 0 0 {name=p20 sig_type=std_logic lab=o11
 }
 C {devices/lab_wire.sym} 460 -220 0 1 {name=p21 sig_type=std_logic lab=o12
 }
-C {devices/vsource.sym} -320 -230 0 0 {name=Vo value=1.65
+C {devices/vsource.sym} -320 -230 0 0 {name=Vo value=3
 }
 C {devices/gnd.sym} -320 -180 0 1 {name=l3 lab=GND
 }
@@ -335,5 +336,37 @@ C {devices/isource.sym} 670 -320 0 1 {name=I1 value=\{i_sbcs\}
 }
 C {devices/gnd.sym} 670 -260 0 1 {name=l4 lab=GND
 }
-C {devices/vsource.sym} -240 -230 0 0 {name=Vo2 value=1.65
+C {devices/vsource.sym} -240 -230 0 0 {name=Vo2 value=3
+}
+C {devices/code_shown.sym} -1130 630 0 0 {name=NGSPICE1 only_toplevel=true
+value="
+.option gmin=1e-15
+*.option abstol=1e-18
+*.option retol=1e-15
+
+.option klu 
+
+.param i_sbcs=1.02n
+
+.control
+save all
+
+let sample_num = 0
+
+while sample_num<200
+reset
+
+op
+remzerovec 
+write TB_CM_input.raw
+wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/plots/CM_input_data/CM_PR_dc_MisMC_3p0.txt i(v1) i(v2) i(v13) i(v14)
+set appendwrite
+
+let sample_num = sample_num + 1
+end
+
+
+.endc
+.save all
+"
 }
