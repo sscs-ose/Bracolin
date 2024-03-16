@@ -28,25 +28,25 @@ lab=#net2}
 N 510 -150 510 -40 {
 lab=VG}
 N 660 -150 670 -150 {
-lab=VB}
+lab=VBpr}
 N 670 -150 670 -40 {
-lab=VB}
+lab=VBpr}
 N 660 -40 670 -40 {
-lab=VB}
+lab=VBpr}
 N 550 -150 560 -150 {
-lab=VB}
+lab=VBpr}
 N 560 -150 560 -40 {
-lab=VB}
+lab=VBpr}
 N 550 -40 560 -40 {
-lab=VB}
+lab=VBpr}
 N 620 -150 620 -40 {
 lab=VG}
 N 510 -110 620 -110 {
 lab=VG}
 N 560 -80 670 -80 {
-lab=VB}
+lab=VBpr}
 N 670 -100 740 -100 {
-lab=VB}
+lab=VBpr}
 N 550 -200 550 -180 {
 lab=VD2}
 N 550 -200 660 -200 {
@@ -74,25 +74,25 @@ lab=#net4}
 N 510 120 510 230 {
 lab=VG}
 N 660 120 670 120 {
-lab=VB}
+lab=VBpr}
 N 670 120 670 230 {
-lab=VB}
+lab=VBpr}
 N 660 230 670 230 {
-lab=VB}
+lab=VBpr}
 N 550 120 560 120 {
-lab=VB}
+lab=VBpr}
 N 560 120 560 230 {
-lab=VB}
+lab=VBpr}
 N 550 230 560 230 {
-lab=VB}
+lab=VBpr}
 N 620 120 620 230 {
 lab=VG}
 N 510 160 620 160 {
 lab=VG}
 N 560 190 670 190 {
-lab=VB}
+lab=VBpr}
 N 670 170 740 170 {
-lab=VB}
+lab=VBpr}
 N 550 70 550 90 {
 lab=VC}
 N 550 70 660 70 {
@@ -223,6 +223,10 @@ N 80 280 80 300 {
 lab=VS1}
 N 430 50 440 50 {
 lab=VG}
+N 330 410 330 450 {
+lab=VB}
+N 330 330 330 350 {
+lab=VBpr}
 C {symbols/nfet_03v3.sym} 150 -280 3 1 {name=M5[1:32]
 L=2u
 W=2u
@@ -475,10 +479,10 @@ W=2u}
 C {devices/lab_wire.sym} 350 120 0 0 {name=p10 sig_type=std_logic lab=VB
 L=2u
 W=2u}
-C {devices/lab_wire.sym} 740 170 0 0 {name=p11 sig_type=std_logic lab=VB
+C {devices/lab_wire.sym} 740 170 0 0 {name=p11 sig_type=std_logic lab=VBpr
 L=2u
 W=2u}
-C {devices/lab_wire.sym} 740 -100 0 0 {name=p12 sig_type=std_logic lab=VB
+C {devices/lab_wire.sym} 740 -100 0 0 {name=p12 sig_type=std_logic lab=VBpr
 L=2u
 W=2u}
 C {devices/lab_wire.sym} 70 -140 0 0 {name=p13 sig_type=std_logic lab=VD1
@@ -503,5 +507,12 @@ C {devices/lab_wire.sym} 450 50 0 0 {name=p19 sig_type=std_logic lab=VG
 L=2u
 W=2u}
 C {devices/lab_wire.sym} 610 40 0 1 {name=p20 sig_type=std_logic lab=VC
+L=2u
+W=2u}
+C {devices/ammeter.sym} 330 380 2 0 {name=V_leak_N savecurrent=true}
+C {devices/lab_wire.sym} 330 450 0 0 {name=p23 sig_type=std_logic lab=VB
+L=2u
+W=2u}
+C {devices/lab_wire.sym} 330 330 0 1 {name=p24 sig_type=std_logic lab=VBpr
 L=2u
 W=2u}

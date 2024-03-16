@@ -52,8 +52,8 @@ subdivy=1
 
 
 
-x1=-0.2
-x2=0.196
+x1=-0.04
+x2=0.04
 y1=-6.4e-13
 y2=6.4e-13
 dataset=-1}
@@ -108,8 +108,8 @@ y1=2.1e+11
 y2=6.8e+11
 
 dataset=-1
-x1=-40m
-x2=40m}
+x1=-0.04
+x2=0.04}
 B 2 1230 270 2030 670 {flags=graph
 
 
@@ -135,8 +135,8 @@ logy=0
 
 
 y2=1.9
-x1=-0.2
-x2=0.196
+x1=-0.04
+x2=0.04
 y1=1.4
 color="4 5"
 node="vxb
@@ -190,11 +190,122 @@ subdivy=1
 
 
 
-x1=-0.2
-x2=0.196
-y1=-6.4e-13
-y2=6.4e-13
-dataset=-1}
+x1=-0.04
+x2=0.04
+y1=-1.3e-14
+y2=-6.6e-15
+dataset=-1
+
+color=4
+node=idiff_plus}
+B 2 2060 -150 2860 250 {flags=graph
+
+
+ypos1=0
+ypos2=2
+
+
+unity=f
+
+
+
+
+xlabmag=1.0
+ylabmag=1.0
+
+
+
+unitx=m
+logx=0
+logy=0
+
+
+
+
+
+
+
+hilight_wave=-1
+
+
+
+
+divx=10
+
+
+
+
+rainbow=1
+linewidth_mult=4.0
+divy=10
+subdivx=5
+subdivy=1
+
+
+
+
+
+x1=-0.04
+x2=0.04
+y1=1e-14
+y2=1.1e-14
+dataset=-1
+color=4
+node="\\"I_leakP;i(v.x6.x1.x2.v_leak_p)\\""}
+B 2 2060 250 2860 650 {flags=graph
+
+
+ypos1=0
+ypos2=2
+
+
+unity=f
+
+
+
+
+xlabmag=1.0
+ylabmag=1.0
+
+
+
+unitx=m
+logx=0
+logy=0
+
+
+
+
+
+
+
+hilight_wave=-1
+
+
+
+
+divx=10
+
+
+
+
+rainbow=1
+linewidth_mult=4.0
+divy=10
+subdivx=5
+subdivy=1
+
+
+
+
+
+x1=-0.04
+x2=0.04
+y1=-2.8e-16
+y2=-2.7e-16
+dataset=-1
+color=4
+node="\\"I_leakN;i(v.x6.x1.x1.v_leak_n)\\""}
 T {DC operation a single 
 Pseudo-Resistor ~185Gohm
 Work Range -20m to 20m with VCM =1.65V} 1430 -630 0 0 0.4 0.4 { layer=3}
@@ -305,12 +416,12 @@ value="
 "}
 C {devices/code_shown.sym} -420 -300 0 0 {name=NGSPICE only_toplevel=true
 value="
-*.option savecurrents
-.option gmin=1e-24
-*.option RSHUNT=1e35
+.option gmin=1e-17
+
 *.option RELTOL=1e-9
 *.OPTION ABSTOL=1e2
-*.option vntol = 1e-9
+
+.option klu
 
 .param ibias = 1p
 .param it_amp = 2p
@@ -326,12 +437,13 @@ write TB_PR_single_dc.raw
 set appendwrite
 
 set temp=27
-dc VX1 -200m 200m 6m
+dc VX1 -100m 100m 1m
 
 let idiff = i(vai)-i(vbi)
+let idiff_plus = i(vai)+i(vbi)
 let Rdiff = 4/deriv(idiff)
 
-save idiff Rdiff
+save idiff Rdiff idiff_plus
 remzerovec
 write TB_PR_single_dc.raw
 *wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/plots/data_DC/PR_single_DC.txt idiff Rdiff

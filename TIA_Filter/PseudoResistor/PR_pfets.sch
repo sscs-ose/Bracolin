@@ -22,19 +22,19 @@ lab=VG}
 N -40 -300 100 -300 {
 lab=VG}
 N -90 -230 -80 -230 {
-lab=VB}
+lab=VBpr}
 N -90 -340 -90 -230 {
-lab=VB}
+lab=VBpr}
 N -90 -340 -80 -340 {
-lab=VB}
+lab=VBpr}
 N 50 -340 60 -340 {
-lab=VB}
+lab=VBpr}
 N 50 -340 50 -230 {
-lab=VB}
+lab=VBpr}
 N 50 -230 60 -230 {
-lab=VB}
+lab=VBpr}
 N -90 -270 50 -270 {
-lab=VB}
+lab=VBpr}
 N -80 -200 -80 -180 {
 lab=VC_A}
 N -80 -180 60 -180 {
@@ -46,19 +46,19 @@ lab=VC_B}
 N 60 -80 60 -60 {
 lab=VC_B}
 N 50 -30 60 -30 {
-lab=VB}
+lab=VBpr}
 N -90 40 50 40 {
-lab=VB}
+lab=VBpr}
 N -80 110 -80 130 {
 lab=VS2_B}
 N 60 110 60 130 {
 lab=VS2_B}
 N -90 80 -80 80 {
-lab=VB}
+lab=VBpr}
 N -90 -30 -80 -30 {
-lab=VB}
+lab=VBpr}
 N 50 80 60 80 {
-lab=VB}
+lab=VBpr}
 N -40 10 100 10 {
 lab=VG}
 N 100 -280 140 -280 {
@@ -74,9 +74,9 @@ lab=VG}
 N 100 40 140 40 {
 lab=VG}
 N -150 -290 -90 -290 {
-lab=VB}
+lab=VBpr}
 N -140 30 -90 30 {
-lab=VB}
+lab=VBpr}
 N 300 -170 300 -120 {
 lab=#net3}
 N 440 -170 440 -120 {
@@ -208,9 +208,9 @@ lab=VC_B}
 N -80 -80 60 -80 {
 lab=VC_B}
 N 50 -30 50 80 {
-lab=VB}
+lab=VBpr}
 N -90 -30 -90 80 {
-lab=VB}
+lab=VBpr}
 N 100 -30 100 80 {
 lab=VG}
 N -80 130 60 130 {
@@ -221,6 +221,10 @@ N 60 0 60 50 {
 lab=#net8}
 N -40 -30 -40 80 {
 lab=VG}
+N 410 150 410 190 {
+lab=VB}
+N 410 70 410 90 {
+lab=VBpr}
 C {symbols/pfet_03v3.sym} 320 -200 0 1 {name=M1
 L=2u
 W=2u
@@ -489,12 +493,12 @@ W=2u}
 C {devices/lab_wire.sym} 600 -150 0 0 {name=p16 sig_type=std_logic lab=VB
 L=2u
 W=2u}
-C {devices/lab_wire.sym} -120 30 0 0 {name=p17 sig_type=std_logic lab=VB
-L=2u
-W=2u}
-C {devices/lab_wire.sym} -130 -290 0 0 {name=p18 sig_type=std_logic lab=VB
-L=2u
-W=2u}
+C {devices/lab_wire.sym} -120 30 0 0 {name=p17 sig_type=std_logic lab=VBpr
+
+}
+C {devices/lab_wire.sym} -130 -290 0 0 {name=p18 sig_type=std_logic lab=VBpr
+
+}
 C {devices/lab_wire.sym} -10 -440 0 0 {name=p19 sig_type=std_logic lab=VS2_A
 L=2u
 W=2u}
@@ -505,5 +509,12 @@ C {devices/lab_wire.sym} -10 -160 0 0 {name=p21 sig_type=std_logic lab=VC_A
 L=2u
 W=2u}
 C {devices/lab_wire.sym} -10 -90 0 0 {name=p22 sig_type=std_logic lab=VC_B
+L=2u
+W=2u}
+C {devices/ammeter.sym} 410 120 2 0 {name=V_leak_P savecurrent=true}
+C {devices/lab_wire.sym} 410 190 0 0 {name=p23 sig_type=std_logic lab=VB
+L=2u
+W=2u}
+C {devices/lab_wire.sym} 410 70 0 1 {name=p24 sig_type=std_logic lab=VBpr
 L=2u
 W=2u}

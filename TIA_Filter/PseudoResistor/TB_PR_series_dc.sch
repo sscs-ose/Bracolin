@@ -406,6 +406,8 @@ value="
 .control
 save all
 
+set temp = 27
+
 op
 remzerovec 
 write TB_PR_series_dc.raw
@@ -422,7 +424,7 @@ let Rdiff2 = 4/deriv(idiff2)
 save idiff Rdiff idiff2 Rdiff2
 remzerovec
 write TB_PR_series_dc.raw
-wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/plots/data_DC/TB_PR_series_dc.txt idiff Rdiff idiff2 Rdiff2
+wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/plots/data_DC/PR_series_DC_m20.txt idiff Rdiff idiff2 Rdiff2
 
 .endc
 "

@@ -140,12 +140,12 @@ value="
   save imped
   remzerovec
   write TB_PR_single_ac.raw
-  *wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/plots/data_DC/PR_single_AC.txt I(VA) imped
+  *wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/plots/data_DC/PR_single_AC_tt.txt I(VA) imped
 
 .endc
 .save all
 "
-spice_ignore=true}
+}
 C {devices/launcher.sym} 860 -320 0 0 {name=h2
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
@@ -274,4 +274,4 @@ value="
 .endc
 .save all
 "
-}
+spice_ignore=true}

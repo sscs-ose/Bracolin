@@ -31,8 +31,8 @@ logy=1
 x1=-2
 
 linewidth_mult=4.0
-y1=-12
-y2=-8.6
+y1=-15
+y2=-8.8
 x2=5}
 B 2 740 -210 1540 190 {flags=graph
 
@@ -60,8 +60,8 @@ x1=-2
 
 linewidth_mult=4.0
 
-y2=1e+12
-y1=4.4e+08
+y2=9.2e+11
+y1=5.5e+08
 rainbow=1}
 N 520 -230 540 -230 {
 lab=VDD}
@@ -186,12 +186,15 @@ C {devices/gnd.sym} 300 -340 0 1 {name=l3 lab=GND
 }
 C {devices/gnd.sym} 520 -340 0 0 {name=l4 lab=GND
 }
-C {devices/code_shown.sym} -310 -340 0 0 {name=NGSPICE2
+C {devices/code_shown.sym} -430 -340 0 0 {name=NGSPICE2
 simulator=ngspice
 only_toplevel=false 
 value="
 
 .option gmin=1e-15
+.option klu
+*.option ABSTOL=1e-12
+*.option RELTOL=1e-3
 
 .param ibias = 1n
 
@@ -206,14 +209,14 @@ value="
   write TB_PR_series_ac.raw
   set appendwrite
   
-  set temp = 27
-  ac dec 10 10m 1e5
+ 
+  ac dec 10 1m 1e5
   let imped = -V(va)/i(vai)
   let imped2 = -V(va2)/i(vai2)
   save imped imped2
   remzerovec
   write TB_PR_series_ac.raw
-  *wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/plots/data_DC/PR_series_AC.txt
+  *wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/plots/data_DC/PR_series_AC_ff.txt imped
 
 .endc
 .save all

@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.145339
-x2=2.78534
+x1=-0.3826612
+x2=2.2573398
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -35,8 +35,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.145339
-x2=2.78534
+x1=-0.3826612
+x2=2.2573398
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -59,8 +59,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.145339
-x2=2.78534
+x1=-0.3826612
+x2=2.2573398
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -83,8 +83,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.145339
-x2=2.78534
+x1=-0.3826612
+x2=2.2573398
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -99,6 +99,8 @@ rainbow=1
 color="4 5"
 node="i(v27)
 i(v52)"}
+T {INN comes from PMOS CM
+INP comes from NMOS CM} 730 -800 0 0 0.4 0.4 {}
 N -400 -220 -400 -200 {
 lab=GND}
 N -400 -310 -400 -280 {
@@ -363,11 +365,9 @@ value="
 *.param sw_stat_mismatch=1
 *.param sw_stat_global=1
 
-*.include /home/lci-ufsc/Desktop/Bracolin/TIA_Filter/CurrentMirrors/layout/spice/CM_input_pex.spice
+*.include /home/gmaranhao/Desktop/Bracolin/TIA_Filter/CurrentMirrors/layout/gds/CM_input.spice
 
-*subckt CM_input ISBCS INP INP2 INN INN2 VDD VSS
-
-*Xdut ISBCS INp_ INp2_ INn_ INn2_ VDD 0 CM_input
+*XCMpex INn_ INn2_ INp2_ INp_ ISBCS VDD VSS CM_input
 "}
 C {devices/vsource.sym} -400 -250 0 0 {name=Vdd value=3.3
 }
@@ -633,7 +633,8 @@ C {devices/lab_wire.sym} 1040 -770 0 0 {name=p34 sig_type=std_logic lab=INn_
 C {devices/lab_wire.sym} 1070 -790 0 1 {name=p37 sig_type=std_logic lab=INn2_
 }
 C {devices/lab_wire.sym} 890 -1020 0 0 {name=p38 sig_type=std_logic lab=ISBCS}
-C {CurrentMirrors/CM_input.sym} 1060 -890 0 0 {name=x5}
+C {CurrentMirrors/CM_input.sym} 1060 -890 0 0 {name=x5
+}
 C {devices/bsource.sym} -20 -250 0 0 {name=B1 VAR=V FUNC="V(Voutn)"}
 C {devices/bsource.sym} -190 -250 0 1 {name=B2 VAR=V FUNC="V(Voutn)"}
 C {devices/bsource.sym} -90 -250 0 1 {name=B3 VAR=V FUNC="V(Voutn)"}

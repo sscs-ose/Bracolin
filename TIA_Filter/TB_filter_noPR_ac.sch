@@ -38,8 +38,8 @@ hilight_wave=-1
 
 
 divx=10
-y1=-30
-y2=40
+y1=26.000528
+y2=42.670371
 
 
 rainbow=0
@@ -49,8 +49,8 @@ subdivx=8
 subdivy=1
 
 
-x1=-1.21321
-x2=2.39127
+x1=-0.67233753
+x2=1.4536712
 
 sim_type=op
 
@@ -177,6 +177,20 @@ N 800 40 810 40 {
 lab=Vout}
 N 420 40 450 40 {
 lab=VA_PR2}
+N -380 40 -380 80 {
+lab=Vin_neg}
+N -320 40 -320 80 {
+lab=VA_PR2}
+N -380 -370 -380 -330 {
+lab=Vin_pos}
+N -320 -370 -320 -330 {
+lab=VA_PR1}
+N 230 -330 230 -290 {
+lab=VA_PR1}
+N 230 -230 270 -230 {
+lab=VB_PR1}
+N 630 -90 630 -50 {}
+N 570 -90 570 -50 {}
 C {devices/code_shown.sym} -1210 -360 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -250,7 +264,7 @@ C {devices/lab_wire.sym} 140 -330 2 1 {name=p32 sig_type=std_logic lab=VA_PR1}
 C {devices/lab_wire.sym} 140 -150 2 1 {name=p33 sig_type=std_logic lab=VB_PR1}
 C {devices/lab_wire.sym} 380 40 2 1 {name=p40 sig_type=std_logic lab=VA_PR2}
 C {devices/res.sym} -220 -240 3 0 {name=R2
-value=213.2G
+value=200G
 footprint=1206
 device=resistor
 m=1}
@@ -266,7 +280,7 @@ L=9.8e-6
 model=cap_mim_2f0_m4m5_noshield
 spiceprefix=X
 m=1}
-C {symbols/cap_mim_analog.sym} -350 -330 3 0 {name=C3
+C {symbols/cap_mim_analog.sym} -350 -330 3 1 {name=C3
 W=100e-6
 L=100e-6
 model=cap_mim_2f0_m4m5_noshield
@@ -286,47 +300,71 @@ C {devices/vsource.sym} -530 -300 0 0 {name=Vin2 value=1.64985}
 C {devices/vsource.sym} -530 70 0 1 {name=V1 value="1.65 DC 1 AC"
 }
 C {devices/res.sym} -140 -240 3 0 {name=R1
-value=213.2G
+value=200G
 footprint=1206
 device=resistor
 m=1}
 C {devices/res.sym} -70 -240 3 0 {name=R3
-value=213.2G
+value=200G
 footprint=1206
 device=resistor
 m=1}
 C {devices/res.sym} 0 -240 3 0 {name=R5
-value=213.2G
+value=200G
 footprint=1206
 device=resistor
 m=1}
 C {devices/res.sym} 70 -240 3 0 {name=R6
-value=213.2G
+value=200G
 footprint=1206
 device=resistor
 m=1}
 C {devices/res.sym} 480 40 3 0 {name=R4
-value=213.2G
+value=200G
 footprint=1206
 device=resistor
 m=1}
 C {devices/res.sym} 560 40 3 0 {name=R7
-value=213.2G
+value=200G
 footprint=1206
 device=resistor
 m=1}
 C {devices/res.sym} 630 40 3 0 {name=R8
-value=213.2G
+value=200G
 footprint=1206
 device=resistor
 m=1}
 C {devices/res.sym} 700 40 3 0 {name=R9
-value=213.2G
+value=200G
 footprint=1206
 device=resistor
 m=1}
 C {devices/res.sym} 770 40 3 0 {name=R10
-value=213.2G
+value=200G
 footprint=1206
 device=resistor
+m=1}
+C {symbols/cap_mim_analog.sym} -350 80 3 1 {name=C6
+W=100e-6
+L=100e-6
+model=cap_mim_2f0_m4m5_noshield
+spiceprefix=X
+m=1}
+C {symbols/cap_mim_analog.sym} -350 -370 1 1 {name=C7
+W=100e-6
+L=100e-6
+model=cap_mim_2f0_m4m5_noshield
+spiceprefix=X
+m=1}
+C {symbols/cap_mim_analog.sym} 230 -260 0 1 {name=C8
+W=9.8e-6
+L=9.8e-6
+model=cap_mim_2f0_m4m5_noshield
+spiceprefix=X
+m=1}
+C {symbols/cap_mim_analog.sym} 600 -90 1 1 {name=C9
+W=9.8e-6
+L=9.8e-6
+model=cap_mim_2f0_m4m5_noshield
+spiceprefix=X
 m=1}
