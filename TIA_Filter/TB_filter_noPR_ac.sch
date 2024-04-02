@@ -38,8 +38,8 @@ hilight_wave=-1
 
 
 divx=10
-y1=26.000528
-y2=42.670371
+y1=-24
+y2=40
 
 
 rainbow=0
@@ -49,8 +49,8 @@ subdivx=8
 subdivy=1
 
 
-x1=-0.67233753
-x2=1.4536712
+x1=-3
+x2=8
 
 sim_type=op
 
@@ -189,8 +189,10 @@ N 230 -330 230 -290 {
 lab=VA_PR1}
 N 230 -230 270 -230 {
 lab=VB_PR1}
-N 630 -90 630 -50 {}
-N 570 -90 570 -50 {}
+N 630 -90 630 -50 {
+lab=Vout}
+N 570 -90 570 -50 {
+lab=VA_PR2}
 C {devices/code_shown.sym} -1210 -360 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -225,36 +227,9 @@ value=5p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 900 -230 0 0 {name=l11 lab=GND}
-C {devices/code_shown.sym} -1120 -170 0 0 {name=NGSPICE only_toplevel=true
-value="
-.option gmin=1e-16
-
-.param ibias = 1p
-.param it_amp = 2p
-
-.control
-save all
-
-*tran 10u 10m
-*remzerovec
-*write TB_TIA_ac.raw
-*set appendwrite
-
-op
-remzerovec 
-write TB_filter_noPR_ac.raw
-set appendwrite
-
-ac dec 10 1m 1e8
-remzerovec
-write TB_filter_noPR_ac.raw
-
-
-.endc
-"}
 C {Folded/FoldedCascode.sym} 620 -290 0 0 {name=x1}
 C {devices/lab_wire.sym} -420 40 0 0 {name=p4 sig_type=std_logic lab=Vin_neg}
-C {devices/isource.sym} 330 -570 0 1 {name=I0 value=1u}
+C {devices/isource.sym} 330 -570 0 1 {name=I0 value=500n}
 C {devices/gnd.sym} 360 -410 0 1 {name=l3 lab=GND}
 C {devices/vsource.sym} 220 -120 0 0 {name=Vcm value=1.65}
 C {devices/gnd.sym} 220 -60 0 1 {name=l6 lab=GND}
@@ -296,7 +271,7 @@ C {CurrentMirrors/CM_iref.sym} 300 -420 0 0 {name=x3}
 C {devices/lab_wire.sym} 330 -620 0 0 {name=p6 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 390 -550 0 1 {name=p7 sig_type=std_logic lab=iref}
 C {devices/lab_pin.sym} 560 -190 0 0 {name=p8 sig_type=std_logic lab=iref}
-C {devices/vsource.sym} -530 -300 0 0 {name=Vin2 value=1.64985}
+C {devices/vsource.sym} -530 -300 0 0 {name=Vin2 value=1.6498199}
 C {devices/vsource.sym} -530 70 0 1 {name=V1 value="1.65 DC 1 AC"
 }
 C {devices/res.sym} -140 -240 3 0 {name=R1
@@ -368,3 +343,26 @@ L=9.8e-6
 model=cap_mim_2f0_m4m5_noshield
 spiceprefix=X
 m=1}
+C {devices/code_shown.sym} -1230 -150 0 0 {name=NGSPICE1 only_toplevel=true
+value="
+.option gmin=1e-14
+*.option abstol=1e-2
+.option klu
+
+.control
+save all
+
+*op
+*remzerovec 
+*write TB_filter_noPR_ac.raw
+*set appendwrite
+
+ac dec 10 1m 1e8
+remzerovec
+write TB_filter_noPR_ac.raw
+wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/FilterPlots/Filter_noPR_AC_TT.txt V(Vout)
+set appendwrite
+
+.endc
+"
+}

@@ -147,16 +147,6 @@ N -360 260 -360 270 {
 lab=VDD}
 N -430 260 -430 270 {
 lab=VDD}
-C {devices/code_shown.sym} -1370 -200 0 0 {name=MODELS only_toplevel=true
-format="tcleval( @value )"
-value="
-.include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
-.lib $::180MCU_MODELS/sm141064.ngspice cap_mim
-.lib $::180MCU_MODELS/sm141064.ngspice res_typical
-.lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
-.lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
-"}
 C {devices/launcher.sym} 795 -345 0 0 {name=h1
 descr="Click left mouse button here with control key
 pressed to load/unload waveforms in graph."
@@ -168,34 +158,6 @@ C {devices/launcher.sym} 790 -290 0 0 {name=h2
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {devices/code_shown.sym} -1280 -10 0 0 {name=NGSPICE only_toplevel=true
-value="
-.option gmin=1e-14
-*.option abstol=1e-2
-.option klu
-
-*.nodeset all=1.65
-
-*.nodeset V(Vin_neg)=1.65
-
-.param iref = 1u
-.param ipr = 1n
-
-.control
-save all
-
-op
-remzerovec 
-write TB_filter_ac_top2.raw
-set appendwrite
-
-ac dec 10 1m 1e8
-remzerovec
-write TB_filter_ac_top2.raw
-set appendwrite
-
-.endc
-"}
 C {devices/vsource.sym} -720 -20 0 0 {name=VDD value=3.3}
 C {devices/gnd.sym} -720 30 0 0 {name=l1 lab=GND}
 C {devices/lab_wire.sym} -720 -70 0 0 {name=p1 sig_type=std_logic lab=VDD}
@@ -208,7 +170,7 @@ footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 80 10 0 0 {name=l11 lab=GND}
 C {devices/lab_wire.sym} -300 -50 0 0 {name=p4 sig_type=std_logic lab=Vin_neg}
-C {devices/vsource.sym} -530 -40 0 1 {name=Vin1 value=1.64985}
+C {devices/vsource.sym} -530 -40 0 1 {name=Vin1 value=1.65}
 C {devices/gnd.sym} -530 20 0 1 {name=l12 lab=GND}
 C {devices/vsource.sym} -410 -20 0 1 {name=V2 value="1.65 DC 1 AC"
 }
@@ -227,3 +189,46 @@ C {devices/gnd.sym} -340 40 0 1 {name=l2 lab=GND}
 C {devices/gnd.sym} -200 130 0 0 {name=l3 lab=GND}
 C {devices/lab_wire.sym} -250 90 0 0 {name=p3 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} -460 270 0 0 {name=p6 sig_type=std_logic lab=VDD}
+C {devices/code_shown.sym} -1650 -20 0 0 {name=MODELS1 only_toplevel=true
+format="tcleval( @value )"
+value="
+.include $::180MCU_MODELS/design.ngspice
+.lib $::180MCU_MODELS/sm141064.ngspice typical
+.lib $::180MCU_MODELS/sm141064.ngspice cap_mim
+.lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+
+*.param sw_stat_mismatch=1
+*.param sw_stat_global=1
+"}
+C {devices/code_shown.sym} -1560 170 0 0 {name=NGSPICE1 only_toplevel=true
+value="
+.option gmin=1e-14
+*.option abstol=1e-2
+.option klu
+*.option method=gear
+
+*.nodeset all=1.65
+
+*.nodeset V(Vout)=1.645
+
+.param iref = 500n
+.param ipr = 1n
+
+.control
+save all
+
+*op
+*remzerovec 
+*write TB_filter_ac_top2.raw
+*set appendwrite
+
+set temp = 27
+ac dec 10 1m 1e8
+remzerovec
+write TB_filter_ac_top2.raw
+*wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/FilterPlots/Filter_PR_AC_TT_10.txt V(Vout)
+set appendwrite
+
+.endc
+"
+}

@@ -6,8 +6,8 @@ V {}
 S {}
 E {}
 B 2 1410 -360 2210 40 {flags=graph
-y1=-0.079
-y2=3.7
+y1=-0.067
+y2=3.5
 ypos1=0
 ypos2=2
 divy=5
@@ -28,7 +28,7 @@ logy=0
 rainbow=1
 
 linewidth_mult=4
-dataset=1}
+dataset=0}
 B 2 1410 40 2210 440 {flags=graph
 
 
@@ -53,8 +53,8 @@ rainbow=1
 
 linewidth_mult=4
 dataset=0
-y1=-300u
-y2=100u}
+y1=-0.00015
+y2=-4.4e-05}
 P 4 5 -100 -220 1230 -220 1230 -120 -100 -120 -100 -220 {}
 P 4 5 -100 -100 1230 -100 1230 40 -100 40 -100 -100 {}
 T {**A
@@ -321,9 +321,9 @@ vicap icap 0 0
 .control
 save all
 
-let temperature = -40
+let temperature = 27
 
-while temperature<130
+while temperature<28
  reset
  set temp = $&temperature
  remzerovec
@@ -332,7 +332,7 @@ while temperature<130
  set appendwrite
 
  *wrdata /home/cesaralbuquerque/Desktop/out/transient[$&temperature].txt V(out)
- let temperature = temperature + 20
+ let temperature = temperature + 1
 end
 .endc
 .save all
@@ -485,12 +485,6 @@ C {devices/lab_pin.sym} 1100 -10 1 1 {name=p16 sig_type=std_logic lab=2ibias
 }
 C {devices/lab_pin.sym} 850 -10 1 1 {name=p17 sig_type=std_logic lab=ibias
 }
-C {symbols/ppolyf_u.sym} 190 -420 0 0 {name=Rctat
-W=4e-7
-L=500e-6
-model=ppolyf_u
-spiceprefix=X
-m=1}
 C {symbols/pfet_03v3.sym} 210 -550 0 1 {name=M10
 L=4u
 W=5u
@@ -553,4 +547,11 @@ pressed to load/unload waveforms in graph."
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
+}
+C {symbols/ppolyf_u_1k.sym} 190 -420 0 0 {name=R1
+W=1e-6
+L=480e-6
+model=ppolyf_u_1k
+spiceprefix=X
+m=1
 }

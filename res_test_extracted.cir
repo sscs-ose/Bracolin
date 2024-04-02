@@ -1,0 +1,6 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 02/04/2024 12:38
+
+.SUBCKT res_test
+R$1 A A2 B 350 ppolyf_u L=0.8U W=0.8U
+R$2 A_Hs A2_Hs B 1000 ppolyf_u_1k L=1U W=1U
+.ENDS res_test

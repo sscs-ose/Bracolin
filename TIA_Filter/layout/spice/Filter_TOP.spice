@@ -1,13 +1,17 @@
 ** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Filter_TOP.sch
 .subckt Filter_TOP IN_POS IN_NEG VCM OUT VDD VSS I1N I1U IBNOUT IBPOUT
 *.PININFO IN_POS:B IN_NEG:B I1N:B I1U:B VCM:B OUT:B IBNOUT:B IBPOUT:B VDD:B VSS:B
-XC1 net1 OUT 1.9208e-13 cap_mim_2f0_m4m5_noshield A=96.04P P=39.2U
-XC2 net2 VCM 1.9208e-13 cap_mim_2f0_m4m5_noshield A=96.04P P=39.2U
-XC3 IN_POS net2 2e-11 cap_mim_2f0_m4m5_noshield A=10000P P=400U
-XC4 IN_NEG net1 2e-11 cap_mim_2f0_m4m5_noshield A=10000P P=400U
-x2 net2 net1 OUT net3 VDD VSS FoldedCascode
-x3 I1U net3 VSS CM_iref
-x1 I1N net1 net2 VCM OUT IBNOUT IBPOUT VDD VSS PR_CM_net
+C1 VN OUT cap_mim_2f0_m4m5_noshield W=9.8e-6 L=9.8e-6 m=1
+C4 VP VCM cap_mim_2f0_m4m5_noshield W=9.8e-6 L=9.8e-6 m=1
+C7 IN_POS VP cap_mim_2f0_m4m5_noshield W=100e-6 L=100e-6 m=1
+C6 IN_NEG VN cap_mim_2f0_m4m5_noshield W=100e-6 L=100e-6 m=1
+x2 VP VN OUT net1 VDD VSS FoldedCascode
+x3 I1U net1 VSS CM_iref
+x1 I1N VN VP VCM OUT IBNOUT IBPOUT VDD VSS PR_CM_net
+C2 VN OUT cap_mim_2f0_m4m5_noshield W=9.8e-6 L=9.8e-6 m=1
+C3 VP VCM cap_mim_2f0_m4m5_noshield W=9.8e-6 L=9.8e-6 m=1
+C5 IN_NEG VN cap_mim_2f0_m4m5_noshield W=100e-6 L=100e-6 m=1
+C8 IN_POS VP cap_mim_2f0_m4m5_noshield W=100e-6 L=100e-6 m=1
 .ends
 
 * expanding   symbol:  Folded/FoldedCascode.sym # of pins=6
@@ -806,7 +810,7 @@ x3 IBP vc net2 ITP VDD VSS DiffP_net
 .subckt PR_net VA VB VG_N VG_P IB_N IB_P VC VDD VSS
 *.PININFO VA:B VB:B VG_N:B VG_P:B IB_N:B IB_P:B VC:B VDD:B VSS:B
 x1 VDD net1 IB_N net2 VG_N VC VSS PR_nfets
-x2 IB_P VSS VA VB VG_P net1 net2 VDD PR_pfets
+x2 VSS IB_P VA VB VG_P net1 net2 VDD PR_pfets
 .ends
 
 

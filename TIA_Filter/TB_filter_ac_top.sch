@@ -217,11 +217,12 @@ C {devices/code_shown.sym} -1220 -390 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
+.lib $::180MCU_MODELS/sm141064.ngspice fs
 .lib $::180MCU_MODELS/sm141064.ngspice cap_mim
-.lib $::180MCU_MODELS/sm141064.ngspice res_typical
-.lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+
+*.param sw_stat_mismatch=1
+*.param sw_stat_global=1
 "}
 C {devices/launcher.sym} 945 -535 0 0 {name=h1
 descr="Click left mouse button here with control key
@@ -239,31 +240,33 @@ value="
 .option gmin=1e-14
 *.option abstol=1e-2
 .option klu
+*.option method=gear
 
 *.nodeset all=1.65
 
-*.nodeset V(Vin_neg)=1.65
+*.nodeset V(Vout)=1.645
 
-.param iref = 1u
-.param ipr = 0.96n
+.param iref = 500n
+.param ipr = 1n
 
 .control
 save all
 
-set temp=28
+*op
+*remzerovec 
+*write TB_filter_ac_top.raw
+*set appendwrite
 
-op
-remzerovec 
-write TB_filter_ac_top.raw
-set appendwrite
-
+set temp = 27
 ac dec 10 1m 1e8
 remzerovec
 write TB_filter_ac_top.raw
+*wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/FilterPlots/Filter_PR_AC_TT_10.txt V(Vout)
 set appendwrite
 
 .endc
-"}
+"
+}
 C {devices/lab_pin.sym} 610 -320 0 1 {name=p5 sig_type=std_logic lab=Vout}
 C {devices/lab_wire.sym} -410 -360 0 0 {name=p2 sig_type=std_logic lab=Vin_pos}
 C {devices/capa.sym} 600 -290 0 0 {name=C2
@@ -359,5 +362,38 @@ model=cap_mim_2f0_m4m5_noshield
 spiceprefix=X
 m=1
 }
-C {devices/vsource.sym} -510 -330 0 0 {name=Vin value=1.6498199
+C {devices/vsource.sym} -510 -330 0 0 {name=Vin value=1.65
 }
+C {devices/code_shown.sym} -1140 390 0 0 {name=NGSPICE1 only_toplevel=true
+value="
+.option gmin=1e-14
+*.option abstol=1e-2
+.option klu
+
+*.nodeset all=1.65
+
+*.nodeset V(Vin_neg)=1.65
+
+.param iref = 1u
+.param ipr = 1n
+
+
+.control
+let sample_index = 0
+
+while sample_index < 250
+reset
+
+ac dec 10 1m 1e8
+remzerovec
+write TB_filter_ac_top.raw
+*wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/FilterPlots/Filter_PR_AC_TT.txt V(Vout)
+set appendwrite
+
+let sample_index = sample_index + 1
+end
+
+.endc
+.save all
+"
+spice_ignore=true}

@@ -1,0 +1,7 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 28/03/2024 17:19
+
+.SUBCKT Cmim_test
+C$1 METAL4_label_Clow \$6029 1.9208e-13 cap_mim_2f0_m4m5_noshield A=96.04P
++ P=39.2U
+C$2 METAL4_label METAL5_label 2e-11 cap_mim_2f0_m4m5_noshield A=10000P P=400U
+.ENDS Cmim_test
