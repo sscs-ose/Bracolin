@@ -2,7 +2,7 @@
 <report-database>
  <description>GF180 ANTENNA DRC Run Report at</description>
  <original-file/>
- <generator>drc: script='/home/lci-ufsc/pdk/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
+ <generator>drc: script='/home/gmaranhao/pdk/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
  <top-cell>clockGeneratorLayout</top-cell>
  <tags>
  </tags>
