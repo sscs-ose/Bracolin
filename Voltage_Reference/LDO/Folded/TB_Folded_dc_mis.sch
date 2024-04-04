@@ -52,7 +52,7 @@ lab=Vout}
 N 790 -260 790 30 {
 lab=Vout}
 C {devices/vsource.sym} 240 -80 0 0 {name=VDD value=3.3}
-C {devices/isource.sym} 560 -130 0 0 {name=Iref value=250n}
+C {devices/isource.sym} 560 -130 0 0 {name=Iref value=20n}
 C {devices/gnd.sym} 240 -30 0 0 {name=l1 lab=GND}
 C {devices/lab_wire.sym} 240 -130 0 0 {name=p1 sig_type=std_logic lab=AVDD}
 C {devices/lab_wire.sym} 630 -320 0 1 {name=p3 sig_type=std_logic lab=AVDD}
@@ -80,7 +80,7 @@ value="
 .param sw_stat_mismatch=1
 .param sw_stat_global=1
 "}
-C {devices/code_shown.sym} -500 -420 0 0 {name=NGSPICE only_toplevel=true
+C {devices/code_shown.sym} -700 -400 0 0 {name=NGSPICE only_toplevel=true
 value="
 .option gmin=1e-18
 
@@ -94,7 +94,7 @@ reset
 op
 remzerovec 
 write TB_TIA_dc_mis.raw
-wrdata offset.txt V(vout)
+wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/LDO/Folded/plots/offset/offset20n.txt V(vout)
 set appendwrite
 
 let sample_index = sample_index + 1

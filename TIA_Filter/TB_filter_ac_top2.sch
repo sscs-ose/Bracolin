@@ -49,7 +49,7 @@ subdivx=8
 subdivy=1
 
 
-x1=-3
+x1=-5.2
 
 
 sim_type=ac
@@ -60,7 +60,7 @@ node="\\"vout db20()\\""
 
 
 dataset=-1
-x2=8}
+x2=5.8000002}
 N -720 10 -720 30 {
 lab=GND}
 N -720 -70 -720 -50 {
@@ -106,7 +106,7 @@ lab=Vin_pos}
 N -260 -50 -240 -50 {
 lab=Vin_neg}
 N -340 -30 -240 -30 {
-lab=#net3}
+lab=VCM}
 N -340 30 -340 40 {
 lab=GND}
 N -240 110 -240 130 {
@@ -116,31 +116,31 @@ lab=GND}
 N -250 90 -240 90 {
 lab=VDD}
 N 10 90 100 90 {
-lab=#net4}
+lab=IBNOUT}
 N 10 110 70 110 {
-lab=#net5}
+lab=IBPOUT}
 N -410 30 -410 90 {
 lab=GND}
 N -360 110 -360 200 {
-lab=#net6}
+lab=I1U}
 N -360 110 -300 110 {
-lab=#net6}
+lab=I1U}
 N -300 60 -300 110 {
-lab=#net6}
+lab=I1U}
 N -300 60 -240 60 {
-lab=#net6}
+lab=I1U}
 N -320 40 -240 40 {
-lab=#net7}
+lab=I1N}
 N -320 40 -320 80 {
-lab=#net7}
+lab=I1N}
 N -320 80 -320 90 {
-lab=#net7}
+lab=I1N}
 N -380 90 -320 90 {
-lab=#net7}
+lab=I1N}
 N -380 90 -380 200 {
-lab=#net7}
+lab=I1N}
 N -430 200 -380 200 {
-lab=#net7}
+lab=I1N}
 N -460 270 -360 270 {
 lab=VDD}
 N -360 260 -360 270 {
@@ -184,7 +184,8 @@ C {devices/vsource.sym} 70 240 0 1 {name=VDD2 value=1.65}
 C {devices/vsource.sym} 100 220 0 0 {name=VDD3 value=1.65}
 C {devices/gnd.sym} 100 270 0 0 {name=l6 lab=GND}
 C {devices/gnd.sym} 70 290 0 1 {name=l7 lab=GND}
-C {Filter_TOP.sym} -270 180 0 0 {name=x4}
+C {Filter_TOP.sym} -270 180 0 0 {name=x4
+}
 C {devices/gnd.sym} -340 40 0 1 {name=l2 lab=GND}
 C {devices/gnd.sym} -200 130 0 0 {name=l3 lab=GND}
 C {devices/lab_wire.sym} -250 90 0 0 {name=p3 sig_type=std_logic lab=VDD}
@@ -232,3 +233,15 @@ set appendwrite
 .endc
 "
 }
+C {devices/lab_wire.sym} -270 40 0 0 {name=p7 sig_type=std_logic lab=I1N}
+C {devices/lab_wire.sym} -270 60 0 0 {name=p8 sig_type=std_logic lab=I1U}
+C {devices/lab_wire.sym} 60 90 0 0 {name=p9 sig_type=std_logic lab=IBNOUT}
+C {devices/lab_wire.sym} 60 110 0 0 {name=p10 sig_type=std_logic lab=IBPOUT}
+C {devices/lab_wire.sym} -260 -30 0 0 {name=p11 sig_type=std_logic lab=VCM}
+C {devices/code_shown.sym} -600 -265 0 0 {name=DUT only_toplevel=true
+format="tcleval( @value )"
+value="
+*.include "/home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/spice/Filter_TOP_PEX2.spice"
+
+*Xfilter VCM Vin_pos Vin_neg 0 I1U VDD I1N IBNOUT Vout IBPOUT Filter_TOP
+"}

@@ -1,0 +1,28 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 50 -130 50 -50 {}
+L 4 200 -130 200 -50 {}
+L 4 50 -130 200 -130 {}
+L 4 50 -50 200 -50 {}
+L 7 60 -150 60 -130 {}
+L 7 90 -150 90 -130 {}
+L 7 140 -150 140 -130 {}
+L 7 180 -150 180 -130 {}
+B 5 57.5 -152.5 62.5 -147.5 {name=ibias dir=inout}
+B 5 87.5 -152.5 92.5 -147.5 {name=iref_un dir=inout}
+B 5 137.5 -152.5 142.5 -147.5 {name=iref_diff dir=inout}
+B 5 177.5 -152.5 182.5 -147.5 {name=iref dir=inout}
+T {@symname} 76 -76 0 0 0.3 0.3 {}
+T {@name} 35 -112 0 0 0.2 0.2 {}
+T {ibias} 77.5 -129 0 1 0.2 0.2 {}
+T {iref_un} 120 -129 0 1 0.2 0.2 {}
+T {iref_diff} 170 -129 0 1 0.2 0.2 {}
+T {iref} 195 -129 0 1 0.2 0.2 {}

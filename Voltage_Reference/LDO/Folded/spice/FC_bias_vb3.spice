@@ -1,0 +1,25 @@
+** sch_path: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/Folded/FC_bias_vb3.sch
+.subckt FC_bias_vb3 VSS VB3
+*.PININFO VSS:B VB3:B
+M1 VB3 VB3 net1 VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M2 net1 VB3 net3 VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M18 net3 VB3 net2 VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M19 net2 VB3 net5 VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M20 net5 VB3 net4 VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M21 net4 VB3 VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[1] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[2] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[3] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[4] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[5] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[6] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[7] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[8] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[9] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[10] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[11] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[12] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[13] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[14] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+.ends
+.end

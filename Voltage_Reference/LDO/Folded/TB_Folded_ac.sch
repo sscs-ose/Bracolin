@@ -97,20 +97,10 @@ N 390 -250 500 -250 {
 lab=Vin_neg}
 N 680 -290 740 -290 {
 lab=Vout}
-N 390 40 390 60 {
-lab=GND}
-N 390 -190 390 -20 {
-lab=#net2}
-N 710 -40 780 -40 {
-lab=Vout}
-N 390 -40 650 -40 {
-lab=#net2}
 N 740 -290 790 -290 {
 lab=Vout}
-N 780 -40 820 -40 {
-lab=Vout}
-N 820 -290 820 -40 {
-lab=Vout}
+N 390 -190 390 -170 {
+lab=GND}
 C {devices/code_shown.sym} -600 -310 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -131,7 +121,7 @@ descr="Annotate OP"
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
 C {devices/vsource.sym} -190 110 0 0 {name=VDD value=3.3}
-C {devices/isource.sym} 540 -160 0 0 {name=Iref value=5u}
+C {devices/isource.sym} 540 -160 0 0 {name=Iref value=200n}
 C {devices/gnd.sym} -190 160 0 0 {name=l1 lab=GND}
 C {devices/lab_wire.sym} -190 60 0 0 {name=p1 sig_type=std_logic lab=AVDD}
 C {devices/lab_wire.sym} 610 -350 0 1 {name=p3 sig_type=std_logic lab=AVDD}
@@ -139,7 +129,7 @@ C {devices/lab_pin.sym} 890 -290 0 1 {name=p5 sig_type=std_logic lab=Vout}
 C {devices/gnd.sym} 610 -230 0 0 {name=l7 lab=GND}
 C {devices/lab_wire.sym} 380 -330 0 1 {name=p2 sig_type=std_logic lab=Vin}
 C {devices/gnd.sym} 540 -90 0 0 {name=l3 lab=GND}
-C {devices/vsource.sym} 110 -300 0 1 {name=V1 value=1.65
+C {devices/vsource.sym} 390 -220 0 1 {name=V1 value=1.65
 }
 C {devices/gnd.sym} 110 -250 0 0 {name=l2 lab=GND
 }
@@ -152,6 +142,7 @@ C {devices/gnd.sym} 880 -230 0 0 {name=l11 lab=GND}
 C {devices/code_shown.sym} -560 -160 0 0 {name=NGSPICE only_toplevel=true
 value="
 .option gmin=1e-18
+.option klu 
 
 .control
 save all
@@ -163,28 +154,21 @@ save all
 
 op
 remzerovec 
-write TB_TIA_ac.raw
+write TB_Folded_ac.raw
 set appendwrite
 
 ac dec 10 1m 1e9
 remzerovec
-write TB_TIA_ac.raw
+write TB_Folded_ac.raw
 
 
 .endc
 "}
-C {/home/lci-ufsc/Desktop/work_gf180/TIA/FoldedCascode.sym} 600 -290 0 0 {name=x1}
-C {devices/vsource.sym} 390 -220 0 1 {name=V2 value="0 DC 1 AC"
+C {devices/vsource.sym} 110 -300 0 1 {name=V2 value="1.65 DC 1 AC"
 }
-C {devices/capa.sym} 390 10 0 0 {name=C1
-m=1
-value=10T
-footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} 390 60 0 0 {name=l4 lab=GND}
-C {devices/res.sym} 680 -40 1 0 {name=R1
-value=100T
-footprint=1206
-device=resistor
-m=1}
 C {devices/lab_wire.sym} 440 -250 0 0 {name=p4 sig_type=std_logic lab=Vin_neg}
+C {LDO/Folded/FoldedCascode.sym} 600 -290 0 0 {name=x1}
+C {devices/gnd.sym} 390 -170 0 0 {name=l4 lab=GND
+}
+C {devices/vsource.sym} 20 -50 0 1 {name=V3 value="1.6498199 DC 1 AC"
+spice_ignore=true}
