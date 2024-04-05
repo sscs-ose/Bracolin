@@ -67,6 +67,22 @@ N 530 -220 530 -190 {
 lab=iref_un}
 N 720 -220 720 -200 {
 lab=iref_diff}
+N 380 -330 380 -320 {
+lab=GND}
+N 380 -320 440 -320 {
+lab=GND}
+N 440 -330 440 -320 {
+lab=GND}
+N 410 -330 410 -320 {
+lab=GND}
+N 440 -370 440 -330 {
+lab=GND}
+N 380 -370 440 -370 {
+lab=GND}
+N 380 -370 380 -330 {
+lab=GND}
+N 440 -370 460 -370 {
+lab=GND}
 C {devices/gnd.sym} 530 -80 0 0 {name=l6 lab=GND}
 C {symbols/nfet_03v3.sym} 510 -130 0 0 {name=M4[1:6]
 L=2u
@@ -134,3 +150,18 @@ C {devices/iopin.sym} 120 -250 0 1 {name=p3 lab=ibias}
 C {devices/iopin.sym} 340 -220 0 1 {name=p1 lab=iref}
 C {devices/iopin.sym} 530 -220 0 1 {name=p2 lab=iref_un}
 C {devices/iopin.sym} 720 -220 0 1 {name=p4 lab=iref_diff}
+C {symbols/nfet_03v3.sym} 410 -350 3 1 {name=M3[1:37]
+L=2u
+W=2u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {devices/gnd.sym} 460 -370 0 0 {name=l3 lab=GND}

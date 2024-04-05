@@ -1,0 +1,62 @@
+** sch_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/CM_block.sch
+.subckt CM_block ibias iref_un iref_diff iref
+*.PININFO ibias:B iref:B iref_un:B iref_diff:B
+M4[1] iref_un ibias GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M4[2] iref_un ibias GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M4[3] iref_un ibias GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M4[4] iref_un ibias GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M4[5] iref_un ibias GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M4[6] iref_un ibias GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M1[1] iref_diff ibias GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M1[2] iref_diff ibias GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M1[3] iref_diff ibias GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M1[4] iref_diff ibias GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M1[5] iref_diff ibias GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M1[6] iref_diff ibias GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M1[7] iref_diff ibias GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M1[8] iref_diff ibias GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M2[1] iref ibias GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M2[2] iref ibias GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M2[3] iref ibias GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M2[4] iref ibias GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M5 ibias ibias GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[1] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[2] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[3] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[4] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[5] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[6] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[7] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[8] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[9] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[10] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[11] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[12] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[13] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[14] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[15] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[16] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[17] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[18] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[19] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[20] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[21] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[22] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[23] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[24] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[25] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[26] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[27] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[28] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[29] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[30] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[31] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[32] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[33] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[34] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[35] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[36] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[37] GND GND GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+.ends
+.GLOBAL GND
+.end
