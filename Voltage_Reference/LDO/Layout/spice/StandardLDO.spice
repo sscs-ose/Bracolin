@@ -1,0 +1,690 @@
+** sch_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/StandardLDO.sch
+.subckt StandardLDO ibias AVDD vg Vin Vout vref_off
+*.PININFO Vout:B AVDD:B ibias:B Vin:B vg:B vref_off:B
+M1[1] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[2] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[3] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[4] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[5] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[6] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[7] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[8] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[9] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[10] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[11] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[12] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[13] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[14] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[15] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[16] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[17] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[18] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[19] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[20] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[21] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[22] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[23] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[24] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[25] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[26] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[27] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[28] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[29] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[30] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[31] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[32] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[33] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[34] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[35] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[36] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[37] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[38] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[39] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[40] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[41] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[42] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[43] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[44] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[45] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[46] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[47] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[48] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[49] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[50] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[51] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[52] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[53] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[54] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[55] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[56] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[57] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[58] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[59] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[60] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[61] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[62] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[63] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[64] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[65] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[66] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[67] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[68] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[69] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[70] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[71] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[72] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[73] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[74] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[75] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[76] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[77] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[78] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[79] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[80] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[81] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[82] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[83] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[84] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[85] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[86] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[87] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[88] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[89] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[90] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[91] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[92] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[93] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[94] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[95] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[96] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[97] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[98] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[99] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[100] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[101] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[102] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[103] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[104] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[105] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[106] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[107] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[108] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[109] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[110] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[111] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[112] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[113] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[114] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[115] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[116] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[117] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[118] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[119] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[120] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[121] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[122] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[123] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[124] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[125] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[126] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[127] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[128] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[129] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[130] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[131] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[132] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[133] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[134] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[135] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[136] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[137] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[138] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[139] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[140] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[141] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[142] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[143] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[144] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[145] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[146] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[147] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[148] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[149] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[150] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[151] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[152] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[153] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[154] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[155] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[156] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[157] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[158] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[159] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[160] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[161] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[162] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[163] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[164] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[165] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[166] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[167] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[168] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[169] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[170] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[171] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[172] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[173] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[174] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[175] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[176] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[177] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[178] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[179] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[180] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[181] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[182] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[183] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[184] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[185] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[186] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[187] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[188] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[189] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[190] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[191] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[192] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[193] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[194] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[195] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[196] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[197] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[198] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[199] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+M1[200] Vout vg AVDD AVDD pfet_03v3 L=1u W=16u nf=1 m=1
+x1 vref_off Vin vg ibias AVDD GND FoldedCascode
+x2 Vout vref_off Res_Div
+.ends
+
+* expanding   symbol:  LDO/Folded/FoldedCascode.sym # of pins=6
+** sym_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FoldedCascode.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FoldedCascode.sch
+.subckt FoldedCascode VP VN vout IREF AVDD AVSS
+*.PININFO AVDD:B AVSS:B vout:B VP:B VN:B IREF:B
+x7 v2 v1 M3_D vout vb3 vb3 AVSS FC_nfets
+x5 AVSS AVSS v2 v1 vb2 vb2 AVSS FC_nfets_x2
+x1 AVDD AVDD net1 net1 IREF IREF AVDD FC_pfets_x4
+x2 net1 net1 v2 v1 VP VN AVDD FC_pfets_x4
+x3 net2 net3 M3_D vout vb4 vb4 AVDD FC_pfets_x4
+x4 AVDD AVDD net2 net3 M3_D M3_D AVDD FC_pfets_x4
+x11 IREF IREF vb2 vb3 vb4 AVDD AVSS FC_bias_net
+.ends
+
+
+* expanding   symbol:  LDO/Res_Div.sym # of pins=2
+** sym_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Res_Div.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Res_Div.sch
+.subckt Res_Div Vout vref_off
+*.PININFO Vout:B vref_off:B
+R2 net1 Vout GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R4 net2 net3 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R1 net4 net1 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R3 net5 net4 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R5 vref_off net5 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R6 net6 vref_off GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R7 net7 net6 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R8 net8 net7 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R9 net3 net8 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R10 AB net9 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R11 net10 net2 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R12 net11 net10 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R13 net12 net11 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R14 net9 net12 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R15 net13 net14 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R16 net15 AB GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R17 net16 net15 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R18 net17 net16 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R19 net14 net17 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R21 net18 net13 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R22 net19 net18 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R23 net20 net19 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R24 GND net20 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[1] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[2] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[3] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[4] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[5] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[6] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[7] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[8] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[9] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[10] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[11] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[12] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[13] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[14] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[15] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[16] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[17] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[18] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[19] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[20] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[21] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[22] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[23] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[24] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[25] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[26] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+.ends
+
+
+* expanding   symbol:  LDO/Folded/FC_nfets.sym # of pins=7
+** sym_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FC_nfets.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FC_nfets.sch
+.subckt FC_nfets S1 S2 D1 D2 G1 G2 B
+*.PININFO S1:B S2:B D1:B D2:B G1:B G2:B B:B
+M1[1] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M1[2] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M1[3] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M1[4] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M1[5] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M1[6] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M1[7] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M1[8] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M1[9] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M1[10] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M1[11] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M1[12] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M1[13] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M1[14] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M1[15] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M1[16] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M1[17] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M1[18] D1 G1 S1 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2[1] D2 G2 S2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2[2] D2 G2 S2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2[3] D2 G2 S2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2[4] D2 G2 S2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2[5] D2 G2 S2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2[6] D2 G2 S2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2[7] D2 G2 S2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2[8] D2 G2 S2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2[9] D2 G2 S2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2[10] D2 G2 S2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2[11] D2 G2 S2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2[12] D2 G2 S2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2[13] D2 G2 S2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2[14] D2 G2 S2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2[15] D2 G2 S2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2[16] D2 G2 S2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2[17] D2 G2 S2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M2[18] D2 G2 S2 B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[1] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[2] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[3] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[4] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[5] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[6] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[7] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[8] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[9] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[10] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[11] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[12] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[13] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[14] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[15] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[16] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[17] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[18] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[19] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[20] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[21] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[22] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[23] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[24] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[25] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[26] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[27] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[28] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[29] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+M3[30] B B B B nfet_03v3 L=2u W=2u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  LDO/Folded/FC_nfets_x2.sym # of pins=7
+** sym_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FC_nfets_x2.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FC_nfets_x2.sch
+.subckt FC_nfets_x2 S1 S2 D1 D2 G1 G2 B
+*.PININFO S1:B S2:B D1:B D2:B G1:B G2:B B:B
+x1[1] S1 S2 D1 D2 G1 G2 B FC_nfets
+x1[2] S1 S2 D1 D2 G1 G2 B FC_nfets
+.ends
+
+
+* expanding   symbol:  LDO/Folded/FC_pfets_x4.sym # of pins=7
+** sym_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FC_pfets_x4.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FC_pfets_x4.sch
+.subckt FC_pfets_x4 S1 S2 D1 D2 G1 G2 B
+*.PININFO S1:B S2:B D1:B D2:B G1:B G2:B B:B
+x1[1] S1 S2 D1 D2 G1 G2 B FC_pfets
+x1[2] S1 S2 D1 D2 G1 G2 B FC_pfets
+x1[3] S1 S2 D1 D2 G1 G2 B FC_pfets
+x1[4] S1 S2 D1 D2 G1 G2 B FC_pfets
+.ends
+
+
+* expanding   symbol:  LDO/Folded/FC_bias_net.sym # of pins=7
+** sym_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FC_bias_net.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FC_bias_net.sch
+.subckt FC_bias_net IREF VB1 VB2 VB3 VB4 VDD VSS
+*.PININFO VDD:B VSS:B VB2:B IREF:B VB3:B VB4:B VB1:B
+x8 VB3 VSS FC_bias_vb3
+x9 VB4 VDD FC_bias_vb4
+x10 VB2 VB4 VSS FC_bias_nfets
+x1 VB1 VB2 VB3 IREF VDD FC_bias_pfets
+.ends
+
+
+* expanding   symbol:  LDO/Folded/FC_pfets.sym # of pins=7
+** sym_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FC_pfets.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FC_pfets.sch
+.subckt FC_pfets S1 S2 D1 D2 G1 G2 B
+*.PININFO S1:B S2:B D1:B D2:B G1:B G2:B B:B
+M1[1] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[2] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[3] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[4] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[5] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[6] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[7] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[8] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[9] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[10] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[11] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[12] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[13] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[14] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[15] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[16] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[17] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[18] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[19] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[20] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[21] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M1[22] D1 G1 S1 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[1] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[2] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[3] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[4] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[5] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[6] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[7] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[8] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[9] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[10] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[11] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[12] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[13] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[14] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[15] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[16] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[17] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[18] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[19] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[20] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[21] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M2[22] D2 G2 S2 B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[1] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[2] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[3] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[4] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[5] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[6] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[7] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[8] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[9] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[10] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[11] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[12] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[13] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[14] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[15] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[16] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[17] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[18] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[19] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[20] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[21] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[22] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[23] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[24] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[25] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[26] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[27] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[28] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[29] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[30] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[31] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[32] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[33] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+M3[34] B B B B pfet_03v3 L=2u W=2u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  LDO/Folded/FC_bias_vb3.sym # of pins=2
+** sym_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FC_bias_vb3.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FC_bias_vb3.sch
+.subckt FC_bias_vb3 VB3 VSS
+*.PININFO VSS:B VB3:B
+M1 VB3 VB3 net1 VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M2 net1 VB3 net3 VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M18 net3 VB3 net2 VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M19 net2 VB3 net5 VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M20 net5 VB3 net4 VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M21 net4 VB3 VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[1] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[2] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[3] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[4] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[5] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[6] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[7] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[8] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[9] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[10] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[11] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[12] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[13] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+M3[14] VSS VSS VSS VSS nfet_03v3 L=2u W=1.2u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  LDO/Folded/FC_bias_vb4.sym # of pins=2
+** sym_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FC_bias_vb4.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FC_bias_vb4.sch
+.subckt FC_bias_vb4 VB4 VDD
+*.PININFO VDD:B VB4:B
+M3 net1 VB4 VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M4 net3 VB4 net1 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M5 net2 VB4 net3 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M6 net7 VB4 net2 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M7 net4 VB4 net7 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M8 net6 VB4 net4 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M9 net5 VB4 net6 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M10 net8 VB4 net5 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M11 net12 VB4 net8 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M12 net9 VB4 net12 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M13 net11 VB4 net9 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M14 net10 VB4 net11 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M17 VB4 VB4 net10 VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[1] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[2] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[3] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[4] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[5] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[6] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[7] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[8] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[9] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[10] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[11] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[12] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[13] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[14] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[15] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[16] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[17] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[18] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[19] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[20] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[21] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[22] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+M1[23] VDD VDD VDD VDD pfet_03v3 L=2u W=1.2u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  LDO/Folded/FC_bias_nfets.sym # of pins=3
+** sym_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FC_bias_nfets.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FC_bias_nfets.sch
+.subckt FC_bias_nfets VB2 VB4 VSS
+*.PININFO VB4:B VB2:B VSS:B
+M17[1] VB2 VB2 VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M17[2] VB2 VB2 VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M17[3] VB2 VB2 VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M17[4] VB2 VB2 VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M12[1] VB4 VB2 VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M12[2] VB4 VB2 VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M12[3] VB4 VB2 VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M12[4] VB4 VB2 VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M1[1] VSS VSS VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M1[2] VSS VSS VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M1[3] VSS VSS VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M1[4] VSS VSS VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M1[5] VSS VSS VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M1[6] VSS VSS VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M1[7] VSS VSS VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M1[8] VSS VSS VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M1[9] VSS VSS VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M1[10] VSS VSS VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M1[11] VSS VSS VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M1[12] VSS VSS VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M1[13] VSS VSS VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M1[14] VSS VSS VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M1[15] VSS VSS VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+M1[16] VSS VSS VSS VSS nfet_03v3 L=2u W=2.25u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  LDO/Folded/FC_bias_pfets.sym # of pins=5
+** sym_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FC_bias_pfets.sym
+** sch_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Folded/FC_bias_pfets.sch
+.subckt FC_bias_pfets VB1 VB2 VB3 IREF VDD
+*.PININFO IREF:B VDD:B VB1:B VB2:B VB3:B
+M13[1] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[2] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[3] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[4] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[5] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[6] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[7] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[8] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[9] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[10] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[11] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[12] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[13] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[14] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[15] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[16] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[17] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[18] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[19] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[20] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[21] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M13[22] IREF VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[1] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[2] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[3] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[4] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[5] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[6] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[7] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[8] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[9] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[10] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[11] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[12] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[13] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[14] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[15] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[16] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[17] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[18] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[19] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[20] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[21] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M14[22] VB3 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[1] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[2] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[3] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[4] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[5] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[6] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[7] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[8] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[9] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[10] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[11] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[12] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[13] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[14] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[15] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[16] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[17] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[18] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[19] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[20] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[21] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M15[22] VB2 VB1 VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[1] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[2] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[3] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[4] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[5] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[6] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[7] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[8] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[9] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[10] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[11] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[12] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[13] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[14] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[15] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[16] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[17] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[18] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[19] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[20] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[21] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[22] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[23] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[24] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[25] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[26] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[27] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[28] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[29] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[30] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[31] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[32] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[33] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[34] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[35] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[36] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[37] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+M1[38] VDD VDD VDD VDD pfet_03v3 L=2u W=2u nf=1 m=1
+.ends
+
+.GLOBAL GND
+.end

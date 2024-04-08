@@ -1,0 +1,55 @@
+** sch_path: /home/gmaranhao/Desktop/Bracolin/Voltage_Reference/LDO/Res_Div.sch
+.subckt Res_Div Vout vref_off
+*.PININFO Vout:B vref_off:B
+R2 net1 Vout GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R4 net2 net3 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R1 net4 net1 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R3 net5 net4 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R5 vref_off net5 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R6 net6 vref_off GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R7 net7 net6 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R8 net8 net7 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R9 net3 net8 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R10 AB net9 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R11 net10 net2 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R12 net11 net10 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R13 net12 net11 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R14 net9 net12 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R15 net13 net14 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R16 net15 AB GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R17 net16 net15 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R18 net17 net16 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R19 net14 net17 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R21 net18 net13 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R22 net19 net18 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R23 net20 net19 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R24 GND net20 GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[1] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[2] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[3] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[4] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[5] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[6] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[7] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[8] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[9] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[10] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[11] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[12] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[13] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[14] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[15] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[16] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[17] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[18] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[19] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[20] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[21] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[22] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[23] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[24] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[25] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+R20[26] GND GND GND ppolyf_u_1k W=2e-6 L=10e-6 m=1
+.ends
+.GLOBAL GND
+.end

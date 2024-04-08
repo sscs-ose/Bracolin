@@ -371,40 +371,26 @@ N 440 320 540 320 {
 lab=i_in}
 N 560 420 560 600 {
 lab=gnd}
-N 920 720 940 720 {
-lab=vdd}
-N 920 680 920 720 {
-lab=vdd}
-N 920 680 1020 680 {
-lab=vdd}
-N 1020 680 1020 720 {
-lab=vdd}
-N 1000 720 1020 720 {
-lab=vdd}
-N 970 720 970 750 {
-lab=vdd}
-N 920 750 970 750 {
-lab=vdd}
-N 920 720 920 750 {
-lab=vdd}
-N 970 750 1020 750 {
-lab=vdd}
-N 1020 720 1020 750 {
-lab=vdd}
-C {symbols/pfet_03v3.sym} 970 400 1 0 {name=MP14
-L=2u
-W=2u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=pfet_03v3
-spiceprefix=X
-}
+N 770 440 790 440 {
+lab=gnd}
+N 770 400 770 440 {
+lab=gnd}
+N 770 400 870 400 {
+lab=gnd}
+N 870 400 870 440 {
+lab=gnd}
+N 850 440 870 440 {
+lab=gnd}
+N 820 440 820 470 {
+lab=gnd}
+N 770 470 820 470 {
+lab=gnd}
+N 770 440 770 470 {
+lab=gnd}
+N 820 470 870 470 {
+lab=gnd}
+N 870 440 870 470 {
+lab=gnd}
 C {devices/lab_wire.sym} 540 -160 0 0 {name=p12 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 1290 140 0 0 {name=p4 sig_type=std_logic lab=VG_diode1}
 C {devices/iopin.sym} 380 110 2 0 {name=p5 lab=i_in}
@@ -434,7 +420,7 @@ C {symbols_vr/SCM_VR.sym} 2620 280 0 0 {name=x13}
 C {symbols_vr/PMOS_series_20_25.sym} 3190 -60 0 0 {name=x14}
 C {symbols_vr/PMOS_series_20_2.sym} 800 -60 0 1 {name=x1}
 C {symbols_vr/CM_in.sym} 560 380 0 0 {name=x2}
-C {symbols/pfet_03v3.sym} 970 700 1 0 {name=MP1[1:8]
+C {symbols/pfet_03v3.sym} 820 420 1 0 {name=MP1[1:8]
 L=2u
 W=2u
 nf=1
@@ -448,4 +434,18 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {devices/lab_wire.sym} 1020 680 0 0 {name=p9 sig_type=std_logic lab=vdd}
+C {devices/lab_wire.sym} 870 400 0 0 {name=p9 sig_type=std_logic lab=gnd}
+C {symbols/pfet_03v3.sym} 970 400 1 0 {name=MP2
+L=2u
+W=2u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}

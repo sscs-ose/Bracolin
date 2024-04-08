@@ -69,6 +69,12 @@ N 750 -800 750 -730 {
 lab=vref_off}
 N 660 -750 750 -750 {
 lab=vref_off}
+N 360 -870 380 -870 {
+lab=GND}
+N 380 -870 380 -810 {
+lab=GND}
+N 360 -810 380 -810 {
+lab=GND}
 C {symbols/ppolyf_u_1k.sym} 750 -1040 0 1 {name=R2
 W=2e-6
 L=10e-6
@@ -243,3 +249,12 @@ C {devices/gnd.sym} 800 -950 0 0 {name=l5 lab=GND
 }
 C {devices/iopin.sym} 380 -1010 0 0 {name=p1 lab=Vout}
 C {devices/iopin.sym} 380 -970 0 0 {name=p2 lab=vref_off}
+C {symbols/ppolyf_u_1k.sym} 360 -840 0 1 {name=R20[1:26]
+W=2e-6
+L=10e-6
+model=ppolyf_u_1k
+spiceprefix=X
+m=1
+}
+C {devices/gnd.sym} 380 -810 0 0 {name=l2 lab=GND
+}

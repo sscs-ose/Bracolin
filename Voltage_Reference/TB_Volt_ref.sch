@@ -70,7 +70,8 @@ set appendwrite
 
   
 .endc
-"}
+"
+spice_ignore=true}
 C {devices/code_shown.sym} -670 -620 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -82,7 +83,15 @@ value="
 }
 C {devices/isource.sym} 200 -220 0 0 {name=I0 value=1n}
 C {devices/lab_wire.sym} 200 -280 0 0 {name=p1 sig_type=std_logic lab=vdd}
-C {devices/code_shown.sym} -610 50 0 0 {name=SPICE2 only_toplevel=false
+C {devices/launcher.sym} 570 -500 0 0 {name=h1
+descr="Annotate OP" 
+tclcommand="set show_hidden_texts 1; xschem annotate_op"}
+C {devices/launcher.sym} 580 -460 0 0 {name=h2
+descr="Ctrl + botão esquerdo para carregar"
+tclcommand="
+xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw dc
+"}
+C {devices/code_shown.sym} -620 -30 0 0 {name=SPICE3 only_toplevel=false
 value="
 .option gmin = 1e-15
 *.option reltol = 1e2
@@ -95,22 +104,13 @@ save all
 remzerovec
 set temp = 27
 op
-write tb_voltage_reference_2.raw
+write TB_Volt_ref.raw
 set appendwrite
 
   
 remzerovec
 dc TEMP -10 80 5
-write tb_voltage_reference_2.raw
+write TB_Volt_ref.raw
 
 .endc
-"
-spice_ignore=true}
-C {devices/launcher.sym} 570 -500 0 0 {name=h1
-descr="Annotate OP" 
-tclcommand="set show_hidden_texts 1; xschem annotate_op"}
-C {devices/launcher.sym} 580 -460 0 0 {name=h2
-descr="Ctrl + botão esquerdo para carregar"
-tclcommand="
-xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw dc
 "}

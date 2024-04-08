@@ -1,0 +1,1731 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 08/04/2024 16:30
+
+.SUBCKT Voltage_Reference gnd vdd IOUT Vref i_in
+M$1 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$2 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$3 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$4 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$5 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$6 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$7 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$8 \$23 IOUT \$9 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$9 \$24 IOUT \$23 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$10 \$25 IOUT \$24 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$11 \$26 IOUT \$25 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$12 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$13 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$14 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$15 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$16 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$17 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$18 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$19 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$20 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$21 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$22 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$23 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$24 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$25 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$26 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$27 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$28 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$29 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$30 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$31 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$32 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$33 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$34 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$35 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$36 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$37 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$38 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$39 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$40 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$41 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$42 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$43 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$44 \$97 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$45 \$98 IOUT \$97 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$46 \$99 IOUT \$98 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$47 \$100 IOUT \$99 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$48 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$49 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$50 \$101 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$51 \$102 IOUT \$101 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$52 \$103 IOUT \$102 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$53 \$104 IOUT \$103 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$54 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$55 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$56 \$105 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$57 \$106 IOUT \$105 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$58 \$107 IOUT \$106 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$59 \$108 IOUT \$107 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$60 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$61 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$62 \$109 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$63 \$110 IOUT \$109 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$64 \$111 IOUT \$110 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$65 \$112 IOUT \$111 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$66 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$67 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$68 \$113 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$69 \$114 IOUT \$113 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$70 \$115 IOUT \$114 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$71 \$116 IOUT \$115 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$72 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$73 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$74 \$47 IOUT \$46 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$75 \$48 IOUT \$47 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$76 \$49 IOUT \$48 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$77 \$26 IOUT \$49 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$78 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$79 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$80 \$176 IOUT \$175 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$81 \$177 IOUT \$176 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$82 \$178 IOUT \$177 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$83 \$100 IOUT \$178 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$84 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$85 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$86 \$180 IOUT \$179 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$87 \$181 IOUT \$180 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$88 \$182 IOUT \$181 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$89 \$104 IOUT \$182 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$90 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$91 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$92 \$184 IOUT \$183 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$93 \$185 IOUT \$184 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$94 \$186 IOUT \$185 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$95 \$108 IOUT \$186 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$96 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$97 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$98 \$188 IOUT \$187 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$99 \$189 IOUT \$188 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$100 \$190 IOUT \$189 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$101 \$112 IOUT \$190 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$102 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$103 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$104 \$192 IOUT \$191 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$105 \$193 IOUT \$192 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$106 \$194 IOUT \$193 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$107 \$116 IOUT \$194 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$108 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$109 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$110 \$118 IOUT \$46 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$111 \$119 IOUT \$118 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$112 \$120 IOUT \$119 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$113 \$121 IOUT \$120 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$114 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$115 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$116 \$248 IOUT \$175 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$117 \$249 IOUT \$248 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$118 \$250 IOUT \$249 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$119 \$251 IOUT \$250 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$120 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$121 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$122 \$252 IOUT \$179 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$123 \$253 IOUT \$252 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$124 \$254 IOUT \$253 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$125 \$255 IOUT \$254 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$126 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$127 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$128 \$256 IOUT \$183 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$129 \$257 IOUT \$256 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$130 \$258 IOUT \$257 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$131 \$259 IOUT \$258 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$132 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$133 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$134 \$260 IOUT \$187 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$135 \$261 IOUT \$260 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$136 \$262 IOUT \$261 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$137 \$263 IOUT \$262 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$138 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$139 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$140 \$264 IOUT \$191 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$141 \$265 IOUT \$264 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$142 \$266 IOUT \$265 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$143 \$267 IOUT \$266 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$144 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$145 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$146 \$201 IOUT \$200 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$147 \$202 IOUT \$201 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$148 \$203 IOUT \$202 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$149 \$121 IOUT \$203 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$150 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$151 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$152 \$323 IOUT \$322 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$153 \$324 IOUT \$323 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$154 \$325 IOUT \$324 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$155 \$251 IOUT \$325 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$156 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$157 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$158 \$327 IOUT \$326 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$159 \$328 IOUT \$327 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$160 \$329 IOUT \$328 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$161 \$255 IOUT \$329 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$162 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$163 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$164 \$331 IOUT \$330 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$165 \$332 IOUT \$331 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$166 \$333 IOUT \$332 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$167 \$259 IOUT \$333 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$168 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$169 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$170 \$335 IOUT \$334 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$171 \$336 IOUT \$335 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$172 \$337 IOUT \$336 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$173 \$263 IOUT \$337 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$174 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$175 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$176 \$339 IOUT \$338 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$177 \$340 IOUT \$339 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$178 \$341 IOUT \$340 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$179 \$267 IOUT \$341 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$180 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$181 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$182 \$272 IOUT \$200 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$183 \$273 IOUT \$272 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$184 \$274 IOUT \$273 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$185 vdd IOUT \$274 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$186 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$187 gnd gnd gnd gnd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$188 gnd gnd gnd gnd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$189 gnd gnd gnd gnd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$190 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$191 \$388 IOUT \$322 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$192 \$389 IOUT \$388 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$193 \$390 IOUT \$389 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$194 vdd IOUT \$390 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$195 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$196 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$197 \$391 IOUT \$326 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$198 \$392 IOUT \$391 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$199 \$393 IOUT \$392 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$200 vdd IOUT \$393 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$201 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$202 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$203 \$394 IOUT \$330 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$204 \$395 IOUT \$394 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$205 \$396 IOUT \$395 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$206 vdd IOUT \$396 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$207 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$208 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$209 \$397 IOUT \$334 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$210 \$398 IOUT \$397 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$211 \$399 IOUT \$398 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$212 vdd IOUT \$399 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$213 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$214 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$215 \$400 IOUT \$338 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$216 \$401 IOUT \$400 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$217 \$402 IOUT \$401 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$218 vdd IOUT \$402 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$219 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$220 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$221 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$222 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$223 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$224 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$225 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$226 gnd gnd gnd gnd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$227 \$4 \$4 \$4 gnd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$228 gnd gnd gnd gnd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$229 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$230 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$231 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$232 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$233 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$234 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$235 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$236 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$237 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$238 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$239 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$240 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$241 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$242 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$243 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$244 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$245 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$246 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$247 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$248 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$249 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$250 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$251 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$252 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$253 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$254 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$255 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$256 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$257 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$258 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$259 gnd gnd gnd gnd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$260 gnd gnd gnd gnd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$261 gnd gnd gnd gnd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$262 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$263 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$264 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$265 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$266 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$267 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$268 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$269 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$270 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$271 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$272 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$273 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$274 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$275 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$276 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$277 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$278 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$279 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$280 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$281 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$282 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$283 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$284 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$285 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$286 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$287 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$288 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$289 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$290 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$291 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$292 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$293 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$294 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$295 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$296 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$297 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$298 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$299 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$300 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$301 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$302 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$303 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$304 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$305 \$541 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$306 \$542 IOUT \$541 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$307 \$543 IOUT \$542 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$308 \$544 IOUT \$543 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$309 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$310 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$311 \$545 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$312 \$546 IOUT \$545 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$313 \$547 IOUT \$546 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$314 \$548 IOUT \$547 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$315 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$316 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$317 \$549 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$318 \$550 IOUT \$549 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$319 \$551 IOUT \$550 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$320 \$552 IOUT \$551 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$321 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$322 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$323 \$553 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$324 \$554 IOUT \$553 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$325 \$555 IOUT \$554 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$326 \$556 IOUT \$555 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$327 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$328 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$329 \$557 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$330 \$558 IOUT \$557 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$331 \$559 IOUT \$558 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$332 \$560 IOUT \$559 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$333 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$334 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$335 \$490 IOUT \$477 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$336 \$491 IOUT \$490 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$337 \$492 IOUT \$491 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$338 \$493 IOUT \$492 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$339 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$340 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$341 \$615 IOUT \$4 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$342 \$616 IOUT \$615 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$343 \$617 IOUT \$616 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$344 \$618 IOUT \$617 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$345 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$346 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$347 \$620 IOUT \$619 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$348 \$621 IOUT \$620 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$349 \$622 IOUT \$621 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$350 \$544 IOUT \$622 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$351 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$352 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$353 \$624 IOUT \$623 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$354 \$625 IOUT \$624 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$355 \$626 IOUT \$625 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$356 \$548 IOUT \$626 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$357 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$358 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$359 \$628 IOUT \$627 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$360 \$629 IOUT \$628 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$361 \$630 IOUT \$629 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$362 \$552 IOUT \$630 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$363 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$364 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$365 \$632 IOUT \$631 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$366 \$633 IOUT \$632 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$367 \$634 IOUT \$633 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$368 \$556 IOUT \$634 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$369 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$370 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$371 \$636 IOUT \$635 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$372 \$637 IOUT \$636 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$373 \$638 IOUT \$637 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$374 \$560 IOUT \$638 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$375 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$376 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$377 \$563 IOUT \$562 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$378 \$564 IOUT \$563 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$379 \$565 IOUT \$564 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$380 \$493 IOUT \$565 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$381 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$382 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$383 \$698 IOUT \$697 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$384 \$699 IOUT \$698 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$385 \$700 IOUT \$699 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$386 \$618 IOUT \$700 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$387 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$388 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$389 \$701 IOUT \$619 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$390 \$702 IOUT \$701 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$391 \$703 IOUT \$702 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$392 \$704 IOUT \$703 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$393 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$394 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$395 \$705 IOUT \$623 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$396 \$706 IOUT \$705 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$397 \$707 IOUT \$706 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$398 \$708 IOUT \$707 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$399 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$400 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$401 \$709 IOUT \$627 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$402 \$710 IOUT \$709 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$403 \$711 IOUT \$710 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$404 \$712 IOUT \$711 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$405 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$406 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$407 \$713 IOUT \$631 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$408 \$714 IOUT \$713 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$409 \$715 IOUT \$714 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$410 \$716 IOUT \$715 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$411 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$412 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$413 \$717 IOUT \$635 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$414 \$718 IOUT \$717 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$415 \$719 IOUT \$718 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$416 \$720 IOUT \$719 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$417 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$418 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$419 \$643 IOUT \$562 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$420 \$644 IOUT \$643 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$421 \$645 IOUT \$644 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$422 \$646 IOUT \$645 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$423 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$424 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$425 \$778 IOUT \$697 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$426 \$779 IOUT \$778 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$427 \$780 IOUT \$779 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$428 \$781 IOUT \$780 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$429 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$430 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$431 \$783 IOUT \$782 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$432 \$784 IOUT \$783 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$433 \$785 IOUT \$784 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$434 \$704 IOUT \$785 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$435 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$436 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$437 \$787 IOUT \$786 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$438 \$788 IOUT \$787 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$439 \$789 IOUT \$788 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$440 \$708 IOUT \$789 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$441 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$442 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$443 \$791 IOUT \$790 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$444 \$792 IOUT \$791 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$445 \$793 IOUT \$792 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$446 \$712 IOUT \$793 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$447 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$448 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$449 \$795 IOUT \$794 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$450 \$796 IOUT \$795 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$451 \$797 IOUT \$796 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$452 \$716 IOUT \$797 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$453 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$454 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$455 \$799 IOUT \$798 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$456 \$800 IOUT \$799 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$457 \$801 IOUT \$800 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$458 \$720 IOUT \$801 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$459 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$460 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$461 \$726 IOUT \$725 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$462 \$727 IOUT \$726 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$463 \$728 IOUT \$727 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$464 \$646 IOUT \$728 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$465 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$466 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$467 \$860 IOUT \$859 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$468 \$861 IOUT \$860 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$469 \$862 IOUT \$861 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$470 \$781 IOUT \$862 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$471 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$472 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$473 \$863 IOUT \$782 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$474 \$864 IOUT \$863 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$475 \$865 IOUT \$864 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$476 vdd IOUT \$865 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$477 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$478 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$479 \$866 IOUT \$786 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$480 \$867 IOUT \$866 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$481 \$868 IOUT \$867 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$482 vdd IOUT \$868 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$483 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$484 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$485 \$869 IOUT \$790 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$486 \$870 IOUT \$869 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$487 \$871 IOUT \$870 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$488 vdd IOUT \$871 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$489 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$490 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$491 \$872 IOUT \$794 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$492 \$873 IOUT \$872 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$493 \$874 IOUT \$873 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$494 vdd IOUT \$874 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$495 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$496 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$497 \$875 IOUT \$798 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$498 \$876 IOUT \$875 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$499 \$877 IOUT \$876 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$500 vdd IOUT \$877 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$501 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$502 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$503 \$809 IOUT \$725 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$504 \$810 IOUT \$809 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$505 \$811 IOUT \$810 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$506 vdd IOUT \$811 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$507 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$508 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$509 \$931 IOUT \$859 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$510 \$932 IOUT \$931 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$511 \$933 IOUT \$932 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$512 vdd IOUT \$933 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$513 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$514 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$515 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$516 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$517 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$518 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$519 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$520 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$521 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$522 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$523 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$524 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$525 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$526 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$527 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$528 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$529 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$530 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$531 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$532 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$533 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$534 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$535 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$536 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$537 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$538 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$539 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$540 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$541 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$542 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$543 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$544 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$545 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$546 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$547 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$548 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$549 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$550 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$551 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$552 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$553 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$554 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$555 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$556 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$557 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$558 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$559 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$560 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$561 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$562 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$563 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$564 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$565 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$566 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$567 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$568 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$569 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$570 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$571 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$572 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$573 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$574 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$575 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$576 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$577 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$578 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$579 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$580 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$581 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$582 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$583 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$584 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$585 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$586 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$587 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$588 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$589 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$590 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$591 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$592 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$593 \$1028 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$594 \$1029 IOUT \$1028 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$595 \$1030 IOUT \$1029 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$596 \$1031 IOUT \$1030 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$597 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$598 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$599 \$1032 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$600 \$1033 IOUT \$1032 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$601 \$1034 IOUT \$1033 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$602 \$1035 IOUT \$1034 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$603 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$604 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$605 \$1036 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$606 \$1037 IOUT \$1036 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$607 \$1038 IOUT \$1037 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$608 \$1039 IOUT \$1038 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$609 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$610 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$611 \$1040 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$612 \$1041 IOUT \$1040 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$613 \$1042 IOUT \$1041 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$614 \$1043 IOUT \$1042 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$615 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$616 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$617 \$1044 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$618 \$1045 IOUT \$1044 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$619 \$1046 IOUT \$1045 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$620 \$1047 IOUT \$1046 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$621 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$622 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$623 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$624 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$625 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$626 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$627 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$628 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$629 \$1105 IOUT IOUT vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$630 \$1106 IOUT \$1105 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$631 \$1107 IOUT \$1106 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$632 \$1108 IOUT \$1107 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$633 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$634 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$635 \$1110 IOUT \$1109 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$636 \$1111 IOUT \$1110 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$637 \$1112 IOUT \$1111 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$638 \$1031 IOUT \$1112 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$639 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$640 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$641 \$1114 IOUT \$1113 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$642 \$1115 IOUT \$1114 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$643 \$1116 IOUT \$1115 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$644 \$1035 IOUT \$1116 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$645 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$646 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$647 \$1118 IOUT \$1117 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$648 \$1119 IOUT \$1118 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$649 \$1120 IOUT \$1119 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$650 \$1039 IOUT \$1120 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$651 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$652 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$653 \$1122 IOUT \$1121 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$654 \$1123 IOUT \$1122 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$655 \$1124 IOUT \$1123 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$656 \$1043 IOUT \$1124 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$657 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$658 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$659 \$1126 IOUT \$1125 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$660 \$1127 IOUT \$1126 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$661 \$1128 IOUT \$1127 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$662 \$1047 IOUT \$1128 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$663 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$664 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$665 \$1048 IOUT \$1024 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$666 \$1049 IOUT \$1048 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$667 \$1050 IOUT \$1049 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$668 \$1051 IOUT \$1050 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$669 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$670 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$671 \$1190 IOUT \$1189 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$672 \$1191 IOUT \$1190 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$673 \$1192 IOUT \$1191 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$674 \$1108 IOUT \$1192 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$675 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$676 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$677 \$1193 IOUT \$1109 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$678 \$1194 IOUT \$1193 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$679 \$1195 IOUT \$1194 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$680 \$1196 IOUT \$1195 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$681 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$682 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$683 \$1197 IOUT \$1113 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$684 \$1198 IOUT \$1197 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$685 \$1199 IOUT \$1198 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$686 \$1200 IOUT \$1199 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$687 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$688 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$689 \$1201 IOUT \$1117 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$690 \$1202 IOUT \$1201 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$691 \$1203 IOUT \$1202 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$692 \$1204 IOUT \$1203 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$693 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$694 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$695 \$1205 IOUT \$1121 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$696 \$1206 IOUT \$1205 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$697 \$1207 IOUT \$1206 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$698 \$1208 IOUT \$1207 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$699 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$700 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$701 \$1209 IOUT \$1125 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$702 \$1210 IOUT \$1209 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$703 \$1211 IOUT \$1210 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$704 \$1212 IOUT \$1211 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$705 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$706 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$707 \$1130 IOUT \$1129 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$708 \$1131 IOUT \$1130 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$709 \$1132 IOUT \$1131 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$710 \$1051 IOUT \$1132 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$711 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$712 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$713 \$1268 IOUT \$1189 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$714 \$1269 IOUT \$1268 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$715 \$1270 IOUT \$1269 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$716 \$1271 IOUT \$1270 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$717 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$718 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$719 \$1273 IOUT \$1272 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$720 \$1274 IOUT \$1273 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$721 \$1275 IOUT \$1274 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$722 \$1196 IOUT \$1275 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$723 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$724 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$725 \$1277 IOUT \$1276 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$726 \$1278 IOUT \$1277 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$727 \$1279 IOUT \$1278 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$728 \$1200 IOUT \$1279 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$729 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$730 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$731 \$1281 IOUT \$1280 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$732 \$1282 IOUT \$1281 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$733 \$1283 IOUT \$1282 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$734 \$1204 IOUT \$1283 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$735 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$736 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$737 \$1285 IOUT \$1284 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$738 \$1286 IOUT \$1285 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$739 \$1287 IOUT \$1286 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$740 \$1208 IOUT \$1287 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$741 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$742 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$743 \$1289 IOUT \$1288 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$744 \$1290 IOUT \$1289 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$745 \$1291 IOUT \$1290 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$746 \$1212 IOUT \$1291 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$747 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$748 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$749 \$1217 IOUT \$1129 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$750 \$1218 IOUT \$1217 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$751 \$1219 IOUT \$1218 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$752 \$1220 IOUT \$1219 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$753 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$754 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$755 \$1352 IOUT \$1351 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$756 \$1353 IOUT \$1352 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$757 \$1354 IOUT \$1353 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$758 \$1271 IOUT \$1354 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$759 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$760 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$761 \$1355 IOUT \$1272 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$762 \$1356 IOUT \$1355 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$763 \$1357 IOUT \$1356 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$764 vdd IOUT \$1357 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$765 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$766 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$767 \$1358 IOUT \$1276 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$768 \$1359 IOUT \$1358 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$769 \$1360 IOUT \$1359 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$770 vdd IOUT \$1360 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$771 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$772 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$773 \$1361 IOUT \$1280 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$774 \$1362 IOUT \$1361 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$775 \$1363 IOUT \$1362 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$776 vdd IOUT \$1363 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$777 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$778 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$779 \$1364 IOUT \$1284 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$780 \$1365 IOUT \$1364 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$781 \$1366 IOUT \$1365 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$782 vdd IOUT \$1366 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$783 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$784 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$785 \$1367 IOUT \$1288 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$786 \$1368 IOUT \$1367 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$787 \$1369 IOUT \$1368 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$788 vdd IOUT \$1369 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$789 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$790 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$791 \$1293 IOUT \$1292 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$792 \$1294 IOUT \$1293 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$793 \$1295 IOUT \$1294 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$794 \$1220 IOUT \$1295 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$795 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$796 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$797 \$1430 IOUT \$1351 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$798 \$1431 IOUT \$1430 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$799 \$1432 IOUT \$1431 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$800 \$1433 IOUT \$1432 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$801 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$802 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$803 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$804 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$805 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$806 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$807 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$808 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$809 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$810 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$811 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$812 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$813 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$814 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$815 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$816 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$817 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$818 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$819 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$820 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$821 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$822 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$823 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$824 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$825 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$826 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$827 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$828 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$829 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$830 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$831 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$832 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$833 \$1374 IOUT \$1292 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$834 \$1375 IOUT \$1374 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$835 \$1376 IOUT \$1375 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$836 vdd IOUT \$1376 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$837 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$838 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$839 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$840 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$841 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$842 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$843 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$844 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$845 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$846 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$847 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$848 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$849 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$850 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$851 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$852 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$853 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$854 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$855 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$856 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$857 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$858 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$859 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$860 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$861 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$862 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$863 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$864 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$865 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$866 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$867 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$868 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$869 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$870 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$871 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$872 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$873 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$874 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$875 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$876 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$877 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$878 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$879 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$880 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$881 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$882 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$883 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$884 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$885 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$886 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$887 \$1521 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$888 \$1522 IOUT \$1521 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$889 \$1523 IOUT \$1522 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$890 \$1524 IOUT \$1523 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$891 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$892 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$893 \$1525 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$894 \$1526 IOUT \$1525 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$895 \$1527 IOUT \$1526 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$896 \$1528 IOUT \$1527 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$897 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$898 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$899 \$1529 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$900 \$1530 IOUT \$1529 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$901 \$1531 IOUT \$1530 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$902 \$1532 IOUT \$1531 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$903 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$904 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$905 \$1533 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$906 \$1534 IOUT \$1533 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$907 \$1535 IOUT \$1534 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$908 \$1536 IOUT \$1535 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$909 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$910 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$911 \$1537 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$912 \$1538 IOUT \$1537 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$913 \$1539 IOUT \$1538 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$914 \$1540 IOUT \$1539 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$915 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$916 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$917 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$918 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$919 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$920 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$921 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$922 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$923 \$1594 IOUT \$1433 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$924 \$1595 IOUT \$1594 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$925 \$1596 IOUT \$1595 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$926 \$1597 IOUT \$1596 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$927 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$928 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$929 \$1610 IOUT \$1609 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$930 \$1611 IOUT \$1610 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$931 \$1612 IOUT \$1611 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$932 \$1524 IOUT \$1612 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$933 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$934 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$935 \$1614 IOUT \$1613 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$936 \$1615 IOUT \$1614 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$937 \$1616 IOUT \$1615 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$938 \$1528 IOUT \$1616 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$939 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$940 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$941 \$1618 IOUT \$1617 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$942 \$1619 IOUT \$1618 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$943 \$1620 IOUT \$1619 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$944 \$1532 IOUT \$1620 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$945 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$946 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$947 \$1622 IOUT \$1621 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$948 \$1623 IOUT \$1622 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$949 \$1624 IOUT \$1623 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$950 \$1536 IOUT \$1624 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$951 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$952 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$953 \$1626 IOUT \$1625 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$954 \$1627 IOUT \$1626 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$955 \$1628 IOUT \$1627 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$956 \$1540 IOUT \$1628 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$957 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$958 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$959 \$1598 IOUT \$1546 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$960 \$1599 IOUT \$1598 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$961 \$1600 IOUT \$1599 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$962 \$1601 IOUT \$1600 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$963 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$964 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$965 \$1680 IOUT \$1679 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$966 \$1681 IOUT \$1680 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$967 \$1682 IOUT \$1681 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$968 \$1597 IOUT \$1682 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$969 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$970 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$971 \$1683 IOUT \$1609 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$972 \$1684 IOUT \$1683 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$973 \$1685 IOUT \$1684 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$974 \$1686 IOUT \$1685 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$975 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$976 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$977 \$1687 IOUT \$1613 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$978 \$1688 IOUT \$1687 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$979 \$1689 IOUT \$1688 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$980 \$1690 IOUT \$1689 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$981 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$982 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$983 \$1691 IOUT \$1617 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$984 \$1692 IOUT \$1691 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$985 \$1693 IOUT \$1692 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$986 \$1694 IOUT \$1693 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$987 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$988 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$989 \$1695 IOUT \$1621 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$990 \$1696 IOUT \$1695 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$991 \$1697 IOUT \$1696 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$992 \$1698 IOUT \$1697 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$993 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$994 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$995 \$1699 IOUT \$1625 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$996 \$1700 IOUT \$1699 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$997 \$1701 IOUT \$1700 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$998 \$1702 IOUT \$1701 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$999 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1000 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1001 \$1704 IOUT \$1703 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1002 \$1705 IOUT \$1704 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1003 \$1706 IOUT \$1705 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1004 \$1601 IOUT \$1706 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1005 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1006 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1007 \$1760 IOUT \$1679 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1008 \$1761 IOUT \$1760 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1009 \$1762 IOUT \$1761 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1010 \$1763 IOUT \$1762 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1011 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1012 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1013 \$1765 IOUT \$1764 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1014 \$1766 IOUT \$1765 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1015 \$1767 IOUT \$1766 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1016 \$1686 IOUT \$1767 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1017 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1018 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1019 \$1769 IOUT \$1768 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1020 \$1770 IOUT \$1769 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1021 \$1771 IOUT \$1770 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1022 \$1690 IOUT \$1771 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1023 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1024 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1025 \$1773 IOUT \$1772 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1026 \$1774 IOUT \$1773 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1027 \$1775 IOUT \$1774 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1028 \$1694 IOUT \$1775 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1029 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1030 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1031 \$1777 IOUT \$1776 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1032 \$1778 IOUT \$1777 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1033 \$1779 IOUT \$1778 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1034 \$1698 IOUT \$1779 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1035 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1036 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1037 \$1781 IOUT \$1780 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1038 \$1782 IOUT \$1781 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1039 \$1783 IOUT \$1782 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1040 \$1702 IOUT \$1783 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1041 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1042 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1043 \$1784 IOUT \$1703 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1044 \$1785 IOUT \$1784 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1045 \$1786 IOUT \$1785 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1046 \$1787 IOUT \$1786 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1047 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1048 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1049 \$1845 IOUT \$1844 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1050 \$1846 IOUT \$1845 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1051 \$1847 IOUT \$1846 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1052 \$1763 IOUT \$1847 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1053 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1054 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1055 \$1848 IOUT \$1764 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1056 \$1849 IOUT \$1848 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1057 \$1850 IOUT \$1849 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1058 vdd IOUT \$1850 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1059 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1060 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1061 \$1851 IOUT \$1768 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1062 \$1852 IOUT \$1851 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1063 \$1853 IOUT \$1852 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1064 vdd IOUT \$1853 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1065 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1066 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1067 \$1854 IOUT \$1772 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1068 \$1855 IOUT \$1854 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1069 \$1856 IOUT \$1855 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1070 vdd IOUT \$1856 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1071 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1072 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1073 \$1857 IOUT \$1776 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1074 \$1858 IOUT \$1857 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1075 \$1859 IOUT \$1858 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1076 vdd IOUT \$1859 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1077 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1078 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1079 \$1860 IOUT \$1780 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1080 \$1861 IOUT \$1860 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1081 \$1862 IOUT \$1861 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1082 vdd IOUT \$1862 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1083 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1084 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1085 \$1864 IOUT \$1863 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1086 \$1865 IOUT \$1864 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1087 \$1866 IOUT \$1865 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1088 \$1787 IOUT \$1866 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1089 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1090 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1091 \$1926 IOUT \$1844 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1092 \$1927 IOUT \$1926 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1093 \$1928 IOUT \$1927 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1094 vdd IOUT \$1928 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1095 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1096 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1097 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1098 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1099 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1100 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1101 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1102 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1103 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1104 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1105 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1106 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1107 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1108 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1109 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1110 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1111 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1112 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1113 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1114 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1115 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1116 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1117 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1118 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1119 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1120 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1121 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1122 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1123 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1124 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1125 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1126 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1127 \$1921 IOUT \$1863 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1128 \$1922 IOUT \$1921 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1129 \$1923 IOUT \$1922 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1130 vdd IOUT \$1923 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1131 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1132 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1133 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1134 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1135 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1136 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1137 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1138 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1139 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1140 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1141 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1142 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1143 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1144 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1145 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1146 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1147 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1148 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1149 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1150 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1151 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1152 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1153 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1154 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1155 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1156 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1157 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1158 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1159 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1160 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1161 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1162 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1163 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1164 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1165 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1166 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1167 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1168 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1169 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1170 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1171 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1172 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1173 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1174 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1175 \$2029 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1176 \$2030 IOUT \$2029 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1177 \$2031 IOUT \$2030 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1178 \$2032 IOUT \$2031 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1179 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1180 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1181 \$2033 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1182 \$2034 IOUT \$2033 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1183 \$2035 IOUT \$2034 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1184 \$2036 IOUT \$2035 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1185 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1186 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1187 \$2037 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1188 \$2038 IOUT \$2037 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1189 \$2039 IOUT \$2038 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1190 \$2040 IOUT \$2039 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1191 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1192 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1193 \$2041 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1194 \$2042 IOUT \$2041 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1195 \$2043 IOUT \$2042 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1196 \$2044 IOUT \$2043 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1197 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1198 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1199 \$2045 IOUT Vref vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1200 \$2046 IOUT \$2045 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1201 \$2047 IOUT \$2046 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1202 \$2048 IOUT \$2047 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1203 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1204 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1205 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1206 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1207 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1208 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1209 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1210 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1211 \$2086 IOUT \$2085 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1212 \$2087 IOUT \$2086 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1213 \$2088 IOUT \$2087 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1214 \$2032 IOUT \$2088 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1215 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1216 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1217 \$2090 IOUT \$2089 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1218 \$2091 IOUT \$2090 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1219 \$2092 IOUT \$2091 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1220 \$2036 IOUT \$2092 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1221 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1222 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1223 \$2094 IOUT \$2093 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1224 \$2095 IOUT \$2094 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1225 \$2096 IOUT \$2095 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1226 \$2040 IOUT \$2096 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1227 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1228 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1229 \$2098 IOUT \$2097 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1230 \$2099 IOUT \$2098 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1231 \$2100 IOUT \$2099 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1232 \$2044 IOUT \$2100 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1233 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1234 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1235 \$2102 IOUT \$2101 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1236 \$2103 IOUT \$2102 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1237 \$2104 IOUT \$2103 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1238 \$2048 IOUT \$2104 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1239 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1240 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1241 \$2157 IOUT \$2085 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1242 \$2158 IOUT \$2157 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1243 \$2159 IOUT \$2158 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1244 \$2160 IOUT \$2159 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1245 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1246 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1247 \$2161 IOUT \$2089 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1248 \$2162 IOUT \$2161 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1249 \$2163 IOUT \$2162 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1250 \$2164 IOUT \$2163 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1251 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1252 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1253 \$2165 IOUT \$2093 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1254 \$2166 IOUT \$2165 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1255 \$2167 IOUT \$2166 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1256 \$2168 IOUT \$2167 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1257 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1258 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1259 \$2169 IOUT \$2097 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1260 \$2170 IOUT \$2169 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1261 \$2171 IOUT \$2170 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1262 \$2172 IOUT \$2171 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1263 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1264 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1265 \$2173 IOUT \$2101 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1266 \$2174 IOUT \$2173 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1267 \$2175 IOUT \$2174 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1268 \$2176 IOUT \$2175 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1269 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1270 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1271 \$2148 IOUT \$2105 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1272 \$2149 IOUT \$2148 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1273 \$2150 IOUT \$2149 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1274 \$2151 IOUT \$2150 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1275 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1276 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1277 \$2227 IOUT \$2226 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1278 \$2228 IOUT \$2227 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1279 \$2229 IOUT \$2228 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1280 \$2160 IOUT \$2229 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1281 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1282 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1283 \$2231 IOUT \$2230 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1284 \$2232 IOUT \$2231 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1285 \$2233 IOUT \$2232 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1286 \$2164 IOUT \$2233 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1287 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1288 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1289 \$2235 IOUT \$2234 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1290 \$2236 IOUT \$2235 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1291 \$2237 IOUT \$2236 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1292 \$2168 IOUT \$2237 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1293 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1294 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1295 \$2239 IOUT \$2238 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1296 \$2240 IOUT \$2239 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1297 \$2241 IOUT \$2240 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1298 \$2172 IOUT \$2241 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1299 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1300 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1301 \$2243 IOUT \$2242 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1302 \$2244 IOUT \$2243 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1303 \$2245 IOUT \$2244 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1304 \$2176 IOUT \$2245 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1305 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1306 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1307 \$2222 IOUT \$2221 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1308 \$2223 IOUT \$2222 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1309 \$2224 IOUT \$2223 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1310 \$2151 IOUT \$2224 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1311 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1312 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1313 \$2296 IOUT \$2226 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1314 \$2297 IOUT \$2296 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1315 \$2298 IOUT \$2297 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1316 vdd IOUT \$2298 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1317 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1318 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1319 \$2299 IOUT \$2230 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1320 \$2300 IOUT \$2299 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1321 \$2301 IOUT \$2300 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1322 vdd IOUT \$2301 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1323 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1324 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1325 \$2302 IOUT \$2234 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1326 \$2303 IOUT \$2302 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1327 \$2304 IOUT \$2303 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1328 vdd IOUT \$2304 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1329 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1330 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1331 \$2305 IOUT \$2238 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1332 \$2306 IOUT \$2305 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1333 \$2307 IOUT \$2306 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1334 vdd IOUT \$2307 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1335 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1336 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1337 \$2308 IOUT \$2242 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1338 \$2309 IOUT \$2308 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1339 \$2310 IOUT \$2309 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1340 vdd IOUT \$2310 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1341 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1342 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1343 \$2290 IOUT \$2221 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1344 \$2291 IOUT \$2290 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1345 \$2292 IOUT \$2291 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1346 \$2293 IOUT \$2292 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1347 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1348 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1349 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1350 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1351 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1352 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1353 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1354 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1355 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1356 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1357 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1358 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1359 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1360 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1361 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1362 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1363 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1364 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1365 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1366 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1367 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1368 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1369 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1370 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1371 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1372 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1373 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1374 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1375 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1376 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1377 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1378 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1379 \$2357 IOUT \$2356 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1380 \$2358 IOUT \$2357 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1381 \$2359 IOUT \$2358 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1382 \$2293 IOUT \$2359 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1383 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1384 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1385 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1386 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1387 \$2403 IOUT \$2356 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1388 \$2404 IOUT \$2403 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1389 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1390 \$2405 IOUT \$2404 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U
++ PD=5.3U
+M$1391 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1392 vdd IOUT \$2405 vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1393 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1394 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1395 vdd vdd vdd vdd pfet_03v3 L=2U W=2U AS=1.3P AD=1.3P PS=5.3U PD=5.3U
+M$1396 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1397 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1398 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1399 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1400 \$4 \$9 \$17 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1401 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1402 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1403 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1404 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1405 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1406 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1407 \$45 \$45 gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1408 gnd \$45 \$87 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1409 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1410 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1411 \$9 \$9 \$17 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1412 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1413 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1414 \$45 i_in i_in gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1415 IOUT i_in \$87 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1416 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1417 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1418 \$9 \$9 \$17 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1419 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1420 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1421 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1422 \$9 \$9 \$17 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1423 \$9 \$9 \$17 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1424 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1425 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1426 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1427 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1428 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1429 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1430 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1431 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1432 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1433 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1434 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1435 \$9 \$9 \$17 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1436 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1437 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1438 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1439 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1440 \$17 \$477 \$487 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1441 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1442 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1443 \$477 \$477 \$487 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1444 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1445 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1446 \$477 \$477 \$487 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1447 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1448 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1449 \$477 \$477 \$487 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1450 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1451 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1452 \$477 \$477 \$487 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1453 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1454 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1455 \$477 \$477 \$487 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1456 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1457 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1458 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1459 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1460 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1461 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1462 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1463 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1464 \$487 \$1024 \$1023 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1465 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1466 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1467 \$1024 \$1024 \$1023 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1468 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1469 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1470 \$1024 \$1024 \$1023 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1471 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1472 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1473 \$1024 \$1024 \$1023 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1474 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1475 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1476 \$1024 \$1024 \$1023 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1477 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1478 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1479 \$1024 \$1024 \$1023 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1480 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1481 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1482 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1483 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1484 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1485 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1486 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1487 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1488 \$1023 \$1546 \$1591 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1489 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1490 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1491 \$1546 \$1546 \$1591 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1492 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1493 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1494 \$1546 \$1546 \$1591 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1495 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1496 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1497 \$1546 \$1546 \$1591 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1498 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1499 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1500 \$1546 \$1546 \$1591 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1501 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1502 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1503 \$1546 \$1546 \$1591 gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1504 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1505 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1506 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1507 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1508 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1509 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1510 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1511 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1512 \$1591 \$2105 Vref gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1513 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1514 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1515 \$2105 \$2105 Vref gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1516 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1517 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1518 \$2105 \$2105 Vref gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1519 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1520 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1521 \$2105 \$2105 Vref gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1522 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1523 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1524 \$2105 \$2105 Vref gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1525 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1526 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1527 \$2105 \$2105 Vref gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U
++ PD=5.22U
+M$1528 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1529 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1530 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+M$1531 gnd gnd gnd gnd nfet_03v3 L=2U W=2U AS=1.22P AD=1.22P PS=5.22U PD=5.22U
+.ENDS Voltage_Reference

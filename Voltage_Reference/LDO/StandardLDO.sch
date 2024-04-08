@@ -14,10 +14,13 @@ L 18 1220 -900 1220 -780 {}
 L 18 1220 -780 1380 -780 {}
 L 18 1380 -900 1380 -780 {}
 L 18 1220 -900 1380 -900 {}
+L 19 1250 -740 1250 -590 {}
+L 19 1250 -590 1340 -590 {}
+L 19 1340 -740 1340 -590 {}
+L 19 1250 -740 1340 -740 {}
 T {DONE} 890 -1110 0 0 0.4 0.4 {layer=15}
-T {ONGOING} 1330 -930 0 0 0.4 0.4 {layer=18}
-T {TO-DO
-NEED MATCHING} 1340 -640 0 0 0.4 0.4 {layer=13}
+T {DONE} 1330 -930 0 0 0.4 0.4 {layer=18}
+T {DONE} 1340 -640 0 0 0.4 0.4 {layer=13}
 N 1040 -760 1050 -760 {
 lab=AVDD}
 N 1030 -780 1030 -760 {
@@ -78,7 +81,8 @@ N 860 -660 1290 -660 {
 lab=vref_off}
 N 860 -720 860 -660 {
 lab=vref_off}
-N 850 -660 860 -660 {}
+N 850 -660 860 -660 {
+lab=vref_off}
 C {devices/lab_wire.sym} 1050 -760 0 1 {name=p3 sig_type=std_logic lab=AVDD}
 C {devices/lab_wire.sym} 1390 -770 0 1 {name=p5 sig_type=std_logic lab=Vout}
 C {devices/gnd.sym} 1050 -890 0 0 {name=l7 lab=GND}
