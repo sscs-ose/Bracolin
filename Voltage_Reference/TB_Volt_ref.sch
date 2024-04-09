@@ -78,6 +78,10 @@ value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 .lib $::180MCU_MODELS/sm141064.ngspice res_typical
+.lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
+.lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+.lib $::180MCU_MODELS/sm141064.ngspice cap_mim
+.lib $::180MCU_MODELS/sm141064.ngspice diode_typical
 "
 
 }
@@ -113,4 +117,11 @@ dc TEMP -10 80 5
 write TB_Volt_ref.raw
 
 .endc
+"}
+C {devices/code_shown.sym} -680 -745 0 0 {name=DUT only_toplevel=true
+format="tcleval( @value )"
+value="
+.include "/home/gmaranhao/Desktop/Bracolin/padframe/openfasoc-io-tb/gf180mcu_fd_io.spice"
+
+Xanalog vref vdd 0 vdd 0 gf180mcu_fd_io__asig_5p0
 "}

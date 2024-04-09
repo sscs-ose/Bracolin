@@ -60,7 +60,7 @@ spiceprefix=X
 C {devices/code_shown.sym} -760 -450 0 0 {name=DUT only_toplevel=true
 format="tcleval( @value )"
 value="
-.include /home/gmaranhao/Desktop/Bracolin/padframe/openfasoc-io-tb/gf180mcu_fd_io.spice
+.include /home/gmaranhao/Desktop/Bracolin/padframe/openfasoc-io-tb/gf180mcu_fd_io_2.spice
 
 Xbit A CS DVDD DVSS IE OE PAD PD PDRV0 PDRV1 PU SL VDD VSS Y gf180mcu_fd_io__bi_t
 
