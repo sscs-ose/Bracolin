@@ -3,7 +3,7 @@
  <description>GF180 ANTENNA DRC Run Report at</description>
  <original-file/>
  <generator>drc: script='/home/gmaranhao/pdk/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
- <top-cell>RING_PAD_BRACOLIN_BRAZIL</top-cell>
+ <top-cell>teste_tieH_L</top-cell>
  <tags>
  </tags>
  <categories>
@@ -139,7 +139,7 @@
  </categories>
  <cells>
   <cell>
-   <name>RING_PAD_BRACOLIN_BRAZIL</name>
+   <name>teste_tieH_L</name>
    <variant/>
    <references>
    </references>
