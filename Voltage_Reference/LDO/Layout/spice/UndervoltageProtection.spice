@@ -1,0 +1,47 @@
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/Voltage_Reference/LDO/UndervoltageProtection.sch
+.subckt UndervoltageProtection vdd iref vref vfb PowerGate
+*.PININFO PowerGate:B vfb:B vref:B iref:B vdd:B
+M2[1] GND vref b vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M2[2] GND vref b vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M2[3] GND vref b vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M2[4] GND vref b vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M2[5] GND vref b vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M2[6] GND vref b vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M2[7] GND vref b vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M2[8] GND vref b vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M3[1] c vfb b vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M3[2] c vfb b vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M3[3] c vfb b vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M3[4] c vfb b vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M3[5] c vfb b vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M3[6] c vfb b vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M3[7] c vfb b vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M3[8] c vfb b vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M4[1] c a GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M4[2] c a GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M4[3] c a GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M4[4] c a GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M4[5] c a GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M5[1] PowerGate c GND GND nfet_03v3 L=1u W=2u nf=1 m=1
+M5[2] PowerGate c GND GND nfet_03v3 L=1u W=2u nf=1 m=1
+M5[3] PowerGate c GND GND nfet_03v3 L=1u W=2u nf=1 m=1
+M6[1] a a GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M6[2] a a GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M6[3] a a GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M7[1] GND b GND GND nfet_03v3 L=10u W=10u nf=1 m=1
+M7[2] GND b GND GND nfet_03v3 L=10u W=10u nf=1 m=1
+M7[3] GND b GND GND nfet_03v3 L=10u W=10u nf=1 m=1
+M7[4] GND b GND GND nfet_03v3 L=10u W=10u nf=1 m=1
+M7[5] GND b GND GND nfet_03v3 L=10u W=10u nf=1 m=1
+M7[6] GND b GND GND nfet_03v3 L=10u W=10u nf=1 m=1
+M7[7] GND b GND GND nfet_03v3 L=10u W=10u nf=1 m=1
+M7[8] GND b GND GND nfet_03v3 L=10u W=10u nf=1 m=1
+M7[9] GND b GND GND nfet_03v3 L=10u W=10u nf=1 m=1
+M11[1] b iref vdd vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M11[2] b iref vdd vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M8[1] a iref vdd vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M8[2] a iref vdd vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M1 c c GND GND nfet_03v3 L=1u W=2u nf=1 m=1
+.ends
+.GLOBAL GND
+.end

@@ -12,17 +12,17 @@ lab=GND}
 N 360 -140 360 -110 {
 lab=GND}
 N 180 -170 320 -170 {
-lab=#net1}
+lab=a}
 N 140 -400 140 -380 {
-lab=#net2}
+lab=b}
 N 140 -400 360 -400 {
-lab=#net2}
+lab=b}
 N 360 -400 360 -380 {
-lab=#net2}
+lab=b}
 N 210 -430 210 -400 {
-lab=#net2}
+lab=b}
 N 360 -320 360 -200 {
-lab=#net3}
+lab=a}
 N 360 -170 370 -170 {
 lab=GND}
 N 370 -170 370 -110 {
@@ -52,7 +52,7 @@ lab=vdd}
 N 210 -500 210 -490 {
 lab=vdd}
 N -250 -230 -250 -170 {
-lab=#net1}
+lab=a}
 N 620 -140 620 -110 {
 lab=GND}
 N 370 -110 620 -110 {
@@ -64,11 +64,11 @@ lab=GND}
 N 620 -110 630 -110 {
 lab=GND}
 N 500 -170 580 -170 {
-lab=#net3}
+lab=a}
 N 500 -240 500 -170 {
-lab=#net3}
+lab=a}
 N 360 -240 500 -240 {
-lab=#net3}
+lab=a}
 N 620 -280 620 -200 {
 lab=PowerGate}
 N 400 -350 440 -350 {
@@ -88,11 +88,11 @@ lab=GND}
 N 260 -290 260 -280 {
 lab=GND}
 N 260 -400 260 -330 {
-lab=#net2}
+lab=b}
 N -60 -110 140 -110 {
 lab=GND}
 N -20 -170 180 -170 {
-lab=#net1}
+lab=a}
 N -20 -460 170 -460 {
 lab=iref}
 N -70 -500 150 -500 {
@@ -102,7 +102,7 @@ lab=iref}
 N 80 -460 80 -430 {
 lab=iref}
 N -190 -170 -20 -170 {
-lab=#net1}
+lab=a}
 N -320 -110 -150 -110 {
 lab=GND}
 N -190 -460 -20 -460 {
@@ -118,15 +118,15 @@ lab=vdd}
 N -330 -500 -240 -500 {
 lab=vdd}
 N -320 -430 -320 -270 {
-lab=#net1}
+lab=a}
 N -320 -210 -320 -200 {
-lab=#net1}
+lab=a}
 N -250 -240 -250 -230 {
-lab=#net1}
+lab=a}
 N -320 -270 -250 -270 {
-lab=#net1}
+lab=a}
 N -250 -270 -250 -240 {
-lab=#net1}
+lab=a}
 N -280 -460 -190 -460 {
 lab=iref}
 N 500 -140 510 -140 {
@@ -134,15 +134,15 @@ lab=GND}
 N 510 -140 510 -110 {
 lab=GND}
 N 460 -180 460 -140 {
-lab=#net3}
+lab=a}
 N 460 -180 500 -180 {
-lab=#net3}
+lab=a}
 N 140 -320 140 -110 {
 lab=GND}
 N -320 -270 -320 -210 {
-lab=#net1}
+lab=a}
 N -280 -170 -190 -170 {
-lab=#net1}
+lab=a}
 N -150 -110 -60 -110 {
 lab=GND}
 C {symbols/pfet_03v3.sym} 120 -350 0 0 {name=M2[1:8]
@@ -281,3 +281,6 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
+C {devices/lab_pin.sym} -320 -320 0 0 {name=p9 sig_type=std_logic lab=a}
+C {devices/lab_pin.sym} 360 -280 0 0 {name=p6 sig_type=std_logic lab=c}
+C {devices/lab_pin.sym} 260 -380 0 0 {name=p7 sig_type=std_logic lab=b}

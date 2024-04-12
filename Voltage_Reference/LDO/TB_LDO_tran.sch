@@ -190,6 +190,10 @@ N 700 -400 840 -400 {
 lab=AVDD}
 N 700 -400 700 -310 {
 lab=AVDD}
+N 1020 -250 1100 -250 {
+lab=Vout}
+N 1100 -190 1100 -170 {
+lab=GND}
 C {devices/code_shown.sym} 0 -650 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -250,3 +254,9 @@ C {devices/isource.sym} 840 -360 0 0 {name=Iref2 value=10n}
 C {devices/lab_wire.sym} 840 -420 0 1 {name=p21 sig_type=std_logic lab=AVDD
 }
 C {LDO/TopLevelLDO.sym} 790 -250 0 0 {name=x2}
+C {devices/capa.sym} 1100 -220 0 0 {name=C1
+m=1
+value=3.9p
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} 1100 -170 0 0 {name=l2 lab=GND}

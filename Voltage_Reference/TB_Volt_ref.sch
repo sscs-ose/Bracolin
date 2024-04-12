@@ -46,6 +46,10 @@ N 200 -130 260 -130 {
 lab=#net1}
 N 200 -280 200 -250 {
 lab=vdd}
+N 480 -60 480 -40 {
+lab=#net2}
+N 480 20 480 40 {
+lab=GND}
 C {symbols_vr/Voltage_Reference.sym} 410 -130 0 0 {name=x1}
 C {devices/lab_wire.sym} 340 -220 0 0 {name=p2 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 480 -130 0 0 {name=p5 sig_type=std_logic lab=vref}
@@ -123,5 +127,12 @@ format="tcleval( @value )"
 value="
 .include "/home/gmaranhao/Desktop/Bracolin/padframe/openfasoc-io-tb/gf180mcu_fd_io.spice"
 
-Xanalog vref vdd 0 vdd 0 gf180mcu_fd_io__asig_5p0
+*Xanalog vref vdd 0 vdd 0 gf180mcu_fd_io__asig_5p0
 "}
+C {devices/gnd.sym} 480 40 0 0 {name=l3 lab=GND}
+C {devices/res.sym} 480 -90 0 0 {name=R1
+value=1.36G
+footprint=1206
+device=resistor
+m=1}
+C {devices/ammeter.sym} 480 -10 0 0 {name=Vmeas savecurrent=true}

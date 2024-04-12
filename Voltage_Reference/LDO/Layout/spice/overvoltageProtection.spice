@@ -1,0 +1,62 @@
+** sch_path: /home/lci-ufsc/Desktop/Bracolin/Voltage_Reference/LDO/overvoltageProtection.sch
+.subckt overvoltageProtection Load PowerGate vref Vfb vdd iref
+*.PININFO vref:B iref:B vdd:B Load:B Vfb:B PowerGate:B
+M2[1] b a Vfb vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M2[2] b a Vfb vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M2[3] b a Vfb vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M2[4] b a Vfb vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M2[5] b a Vfb vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M2[6] b a Vfb vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M2[7] b a Vfb vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M2[8] b a Vfb vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M4[1] b iref GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M4[2] b iref GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M4[3] b iref GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M5[1] Load b GND GND nfet_03v3 L=450n W=20u nf=1 m=1
+M5[2] Load b GND GND nfet_03v3 L=450n W=20u nf=1 m=1
+M5[3] Load b GND GND nfet_03v3 L=450n W=20u nf=1 m=1
+M5[4] Load b GND GND nfet_03v3 L=450n W=20u nf=1 m=1
+M5[5] Load b GND GND nfet_03v3 L=450n W=20u nf=1 m=1
+M5[6] Load b GND GND nfet_03v3 L=450n W=20u nf=1 m=1
+M5[7] Load b GND GND nfet_03v3 L=450n W=20u nf=1 m=1
+M5[8] Load b GND GND nfet_03v3 L=450n W=20u nf=1 m=1
+M5[9] Load b GND GND nfet_03v3 L=450n W=20u nf=1 m=1
+M5[10] Load b GND GND nfet_03v3 L=450n W=20u nf=1 m=1
+M5[11] Load b GND GND nfet_03v3 L=450n W=20u nf=1 m=1
+M5[12] Load b GND GND nfet_03v3 L=450n W=20u nf=1 m=1
+M5[13] Load b GND GND nfet_03v3 L=450n W=20u nf=1 m=1
+M5[14] Load b GND GND nfet_03v3 L=450n W=20u nf=1 m=1
+M5[15] Load b GND GND nfet_03v3 L=450n W=20u nf=1 m=1
+M5[16] Load b GND GND nfet_03v3 L=450n W=20u nf=1 m=1
+M1[1] a a vref vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M1[2] a a vref vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M1[3] a a vref vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M1[4] a a vref vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M1[5] a a vref vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M1[6] a a vref vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M1[7] a a vref vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M1[8] a a vref vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M3[1] a iref GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M3[2] a iref GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M6[1] PowerGate c vdd vdd pfet_03v3 L=1u W=2u nf=1 m=1
+M6[2] PowerGate c vdd vdd pfet_03v3 L=1u W=2u nf=1 m=1
+M6[3] PowerGate c vdd vdd pfet_03v3 L=1u W=2u nf=1 m=1
+M6[4] PowerGate c vdd vdd pfet_03v3 L=1u W=2u nf=1 m=1
+M7 c c vdd vdd pfet_03v3 L=5u W=1u nf=1 m=1
+M8 c b f GND nfet_03v3 L=2u W=2u nf=1 m=1
+M10 net1 b GND GND nfet_03v3 L=20u W=500n nf=1 m=1
+M12 b b net1 GND nfet_03v3 L=20u W=500n nf=1 m=1
+M9 vdd d f GND nfet_03v3 L=2u W=2u nf=1 m=1
+M11 net2 d GND GND nfet_03v3 L=20u W=500n nf=1 m=1
+M13 d d net2 GND nfet_03v3 L=20u W=500n nf=1 m=1
+M14[1] f iref GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M14[2] f iref GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M14[3] f iref GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M14[4] f iref GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+M15[1] d e vdd vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M15[2] d e vdd vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M16 e e vdd vdd pfet_03v3 L=2u W=2u nf=1 m=1
+M17 e iref GND GND nfet_03v3 L=2u W=2u nf=1 m=1
+.ends
+.GLOBAL GND
+.end
