@@ -29,15 +29,13 @@ linewidth_mult=4.0
 color=4
 node=vref}
 N 340 -70 340 -30 {
-lab=GND}
+lab=VSS}
 N 340 -220 340 -190 {
-lab=vdd}
+lab=VDD}
 N 410 -130 480 -130 {
 lab=vref}
-N 480 -130 480 -120 {
-lab=vref}
 N -180 -380 -180 -340 {
-lab=vdd}
+lab=VDD}
 N -180 -280 -180 -230 {
 lab=GND}
 N 200 -190 200 -130 {
@@ -45,18 +43,17 @@ lab=#net1}
 N 200 -130 260 -130 {
 lab=#net1}
 N 200 -280 200 -250 {
-lab=vdd}
-N 480 -60 480 -40 {
-lab=#net2}
-N 480 20 480 40 {
+lab=VDD}
+N -50 -380 -50 -340 {
+lab=VSS}
+N -50 -280 -50 -230 {
 lab=GND}
 C {symbols_vr/Voltage_Reference.sym} 410 -130 0 0 {name=x1}
-C {devices/lab_wire.sym} 340 -220 0 0 {name=p2 sig_type=std_logic lab=vdd}
+C {devices/lab_wire.sym} 340 -220 0 0 {name=p2 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 480 -130 0 0 {name=p5 sig_type=std_logic lab=vref}
-C {devices/gnd.sym} 340 -30 0 0 {name=l2 lab=GND}
 C {devices/vsource.sym} -180 -310 0 0 {name=V1 value=3.3}
 C {devices/gnd.sym} -180 -230 0 0 {name=l1 lab=GND}
-C {devices/lab_wire.sym} -180 -380 0 0 {name=p27 sig_type=std_logic lab=vdd}
+C {devices/lab_wire.sym} -180 -380 0 0 {name=p27 sig_type=std_logic lab=VDD}
 C {devices/code_shown.sym} -630 -410 0 0 {name=SPICE1 only_toplevel=false
 value="
 .option gmin = 1e-15
@@ -90,7 +87,7 @@ value="
 
 }
 C {devices/isource.sym} 200 -220 0 0 {name=I0 value=1n}
-C {devices/lab_wire.sym} 200 -280 0 0 {name=p1 sig_type=std_logic lab=vdd}
+C {devices/lab_wire.sym} 200 -280 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/launcher.sym} 570 -500 0 0 {name=h1
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"}
@@ -122,17 +119,18 @@ write TB_Volt_ref.raw
 
 .endc
 "}
-C {devices/code_shown.sym} -680 -745 0 0 {name=DUT only_toplevel=true
+C {devices/code_shown.sym} -680 -815 0 0 {name=DUT only_toplevel=true
 format="tcleval( @value )"
 value="
 .include "/home/gmaranhao/Desktop/Bracolin/padframe/openfasoc-io-tb/gf180mcu_fd_io.spice"
 
-*Xanalog vref vdd 0 vdd 0 gf180mcu_fd_io__asig_5p0
+Xdd VDD VSS VSS gf180mcu_fd_io__dvdd
+
+Xss VDD VSS VDD gf180mcu_fd_io__dvss
+
+Xanalog vref vdd 0 vdd 0 gf180mcu_fd_io__asig_5p0
 "}
-C {devices/gnd.sym} 480 40 0 0 {name=l3 lab=GND}
-C {devices/res.sym} 480 -90 0 0 {name=R1
-value=1.36G
-footprint=1206
-device=resistor
-m=1}
-C {devices/ammeter.sym} 480 -10 0 0 {name=Vmeas savecurrent=true}
+C {devices/vsource.sym} -50 -310 0 0 {name=VSS value=0}
+C {devices/gnd.sym} -50 -230 0 0 {name=l3 lab=GND}
+C {devices/lab_wire.sym} -50 -380 0 0 {name=p3 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 340 -30 2 1 {name=p4 sig_type=std_logic lab=VSS}

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>DRC Run Report at</description>
+ <original-file/>
+ <generator>drc: script='/home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22/nwell.drc'</generator>
+ <top-cell>RING_PAD_BRACOLIN</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>NW.1a_LV</name>
+   <description>NW.1a_LV : Min. Nwell Width (This is only for litho purpose on the generated area): 0.86µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>NW.1a_MV</name>
+   <description>NW.1a_MV : Min. Nwell Width (This is only for litho purpose on the generated area): 0.86µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>NW.1b_LV</name>
+   <description>NW.1b_LV : Min. Nwell Width as a resistor (Outside DNWELL only): 2µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>NW.1b_MV</name>
+   <description>NW.1b_MV : Min. Nwell Width as a resistor (Outside DNWELL only): 2µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>NW.2b_LV</name>
+   <description>NW.2b_LV : Min. Nwell Space (Outside DNWELL) [Different potential]: 1.4µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>NW.2b_MV</name>
+   <description>NW.2b_MV : Min. Nwell Space (Outside DNWELL) [Different potential]: 1.7µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>NW.3</name>
+   <description>NW.3 : Min. Nwell to DNWELL space: 3.1µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>NW.4</name>
+   <description>NW.4 : Min. Nwell to LVPWELL space: 0um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>NW.5_LV</name>
+   <description>NW.5_LV : Min. DNWELL enclose Nwell: 0.5µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>NW.5_MV</name>
+   <description>NW.5_MV : Min. DNWELL enclose Nwell: 0.5µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>NW.6</name>
+   <description>NW.6 : Nwell resistors can only exist outside DNWELL.</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>RING_PAD_BRACOLIN</name>
+   <variant/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (1406.115,2659;1415.92,2659)|(1416.96,2660.345;1407.155,2660.345)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (1506.115,2659;1515.92,2659)|(1516.96,2660.345;1507.155,2660.345)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (2106.115,2659;2115.92,2659)|(2116.96,2660.345;2107.155,2660.345)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (2306.115,2659;2315.92,2659)|(2316.96,2660.345;2307.155,2660.345)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (2660.345,2558.64;2660.345,2568.445)|(2659,2569.485;2659,2559.68)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (1329.2,2636.277;1329.2,2642.555)|(1327.955,2642.555;1327.955,2637.435)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (1606.115,2659;1615.92,2659)|(1616.96,2660.345;1607.155,2660.345)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (1306.115,2659;1315.92,2659)|(1316.96,2660.345;1307.155,2660.345)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (1429.2,2636.277;1429.2,2642.555)|(1427.955,2642.555;1427.955,2637.435)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (2529.2,2636.277;2529.2,2642.555)|(2527.955,2642.555;2527.955,2637.435)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (2660.345,658.64;2660.345,668.445)|(2659,669.485;2659,659.68)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (2506.115,2659;2515.92,2659)|(2516.96,2660.345;2507.155,2660.345)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (1906.115,2659;1915.92,2659)|(1916.96,2660.345;1907.155,2660.345)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (1806.115,2659;1815.92,2659)|(1816.96,2660.345;1807.155,2660.345)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (2429.2,2636.277;2429.2,2642.555)|(2427.955,2642.555;2427.955,2637.435)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (2406.115,2659;2415.92,2659)|(2416.96,2660.345;2407.155,2660.345)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (2329.2,2636.277;2329.2,2642.555)|(2327.955,2642.555;2327.955,2637.435)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (2029.2,2636.277;2029.2,2642.555)|(2027.955,2642.555;2027.955,2637.435)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (2129.2,2636.277;2129.2,2642.555)|(2127.955,2642.555;2127.955,2637.435)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (1929.2,2636.277;1929.2,2642.555)|(1927.955,2642.555;1927.955,2637.435)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (1629.2,2636.277;1629.2,2642.555)|(1627.955,2642.555;1627.955,2637.435)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (1829.2,2636.277;1829.2,2642.555)|(1827.955,2642.555;1827.955,2637.435)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (1529.2,2636.277;1529.2,2642.555)|(1527.955,2642.555;1527.955,2637.435)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (2636.277,646.4;2642.555,646.4)|(2642.555,647.645;2637.435,647.645)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (2006.115,2659;2015.92,2659)|(2016.96,2660.345;2007.155,2660.345)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'NW.2b_MV'</category>
+   <cell>RING_PAD_BRACOLIN</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (2636.277,2546.4;2642.555,2546.4)|(2642.555,2547.645;2637.435,2547.645)</value>
+   </values>
+  </item>
+ </items>
+</report-database>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>DRC Run Report at</description>
+ <original-file/>
+ <generator>drc: script='/home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40/metaltop.drc'</generator>
+ <top-cell>Filter_TOP</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>MT.1</name>
+   <description>MT.1 : min. metaltop width : 0.44µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MT.2a</name>
+   <description>MT.2a : min. metaltop spacing : 0.46µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MT.2b</name>
+   <description>MT.2b : Space to wide Metal2 (length &amp; width &gt; 10um) : 0.6µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MT.4</name>
+   <description>MT.4 : Minimum MetalTop area : 0.5625µm²</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>Filter_TOP</name>
+   <variant/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+ </items>
+</report-database>

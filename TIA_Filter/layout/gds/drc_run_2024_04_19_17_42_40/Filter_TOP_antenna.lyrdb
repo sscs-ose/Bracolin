@@ -2,8 +2,8 @@
 <report-database>
  <description>GF180 ANTENNA DRC Run Report at</description>
  <original-file/>
- <generator>drc: script='/home/gmaranhao/pdk/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
- <top-cell>teste_tieH_L</top-cell>
+ <generator>drc: script='/home/gmaranhao/pdk/gf180mcuD/libs.tech/klayout/drc/rule_decks/antenna.drc'</generator>
+ <top-cell>Filter_TOP</top-cell>
  <tags>
  </tags>
  <categories>
@@ -139,7 +139,7 @@
  </categories>
  <cells>
   <cell>
-   <name>teste_tieH_L</name>
+   <name>Filter_TOP</name>
    <variant/>
    <references>
    </references>

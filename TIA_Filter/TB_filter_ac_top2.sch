@@ -49,7 +49,7 @@ subdivx=8
 subdivy=1
 
 
-x1=-5.2
+x1=-3.604294
 
 
 sim_type=ac
@@ -60,7 +60,7 @@ node="\\"vout db20()\\""
 
 
 dataset=-1
-x2=5.8000002}
+x2=7.3957062}
 N -720 10 -720 30 {
 lab=GND}
 N -720 -70 -720 -50 {
@@ -110,9 +110,9 @@ lab=VCM}
 N -340 30 -340 40 {
 lab=GND}
 N -240 110 -240 130 {
-lab=GND}
+lab=VSS}
 N -240 130 -200 130 {
-lab=GND}
+lab=VSS}
 N -250 90 -240 90 {
 lab=VDD}
 N 10 90 100 90 {
@@ -147,6 +147,10 @@ N -360 260 -360 270 {
 lab=VDD}
 N -430 260 -430 270 {
 lab=VDD}
+N -840 120 -840 140 {
+lab=GND}
+N -840 30 -840 60 {
+lab=VSS}
 C {devices/launcher.sym} 795 -345 0 0 {name=h1
 descr="Click left mouse button here with control key
 pressed to load/unload waveforms in graph."
@@ -187,20 +191,8 @@ C {devices/gnd.sym} 70 290 0 1 {name=l7 lab=GND}
 C {Filter_TOP.sym} -270 180 0 0 {name=x4
 }
 C {devices/gnd.sym} -340 40 0 1 {name=l2 lab=GND}
-C {devices/gnd.sym} -200 130 0 0 {name=l3 lab=GND}
 C {devices/lab_wire.sym} -250 90 0 0 {name=p3 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} -460 270 0 0 {name=p6 sig_type=std_logic lab=VDD}
-C {devices/code_shown.sym} -1650 -20 0 0 {name=MODELS1 only_toplevel=true
-format="tcleval( @value )"
-value="
-.include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
-.lib $::180MCU_MODELS/sm141064.ngspice cap_mim
-.lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
-
-*.param sw_stat_mismatch=1
-*.param sw_stat_global=1
-"}
 C {devices/code_shown.sym} -1560 170 0 0 {name=NGSPICE1 only_toplevel=true
 value="
 .option gmin=1e-14
@@ -241,7 +233,24 @@ C {devices/lab_wire.sym} -260 -30 0 0 {name=p11 sig_type=std_logic lab=VCM}
 C {devices/code_shown.sym} -600 -265 0 0 {name=DUT only_toplevel=true
 format="tcleval( @value )"
 value="
-*.include "/home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/spice/Filter_TOP_PEX2.spice"
+*.include "/home/gmaranhao/Desktop/Bracolin/padframe/openfasoc-io-tb/gf180mcu_fd_io.spice"
 
-*Xfilter VCM Vin_pos Vin_neg 0 I1U VDD I1N IBNOUT Vout IBPOUT Filter_TOP
+*Xdd VDD VSS VSS gf180mcu_fd_io__dvdd
+
+*Xss VDD VSS VDD gf180mcu_fd_io__dvss
+"}
+C {devices/vsource.sym} -840 90 0 0 {name=VSS value=0}
+C {devices/lab_wire.sym} -840 30 0 0 {name=p12 sig_type=std_logic lab=VSS}
+C {devices/gnd.sym} -840 140 0 0 {name=l4 lab=GND}
+C {devices/lab_wire.sym} -200 130 0 1 {name=p13 sig_type=std_logic lab=VSS}
+C {devices/code_shown.sym} -1580 -80 0 0 {name=MODELS only_toplevel=true
+format="tcleval( @value )"
+value="
+.include $::180MCU_MODELS/design.ngspice
+.lib $::180MCU_MODELS/sm141064.ngspice typical
+.lib $::180MCU_MODELS/sm141064.ngspice diode_typical
+.lib $::180MCU_MODELS/sm141064.ngspice res_typical
+.lib $::180MCU_MODELS/sm141064.ngspice cap_mim
+.lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+.lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
 "}

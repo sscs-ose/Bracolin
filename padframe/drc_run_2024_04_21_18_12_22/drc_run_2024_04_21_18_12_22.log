@@ -1,0 +1,161 @@
+21-Apr-2024 15:12:22 | INFO    | Your Klayout version is: KLayout 0.28.16
+21-Apr-2024 15:12:22 | INFO    | Your Klayout version is: KLayout 0.28.16
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['via4.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['dualgate.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['metal2.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['hres.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['metal1_split.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['pres.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['drc_bjt.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['ldnmos.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['efuse.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['via4_split.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['ldpmos_split.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['ldpmos.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['metal1.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['nat.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['sram_5p0.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['mcell.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['via3.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['metal5.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['contact_split.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['lvs_bjt.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['dnwell_split.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['lvpwell.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['nwell_split.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['contact.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['via2.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['metal3.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['lres.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['sram_3p3.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['dummy_exclude.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['sab.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['nwell.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['esd.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['nat_split.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['otp_mk.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['ymtp_mk.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['poly2.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['metal4.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['via3_split.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['mim_a.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['via5.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['dnwell.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['comp.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['pplus.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['via2_split.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['nplus.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['ldnmos_split.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['via1_split.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['geom.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['lvpwell_split.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['metaltop.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['metaltop_30k.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['mim_b.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | ## Generating template with for the following rule tables: ['via1.drc']
+21-Apr-2024 15:12:22 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22
+21-Apr-2024 15:12:22 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design via4 on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:12:22 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design dualgate on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:12:22 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design metal2 on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:12:22 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design hres on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:12:22 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design metal1_split on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:12:22 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design pres on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:12:22 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design drc_bjt on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:12:22 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design ldnmos on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:12:22 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design efuse on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:12:22 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design via4_split on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:12:22 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design ldpmos_split on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:12:22 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design ldpmos on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:12:22 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design metal1 on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:12:22 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design nat on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:12:22 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design sram_5p0 on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:12:26 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design mcell on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:12:26 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design via3 on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:12:26 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design metal5 on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:13:32 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design contact_split on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:13:33 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design lvs_bjt on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:13:34 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design dnwell_split on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:13:37 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design lvpwell on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:13:37 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design nwell_split on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:13:37 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design contact on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:13:38 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design via2 on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:13:38 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design metal3 on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:13:38 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design lres on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:13:39 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design sram_3p3 on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:13:41 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design dummy_exclude on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:13:43 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design sab on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:13:49 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design nwell on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:13:51 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design esd on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:13:56 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design nat_split on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:14:01 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design otp_mk on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:14:08 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design ymtp_mk on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:14:08 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design poly2 on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:14:41 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design metal4 on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:14:41 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design via3_split on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:14:45 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design mim_a on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:14:48 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design via5 on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:14:49 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design dnwell on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:14:54 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design comp on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:15:00 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design pplus on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:15:03 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design via2_split on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:15:04 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design nplus on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:15:08 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design ldnmos_split on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:15:12 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design via1_split on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:15:14 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design geom on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:15:15 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design lvpwell_split on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:15:16 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design metaltop on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:15:17 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design metaltop_30k on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:15:20 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design mim_b on cell RING_PAD_BRACOLIN:
+21-Apr-2024 15:15:24 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/padframe/RING_PAD_BRACOLIN.gds checks on design via1 on cell RING_PAD_BRACOLIN:

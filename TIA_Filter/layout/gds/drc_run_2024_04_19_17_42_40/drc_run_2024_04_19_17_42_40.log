@@ -1,0 +1,166 @@
+19-Apr-2024 14:42:40 | INFO    | Your Klayout version is: KLayout 0.28.16
+19-Apr-2024 14:42:40 | INFO    | Your Klayout version is: KLayout 0.28.16
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['via4.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['dualgate.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['metal2.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['hres.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['metal1_split.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['pres.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['drc_bjt.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['ldnmos.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['efuse.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['via4_split.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['ldpmos_split.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['ldpmos.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['metal1.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['nat.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['sram_5p0.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['mcell.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['via3.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['metal5.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['contact_split.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['lvs_bjt.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['dnwell_split.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['lvpwell.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['nwell_split.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['contact.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['via2.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['metal3.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['lres.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['sram_3p3.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['dummy_exclude.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['sab.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['nwell.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['esd.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['nat_split.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['otp_mk.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['ymtp_mk.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['poly2.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['metal4.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['via3_split.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['mim_a.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['via5.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['dnwell.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['comp.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['pplus.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['via2_split.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['nplus.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['ldnmos_split.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['via1_split.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['geom.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['lvpwell_split.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['metaltop.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['metaltop_30k.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['mim_b.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | ## Generating template with for the following rule tables: ['via1.drc']
+19-Apr-2024 14:42:40 | INFO    | ## Your run dir located at: /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/drc_run_2024_04_19_17_42_40
+19-Apr-2024 14:42:40 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design antenna on cell Filter_TOP:
+19-Apr-2024 14:42:40 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design density on cell Filter_TOP:
+19-Apr-2024 14:42:40 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design via4 on cell Filter_TOP:
+19-Apr-2024 14:42:40 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design dualgate on cell Filter_TOP:
+19-Apr-2024 14:42:40 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design metal2 on cell Filter_TOP:
+19-Apr-2024 14:42:40 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design hres on cell Filter_TOP:
+19-Apr-2024 14:42:40 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design metal1_split on cell Filter_TOP:
+19-Apr-2024 14:42:40 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design pres on cell Filter_TOP:
+19-Apr-2024 14:42:40 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design drc_bjt on cell Filter_TOP:
+19-Apr-2024 14:42:40 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design ldnmos on cell Filter_TOP:
+19-Apr-2024 14:42:40 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design efuse on cell Filter_TOP:
+19-Apr-2024 14:42:40 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design via4_split on cell Filter_TOP:
+19-Apr-2024 14:42:42 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design ldpmos_split on cell Filter_TOP:
+19-Apr-2024 14:42:42 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design ldpmos on cell Filter_TOP:
+19-Apr-2024 14:42:42 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design metal1 on cell Filter_TOP:
+19-Apr-2024 14:42:43 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design nat on cell Filter_TOP:
+19-Apr-2024 14:42:43 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design sram_5p0 on cell Filter_TOP:
+19-Apr-2024 14:42:43 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design mcell on cell Filter_TOP:
+19-Apr-2024 14:42:43 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design via3 on cell Filter_TOP:
+19-Apr-2024 14:42:43 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design metal5 on cell Filter_TOP:
+19-Apr-2024 14:42:43 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design contact_split on cell Filter_TOP:
+19-Apr-2024 14:42:44 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design lvs_bjt on cell Filter_TOP:
+19-Apr-2024 14:42:44 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design dnwell_split on cell Filter_TOP:
+19-Apr-2024 14:42:45 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design lvpwell on cell Filter_TOP:
+19-Apr-2024 14:42:46 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design nwell_split on cell Filter_TOP:
+19-Apr-2024 14:42:46 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design contact on cell Filter_TOP:
+19-Apr-2024 14:42:46 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design via2 on cell Filter_TOP:
+19-Apr-2024 14:42:46 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design metal3 on cell Filter_TOP:
+19-Apr-2024 14:42:46 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design lres on cell Filter_TOP:
+19-Apr-2024 14:42:47 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design sram_3p3 on cell Filter_TOP:
+19-Apr-2024 14:42:47 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design dummy_exclude on cell Filter_TOP:
+19-Apr-2024 14:42:48 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design sab on cell Filter_TOP:
+19-Apr-2024 14:42:48 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design nwell on cell Filter_TOP:
+19-Apr-2024 14:42:49 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design esd on cell Filter_TOP:
+19-Apr-2024 14:42:49 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design nat_split on cell Filter_TOP:
+19-Apr-2024 14:42:50 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design otp_mk on cell Filter_TOP:
+19-Apr-2024 14:42:50 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design ymtp_mk on cell Filter_TOP:
+19-Apr-2024 14:42:50 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design poly2 on cell Filter_TOP:
+19-Apr-2024 14:42:50 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design metal4 on cell Filter_TOP:
+19-Apr-2024 14:42:51 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design via3_split on cell Filter_TOP:
+19-Apr-2024 14:42:51 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design mim_a on cell Filter_TOP:
+19-Apr-2024 14:42:52 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design via5 on cell Filter_TOP:
+19-Apr-2024 14:42:52 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design dnwell on cell Filter_TOP:
+19-Apr-2024 14:42:53 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design comp on cell Filter_TOP:
+19-Apr-2024 14:42:53 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design pplus on cell Filter_TOP:
+19-Apr-2024 14:42:53 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design via2_split on cell Filter_TOP:
+19-Apr-2024 14:42:53 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design nplus on cell Filter_TOP:
+19-Apr-2024 14:42:53 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design ldnmos_split on cell Filter_TOP:
+19-Apr-2024 14:42:53 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design via1_split on cell Filter_TOP:
+19-Apr-2024 14:42:54 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design geom on cell Filter_TOP:
+19-Apr-2024 14:42:54 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design lvpwell_split on cell Filter_TOP:
+19-Apr-2024 14:42:55 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design metaltop on cell Filter_TOP:
+19-Apr-2024 14:42:55 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design metaltop_30k on cell Filter_TOP:
+19-Apr-2024 14:42:55 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design mim_b on cell Filter_TOP:
+19-Apr-2024 14:42:55 | INFO    | Running Global Foundries 180nm MCU /home/gmaranhao/Desktop/Bracolin/TIA_Filter/layout/gds/Filter_TOP.gds checks on design via1 on cell Filter_TOP:
+19-Apr-2024 14:43:25 | ERROR   | Klayout DRC run is not clean.
+19-Apr-2024 14:43:25 | ERROR   | Violated rules are : {'M4.4', 'MT.3', 'M3.4', 'M2.4', 'M5.4'}
+

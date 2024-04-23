@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 1290 -595 2090 -195 {flags=graph
-y1=-0.061
+y1=-0.015
 y2=3.4
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.7272294e-08
-x2=2.5381116e-06
+x1=3.2221001e-09
+x2=3.4681954e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -114,7 +114,7 @@ value="
 .include "/home/gmaranhao/Desktop/Bracolin/padframe/openfasoc-io-tb/gf180mcu_fd_io__bi_t_extracted.spice"
 *.include "/home/gmaranhao/Desktop/Bracolin/Clock_Reference/layout/spice/clockGeneratorLayout_PEX2.spice"
 
-XDUT1 OUT 0 VDD 0 0 VDD PAD0 VDD 0 0 VDD 0 VDD 0 0 gf180mcu_fd_io__bi_t_extracted
+XDUT1 OUT 0 VDD 0 0 VDD PAD0 0 0 0 0 0 VDD 0 0 gf180mcu_fd_io__bi_t_extracted
 
 
 *Xclock 0 IBIAS VDD OUT clockGeneratorLayout

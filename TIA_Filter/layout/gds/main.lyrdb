@@ -3,7 +3,7 @@
  <description>DRC Run Report at</description>
  <original-file/>
  <generator>drc: script='/home/gmaranhao/pdk/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
- <top-cell>teste_tieH_L</top-cell>
+ <top-cell>Filter_TOP</top-cell>
  <tags>
  </tags>
  <categories>
@@ -3987,7 +3987,7 @@
  </categories>
  <cells>
   <cell>
-   <name>teste_tieH_L</name>
+   <name>Filter_TOP</name>
    <variant/>
    <references>
    </references>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>DRC Run Report at</description>
+ <original-file/>
+ <generator>drc: script='/home/gmaranhao/Desktop/Bracolin/padframe/drc_run_2024_04_21_18_12_22/lvs_bjt.drc'</generator>
+ <top-cell>RING_PAD_BRACOLIN</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>LVS_BJT.1</name>
+   <description>LVS_BJT.1 : Minimum LVS_BJT enclosure of NPN or PNP Emitter COMP layers: 0um</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>RING_PAD_BRACOLIN</name>
+   <variant/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+ </items>
+</report-database>
