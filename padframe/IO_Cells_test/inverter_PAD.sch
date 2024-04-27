@@ -20,13 +20,13 @@ lab=DVSS}
 N 170 -140 170 -130 {
 lab=A}
 N 130 -170 130 -100 {
-lab=VIN}
+lab=Y}
 N 170 -250 170 -200 {
 lab=DVDD}
 N 170 -70 170 -10 {
 lab=DVSS}
 N 50 -140 130 -140 {
-lab=VIN}
+lab=Y}
 N 170 -140 280 -140 {
 lab=A}
 C {symbols/nfet_03v3.sym} 150 -100 0 0 {name=M1
@@ -60,7 +60,7 @@ spiceprefix=X
 C {devices/code_shown.sym} -760 -450 0 0 {name=DUT only_toplevel=true
 format="tcleval( @value )"
 value="
-.include /home/gmaranhao/Desktop/Bracolin/padframe/openfasoc-io-tb/gf180mcu_fd_io_2.spice
+.include /home/gmaranhao/Desktop/Bracolin/padframe/openfasoc-io-tb/gf180mcu_fd_io.spice
 
 Xbit A CS DVDD DVSS IE OE PAD PD PDRV0 PDRV1 PU SL VDD VSS Y gf180mcu_fd_io__bi_t
 
@@ -82,8 +82,7 @@ C {devices/iopin.sym} -330 -30 0 0 {name=p12 lab=SL}
 C {devices/iopin.sym} -330 -10 0 0 {name=p13 lab=VDD}
 C {devices/iopin.sym} -330 10 0 0 {name=p14 lab=VSS}
 C {devices/iopin.sym} -330 30 0 0 {name=p15 lab=Y}
-C {devices/iopin.sym} -200 -110 0 0 {name=p16 lab=VIN}
-C {devices/lab_wire.sym} 70 -140 0 0 {name=p17 sig_type=std_logic lab=VIN}
+C {devices/lab_wire.sym} 70 -140 0 0 {name=p17 sig_type=std_logic lab=Y}
 C {devices/lab_wire.sym} 170 -250 0 0 {name=p18 sig_type=std_logic lab=DVDD}
 C {devices/lab_wire.sym} 170 -10 2 1 {name=p19 sig_type=std_logic lab=DVSS}
 C {devices/lab_wire.sym} 280 -140 0 1 {name=p20 sig_type=std_logic lab=A}

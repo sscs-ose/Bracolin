@@ -1,13 +1,13 @@
 ** sch_path: /home/gmaranhao/Desktop/Bracolin/padframe/IO_Cells_test/inverter_PAD.sch
-.subckt inverter_PAD A CS DVDD DVSS IE OE PAD PD PDRV0 PDRV1 PU SL VDD VSS Y VIN
-*.PININFO A:B CS:B DVDD:B DVSS:B IE:B OE:B PAD:B PD:B PDRV0:B PDRV1:B PU:B SL:B VDD:B VSS:B Y:B VIN:B
-M1 A VIN DVSS DVSS nfet_03v3 L=2u W=2u nf=1 m=1
-M2 A VIN DVDD DVDD pfet_03v3 L=2u W=2u nf=1 m=1
+.subckt inverter_PAD A CS DVDD DVSS IE OE PAD PD PDRV0 PDRV1 PU SL VDD VSS Y
+*.PININFO A:B CS:B DVDD:B DVSS:B IE:B OE:B PAD:B PD:B PDRV0:B PDRV1:B PU:B SL:B VDD:B VSS:B Y:B
+M1 A Y DVSS DVSS nfet_03v3 L=2u W=2u nf=1 m=1
+M2 A Y DVDD DVDD pfet_03v3 L=2u W=2u nf=1 m=1
 **** begin user architecture code
 
-.include /home/gmaranhao/Desktop/Bracolin/padframe/openfasoc-io-tb/gf180mcu_fd_io_2.spice
+.include gf180mcu_fd_io.spice
 
-Xbit A CS DVDD DVSS IE OE PAD PD PDRV0 PDRV1 PU SL VDD VSS Y gf180mcu_fd_io__bi_t
+Xbit A CS DVDD DVSS IE OE PAD PD PDRV0 PDRV1 PU SL VDD VSS Y padbit
 
 
 

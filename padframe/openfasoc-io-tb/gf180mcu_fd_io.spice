@@ -41,8 +41,8 @@ D3 ASIG5V DVDD diode_pd2nw_06v0 m=4.0 area=150e-12 pj=106e-6
 * limitations under the License.
 
 .SUBCKT gf180mcu_fd_io__bi_24t A CS DVDD DVSS IE OE PAD PD PU SL VDD VSS Y
-X0 n9 VDD VDD ppolyf_u r_width=800e-9 r_length=1.6e-6 m=1.0 r=907.859 par=1
-X1 n11 VDD VDD ppolyf_u r_width=800e-9 r_length=1.6e-6 m=1.0 r=907.859 par=1
+R0 n9 VDD VDD ppolyf_u r_width=800e-9 r_length=1.6e-6 m=1.0 r=907.859 par=1
+R1 n11 VDD VDD ppolyf_u r_width=800e-9 r_length=1.6e-6 m=1.0 r=907.859 par=1
 X2 DVDD DVSS cap_nmos_06v0 m=4.0 c_length=3e-6 c_width=3e-6
 X3 DVDD DVSS cap_nmos_06v0 m=8.0 c_length=1.5e-6 c_width=5e-6
 X4 n43 n32 DVSS DVSS nfet_06v0 m=1.0 w=3e-6 l=700e-9 nf=2.0 as=1.32e-12 ad=780e-15
@@ -235,14 +235,14 @@ X68 n129 PD VSS VSS nfet_06v0 m=1.0 w=1.5e-6 l=700e-9 nf=1.0 as=660e-15
 X69 n123 PU VSS VSS nfet_06v0 m=1.0 w=1.5e-6 l=700e-9 nf=1.0 as=660e-15
 + ad=660e-15 ps=3.88e-6 pd=3.88e-6 nrd=293.333e-3 nrs=293.333e-3 sa=440e-9
 + sb=440e-9 sd=0.0 dtemp=0.0 par=1
-X70 n21 n132 DVDD ppolyf_u r_width=800e-9 r_length=23e-6 m=1.0 r=9.94533e3 par=1
-X71 n132 n131 DVDD ppolyf_u r_width=800e-9 r_length=35.7e-6 m=1.0 r=15.3065e3 par=1
-X72 n131 n130 DVDD ppolyf_u r_width=800e-9 r_length=35.7e-6 m=1.0 r=15.3065e3 par=1
-X73 n130 n133 DVDD ppolyf_u r_width=800e-9 r_length=35.7e-6 m=1.0 r=15.3065e3 par=1
-X74 n133 n138 DVDD ppolyf_u r_width=800e-9 r_length=35.7e-6 m=1.0 r=15.3065e3 par=1
-X75 n138 n137 DVDD ppolyf_u r_width=800e-9 r_length=35.7e-6 m=1.0 r=15.3065e3 par=1
-X76 n137 n134 DVDD ppolyf_u r_width=800e-9 r_length=35.7e-6 m=1.0 r=15.3065e3 par=1
-X77 n134 n135 DVDD ppolyf_u r_width=800e-9 r_length=35.7e-6 m=1.0 r=15.3065e3 par=1
+R70 n21 n132 DVDD ppolyf_u W=800e-9 L=23e-6 m=1.0 r=9.94533e3 par=1
+R71 n132 n131 DVDD ppolyf_u W=800e-9 L=35.7e-6 m=1.0 r=15.3065e3 par=1
+R72 n131 n130 DVDD ppolyf_u W=800e-9 L=35.7e-6 m=1.0 r=15.3065e3 par=1
+R73 n130 n133 DVDD ppolyf_u W=800e-9 L=35.7e-6 m=1.0 r=15.3065e3 par=1
+R74 n133 n138 DVDD ppolyf_u W=800e-9 L=35.7e-6 m=1.0 r=15.3065e3 par=1
+R75 n138 n137 DVDD ppolyf_u W=800e-9 L=35.7e-6 m=1.0 r=15.3065e3 par=1
+R76 n137 n134 DVDD ppolyf_u W=800e-9 L=35.7e-6 m=1.0 r=15.3065e3 par=1
+R77 n134 n135 DVDD ppolyf_u W=800e-9 L=35.7e-6 m=1.0 r=15.3065e3 par=1
 X78 n135 n51 DVSS DVSS nfet_06v0 m=1.0 w=1.5e-6 l=700e-9 nf=1.0 as=660e-15
 + ad=660e-15 ps=3.88e-6 pd=3.88e-6 nrd=293.333e-3 nrs=293.333e-3 sa=440e-9
 + sb=440e-9 sd=0.0 dtemp=0.0 par=1
