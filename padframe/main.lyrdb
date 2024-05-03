@@ -294,6 +294,12 @@
    </categories>
   </category>
   <category>
+   <name>MDN.2a</name>
+   <description>MDN.2a : Min MVSD space [Same Potential]. : 1µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
    <name>MDN.2b</name>
    <description>MDN.2b : Min MVSD space [Diff Potential]. : 2µm</description>
    <categories>
@@ -374,6 +380,12 @@
   <category>
    <name>MDN.7a</name>
    <description>MDN.7a : Min LDMOS_XTOR enclose Dualgate.: 0 um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MDN.8a</name>
+   <description>MDN.8a : Min LDNMOS drain MVSD space to any other equal potential Nwell space.</description>
    <categories>
    </categories>
   </category>
@@ -845,6 +857,12 @@
    </categories>
   </category>
   <category>
+   <name>MDP.10b</name>
+   <description>MDP.10b : Min MVPSD space [same potential]. Merge if space less than 1um. : 1µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
    <name>MDP.11</name>
    <description>MDP.11 : Min MVPSD enclosing PCOMP in the drain
                     (MVPSD AND COMP NOT POLY2) direction and in the direction along the transistor width.</description>
@@ -960,6 +978,13 @@
    <name>NAT.5</name>
    <description>NAT.5 : Minimum channel length for 6.0V Native Vt NMOS
                     (For smaller L Ioff will be higher than Spec). : 1.8µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>NAT.6</name>
+   <description>NAT.6 : Two or more COMPs if connected to different potential
+                          are not allowed under same NAT layer.</description>
    <categories>
    </categories>
   </category>
@@ -1157,6 +1182,18 @@
   <category>
    <name>LPW.2a_MV</name>
    <description>LPW.2a_MV : Min. LVPWELL to LVPWELL Space (Inside DNWELL) [Different potential]. : 1.7µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>LPW.2b_LV</name>
+   <description>LPW.2b_LV : Min. LVPWELL to LVPWELL Space [Equi potential]. : 0.86µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>LPW.2b_MV</name>
+   <description>LPW.2b_MV : Min. LVPWELL to LVPWELL Space [Equi potential]. : 0.86µm</description>
    <categories>
    </categories>
   </category>
@@ -1618,8 +1655,22 @@
    </categories>
   </category>
   <category>
+   <name>NW.2a_LV</name>
+   <description>NW.2a_LV : Min. Nwell Space (Outside DNWELL) [Equi-potential],
+                      Merge if the space is less than. : 0.6µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>NW.2a_MV</name>
+   <description>NW.2a_MV : Min. Nwell Space (Outside DNWELL) [Equi-potential],
+                      Merge if the space is less than. : 0.74µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
    <name>NW.2b_LV</name>
-   <description>NW.2b_LV : Min. Nwell Space (Outside DNWELL) [Different potential]: 1.4µm</description>
+   <description>NW.2b_LV : Min. Nwell Space (Outside DNWELL) [Different potential]: 1.4µm.</description>
    <categories>
    </categories>
   </category>
@@ -2078,6 +2129,12 @@
   <category>
    <name>DN.1</name>
    <description>DN.1 : Min. DNWELL Width : 1.7µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DN.2a</name>
+   <description>DN.2a : Min. DNWELL Space (Equi-potential), Merge if the space is less than : 2.5µm</description>
    <categories>
    </categories>
   </category>
@@ -3992,235 +4049,7 @@
    <references>
    </references>
   </cell>
-  <cell>
-   <name>gf180mcu_fd_io__bi_t$VAR1</name>
-   <variant/>
-   <references>
-    <ref>
-     <parent>RING_PAD_BRACOLIN</parent>
-     <trans>r90 *1 2955.3,2500.3</trans>
-    </ref>
-   </references>
-  </cell>
-  <cell>
-   <name>GF_NI_BI_T_BASE$VAR1</name>
-   <variant/>
-   <references>
-    <ref>
-     <parent>RING_PAD_BRACOLIN</parent>
-     <trans>r90 *1 2893.15,2500.14</trans>
-    </ref>
-   </references>
-  </cell>
-  <cell>
-   <name>comp018green_inpath_cms_smt$VAR1</name>
-   <variant/>
-   <references>
-    <ref>
-     <parent>RING_PAD_BRACOLIN</parent>
-     <trans>m45 *1 2613.89,2504.38</trans>
-    </ref>
-   </references>
-  </cell>
-  <cell>
-   <name>comp018green_in_cms_smt$VAR1</name>
-   <variant/>
-   <references>
-    <ref>
-     <parent>RING_PAD_BRACOLIN</parent>
-     <trans>m45 *1 2629.68,2512.04</trans>
-    </ref>
-   </references>
-  </cell>
-  <cell>
-   <name>comp018green_in_drv$VAR1</name>
-   <variant/>
-   <references>
-    <ref>
-     <parent>RING_PAD_BRACOLIN</parent>
-     <trans>m45 *1 2629.68,2548.88</trans>
-    </ref>
-   </references>
-  </cell>
-  <cell>
-   <name>comp018green_in_logic_pupd$VAR1</name>
-   <variant/>
-   <references>
-    <ref>
-     <parent>RING_PAD_BRACOLIN</parent>
-     <trans>r270 *1 2662.51,2574.04</trans>
-    </ref>
-   </references>
-  </cell>
-  <cell>
-   <name>comp018green_std_xor2$VAR1</name>
-   <variant/>
-   <references>
-    <ref>
-     <parent>RING_PAD_BRACOLIN</parent>
-     <trans>r270 *1 2646.125,2571.485</trans>
-    </ref>
-   </references>
-  </cell>
-  <cell>
-   <name>gf180mcu_fd_io__bi_t</name>
-   <variant/>
-   <references>
-    <ref>
-     <parent>RING_PAD_BRACOLIN</parent>
-     <trans>r180 *1 2475.3,2955.3</trans>
-    </ref>
-   </references>
-  </cell>
-  <cell>
-   <name>GF_NI_BI_T_BASE</name>
-   <variant/>
-   <references>
-    <ref>
-     <parent>RING_PAD_BRACOLIN</parent>
-     <trans>r180 *1 2475.46,2893.15</trans>
-    </ref>
-   </references>
-  </cell>
-  <cell>
-   <name>comp018green_inpath_cms_smt</name>
-   <variant/>
-   <references>
-    <ref>
-     <parent>RING_PAD_BRACOLIN</parent>
-     <trans>m90 *1 2471.22,2613.89</trans>
-    </ref>
-   </references>
-  </cell>
-  <cell>
-   <name>comp018green_in_cms_smt</name>
-   <variant/>
-   <references>
-    <ref>
-     <parent>RING_PAD_BRACOLIN</parent>
-     <trans>m90 *1 2463.56,2629.68</trans>
-    </ref>
-   </references>
-  </cell>
-  <cell>
-   <name>comp018green_in_drv</name>
-   <variant/>
-   <references>
-    <ref>
-     <parent>RING_PAD_BRACOLIN</parent>
-     <trans>m90 *1 2426.72,2629.68</trans>
-    </ref>
-   </references>
-  </cell>
-  <cell>
-   <name>comp018green_in_logic_pupd</name>
-   <variant/>
-   <references>
-    <ref>
-     <parent>RING_PAD_BRACOLIN</parent>
-     <trans>r0 *1 2401.56,2662.51</trans>
-    </ref>
-   </references>
-  </cell>
-  <cell>
-   <name>comp018green_std_xor2</name>
-   <variant/>
-   <references>
-    <ref>
-     <parent>RING_PAD_BRACOLIN</parent>
-     <trans>r0 *1 2404.115,2646.125</trans>
-    </ref>
-   </references>
-  </cell>
  </cells>
  <items>
-  <item>
-   <tags/>
-   <category>'NW.2b_MV'</category>
-   <cell>comp018green_in_cms_smt$VAR1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (35.605,7.755;35.605,12.875)|(34.36,12.875;34.36,6.597)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'NW.2b_MV'</category>
-   <cell>comp018green_in_drv$VAR1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (-1.235,7.755;-1.235,12.875)|(-2.48,12.875;-2.48,6.597)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'NW.2b_MV'</category>
-   <cell>comp018green_in_logic_pupd$VAR1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (4.555,-3.51;14.36,-3.51)|(15.4,-2.165;5.595,-2.165)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'NW.2b_MV'</category>
-   <cell>comp018green_std_xor2$VAR1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (2,12.875;11.805,12.875)|(12.845,14.22;3.04,14.22)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'NW.2b_MV'</category>
-   <cell>comp018green_in_cms_smt</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (35.605,7.755;35.605,12.875)|(34.36,12.875;34.36,6.597)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'NW.2b_MV'</category>
-   <cell>comp018green_in_drv</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (-1.235,7.755;-1.235,12.875)|(-2.48,12.875;-2.48,6.597)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'NW.2b_MV'</category>
-   <cell>comp018green_in_logic_pupd</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (4.555,-3.51;14.36,-3.51)|(15.4,-2.165;5.595,-2.165)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'NW.2b_MV'</category>
-   <cell>comp018green_std_xor2</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (2,12.875;11.805,12.875)|(12.845,14.22;3.04,14.22)</value>
-   </values>
-  </item>
  </items>
 </report-database>

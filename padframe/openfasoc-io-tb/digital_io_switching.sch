@@ -30,7 +30,7 @@ logy=0
 
 
 
-x1=0
+x1=8.2718061e-25
 
 
 
@@ -70,7 +70,7 @@ logy=0
 
 
 
-x1=0
+x1=8.2718061e-25
 
 
 
@@ -108,7 +108,7 @@ logy=0
 
 
 
-x1=0
+x1=8.2718061e-25
 
 
 
@@ -146,7 +146,7 @@ logy=0
 
 
 
-x1=0
+x1=8.2718061e-25
 
 
 
@@ -304,8 +304,7 @@ C {devices/lab_wire.sym} 1440 -1220 0 0 {name=p11 sig_type=std_logic lab=SL
 }
 C {devices/gnd.sym} 680 -1030 0 0 {name=l2 lab=GND
 }
-C {devices/vsource.sym} 1500 -1150 0 0 {name=V13 value=3.3
-}
+C {devices/vsource.sym} 1500 -1150 0 0 {name=V13 value=0}
 C {devices/lab_wire.sym} 1500 -1220 0 0 {name=p13 sig_type=std_logic lab=CS
 }
 C {devices/launcher.sym} 445 -945 0 0 {name=h1

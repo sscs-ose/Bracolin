@@ -3,7 +3,7 @@
  <description>GF180 DENSITY DRC Run Report at</description>
  <original-file/>
  <generator>drc: script='/home/gmaranhao/pdk/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
- <top-cell>nmos_char</top-cell>
+ <top-cell>pmos_char</top-cell>
  <tags>
  </tags>
  <categories>
@@ -50,7 +50,7 @@
  </categories>
  <cells>
   <cell>
-   <name>nmos_char</name>
+   <name>pmos_char</name>
    <variant/>
    <references>
    </references>
@@ -60,111 +60,111 @@
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>nmos_char</cell>
+   <cell>pmos_char</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (1.75,-6.53;1.75,-2.53;2.15,-2.53;2.15,-6.53)</value>
+    <value>polygon: (5.42,0.405;5.42,4.405;5.82,4.405;5.82,0.405)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>nmos_char</cell>
+   <cell>pmos_char</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (0.57,0.54;0.57,4.54;0.97,4.54;0.97,0.54)</value>
+    <value>polygon: (4.29,7.475;4.29,11.475;4.69,11.475;4.69,7.475)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>nmos_char</cell>
+   <cell>pmos_char</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (1.75,0.54;1.75,4.54;2.15,4.54;2.15,0.54)</value>
+    <value>polygon: (5.4,7.475;5.4,11.475;5.8,11.475;5.8,7.475)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>nmos_char</cell>
+   <cell>pmos_char</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (3.05,0.54;3.05,4.54;3.45,4.54;3.45,0.54)</value>
+    <value>polygon: (6.74,7.475;6.74,11.475;7.14,11.475;7.14,7.475)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>nmos_char</cell>
+   <cell>pmos_char</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (4.24,0.54;4.24,4.54;4.64,4.54;4.64,0.54)</value>
+    <value>polygon: (7.89,7.475;7.89,11.475;8.29,11.475;8.29,7.475)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>nmos_char</cell>
+   <cell>pmos_char</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (-0.52,-0.625;-0.52,5.735;6.45,5.735;6.45,-0.625/-0.12,-0.225;6.05,-0.225;6.05,5.335;-0.12,5.335)</value>
+    <value>polygon: (3.15,6.31;3.15,12.67;12.5,12.67;12.5,6.31/3.55,6.71;9.72,6.71;9.72,12.27;3.55,12.27/10.12,6.71;12.1,6.71;12.1,12.27;10.12,12.27)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M3.4'</category>
-   <cell>nmos_char</cell>
+   <cell>pmos_char</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (0.575,-9.01;0.575,0.54;0.57,0.54;0.57,4.54;0.97,4.54;0.97,2.54;0.975,2.54;0.975,-9.01)</value>
+    <value>polygon: (4.285,-2.25;4.285,8.94;4.29,8.94;4.29,11.475;4.69,11.475;4.69,7.475;4.685,7.475;4.685,-2.25)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M3.4'</category>
-   <cell>nmos_char</cell>
+   <cell>pmos_char</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (1.75,-7.015;1.75,4.54;2.15,4.54;2.15,-7.015)</value>
+    <value>polygon: (5.4,-0.08;5.4,11.475;5.8,11.475;5.8,4.405;5.82,4.405;5.82,0.405;5.8,0.405;5.8,-0.08)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M3.4'</category>
-   <cell>nmos_char</cell>
+   <cell>pmos_char</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (3.05,-9.01;3.05,4.54;3.45,4.54;3.45,-9.01)</value>
+    <value>polygon: (6.74,-2.075;6.74,11.475;7.14,11.475;7.14,-2.075)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M3.4'</category>
-   <cell>nmos_char</cell>
+   <cell>pmos_char</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <image/>
    <values>
-    <value>polygon: (4.24,-9.01;4.24,4.54;4.64,4.54;4.64,-9.01)</value>
+    <value>polygon: (7.89,-2.075;7.89,11.475;8.29,11.475;8.29,-2.075)</value>
    </values>
   </item>
  </items>

@@ -1,0 +1,20 @@
+** sch_path: /home/gmaranhao/Desktop/Bracolin/Current_Source/pmos_char.sch
+.subckt pmos_char VD1 VD2 VD3 VG VS
+*.PININFO VD1:B VD2:B VD3:B VG:B VS:B
+M1 VD1 VG VS VS pfet_03v3 L=0.28u W=5u nf=1 m=1
+M2 VD2 VG VS VS pfet_03v3 L=0.5u W=5u nf=1 m=1
+M3 VD3 VG VS VS pfet_03v3 L=1u W=5u nf=1 m=1
+M4[1] VS VS VS VS pfet_03v3 L=0.92u W=5u nf=1 m=1
+M4[2] VS VS VS VS pfet_03v3 L=0.92u W=5u nf=1 m=1
+M4[3] VS VS VS VS pfet_03v3 L=0.92u W=5u nf=1 m=1
+M4[4] VS VS VS VS pfet_03v3 L=0.92u W=5u nf=1 m=1
+M4[5] VS VS VS VS pfet_03v3 L=0.92u W=5u nf=1 m=1
+M4[6] VS VS VS VS pfet_03v3 L=0.92u W=5u nf=1 m=1
+M4[7] VS VS VS VS pfet_03v3 L=0.92u W=5u nf=1 m=1
+M4[8] VS VS VS VS pfet_03v3 L=0.92u W=5u nf=1 m=1
+M4[9] VS VS VS VS pfet_03v3 L=0.92u W=5u nf=1 m=1
+M4[10] VS VS VS VS pfet_03v3 L=0.92u W=5u nf=1 m=1
+M5[1] VS VS VS VS pfet_03v3 L=1u W=5u nf=1 m=1
+M5[2] VS VS VS VS pfet_03v3 L=1u W=5u nf=1 m=1
+.ends
+.end
