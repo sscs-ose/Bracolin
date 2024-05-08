@@ -111,8 +111,6 @@ N -340 30 -340 40 {
 lab=GND}
 N -240 110 -240 130 {
 lab=VSS}
-N -240 130 -200 130 {
-lab=VSS}
 N -250 90 -240 90 {
 lab=VDD}
 N 10 90 100 90 {
@@ -151,6 +149,10 @@ N -840 120 -840 140 {
 lab=GND}
 N -840 30 -840 60 {
 lab=VSS}
+N -300 140 -240 140 {
+lab=VSS}
+N -240 130 -240 140 {
+lab=VSS}
 C {devices/launcher.sym} 795 -345 0 0 {name=h1
 descr="Click left mouse button here with control key
 pressed to load/unload waveforms in graph."
@@ -188,7 +190,7 @@ C {devices/vsource.sym} 70 240 0 1 {name=VDD2 value=1.65}
 C {devices/vsource.sym} 100 220 0 0 {name=VDD3 value=1.65}
 C {devices/gnd.sym} 100 270 0 0 {name=l6 lab=GND}
 C {devices/gnd.sym} 70 290 0 1 {name=l7 lab=GND}
-C {Filter_TOP.sym} -270 180 0 0 {name=x4
+C {Filter_TOP.sym} -270 180 0 0 {name=x1
 }
 C {devices/gnd.sym} -340 40 0 1 {name=l2 lab=GND}
 C {devices/lab_wire.sym} -250 90 0 0 {name=p3 sig_type=std_logic lab=VDD}
@@ -242,7 +244,7 @@ value="
 C {devices/vsource.sym} -840 90 0 0 {name=VSS value=0}
 C {devices/lab_wire.sym} -840 30 0 0 {name=p12 sig_type=std_logic lab=VSS}
 C {devices/gnd.sym} -840 140 0 0 {name=l4 lab=GND}
-C {devices/lab_wire.sym} -200 130 0 1 {name=p13 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} -300 140 0 0 {name=p13 sig_type=std_logic lab=VSS}
 C {devices/code_shown.sym} -1580 -80 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
