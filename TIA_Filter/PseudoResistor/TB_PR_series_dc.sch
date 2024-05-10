@@ -52,8 +52,8 @@ subdivy=1
 
 
 
-x1=-0.099
-x2=0.121
+x1=-0.2
+x2=0.2
 y1=-6.1e-13
 y2=6e-13
 dataset=-1}
@@ -112,8 +112,8 @@ dataset=-1
 
 
 
-x1=-0.099
-x2=0.121
+x1=-0.2
+x2=0.2
 
 
 y1=4e+11
@@ -143,8 +143,8 @@ logy=0
 
 
 y2=1.9
-x1=-0.099
-x2=0.121
+x1=-0.2
+x2=0.2
 y1=1.4
 color="4 5"
 node="vxb
@@ -176,7 +176,7 @@ logy=0
 
 
 y2=1.1e-12
-x1=-0.099
+x1=-0.2
 
 y1=1e-12
 
@@ -186,7 +186,7 @@ dataset=0
 color="4 5"
 node="i(vinp3)
 i(vinn6)"
-x2=0.121}
+x2=0.2}
 B 2 1890 -490 2690 -90 {flags=graph
 
 
@@ -234,11 +234,73 @@ subdivy=1
 
 
 
-x1=-0.099
-x2=0.121
+x1=-0.2
+x2=0.2
 y1=-6.1e-13
 y2=6e-13
 dataset=-1}
+B 2 1470 330 2270 730 {flags=graph
+
+
+ypos1=0
+ypos2=2
+
+subdivy=1
+unity=1
+
+
+
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+
+unitx=m
+logx=0
+logy=0
+
+
+
+
+
+
+divx=10
+
+linewidth_mult=4.0
+divy=7
+
+
+
+
+
+
+
+
+
+
+
+
+rainbow=1
+
+
+
+
+
+
+
+dataset=-1
+
+
+
+x1=-0.1
+x2=0.1
+
+
+y1=1.6
+y2=1.7
+color=4
+node=x13.x11.x3.vc}
 T {DC operation a Series (5x -PR)
 Pseudo-Resistor ~1Tohm
 Work Range -70m to 70m with VCM =1.65V} 1290 -580 0 0 0.4 0.4 { layer=3}
@@ -388,7 +450,7 @@ value="
 *.param sw_stat_mismatch=1
 *.param sw_stat_global=1
 "}
-C {devices/code_shown.sym} -590 -990 0 0 {name=NGSPICE only_toplevel=true
+C {devices/code_shown.sym} -590 -980 0 0 {name=NGSPICE only_toplevel=true
 value="
 *.OPTION ABSTOL=1e-2
 .option gmin=1e-15
@@ -424,7 +486,7 @@ let Rdiff2 = 4/deriv(idiff2)
 save idiff Rdiff idiff2 Rdiff2
 remzerovec
 write TB_PR_series_dc.raw
-wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/plots/data_DC/PR_series_DC_m20.txt idiff Rdiff idiff2 Rdiff2
+wrdata /home/gmaranhao/Desktop/Bracolin/TIA_Filter/PseudoResistor/plots/data_DC/PR_series_DC_m20.txt idiff Rdiff idiff2 Rdiff2 V(x13.x11.x3.vc)
 
 .endc
 "
