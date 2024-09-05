@@ -12,4 +12,6 @@ Team Leaders: (Brazil) Deni Alves / Gabriel M. | (Colombia) Juan S. Moya
  2) Colombia:
 	- SAR-ADC 11-bit
     
-[BRACOLIN Slide presentation](https://docs.google.com/presentation/d/1iIIuWxDULkuIupzypLsfGI96Au4B5P6BPbgq90l5cP4/edit?usp=sharing)
+[BRACOLIN Slide presentation](https://docs.google.com/presentation/d/1GY_V075Y9WuhJL9S8PsFSLO9lAEEzd0ayvQq21lLivQ/edit?usp=sharing)
+
+[Padring review BRACOLIN](https://docs.google.com/presentation/d/1bg6gA1EwBESlcAxqpyheD7kwKJdteA6P6Jksey-j1Jw/edit?usp=sharing)
