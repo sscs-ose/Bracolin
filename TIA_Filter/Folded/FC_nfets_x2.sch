@@ -35,4 +35,4 @@ C {devices/lab_wire.sym} 80 -160 0 0 {name=p10 sig_type=std_logic lab=D2}
 C {devices/lab_wire.sym} -180 -50 0 0 {name=p11 sig_type=std_logic lab=G1}
 C {devices/lab_wire.sym} 0 80 0 0 {name=p12 sig_type=std_logic lab=B}
 C {devices/lab_wire.sym} 180 -50 0 1 {name=p14 sig_type=std_logic lab=G2}
-C {FC_nfets.sym} 0 -30 0 0 {name=x1[1:2]}
+C {Folded/FC_nfets.sym} 0 -30 0 0 {name=x1[1:2]}
