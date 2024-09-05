@@ -1,0 +1,24 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: ** sch_path:
+
+Doing analysis at TEMP = 50.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vinn                                      1.65
+clks                                         0
+vcap                                  0.158243
+vdda                                       3.3
+vcom                                      1.65
+vdd2#branch                                  0
+vdd9#branch                       -3.62377e-12
+vdd8#branch                       -1.81188e-12
+vdd4#branch                                  0
+

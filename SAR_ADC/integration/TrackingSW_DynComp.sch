@@ -25,17 +25,17 @@ N 50 200 120 200 {
 lab=clks}
 N 50 240 120 240 {
 lab=Vinn}
-N 580 -100 580 -50 {
+N 500 -160 500 -110 {
 lab=VDDD}
-N 580 110 580 150 {
+N 500 50 500 90 {
 lab=VSSD}
-N 470 0 540 0 {
+N 390 -60 460 -60 {
 lab=VDP}
-N 470 60 540 60 {
+N 390 0 460 0 {
 lab=VDN}
-N 470 30 540 30 {
+N 390 -30 460 -30 {
 lab=clkc}
-N 720 30 790 30 {
+N 640 -30 710 -30 {
 lab=Valid}
 C {/home/electrica/Documents/gf180_projects/gf180_work/PICO_contest/tracking_switches/tracking_switches.sym} 100 10 0 0 {name=x1}
 C {devices/lab_wire.sym} 190 -240 0 0 {name=p3 sig_type=std_logic lab=VDDA}
@@ -48,19 +48,19 @@ C {devices/lab_wire.sym} 110 200 0 0 {name=p8 sig_type=std_logic lab=clks}
 C {devices/lab_wire.sym} 100 240 0 0 {name=p9 sig_type=std_logic lab=Vinn}
 C {devices/lab_wire.sym} 320 240 0 0 {name=p10 sig_type=std_logic lab=VDN}
 C {/home/electrica/Documents/gf180_projects/gf180_work/PICO_contest/Dynamic_Comparator/Dynamic_Comparator.sym} 540 160 0 0 {name=x3}
-C {devices/lab_wire.sym} 580 -90 0 0 {name=p1 sig_type=std_logic lab=VDDD}
+C {devices/lab_wire.sym} 500 -150 0 0 {name=p1 sig_type=std_logic lab=VDDD}
 C {devices/lab_wire.sym} 190 330 0 0 {name=p2 sig_type=std_logic lab=VSSA}
 C {devices/lab_wire.sym} 190 -20 0 0 {name=p11 sig_type=std_logic lab=VSSA}
-C {devices/lab_wire.sym} 580 140 0 0 {name=p12 sig_type=std_logic lab=VSSD}
-C {devices/lab_wire.sym} 530 0 0 0 {name=p13 sig_type=std_logic lab=VDP}
-C {devices/lab_wire.sym} 530 60 0 0 {name=p14 sig_type=std_logic lab=VDN}
-C {devices/lab_wire.sym} 530 30 0 0 {name=p15 sig_type=std_logic lab=clkc}
+C {devices/lab_wire.sym} 500 80 0 0 {name=p12 sig_type=std_logic lab=VSSD}
+C {devices/lab_wire.sym} 450 -60 0 0 {name=p13 sig_type=std_logic lab=VDP}
+C {devices/lab_wire.sym} 450 0 0 0 {name=p14 sig_type=std_logic lab=VDN}
+C {devices/lab_wire.sym} 450 -30 0 0 {name=p15 sig_type=std_logic lab=clkc}
 C {devices/iopin.sym} -150 -40 0 0 {name=p16 lab=VDDD}
 C {devices/iopin.sym} -150 10 0 0 {name=p17 lab=VSSD}
 C {devices/ipin.sym} -100 50 0 0 {name=p18 lab=clks}
 C {devices/iopin.sym} -150 -140 0 0 {name=p21 lab=VDDA}
 C {devices/iopin.sym} -150 -90 0 0 {name=p22 lab=VSSA}
-C {devices/lab_wire.sym} 780 30 0 0 {name=p19 sig_type=std_logic lab=Valid}
+C {devices/lab_wire.sym} 700 -30 0 0 {name=p19 sig_type=std_logic lab=Valid}
 C {devices/ipin.sym} -100 90 0 0 {name=p20 lab=clkc}
 C {devices/ipin.sym} -100 130 0 0 {name=p23 lab=Vinp}
 C {devices/ipin.sym} -100 180 0 0 {name=p24 lab=Vinn}

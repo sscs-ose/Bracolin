@@ -1,0 +1,184 @@
+timestamp 0
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+parameters cap_mim_2f0_m4m5_noshield l=c_length w=c_width
+port "VD" 11 14758 10043 14758 10043 m5
+port "Bit_3" 3 23994 10043 23994 10043 m3
+port "Bit_2" 2 18114 10043 18114 10043 m3
+port "Bit_1" 1 17276 10043 17276 10043 m3
+port "Bit_6" 6 13917 10043 13917 10043 m3
+port "Bit_7" 7 13079 10043 13079 10043 m3
+port "Bit_8" 8 7199 10043 7199 10043 m3
+port "Bit_5" 5 28194 10043 28194 10043 m3
+port "Bit_10" 10 2999 10043 2999 10043 m3
+port "Bit_4" 4 24832 10043 24832 10043 m3
+port "Bit_9" 9 6361 10043 6361 10043 m3
+node "m4_15000_4920#" 0 12206.5 15000 4920 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 31578300 5330 36734900 176390
+node "VD" 0 12570.4 14758 10043 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32000000 0 37993500 189934
+node "Bit_3" 11 2323.76 23994 10043 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 799100 16182 2277120 20992 0 0
+node "Bit_2" 8 2134.57 18114 10043 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 709260 13550 1117440 10304 0 0
+node "Bit_1" 4 1152.65 17276 10043 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 380300 7806 579840 5344 0 0
+node "Bit_6" 4 1152.65 13917 10043 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 380300 7806 579840 5344 0 0
+node "Bit_7" 8 2137.16 13079 10043 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 709260 13550 1117440 10304 0 0
+node "Bit_8" 11 2323.76 7199 10043 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 799100 16182 2277120 20992 0 0
+node "Bit_5" 20 11782.2 28194 10043 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 850000 17200 1967180 33062 8939520 82432 0 0
+node "Bit_10" 20 11782.2 2999 10043 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 850000 17200 1967180 33062 8939520 82432 0 0
+node "Bit_4" 24 6862.51 24832 10043 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 356000 7520 1688940 30838 4469760 41216 0 0
+node "Bit_9" 24 6862.51 6361 10043 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 356000 7520 1688940 30838 4469760 41216 0 0
+node "VSSA" 1 124183 -362 -362 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19971840 166432 8832000 95680 8832000 95680 92990840 298544 68819000 338700
+equiv "VSSA" "GND"
+substrate "a_n362_n362#" 0 0 -362 -362 ppd 0 0 0 0 0 0 19971840 166432 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "Bit_3" "Bit_5" 221.809
+cap "m4_15000_4920#" "Bit_2" 1829.51
+cap "VSSA" "m4_15000_4920#" 5422.87
+cap "VD" "m4_15000_4920#" 686.421
+cap "Bit_7" "Bit_6" 574.556
+cap "VSSA" "Bit_4" 1319.95
+cap "Bit_1" "Bit_2" 574.556
+cap "VSSA" "Bit_1" 1154.92
+cap "m4_15000_4920#" "Bit_7" 171.359
+cap "VSSA" "Bit_2" 921.704
+cap "VSSA" "Bit_10" 3074.59
+cap "VD" "Bit_2" 8.94324
+cap "m4_15000_4920#" "Bit_5" 11660.9
+cap "VD" "Bit_10" 11631.6
+cap "VSSA" "VD" 7078.21
+cap "Bit_4" "Bit_5" 1893.51
+cap "m4_15000_4920#" "Bit_3" 3978.85
+cap "Bit_4" "Bit_3" 3520.13
+cap "Bit_10" "Bit_9" 1893.51
+cap "VSSA" "Bit_9" 1323.57
+cap "VD" "Bit_9" 6541.68
+cap "Bit_1" "Bit_5" 171.359
+cap "Bit_7" "Bit_10" 764.877
+cap "VSSA" "Bit_7" 925.315
+cap "Bit_2" "Bit_5" 764.877
+cap "VD" "Bit_7" 1686.18
+cap "VSSA" "Bit_5" 3074.59
+cap "VSSA" "Bit_3" 1128.51
+cap "Bit_8" "Bit_10" 221.809
+cap "VSSA" "Bit_8" 1128.41
+cap "VD" "Bit_8" 3968.3
+cap "Bit_4" "m4_15000_4920#" 6562.71
+cap "Bit_10" "Bit_6" 171.359
+cap "VSSA" "Bit_6" 1137.27
+cap "Bit_8" "Bit_9" 3520.13
+cap "VD" "Bit_6" 1121.01
+cap "m4_15000_4920#" "Bit_1" 993.991
+device csubckt cap_mim_2f0_m4m5_noshield 30240 0 30241 1 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 28560 0 28561 1 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 26880 0 26881 1 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 25200 0 25201 1 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 23520 0 23521 1 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 21840 0 21841 1 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 20160 0 20161 1 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 18480 0 18481 1 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 16800 0 16801 1 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 15120 0 15121 1 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 13440 0 13441 1 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 11760 0 11761 1 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 10080 0 10081 1 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 8400 0 8401 1 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 6720 0 6721 1 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 5040 0 5041 1 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 3360 0 3361 1 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 1680 0 1681 1 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 0 0 1 1 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 30240 1680 30241 1681 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 28560 1680 28561 1681 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_5" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 26880 1680 26881 1681 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_5" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 25200 1680 25201 1681 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_4" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 23520 1680 23521 1681 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_3" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 21840 1680 21841 1681 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_4" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 20160 1680 20161 1681 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_5" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 18480 1680 18481 1681 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_5" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 16800 1680 16801 1681 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 15120 1680 15121 1681 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 13440 1680 13441 1681 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 11760 1680 11761 1681 l=1000 w=1000 "None" "VD" 3264 0 "Bit_10" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 10080 1680 10081 1681 l=1000 w=1000 "None" "VD" 3264 0 "Bit_10" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 8400 1680 8401 1681 l=1000 w=1000 "None" "VD" 3264 0 "Bit_9" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 6720 1680 6721 1681 l=1000 w=1000 "None" "VD" 3264 0 "Bit_8" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 5040 1680 5041 1681 l=1000 w=1000 "None" "VD" 3264 0 "Bit_9" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 3360 1680 3361 1681 l=1000 w=1000 "None" "VD" 3264 0 "Bit_10" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 1680 1680 1681 1681 l=1000 w=1000 "None" "VD" 3264 0 "Bit_10" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 0 1680 1 1681 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 30240 3360 30241 3361 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 28560 3360 28561 3361 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_5" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 26880 3360 26881 3361 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_5" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 25200 3360 25201 3361 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_4" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 23520 3360 23521 3361 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_3" 4000 193280,3114
+device csubckt cap_mim_2f0_m4m5_noshield 21840 3360 21841 3361 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_4" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 20160 3360 20161 3361 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_5" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 18480 3360 18481 3361 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_5" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 16800 3360 16801 3361 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_2" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 15120 3360 15121 3361 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 13440 3360 13441 3361 l=1000 w=1000 "None" "VD" 3264 0 "Bit_7" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 11760 3360 11761 3361 l=1000 w=1000 "None" "VD" 3264 0 "Bit_10" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 10080 3360 10081 3361 l=1000 w=1000 "None" "VD" 3264 0 "Bit_10" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 8400 3360 8401 3361 l=1000 w=1000 "None" "VD" 3264 0 "Bit_9" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 6720 3360 6721 3361 l=1000 w=1000 "None" "VD" 3264 0 "Bit_8" 4000 193280,3114
+device csubckt cap_mim_2f0_m4m5_noshield 5040 3360 5041 3361 l=1000 w=1000 "None" "VD" 3264 0 "Bit_9" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 3360 3360 3361 3361 l=1000 w=1000 "None" "VD" 3264 0 "Bit_10" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 1680 3360 1681 3361 l=1000 w=1000 "None" "VD" 3264 0 "Bit_10" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 0 3360 1 3361 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 30240 5040 30241 5041 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 28560 5040 28561 5041 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_5" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 26880 5040 26881 5041 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_5" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 25200 5040 25201 5041 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_4" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 23520 5040 23521 5041 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_3" 4000 193280,3114
+device csubckt cap_mim_2f0_m4m5_noshield 21840 5040 21841 5041 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_4" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 20160 5040 20161 5041 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_5" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 18480 5040 18481 5041 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_5" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 16800 5040 16801 5041 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_2" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 15120 5040 15121 5041 l=1000 w=1000 "None" "VD" 3264 0 "m4_15000_4920#" 4000 192766,3110
+device csubckt cap_mim_2f0_m4m5_noshield 13440 5040 13441 5041 l=1000 w=1000 "None" "VD" 3264 0 "Bit_7" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 11760 5040 11761 5041 l=1000 w=1000 "None" "VD" 3264 0 "Bit_10" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 10080 5040 10081 5041 l=1000 w=1000 "None" "VD" 3264 0 "Bit_10" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 8400 5040 8401 5041 l=1000 w=1000 "None" "VD" 3264 0 "Bit_9" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 6720 5040 6721 5041 l=1000 w=1000 "None" "VD" 3264 0 "Bit_8" 4000 193280,3114
+device csubckt cap_mim_2f0_m4m5_noshield 5040 5040 5041 5041 l=1000 w=1000 "None" "VD" 3264 0 "Bit_9" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 3360 5040 3361 5041 l=1000 w=1000 "None" "VD" 3264 0 "Bit_10" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 1680 5040 1681 5041 l=1000 w=1000 "None" "VD" 3264 0 "Bit_10" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 0 5040 1 5041 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 30240 6720 30241 6721 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 28560 6720 28561 6721 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_5" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 26880 6720 26881 6721 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_5" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 25200 6720 25201 6721 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_4" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 23520 6720 23521 6721 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_3" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 21840 6720 21841 6721 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_4" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 20160 6720 20161 6721 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_5" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 18480 6720 18481 6721 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_5" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 16800 6720 16801 6721 l=1000 w=1000 "None" "m4_15000_4920#" 3264 0 "Bit_1" 4000 193280,3114
+device csubckt cap_mim_2f0_m4m5_noshield 15120 6720 15121 6721 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 13440 6720 13441 6721 l=1000 w=1000 "None" "VD" 3264 0 "Bit_6" 4000 193280,3114
+device csubckt cap_mim_2f0_m4m5_noshield 11760 6720 11761 6721 l=1000 w=1000 "None" "VD" 3264 0 "Bit_10" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 10080 6720 10081 6721 l=1000 w=1000 "None" "VD" 3264 0 "Bit_10" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 8400 6720 8401 6721 l=1000 w=1000 "None" "VD" 3264 0 "Bit_9" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 6720 6720 6721 6721 l=1000 w=1000 "None" "VD" 3264 0 "Bit_8" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 5040 6720 5041 6721 l=1000 w=1000 "None" "VD" 3264 0 "Bit_9" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 3360 6720 3361 6721 l=1000 w=1000 "None" "VD" 3264 0 "Bit_10" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 1680 6720 1681 6721 l=1000 w=1000 "None" "VD" 3264 0 "Bit_10" 4000 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 0 6720 1 6721 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 30240 8400 30241 8401 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 28560 8400 28561 8401 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 26880 8400 26881 8401 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 25200 8400 25201 8401 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 23520 8400 23521 8401 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 21840 8400 21841 8401 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 20160 8400 20161 8401 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 18480 8400 18481 8401 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 16800 8400 16801 8401 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 15120 8400 15121 8401 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 13440 8400 13441 8401 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 11760 8400 11761 8401 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 10080 8400 10081 8401 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 8400 8400 8401 8401 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 6720 8400 6721 8401 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 5040 8400 5041 8401 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 3360 8400 3361 8401 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 1680 8400 1681 8401 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514
+device csubckt cap_mim_2f0_m4m5_noshield 0 8400 1 8401 l=1000 w=1000 "None" "VSSA" 3264 0 "VSSA" 4000 13996946,167514

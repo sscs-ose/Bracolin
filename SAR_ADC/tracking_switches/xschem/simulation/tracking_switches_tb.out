@@ -1,0 +1,43 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: ** sch_path:
+
+Doing analysis at TEMP = 50.000000 and TNOM = 27.000000
+
+Warning: Interpolated raw file data!
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+x1.vs_xm1                          1.25487e-08
+x1.n_clks                                  3.3
+x1.vd_xm5                                  3.3
+x1.clks_in                         4.05726e-09
+x1.vg_xm1                          9.28269e-09
+vdda                                       3.3
+x1.vs_xm6                                  3.3
+vinp                                      1.65
+x1.vs_xm8                          4.64135e-09
+clks                                         0
+vdp                                 0.00694877
+vcom                                      1.65
+x2.vs_xm1                          1.25488e-08
+x2.n_clks                                  3.3
+x2.vd_xm5                                  3.3
+x2.clks_in                         4.05725e-09
+x2.vg_xm1                          9.28269e-09
+x2.vs_xm6                                  3.3
+vinn                                      1.65
+x2.vs_xm8                          4.64135e-09
+vdn                                 0.00694879
+vdd5#branch                       -1.38797e-10
+vdd3#branch                        3.70624e-11
+vdd1#branch                       -3.70566e-11
+vdd4#branch                       -1.58805e-10
+vdd2#branch                        2.57816e-19
+

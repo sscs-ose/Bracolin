@@ -1,0 +1,187 @@
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches_tb.sch
+**.subckt tracking_switches_tb
+x1 VDP VDDA GND clks Vinp Vcom tracking_switches
+VDD2 clks GND PULSE(0 3.3 0n 100p 100p 250n 500n)
+.save i(vdd2)
+VDD4 VDDA GND 3.3
+.save i(vdd4)
+x2 VDN VDDA GND clks Vinn Vcom tracking_switches
+VDD1 Vinn Vcom SIN(0 1.4 992.202729045k 0)
+.save i(vdd1)
+VDD3 Vcom Vinp SIN(0 1.4 992.202729045k 0)
+.save i(vdd3)
+VDD5 Vcom GND 1.65
+.save i(vdd5)
+C1 VDP GND 1p m=1
+C2 VDN GND 1p m=1
+**** begin user architecture code
+
+
+
+*Parameters
+
+.options TEMP = 50.0
+.lib /home/gf180/Documents/gf180/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.include /home/gf180/Documents/gf180/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /home/gf180/Documents/gf180/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /home/gf180/Documents/gf180/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_statistical
+
+*Data to save
+*.save all
+.save V(VDP)
+.save V(VDN)
+.save V(Vinp)
+.save V(Vinn)
+.save V(vin_diff)
+.save V(vout_diff)
+.save V(clks)
+
+* Simulation
+.control
+tran 10n 513u
+.option method=gear reltol=1e-6 interp
+*.options output initial_interval=500e-9
+*setplot dc1
+*let Vgs_xm1 = V(.x1.VG_XM1) - V(.x1.VS_XM1)
+*let Vds_xm1 = V(.x1.VS_XM1) - V(Vinp)
+*plot Vgs_xm1 Vds_xm1
+
+*setplot dc2
+*let Vgs_xm2 = V(.x1.n_clkc)
+*let Vds_xm2 = V(.x1.VS_XM1)
+*plot Vgs_xm2 Vds_xm2
+
+*setplot dc3
+*let Vgs_xm3 = V(.x1.VG_XM1) - V(.x1.VS_XM1)
+*let Vds_xm3 = V(.x1.VD_XM5) - V(.x1.VS_XM1)
+*plot Vgs_xm3 Vds_xm3
+
+*setplot dc4
+*let Vgs_xm4 = V(clks) - V(.x1.VS_XM1)
+*let Vds_xm4 = V(.x1.VD_XM5) - V(.x1.VS_XM1)
+*plot Vgs_xm4 Vds_xm4
+
+*setplot dc5
+*let Vsg_xm5 = V(VDDA) - V(clks)
+*let vsd_xm5 = V(VDDA) - V(.x1.VD_XM5)
+*plot Vsg_xm5 vsd_xm5
+
+*setplot dc6
+*let Vsg_xm6 = V(VDDA) - V(.x1.VG_XM1)
+*let vsd_xm6 = V(VDDA) - V(.x1.VS_XM6)
+*plot Vsg_xm6 vsd_xm6
+
+*setplot dc7
+*let Vsg_xm7 = V(.x1.VS_XM6) - V(.x1.VD_XM5)
+*let vsd_xm7 = V(.x1.VS_XM6) - V(.x1.VG_XM1)
+*plot Vsg_xm7 vsd_xm7
+
+*setplot dc8
+*let Vsg_xm8 = V(VDDA) - V(.x1.VS_XM8)
+*let vsd_xm8 = V(.x1.VG_XM1) - V(.x1.VS_XM8)
+*plot Vsg_xm8 vsd_xm8
+
+*setplot dc9
+*let Vsg_xm9 = V(.x1.n_clkc)
+*let vsd_xm9 = V(.x1.VS_XM8)
+*plot Vsg_xm9 vsd_xm9
+
+setplot dc1
+let vout_diff= V(VDP) - V(VDN)
+let vin_diff= V(Vinp)-V(Vinn)
+*plot V(clks)+8 V(Vinp)+4 V(Vinn) V(VDP)+4 V(VDN)
+plot vin_diff vout_diff
+
+wrdata output.txt clks vin_diff vout_diff
+*set filetype = ascii
+*write tracking_switches_tb_tran.raw
+
+reset
+unset filetype
+op
+save all
+*write tracking_switches_tb.raw
+
+
+.endc
+.end
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  PICO_contest/tracking_switches/xschem/tracking_switches.sym # of pins=6
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches.sch
+.subckt tracking_switches VDP VDDA VSSA clks Vinp Vinn
+*.iopin VDDA
+*.iopin VSSA
+*.ipin clks
+*.ipin Vinp
+*.iopin VDP
+*.ipin Vinn
+XM2 VS_XM1 n_clks VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 VD_XM5 clks_in VS_XM1 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 VD_XM5 VG_XM1 VS_XM1 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM5 VD_XM5 clks_in VDDA VDDA pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM6 VDDA VG_XM1 VS_XM6 VS_XM6 pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM7 VG_XM1 VD_XM5 VS_XM6 VS_XM6 pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM1 Vinp VG_XM1 VS_XM1 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM9 VS_XM8 n_clks VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM8 VG_XM1 VDDA VS_XM8 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+x1 VDDA VSSA n_clks clks tracking_switches_inv_1x
+x2 VDDA VSSA clks_in n_clks tracking_switches_inv_1x
+XMS2 VDP VG_XM1 Vinp VSSA nfet_03v3 L=0.28u W=30u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XC12[1] VS_XM6 VS_XM1 cap_mim_2f0_m4m5_noshield c_width=10e-6 c_length=10e-6 m=1
+XC12[2] VS_XM6 VS_XM1 cap_mim_2f0_m4m5_noshield c_width=10e-6 c_length=10e-6 m=1
+XC12[3] VS_XM6 VS_XM1 cap_mim_2f0_m4m5_noshield c_width=10e-6 c_length=10e-6 m=1
+XMS1 VDP VSSA Vinn VSSA nfet_03v3 L=0.28u W=30u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/tracking_switches/xschem/tracking_switches_inv_1x.sym # of
+*+ pins=4
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches_inv_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches_inv_1x.sch
+.subckt tracking_switches_inv_1x VDDA VSSA OUT IN
+*.iopin VDDA
+*.iopin VSSA
+*.iopin OUT
+*.ipin IN
+XM1 OUT IN VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDDA VDDA pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+.GLOBAL GND
+.end

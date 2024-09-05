@@ -1,0 +1,7 @@
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/t_gate.sch
+.subckt t_gate IN VDDD VSSD OUT n_CLK p_CLK
+*.PININFO IN:B VDDD:B VSSD:B OUT:B n_CLK:I p_CLK:I
+M1 IN n_CLK OUT VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 IN p_CLK OUT VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+.end

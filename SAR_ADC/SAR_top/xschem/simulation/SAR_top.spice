@@ -1,0 +1,653 @@
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_top/xschem/SAR_top.sch
+.subckt SAR_top VDDA VSSD clks Vinp Vinn Vcom VDDD Valid A B C out_11 out_10 out_9 out_8 out_7 out_6
++ out_5 out_4 out_3 out_2 out_1 Set Reset D VCM
+*.PININFO VDDA:B VSSD:B clks:I Vinp:I Vinn:I Vcom:I VDDD:B Valid:I A:I B:I C:I out_11:B out_10:B
+*+ out_9:B out_8:B out_7:B out_6:B out_5:B out_4:B out_3:B out_2:B out_1:B Set:I Reset:I D:I VCM:I
+x1 VDP VDN out_11 out_10 VDDD out_9 VSSD VCM out_8 Set out_7 Reset clks out_6 D Valid out_5 vocp
++ out_4 out_3 out_2 out_1 CK1 SAR_logic_dac
+x2 vocp VDDD VDP VDDA VDN VSSD clks Vinp Vinn CK1 Vcom Valid A B C track_Dyn
+.ends
+
+* expanding   symbol:  PICO_contest/SAR_logic_dac/SAR_logic_dac.sym # of pins=23
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic_dac/SAR_logic_dac.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic_dac/SAR_logic_dac.sch
+.subckt SAR_logic_dac VDP VDN out_11 out_10 VDDD out_9 VSSD VCM out_8 Set out_7 Reset clks out_6 D
++ Valid out_5 vocp out_4 out_3 out_2 out_1 CK1
+*.PININFO VDDD:B VSSD:B Set:I Reset:I VCM:B clks:I D:I Valid:I vocp:I out_11:B out_10:B out_9:B
+*+ out_8:B out_7:B out_6:B out_5:B out_4:B out_3:B out_2:B out_1:B VDN:B VDP:B CK1:B
+x1 Bit_10_n Bit_10 Bit_9 Bit_9_n Bit_8 Bit_8_n VDDD Bit_7 Bit_7_n VSSD Bit_6 Bit_6_n VCM Bit_5_n
++ Bit_5 Bit_4 Bit_4_n Set Bit_3 Bit_3_n Reset Bit_2 Bit_2_n clks Bit_1 Bit_1_n D Valid out_11 vocp out_10
++ out_9 out_8 out_7 out_6 out_5 out_4 out_3 out_2 out_1 CK1 SAR_Asynchronous_top_neg_logic
+x2 VDN Bit_3_n Bit_8_n Bit_5_n Bit_6_n Bit_7_n Bit_4_n Bit_9_n Bit_10_n Bit_2_n Bit_1_n VSSD
++ Differential_capacitive_DAC_array
+x3 VDP Bit_3 Bit_8 Bit_5 Bit_6 Bit_7 Bit_4 Bit_9 Bit_10 Bit_2 Bit_1 VSSD
++ Differential_capacitive_DAC_array
+.ends
+
+
+* expanding   symbol:  PICO_contest/track_Dyn/track_Dyn.sym # of pins=15
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/track_Dyn/track_Dyn.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/track_Dyn/track_Dyn.sch
+.subckt track_Dyn vocp VDDD VDP VDDA VDN VSSA clks Vinp Vinn CK1 Vcom Valid A B C
+*.PININFO VDDA:B VSSA:B clks:I Vinp:I Vinn:I Vcom:I VDP:B VDN:B VDDD:B CK1:I Valid:I A:I B:I C:I
+*+ vocp:B
+x3 VDP VDN VDDA VSSA clks Vinp Vinn Vcom tracking_switches
+x5 vocp vocn VDDD VSSA VDP VDN Valid clkc Dynamic_Comparator
+* noconn vocp
+x7 clkc VDDD VSSA clks CK1 Valid A B C clock_generator
+.ends
+
+
+* expanding   symbol:
+*+  PICO_contest/SAR_Asynchronous_top_neg_logic/SAR_Asynchronous_top_neg_logic.sym # of pins=41
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_top_neg_logic/SAR_Asynchronous_top_neg_logic.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_top_neg_logic/SAR_Asynchronous_top_neg_logic.sch
+.subckt SAR_Asynchronous_top_neg_logic Bit_10_n Bit_10 Bit_9 Bit_9_n Bit_8 Bit_8_n VDDD Bit_7
++ Bit_7_n VSSD Bit_6 Bit_6_n VCM Bit_5_n Bit_5 Bit_4 Bit_4_n Set Bit_3 Bit_3_n Reset Bit_2 Bit_2_n clks Bit_1
++ Bit_1_n D Valid out_11 vocp out_10 out_9 out_8 out_7 out_6 out_5 out_4 out_3 out_2 out_1 CK1
+*.PININFO VDDD:B VSSD:B Set:I Reset:I VCM:B clks:I D:I Valid:I vocp:I Bit_10_n:B Bit_9_n:B Bit_8_n:B
+*+ Bit_7_n:B Bit_6_n:B Bit_5_n:B Bit_4_n:B Bit_3_n:B Bit_2_n:B Bit_1_n:B out_11:B out_10:B out_9:B out_8:B
+*+ out_7:B out_6:B out_5:B out_4:B out_3:B out_2:B out_1:B Bit_10:B Bit_9:B Bit_8:B Bit_7:B Bit_6:B Bit_5:B
+*+ Bit_4:B Bit_3:B Bit_2:B Bit_1:B CK1:I
+x1 VDDD VSSD VCM Set Reset clks Bit_10 D out_11 Valid Bit_9 out_10 Bit_8 out_9 Bit_7 out_8 Bit_6
++ out_7 Bit_5 out_6 Bit_4 out_5 Bit_3 out_4 Bit_2 out_3 Bit_1 out_2 Bit_0 out_1 vocp vocp vocp vocp vocp
++ vocp vocp vocp vocp vocp vocp CK10 CK9 CK8 CK7 CK6 CK5 CK4 CK3 CK2 CK1 CK11 SAR_Asynchronous_top
+x9 VDDD VSSD CK11 Bit_10 Bit_10_n neg_bottom_plate
+x10 VDDD VSSD CK10 Bit_9 Bit_9_n neg_bottom_plate
+x11 VDDD VSSD CK9 Bit_8 Bit_8_n neg_bottom_plate
+x12 VDDD VSSD CK8 Bit_7 Bit_7_n neg_bottom_plate
+x13 VDDD VSSD CK7 Bit_6 Bit_6_n neg_bottom_plate
+x14 VDDD VSSD CK6 Bit_5 Bit_5_n neg_bottom_plate
+x15 VDDD VSSD CK5 Bit_4 Bit_4_n neg_bottom_plate
+x16 VDDD VSSD CK4 Bit_3 Bit_3_n neg_bottom_plate
+x17 VDDD VSSD CK3 Bit_2 Bit_2_n neg_bottom_plate
+x18 VDDD VSSD CK2 Bit_1 Bit_1_n neg_bottom_plate
+* noconn Bit_0
+.ends
+
+
+* expanding   symbol:
+*+  PICO_contest/Differential_capacitive_DAC/xschem/Differential_capacitive_DAC_array.sym # of pins=13
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Differential_capacitive_DAC/xschem/Differential_capacitive_DAC_array.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Differential_capacitive_DAC/xschem/Differential_capacitive_DAC_array.sch
+.subckt Differential_capacitive_DAC_array VD Bit_3 Bit_8 Bit_5 Bit_6 Bit_7 Bit_4 Bit_9 Bit_10 Bit_2
++ Bit_1 VSSA
+*.PININFO Bit_1:B Bit_2:B Bit_3:B Bit_4:B Bit_5:B Bit_6:B Bit_7:B Bit_8:B Bit_9:B Bit_10:B VD:B
+*+ Bit_5:B VSSA:B
+C1 net1 Bit_1 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C2[1] net1 Bit_2 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C2[2] net1 Bit_2 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C3[1] net1 Bit_3 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C3[2] net1 Bit_3 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C3[3] net1 Bit_3 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C3[4] net1 Bit_3 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C4[1] net1 Bit_4 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C4[2] net1 Bit_4 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C4[3] net1 Bit_4 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C4[4] net1 Bit_4 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C4[5] net1 Bit_4 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C4[6] net1 Bit_4 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C4[7] net1 Bit_4 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C4[8] net1 Bit_4 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C5[1] net1 Bit_5 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C5[2] net1 Bit_5 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C5[3] net1 Bit_5 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C5[4] net1 Bit_5 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C5[5] net1 Bit_5 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C5[6] net1 Bit_5 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C5[7] net1 Bit_5 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C5[8] net1 Bit_5 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C5[9] net1 Bit_5 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C5[10] net1 Bit_5 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C5[11] net1 Bit_5 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C5[12] net1 Bit_5 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C5[13] net1 Bit_5 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C5[14] net1 Bit_5 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C5[15] net1 Bit_5 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C5[16] net1 Bit_5 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C6 VD Bit_6 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C7[1] VD Bit_7 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C7[2] VD Bit_7 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C8[1] VD Bit_8 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C8[2] VD Bit_8 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C8[3] VD Bit_8 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C8[4] VD Bit_8 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C9[1] VD Bit_9 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C9[2] VD Bit_9 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C9[3] VD Bit_9 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C9[4] VD Bit_9 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C9[5] VD Bit_9 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C9[6] VD Bit_9 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C9[7] VD Bit_9 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C9[8] VD Bit_9 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C10[1] VD Bit_10 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C10[2] VD Bit_10 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C10[3] VD Bit_10 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C10[4] VD Bit_10 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C10[5] VD Bit_10 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C10[6] VD Bit_10 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C10[7] VD Bit_10 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C10[8] VD Bit_10 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C10[9] VD Bit_10 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C10[10] VD Bit_10 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C10[11] VD Bit_10 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C10[12] VD Bit_10 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C10[13] VD Bit_10 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C10[14] VD Bit_10 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C10[15] VD Bit_10 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C10[16] VD Bit_10 cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C11 net1 VD cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[1] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[2] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[3] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[4] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[5] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[6] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[7] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[8] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[9] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[10] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[11] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[12] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[13] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[14] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[15] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[16] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[17] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[18] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[19] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[20] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[21] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[22] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[23] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[24] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[25] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[26] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[27] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[28] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[29] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[30] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[31] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[32] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[33] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[34] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[35] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[36] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[37] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[38] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[39] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[40] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[41] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[42] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[43] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[44] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[45] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[46] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[47] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[48] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[49] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[50] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+C12[51] VSSA VSSA cap_mim_2f0_m4m5_noshield W=5e-6 L=5e-6 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/tracking_switches/xschem/tracking_switches.sym # of pins=8
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches.sch
+.subckt tracking_switches VDP VDN VDDA VSSA clks Vinp Vinn Vcom
+*.PININFO VDDA:B VSSA:B clks:I Vinp:I VDP:B Vinn:I VDN:B Vcom:I
+M2 net2 n_clks VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M4 net1 clks_in net2 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M3 net1 net3 net2 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M5 net1 clks_in VDDA VDDA pfet_03v3 L=0.28u W=4u nf=1 m=1
+M6 VDDA net3 net4 net4 pfet_03v3 L=0.28u W=4u nf=1 m=1
+M7 net3 net1 net4 net4 pfet_03v3 L=0.28u W=4u nf=1 m=1
+M1 Vinp net3 net2 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M9 net5 n_clks VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M8 net3 VDDA net5 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+x1 VDDA VSSA n_clks clks tracking_switches_inv_1x
+x2 VDDA VSSA clks_in n_clks tracking_switches_inv_1x
+MS2[1] VDP net3 Vinp VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS2[2] VDP net3 Vinp VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS2[3] VDP net3 Vinp VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS2[4] VDP net3 Vinp VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS2[5] VDP net3 Vinp VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+C12[1] net4 net2 cap_mim_2f0_m4m5_noshield W=10e-6 L=10e-6 m=1
+C12[2] net4 net2 cap_mim_2f0_m4m5_noshield W=10e-6 L=10e-6 m=1
+C12[3] net4 net2 cap_mim_2f0_m4m5_noshield W=10e-6 L=10e-6 m=1
+MS1[1] VDP VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS1[2] VDP VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS1[3] VDP VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS1[4] VDP VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS1[5] VDP VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+M10 net7 n_clks VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M11 net6 clks_in net7 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M12 net6 net8 net7 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M13 net6 clks_in VDDA VDDA pfet_03v3 L=0.28u W=4u nf=1 m=1
+M14 VDDA net8 net9 net9 pfet_03v3 L=0.28u W=4u nf=1 m=1
+M15 net8 net6 net9 net9 pfet_03v3 L=0.28u W=4u nf=1 m=1
+M16 Vinn net8 net7 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M17 net10 n_clks VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M18 net8 VDDA net10 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+MS19[1] VDN net8 Vinn VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS19[2] VDN net8 Vinn VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS19[3] VDN net8 Vinn VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS19[4] VDN net8 Vinn VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS19[5] VDN net8 Vinn VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+C1[1] net9 net7 cap_mim_2f0_m4m5_noshield W=10e-6 L=10e-6 m=1
+C1[2] net9 net7 cap_mim_2f0_m4m5_noshield W=10e-6 L=10e-6 m=1
+C1[3] net9 net7 cap_mim_2f0_m4m5_noshield W=10e-6 L=10e-6 m=1
+MS20[1] VDN VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS20[2] VDN VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS20[3] VDN VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS20[4] VDN VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS20[5] VDN VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator.sym # of pins=8
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator.sch
+.subckt Dynamic_Comparator vocp vocn VDDD VSSD VDP VDN Valid clkc
+*.PININFO VDDD:B VSSD:B VDP:I VDN:I clkc:I Valid:B vocn:B vocp:B
+x5 aN VDDD aP VSSD clkc VDP VDN Dynamic_Comparator_opamp
+x1 VDDD VSSD dN clkc dP aP aN Dynamic_Comparator_latch
+x2 VDDD VSSD vocp dP Dynamic_Comparator_inv_1x
+x3 VDDD VSSD vocn dN Dynamic_Comparator_inv_1x
+x4 VDDD VSSD Valid vocp vocn Dynamic_Comparator_nand_1x
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_clock/xschem/clock_generator.sym # of pins=9
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator.sch
+.subckt clock_generator OUT VDDD VSSD clks CK1 Valid A B C
+*.PININFO VDDD:B VSSD:B OUT:B clks:I CK1:I Valid:I A:I B:I C:I
+x4 VDDD aa VSSD clks CK1 Valid clock_generator_nor_3_1x
+x1 VDDD VSSD ab aa A B C clock_generator_delay_cell
+x2 VDDD OUT VSSD ab clock_generator_inv_1x
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_Asynchronous_top/SAR_Asynchronous_top.sym # of pins=52
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_top/SAR_Asynchronous_top.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_top/SAR_Asynchronous_top.sch
+.subckt SAR_Asynchronous_top VDDD VSSD VCM Set Reset clks Bit_10 D out_11 Valid Bit_9 out_10 Bit_8
++ out_9 Bit_7 out_8 Bit_6 out_7 Bit_5 out_6 Bit_4 out_5 Bit_3 out_4 Bit_2 out_3 Bit_1 out_2 Bit_0 out_1
++ D_C_10 D_C_9 D_C_8 D_C_7 D_C_6 D_C_5 D_C_4 D_C_3 D_C_2 D_C_1 D_C_11 CK10 CK9 CK8 CK7 CK6 CK5 CK4 CK3 CK2
++ CK1 CK11
+*.PININFO Bit_10:B Bit_9:B Bit_8:B Bit_7:B Bit_6:B Bit_5:B Bit_3:B Bit_4:B Bit_2:B Bit_1:B Bit_0:B
+*+ out_11:B out_10:B out_9:B out_8:B out_7:B out_6:B out_5:B out_4:B out_3:B out_2:B out_1:B VDDD:B VSSD:B
+*+ Set:I Reset:I VCM:B clks:I D:I Valid:I D_C_11:I D_C_10:I D_C_9:I D_C_8:I D_C_7:I D_C_6:I D_C_5:I D_C_4:I
+*+ D_C_3:I D_C_2:I D_C_1:I CK11:I CK10:I CK9:I CK8:I CK7:I CK6:I CK5:I CK4:I CK3:I CK2:I CK1:I
+x1 CK11 VDDD CK1 CK6 VSSD CK10 CK5 CK9 CK4 clks CK8 CK3 Valid CK2 CK7 Set D SAR_Logic
+x2 VDDD Bit_10 D_C_11 VSSD CK11 VCM out_11 Set Reset clks Bit_9 D_C_10 CK10 out_10 Bit_8 D_C_9 CK9
++ out_9 Bit_7 D_C_8 CK8 out_8 Bit_6 D_C_7 CK7 out_7 Bit_5 D_C_6 CK6 out_6 Bit_4 D_C_5 CK5 out_5 Bit_3 D_C_4
++ CK4 out_4 Bit_2 D_C_3 CK3 out_3 Bit_1 D_C_2 CK2 out_2 Bit_0 D_C_1 CK1 out_1
++ SAR_Asynchronous_Logic_integration
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_Asynchronous_Logic/xschem/neg_bottom_plate.sym # of pins=5
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/neg_bottom_plate.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/neg_bottom_plate.sch
+.subckt neg_bottom_plate VDDD VSSD CK11 Bit Bit_n
+*.PININFO VDDD:B VSSD:B CK11:B Bit:B Bit_n:B
+x10 not_CK11 VDDD Bit net1 VSSD CK11_in t_gate
+x11 CK11_in VDDD Bit Bit_n VSSD not_CK11 t_gate
+x12 VDDD net1 net2 VSSD inv_1x
+x13 VDDD CK11 not_CK11 VSSD inv_1x
+x14 VDDD not_CK11 CK11_in VSSD inv_1x
+x15 not_CK11 VDDD net2 Bit_n VSSD CK11_in t_gate
+.ends
+
+
+* expanding   symbol:  PICO_contest/tracking_switches/xschem/tracking_switches_inv_1x.sym # of
+*+ pins=4
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches_inv_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches_inv_1x.sch
+.subckt tracking_switches_inv_1x VDDA VSSA OUT IN
+*.PININFO VDDA:B VSSA:B OUT:B IN:I
+M1 OUT IN VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT IN VDDA VDDA pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_opamp.sym # of
+*+ pins=7
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_opamp.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_opamp.sch
+.subckt Dynamic_Comparator_opamp aN VDDD aP VSSD clkc VDP VDN
+*.PININFO VDDD:B VSSD:B clkc:I VDP:I VDN:I aN:B aP:B
+M0[1] x clkc VSSD VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M0[2] x clkc VSSD VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M0[3] x clkc VSSD VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M1[1] aN VDP x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M1[2] aN VDP x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M1[3] aN VDP x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M1[4] aN VDP x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M1[5] aN VDP x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M1[6] aN VDP x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M2[1] aP VDN x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M2[2] aP VDN x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M2[3] aP VDN x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M2[4] aP VDN x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M2[5] aP VDN x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M2[6] aP VDN x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M3[1] aN clkc VDDD VDDD pfet_03v3 L=0.28u W=2.35u nf=1 m=1
+M3[2] aN clkc VDDD VDDD pfet_03v3 L=0.28u W=2.35u nf=1 m=1
+M4[1] aP clkc VDDD VDDD pfet_03v3 L=0.28u W=2.35u nf=1 m=1
+M4[2] aP clkc VDDD VDDD pfet_03v3 L=0.28u W=2.35u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_latch.sym # of
+*+ pins=7
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_latch.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_latch.sch
+.subckt Dynamic_Comparator_latch VDDD VSSD dN clkc dP aP aN
+*.PININFO VDDD:B VSSD:B clkc:I aP:I aN:I dN:B dP:B
+M5[1] X dP VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M5[2] X dP VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M5[3] X dP VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M5[4] X dP VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M6[1] Y dN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M6[2] Y dN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M6[3] Y dN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M6[4] Y dN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M7[1] dN aP X VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M7[2] dN aP X VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M7[3] dN aP X VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M7[4] dN aP X VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M8[1] dP aN Y VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M8[2] dP aN Y VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M8[3] dP aN Y VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M8[4] dP aN Y VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M9 dN dP VSSD VSSD nfet_03v3 L=0.28u W=6.3u nf=1 m=1
+M10 dP dN VSSD VSSD nfet_03v3 L=0.28u W=6.3u nf=1 m=1
+M11 dN n_clkc VSSD VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M12 dP n_clkc VSSD VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+x1 VDDD VSSD n_clkc clkc Dynamic_Comparator_inv_1x
+.ends
+
+
+* expanding   symbol:  PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_inv_1x.sym # of
+*+ pins=4
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_inv_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_inv_1x.sch
+.subckt Dynamic_Comparator_inv_1x VDDD VSSD OUT IN
+*.PININFO VDDD:B VSSD:B IN:I OUT:B
+M1 OUT IN VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_nand_1x.sym # of
+*+ pins=5
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_nand_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_nand_1x.sch
+.subckt Dynamic_Comparator_nand_1x VDDD VSSD OUT A B
+*.PININFO VDDD:B VSSD:B A:I B:I OUT:B
+M1 net1 A VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT B net1 VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M3 OUT A VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M4 OUT B VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_clock/xschem/clock_generator_nor_3_1x.sym # of pins=6
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator_nor_3_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator_nor_3_1x.sch
+.subckt clock_generator_nor_3_1x VDDD OUT VSSD A B C
+*.PININFO VDDD:B VSSD:B OUT:B A:I B:I C:I
+M1 OUT B VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT A VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M3 OUT C VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M4 OUT C net1 VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M5 net1 B net2 VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M6 net2 A VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_clock/xschem/clock_generator_delay_cell.sym # of pins=7
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator_delay_cell.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator_delay_cell.sch
+.subckt clock_generator_delay_cell VDDD VSSD OUT IN A B C
+*.PININFO VDDD:B VSSD:B IN:I OUT:B A:I B:I C:I
+M1 net1 IN VSSD VSSD nfet_03v3 L=35u W=1.56u nf=1 m=1
+M2 OUT IN net1 VSSD nfet_03v3 L=35u W=1.56u nf=1 m=1
+M3 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M4 net2 IN VSSD VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M5 aa IN net2 VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M6 OUT A aa VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M7 net3 IN VSSD VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M8 ab IN net3 VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M9 OUT B ab VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M10 net4 IN VSSD VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M11 ac IN net4 VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M12 OUT C ac VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_clock/xschem/clock_generator_inv_1x.sym # of pins=4
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator_inv_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator_inv_1x.sch
+.subckt clock_generator_inv_1x VDDD OUT VSSD IN
+*.PININFO VDDD:B VSSD:B OUT:B IN:I
+M1 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M2 OUT IN VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/SAR_Logic.sym # of pins=17
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/SAR_Logic.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/SAR_Logic.sch
+.subckt SAR_Logic CK11 VDDD CK1 CK6 VSSD CK10 CK5 CK9 CK4 clks CK8 CK3 Valid CK2 CK7 Set D
+*.PININFO VDDD:B VSSD:B CK11:B CK10:B CK9:B CK8:B CK7:B CK6:B CK5:B CK4:B CK3:B CK2:B CK1:B clks:I
+*+ Valid:I Set:I D:I
+* noconn #net1
+* noconn #net2
+* noconn #net3
+* noconn #net4
+* noconn #net5
+* noconn #net6
+* noconn #net7
+* noconn #net8
+* noconn #net9
+* noconn #net10
+* noconn #net11
+x1 VDDD CK11 Valid D net1 Set clks VSSD D_reset_FF
+x2 VDDD CK10 Valid CK11 net2 Set clks VSSD D_reset_FF
+x3 VDDD CK9 Valid CK10 net3 Set clks VSSD D_reset_FF
+x4 VDDD CK8 Valid CK9 net4 Set clks VSSD D_reset_FF
+x5 VDDD CK7 Valid CK8 net5 Set clks VSSD D_reset_FF
+x6 VDDD CK6 Valid CK7 net6 Set clks VSSD D_reset_FF
+x7 VDDD CK5 Valid CK6 net7 Set clks VSSD D_reset_FF
+x8 VDDD CK4 Valid CK5 net8 Set clks VSSD D_reset_FF
+x9 VDDD CK3 Valid CK4 net9 Set clks VSSD D_reset_FF
+x10 VDDD CK2 Valid CK3 net10 Set clks VSSD D_reset_FF
+x11 VDDD CK1 Valid CK2 net11 Set clks VSSD D_reset_FF
+.ends
+
+
+* expanding   symbol:
+*+  PICO_contest/SAR_Asynchronous_Logic_integration/SAR_Asynchronous_Logic_integration.sym # of pins=50
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic_integration/SAR_Asynchronous_Logic_integration.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic_integration/SAR_Asynchronous_Logic_integration.sch
+.subckt SAR_Asynchronous_Logic_integration VDDD Bit_10 D_C_11 VSSD CK11 VCM out_11 Set Reset clks
++ Bit_9 D_C_10 CK10 out_10 Bit_8 D_C_9 CK9 out_9 Bit_7 D_C_8 CK8 out_8 Bit_6 D_C_7 CK7 out_7 Bit_5 D_C_6
++ CK6 out_6 Bit_4 D_C_5 CK5 out_5 Bit_3 D_C_4 CK4 out_4 Bit_2 D_C_3 CK3 out_3 Bit_1 D_C_2 CK2 out_2 Bit_0
++ D_C_1 CK1 out_1
+*.PININFO VDDD:B VSSD:B Set:I Reset:I VCM:B Bit_10:B clks:I D_C_11:I CK11:I out_11:B Bit_9:B
+*+ D_C_10:I CK10:I out_10:B Bit_8:B D_C_9:I CK9:I out_9:B Bit_7:B D_C_8:I CK8:I out_8:B Bit_6:B D_C_7:I CK7:I
+*+ out_7:B Bit_5:B D_C_6:I CK6:I out_6:B Bit_4:B D_C_5:I CK5:I out_5:B Bit_3:B D_C_4:I CK4:I out_4:B Bit_2:B
+*+ D_C_3:I CK3:I out_3:B Bit_1:B D_C_2:I CK2:I out_2:B Bit_0:B D_C_1:I CK1:I out_1:B
+x12 VCM Bit_10 out_11 clks VDDD VSSD Set Reset D_C_11 CK11 SAR_Asynchronous_Logic
+x1 VCM Bit_9 out_10 clks VDDD VSSD Set Reset D_C_10 CK10 SAR_Asynchronous_Logic
+x2 VCM Bit_8 out_9 clks VDDD VSSD Set Reset D_C_9 CK9 SAR_Asynchronous_Logic
+x3 VCM Bit_7 out_8 clks VDDD VSSD Set Reset D_C_8 CK8 SAR_Asynchronous_Logic
+x4 VCM Bit_6 out_7 clks VDDD VSSD Set Reset D_C_7 CK7 SAR_Asynchronous_Logic
+x5 VCM Bit_5 out_6 clks VDDD VSSD Set Reset D_C_6 CK6 SAR_Asynchronous_Logic
+x6 VCM Bit_4 out_5 clks VDDD VSSD Set Reset D_C_5 CK5 SAR_Asynchronous_Logic
+x7 VCM Bit_3 out_4 clks VDDD VSSD Set Reset D_C_4 CK4 SAR_Asynchronous_Logic
+x8 VCM Bit_2 out_3 clks VDDD VSSD Set Reset D_C_3 CK3 SAR_Asynchronous_Logic
+x9 VCM Bit_1 out_2 clks VDDD VSSD Set Reset D_C_2 CK2 SAR_Asynchronous_Logic
+x10 VCM Bit_0 out_1 clks VDDD VSSD Set Reset D_C_1 CK1 SAR_Asynchronous_Logic
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/t_gate.sym # of pins=6
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/t_gate.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/t_gate.sch
+.subckt t_gate p_CLK VDDD IN OUT VSSD n_CLK
+*.PININFO IN:B VDDD:B VSSD:B OUT:B n_CLK:I p_CLK:I
+M1 IN n_CLK OUT VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 IN p_CLK OUT VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/inv_1x.sym # of pins=4
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/inv_1x.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/inv_1x.sch
+.subckt inv_1x VDDD IN OUT VSSD
+*.PININFO IN:I VDDD:B VSSD:B OUT:B
+M1 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M2 OUT IN VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/D_reset_FF.sym # of pins=8
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/D_reset_FF.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/D_reset_FF.sch
+.subckt D_reset_FF VDDD Q CLK D nQ Set Reset VSSD
+*.PININFO VDDD:B VSSD:B Q:B nQ:B CLK:I D:I Reset:I Set:I
+x11 VDDD CLK nCLK VSSD inv_1x
+x1 CLK_buf VDDD D net1 VSSD nCLK t_gate
+x2 VDDD Set net2 net1 VSSD nor_2_1x
+x4 nCLK VDDD net2 net4 VSSD CLK_buf t_gate
+x6 VDDD Reset Q net4 VSSD nor_2_1x
+x3 nCLK VDDD net3 net1 VSSD CLK_buf t_gate
+x5 VDDD net2 net3 Reset VSSD nor_2_1x
+x7 CLK_buf VDDD net5 net4 VSSD nCLK t_gate
+x8 VDDD Q net5 Set VSSD nor_2_1x
+x9 VDDD Q nQ VSSD inv_1x
+x10 VDDD nCLK CLK_buf VSSD inv_1x
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic.sym # of
+*+ pins=10
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic.sch
+.subckt SAR_Asynchronous_Logic VCM VC Q_R clks VDDD VSSD Set Reset D_C CLK
+*.PININFO VDDD:B VSSD:B Set:I Reset:I D_C:I CLK:I Q_R:B VCM:B VC:B clks:I
+M1 VB not_CLK VSSD VSSD nfet_03v3 L=1.1u W=1.56u nf=1 m=1
+M2 VA CLK_in VDDD VDDD pfet_03v3 L=1.1u W=3.9u nf=1 m=1
+* noconn #net1
+* noconn #net2
+x4 not_CLK VDDD Dn VA VSSD CLK_in SAR_Asynchronous_Logic_tgate
+x5 not_CLK VDDD Dn VB VSSD CLK_in SAR_Asynchronous_Logic_tgate
+M3 VC VA VDDD VDDD pfet_03v3 L=1.1u W=3.9u nf=1 m=1
+M4 VC VB VSSD VSSD nfet_03v3 L=1.1u W=1.56u nf=1 m=1
+x6 CLK_in VDDD VCM VC VSSD not_CLK SAR_Asynchronous_Logic_tgate
+x1 VDDD Dn CLK_in D_C net1 Set Reset VSSD SAR_Asynchronous_Logic_D_reset_FF
+x2 VDDD Q_R clks Dn net2 Set Reset VSSD SAR_Asynchronous_Logic_D_reset_FF
+x3 VDDD not_CLK VSSD CLK SAR_Asynchronous_Logic_inv_1x
+x7 VDDD CLK_in VSSD not_CLK SAR_Asynchronous_Logic_inv_1x
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/nor_2_1x.sym # of pins=5
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/nor_2_1x.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/nor_2_1x.sch
+.subckt nor_2_1x VDDD A OUT B VSSD
+*.PININFO A:I B:I VDDD:B VSSD:B OUT:B
+M1 OUT B VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT A VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M3 OUT B net1 VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M4 net1 A VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_tgate.sym #
+*+ of pins=6
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_tgate.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_tgate.sch
+.subckt SAR_Asynchronous_Logic_tgate p_CLK VDDD IN OUT VSSD n_CLK
+*.PININFO IN:B VDDD:B VSSD:B n_CLK:I p_CLK:I OUT:B
+M1 OUT n_CLK IN VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT p_CLK IN VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:
+*+  PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_D_reset_FF.sym # of pins=8
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_D_reset_FF.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_D_reset_FF.sch
+.subckt SAR_Asynchronous_Logic_D_reset_FF VDDD Q CLK D nQ Set Reset VSSD
+*.PININFO VDDD:B VSSD:B Q:B nQ:B CLK:I D:I Reset:I Set:I
+x1 VDDD CLK nCLK VSSD inv_1x
+x11 VDDD nCLK CLK_buf VSSD inv_1x
+x2 CLK_buf VDDD D net1 VSSD nCLK t_gate
+x4 VDDD Set net2 net1 VSSD nor_2_1x
+x6 nCLK VDDD net2 net4 VSSD CLK_buf t_gate
+x7 VDDD Reset Q net4 VSSD nor_2_1x
+x3 nCLK VDDD net3 net1 VSSD CLK_buf t_gate
+x9 CLK_buf VDDD net5 net4 VSSD nCLK t_gate
+x5 VDDD net2 net3 Reset VSSD nor_2_1x
+x8 VDDD Q net5 Set VSSD nor_2_1x
+x10 VDDD Q nQ VSSD inv_1x
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_inv_1x.sym
+*+ # of pins=4
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_inv_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_inv_1x.sch
+.subckt SAR_Asynchronous_Logic_inv_1x VDDD OUT VSSD IN
+*.PININFO VDDD:B VSSD:B OUT:B IN:I
+M1 OUT IN VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+.end

@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>GF180 DENSITY DRC Run Report at</description>
+ <original-file/>
+ <generator>drc: script='/home/gf180/Documents/gf180/pdk/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
+ <top-cell>Differential_capacitive_DAC_array</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>PL.8</name>
+   <description>PL.8 : Poly2 coverage over the entire die shall be 14%.
+                Dummy poly2 lines must be added to meet the minimum poly2 density requirement. : 14%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M1.4</name>
+   <description>M1.4 : Metal1 coverage over the entire die shall be &gt;30%
+                (Refer to section 13.0 for Dummy Metal fill guidelines.
+                 Customer needs to ensure enough dummy metal to satisfy Metal1 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M2.4</name>
+   <description>M2.4 : Metal2 coverage over the entire die shall be &gt;30%
+                (Refer to section 13.0 for Dummy Metal fill guidelines.
+                 Customer needs to ensure enough dummy metal to satisfy Metal2 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M3.4</name>
+   <description>M3.4 : metal3 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal3 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>Differential_capacitive_DAC_array</name>
+   <variant/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-1.81,-1.81;-1.81,48.81;158.01,48.81;158.01,-1.81/-0.61,-0.61;156.81,-0.61;156.81,47.61;-0.61,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0.635,-1.81;0.635,-0.61;4.635,-0.61;4.635,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (9.035,-1.81;9.035,-0.61;13.035,-0.61;13.035,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (17.435,-1.81;17.435,-0.61;21.435,-0.61;21.435,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (25.835,-1.81;25.835,-0.61;29.835,-0.61;29.835,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (34.235,-1.81;34.235,-0.61;38.235,-0.61;38.235,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (42.635,-1.81;42.635,-0.61;46.635,-0.61;46.635,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (51.035,-1.81;51.035,-0.61;55.035,-0.61;55.035,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (59.435,-1.81;59.435,-0.61;63.435,-0.61;63.435,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (67.835,-1.81;67.835,-0.61;71.835,-0.61;71.835,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (76.235,-1.81;76.235,-0.61;80.235,-0.61;80.235,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (84.635,-1.81;84.635,-0.61;88.635,-0.61;88.635,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (93.035,-1.81;93.035,-0.61;97.035,-0.61;97.035,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (101.435,-1.81;101.435,-0.61;105.435,-0.61;105.435,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (109.835,-1.81;109.835,-0.61;113.835,-0.61;113.835,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (118.235,-1.81;118.235,-0.61;122.235,-0.61;122.235,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (126.635,-1.81;126.635,-0.61;130.635,-0.61;130.635,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (135.035,-1.81;135.035,-0.61;139.035,-0.61;139.035,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (143.435,-1.81;143.435,-0.61;147.435,-0.61;147.435,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (151.835,-1.81;151.835,-0.61;155.835,-0.61;155.835,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-1.81,0.365;-1.81,4.365;-0.61,4.365;-0.61,0.365)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (156.81,0.635;156.81,4.635;158.01,4.635;158.01,0.635)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-1.81,8.765;-1.81,12.765;-0.61,12.765;-0.61,8.765)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (156.81,9.035;156.81,13.035;158.01,13.035;158.01,9.035)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (31.65,14.85;31.65,15.35;40.55,15.35;40.55,14.85)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (115.65,14.85;115.65,15.35;124.55,15.35;124.55,14.85)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-1.81,17.165;-1.81,21.165;-0.61,21.165;-0.61,17.165)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (156.81,17.435;156.81,21.435;158.01,21.435;158.01,17.435)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (14.85,23.25;14.85,23.75;57.35,23.75;57.35,23.25)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (98.85,23.25;98.85,23.75;141.35,23.75;141.35,23.25)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-1.81,25.565;-1.81,29.565;-0.61,29.565;-0.61,25.565)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (156.81,25.835;156.81,29.835;158.01,29.835;158.01,25.835)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (31.65,31.65;31.65,32.15;40.55,32.15;40.55,31.65)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (115.65,31.65;115.65,32.15;124.55,32.15;124.55,31.65)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-1.81,33.965;-1.81,37.965;-0.61,37.965;-0.61,33.965)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (156.81,34.235;156.81,38.235;158.01,38.235;158.01,34.235)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-1.81,42.5;-1.81,46.5;-0.61,46.5;-0.61,42.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (156.81,42.635;156.81,46.635;158.01,46.635;158.01,42.635)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0.635,47.61;0.635,48.81;4.635,48.81;4.635,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (9.035,47.61;9.035,48.81;13.035,48.81;13.035,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (17.435,47.61;17.435,48.81;21.435,48.81;21.435,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (25.835,47.61;25.835,48.81;29.835,48.81;29.835,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (42.635,47.61;42.635,48.81;46.635,48.81;46.635,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (51.035,47.61;51.035,48.81;55.035,48.81;55.035,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (59.435,47.61;59.435,48.81;63.435,48.81;63.435,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (76.235,47.61;76.235,48.81;80.235,48.81;80.235,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (93.035,47.61;93.035,48.81;97.035,48.81;97.035,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (101.435,47.61;101.435,48.81;105.435,48.81;105.435,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (109.835,47.61;109.835,48.81;113.835,48.81;113.835,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (126.635,47.61;126.635,48.81;130.635,48.81;130.635,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (135.035,47.61;135.035,48.81;139.035,48.81;139.035,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (143.435,47.61;143.435,48.81;147.435,48.81;147.435,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (151.835,47.61;151.835,48.81;155.835,48.81;155.835,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0.635,-1.81;0.635,-0.61;4.635,-0.61;4.635,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (9.035,-1.81;9.035,-0.61;13.035,-0.61;13.035,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (17.435,-1.81;17.435,-0.61;21.435,-0.61;21.435,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (25.835,-1.81;25.835,-0.61;29.835,-0.61;29.835,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (34.235,-1.81;34.235,-0.61;38.235,-0.61;38.235,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (42.635,-1.81;42.635,-0.61;46.635,-0.61;46.635,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (51.035,-1.81;51.035,-0.61;55.035,-0.61;55.035,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (59.435,-1.81;59.435,-0.61;63.435,-0.61;63.435,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (67.835,-1.81;67.835,-0.61;71.835,-0.61;71.835,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (76.235,-1.81;76.235,-0.61;80.235,-0.61;80.235,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (84.635,-1.81;84.635,-0.61;88.635,-0.61;88.635,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (93.035,-1.81;93.035,-0.61;97.035,-0.61;97.035,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (101.435,-1.81;101.435,-0.61;105.435,-0.61;105.435,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (109.835,-1.81;109.835,-0.61;113.835,-0.61;113.835,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (118.235,-1.81;118.235,-0.61;122.235,-0.61;122.235,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (126.635,-1.81;126.635,-0.61;130.635,-0.61;130.635,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (135.035,-1.81;135.035,-0.61;139.035,-0.61;139.035,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (143.435,-1.81;143.435,-0.61;147.435,-0.61;147.435,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (151.835,-1.81;151.835,-0.61;155.835,-0.61;155.835,-1.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-1.81,0.365;-1.81,4.365;-0.61,4.365;-0.61,0.365)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (156.81,0.635;156.81,4.635;158.01,4.635;158.01,0.635)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-1.81,8.765;-1.81,12.765;-0.61,12.765;-0.61,8.765)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (156.81,9.035;156.81,13.035;158.01,13.035;158.01,9.035)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-1.81,17.165;-1.81,21.165;-0.61,21.165;-0.61,17.165)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (156.81,17.435;156.81,21.435;158.01,21.435;158.01,17.435)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-1.81,25.565;-1.81,29.565;-0.61,29.565;-0.61,25.565)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (156.81,25.835;156.81,29.835;158.01,29.835;158.01,25.835)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (40.05,10.3;40.05,14.85;39.35,14.85;39.35,15.35;40.05,15.35;40.05,31.65;39.35,31.65;39.35,32.15;40.05,32.15;40.05,36.6;41.42,36.6;41.42,35.5;40.55,35.5;40.55,28.2;41.42,28.2;41.42,27.1;40.55,27.1;40.55,19.8;41.42,19.8;41.42,18.7;40.55,18.7;40.55,11.4;41.42,11.4;41.42,10.3)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (55.98,10.3;55.98,11.4;56.85,11.4;56.85,18.7;55.98,18.7;55.98,19.8;56.85,19.8;56.85,23.25;56.15,23.25;56.15,23.75;56.85,23.75;56.85,27.1;55.98,27.1;55.98,28.2;56.85,28.2;56.85,35.5;55.98,35.5;55.98,36.6;58.22,36.6;58.22,35.5;57.35,35.5;57.35,28.2;58.22,28.2;58.22,27.1;57.35,27.1;57.35,19.8;58.22,19.8;58.22,18.7;57.35,18.7;57.35,11.4;58.22,11.4;58.22,10.3)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (97.98,10.3;97.98,11.4;98.85,11.4;98.85,18.7;97.98,18.7;97.98,19.8;98.85,19.8;98.85,27.1;97.98,27.1;97.98,28.2;98.85,28.2;98.85,35.5;97.98,35.5;97.98,36.6;100.22,36.6;100.22,35.5;99.35,35.5;99.35,28.2;100.22,28.2;100.22,27.1;99.35,27.1;99.35,23.75;100.05,23.75;100.05,23.25;99.35,23.25;99.35,19.8;100.22,19.8;100.22,18.7;99.35,18.7;99.35,11.4;100.22,11.4;100.22,10.3)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (114.78,10.3;114.78,11.4;115.65,11.4;115.65,18.7;114.78,18.7;114.78,19.8;115.65,19.8;115.65,27.1;114.78,27.1;114.78,28.2;115.65,28.2;115.65,35.5;114.78,35.5;114.78,36.6;116.15,36.6;116.15,32.15;116.85,32.15;116.85,31.65;116.15,31.65;116.15,15.35;116.85,15.35;116.85,14.85;116.15,14.85;116.15,10.3)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-1.81,33.965;-1.81,37.965;-0.61,37.965;-0.61,33.965)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (156.81,34.235;156.81,38.235;158.01,38.235;158.01,34.235)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-1.81,42.5;-1.81,46.5;-0.61,46.5;-0.61,42.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (156.81,42.635;156.81,46.635;158.01,46.635;158.01,42.635)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0.635,47.61;0.635,48.81;4.635,48.81;4.635,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (9.035,47.61;9.035,48.81;13.035,48.81;13.035,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (17.435,47.61;17.435,48.81;21.435,48.81;21.435,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (25.835,47.61;25.835,48.81;29.835,48.81;29.835,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (42.635,47.61;42.635,48.81;46.635,48.81;46.635,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (51.035,47.61;51.035,48.81;55.035,48.81;55.035,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (59.435,47.61;59.435,48.81;63.435,48.81;63.435,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (76.235,47.61;76.235,48.81;80.235,48.81;80.235,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (93.035,47.61;93.035,48.81;97.035,48.81;97.035,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (101.435,47.61;101.435,48.81;105.435,48.81;105.435,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (109.835,47.61;109.835,48.81;113.835,48.81;113.835,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (126.635,47.61;126.635,48.81;130.635,48.81;130.635,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (135.035,47.61;135.035,48.81;139.035,48.81;139.035,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (143.435,47.61;143.435,48.81;147.435,48.81;147.435,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (151.835,47.61;151.835,48.81;155.835,48.81;155.835,47.61)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (13.98,10.3;13.98,11.4;14.85,11.4;14.85,18.7;13.98,18.7;13.98,19.8;14.85,19.8;14.85,27.1;13.98,27.1;13.98,28.2;14.85,28.2;14.85,35.5;13.98,35.5;13.98,36.6;14.85,36.6;14.85,50.335;15.35,50.335;15.35,36.6;16.22,36.6;16.22,35.5;15.35,35.5;15.35,28.2;16.22,28.2;16.22,27.1;15.35,27.1;15.35,23.75;16.05,23.75;16.05,23.25;15.35,23.25;15.35,19.8;16.22,19.8;16.22,18.7;15.35,18.7;15.35,11.4;16.22,11.4;16.22,10.3)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (30.78,10.3;30.78,11.4;31.65,11.4;31.65,18.7;30.78,18.7;30.78,19.8;31.65,19.8;31.65,27.1;30.78,27.1;30.78,28.2;31.65,28.2;31.65,35.5;30.78,35.5;30.78,36.6;31.65,36.6;31.65,50.335;32.15,50.335;32.15,32.15;32.85,32.15;32.85,31.65;32.15,31.65;32.15,15.35;32.85,15.35;32.85,14.85;32.15,14.85;32.15,10.3)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (35.55,13.98;35.55,14.48;35.85,14.48;35.85,15.72;35.55,15.72;35.55,16.22;35.85,16.22;35.85,22.38;35.55,22.38;35.55,22.88;35.85,22.88;35.85,24.12;35.55,24.12;35.55,24.62;35.85,24.62;35.85,30.78;35.55,30.78;35.55,31.28;35.85,31.28;35.85,32.52;35.55,32.52;35.55,33.02;35.85,33.02;35.85,50.335;36.35,50.335;36.35,33.02;36.65,33.02;36.65,32.52;36.35,32.52;36.35,31.28;36.65,31.28;36.65,30.78;36.35,30.78;36.35,24.62;36.65,24.62;36.65,24.12;36.35,24.12;36.35,22.88;36.65,22.88;36.65,22.38;36.35,22.38;36.35,16.22;36.65,16.22;36.65,15.72;36.35,15.72;36.35,14.48;36.65,14.48;36.65,13.98)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (65.25,18.7;65.25,50.335;65.75,50.335;65.75,28.2;66.62,28.2;66.62,27.1;65.75,27.1;65.75,19.8;66.62,19.8;66.62,18.7)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (69.15,32.52;69.15,33.02;69.45,33.02;69.45,39.18;69.15,39.18;69.15,39.68;69.45,39.68;69.45,50.335;69.95,50.335;69.95,39.68;70.25,39.68;70.25,39.18;69.95,39.18;69.95,33.02;70.25,33.02;70.25,32.52)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (85.95,32.52;85.95,33.02;86.25,33.02;86.25,39.18;85.95,39.18;85.95,39.68;86.25,39.68;86.25,50.335;86.75,50.335;86.75,39.68;87.05,39.68;87.05,39.18;86.75,39.18;86.75,33.02;87.05,33.02;87.05,32.52)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (89.58,18.7;89.58,19.8;90.45,19.8;90.45,27.1;89.58,27.1;89.58,28.2;90.45,28.2;90.45,50.335;90.95,50.335;90.95,18.7)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (119.55,13.98;119.55,14.48;119.85,14.48;119.85,15.72;119.55,15.72;119.55,16.22;119.85,16.22;119.85,22.38;119.55,22.38;119.55,22.88;119.85,22.88;119.85,24.12;119.55,24.12;119.55,24.62;119.85,24.62;119.85,30.78;119.55,30.78;119.55,31.28;119.85,31.28;119.85,32.52;119.55,32.52;119.55,33.02;119.85,33.02;119.85,50.335;120.35,50.335;120.35,33.02;120.65,33.02;120.65,32.52;120.35,32.52;120.35,31.28;120.65,31.28;120.65,30.78;120.35,30.78;120.35,24.62;120.65,24.62;120.65,24.12;120.35,24.12;120.35,22.88;120.65,22.88;120.65,22.38;120.35,22.38;120.35,16.22;120.65,16.22;120.65,15.72;120.35,15.72;120.35,14.48;120.65,14.48;120.65,13.98)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (124.05,10.3;124.05,14.85;123.35,14.85;123.35,15.35;124.05,15.35;124.05,31.65;123.35,31.65;123.35,32.15;124.05,32.15;124.05,50.335;124.55,50.335;124.55,36.6;125.42,36.6;125.42,35.5;124.55,35.5;124.55,28.2;125.42,28.2;125.42,27.1;124.55,27.1;124.55,19.8;125.42,19.8;125.42,18.7;124.55,18.7;124.55,11.4;125.42,11.4;125.42,10.3)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Differential_capacitive_DAC_array</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (139.98,10.3;139.98,11.4;140.85,11.4;140.85,18.7;139.98,18.7;139.98,19.8;140.85,19.8;140.85,23.25;140.15,23.25;140.15,23.75;140.85,23.75;140.85,27.1;139.98,27.1;139.98,28.2;140.85,28.2;140.85,35.5;139.98,35.5;139.98,36.6;140.85,36.6;140.85,50.335;141.35,50.335;141.35,36.6;142.22,36.6;142.22,35.5;141.35,35.5;141.35,28.2;142.22,28.2;142.22,27.1;141.35,27.1;141.35,19.8;142.22,19.8;142.22,18.7;141.35,18.7;141.35,11.4;142.22,11.4;142.22,10.3)</value>
+   </values>
+  </item>
+ </items>
+</report-database>

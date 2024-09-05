@@ -1,0 +1,7 @@
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/inv_1x.sch
+.subckt inv_1x IN VDDD VSSD OUT
+*.PININFO IN:I VDDD:B VSSD:B OUT:B
+M1 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M2 OUT IN VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+.ends
+.end

@@ -1,0 +1,122 @@
+timestamp 0
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+parameters nfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters nfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters pfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "OUT" 4 2121 1072 2121 1072 m1
+port "Valid" 1 -3430 -405 -3430 -405 m1
+port "CK1" 2 -5087 -91 -5087 -91 m1
+port "clks" 3 -5074 38 -5074 38 m1
+node "a_4373_n908#" 50 215.09 4373 -908 ndif 0 0 0 0 76128 1736 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 59584 1720 0 0 0 0 0 0 0 0
+node "a_1022_100#" 50 235.43 1022 100 ndif 0 0 0 0 76128 1736 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 59584 1720 0 0 0 0 0 0 0 0
+node "a_2_100#" 50 296.719 2 100 ndif 0 0 0 0 76128 1736 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 59584 1720 0 0 0 0 0 0 0 0
+node "a_n1018_100#" 50 296.681 -1018 100 ndif 0 0 0 0 76128 1736 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 59584 1720 0 0 0 0 0 0 0 0
+node "OUT" 60 926.717 2121 1072 m1 0 0 0 0 38064 868 101400 1820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 218400 2984 297560 3368 0 0 0 0 0 0
+node "a_500_604#" 50 777.898 500 604 ndif 0 0 0 0 76128 1736 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68856 1964 0 0 0 0 0 0 0 0
+node "a_n520_604#" 50 784.769 -520 604 ndif 0 0 0 0 76128 1736 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68856 1964 0 0 0 0 0 0 0 0
+node "a_n4622_n806#" 250 31182.1 -4622 -806 ndif 0 0 0 0 114192 2604 101400 1820 0 0 0 0 8895936 25840 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2282496 54922 1739704 19872 23520 728 0 0 0 0
+node "a_n4006_454#" 100 25.868 -4006 454 pdif 0 0 0 0 0 0 202800 3640 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 321984 2312 0 0 0 0 0 0 0 0
+node "a_n4622_454#" 100 8.66687 -4622 454 pdif 0 0 0 0 0 0 202800 3640 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 321984 2312 0 0 0 0 0 0 0 0
+node "Valid" 216 989.994 -3430 -405 m1 0 0 0 0 0 0 0 0 0 0 0 0 87056 3292 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12800 640 66720 1828 156320 4068 0 0 0 0
+node "CK1" 215 1519.8 -5087 -91 m1 0 0 0 0 0 0 0 0 0 0 0 0 87056 3292 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 107680 3172 79520 2148 0 0 0 0 0 0
+node "clks" 215 625.314 -5074 38 m1 0 0 0 0 0 0 0 0 0 0 0 0 87056 3292 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56960 1904 79520 2148 0 0 0 0 0 0
+node "a_n1540_604#" 50 780.275 -1540 604 ndif 0 0 0 0 76128 1736 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68856 1964 0 0 0 0 0 0 0 0
+node "clock_generator_delay_cell_0.C" 12 936.9 622 1098 p 0 0 0 0 0 0 0 0 0 0 0 0 230400 1952 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44800 1440 53760 1448 0 0 0 0 0 0
+node "clock_generator_delay_cell_0.B" 12 935.632 -398 1098 p 0 0 0 0 0 0 0 0 0 0 0 0 230400 1952 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44800 1440 53760 1448 0 0 0 0 0 0
+node "clock_generator_delay_cell_0.A" 12 983.479 -1418 1098 p 0 0 0 0 0 0 0 0 0 0 0 0 230400 1952 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44800 1440 53760 1448 0 0 0 0 0 0
+node "a_n2749_n404#" 379 3668 -2749 -404 ndif 0 0 0 0 152256 3472 101400 1820 0 0 0 0 85552 3256 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 209017 5758 283080 5830 596652 14374 0 0 0 0
+node "clock_generator_delay_cell_0.VDDD" 6678 18900.1 -5118 64 nw 4929236 12644 0 0 747120 16688 304200 5460 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2977000 29636 0 0 0 0 0 0 0 0
+substrate "clock_generator_delay_cell_0.VSSD" 0 0 -5014 -1026 ppd 0 0 0 0 304512 6944 950848 21376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1838896 26674 164080 4420 962314 14372 0 0 0 0
+cap "a_n4006_454#" "Valid" 47.0096
+cap "a_n4622_454#" "a_n4006_454#" 225.245
+cap "a_1022_100#" "a_n2749_n404#" 39.8109
+cap "a_n1018_100#" "a_n4622_n806#" 287.612
+cap "OUT" "a_n4622_n806#" 48.4597
+cap "a_n4622_n806#" "a_4373_n908#" 176.181
+cap "a_2_100#" "a_n520_604#" 27.7373
+cap "clock_generator_delay_cell_0.VDDD" "a_n4006_454#" 410.537
+cap "a_n1540_604#" "a_n2749_n404#" 63.6982
+cap "a_500_604#" "OUT" 0.131756
+cap "clock_generator_delay_cell_0.VDDD" "a_n1018_100#" 0.427496
+cap "clock_generator_delay_cell_0.VDDD" "OUT" 448.636
+cap "clock_generator_delay_cell_0.C" "a_n2749_n404#" 141.616
+cap "a_n4622_n806#" "clock_generator_delay_cell_0.B" 483.338
+cap "a_n4622_n806#" "a_n520_604#" 139.022
+cap "CK1" "a_n2749_n404#" 0.114221
+cap "a_1022_100#" "a_n4622_n806#" 281.733
+cap "a_500_604#" "clock_generator_delay_cell_0.B" 0.339494
+cap "clock_generator_delay_cell_0.VDDD" "clock_generator_delay_cell_0.B" 133.126
+cap "clock_generator_delay_cell_0.VDDD" "a_n520_604#" 10.1966
+cap "clock_generator_delay_cell_0.B" "clock_generator_delay_cell_0.A" 32.6697
+cap "a_n520_604#" "clock_generator_delay_cell_0.A" 0.339494
+cap "a_500_604#" "a_1022_100#" 27.7373
+cap "a_n4622_n806#" "a_n1540_604#" 135.709
+cap "a_2_100#" "a_n2749_n404#" 19.6702
+cap "clock_generator_delay_cell_0.VDDD" "a_1022_100#" 2.91554
+cap "a_n4622_n806#" "clock_generator_delay_cell_0.C" 483.338
+cap "clock_generator_delay_cell_0.VDDD" "a_n1540_604#" 10.2326
+cap "a_n1540_604#" "clock_generator_delay_cell_0.A" 88.6048
+cap "a_500_604#" "clock_generator_delay_cell_0.C" 88.6048
+cap "a_n4622_n806#" "a_n2749_n404#" 840.928
+cap "a_n4622_n806#" "CK1" 833.075
+cap "clock_generator_delay_cell_0.VDDD" "clock_generator_delay_cell_0.C" 161.263
+cap "OUT" "a_1022_100#" 1.30029
+cap "a_n4622_454#" "CK1" 31.4896
+cap "Valid" "a_n2749_n404#" 0.631069
+cap "CK1" "Valid" 132.663
+cap "CK1" "clks" 480.632
+cap "a_500_604#" "a_n2749_n404#" 67.2552
+cap "a_n1018_100#" "a_n1540_604#" 27.7373
+cap "clock_generator_delay_cell_0.VDDD" "a_n2749_n404#" 1105.41
+cap "clock_generator_delay_cell_0.VDDD" "CK1" 355.182
+cap "a_n4622_n806#" "a_2_100#" 287.461
+cap "clock_generator_delay_cell_0.A" "a_n2749_n404#" 120.724
+cap "a_n520_604#" "clock_generator_delay_cell_0.B" 88.6048
+cap "OUT" "clock_generator_delay_cell_0.C" 8.06186
+cap "clock_generator_delay_cell_0.VDDD" "a_2_100#" 0.427496
+cap "a_n4006_454#" "CK1" 31.4896
+cap "a_n1018_100#" "a_n2749_n404#" 21.6985
+cap "OUT" "a_n2749_n404#" 263.272
+cap "a_n4622_454#" "a_n4622_n806#" 22.7054
+cap "a_n4622_n806#" "Valid" 577.204
+cap "a_n4622_n806#" "clks" 164.687
+cap "a_n4622_454#" "Valid" 18.4458
+cap "a_500_604#" "a_n4622_n806#" 139.022
+cap "clock_generator_delay_cell_0.B" "clock_generator_delay_cell_0.C" 32.7388
+cap "a_n4622_454#" "clks" 31.7563
+cap "Valid" "clks" 69.0203
+cap "clock_generator_delay_cell_0.VDDD" "a_n4622_n806#" 3380.32
+cap "a_n4622_n806#" "clock_generator_delay_cell_0.A" 484.149
+cap "clock_generator_delay_cell_0.VDDD" "a_n4622_454#" 637.408
+cap "clock_generator_delay_cell_0.VDDD" "Valid" 391.799
+cap "clock_generator_delay_cell_0.VDDD" "clks" 901.905
+cap "clock_generator_delay_cell_0.VDDD" "a_500_604#" 16.3069
+cap "clock_generator_delay_cell_0.B" "a_n2749_n404#" 137.371
+cap "a_n520_604#" "a_n2749_n404#" 65.8624
+cap "clock_generator_delay_cell_0.VDDD" "clock_generator_delay_cell_0.A" 135.709
+cap "a_n4006_454#" "a_n4622_n806#" 309.987
+device msubckt nfet_03v3 -2627 -908 -2626 -907 l=7000 w=312 "clock_generator_delay_cell_0.VSSD" "a_n4622_n806#" 14000 0 "clock_generator_delay_cell_0.VSSD" 312 38064,868 "a_4373_n908#" 312 38064,868
+device msubckt nfet_03v3 -2627 -404 -2626 -403 l=7000 w=312 "clock_generator_delay_cell_0.VSSD" "a_n4622_n806#" 14000 0 "a_n2749_n404#" 312 38064,868 "a_4373_n908#" 312 38064,868
+device msubckt nfet_03v3 -3446 -806 -3445 -805 l=56 w=312 "clock_generator_delay_cell_0.VSSD" "Valid" 112 0 "a_n4622_n806#" 312 38064,868 "clock_generator_delay_cell_0.VSSD" 312 38064,868
+device msubckt nfet_03v3 -4062 -806 -4061 -805 l=56 w=312 "clock_generator_delay_cell_0.VSSD" "CK1" 112 0 "a_n4622_n806#" 312 38064,868 "clock_generator_delay_cell_0.VSSD" 312 38064,868
+device msubckt nfet_03v3 -4678 -806 -4677 -805 l=56 w=312 "clock_generator_delay_cell_0.VSSD" "clks" 112 0 "clock_generator_delay_cell_0.VSSD" 312 38064,868 "a_n4622_n806#" 312 38064,868
+device msubckt nfet_03v3 1958 268 1959 269 l=56 w=312 "clock_generator_delay_cell_0.VSSD" "a_n2749_n404#" 112 0 "clock_generator_delay_cell_0.VSSD" 312 38064,868 "OUT" 312 38064,868
+device msubckt nfet_03v3 622 100 623 101 l=400 w=312 "clock_generator_delay_cell_0.VSSD" "a_n4622_n806#" 800 0 "clock_generator_delay_cell_0.VSSD" 312 38064,868 "a_1022_100#" 312 38064,868
+device msubckt nfet_03v3 -398 100 -397 101 l=400 w=312 "clock_generator_delay_cell_0.VSSD" "a_n4622_n806#" 800 0 "clock_generator_delay_cell_0.VSSD" 312 38064,868 "a_2_100#" 312 38064,868
+device msubckt nfet_03v3 -1418 100 -1417 101 l=400 w=312 "clock_generator_delay_cell_0.VSSD" "a_n4622_n806#" 800 0 "clock_generator_delay_cell_0.VSSD" 312 38064,868 "a_n1018_100#" 312 38064,868
+device msubckt nfet_03v3 622 604 623 605 l=400 w=312 "clock_generator_delay_cell_0.VSSD" "a_n4622_n806#" 800 0 "a_500_604#" 312 38064,868 "a_1022_100#" 312 38064,868
+device msubckt nfet_03v3 -398 604 -397 605 l=400 w=312 "clock_generator_delay_cell_0.VSSD" "a_n4622_n806#" 800 0 "a_n520_604#" 312 38064,868 "a_2_100#" 312 38064,868
+device msubckt nfet_03v3 -1418 604 -1417 605 l=400 w=312 "clock_generator_delay_cell_0.VSSD" "a_n4622_n806#" 800 0 "a_n1540_604#" 312 38064,868 "a_n1018_100#" 312 38064,868
+device msubckt pfet_03v3 1958 968 1959 969 l=56 w=780 "clock_generator_delay_cell_0.VDDD" "a_n2749_n404#" 112 0 "clock_generator_delay_cell_0.VDDD" 780 101400,1820 "OUT" 780 101400,1820
+device msubckt pfet_03v3 -2404 383 -2403 384 l=56 w=780 "clock_generator_delay_cell_0.VDDD" "a_n4622_n806#" 112 0 "clock_generator_delay_cell_0.VDDD" 780 101400,1820 "a_n2749_n404#" 780 101400,1820
+device msubckt nfet_03v3 622 1230 623 1231 l=400 w=312 "clock_generator_delay_cell_0.VSSD" "clock_generator_delay_cell_0.C" 800 0 "a_500_604#" 312 38064,868 "a_n2749_n404#" 312 38064,868
+device msubckt nfet_03v3 -398 1230 -397 1231 l=400 w=312 "clock_generator_delay_cell_0.VSSD" "clock_generator_delay_cell_0.B" 800 0 "a_n520_604#" 312 38064,868 "a_n2749_n404#" 312 38064,868
+device msubckt nfet_03v3 -1418 1230 -1417 1231 l=400 w=312 "clock_generator_delay_cell_0.VSSD" "clock_generator_delay_cell_0.A" 800 0 "a_n1540_604#" 312 38064,868 "a_n2749_n404#" 312 38064,868
+device msubckt pfet_03v3 -3446 454 -3445 455 l=56 w=780 "clock_generator_delay_cell_0.VDDD" "Valid" 112 0 "a_n4006_454#" 780 101400,1820 "a_n4622_n806#" 780 101400,1820
+device msubckt pfet_03v3 -4062 454 -4061 455 l=56 w=780 "clock_generator_delay_cell_0.VDDD" "CK1" 112 0 "a_n4622_454#" 780 101400,1820 "a_n4006_454#" 780 101400,1820
+device msubckt pfet_03v3 -4678 454 -4677 455 l=56 w=780 "clock_generator_delay_cell_0.VDDD" "clks" 112 0 "clock_generator_delay_cell_0.VDDD" 780 101400,1820 "a_n4622_454#" 780 101400,1820

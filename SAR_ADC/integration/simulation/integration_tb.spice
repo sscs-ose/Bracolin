@@ -1,0 +1,701 @@
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/integration/integration_tb.sch
+.subckt integration_tb
+
+x1 VDN Bit_3_n Bit_8_n Bit_5_n Bit_6_n Bit_7_n Bit_4_n Bit_9_n Bit_10_n Bit_2_n Bit_1_n
++ Differential_capacitive_DAC_array
+x2 VDP Bit_3 Bit_8 Bit_5 Bit_6 Bit_7 Bit_4 Bit_9 Bit_10 Bit_2 Bit_1
++ Differential_capacitive_DAC_array
+x3 VDP VDDA GND clks Vinp Vcom tracking_switches
+x4 VDN VDDA GND clks Vinn Vcom tracking_switches
+x5 vocn vocp VDDD GND VDP VDN Valid clkc Dynamic_Comparator
+x6 VDDD Bit_10 vocp GND CK11 VCM out_11 GND GND clks Bit_9 vocp CK10 out_10 Bit_8 vocp CK9 out_9
++ Bit_7 vocp CK8 out_8 Bit_6 vocp CK7 out_7 Bit_5 vocp CK6 out_6 Bit_4 vocp CK5 out_5 Bit_3 vocp CK4 out_4
++ Bit_2 vocp CK3 out_3 Bit_1 vocp CK2 out_2 Bit_0 vocp CK1 out_1 SAR_Asynchronous_Logic_integration
+x7 clkc VDDD GND clks CK1 Valid A B C clock_generator
+VDD4 VDDA GND 3.3
+.save i(vdd4)
+VDD3 Vcom Vinn SIN(0 1.3 10k)
+.save i(vdd3)
+VDD6 VDDD GND 3.3
+.save i(vdd6)
+VDD2 clks GND PULSE(0 3.3 0n 2n 2n 80n 500n)
+.save i(vdd2)
+VDD7 VCM GND 1.65
+.save i(vdd7)
+* noconn out_2
+* noconn out_1
+x8 CK11 VDDD CK1 CK6 GND CK10 CK5 CK9 CK4 clks CK8 CK3 Valid CK2 CK7 GND VDDD SAR_Logic
+V2 C GND 0
+.save i(v2)
+V5 B GND 0
+.save i(v5)
+V6 A GND 0
+.save i(v6)
+x9 VDDD GND CK11 Bit_10 Bit_10_n neg_bottom_plate
+x10 VDDD GND CK10 Bit_9 Bit_9_n neg_bottom_plate
+x11 VDDD GND CK9 Bit_8 Bit_8_n neg_bottom_plate
+x12 VDDD GND CK8 Bit_7 Bit_7_n neg_bottom_plate
+x13 VDDD GND CK7 Bit_6 Bit_6_n neg_bottom_plate
+x14 VDDD GND CK6 Bit_5 Bit_5_n neg_bottom_plate
+x15 VDDD GND CK5 Bit_4 Bit_4_n neg_bottom_plate
+x16 VDDD GND CK4 Bit_3 Bit_3_n neg_bottom_plate
+x17 VDDD GND CK3 Bit_2 Bit_2_n neg_bottom_plate
+x18 VDDD GND CK2 Bit_1 Bit_1_n neg_bottom_plate
+E1 out net10 out_11 GND 0.5
+E2 net10 net9 out_10 GND 0.25
+E3 net9 net8 out_9 GND 0.125
+E4 net8 net7 out_8 GND 0.0625
+E5 net7 net6 out_7 GND 0.03125
+E6 net6 net5 out_6 GND 0.015625
+E7 net5 net4 out_5 GND 0.0078125
+E8 net4 net3 out_4 GND 0.00390625
+E9 net3 net2 out_3 GND 0.001953125
+E10 net2 net1 out_2 GND 0.0009765625
+E11 net1 GND out_1 GND 0.00048828125
+* noconn out
+* noconn vocn
+VDD8 Vinp Vcom SIN(0 1.3 10k)
+.save i(vdd8)
+VDD9 Vcom GND 1.65
+.save i(vdd9)
+**** begin user architecture code
+
+
+
+*Parameters
+
+.options TEMP = 50
+.lib /home/gf180/Documents/gf180/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/gf180/Documents/gf180/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
+
+.lib /home/gf180/Documents/gf180/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_statistical
+.include /home/gf180/Documents/gf180/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+
+*Data to save
+.save v(Vinp)
+*.save v(VDP)
+.save v(Vinn)
+*.save v(VDN)
+*.save v(clkc)
+*.save v(x5.aN)
+*.save v(x5.aP)
+*.save v(x5.dN)
+*.save v(x5.dP)
+
+*.save v(clks)
+*.save v(CK1)
+*.save v(Valid)
+*.save v(CK11)
+*.save v(CK10)
+*.save v(CK9)
+*.save v(CK8)
+*.save v(CK7)
+*.save v(CK6)
+*.save v(CK5)
+*.save v(CK4)
+*.save v(CK3)
+*.save v(CK2)
+*.save v(CK1)
+*.save v(Bit_10)
+*.save v(Bit_10_n)
+*.save v(Bit_9)
+*.save v(Bit_9_n)
+*.save v(Bit_8)
+*.save v(Bit_8_n)
+*.save v(Bit_7)
+*.save v(Bit_7_n)
+*.save v(Bit_6)
+*.save v(Bit_6_n)
+*.save v(Bit_5)
+*.save v(Bit_5_n)
+*.save v(Bit_4)
+*.save v(Bit_4_n)
+*.save v(Bit_3)
+*.save v(Bit_3_n)
+*.save v(Bit_2)
+*.save v(Bit_2_n)
+*.save v(Bit_1)
+*.save v(Bit_1_n)
+*.save v(vocp)
+*.save v(vocn)
+.save v(out)
+
+* Simulation
+.control
+tran 500n 100u
+*setplot dc1
+*let vout_diff = VDP - VDN
+let vin_diff = Vinp - Vinn
+*plot v(Bit_10_n)+48 v(Bit_10)+48 v(Bit_9_n)+44 v(Bit_9)+44 v(Bit_8_n)+40 v(Bit_8)+40 v(Bit_7_n)+36
+*+ v(Bit_7)+36 v(Bit_6_n)+32 v(Bit_6)+32 v(Bit_5_n)+28 v(Bit_5)+28 v(Bit_4_n)+24 v(Bit_4)+24 v(Bit_3_n)+20
+*+ v(Bit_3)+20 v(Bit_2_n)+16 v(Bit_2)+16 v(Bit_1_n)+12 v(Bit_1)+12 v(clks)+8 v(Valid)+4 v(vin_diff) v(vout_diff)
+*plot v(clks)+8 v(Vinp)+4 v(VDP)+4 v(Vinn) v(VDN)
+*set filetype=ascii
+*plot v(clks)+12 v(Valid)+8 v(vin_diff)+4 v(vout_diff)+4 v(Vinp) v(out)
+plot (vin_diff) v(out)
+
+*setplot dc2
+*plot v(clks)+8 v(Vinp)+4 v(VDP)
+
+*setplot dc3
+*plot v(clkc)+20 v(VDP)+16 v(VDN)+12 v(vocp)+8 v(vocn)+4 v(Valid)
+
+*setplot dc4
+*plot v(Valid)+48 v(clks)+44 v(CK11)+40 v(CK10)+36 v(CK9)+32 v(CK8)+28 v(CK7)+24 v(CK6)+20 v(CK5)+16
+*+ v(CK4)+12 v(CK3)+8 v(CK2)+4 v(CK1)
+
+*setplot dc1
+*plot v(VDP)+20 v(VDN)+20 v(clkc)+16 v(x5.aN)+12 v(x5.aP)+8 v(x5.dP)+4 v(x5.dN)
+
+set filetype = ascii
+write integration_tb_dc.raw
+
+reset
+unset filetype
+op
+save all
+write integration_tb.raw
+
+
+.endc
+.end
+
+
+**** end user architecture code
+.ends
+
+* expanding   symbol:
+*+  PICO_contest/Differential_capacitive_DAC/xschem/Differential_capacitive_DAC_array.sym # of pins=11
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Differential_capacitive_DAC/xschem/Differential_capacitive_DAC_array.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Differential_capacitive_DAC/xschem/Differential_capacitive_DAC_array.sch
+.subckt Differential_capacitive_DAC_array VD Bit_3 Bit_8 Bit_5 Bit_6 Bit_7 Bit_4 Bit_9 Bit_10 Bit_2
++ Bit_1
+*.PININFO Bit_1:B Bit_2:B Bit_3:B Bit_4:B Bit_5:B Bit_6:B Bit_7:B Bit_8:B Bit_9:B Bit_10:B VD:B
+XC1 net1 Bit_1 cap_mim_2f0fF c_width=4e-6 c_length=3e-6 m=1
+XC2 net1 Bit_2 cap_mim_2f0fF c_width=4e-6 c_length=3e-6 m=2
+XC3 net1 Bit_3 cap_mim_2f0fF c_width=4e-6 c_length=3e-6 m=4
+XC4 net1 Bit_4 cap_mim_2f0fF c_width=4e-6 c_length=3e-6 m=8
+XC5 net1 Bit_5 cap_mim_2f0fF c_width=4e-6 c_length=3e-6 m=16
+XC11 VD net1 cap_mim_2f0fF c_width=4e-6 c_length=3e-6 m=1
+XC6 VD Bit_6 cap_mim_2f0fF c_width=4e-6 c_length=3e-6 m=1
+XC7 VD Bit_7 cap_mim_2f0fF c_width=4e-6 c_length=3e-6 m=2
+XC8 VD Bit_8 cap_mim_2f0fF c_width=4e-6 c_length=3e-6 m=4
+XC9 VD Bit_9 cap_mim_2f0fF c_width=4e-6 c_length=3e-6 m=8
+XC10 VD Bit_10 cap_mim_2f0fF c_width=4e-6 c_length=3e-6 m=16
+.ends
+
+
+* expanding   symbol:  PICO_contest/tracking_switches/xschem/tracking_switches.sym # of pins=6
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches.sch
+.subckt tracking_switches VDP VDDA VSSA clks Vinp Vinn
+*.PININFO VDDA:B VSSA:B clks:I Vinp:I VDP:B Vinn:I
+XM2 VS_XM1 n_clks VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 VD_XM5 clks_in VS_XM1 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 VD_XM5 VG_XM1 VS_XM1 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM5 VD_XM5 clks_in VDDA VDDA pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM6 VDDA VG_XM1 VS_XM6 VS_XM6 pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM7 VG_XM1 VD_XM5 VS_XM6 VS_XM6 pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM1 Vinp VG_XM1 VS_XM1 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM9 VS_XM8 n_clks VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM8 VG_XM1 VDDA VS_XM8 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+x1 VDDA VSSA n_clks clks tracking_switches_inv_1x
+x2 VDDA VSSA clks_in n_clks tracking_switches_inv_1x
+XC1 VS_XM6 VS_XM1 cap_mim_2f0fF c_width=1e-6 c_length=1e-6 m=300
+XMS2 VDP VG_XM1 Vinp VSSA nfet_03v3 L=0.28u W=30u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XC3 VD_XM5 VS_XM1 cap_mim_2f0fF c_width=1e-6 c_length=1e-6 m=300
+.ends
+
+
+* expanding   symbol:  PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator.sym # of pins=8
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator.sch
+.subckt Dynamic_Comparator vocp vocn VDDD VSSD VDP VDN Valid clkc
+*.PININFO VDDD:B VSSD:B VDP:I VDN:I clkc:I Valid:B vocn:B vocp:B
+x5 aN VDDD aP VSSD clkc VDP VDN Dynamic_Comparator_opamp
+x1 VDDD VSSD dN clkc dP aP aN Dynamic_Comparator_latch
+x2 VDDD VSSD Vocp dP Dynamic_Comparator_inv_1x
+x3 VDDD VSSD Vocn dN Dynamic_Comparator_inv_1x
+x4 VDDD VSSD Valid Vocp Vocn Dynamic_Comparator_nand_1x
+.ends
+
+
+* expanding   symbol:
+*+  PICO_contest/SAR_Asynchronous_Logic_integration/SAR_Asynchronous_Logic_integration.sym # of pins=50
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic_integration/SAR_Asynchronous_Logic_integration.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic_integration/SAR_Asynchronous_Logic_integration.sch
+.subckt SAR_Asynchronous_Logic_integration VDDD Bit_10 D_C_11 VSSD CK11 VCM out_11 Set Reset clks
++ Bit_9 D_C_10 CK10 out_10 Bit_8 D_C_9 CK9 out_9 Bit_7 D_C_8 CK8 out_8 Bit_6 D_C_7 CK7 out_7 Bit_5 D_C_6
++ CK6 out_6 Bit_4 D_C_5 CK5 out_5 Bit_3 D_C_4 CK4 out_4 Bit_2 D_C_3 CK3 out_3 Bit_1 D_C_2 CK2 out_2 Bit_0
++ D_C_1 CK1 out_1
+*.PININFO VDDD:B VSSD:B Set:I Reset:I VCM:B Bit_10:B clks:I D_C_11:I CK11:I out_11:B Bit_9:B
+*+ D_C_10:I CK10:I out_10:B Bit_8:B D_C_9:I CK9:I out_9:B Bit_7:B D_C_8:I CK8:I out_8:B Bit_6:B D_C_7:I CK7:I
+*+ out_7:B Bit_5:B D_C_6:I CK6:I out_6:B Bit_4:B D_C_5:I CK5:I out_5:B Bit_3:B D_C_4:I CK4:I out_4:B Bit_2:B
+*+ D_C_3:I CK3:I out_3:B Bit_1:B D_C_2:I CK2:I out_2:B Bit_0:B D_C_1:I CK1:I out_1:B
+x12 VCM Bit_10 out_11 clks VDDD VSSD Set Reset D_C_11 CK11 SAR_Asynchronous_Logic
+x1 VCM Bit_9 out_10 clks VDDD VSSD Set Reset D_C_10 CK10 SAR_Asynchronous_Logic
+x2 VCM Bit_8 out_9 clks VDDD VSSD Set Reset D_C_9 CK9 SAR_Asynchronous_Logic
+x3 VCM Bit_7 out_8 clks VDDD VSSD Set Reset D_C_8 CK8 SAR_Asynchronous_Logic
+x4 VCM Bit_6 out_7 clks VDDD VSSD Set Reset D_C_7 CK7 SAR_Asynchronous_Logic
+x5 VCM Bit_5 out_6 clks VDDD VSSD Set Reset D_C_6 CK6 SAR_Asynchronous_Logic
+x6 VCM Bit_4 out_5 clks VDDD VSSD Set Reset D_C_5 CK5 SAR_Asynchronous_Logic
+x7 VCM Bit_3 out_4 clks VDDD VSSD Set Reset D_C_4 CK4 SAR_Asynchronous_Logic
+x8 VCM Bit_2 out_3 clks VDDD VSSD Set Reset D_C_3 CK3 SAR_Asynchronous_Logic
+x9 VCM Bit_1 out_2 clks VDDD VSSD Set Reset D_C_2 CK2 SAR_Asynchronous_Logic
+x10 VCM Bit_0 out_1 clks VDDD VSSD Set Reset D_C_1 CK1 SAR_Asynchronous_Logic
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_clock/xschem/clock_generator.sym # of pins=9
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator.sch
+.subckt clock_generator OUT VDDD VSSD clks CK1 Valid A B C
+*.PININFO VDDD:B VSSD:B OUT:B clks:I CK1:I Valid:I A:I B:I C:I
+x3 VDDD net1 VSSD clks CK1 Valid clock_generator_nor_3_1x
+x1 VDDD VSSD net2 net1 A B C clock_generator_delay_cell
+x2 VDDD OUT VSSD net2 clock_generator_inv_1x
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/SAR_Logic.sym # of pins=17
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/SAR_Logic.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/SAR_Logic.sch
+.subckt SAR_Logic CK11 VDDD CK1 CK6 VSSD CK10 CK5 CK9 CK4 clks CK8 CK3 Valid CK2 CK7 Set D
+*.PININFO VDDD:B VSSD:B CK11:B CK10:B CK9:B CK8:B CK7:B CK6:B CK5:B CK4:B CK3:B CK2:B CK1:B clks:I
+*+ Valid:I Set:I D:I
+* noconn #net1
+* noconn #net2
+* noconn #net3
+* noconn #net4
+* noconn #net5
+* noconn #net6
+* noconn #net7
+* noconn #net8
+* noconn #net9
+* noconn #net10
+* noconn #net11
+x1 VDDD CK11 Valid D net1 Set clks VSSD D_reset_FF
+x2 VDDD CK10 Valid CK11 net2 Set clks VSSD D_reset_FF
+x3 VDDD CK9 Valid CK10 net3 Set clks VSSD D_reset_FF
+x4 VDDD CK8 Valid CK9 net4 Set clks VSSD D_reset_FF
+x5 VDDD CK7 Valid CK8 net5 Set clks VSSD D_reset_FF
+x6 VDDD CK6 Valid CK7 net6 Set clks VSSD D_reset_FF
+x7 VDDD CK5 Valid CK6 net7 Set clks VSSD D_reset_FF
+x8 VDDD CK4 Valid CK5 net8 Set clks VSSD D_reset_FF
+x9 VDDD CK3 Valid CK4 net9 Set clks VSSD D_reset_FF
+x10 VDDD CK2 Valid CK3 net10 Set clks VSSD D_reset_FF
+x11 VDDD CK1 Valid CK2 net11 Set clks VSSD D_reset_FF
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_Asynchronous_Logic/xschem/neg_bottom_plate.sym # of pins=5
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/neg_bottom_plate.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/neg_bottom_plate.sch
+.subckt neg_bottom_plate VDDD VSSD CK11 Bit Bit_n
+*.PININFO VDDD:B VSSD:B CK11:B Bit:B Bit_n:B
+x10 not_CK11 VDDD Bit net1 VSSD CK11_in t_gate
+x11 CK11_in VDDD Bit Bit_n VSSD not_CK11 t_gate
+x12 VDDD net1 net2 VSSD inv_1x
+x13 VDDD CK11 not_CK11 VSSD inv_1x
+x14 VDDD not_CK11 CK11_in VSSD inv_1x
+x15 not_CK11 VDDD net2 Bit_n VSSD CK11_in t_gate
+.ends
+
+
+* expanding   symbol:  PICO_contest/tracking_switches/xschem/tracking_switches_inv_1x.sym # of
+*+ pins=4
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches_inv_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches_inv_1x.sch
+.subckt tracking_switches_inv_1x VDDA VSSA OUT IN
+*.PININFO VDDA:B VSSA:B OUT:B IN:I
+XM1 OUT IN VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDDA VDDA pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_opamp.sym # of
+*+ pins=7
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_opamp.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_opamp.sch
+.subckt Dynamic_Comparator_opamp aN VDDD aP VSSD clkc VDP VDN
+*.PININFO VDDD:B VSSD:B clkc:I VDP:I VDN:I aN:B aP:B
+XM0 net1 clkc VSSD VSSD nfet_03v3 L=0.28u W=9.3u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM1 aN VDP net1 VSSD nfet_03v3 L=0.28u W=18.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 aP VDN net1 VSSD nfet_03v3 L=0.28u W=18.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 aN clkc VDDD VDDD pfet_03v3 L=0.28u W=4.7u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 aP clkc VDDD VDDD pfet_03v3 L=0.28u W=4.7u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_latch.sym # of
+*+ pins=7
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_latch.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_latch.sch
+.subckt Dynamic_Comparator_latch VDDD VSSD dN clkc dP aP aN
+*.PININFO VDDD:B VSSD:B clkc:I aP:I aN:I dN:B dP:B
+XM5 net1 dP VDDD VDDD pfet_03v3 L=0.28u W=15.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM6 net2 dN VDDD VDDD pfet_03v3 L=0.28u W=15.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM7 dN aP net1 VDDD pfet_03v3 L=0.28u W=15.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM8 dP aN net2 VDDD pfet_03v3 L=0.28u W=15.6u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM9 dN dP VSSD VSSD nfet_03v3 L=0.28u W=6.3u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM10 dP dN VSSD VSSD nfet_03v3 L=0.28u W=6.3u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM11 dN n_clkc VSSD VSSD nfet_03v3 L=0.28u W=3.1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM12 dP n_clkc VSSD VSSD nfet_03v3 L=0.28u W=3.1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+x1 VDDD VSSD n_clkc clkc Dynamic_Comparator_inv_1x
+.ends
+
+
+* expanding   symbol:  PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_inv_1x.sym # of
+*+ pins=4
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_inv_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_inv_1x.sch
+.subckt Dynamic_Comparator_inv_1x VDDD VSSD OUT IN
+*.PININFO VDDD:B VSSD:B IN:I OUT:B
+XM1 OUT IN VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_nand_1x.sym # of
+*+ pins=5
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_nand_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_nand_1x.sch
+.subckt Dynamic_Comparator_nand_1x VDDD VSSD OUT A B
+*.PININFO VDDD:B VSSD:B A:I B:I OUT:B
+XM1 net1 A VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT B net1 VSSD nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 OUT A VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 OUT B VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic.sym # of
+*+ pins=10
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic.sch
+.subckt SAR_Asynchronous_Logic VCM VC Q_R clks VDDD VSSD Set Reset D_C CLK
+*.PININFO VDDD:B VSSD:B Set:I Reset:I D_C:I CLK:I Q_R:B VCM:B VC:B clks:I
+XM1 VB not_CLK VSSD VSSD nfet_03v3 L=1.1u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 VA CLK_in VDDD VDDD pfet_03v3 L=1.1u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+* noconn #net1
+* noconn #net2
+x4 not_CLK VDDD Dn VA VSSD CLK_in SAR_Asynchronous_Logic_tgate
+x5 not_CLK VDDD Dn VB VSSD CLK_in SAR_Asynchronous_Logic_tgate
+XM3 VC VA VDDD VDDD pfet_03v3 L=1.1u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 VC VB VSSD VSSD nfet_03v3 L=1.1u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+x6 CLK_in VDDD VCM VC VSSD not_CLK SAR_Asynchronous_Logic_tgate
+x1 VDDD Dn CLK_in D_C net1 Set Reset VSSD SAR_Asynchronous_Logic_D_reset_FF
+x2 VDDD Q_R clks Dn net2 Set Reset VSSD SAR_Asynchronous_Logic_D_reset_FF
+x3 VDDD not_CLK VSSD CLK SAR_Asynchronous_Logic_inv_1x
+x7 VDDD CLK_in VSSD not_CLK SAR_Asynchronous_Logic_inv_1x
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_clock/xschem/clock_generator_nor_3_1x.sym # of pins=6
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator_nor_3_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator_nor_3_1x.sch
+.subckt clock_generator_nor_3_1x VDDD OUT VSSD A B C
+*.PININFO VDDD:B VSSD:B OUT:B A:I B:I C:I
+XM1 OUT B VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT A VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 OUT C VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 OUT C net1 VDDD pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM5 net1 B net2 VDDD pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM6 net2 A VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_clock/xschem/clock_generator_delay_cell.sym # of pins=7
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator_delay_cell.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator_delay_cell.sch
+.subckt clock_generator_delay_cell VDDD VSSD OUT IN A B C
+*.PININFO VDDD:B VSSD:B IN:I OUT:B A:I B:I C:I
+XM1 net1 IN VSSD VSSD nfet_03v3 L=35u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN net1 VSSD nfet_03v3 L=35u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 net2 IN VSSD VSSD nfet_03v3 L=2u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM5 net3 IN net2 VSSD nfet_03v3 L=2u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM6 OUT A net3 VSSD nfet_03v3 L=2u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM7 net4 IN VSSD VSSD nfet_03v3 L=2u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM8 net5 IN net4 VSSD nfet_03v3 L=2u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM9 OUT B net5 VSSD nfet_03v3 L=2u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM10 net6 IN VSSD VSSD nfet_03v3 L=2u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM11 net7 IN net6 VSSD nfet_03v3 L=2u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM12 OUT C net7 VSSD nfet_03v3 L=2u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_clock/xschem/clock_generator_inv_1x.sym # of pins=4
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator_inv_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator_inv_1x.sch
+.subckt clock_generator_inv_1x VDDD OUT VSSD IN
+*.PININFO VDDD:B VSSD:B OUT:B IN:I
+XM1 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/D_reset_FF.sym # of pins=8
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/D_reset_FF.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/D_reset_FF.sch
+.subckt D_reset_FF VDDD Q CLK D nQ Set Reset VSSD
+*.PININFO VDDD:B VSSD:B Q:B nQ:B CLK:I D:I Reset:I Set:I
+x11 VDDD CLK nCLK VSSD inv_1x
+x1 CLK_buf VDDD D net1 VSSD nCLK t_gate
+x2 VDDD Set net2 net1 VSSD nor_2_1x
+x4 nCLK VDDD net2 net4 VSSD CLK_buf t_gate
+x6 VDDD Reset Q net4 VSSD nor_2_1x
+x3 nCLK VDDD net3 net1 VSSD CLK_buf t_gate
+x5 VDDD net2 net3 Reset VSSD nor_2_1x
+x7 CLK_buf VDDD net5 net4 VSSD nCLK t_gate
+x8 VDDD Q net5 Set VSSD nor_2_1x
+x9 VDDD Q nQ VSSD inv_1x
+x10 VDDD nCLK CLK_buf VSSD inv_1x
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/t_gate.sym # of pins=6
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/t_gate.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/t_gate.sch
+.subckt t_gate p_CLK VDDD IN OUT VSSD n_CLK
+*.PININFO IN:B VDDD:B VSSD:B OUT:B n_CLK:I p_CLK:I
+XM1 IN n_CLK OUT VSSD nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 IN p_CLK OUT VDDD pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/inv_1x.sym # of pins=4
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/inv_1x.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/inv_1x.sch
+.subckt inv_1x VDDD IN OUT VSSD
+*.PININFO IN:I VDDD:B VSSD:B OUT:B
+XM1 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_tgate.sym #
+*+ of pins=6
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_tgate.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_tgate.sch
+.subckt SAR_Asynchronous_Logic_tgate p_CLK VDDD IN OUT VSSD n_CLK
+*.PININFO IN:B VDDD:B VSSD:B n_CLK:I p_CLK:I OUT:B
+XM1 OUT n_CLK IN VSSD nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT p_CLK IN VDDD pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:
+*+  PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_D_reset_FF.sym # of pins=8
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_D_reset_FF.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_D_reset_FF.sch
+.subckt SAR_Asynchronous_Logic_D_reset_FF VDDD Q CLK D nQ Set Reset VSSD
+*.PININFO VDDD:B VSSD:B Q:B nQ:B CLK:I D:I Reset:I Set:I
+x1 VDDD CLK nCLK VSSD inv_1x
+x11 VDDD nCLK CLK_buf VSSD inv_1x
+x2 CLK_buf VDDD D net1 VSSD nCLK t_gate
+x4 VDDD Set net2 net1 VSSD nor_2_1x
+x6 nCLK VDDD net2 net4 VSSD CLK_buf t_gate
+x7 VDDD Reset Q net4 VSSD nor_2_1x
+x3 nCLK VDDD net3 net1 VSSD CLK_buf t_gate
+x9 CLK_buf VDDD net5 net4 VSSD nCLK t_gate
+x5 VDDD net2 net3 Reset VSSD nor_2_1x
+x8 VDDD Q net5 Set VSSD nor_2_1x
+x10 VDDD Q nQ VSSD inv_1x
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_inv_1x.sym
+*+ # of pins=4
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_inv_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_inv_1x.sch
+.subckt SAR_Asynchronous_Logic_inv_1x VDDD OUT VSSD IN
+*.PININFO VDDD:B VSSD:B OUT:B IN:I
+XM1 OUT IN VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/nor_2_1x.sym # of pins=5
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/nor_2_1x.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/nor_2_1x.sch
+.subckt nor_2_1x VDDD A OUT B VSSD
+*.PININFO A:I B:I VDDD:B VSSD:B OUT:B
+XM1 OUT B VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM2 OUT A VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM3 OUT B net1 VDDD pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 net1 A VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+.ends
+
+.GLOBAL GND
+.end

@@ -1,0 +1,528 @@
+* NGSPICE file created from Differential_capacitive_DAC_array.ext - technology: gf180mcuD
+
+.subckt Differential_capacitive_DAC_array Bit_1 Bit_2 Bit_3 Bit_4 Bit_5 Bit_6 Bit_7
++ Bit_8 Bit_9 Bit_10 VD
+X0 VD.t0 Bit_8.t3 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X1 m4_15000_4920# Bit_5.t15 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X2 m4_15000_4920# Bit_5.t14 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X3 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X4 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X5 m4_15000_4920# Bit_1.t0 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X6 VD.t1 Bit_8.t2 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X7 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X8 VD.t2 Bit_10.t15 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X9 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X10 m4_15000_4920# Bit_3.t3 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X11 m4_15000_4920# Bit_4.t7 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X12 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X13 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X14 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X15 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X16 VD.t3 Bit_8.t1 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X17 VD.t4 Bit_9.t7 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X18 VD.t5 Bit_10.t14 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X19 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X20 VD.t6 Bit_10.t13 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X21 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X22 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X23 m4_15000_4920# Bit_4.t6 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X24 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X25 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X26 VD.t7 Bit_9.t6 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X27 VD.t8 Bit_10.t12 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X28 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X29 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X30 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X31 VD.t9 Bit_10.t11 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X32 m4_15000_4920# Bit_4.t5 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X33 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X34 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X35 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X36 VD.t10 Bit_9.t5 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X37 m4_15000_4920# Bit_5.t13 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X38 m4_15000_4920# Bit_5.t12 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X39 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X40 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X41 VD.t11 Bit_10.t10 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X42 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X43 m4_15000_4920# Bit_5.t11 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X44 m4_15000_4920# Bit_4.t4 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X45 VD.t12 Bit_9.t4 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X46 m4_15000_4920# Bit_3.t2 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X47 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X48 VD.t13 Bit_10.t9 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X49 m4_15000_4920# Bit_2.t1 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X50 m4_15000_4920# Bit_5.t10 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X51 VD.t14 Bit_10.t8 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X52 VD.t15 Bit_10.t7 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X53 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X54 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X55 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X56 m4_15000_4920# Bit_5.t9 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X57 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X58 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X59 m4_15000_4920# Bit_3.t1 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X60 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X61 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X62 m4_15000_4920# Bit_2.t0 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X63 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X64 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X65 VD.t16 Bit_10.t6 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X66 VD.t17 Bit_6.t0 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X67 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X68 m4_15000_4920# Bit_3.t0 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X69 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X70 m4_15000_4920# Bit_5.t8 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X71 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X72 m4_15000_4920# Bit_5.t7 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X73 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X74 VD.t18 Bit_10.t5 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X75 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X76 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X77 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X78 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X79 VD.t19 m4_15000_4920# cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X80 m4_15000_4920# Bit_4.t3 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X81 m4_15000_4920# Bit_5.t6 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X82 VD.t20 Bit_8.t0 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X83 VD.t21 Bit_9.t3 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X84 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X85 m4_15000_4920# Bit_5.t5 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X86 VD.t22 Bit_10.t4 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X87 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X88 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X89 m4_15000_4920# Bit_5.t4 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X90 m4_15000_4920# Bit_4.t2 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X91 VD.t23 Bit_9.t2 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X92 VD.t24 Bit_10.t3 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X93 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X94 m4_15000_4920# Bit_5.t3 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X95 VD.t25 Bit_10.t2 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X96 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X97 m4_15000_4920# Bit_4.t1 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X98 m4_15000_4920# Bit_4.t0 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X99 VD.t26 Bit_9.t1 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X100 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X101 m4_15000_4920# Bit_5.t2 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X102 VD.t27 Bit_9.t0 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X103 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X104 VD.t28 Bit_7.t1 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X105 m4_15000_4920# Bit_5.t1 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X106 VD.t29 Bit_10.t1 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X107 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X108 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X109 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X110 VSSA VSSA cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X111 m4_15000_4920# Bit_5.t0 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X112 VD.t30 Bit_7.t0 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+X113 VD.t31 Bit_10.t0 cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+R0 VD VD.n31 2.6543
+R1 VD.n2 VD.n0 0.3155
+R2 VD.n4 VD.n2 0.3155
+R3 VD.n6 VD.n4 0.3155
+R4 VD.n8 VD.n6 0.3155
+R5 VD.n10 VD.n8 0.3155
+R6 VD.n12 VD.n10 0.3155
+R7 VD.n14 VD.n12 0.3155
+R8 VD.n13 VD.n11 0.3155
+R9 VD.n11 VD.n9 0.3155
+R10 VD.n9 VD.n7 0.3155
+R11 VD.n7 VD.n5 0.3155
+R12 VD.n5 VD.n3 0.3155
+R13 VD.n3 VD.n1 0.3155
+R14 VD.n16 VD.n15 0.3155
+R15 VD.n17 VD.n16 0.3155
+R16 VD.n18 VD.n17 0.3155
+R17 VD.n19 VD.n18 0.3155
+R18 VD.n20 VD.n19 0.3155
+R19 VD.n21 VD.n20 0.3155
+R20 VD.n23 VD.n22 0.3155
+R21 VD.n25 VD.n24 0.3155
+R22 VD.n26 VD.n25 0.3155
+R23 VD.n27 VD.n26 0.3155
+R24 VD.n28 VD.n27 0.3155
+R25 VD.n29 VD.n28 0.3155
+R26 VD.n30 VD.n29 0.3155
+R27 VD.n23 VD.n14 0.2855
+R28 VD.n22 VD.n13 0.2855
+R29 VD.n22 VD.n21 0.2855
+R30 VD.n24 VD.n23 0.2855
+R31 VD.n31 VD.t19 0.281875
+R32 VD.n24 VD.n12 0.2555
+R33 VD.n25 VD.n10 0.2555
+R34 VD.n26 VD.n8 0.2555
+R35 VD.n27 VD.n6 0.2555
+R36 VD.n28 VD.n4 0.2555
+R37 VD.n29 VD.n2 0.2555
+R38 VD.n30 VD.n0 0.2555
+R39 VD.n29 VD.n3 0.2555
+R40 VD.n16 VD.n5 0.2555
+R41 VD.n28 VD.n5 0.2555
+R42 VD.n17 VD.n7 0.2555
+R43 VD.n27 VD.n7 0.2555
+R44 VD.n18 VD.n9 0.2555
+R45 VD.n26 VD.n9 0.2555
+R46 VD.n19 VD.n11 0.2555
+R47 VD.n25 VD.n11 0.2555
+R48 VD.n20 VD.n13 0.2555
+R49 VD.n24 VD.n13 0.2555
+R50 VD.n30 VD.n1 0.2555
+R51 VD.n15 VD.n3 0.2555
+R52 VD.n31 VD.n30 0.159125
+R53 VD.n0 VD.t17 0.1255
+R54 VD.n2 VD.t24 0.1255
+R55 VD.n4 VD.t31 0.1255
+R56 VD.n6 VD.t12 0.1255
+R57 VD.n8 VD.t20 0.1255
+R58 VD.n10 VD.t27 0.1255
+R59 VD.n12 VD.t5 0.1255
+R60 VD.n14 VD.t14 0.1255
+R61 VD.n13 VD.t16 0.1255
+R62 VD.n11 VD.t7 0.1255
+R63 VD.n9 VD.t1 0.1255
+R64 VD.n7 VD.t23 0.1255
+R65 VD.n5 VD.t11 0.1255
+R66 VD.n1 VD.t28 0.1255
+R67 VD.n3 VD.t6 0.1255
+R68 VD.n15 VD.t2 0.1255
+R69 VD.n16 VD.t9 0.1255
+R70 VD.n17 VD.t21 0.1255
+R71 VD.n18 VD.t0 0.1255
+R72 VD.n19 VD.t4 0.1255
+R73 VD.n20 VD.t15 0.1255
+R74 VD.n21 VD.t22 0.1255
+R75 VD.n22 VD.t25 0.1255
+R76 VD.n23 VD.t29 0.1255
+R77 VD.n24 VD.t18 0.1255
+R78 VD.n25 VD.t10 0.1255
+R79 VD.n26 VD.t3 0.1255
+R80 VD.n27 VD.t26 0.1255
+R81 VD.n28 VD.t13 0.1255
+R82 VD.n29 VD.t8 0.1255
+R83 VD.n30 VD.t30 0.1255
+R84 Bit_8 Bit_8.n2 3.11605
+R85 Bit_8.n0 Bit_8.t3 3.03457
+R86 Bit_8.n2 Bit_8.t0 2.30961
+R87 Bit_8.n1 Bit_8.n0 1.18611
+R88 Bit_8.n1 Bit_8.t1 0.925182
+R89 Bit_8.n0 Bit_8.t2 0.925182
+R90 Bit_8.n2 Bit_8.n1 0.72526
+R91 Bit_5.n7 Bit_5.n6 11.9345
+R92 Bit_5 Bit_5.n9 2.4512
+R93 Bit_5.n2 Bit_5.t8 2.37975
+R94 Bit_5.n2 Bit_5.t10 2.37975
+R95 Bit_5.n3 Bit_5.t15 2.37975
+R96 Bit_5.n3 Bit_5.t1 2.37975
+R97 Bit_5.n4 Bit_5.t2 2.37975
+R98 Bit_5.n4 Bit_5.t5 2.37975
+R99 Bit_5.n5 Bit_5.t0 2.37975
+R100 Bit_5.n5 Bit_5.t3 2.37975
+R101 Bit_5.n0 Bit_5.t12 2.37975
+R102 Bit_5.n0 Bit_5.t7 2.37975
+R103 Bit_5.n1 Bit_5.t11 2.37975
+R104 Bit_5.n1 Bit_5.t6 2.37975
+R105 Bit_5.n8 Bit_5.t9 2.37975
+R106 Bit_5.n8 Bit_5.t4 2.37975
+R107 Bit_5.n9 Bit_5.t14 2.37975
+R108 Bit_5.n9 Bit_5.t13 2.37975
+R109 Bit_5.n3 Bit_5.n2 1.3145
+R110 Bit_5.n5 Bit_5.n4 1.3145
+R111 Bit_5.n1 Bit_5.n0 1.3145
+R112 Bit_5.n9 Bit_5.n8 1.3145
+R113 Bit_5.n6 Bit_5.n5 0.64025
+R114 Bit_5.n7 Bit_5.n1 0.64025
+R115 Bit_5.n6 Bit_5.n3 0.62225
+R116 Bit_5.n8 Bit_5.n7 0.62225
+R117 Bit_1 Bit_1.t0 3.30159
+R118 Bit_10.n7 Bit_10.n6 11.9345
+R119 Bit_10 Bit_10.n9 2.4512
+R120 Bit_10.n2 Bit_10.t3 2.37975
+R121 Bit_10.n2 Bit_10.t0 2.37975
+R122 Bit_10.n3 Bit_10.t12 2.37975
+R123 Bit_10.n3 Bit_10.t9 2.37975
+R124 Bit_10.n4 Bit_10.t15 2.37975
+R125 Bit_10.n4 Bit_10.t11 2.37975
+R126 Bit_10.n5 Bit_10.t13 2.37975
+R127 Bit_10.n5 Bit_10.t10 2.37975
+R128 Bit_10.n0 Bit_10.t7 2.37975
+R129 Bit_10.n0 Bit_10.t4 2.37975
+R130 Bit_10.n1 Bit_10.t6 2.37975
+R131 Bit_10.n1 Bit_10.t2 2.37975
+R132 Bit_10.n8 Bit_10.t5 2.37975
+R133 Bit_10.n8 Bit_10.t1 2.37975
+R134 Bit_10.n9 Bit_10.t14 2.37975
+R135 Bit_10.n9 Bit_10.t8 2.37975
+R136 Bit_10.n3 Bit_10.n2 1.3145
+R137 Bit_10.n5 Bit_10.n4 1.3145
+R138 Bit_10.n1 Bit_10.n0 1.3145
+R139 Bit_10.n9 Bit_10.n8 1.3145
+R140 Bit_10.n6 Bit_10.n5 0.64025
+R141 Bit_10.n7 Bit_10.n1 0.64025
+R142 Bit_10.n6 Bit_10.n3 0.62225
+R143 Bit_10.n8 Bit_10.n7 0.62225
+R144 Bit_3 Bit_3.n2 3.11605
+R145 Bit_3.n0 Bit_3.t2 3.03457
+R146 Bit_3.n2 Bit_3.t3 2.30961
+R147 Bit_3.n1 Bit_3.n0 1.18611
+R148 Bit_3.n1 Bit_3.t0 0.925182
+R149 Bit_3.n0 Bit_3.t1 0.925182
+R150 Bit_3.n2 Bit_3.n1 0.72526
+R151 Bit_4.n7 Bit_4.n6 5.8865
+R152 Bit_4.n3 Bit_4.n2 5.8865
+R153 Bit_4.n3 Bit_4.t3 3.0195
+R154 Bit_4.n2 Bit_4.t7 3.0195
+R155 Bit_4.n6 Bit_4.t4 3.0015
+R156 Bit_4 Bit_4.n8 2.48733
+R157 Bit_4.n8 Bit_4.t1 2.30857
+R158 Bit_4.n0 Bit_4.t5 2.30857
+R159 Bit_4.n1 Bit_4.t6 2.30857
+R160 Bit_4.n4 Bit_4.t2 2.30857
+R161 Bit_4.n5 Bit_4.t0 2.30857
+R162 Bit_4.n5 Bit_4.n4 1.38676
+R163 Bit_4.n1 Bit_4.n0 1.38676
+R164 Bit_4.n6 Bit_4.n5 0.676381
+R165 Bit_4.n7 Bit_4.n0 0.676381
+R166 Bit_4.n4 Bit_4.n3 0.658381
+R167 Bit_4.n2 Bit_4.n1 0.658381
+R168 Bit_4.n8 Bit_4.n7 0.658381
+R169 Bit_9.n7 Bit_9.n6 5.8865
+R170 Bit_9.n3 Bit_9.n2 5.8865
+R171 Bit_9.n3 Bit_9.t3 3.0195
+R172 Bit_9.n2 Bit_9.t7 3.0195
+R173 Bit_9.n6 Bit_9.t4 3.0015
+R174 Bit_9 Bit_9.n8 2.48733
+R175 Bit_9.n8 Bit_9.t0 2.30857
+R176 Bit_9.n0 Bit_9.t5 2.30857
+R177 Bit_9.n1 Bit_9.t6 2.30857
+R178 Bit_9.n4 Bit_9.t2 2.30857
+R179 Bit_9.n5 Bit_9.t1 2.30857
+R180 Bit_9.n5 Bit_9.n4 1.38676
+R181 Bit_9.n1 Bit_9.n0 1.38676
+R182 Bit_9.n6 Bit_9.n5 0.676381
+R183 Bit_9.n7 Bit_9.n0 0.676381
+R184 Bit_9.n4 Bit_9.n3 0.658381
+R185 Bit_9.n2 Bit_9.n1 0.658381
+R186 Bit_9.n8 Bit_9.n7 0.658381
+R187 Bit_2 Bit_2.n0 3.99933
+R188 Bit_2.n0 Bit_2.t1 3.72988
+R189 Bit_2.n0 Bit_2.t0 2.30857
+R190 Bit_6 Bit_6.t0 3.30159
+R191 Bit_7 Bit_7.n0 3.99933
+R192 Bit_7.n0 Bit_7.t1 3.72988
+R193 Bit_7.n0 Bit_7.t0 2.30857
+C0 Bit_1 Bit_2 0.574556f
+C1 Bit_5 Bit_3 0.221809f
+C2 Bit_3 m4_15000_4920# 3.97885f
+C3 Bit_1 Bit_5 0.171359f
+C4 Bit_10 Bit_7 0.764877f
+C5 Bit_1 m4_15000_4920# 0.993991f
+C6 VSSA VD 7.07821f
+C7 Bit_10 Bit_8 0.221809f
+C8 Bit_8 Bit_9 3.52013f
+C9 Bit_2 VD 0.008943f
+C10 m4_15000_4920# VD 0.686421f
+C11 Bit_7 VD 1.68618f
+C12 VSSA Bit_6 1.13727f
+C13 Bit_10 Bit_9 1.89351f
+C14 Bit_8 VD 3.9683f
+C15 Bit_4 VSSA 1.31995f
+C16 Bit_7 Bit_6 0.574556f
+C17 Bit_10 VD 11.631599f
+C18 Bit_4 Bit_5 1.89351f
+C19 Bit_9 VD 6.54168f
+C20 Bit_4 m4_15000_4920# 6.56271f
+C21 VSSA Bit_2 0.921704f
+C22 Bit_5 VSSA 3.07459f
+C23 VSSA m4_15000_4920# 5.42287f
+C24 VSSA Bit_7 0.925315f
+C25 Bit_8 VSSA 1.12841f
+C26 Bit_10 Bit_6 0.171359f
+C27 Bit_5 Bit_2 0.764877f
+C28 Bit_2 m4_15000_4920# 1.82951f
+C29 Bit_4 Bit_3 3.52013f
+C30 Bit_5 m4_15000_4920# 11.6609f
+C31 Bit_7 m4_15000_4920# 0.171359f
+C32 Bit_3 VSSA 1.12851f
+C33 Bit_10 VSSA 3.07459f
+C34 Bit_1 VSSA 1.15492f
+C35 VSSA Bit_9 1.32357f
+C36 Bit_6 VD 1.12101f
+C37 VD a_n362_n362# 12.663661f
+C38 Bit_3 a_n362_n362# 2.751676f
+C39 Bit_2 a_n362_n362# 2.13457f
+C40 Bit_1 a_n362_n362# 1.15265f
+C41 Bit_6 a_n362_n362# 1.15265f
+C42 Bit_7 a_n362_n362# 2.13716f
+C43 Bit_8 a_n362_n362# 2.751676f
+C44 Bit_5 a_n362_n362# 11.956615f
+C45 Bit_10 a_n362_n362# 11.955437f
+C46 Bit_4 a_n362_n362# 7.080716f
+C47 Bit_9 a_n362_n362# 7.078555f
+C48 m4_15000_4920# a_n362_n362# 12.2065f
+C49 VSSA a_n362_n362# 0.124183p
+C50 Bit_9.t5 a_n362_n362# 0.855249f
+C51 Bit_9.n0 a_n362_n362# 0.257579f
+C52 Bit_9.t4 a_n362_n362# 0.887099f
+C53 Bit_9.t3 a_n362_n362# 0.888116f
+C54 Bit_9.t6 a_n362_n362# 0.855249f
+C55 Bit_9.n1 a_n362_n362# 0.25602f
+C56 Bit_9.t7 a_n362_n362# 0.888116f
+C57 Bit_9.n2 a_n362_n362# 0.3952f
+C58 Bit_9.n3 a_n362_n362# 0.3952f
+C59 Bit_9.t2 a_n362_n362# 0.855249f
+C60 Bit_9.n4 a_n362_n362# 0.25602f
+C61 Bit_9.t1 a_n362_n362# 0.855249f
+C62 Bit_9.n5 a_n362_n362# 0.257579f
+C63 Bit_9.n6 a_n362_n362# 0.394659f
+C64 Bit_9.n7 a_n362_n362# 0.282543f
+C65 Bit_9.t0 a_n362_n362# 0.855249f
+C66 Bit_9.n8 a_n362_n362# 0.349582f
+C67 Bit_4.t5 a_n362_n362# 0.863801f
+C68 Bit_4.n0 a_n362_n362# 0.260154f
+C69 Bit_4.t4 a_n362_n362# 0.89597f
+C70 Bit_4.t3 a_n362_n362# 0.896997f
+C71 Bit_4.t6 a_n362_n362# 0.863801f
+C72 Bit_4.n1 a_n362_n362# 0.25858f
+C73 Bit_4.t7 a_n362_n362# 0.896997f
+C74 Bit_4.n2 a_n362_n362# 0.399152f
+C75 Bit_4.n3 a_n362_n362# 0.399152f
+C76 Bit_4.t2 a_n362_n362# 0.863801f
+C77 Bit_4.n4 a_n362_n362# 0.25858f
+C78 Bit_4.t0 a_n362_n362# 0.863801f
+C79 Bit_4.n5 a_n362_n362# 0.260154f
+C80 Bit_4.n6 a_n362_n362# 0.398605f
+C81 Bit_4.n7 a_n362_n362# 0.285368f
+C82 Bit_4.t1 a_n362_n362# 0.863801f
+C83 Bit_4.n8 a_n362_n362# 0.353078f
+C84 Bit_3.t2 a_n362_n362# 1.41537f
+C85 Bit_3.t1 a_n362_n362# 1.40595f
+C86 Bit_3.n0 a_n362_n362# 0.506641f
+C87 Bit_3.t0 a_n362_n362# 1.40595f
+C88 Bit_3.n1 a_n362_n362# 0.324568f
+C89 Bit_3.t3 a_n362_n362# 1.35823f
+C90 Bit_3.n2 a_n362_n362# 0.655373f
+C91 Bit_10.t7 a_n362_n362# 0.697842f
+C92 Bit_10.t4 a_n362_n362# 0.697842f
+C93 Bit_10.n0 a_n362_n362# 0.216018f
+C94 Bit_10.t6 a_n362_n362# 0.697842f
+C95 Bit_10.t2 a_n362_n362# 0.697842f
+C96 Bit_10.n1 a_n362_n362# 0.260639f
+C97 Bit_10.t3 a_n362_n362# 0.697842f
+C98 Bit_10.t0 a_n362_n362# 0.697842f
+C99 Bit_10.n2 a_n362_n362# 0.216018f
+C100 Bit_10.t12 a_n362_n362# 0.697842f
+C101 Bit_10.t9 a_n362_n362# 0.697842f
+C102 Bit_10.n3 a_n362_n362# 0.259394f
+C103 Bit_10.t15 a_n362_n362# 0.697842f
+C104 Bit_10.t11 a_n362_n362# 0.697842f
+C105 Bit_10.n4 a_n362_n362# 0.216018f
+C106 Bit_10.t13 a_n362_n362# 0.697842f
+C107 Bit_10.t10 a_n362_n362# 0.697842f
+C108 Bit_10.n5 a_n362_n362# 0.260639f
+C109 Bit_10.n6 a_n362_n362# 0.643458f
+C110 Bit_10.n7 a_n362_n362# 0.643458f
+C111 Bit_10.t5 a_n362_n362# 0.697842f
+C112 Bit_10.t1 a_n362_n362# 0.697842f
+C113 Bit_10.n8 a_n362_n362# 0.259394f
+C114 Bit_10.t14 a_n362_n362# 0.697842f
+C115 Bit_10.t8 a_n362_n362# 0.697842f
+C116 Bit_10.n9 a_n362_n362# 0.386253f
+C117 Bit_5.t12 a_n362_n362# 0.702589f
+C118 Bit_5.t7 a_n362_n362# 0.702589f
+C119 Bit_5.n0 a_n362_n362# 0.217488f
+C120 Bit_5.t11 a_n362_n362# 0.702589f
+C121 Bit_5.t6 a_n362_n362# 0.702589f
+C122 Bit_5.n1 a_n362_n362# 0.262412f
+C123 Bit_5.t8 a_n362_n362# 0.702589f
+C124 Bit_5.t10 a_n362_n362# 0.702589f
+C125 Bit_5.n2 a_n362_n362# 0.217488f
+C126 Bit_5.t15 a_n362_n362# 0.702589f
+C127 Bit_5.t1 a_n362_n362# 0.702589f
+C128 Bit_5.n3 a_n362_n362# 0.261159f
+C129 Bit_5.t2 a_n362_n362# 0.702589f
+C130 Bit_5.t5 a_n362_n362# 0.702589f
+C131 Bit_5.n4 a_n362_n362# 0.217488f
+C132 Bit_5.t0 a_n362_n362# 0.702589f
+C133 Bit_5.t3 a_n362_n362# 0.702589f
+C134 Bit_5.n5 a_n362_n362# 0.262412f
+C135 Bit_5.n6 a_n362_n362# 0.647835f
+C136 Bit_5.n7 a_n362_n362# 0.647835f
+C137 Bit_5.t9 a_n362_n362# 0.702589f
+C138 Bit_5.t4 a_n362_n362# 0.702589f
+C139 Bit_5.n8 a_n362_n362# 0.261159f
+C140 Bit_5.t14 a_n362_n362# 0.702589f
+C141 Bit_5.t13 a_n362_n362# 0.702589f
+C142 Bit_5.n9 a_n362_n362# 0.388881f
+C143 Bit_8.t3 a_n362_n362# 1.41537f
+C144 Bit_8.t2 a_n362_n362# 1.40595f
+C145 Bit_8.n0 a_n362_n362# 0.506641f
+C146 Bit_8.t1 a_n362_n362# 1.40595f
+C147 Bit_8.n1 a_n362_n362# 0.324568f
+C148 Bit_8.t0 a_n362_n362# 1.35823f
+C149 Bit_8.n2 a_n362_n362# 0.655373f
+C150 VD.t19 a_n362_n362# 0.642963f
+C151 VD.t17 a_n362_n362# 0.417182f
+C152 VD.n0 a_n362_n362# 0.462571f
+C153 VD.t28 a_n362_n362# 0.417182f
+C154 VD.n1 a_n362_n362# 0.462571f
+C155 VD.t24 a_n362_n362# 0.417182f
+C156 VD.n2 a_n362_n362# 0.485266f
+C157 VD.t6 a_n362_n362# 0.417182f
+C158 VD.n3 a_n362_n362# 0.50796f
+C159 VD.t31 a_n362_n362# 0.417182f
+C160 VD.n4 a_n362_n362# 0.485266f
+C161 VD.t11 a_n362_n362# 0.417182f
+C162 VD.n5 a_n362_n362# 0.50796f
+C163 VD.t12 a_n362_n362# 0.417182f
+C164 VD.n6 a_n362_n362# 0.485266f
+C165 VD.t23 a_n362_n362# 0.417182f
+C166 VD.n7 a_n362_n362# 0.50796f
+C167 VD.t20 a_n362_n362# 0.417182f
+C168 VD.n8 a_n362_n362# 0.485266f
+C169 VD.t1 a_n362_n362# 0.417182f
+C170 VD.n9 a_n362_n362# 0.50796f
+C171 VD.t27 a_n362_n362# 0.417182f
+C172 VD.n10 a_n362_n362# 0.485266f
+C173 VD.t7 a_n362_n362# 0.417182f
+C174 VD.n11 a_n362_n362# 0.50796f
+C175 VD.t5 a_n362_n362# 0.417182f
+C176 VD.n12 a_n362_n362# 0.485266f
+C177 VD.t16 a_n362_n362# 0.417182f
+C178 VD.n13 a_n362_n362# 0.494593f
+C179 VD.t14 a_n362_n362# 0.417182f
+C180 VD.n14 a_n362_n362# 0.475938f
+C181 VD.t29 a_n362_n362# 0.417182f
+C182 VD.t2 a_n362_n362# 0.417182f
+C183 VD.n15 a_n362_n362# 0.462571f
+C184 VD.t9 a_n362_n362# 0.417182f
+C185 VD.n16 a_n362_n362# 0.485266f
+C186 VD.t21 a_n362_n362# 0.417182f
+C187 VD.n17 a_n362_n362# 0.485266f
+C188 VD.t0 a_n362_n362# 0.417182f
+C189 VD.n18 a_n362_n362# 0.485266f
+C190 VD.t4 a_n362_n362# 0.417182f
+C191 VD.n19 a_n362_n362# 0.485266f
+C192 VD.t15 a_n362_n362# 0.417182f
+C193 VD.n20 a_n362_n362# 0.485266f
+C194 VD.t22 a_n362_n362# 0.417182f
+C195 VD.n21 a_n362_n362# 0.475938f
+C196 VD.t25 a_n362_n362# 0.417182f
+C197 VD.n22 a_n362_n362# 0.485266f
+C198 VD.n23 a_n362_n362# 0.485266f
+C199 VD.t18 a_n362_n362# 0.417182f
+C200 VD.n24 a_n362_n362# 0.494593f
+C201 VD.t10 a_n362_n362# 0.417182f
+C202 VD.n25 a_n362_n362# 0.50796f
+C203 VD.t3 a_n362_n362# 0.417182f
+C204 VD.n26 a_n362_n362# 0.50796f
+C205 VD.t26 a_n362_n362# 0.417182f
+C206 VD.n27 a_n362_n362# 0.50796f
+C207 VD.t13 a_n362_n362# 0.417182f
+C208 VD.n28 a_n362_n362# 0.50796f
+C209 VD.t8 a_n362_n362# 0.417182f
+C210 VD.n29 a_n362_n362# 0.50796f
+C211 VD.t30 a_n362_n362# 0.417182f
+C212 VD.n30 a_n362_n362# 0.474823f
+C213 VD.n31 a_n362_n362# 0.339492f
+.ends
+

@@ -1,0 +1,17 @@
+** sch_path: /home/lci-ufsc/Desktop/Juan_bracolin/PICO_contest/SAR_clock/xschem/clock_generator_delay_cell.sch
+.subckt clock_generator_delay_cell VDDD VSSD OUT IN A B C
+*.PININFO VDDD:B VSSD:B IN:I OUT:B A:I B:I C:I
+M1 net1 IN VSSD VSSD nfet_03v3 L=35u W=1.56u nf=1 m=1
+M2 OUT IN net1 VSSD nfet_03v3 L=35u W=1.56u nf=1 m=1
+M3 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M4 net2 IN VSSD VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M5 aa IN net2 VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M6 OUT A aa VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M7 net3 IN VSSD VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M8 ab IN net3 VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M9 OUT B ab VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M10 net4 IN VSSD VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M11 ac IN net4 VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M12 OUT C ac VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+.ends
+.end

@@ -1,0 +1,99 @@
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic.sch
+.subckt SAR_Asynchronous_Logic VDDD VSSD Set Reset D_C CLK Q_R VCM VC clks
+*.PININFO VDDD:B VSSD:B Set:I Reset:I D_C:I CLK:I Q_R:B VCM:B VC:B clks:I
+M1 VB not_CLK VSSD VSSD nfet_03v3 L=1.1u W=1.56u nf=1 m=1
+M2 VA CLK_in VDDD VDDD pfet_03v3 L=1.1u W=3.9u nf=1 m=1
+* noconn #net1
+* noconn #net2
+x4 not_CLK VDDD Dn VA VSSD CLK_in SAR_Asynchronous_Logic_tgate
+x5 not_CLK VDDD Dn VB VSSD CLK_in SAR_Asynchronous_Logic_tgate
+M3 VC VA VDDD VDDD pfet_03v3 L=1.1u W=3.9u nf=1 m=1
+M4 VC VB VSSD VSSD nfet_03v3 L=1.1u W=1.56u nf=1 m=1
+x6 CLK_in VDDD VCM VC VSSD not_CLK SAR_Asynchronous_Logic_tgate
+x1 VDDD Dn CLK_in D_C net1 Set Reset VSSD SAR_Asynchronous_Logic_D_reset_FF
+x2 VDDD Q_R clks Dn net2 Set Reset VSSD SAR_Asynchronous_Logic_D_reset_FF
+x3 VDDD not_CLK VSSD CLK SAR_Asynchronous_Logic_inv_1x
+x7 VDDD CLK_in VSSD not_CLK SAR_Asynchronous_Logic_inv_1x
+.ends
+
+* expanding   symbol:  PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_tgate.sym #
+*+ of pins=6
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_tgate.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_tgate.sch
+.subckt SAR_Asynchronous_Logic_tgate p_CLK VDDD IN OUT VSSD n_CLK
+*.PININFO IN:B VDDD:B VSSD:B n_CLK:I p_CLK:I OUT:B
+M1 OUT n_CLK IN VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT p_CLK IN VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:
+*+  PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_D_reset_FF.sym # of pins=8
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_D_reset_FF.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_D_reset_FF.sch
+.subckt SAR_Asynchronous_Logic_D_reset_FF VDDD Q CLK D nQ Set Reset VSSD
+*.PININFO VDDD:B VSSD:B Q:B nQ:B CLK:I D:I Reset:I Set:I
+x1 VDDD CLK nCLK VSSD inv_1x
+x11 VDDD nCLK CLK_buf VSSD inv_1x
+x2 CLK_buf VDDD D net1 VSSD nCLK t_gate
+x4 VDDD Set net2 net1 VSSD nor_2_1x
+x6 nCLK VDDD net2 net4 VSSD CLK_buf t_gate
+x7 VDDD Reset Q net4 VSSD nor_2_1x
+x3 nCLK VDDD net3 net1 VSSD CLK_buf t_gate
+x9 CLK_buf VDDD net5 net4 VSSD nCLK t_gate
+x5 VDDD net2 net3 Reset VSSD nor_2_1x
+x8 VDDD Q net5 Set VSSD nor_2_1x
+x10 VDDD Q nQ VSSD inv_1x
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_inv_1x.sym
+*+ # of pins=4
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_inv_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_inv_1x.sch
+.subckt SAR_Asynchronous_Logic_inv_1x VDDD OUT VSSD IN
+*.PININFO VDDD:B VSSD:B OUT:B IN:I
+M1 OUT IN VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/inv_1x.sym # of pins=4
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/inv_1x.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/inv_1x.sch
+.subckt inv_1x VDDD IN OUT VSSD
+*.PININFO IN:I VDDD:B VSSD:B OUT:B
+M1 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M2 OUT IN VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/t_gate.sym # of pins=6
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/t_gate.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/t_gate.sch
+.subckt t_gate p_CLK VDDD IN OUT VSSD n_CLK
+*.PININFO IN:B VDDD:B VSSD:B OUT:B n_CLK:I p_CLK:I
+M1 IN n_CLK OUT VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 IN p_CLK OUT VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/nor_2_1x.sym # of pins=5
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/nor_2_1x.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/nor_2_1x.sch
+.subckt nor_2_1x VDDD A OUT B VSSD
+*.PININFO A:I B:I VDDD:B VSSD:B OUT:B
+M1 OUT B VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT A VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M3 OUT B net1 VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M4 net1 A VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+.end

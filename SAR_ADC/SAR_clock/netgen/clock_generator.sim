@@ -1,0 +1,45 @@
+| units: 0.5 tech: gf180mcuD format: MIT
+x a_n4622_n806# a_n1540_604# a_n1018_100# clock_generator_delay_cell_0.VSSD s=38064,868 d=38064,868 l=400 w=312 x=-1417 y=604 nfet_03v3
+x CK1 a_n4622_n806# clock_generator_delay_cell_0.VSSD clock_generator_delay_cell_0.VSSD s=38064,868 d=38064,868 l=56 w=312 x=-4061 y=-805 nfet_03v3
+x a_n4622_n806# clock_generator_delay_cell_0.VSSD a_4373_n908# clock_generator_delay_cell_0.VSSD s=38064,868 d=38064,868 l=7000 w=312 x=-2626 y=-907 nfet_03v3
+x a_n4622_n806# clock_generator_delay_cell_0.VSSD a_n1018_100# clock_generator_delay_cell_0.VSSD s=38064,868 d=38064,868 l=400 w=312 x=-1417 y=100 nfet_03v3
+x a_n4622_n806# a_n2749_n404# a_4373_n908# clock_generator_delay_cell_0.VSSD s=38064,868 d=38064,868 l=7000 w=312 x=-2626 y=-403 nfet_03v3
+x clks clock_generator_delay_cell_0.VDDD a_n4622_454# clock_generator_delay_cell_0.VDDD s=101400,1820 d=101400,1820 l=56 w=780 x=-4677 y=454 pfet_03v3
+x CK1 a_n4622_454# a_n4006_454# clock_generator_delay_cell_0.VDDD s=101400,1820 d=101400,1820 l=56 w=780 x=-4061 y=454 pfet_03v3
+x a_n4622_n806# a_500_604# a_1022_100# clock_generator_delay_cell_0.VSSD s=38064,868 d=38064,868 l=400 w=312 x=622 y=604 nfet_03v3
+x clock_generator_delay_cell_0.C a_500_604# a_n2749_n404# clock_generator_delay_cell_0.VSSD s=38064,868 d=38064,868 l=400 w=312 x=622 y=1230 nfet_03v3
+x a_n4622_n806# a_n520_604# a_2_100# clock_generator_delay_cell_0.VSSD s=38064,868 d=38064,868 l=400 w=312 x=-397 y=604 nfet_03v3
+x clock_generator_delay_cell_0.A a_n1540_604# a_n2749_n404# clock_generator_delay_cell_0.VSSD s=38064,868 d=38064,868 l=400 w=312 x=-1417 y=1230 nfet_03v3
+x a_n2749_n404# clock_generator_delay_cell_0.VDDD OUT clock_generator_delay_cell_0.VDDD s=101400,1820 d=101400,1820 l=56 w=780 x=1958 y=968 pfet_03v3
+x a_n4622_n806# clock_generator_delay_cell_0.VSSD a_1022_100# clock_generator_delay_cell_0.VSSD s=38064,868 d=38064,868 l=400 w=312 x=622 y=100 nfet_03v3
+x a_n4622_n806# clock_generator_delay_cell_0.VDDD a_n2749_n404# clock_generator_delay_cell_0.VDDD s=101400,1820 d=101400,1820 l=56 w=780 x=-2403 y=383 pfet_03v3
+x Valid a_n4006_454# a_n4622_n806# clock_generator_delay_cell_0.VDDD s=101400,1820 d=101400,1820 l=56 w=780 x=-3445 y=454 pfet_03v3
+x a_n4622_n806# clock_generator_delay_cell_0.VSSD a_2_100# clock_generator_delay_cell_0.VSSD s=38064,868 d=38064,868 l=400 w=312 x=-397 y=100 nfet_03v3
+x a_n2749_n404# clock_generator_delay_cell_0.VSSD OUT clock_generator_delay_cell_0.VSSD s=38064,868 d=38064,868 l=56 w=312 x=1958 y=268 nfet_03v3
+x clock_generator_delay_cell_0.B a_n520_604# a_n2749_n404# clock_generator_delay_cell_0.VSSD s=38064,868 d=38064,868 l=400 w=312 x=-397 y=1230 nfet_03v3
+x Valid a_n4622_n806# clock_generator_delay_cell_0.VSSD clock_generator_delay_cell_0.VSSD s=38064,868 d=38064,868 l=56 w=312 x=-3445 y=-805 nfet_03v3
+x clks clock_generator_delay_cell_0.VSSD a_n4622_n806# clock_generator_delay_cell_0.VSSD s=38064,868 d=38064,868 l=56 w=312 x=-4677 y=-805 nfet_03v3
+C clock_generator_delay_cell_0.VDDD a_n4622_n806# 3.4
+R OUT 60
+R Valid 216
+R CK1 215
+R clks 215
+R a_4373_n908# 50
+R a_1022_100# 50
+R a_2_100# 50
+R a_n1018_100# 50
+R a_500_604# 50
+R a_n520_604# 50
+C a_n4622_n806#0 31.2
+R a_n4622_n806# 279
+R a_n4006_454# 100
+R a_n4622_454# 100
+R a_n1540_604# 50
+R clock_generator_delay_cell_0.C 12
+R clock_generator_delay_cell_0.B 12
+R clock_generator_delay_cell_0.A 12
+C a_n2749_n404#0 3.7
+R a_n2749_n404# 379
+C clock_generator_delay_cell_0.VDDD0 18.9
+R clock_generator_delay_cell_0.VDDD 6678
+R clock_generator_delay_cell_0.VSSD 1079

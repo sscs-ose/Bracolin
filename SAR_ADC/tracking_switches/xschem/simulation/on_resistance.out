@@ -1,0 +1,38 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: ** sch_path:
+
+Doing analysis at TEMP = 50.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 331
+Reset re-loads circuit ** sch_path:
+
+Circuit: ** sch_path:
+
+Doing analysis at TEMP = 50.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+binary raw file "on_resistance_tb.raw"
+binary raw file "/home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/simulation/on_resistance.raw"
+Doing analysis at TEMP = 50.000000 and TNOM = 27.000000
+
+OP information in rawfile.
+
+Total analysis time (seconds) = 0
+
+Total elapsed time (seconds) = 0.052 
+
+Total DRAM available = 7932.965 MB.
+DRAM currently available = 5155.316 MB.
+Maximum ngspice program size =   37.156 MB.
+Current ngspice program size =   19.250 MB.
+
+Shared ngspice pages =   10.250 MB.
+Text (code) pages =    5.383 MB.
+Stack = 0 bytes.
+Library pages =   17.188 MB.
+

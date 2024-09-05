@@ -1,0 +1,65 @@
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches.sch
+.subckt tracking_switches VDDA VSSA clks Vinp VDP Vinn VDN Vcom
+*.PININFO VDDA:B VSSA:B clks:I Vinp:I VDP:B Vinn:I VDN:B Vcom:I
+M2 net2 n_clks VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M4 net1 clks_in net2 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M3 net1 net3 net2 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M5 net1 clks_in VDDA VDDA pfet_03v3 L=0.28u W=4u nf=1 m=1
+M6 VDDA net3 net4 net4 pfet_03v3 L=0.28u W=4u nf=1 m=1
+M7 net3 net1 net4 net4 pfet_03v3 L=0.28u W=4u nf=1 m=1
+M1 Vinp net3 net2 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M9 net5 n_clks VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M8 net3 VDDA net5 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+x1 VDDA VSSA n_clks clks tracking_switches_inv_1x
+x2 VDDA VSSA clks_in n_clks tracking_switches_inv_1x
+MS2[1] VDP net3 Vinp VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS2[2] VDP net3 Vinp VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS2[3] VDP net3 Vinp VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS2[4] VDP net3 Vinp VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS2[5] VDP net3 Vinp VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+C12[1] net4 net2 cap_mim_2f0_m4m5_noshield W=10e-6 L=10e-6 m=1
+C12[2] net4 net2 cap_mim_2f0_m4m5_noshield W=10e-6 L=10e-6 m=1
+C12[3] net4 net2 cap_mim_2f0_m4m5_noshield W=10e-6 L=10e-6 m=1
+MS1[1] VDP VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS1[2] VDP VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS1[3] VDP VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS1[4] VDP VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS1[5] VDP VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+M10 net7 n_clks VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M11 net6 clks_in net7 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M12 net6 net8 net7 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M13 net6 clks_in VDDA VDDA pfet_03v3 L=0.28u W=4u nf=1 m=1
+M14 VDDA net8 net9 net9 pfet_03v3 L=0.28u W=4u nf=1 m=1
+M15 net8 net6 net9 net9 pfet_03v3 L=0.28u W=4u nf=1 m=1
+M16 Vinn net8 net7 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M17 net10 n_clks VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M18 net8 VDDA net10 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+MS19[1] VDN net8 Vinn VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS19[2] VDN net8 Vinn VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS19[3] VDN net8 Vinn VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS19[4] VDN net8 Vinn VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS19[5] VDN net8 Vinn VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+C1[1] net9 net7 cap_mim_2f0_m4m5_noshield W=10e-6 L=10e-6 m=1
+C1[2] net9 net7 cap_mim_2f0_m4m5_noshield W=10e-6 L=10e-6 m=1
+C1[3] net9 net7 cap_mim_2f0_m4m5_noshield W=10e-6 L=10e-6 m=1
+MS20[1] VDN VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS20[2] VDN VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS20[3] VDN VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS20[4] VDN VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS20[5] VDN VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+.ends
+
+* expanding   symbol:  PICO_contest/tracking_switches/xschem/tracking_switches_inv_1x.sym # of
+*+ pins=4
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches_inv_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches_inv_1x.sch
+.subckt tracking_switches_inv_1x VDDA VSSA OUT IN
+*.PININFO VDDA:B VSSA:B OUT:B IN:I
+M1 OUT IN VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT IN VDDA VDDA pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+.end

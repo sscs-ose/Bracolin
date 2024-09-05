@@ -1,0 +1,52 @@
+** sch_path: /home/lci-ufsc/Desktop/Juan_bracolin/PICO_contest/SAR_clock/xschem/clock_generator.sch
+.subckt clock_generator OUT VDDD VSSD clks CK1 Valid A B C
+*.PININFO VDDD:B VSSD:B OUT:B clks:I CK1:I Valid:I A:I B:I C:I
+x3 VDDD aa VSSD clks CK1 Valid clock_generator_nor_3_1x
+x1 VDDD VSSD ab aa A B C clock_generator_delay_cell
+x2 VDDD OUT VSSD ab clock_generator_inv_1x
+.ends
+
+* expanding   symbol:  SAR_clock/xschem/clock_generator_nor_3_1x.sym # of pins=6
+** sym_path: /home/lci-ufsc/Desktop/Juan_bracolin/PICO_contest/SAR_clock/xschem/clock_generator_nor_3_1x.sym
+** sch_path: /home/lci-ufsc/Desktop/Juan_bracolin/PICO_contest/SAR_clock/xschem/clock_generator_nor_3_1x.sch
+.subckt clock_generator_nor_3_1x VDDD OUT VSSD A B C
+*.PININFO VDDD:B VSSD:B OUT:B A:I B:I C:I
+M1 OUT B VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT A VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M3 OUT C VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M4 OUT C net1 VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M5 net1 B net2 VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M6 net2 A VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  SAR_clock/xschem/clock_generator_delay_cell.sym # of pins=7
+** sym_path: /home/lci-ufsc/Desktop/Juan_bracolin/PICO_contest/SAR_clock/xschem/clock_generator_delay_cell.sym
+** sch_path: /home/lci-ufsc/Desktop/Juan_bracolin/PICO_contest/SAR_clock/xschem/clock_generator_delay_cell.sch
+.subckt clock_generator_delay_cell VDDD VSSD OUT IN A B C
+*.PININFO VDDD:B VSSD:B IN:I OUT:B A:I B:I C:I
+M1 net1 IN VSSD VSSD nfet_03v3 L=35u W=1.56u nf=1 m=1
+M2 OUT IN net1 VSSD nfet_03v3 L=35u W=1.56u nf=1 m=1
+M3 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M4 net2 IN VSSD VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M5 aa IN net2 VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M6 OUT A aa VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M7 net3 IN VSSD VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M8 ab IN net3 VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M9 OUT B ab VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M10 net4 IN VSSD VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M11 ac IN net4 VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M12 OUT C ac VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  SAR_clock/xschem/clock_generator_inv_1x.sym # of pins=4
+** sym_path: /home/lci-ufsc/Desktop/Juan_bracolin/PICO_contest/SAR_clock/xschem/clock_generator_inv_1x.sym
+** sch_path: /home/lci-ufsc/Desktop/Juan_bracolin/PICO_contest/SAR_clock/xschem/clock_generator_inv_1x.sch
+.subckt clock_generator_inv_1x VDDD OUT VSSD IN
+*.PININFO VDDD:B VSSD:B OUT:B IN:I
+M1 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M2 OUT IN VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+.ends
+
+.end

@@ -1,0 +1,164 @@
+* NGSPICE file created from clock_generator.ext - technology: gf180mcuD
+
+.subckt clock_generator Valid CK1 clks OUT
+X0 a_n1018_100# a_n4622_n806.t4 a_n1540_604# clock_generator_delay_cell_0.VSSD nfet_03v3 ad=0.9516p pd=4.34u as=0.9516p ps=4.34u w=1.56u l=2u
+X1 clock_generator_delay_cell_0.VSSD CK1.t0 a_n4622_n806.t0 clock_generator_delay_cell_0.VSSD nfet_03v3 ad=0.9516p pd=4.34u as=0.9516p ps=4.34u w=1.56u l=0.28u
+X2 a_4373_n908# a_n4622_n806.t5 clock_generator_delay_cell_0.VSSD clock_generator_delay_cell_0.VSSD nfet_03v3 ad=0.9516p pd=4.34u as=0.9516p ps=4.34u w=1.56u l=35u
+X3 a_n1018_100# a_n4622_n806.t6 clock_generator_delay_cell_0.VSSD clock_generator_delay_cell_0.VSSD nfet_03v3 ad=0.9516p pd=4.34u as=0.9516p ps=4.34u w=1.56u l=2u
+X4 a_4373_n908# a_n4622_n806.t5 a_n2749_n404# clock_generator_delay_cell_0.VSSD nfet_03v3 ad=0.9516p pd=4.34u as=0.9516p ps=4.34u w=1.56u l=35u
+X5 a_n4622_454# clks.t0 clock_generator_delay_cell_0.VDDD.t2 clock_generator_delay_cell_0.VDDD.t1 pfet_03v3 ad=2.535p pd=9.1u as=2.535p ps=9.1u w=3.9u l=0.28u
+X6 a_n4006_454# CK1.t1 a_n4622_454# clock_generator_delay_cell_0.VDDD.t5 pfet_03v3 ad=2.535p pd=9.1u as=2.535p ps=9.1u w=3.9u l=0.28u
+X7 a_1022_100# a_n4622_n806.t7 a_500_604# clock_generator_delay_cell_0.VSSD nfet_03v3 ad=0.9516p pd=4.34u as=0.9516p ps=4.34u w=1.56u l=2u
+X8 a_n2749_n404# clock_generator_delay_cell_0.C a_500_604# clock_generator_delay_cell_0.VSSD nfet_03v3 ad=0.9516p pd=4.34u as=0.9516p ps=4.34u w=1.56u l=2u
+X9 a_2_100# a_n4622_n806.t8 a_n520_604# clock_generator_delay_cell_0.VSSD nfet_03v3 ad=0.9516p pd=4.34u as=0.9516p ps=4.34u w=1.56u l=2u
+X10 a_n2749_n404# clock_generator_delay_cell_0.A a_n1540_604# clock_generator_delay_cell_0.VSSD nfet_03v3 ad=0.9516p pd=4.34u as=0.9516p ps=4.34u w=1.56u l=2u
+X11 OUT.t0 a_n2749_n404# clock_generator_delay_cell_0.VDDD.t7 clock_generator_delay_cell_0.VDDD.t6 pfet_03v3 ad=2.535p pd=9.1u as=2.535p ps=9.1u w=3.9u l=0.28u
+X12 a_1022_100# a_n4622_n806.t9 clock_generator_delay_cell_0.VSSD clock_generator_delay_cell_0.VSSD nfet_03v3 ad=0.9516p pd=4.34u as=0.9516p ps=4.34u w=1.56u l=2u
+X13 a_n2749_n404# a_n4622_n806.t10 clock_generator_delay_cell_0.VDDD.t4 clock_generator_delay_cell_0.VDDD.t3 pfet_03v3 ad=2.535p pd=9.1u as=2.535p ps=9.1u w=3.9u l=0.28u
+X14 a_n4622_n806.t2 Valid.t0 a_n4006_454# clock_generator_delay_cell_0.VDDD.t0 pfet_03v3 ad=2.535p pd=9.1u as=2.535p ps=9.1u w=3.9u l=0.28u
+X15 a_2_100# a_n4622_n806.t11 clock_generator_delay_cell_0.VSSD clock_generator_delay_cell_0.VSSD nfet_03v3 ad=0.9516p pd=4.34u as=0.9516p ps=4.34u w=1.56u l=2u
+X16 OUT.t1 a_n2749_n404# clock_generator_delay_cell_0.VSSD clock_generator_delay_cell_0.VSSD nfet_03v3 ad=0.9516p pd=4.34u as=0.9516p ps=4.34u w=1.56u l=0.28u
+X17 a_n2749_n404# clock_generator_delay_cell_0.B a_n520_604# clock_generator_delay_cell_0.VSSD nfet_03v3 ad=0.9516p pd=4.34u as=0.9516p ps=4.34u w=1.56u l=2u
+X18 clock_generator_delay_cell_0.VSSD Valid.t1 a_n4622_n806.t3 clock_generator_delay_cell_0.VSSD nfet_03v3 ad=0.9516p pd=4.34u as=0.9516p ps=4.34u w=1.56u l=0.28u
+X19 a_n4622_n806.t1 clks.t1 clock_generator_delay_cell_0.VSSD clock_generator_delay_cell_0.VSSD nfet_03v3 ad=0.9516p pd=4.34u as=0.9516p ps=4.34u w=1.56u l=0.28u
+R0 a_n4622_n806.n1 a_n4622_n806.t10 69.7041
+R1 a_n4622_n806.n5 a_n4622_n806.t6 18.9492
+R2 a_n4622_n806.n5 a_n4622_n806.n0 16.1022
+R3 a_n4622_n806.n11 a_n4622_n806.t3 8.91317
+R4 a_n4622_n806.n2 a_n4622_n806.t9 5.78159
+R5 a_n4622_n806.n6 a_n4622_n806.t11 5.78159
+R6 a_n4622_n806.t6 a_n4622_n806.n4 5.78159
+R7 a_n4622_n806.n11 a_n4622_n806.n10 5.51078
+R8 a_n4622_n806.n8 a_n4622_n806.n2 4.8812
+R9 a_n4622_n806.n7 a_n4622_n806.n6 4.88014
+R10 a_n4622_n806.n4 a_n4622_n806.n3 4.88014
+R11 a_n4622_n806.n10 a_n4622_n806.t0 3.7821
+R12 a_n4622_n806.n10 a_n4622_n806.t1 3.77824
+R13 a_n4622_n806.n9 a_n4622_n806.t5 3.31103
+R14 a_n4622_n806.t9 a_n4622_n806.n0 2.8475
+R15 a_n4622_n806.t11 a_n4622_n806.n5 2.8475
+R16 a_n4622_n806.t2 a_n4622_n806.n12 2.68865
+R17 a_n4622_n806.n12 a_n4622_n806.n11 2.6871
+R18 a_n4622_n806.n2 a_n4622_n806.t7 2.31974
+R19 a_n4622_n806.n6 a_n4622_n806.t8 2.31974
+R20 a_n4622_n806.n4 a_n4622_n806.t4 2.31974
+R21 a_n4622_n806.n9 a_n4622_n806.n1 2.25442
+R22 a_n4622_n806.n0 a_n4622_n806.n8 2.06305
+R23 a_n4622_n806.t5 a_n4622_n806.n0 1.40999
+R24 a_n4622_n806.n3 a_n4622_n806.n1 1.24808
+R25 a_n4622_n806.n7 a_n4622_n806.n3 1.1764
+R26 a_n4622_n806.n8 a_n4622_n806.n7 1.17534
+R27 a_n4622_n806.n12 a_n4622_n806.n9 0.643141
+R28 CK1.n0 CK1.t1 75.0252
+R29 CK1.n0 CK1.t0 44.0697
+R30 CK1 CK1.n0 3.43574
+R31 clks.n0 clks.t0 74.8588
+R32 clks.n0 clks.t1 44.2362
+R33 clks clks.n0 2.70808
+R34 clock_generator_delay_cell_0.VDDD.n2 clock_generator_delay_cell_0.VDDD.t0 612.785
+R35 clock_generator_delay_cell_0.VDDD.t0 clock_generator_delay_cell_0.VDDD.t5 413.423
+R36 clock_generator_delay_cell_0.VDDD.t5 clock_generator_delay_cell_0.VDDD.t1 413.423
+R37 clock_generator_delay_cell_0.VDDD.n1 clock_generator_delay_cell_0.VDDD.t6 246.119
+R38 clock_generator_delay_cell_0.VDDD.n2 clock_generator_delay_cell_0.VDDD.t3 244.319
+R39 clock_generator_delay_cell_0.VDDD.n1 clock_generator_delay_cell_0.VDDD.n0 4.24347
+R40 clock_generator_delay_cell_0.VDDD.t2 clock_generator_delay_cell_0.VDDD.n0 2.06337
+R41 clock_generator_delay_cell_0.VDDD.n3 clock_generator_delay_cell_0.VDDD.n2 1.8005
+R42 clock_generator_delay_cell_0.VDDD.n1 clock_generator_delay_cell_0.VDDD.t7 1.4972
+R43 clock_generator_delay_cell_0.VDDD.n3 clock_generator_delay_cell_0.VDDD.t4 1.4972
+R44 clock_generator_delay_cell_0.VDDD.n3 clock_generator_delay_cell_0.VDDD.n0 0.302725
+R45 OUT.n0 OUT.t1 6.95518
+R46 OUT.n0 OUT.t0 1.54069
+R47 OUT OUT.n0 0.085124
+R48 Valid.n0 Valid.t0 79.8987
+R49 Valid.n0 Valid.t1 39.2862
+R50 Valid Valid.n0 0.014
+C0 clock_generator_delay_cell_0.A a_n2749_n404# 0.120724f
+C1 a_n2749_n404# clock_generator_delay_cell_0.C 0.141616f
+C2 a_n520_604# a_2_100# 0.027737f
+C3 a_500_604# a_1022_100# 0.027737f
+C4 a_500_604# clock_generator_delay_cell_0.B 3.39e-19
+C5 a_n2749_n404# a_n1018_100# 0.021698f
+C6 OUT a_1022_100# 0.0013f
+C7 Valid a_n2749_n404# 6.31e-19
+C8 a_n2749_n404# CK1 1.14e-19
+C9 clks a_n4622_454# 0.031756f
+C10 a_n4006_454# a_n4622_454# 0.225245f
+C11 Valid clks 0.06902f
+C12 a_n2749_n404# a_1022_100# 0.039811f
+C13 Valid a_n4006_454# 0.04701f
+C14 a_n2749_n404# clock_generator_delay_cell_0.B 0.137371f
+C15 a_n520_604# a_n2749_n404# 0.065862f
+C16 clks CK1 0.480632f
+C17 a_n4006_454# CK1 0.03149f
+C18 clock_generator_delay_cell_0.A clock_generator_delay_cell_0.B 0.03267f
+C19 clock_generator_delay_cell_0.A a_n520_604# 3.39e-19
+C20 clock_generator_delay_cell_0.B clock_generator_delay_cell_0.C 0.032739f
+C21 a_500_604# OUT 1.32e-19
+C22 Valid a_n4622_454# 0.018446f
+C23 a_n4622_454# CK1 0.03149f
+C24 Valid CK1 0.132663f
+C25 a_n2749_n404# a_2_100# 0.01967f
+C26 a_500_604# a_n2749_n404# 0.067255f
+C27 a_n1540_604# a_n2749_n404# 0.063698f
+C28 clock_generator_delay_cell_0.A a_n1540_604# 0.088605f
+C29 a_500_604# clock_generator_delay_cell_0.C 0.088605f
+C30 a_n1540_604# a_n1018_100# 0.027737f
+C31 a_n2749_n404# OUT 0.263272f
+C32 a_n520_604# clock_generator_delay_cell_0.B 0.088605f
+C33 OUT clock_generator_delay_cell_0.C 0.008062f
+C34 OUT clock_generator_delay_cell_0.VSSD 0.926717f
+C35 Valid clock_generator_delay_cell_0.VSSD 0.989994f
+C36 CK1 clock_generator_delay_cell_0.VSSD 1.5198f
+C37 clks clock_generator_delay_cell_0.VSSD 0.625314f
+C38 a_4373_n908# clock_generator_delay_cell_0.VSSD 0.21509f
+C39 a_1022_100# clock_generator_delay_cell_0.VSSD 0.23543f
+C40 a_2_100# clock_generator_delay_cell_0.VSSD 0.296719f
+C41 a_n1018_100# clock_generator_delay_cell_0.VSSD 0.296681f
+C42 a_500_604# clock_generator_delay_cell_0.VSSD 0.777898f
+C43 a_n520_604# clock_generator_delay_cell_0.VSSD 0.784769f
+C44 a_n4006_454# clock_generator_delay_cell_0.VSSD 0.025868f
+C45 a_n4622_454# clock_generator_delay_cell_0.VSSD 0.008667f
+C46 a_n1540_604# clock_generator_delay_cell_0.VSSD 0.780275f
+C47 clock_generator_delay_cell_0.C clock_generator_delay_cell_0.VSSD 0.9369f
+C48 clock_generator_delay_cell_0.B clock_generator_delay_cell_0.VSSD 0.935632f
+C49 clock_generator_delay_cell_0.A clock_generator_delay_cell_0.VSSD 0.983479f
+C50 a_n2749_n404# clock_generator_delay_cell_0.VSSD 3.668f
+C51 clock_generator_delay_cell_0.VDDD.n0 clock_generator_delay_cell_0.VSSD 0.785524f
+C52 clock_generator_delay_cell_0.VDDD.t2 clock_generator_delay_cell_0.VSSD 0.084976f
+C53 clock_generator_delay_cell_0.VDDD.t6 clock_generator_delay_cell_0.VSSD 0.192006f
+C54 clock_generator_delay_cell_0.VDDD.n1 clock_generator_delay_cell_0.VSSD 0.302601f
+C55 clock_generator_delay_cell_0.VDDD.t7 clock_generator_delay_cell_0.VSSD 0.028463f
+C56 clock_generator_delay_cell_0.VDDD.t1 clock_generator_delay_cell_0.VSSD 0.492468f
+C57 clock_generator_delay_cell_0.VDDD.t5 clock_generator_delay_cell_0.VSSD 0.390929f
+C58 clock_generator_delay_cell_0.VDDD.t0 clock_generator_delay_cell_0.VSSD 0.451233f
+C59 clock_generator_delay_cell_0.VDDD.t3 clock_generator_delay_cell_0.VSSD 0.191154f
+C60 clock_generator_delay_cell_0.VDDD.n2 clock_generator_delay_cell_0.VSSD 0.217502f
+C61 clock_generator_delay_cell_0.VDDD.n3 clock_generator_delay_cell_0.VSSD 0.234679f
+C62 clock_generator_delay_cell_0.VDDD.t4 clock_generator_delay_cell_0.VSSD 0.028463f
+C63 a_n4622_n806.t5 clock_generator_delay_cell_0.VSSD 1.74146f
+C64 a_n4622_n806.n0 clock_generator_delay_cell_0.VSSD 0.08606f
+C65 a_n4622_n806.t10 clock_generator_delay_cell_0.VSSD 0.011091f
+C66 a_n4622_n806.n1 clock_generator_delay_cell_0.VSSD 0.044534f
+C67 a_n4622_n806.t7 clock_generator_delay_cell_0.VSSD 0.038867f
+C68 a_n4622_n806.t9 clock_generator_delay_cell_0.VSSD 0.028554f
+C69 a_n4622_n806.n2 clock_generator_delay_cell_0.VSSD 0.072381f
+C70 a_n4622_n806.n3 clock_generator_delay_cell_0.VSSD 0.074339f
+C71 a_n4622_n806.t8 clock_generator_delay_cell_0.VSSD 0.038867f
+C72 a_n4622_n806.t4 clock_generator_delay_cell_0.VSSD 0.038867f
+C73 a_n4622_n806.n4 clock_generator_delay_cell_0.VSSD 0.072385f
+C74 a_n4622_n806.t6 clock_generator_delay_cell_0.VSSD 0.239399f
+C75 a_n4622_n806.n5 clock_generator_delay_cell_0.VSSD 0.176238f
+C76 a_n4622_n806.t11 clock_generator_delay_cell_0.VSSD 0.028554f
+C77 a_n4622_n806.n6 clock_generator_delay_cell_0.VSSD 0.072385f
+C78 a_n4622_n806.n7 clock_generator_delay_cell_0.VSSD 0.073663f
+C79 a_n4622_n806.n8 clock_generator_delay_cell_0.VSSD 0.119581f
+C80 a_n4622_n806.n9 clock_generator_delay_cell_0.VSSD 0.146979f
+C81 a_n4622_n806.t3 clock_generator_delay_cell_0.VSSD 0.021995f
+C82 a_n4622_n806.t0 clock_generator_delay_cell_0.VSSD 0.00761f
+C83 a_n4622_n806.t1 clock_generator_delay_cell_0.VSSD 0.007589f
+C84 a_n4622_n806.n10 clock_generator_delay_cell_0.VSSD 0.049147f
+C85 a_n4622_n806.n11 clock_generator_delay_cell_0.VSSD 0.074583f
+C86 a_n4622_n806.n12 clock_generator_delay_cell_0.VSSD 0.084832f
+C87 a_n4622_n806.t2 clock_generator_delay_cell_0.VSSD 0.050041f
+.ends
+

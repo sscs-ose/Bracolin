@@ -1,0 +1,441 @@
+scale 1000 1 0.5
+rnode "Bit_7.t1" 0 0 13440 3860 0
+rnode "Bit_7.t0" 0 0 13440 5540 0
+rnode "Bit_7.n0" 0 0 13274 5530 0
+rnode "Bit_7" 0 0 13079 10043 0
+resist "Bit_7.n0" "Bit_7.t0" 2.30807
+resist "Bit_7.n0" "Bit_7.t1" 3.72938
+resist "Bit_7" "Bit_7.n0" 3.99883
+rnode "Bit_6.t0" 0 0 13940 6720 0
+rnode "Bit_6" 0 0 13917 10043 0
+resist "Bit_6" "Bit_6.t0" 3.30109
+rnode "Bit_2.t1" 0 0 17800 3860 0
+rnode "Bit_2.t0" 0 0 17800 5540 0
+rnode "Bit_2.n0" 0 0 17966 5530 0
+rnode "Bit_2" 0 0 18114 10043 0
+resist "Bit_2.n0" "Bit_2.t0" 2.30807
+resist "Bit_2.n0" "Bit_2.t1" 3.72938
+resist "Bit_2" "Bit_2.n0" 3.99883
+rnode "Bit_9.t5" 0 855.249 6040 5540 0
+rnode "Bit_9.n0" 0 257.579 6206 5530 0
+rnode "Bit_9.t4" 0 887.099 8400 7220 0
+rnode "Bit_9.t3" 0 888.116 8400 2180 0
+rnode "Bit_9.t6" 0 855.249 6040 3860 0
+rnode "Bit_9.n1" 0 256.02 6206 3850 0
+rnode "Bit_9.t7" 0 888.116 6040 2180 0
+rnode "Bit_9.n2" 0 395.2 6450 3020 0
+rnode "Bit_9.n3" 0 395.2 7990 3020 0
+rnode "Bit_9.t2" 0 855.249 8400 3860 0
+rnode "Bit_9.n4" 0 256.02 8234 3850 0
+rnode "Bit_9.t1" 0 855.249 8400 5540 0
+rnode "Bit_9.n5" 0 257.579 8234 5530 0
+rnode "Bit_9.n6" 0 394.659 7990 6380 0
+rnode "Bit_9.n7" 0 282.543 6450 6380 0
+rnode "Bit_9.t0" 0 855.249 6040 7220 0
+rnode "Bit_9.n8" 0 349.582 6206 7210 0
+rnode "Bit_9" 0 216.045 6361 10043 0
+resist "Bit_9.n8" "Bit_9.n7" 0.657881
+resist "Bit_9.n2" "Bit_9.n1" 0.657881
+resist "Bit_9.n4" "Bit_9.n3" 0.657881
+resist "Bit_9.n7" "Bit_9.n0" 0.675881
+resist "Bit_9.n6" "Bit_9.n5" 0.675881
+resist "Bit_9.n1" "Bit_9.n0" 1.38626
+resist "Bit_9.n5" "Bit_9.n4" 1.38626
+resist "Bit_9.n5" "Bit_9.t1" 2.30807
+resist "Bit_9.n4" "Bit_9.t2" 2.30807
+resist "Bit_9.n1" "Bit_9.t6" 2.30807
+resist "Bit_9.n0" "Bit_9.t5" 2.30807
+resist "Bit_9.n8" "Bit_9.t0" 2.30807
+resist "Bit_9" "Bit_9.n8" 2.48683
+resist "Bit_9.n6" "Bit_9.t4" 3.001
+resist "Bit_9.n2" "Bit_9.t7" 3.019
+resist "Bit_9.n3" "Bit_9.t3" 3.019
+resist "Bit_9.n3" "Bit_9.n2" 5.886
+resist "Bit_9.n7" "Bit_9.n6" 5.886
+rnode "Bit_4.t5" 0 863.801 25200 5540 0
+rnode "Bit_4.n0" 0 260.154 25034 5530 0
+rnode "Bit_4.t4" 0 895.97 22840 7220 0
+rnode "Bit_4.t3" 0 896.997 22840 2180 0
+rnode "Bit_4.t6" 0 863.801 25200 3860 0
+rnode "Bit_4.n1" 0 258.58 25034 3850 0
+rnode "Bit_4.t7" 0 896.997 25200 2180 0
+rnode "Bit_4.n2" 0 399.152 24790 3020 0
+rnode "Bit_4.n3" 0 399.152 23250 3020 0
+rnode "Bit_4.t2" 0 863.801 22840 3860 0
+rnode "Bit_4.n4" 0 258.58 23006 3850 0
+rnode "Bit_4.t0" 0 863.801 22840 5540 0
+rnode "Bit_4.n5" 0 260.154 23006 5530 0
+rnode "Bit_4.n6" 0 398.605 23250 6380 0
+rnode "Bit_4.n7" 0 285.368 24790 6380 0
+rnode "Bit_4.t1" 0 863.801 25200 7220 0
+rnode "Bit_4.n8" 0 353.078 25034 7210 0
+rnode "Bit_4" 0 218.206 24832 10043 0
+resist "Bit_4.n8" "Bit_4.n7" 0.657881
+resist "Bit_4.n2" "Bit_4.n1" 0.657881
+resist "Bit_4.n4" "Bit_4.n3" 0.657881
+resist "Bit_4.n7" "Bit_4.n0" 0.675881
+resist "Bit_4.n6" "Bit_4.n5" 0.675881
+resist "Bit_4.n1" "Bit_4.n0" 1.38626
+resist "Bit_4.n5" "Bit_4.n4" 1.38626
+resist "Bit_4.n5" "Bit_4.t0" 2.30807
+resist "Bit_4.n4" "Bit_4.t2" 2.30807
+resist "Bit_4.n1" "Bit_4.t6" 2.30807
+resist "Bit_4.n0" "Bit_4.t5" 2.30807
+resist "Bit_4.n8" "Bit_4.t1" 2.30807
+resist "Bit_4" "Bit_4.n8" 2.48683
+resist "Bit_4.n6" "Bit_4.t4" 3.001
+resist "Bit_4.n2" "Bit_4.t7" 3.019
+resist "Bit_4.n3" "Bit_4.t3" 3.019
+resist "Bit_4.n3" "Bit_4.n2" 5.886
+resist "Bit_4.n7" "Bit_4.n6" 5.886
+rnode "Bit_3.t2" 0 1415.37 24020 2680 0
+rnode "Bit_3.t1" 0 1405.95 24020 3360 0
+rnode "Bit_3.n0" 0 506.641 24020 3360 0
+rnode "Bit_3.t0" 0 1405.95 24020 5040 0
+rnode "Bit_3.n1" 0 324.568 24020 5040 0
+rnode "Bit_3.t3" 0 1358.23 24020 6720 0
+rnode "Bit_3.n2" 0 655.373 24020 6554 0
+rnode "Bit_3" 0 427.916 23994 10043 0
+resist "Bit_3.n2" "Bit_3.n1" 0.72476
+resist "Bit_3.n0" "Bit_3.t1" 0.924682
+resist "Bit_3.n1" "Bit_3.t0" 0.924682
+resist "Bit_3.n1" "Bit_3.n0" 1.18561
+resist "Bit_3.n2" "Bit_3.t3" 2.30911
+resist "Bit_3.n0" "Bit_3.t2" 3.03407
+resist "Bit_3" "Bit_3.n2" 3.11555
+rnode "Bit_10.t7" 0 697.842 3360 2180 0
+rnode "Bit_10.t4" 0 697.842 2680 2180 0
+rnode "Bit_10.n0" 0 216.018 3020 2280 0
+rnode "Bit_10.t6" 0 697.842 3360 3860 0
+rnode "Bit_10.t2" 0 697.842 2680 3860 0
+rnode "Bit_10.n1" 0 260.639 3020 3960 0
+rnode "Bit_10.t3" 0 697.842 11760 7220 0
+rnode "Bit_10.t0" 0 697.842 11080 7220 0
+rnode "Bit_10.n2" 0 216.018 11420 7100 0
+rnode "Bit_10.t12" 0 697.842 11760 5540 0
+rnode "Bit_10.t9" 0 697.842 11080 5540 0
+rnode "Bit_10.n3" 0 259.394 11420 5420 0
+rnode "Bit_10.t15" 0 697.842 11760 2180 0
+rnode "Bit_10.t11" 0 697.842 11080 2180 0
+rnode "Bit_10.n4" 0 216.018 11420 2280 0
+rnode "Bit_10.t13" 0 697.842 11760 3860 0
+rnode "Bit_10.t10" 0 697.842 11080 3860 0
+rnode "Bit_10.n5" 0 260.639 11420 3960 0
+rnode "Bit_10.n6" 0 643.458 11350 4700 0
+rnode "Bit_10.n7" 0 643.458 3090 4700 0
+rnode "Bit_10.t5" 0 697.842 3360 5540 0
+rnode "Bit_10.t1" 0 697.842 2680 5540 0
+rnode "Bit_10.n8" 0 259.394 3020 5640 0
+rnode "Bit_10.t14" 0 697.842 3360 7220 0
+rnode "Bit_10.t8" 0 697.842 2680 7220 0
+rnode "Bit_10.n9" 0 386.253 3020 7320 0
+rnode "Bit_10" 0 173.236 2999 10043 0
+resist "Bit_10.n8" "Bit_10.n7" 0.62175
+resist "Bit_10.n6" "Bit_10.n3" 0.62175
+resist "Bit_10.n7" "Bit_10.n1" 0.63975
+resist "Bit_10.n6" "Bit_10.n5" 0.63975
+resist "Bit_10.n9" "Bit_10.n8" 1.314
+resist "Bit_10.n1" "Bit_10.n0" 1.314
+resist "Bit_10.n5" "Bit_10.n4" 1.314
+resist "Bit_10.n3" "Bit_10.n2" 1.314
+resist "Bit_10.n9" "Bit_10.t8" 2.37925
+resist "Bit_10.n9" "Bit_10.t14" 2.37925
+resist "Bit_10.n8" "Bit_10.t1" 2.37925
+resist "Bit_10.n8" "Bit_10.t5" 2.37925
+resist "Bit_10.n1" "Bit_10.t2" 2.37925
+resist "Bit_10.n1" "Bit_10.t6" 2.37925
+resist "Bit_10.n0" "Bit_10.t4" 2.37925
+resist "Bit_10.n0" "Bit_10.t7" 2.37925
+resist "Bit_10.n5" "Bit_10.t10" 2.37925
+resist "Bit_10.n5" "Bit_10.t13" 2.37925
+resist "Bit_10.n4" "Bit_10.t11" 2.37925
+resist "Bit_10.n4" "Bit_10.t15" 2.37925
+resist "Bit_10.n3" "Bit_10.t9" 2.37925
+resist "Bit_10.n3" "Bit_10.t12" 2.37925
+resist "Bit_10.n2" "Bit_10.t0" 2.37925
+resist "Bit_10.n2" "Bit_10.t3" 2.37925
+resist "Bit_10" "Bit_10.n9" 2.4507
+resist "Bit_10.n7" "Bit_10.n6" 11.934
+rnode "Bit_1.t0" 0 0 17300 6720 0
+rnode "Bit_1" 0 0 17276 10043 0
+resist "Bit_1" "Bit_1.t0" 3.30109
+rnode "Bit_5.t12" 0 702.589 28560 2180 0
+rnode "Bit_5.t7" 0 702.589 27880 2180 0
+rnode "Bit_5.n0" 0 217.488 28220 2280 0
+rnode "Bit_5.t11" 0 702.589 28560 3860 0
+rnode "Bit_5.t6" 0 702.589 27880 3860 0
+rnode "Bit_5.n1" 0 262.412 28220 3960 0
+rnode "Bit_5.t8" 0 702.589 20160 7220 0
+rnode "Bit_5.t10" 0 702.589 19480 7220 0
+rnode "Bit_5.n2" 0 217.488 19820 7100 0
+rnode "Bit_5.t15" 0 702.589 20160 5540 0
+rnode "Bit_5.t1" 0 702.589 19480 5540 0
+rnode "Bit_5.n3" 0 261.159 19820 5420 0
+rnode "Bit_5.t2" 0 702.589 20160 2180 0
+rnode "Bit_5.t5" 0 702.589 19480 2180 0
+rnode "Bit_5.n4" 0 217.488 19820 2280 0
+rnode "Bit_5.t0" 0 702.589 20160 3860 0
+rnode "Bit_5.t3" 0 702.589 19480 3860 0
+rnode "Bit_5.n5" 0 262.412 19820 3960 0
+rnode "Bit_5.n6" 0 647.835 19890 4700 0
+rnode "Bit_5.n7" 0 647.835 28150 4700 0
+rnode "Bit_5.t9" 0 702.589 28560 5540 0
+rnode "Bit_5.t4" 0 702.589 27880 5540 0
+rnode "Bit_5.n8" 0 261.159 28220 5640 0
+rnode "Bit_5.t14" 0 702.589 28560 7220 0
+rnode "Bit_5.t13" 0 702.589 27880 7220 0
+rnode "Bit_5.n9" 0 388.881 28220 7320 0
+rnode "Bit_5" 0 174.415 28194 10043 0
+resist "Bit_5.n8" "Bit_5.n7" 0.62175
+resist "Bit_5.n6" "Bit_5.n3" 0.62175
+resist "Bit_5.n7" "Bit_5.n1" 0.63975
+resist "Bit_5.n6" "Bit_5.n5" 0.63975
+resist "Bit_5.n9" "Bit_5.n8" 1.314
+resist "Bit_5.n1" "Bit_5.n0" 1.314
+resist "Bit_5.n5" "Bit_5.n4" 1.314
+resist "Bit_5.n3" "Bit_5.n2" 1.314
+resist "Bit_5.n9" "Bit_5.t13" 2.37925
+resist "Bit_5.n9" "Bit_5.t14" 2.37925
+resist "Bit_5.n8" "Bit_5.t4" 2.37925
+resist "Bit_5.n8" "Bit_5.t9" 2.37925
+resist "Bit_5.n1" "Bit_5.t6" 2.37925
+resist "Bit_5.n1" "Bit_5.t11" 2.37925
+resist "Bit_5.n0" "Bit_5.t7" 2.37925
+resist "Bit_5.n0" "Bit_5.t12" 2.37925
+resist "Bit_5.n5" "Bit_5.t3" 2.37925
+resist "Bit_5.n5" "Bit_5.t0" 2.37925
+resist "Bit_5.n4" "Bit_5.t5" 2.37925
+resist "Bit_5.n4" "Bit_5.t2" 2.37925
+resist "Bit_5.n3" "Bit_5.t1" 2.37925
+resist "Bit_5.n3" "Bit_5.t15" 2.37925
+resist "Bit_5.n2" "Bit_5.t10" 2.37925
+resist "Bit_5.n2" "Bit_5.t8" 2.37925
+resist "Bit_5" "Bit_5.n9" 2.4507
+resist "Bit_5.n7" "Bit_5.n6" 11.934
+rnode "Bit_8.t3" 0 1415.37 7220 2680 0
+rnode "Bit_8.t2" 0 1405.95 7220 3360 0
+rnode "Bit_8.n0" 0 506.641 7220 3360 0
+rnode "Bit_8.t1" 0 1405.95 7220 5040 0
+rnode "Bit_8.n1" 0 324.568 7220 5040 0
+rnode "Bit_8.t0" 0 1358.23 7220 6720 0
+rnode "Bit_8.n2" 0 655.373 7220 6554 0
+rnode "Bit_8" 0 427.916 7199 10043 0
+resist "Bit_8.n2" "Bit_8.n1" 0.72476
+resist "Bit_8.n0" "Bit_8.t2" 0.924682
+resist "Bit_8.n1" "Bit_8.t1" 0.924682
+resist "Bit_8.n1" "Bit_8.n0" 1.18561
+resist "Bit_8.n2" "Bit_8.t0" 2.30911
+resist "Bit_8.n0" "Bit_8.t3" 3.03407
+resist "Bit_8" "Bit_8.n2" 3.11555
+rnode "VD.t19" 0 642.963 15620 5540 0
+rnode "VD.t17" 0 417.182 13940 7220 0
+rnode "VD.n0" 0 462.571 13940 7220 0
+rnode "VD.t28" 0 417.182 13940 3860 0
+rnode "VD.n1" 0 462.571 13940 3860 0
+rnode "VD.t24" 0 417.182 12260 7220 0
+rnode "VD.n2" 0 485.266 12260 7220 0
+rnode "VD.t6" 0 417.182 12260 3860 0
+rnode "VD.n3" 0 507.96 12260 3360 0
+rnode "VD.t31" 0 417.182 10580 7220 0
+rnode "VD.n4" 0 485.266 10580 7220 0
+rnode "VD.t11" 0 417.182 10580 3860 0
+rnode "VD.n5" 0 507.96 10580 3860 0
+rnode "VD.t12" 0 417.182 8900 7220 0
+rnode "VD.n6" 0 485.266 8900 7220 0
+rnode "VD.t23" 0 417.182 8900 3860 0
+rnode "VD.n7" 0 507.96 8900 3860 0
+rnode "VD.t20" 0 417.182 7220 7220 0
+rnode "VD.n8" 0 485.266 7220 7220 0
+rnode "VD.t1" 0 417.182 7220 3860 0
+rnode "VD.n9" 0 507.96 7220 3860 0
+rnode "VD.t27" 0 417.182 5540 7220 0
+rnode "VD.n10" 0 485.266 5540 7220 0
+rnode "VD.t7" 0 417.182 5540 3860 0
+rnode "VD.n11" 0 507.96 5540 3860 0
+rnode "VD.t5" 0 417.182 3860 7220 0
+rnode "VD.n12" 0 485.266 3860 7220 0
+rnode "VD.t16" 0 417.182 3860 3860 0
+rnode "VD.n13" 0 494.593 3860 3860 0
+rnode "VD.t14" 0 417.182 2180 7220 0
+rnode "VD.n14" 0 475.938 2180 6720 0
+rnode "VD.t29" 0 417.182 2180 5540 0
+rnode "VD.t2" 0 417.182 12260 2180 0
+rnode "VD.n15" 0 462.571 12260 2180 0
+rnode "VD.t9" 0 417.182 10580 2180 0
+rnode "VD.n16" 0 485.266 10580 2180 0
+rnode "VD.t21" 0 417.182 8900 2180 0
+rnode "VD.n17" 0 485.266 8900 2180 0
+rnode "VD.t0" 0 417.182 7220 2180 0
+rnode "VD.n18" 0 485.266 7220 2180 0
+rnode "VD.t4" 0 417.182 5540 2180 0
+rnode "VD.n19" 0 485.266 5540 2180 0
+rnode "VD.t15" 0 417.182 3860 2180 0
+rnode "VD.n20" 0 485.266 3860 2180 0
+rnode "VD.t22" 0 417.182 2180 2180 0
+rnode "VD.n21" 0 475.938 2180 2680 0
+rnode "VD.t25" 0 417.182 2180 3860 0
+rnode "VD.n22" 0 485.266 2180 3860 0
+rnode "VD.n23" 0 485.266 2680 5540 0
+rnode "VD.t18" 0 417.182 3860 5540 0
+rnode "VD.n24" 0 494.593 3860 5540 0
+rnode "VD.t10" 0 417.182 5540 5540 0
+rnode "VD.n25" 0 507.96 5540 5540 0
+rnode "VD.t3" 0 417.182 7220 5540 0
+rnode "VD.n26" 0 507.96 7220 5540 0
+rnode "VD.t26" 0 417.182 8900 5540 0
+rnode "VD.n27" 0 507.96 8900 5540 0
+rnode "VD.t13" 0 417.182 10580 5540 0
+rnode "VD.n28" 0 507.96 10580 5540 0
+rnode "VD.t8" 0 417.182 12260 5540 0
+rnode "VD.n29" 0 507.96 12260 5540 0
+rnode "VD.t30" 0 417.182 13940 5540 0
+rnode "VD.n30" 0 474.823 13940 5540 0
+rnode "VD.n31" 0 339.492 14783 5620 0
+rnode "VD" 0 93.2609 14758 10043 0
+resist "VD.n30" "VD.t30" 0.125
+resist "VD.n29" "VD.t8" 0.125
+resist "VD.n28" "VD.t13" 0.125
+resist "VD.n27" "VD.t26" 0.125
+resist "VD.n26" "VD.t3" 0.125
+resist "VD.n25" "VD.t10" 0.125
+resist "VD.n24" "VD.t18" 0.125
+resist "VD.n23" "VD.t29" 0.125
+resist "VD.n22" "VD.t25" 0.125
+resist "VD.n21" "VD.t22" 0.125
+resist "VD.n20" "VD.t15" 0.125
+resist "VD.n19" "VD.t4" 0.125
+resist "VD.n18" "VD.t0" 0.125
+resist "VD.n17" "VD.t21" 0.125
+resist "VD.n16" "VD.t9" 0.125
+resist "VD.n15" "VD.t2" 0.125
+resist "VD.n3" "VD.t6" 0.125
+resist "VD.n1" "VD.t28" 0.125
+resist "VD.n5" "VD.t11" 0.125
+resist "VD.n7" "VD.t23" 0.125
+resist "VD.n9" "VD.t1" 0.125
+resist "VD.n11" "VD.t7" 0.125
+resist "VD.n13" "VD.t16" 0.125
+resist "VD.n14" "VD.t14" 0.125
+resist "VD.n12" "VD.t5" 0.125
+resist "VD.n10" "VD.t27" 0.125
+resist "VD.n8" "VD.t20" 0.125
+resist "VD.n6" "VD.t12" 0.125
+resist "VD.n4" "VD.t31" 0.125
+resist "VD.n2" "VD.t24" 0.125
+resist "VD.n0" "VD.t17" 0.125
+resist "VD.n31" "VD.n30" 0.158625
+resist "VD.n15" "VD.n3" 0.255
+resist "VD.n30" "VD.n1" 0.255
+resist "VD.n24" "VD.n13" 0.255
+resist "VD.n20" "VD.n13" 0.255
+resist "VD.n25" "VD.n11" 0.255
+resist "VD.n19" "VD.n11" 0.255
+resist "VD.n26" "VD.n9" 0.255
+resist "VD.n18" "VD.n9" 0.255
+resist "VD.n27" "VD.n7" 0.255
+resist "VD.n17" "VD.n7" 0.255
+resist "VD.n28" "VD.n5" 0.255
+resist "VD.n16" "VD.n5" 0.255
+resist "VD.n29" "VD.n3" 0.255
+resist "VD.n30" "VD.n0" 0.255
+resist "VD.n29" "VD.n2" 0.255
+resist "VD.n28" "VD.n4" 0.255
+resist "VD.n27" "VD.n6" 0.255
+resist "VD.n26" "VD.n8" 0.255
+resist "VD.n25" "VD.n10" 0.255
+resist "VD.n24" "VD.n12" 0.255
+resist "VD.n31" "VD.t19" 0.281375
+resist "VD.n24" "VD.n23" 0.285
+resist "VD.n22" "VD.n21" 0.285
+resist "VD.n22" "VD.n13" 0.285
+resist "VD.n23" "VD.n14" 0.285
+resist "VD.n30" "VD.n29" 0.315
+resist "VD.n29" "VD.n28" 0.315
+resist "VD.n28" "VD.n27" 0.315
+resist "VD.n27" "VD.n26" 0.315
+resist "VD.n26" "VD.n25" 0.315
+resist "VD.n25" "VD.n24" 0.315
+resist "VD.n23" "VD.n22" 0.315
+resist "VD.n21" "VD.n20" 0.315
+resist "VD.n20" "VD.n19" 0.315
+resist "VD.n19" "VD.n18" 0.315
+resist "VD.n18" "VD.n17" 0.315
+resist "VD.n17" "VD.n16" 0.315
+resist "VD.n16" "VD.n15" 0.315
+resist "VD.n3" "VD.n1" 0.315
+resist "VD.n5" "VD.n3" 0.315
+resist "VD.n7" "VD.n5" 0.315
+resist "VD.n9" "VD.n7" 0.315
+resist "VD.n11" "VD.n9" 0.315
+resist "VD.n13" "VD.n11" 0.315
+resist "VD.n14" "VD.n12" 0.315
+resist "VD.n12" "VD.n10" 0.315
+resist "VD.n10" "VD.n8" 0.315
+resist "VD.n8" "VD.n6" 0.315
+resist "VD.n6" "VD.n4" 0.315
+resist "VD.n4" "VD.n2" 0.315
+resist "VD.n2" "VD.n0" 0.315
+resist "VD" "VD.n31" 2.6538
+device csubckt cap_mim_2f0_m4m5_noshield 10080 6720 10081 6721  "None" "VD.t31" 7264 0 "Bit_10.t0" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 13440 5040 13441 5041  "None" "VD.t30" 7264 0 "Bit_7.t0" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 20160 3360 20161 3361  "None" "m4_15000_4920#" 7264 0 "Bit_5.t0" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 1680 5040 1681 5041  "None" "VD.t29" 7264 0 "Bit_10.t1" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 18480 5040 18481 5041  "None" "m4_15000_4920#" 7264 0 "Bit_5.t1" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 13440 3360 13441 3361  "None" "VD.t28" 7264 0 "Bit_7.t1" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 5040 6720 5041 6721  "None" "VD.t27" 7264 0 "Bit_9.t0" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 20160 1680 20161 1681  "None" "m4_15000_4920#" 7264 0 "Bit_5.t2" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 8400 5040 8401 5041  "None" "VD.t26" 7264 0 "Bit_9.t1" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 21840 5040 21841 5041  "None" "m4_15000_4920#" 7264 0 "Bit_4.t0" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 25200 6720 25201 6721  "None" "m4_15000_4920#" 7264 0 "Bit_4.t1" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 1680 3360 1681 3361  "None" "VD.t25" 7264 0 "Bit_10.t2" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 18480 3360 18481 3361  "None" "m4_15000_4920#" 7264 0 "Bit_5.t3" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 11760 6720 11761 6721  "None" "VD.t24" 7264 0 "Bit_10.t3" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 8400 3360 8401 3361  "None" "VD.t23" 7264 0 "Bit_9.t2" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 21840 3360 21841 3361  "None" "m4_15000_4920#" 7264 0 "Bit_4.t2" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 26880 5040 26881 5041  "None" "m4_15000_4920#" 7264 0 "Bit_5.t4" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 1680 1680 1681 1681  "None" "VD.t22" 7264 0 "Bit_10.t4" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 18480 1680 18481 1681  "None" "m4_15000_4920#" 7264 0 "Bit_5.t5" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 8400 1680 8401 1681  "None" "VD.t21" 7264 0 "Bit_9.t3" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 6720 6720 6721 6721  "None" "VD.t20" 7264 0 "Bit_8.t0" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 26880 3360 26881 3361  "None" "m4_15000_4920#" 7264 0 "Bit_5.t6" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 21840 1680 21841 1681  "None" "m4_15000_4920#" 7264 0 "Bit_4.t3" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 15120 5040 15121 5041  "None" "VD.t19" 7264 0 "m4_15000_4920#" -2724 192766,3110
+device csubckt cap_mim_2f0_m4m5_noshield 3360 5040 3361 5041  "None" "VD.t18" 7264 0 "Bit_10.t5" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 26880 1680 26881 1681  "None" "m4_15000_4920#" 7264 0 "Bit_5.t7" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 20160 6720 20161 6721  "None" "m4_15000_4920#" 7264 0 "Bit_5.t8" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 23520 5040 23521 5041  "None" "m4_15000_4920#" 7264 0 "Bit_3.t0" -2724 193280,3114
+device csubckt cap_mim_2f0_m4m5_noshield 13440 6720 13441 6721  "None" "VD.t17" 7264 0 "Bit_6.t0" -2724 193280,3114
+device csubckt cap_mim_2f0_m4m5_noshield 3360 3360 3361 3361  "None" "VD.t16" 7264 0 "Bit_10.t6" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 16800 5040 16801 5041  "None" "m4_15000_4920#" 7264 0 "Bit_2.t0" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 23520 3360 23521 3361  "None" "m4_15000_4920#" 7264 0 "Bit_3.t1" -2724 193280,3114
+device csubckt cap_mim_2f0_m4m5_noshield 28560 5040 28561 5041  "None" "m4_15000_4920#" 7264 0 "Bit_5.t9" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 3360 1680 3361 1681  "None" "VD.t15" 7264 0 "Bit_10.t7" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 1680 6720 1681 6721  "None" "VD.t14" 7264 0 "Bit_10.t8" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 18480 6720 18481 6721  "None" "m4_15000_4920#" 7264 0 "Bit_5.t10" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 16800 3360 16801 3361  "None" "m4_15000_4920#" 7264 0 "Bit_2.t1" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 10080 5040 10081 5041  "None" "VD.t13" 7264 0 "Bit_10.t9" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 23520 1680 23521 1681  "None" "m4_15000_4920#" 7264 0 "Bit_3.t2" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 8400 6720 8401 6721  "None" "VD.t12" 7264 0 "Bit_9.t4" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 21840 6720 21841 6721  "None" "m4_15000_4920#" 7264 0 "Bit_4.t4" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 28560 3360 28561 3361  "None" "m4_15000_4920#" 7264 0 "Bit_5.t11" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 10080 3360 10081 3361  "None" "VD.t11" 7264 0 "Bit_10.t10" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 28560 1680 28561 1681  "None" "m4_15000_4920#" 7264 0 "Bit_5.t12" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 26880 6720 26881 6721  "None" "m4_15000_4920#" 7264 0 "Bit_5.t13" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 5040 5040 5041 5041  "None" "VD.t10" 7264 0 "Bit_9.t5" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 25200 5040 25201 5041  "None" "m4_15000_4920#" 7264 0 "Bit_4.t5" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 10080 1680 10081 1681  "None" "VD.t9" 7264 0 "Bit_10.t11" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 11760 5040 11761 5041  "None" "VD.t8" 7264 0 "Bit_10.t12" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 5040 3360 5041 3361  "None" "VD.t7" 7264 0 "Bit_9.t6" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 25200 3360 25201 3361  "None" "m4_15000_4920#" 7264 0 "Bit_4.t6" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 11760 3360 11761 3361  "None" "VD.t6" 7264 0 "Bit_10.t13" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 3360 6720 3361 6721  "None" "VD.t5" 7264 0 "Bit_10.t14" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 5040 1680 5041 1681  "None" "VD.t4" 7264 0 "Bit_9.t7" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 6720 5040 6721 5041  "None" "VD.t3" 7264 0 "Bit_8.t1" -2724 193280,3114
+device csubckt cap_mim_2f0_m4m5_noshield 25200 1680 25201 1681  "None" "m4_15000_4920#" 7264 0 "Bit_4.t7" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 23520 6720 23521 6721  "None" "m4_15000_4920#" 7264 0 "Bit_3.t3" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 11760 1680 11761 1681  "None" "VD.t2" 7264 0 "Bit_10.t15" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 6720 3360 6721 3361  "None" "VD.t1" 7264 0 "Bit_8.t2" -2724 193280,3114
+device csubckt cap_mim_2f0_m4m5_noshield 16800 6720 16801 6721  "None" "m4_15000_4920#" 7264 0 "Bit_1.t0" -2724 193280,3114
+device csubckt cap_mim_2f0_m4m5_noshield 28560 6720 28561 6721  "None" "m4_15000_4920#" 7264 0 "Bit_5.t14" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 20160 5040 20161 5041  "None" "m4_15000_4920#" 7264 0 "Bit_5.t15" -2724 186240,3050
+device csubckt cap_mim_2f0_m4m5_noshield 6720 1680 6721 1681  "None" "VD.t0" 7264 0 "Bit_8.t3" -2724 186240,3050

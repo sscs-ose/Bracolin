@@ -59,8 +59,7 @@ N 470 40 530 40 {
 lab=CK2}
 N 470 60 530 60 {
 lab=CK1}
-C {/home/electrica/Documents/gf180_projects/gf180_work/PICO_contest/Dynamic_Comparator/Dynamic_Comparator.sym} -90 40 0 0 {name=x1}
-C {/home/electrica/Documents/gf180_projects/gf180_work/PICO_contest/SAR_logic/SAR_Logic.sym} 450 -40 0 0 {name=x2}
+C {PICO_contest/Dynamic_Comparator/Dynamic_Comparator.sym} -10 100 0 0 {name=x1}
 C {devices/iopin.sym} -360 -150 0 0 {name=p11 lab=VDDD}
 C {devices/iopin.sym} -360 -100 0 0 {name=p12 lab=VSSD}
 C {devices/ipin.sym} -310 -60 0 0 {name=p14 lab=clks}
@@ -101,3 +100,4 @@ C {devices/lab_wire.sym} 520 20 0 0 {name=p37 sig_type=std_logic lab=CK3}
 C {devices/lab_wire.sym} 520 40 0 0 {name=p38 sig_type=std_logic lab=CK2}
 C {devices/lab_wire.sym} 520 60 0 0 {name=p39 sig_type=std_logic lab=CK1}
 C {devices/ipin.sym} -310 60 0 0 {name=p40 lab=clkc}
+C {PICO_contest/SAR_logic/xschem/SAR_Logic.sym} 450 -40 0 0 {name=x2}

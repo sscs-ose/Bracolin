@@ -1,0 +1,36 @@
+** sch_path: /home/gmaranhao/Desktop/Juan_bracolin/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_latch.sch
+.subckt Dynamic_Comparator_latch VDDD VSSD dN clkc dP aP aN
+*.PININFO VDDD:B VSSD:B clkc:I aP:I aN:I dN:B dP:B
+M5[1] X dP VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M5[2] X dP VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M5[3] X dP VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M5[4] X dP VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M6[1] Y dN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M6[2] Y dN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M6[3] Y dN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M6[4] Y dN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M7[1] dN aP X VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M7[2] dN aP X VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M7[3] dN aP X VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M7[4] dN aP X VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M8[1] dP aN Y VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M8[2] dP aN Y VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M8[3] dP aN Y VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M8[4] dP aN Y VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M9 dN dP VSSD VSSD nfet_03v3 L=0.28u W=6.3u nf=1 m=1
+M10 dP dN VSSD VSSD nfet_03v3 L=0.28u W=6.3u nf=1 m=1
+M11 dN n_clkc VSSD VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M12 dP n_clkc VSSD VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+x1 VDDD VSSD n_clkc clkc Dynamic_Comparator_inv_1x
+.ends
+
+* expanding   symbol:  PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_inv_1x.sym # of pins=4
+** sym_path: /home/gmaranhao/Desktop/Juan_bracolin/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_inv_1x.sym
+** sch_path: /home/gmaranhao/Desktop/Juan_bracolin/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_inv_1x.sch
+.subckt Dynamic_Comparator_inv_1x VDDD VSSD OUT IN
+*.PININFO VDDD:B VSSD:B IN:I OUT:B
+M1 OUT IN VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+.end

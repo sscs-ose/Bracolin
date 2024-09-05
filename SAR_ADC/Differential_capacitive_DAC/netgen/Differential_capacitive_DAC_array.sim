@@ -1,0 +1,149 @@
+| units: 0.5 tech: gf180mcuD format: MIT
+x VD Bit_8 s=186240,3050 l=1000 w=1000 x=6720 y=1680 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_5 s=186240,3050 l=1000 w=1000 x=20160 y=5040 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_5 s=186240,3050 l=1000 w=1000 x=28560 y=6720 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=0 y=6720 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=10080 y=8400 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_1 s=193280,3114 l=1000 w=1000 x=16800 y=6720 cap_mim_2f0_m4m5_noshield
+x VD Bit_8 s=193280,3114 l=1000 w=1000 x=6720 y=3360 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=23520 y=0 cap_mim_2f0_m4m5_noshield
+x VD Bit_10 s=186240,3050 l=1000 w=1000 x=11760 y=1680 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=28560 y=8400 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_3 s=186240,3050 l=1000 w=1000 x=23520 y=6720 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_4 s=186240,3050 l=1000 w=1000 x=25200 y=1680 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=11760 y=0 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=0 y=8400 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=16800 y=8400 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=0 y=0 cap_mim_2f0_m4m5_noshield
+x VD Bit_8 s=193280,3114 l=1000 w=1000 x=6720 y=5040 cap_mim_2f0_m4m5_noshield
+x VD Bit_9 s=186240,3050 l=1000 w=1000 x=5040 y=1680 cap_mim_2f0_m4m5_noshield
+x VD Bit_10 s=186240,3050 l=1000 w=1000 x=3360 y=6720 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=18480 y=0 cap_mim_2f0_m4m5_noshield
+x VD Bit_10 s=186240,3050 l=1000 w=1000 x=11760 y=3360 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=30240 y=6720 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=23520 y=8400 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_4 s=186240,3050 l=1000 w=1000 x=25200 y=3360 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=3360 y=8400 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=15120 y=6720 cap_mim_2f0_m4m5_noshield
+x VD Bit_9 s=186240,3050 l=1000 w=1000 x=5040 y=3360 cap_mim_2f0_m4m5_noshield
+x VD Bit_10 s=186240,3050 l=1000 w=1000 x=11760 y=5040 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=30240 y=8400 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=21840 y=0 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=5040 y=0 cap_mim_2f0_m4m5_noshield
+x VD Bit_10 s=186240,3050 l=1000 w=1000 x=10080 y=1680 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_4 s=186240,3050 l=1000 w=1000 x=25200 y=5040 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=28560 y=0 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=15120 y=8400 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=16800 y=0 cap_mim_2f0_m4m5_noshield
+x VD Bit_9 s=186240,3050 l=1000 w=1000 x=5040 y=5040 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_5 s=186240,3050 l=1000 w=1000 x=26880 y=6720 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_5 s=186240,3050 l=1000 w=1000 x=28560 y=1680 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=16800 y=1680 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=0 y=1680 cap_mim_2f0_m4m5_noshield
+x VD Bit_10 s=186240,3050 l=1000 w=1000 x=10080 y=3360 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=26880 y=8400 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_5 s=186240,3050 l=1000 w=1000 x=28560 y=3360 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_4 s=186240,3050 l=1000 w=1000 x=21840 y=6720 cap_mim_2f0_m4m5_noshield
+x VD Bit_9 s=186240,3050 l=1000 w=1000 x=8400 y=6720 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_3 s=186240,3050 l=1000 w=1000 x=23520 y=1680 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=0 y=3360 cap_mim_2f0_m4m5_noshield
+x VD Bit_10 s=186240,3050 l=1000 w=1000 x=10080 y=5040 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_2 s=186240,3050 l=1000 w=1000 x=16800 y=3360 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_5 s=186240,3050 l=1000 w=1000 x=18480 y=6720 cap_mim_2f0_m4m5_noshield
+x VD Bit_10 s=186240,3050 l=1000 w=1000 x=1680 y=6720 cap_mim_2f0_m4m5_noshield
+x VD Bit_10 s=186240,3050 l=1000 w=1000 x=3360 y=1680 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=3360 y=0 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=30240 y=1680 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=21840 y=8400 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_5 s=186240,3050 l=1000 w=1000 x=28560 y=5040 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=8400 y=8400 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=26880 y=0 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_3 s=193280,3114 l=1000 w=1000 x=23520 y=3360 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=0 y=5040 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=18480 y=8400 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_2 s=186240,3050 l=1000 w=1000 x=16800 y=5040 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=1680 y=8400 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=15120 y=1680 cap_mim_2f0_m4m5_noshield
+x VD Bit_10 s=186240,3050 l=1000 w=1000 x=3360 y=3360 cap_mim_2f0_m4m5_noshield
+x VD Bit_6 s=193280,3114 l=1000 w=1000 x=13440 y=6720 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=30240 y=3360 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_3 s=193280,3114 l=1000 w=1000 x=23520 y=5040 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=10080 y=0 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_5 s=186240,3050 l=1000 w=1000 x=20160 y=6720 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=13440 y=8400 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_5 s=186240,3050 l=1000 w=1000 x=26880 y=1680 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=15120 y=3360 cap_mim_2f0_m4m5_noshield
+x VD Bit_10 s=186240,3050 l=1000 w=1000 x=3360 y=5040 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=30240 y=5040 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=8400 y=0 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=1680 y=0 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=20160 y=8400 cap_mim_2f0_m4m5_noshield
+x VD m4_15000_4920# s=192766,3110 l=1000 w=1000 x=15120 y=5040 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_4 s=186240,3050 l=1000 w=1000 x=21840 y=1680 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_5 s=186240,3050 l=1000 w=1000 x=26880 y=3360 cap_mim_2f0_m4m5_noshield
+x VD Bit_8 s=186240,3050 l=1000 w=1000 x=6720 y=6720 cap_mim_2f0_m4m5_noshield
+x VD Bit_9 s=186240,3050 l=1000 w=1000 x=8400 y=1680 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=20160 y=0 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_5 s=186240,3050 l=1000 w=1000 x=18480 y=1680 cap_mim_2f0_m4m5_noshield
+x VD Bit_10 s=186240,3050 l=1000 w=1000 x=1680 y=1680 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=15120 y=0 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=6720 y=8400 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_5 s=186240,3050 l=1000 w=1000 x=26880 y=5040 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_4 s=186240,3050 l=1000 w=1000 x=21840 y=3360 cap_mim_2f0_m4m5_noshield
+x VD Bit_9 s=186240,3050 l=1000 w=1000 x=8400 y=3360 cap_mim_2f0_m4m5_noshield
+x VD Bit_10 s=186240,3050 l=1000 w=1000 x=11760 y=6720 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=13440 y=1680 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_5 s=186240,3050 l=1000 w=1000 x=18480 y=3360 cap_mim_2f0_m4m5_noshield
+x VD Bit_10 s=186240,3050 l=1000 w=1000 x=1680 y=3360 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=6720 y=0 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_4 s=186240,3050 l=1000 w=1000 x=25200 y=6720 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_4 s=186240,3050 l=1000 w=1000 x=21840 y=5040 cap_mim_2f0_m4m5_noshield
+x VD Bit_9 s=186240,3050 l=1000 w=1000 x=8400 y=5040 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=30240 y=0 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_5 s=186240,3050 l=1000 w=1000 x=20160 y=1680 cap_mim_2f0_m4m5_noshield
+x VD Bit_9 s=186240,3050 l=1000 w=1000 x=5040 y=6720 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=11760 y=8400 cap_mim_2f0_m4m5_noshield
+x VD Bit_7 s=186240,3050 l=1000 w=1000 x=13440 y=3360 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_5 s=186240,3050 l=1000 w=1000 x=18480 y=5040 cap_mim_2f0_m4m5_noshield
+x VD Bit_10 s=186240,3050 l=1000 w=1000 x=1680 y=5040 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=25200 y=0 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=25200 y=8400 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=5040 y=8400 cap_mim_2f0_m4m5_noshield
+x VSSA VSSA s=13996946,167514 l=1000 w=1000 x=13440 y=0 cap_mim_2f0_m4m5_noshield
+x m4_15000_4920# Bit_5 s=186240,3050 l=1000 w=1000 x=20160 y=3360 cap_mim_2f0_m4m5_noshield
+x VD Bit_7 s=186240,3050 l=1000 w=1000 x=13440 y=5040 cap_mim_2f0_m4m5_noshield
+x VD Bit_10 s=186240,3050 l=1000 w=1000 x=10080 y=6720 cap_mim_2f0_m4m5_noshield
+C Bit_5 VSSA 3.1
+C Bit_3 m4_15000_4920# 4.0
+C Bit_10 VD 11.6
+C m4_15000_4920# VSSA 5.4
+C VD Bit_8 4.0
+C m4_15000_4920# Bit_4 6.6
+C Bit_3 Bit_4 3.5
+C m4_15000_4920# Bit_5 11.7
+C Bit_9 VD 6.5
+C VD VSSA 7.1
+C Bit_10 VSSA 3.1
+C Bit_9 Bit_8 3.5
+C VD0 12.6
+R VD 14
+C Bit_30 2.3
+R Bit_3 11
+C Bit_20 2.1
+C Bit_70 2.1
+C Bit_80 2.3
+R Bit_8 11
+C Bit_50 11.8
+R Bit_5 37
+C Bit_100 11.8
+R Bit_10 37
+C Bit_40 6.9
+R Bit_4 24
+C Bit_90 6.9
+R Bit_9 24
+C m4_15000_4920#0 12.2
+R m4_15000_4920# 13
+C VSSA0 124.2
+R VSSA 124
+= VSSA GND
+R a_n362_n362# 2413

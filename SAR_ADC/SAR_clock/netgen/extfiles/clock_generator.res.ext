@@ -1,0 +1,124 @@
+scale 1000 1 0.5
+rnode "Valid.t0" 0 0 -3418 844 0
+rnode "Valid.t1" 0 0 -3418 -650 0
+rnode "Valid.n0" 0 0 -3418 -398 0
+rnode "Valid" 0 0 -3430 -405 0
+resist "Valid" "Valid.n0" 0.0135
+resist "Valid.n0" "Valid.t1" 39.2857
+resist "Valid.n0" "Valid.t0" 79.8982
+rnode "OUT.t1" 0 0 2014 424 0
+rnode "OUT.t0" 0 0 2014 1358 0
+rnode "OUT.n0" 0 0 2160 1146 0
+rnode "OUT" 0 0 2121 1072 0
+resist "OUT" "OUT.n0" 0.084624
+resist "OUT.n0" "OUT.t0" 1.54019
+resist "OUT.n0" "OUT.t1" 6.95468
+killnode "clock_generator_delay_cell_0.VDDD"
+rnode "clock_generator_delay_cell_0.VDDD.n0" 0 785.524 -3054 1384 0
+rnode "clock_generator_delay_cell_0.VDDD.t2" 0 84.9762 -4678 844 0
+rnode "clock_generator_delay_cell_0.VDDD.t6" 0 192.006 1986 1358 0
+rnode "clock_generator_delay_cell_0.VDDD.n1" 0 302.601 1728 1358 0
+rnode "clock_generator_delay_cell_0.VDDD.t7" 0 28.4635 1958 1358 0
+rnode "clock_generator_delay_cell_0.VDDD.t1" 0 492.468 -4650 844 0
+rnode "clock_generator_delay_cell_0.VDDD.t5" 0 390.929 -4034 844 0
+rnode "clock_generator_delay_cell_0.VDDD.t0" 0 451.233 -3418 844 0
+rnode "clock_generator_delay_cell_0.VDDD.t3" 0 191.154 -2376 773 0
+rnode "clock_generator_delay_cell_0.VDDD.n2" 0 217.502 -2634 773 0
+rnode "clock_generator_delay_cell_0.VDDD.n3" 0 234.679 -2634 773 0
+rnode "clock_generator_delay_cell_0.VDDD.t4" 0 28.4635 -2404 773 0
+resist "clock_generator_delay_cell_0.VDDD.n3" "clock_generator_delay_cell_0.VDDD.n0" 0.302225
+resist "clock_generator_delay_cell_0.VDDD.n3" "clock_generator_delay_cell_0.VDDD.t4" 1.4967
+resist "clock_generator_delay_cell_0.VDDD.n1" "clock_generator_delay_cell_0.VDDD.t7" 1.4967
+resist "clock_generator_delay_cell_0.VDDD.n3" "clock_generator_delay_cell_0.VDDD.n2" 1.8
+resist "clock_generator_delay_cell_0.VDDD.t2" "clock_generator_delay_cell_0.VDDD.n0" 2.06287
+resist "clock_generator_delay_cell_0.VDDD.n1" "clock_generator_delay_cell_0.VDDD.n0" 4.24297
+resist "clock_generator_delay_cell_0.VDDD.n2" "clock_generator_delay_cell_0.VDDD.t3" 244.318
+resist "clock_generator_delay_cell_0.VDDD.n1" "clock_generator_delay_cell_0.VDDD.t6" 246.118
+resist "clock_generator_delay_cell_0.VDDD.t5" "clock_generator_delay_cell_0.VDDD.t1" 413.423
+resist "clock_generator_delay_cell_0.VDDD.t0" "clock_generator_delay_cell_0.VDDD.t5" 413.423
+resist "clock_generator_delay_cell_0.VDDD.n2" "clock_generator_delay_cell_0.VDDD.t0" 612.785
+rnode "clks.t0" 0 0 -4650 844 0
+rnode "clks.t1" 0 0 -4650 -650 0
+rnode "clks.n0" 0 0 -4650 82 0
+rnode "clks" 0 0 -5074 38 0
+resist "clks" "clks.n0" 2.70758
+resist "clks.n0" "clks.t1" 44.2357
+resist "clks.n0" "clks.t0" 74.8583
+rnode "CK1.t1" 0 0 -4034 844 0
+rnode "CK1.t0" 0 0 -4034 -650 0
+rnode "CK1.n0" 0 0 -4034 -66 0
+rnode "CK1" 0 0 -5087 -91 0
+resist "CK1" "CK1.n0" 3.43524
+resist "CK1.n0" "CK1.t0" 44.0692
+resist "CK1.n0" "CK1.t1" 75.0247
+killnode "a_n4622_n806#"
+rnode "a_n4622_n806.t5" 0 1741.46 873 -404 0
+rnode "a_n4622_n806.n0" 0 86.0604 873 4 0
+rnode "a_n4622_n806.t10" 0 11.0914 -2376 773 0
+rnode "a_n4622_n806.n1" 0 44.534 -2376 237 0
+rnode "a_n4622_n806.t7" 0 38.867 822 760 0
+rnode "a_n4622_n806.t9" 0 28.5542 822 256 0
+rnode "a_n4622_n806.n2" 0 72.3811 875 507 0
+rnode "a_n4622_n806.n3" 0 74.3387 -1165 0 0
+rnode "a_n4622_n806.t8" 0 38.867 -198 760 0
+rnode "a_n4622_n806.t4" 0 38.867 -1218 760 0
+rnode "a_n4622_n806.n4" 0 72.3846 -1165 507 0
+rnode "a_n4622_n806.t6" 0 239.399 -1218 256 0
+rnode "a_n4622_n806.n5" 0 176.238 -198 -92 0
+rnode "a_n4622_n806.t11" 0 28.5542 -198 256 0
+rnode "a_n4622_n806.n6" 0 72.3846 -145 507 0
+rnode "a_n4622_n806.n7" 0 73.6626 -145 0 0
+rnode "a_n4622_n806.n8" 0 119.581 873 4 0
+rnode "a_n4622_n806.n9" 0 146.979 -2544 40 0
+rnode "a_n4622_n806.t3" 0 21.9952 -3446 -650 0
+rnode "a_n4622_n806.t0" 0 7.61043 -4062 -650 0
+rnode "a_n4622_n806.t1" 0 7.58897 -4622 -650 0
+rnode "a_n4622_n806.n10" 0 49.1471 -4348 -597 0
+rnode "a_n4622_n806.n11" 0 74.583 -3741 42 0
+rnode "a_n4622_n806.n12" 0 84.8318 -3247 42 0
+rnode "a_n4622_n806.t2" 0 50.0406 -3390 844 0
+resist "a_n4622_n806.n12" "a_n4622_n806.n9" 0.642641
+resist "a_n4622_n806.n8" "a_n4622_n806.n7" 1.17484
+resist "a_n4622_n806.n7" "a_n4622_n806.n3" 1.1759
+resist "a_n4622_n806.n3" "a_n4622_n806.n1" 1.24758
+resist "a_n4622_n806.t5" "a_n4622_n806.n0" 1.40949
+resist "a_n4622_n806.n0" "a_n4622_n806.n8" 2.06255
+resist "a_n4622_n806.n9" "a_n4622_n806.n1" 2.25392
+resist "a_n4622_n806.n4" "a_n4622_n806.t4" 2.31924
+resist "a_n4622_n806.n6" "a_n4622_n806.t8" 2.31924
+resist "a_n4622_n806.n2" "a_n4622_n806.t7" 2.31924
+resist "a_n4622_n806.n12" "a_n4622_n806.n11" 2.6866
+resist "a_n4622_n806.t2" "a_n4622_n806.n12" 2.68815
+resist "a_n4622_n806.t11" "a_n4622_n806.n5" 2.847
+resist "a_n4622_n806.t9" "a_n4622_n806.n0" 2.847
+resist "a_n4622_n806.n9" "a_n4622_n806.t5" 3.31053
+resist "a_n4622_n806.n10" "a_n4622_n806.t1" 3.77774
+resist "a_n4622_n806.n10" "a_n4622_n806.t0" 3.7816
+resist "a_n4622_n806.n4" "a_n4622_n806.n3" 4.87964
+resist "a_n4622_n806.n7" "a_n4622_n806.n6" 4.87964
+resist "a_n4622_n806.n8" "a_n4622_n806.n2" 4.8807
+resist "a_n4622_n806.n11" "a_n4622_n806.n10" 5.51028
+resist "a_n4622_n806.t6" "a_n4622_n806.n4" 5.78109
+resist "a_n4622_n806.n6" "a_n4622_n806.t11" 5.78109
+resist "a_n4622_n806.n2" "a_n4622_n806.t9" 5.78109
+resist "a_n4622_n806.n11" "a_n4622_n806.t3" 8.91267
+resist "a_n4622_n806.n5" "a_n4622_n806.n0" 16.1017
+resist "a_n4622_n806.n5" "a_n4622_n806.t6" 18.9487
+resist "a_n4622_n806.n1" "a_n4622_n806.t10" 69.7036
+device msubckt nfet_03v3 -4678 -806 -4677 -805  "clock_generator_delay_cell_0.VSSD" "clks.t1" 112 0 "clock_generator_delay_cell_0.VSSD" 312 38064,868 "a_n4622_n806.t1" 312 38064,868
+device msubckt nfet_03v3 -3446 -806 -3445 -805  "clock_generator_delay_cell_0.VSSD" "Valid.t1" 112 0 "a_n4622_n806.t3" 312 38064,868 "clock_generator_delay_cell_0.VSSD" 312 38064,868
+device msubckt nfet_03v3 1958 268 1959 269  "clock_generator_delay_cell_0.VSSD" "a_n2749_n404#" 112 0 "clock_generator_delay_cell_0.VSSD" 312 38064,868 "OUT.t1" 312 38064,868
+device msubckt nfet_03v3 -398 100 -397 101  "clock_generator_delay_cell_0.VSSD" "a_n4622_n806.t11" 800 0 "clock_generator_delay_cell_0.VSSD" 312 38064,868 "a_2_100#" 312 38064,868
+device msubckt pfet_03v3 -3446 454 -3445 455  "clock_generator_delay_cell_0.VDDD.t0" "Valid.t0" 112 0 "a_n4006_454#" 780 101400,1820 "a_n4622_n806.t2" 780 101400,1820
+device msubckt pfet_03v3 -2404 383 -2403 384  "clock_generator_delay_cell_0.VDDD.t3" "a_n4622_n806.t10" 112 0 "clock_generator_delay_cell_0.VDDD.t4" 780 101400,1820 "a_n2749_n404#" 780 101400,1820
+device msubckt nfet_03v3 622 100 623 101  "clock_generator_delay_cell_0.VSSD" "a_n4622_n806.t9" 800 0 "clock_generator_delay_cell_0.VSSD" 312 38064,868 "a_1022_100#" 312 38064,868
+device msubckt pfet_03v3 1958 968 1959 969  "clock_generator_delay_cell_0.VDDD.t6" "a_n2749_n404#" 112 0 "clock_generator_delay_cell_0.VDDD.t7" 780 101400,1820 "OUT.t0" 780 101400,1820
+device msubckt nfet_03v3 -398 604 -397 605  "clock_generator_delay_cell_0.VSSD" "a_n4622_n806.t8" 800 0 "a_n520_604#" 312 38064,868 "a_2_100#" 312 38064,868
+device msubckt nfet_03v3 622 604 623 605  "clock_generator_delay_cell_0.VSSD" "a_n4622_n806.t7" 800 0 "a_500_604#" 312 38064,868 "a_1022_100#" 312 38064,868
+device msubckt pfet_03v3 -4062 454 -4061 455  "clock_generator_delay_cell_0.VDDD.t5" "CK1.t1" 112 0 "a_n4622_454#" 780 101400,1820 "a_n4006_454#" 780 101400,1820
+device msubckt pfet_03v3 -4678 454 -4677 455  "clock_generator_delay_cell_0.VDDD.t1" "clks.t0" 112 0 "clock_generator_delay_cell_0.VDDD.t2" 780 101400,1820 "a_n4622_454#" 780 101400,1820
+device msubckt nfet_03v3 -2627 -404 -2626 -403  "clock_generator_delay_cell_0.VSSD" "a_n4622_n806.t5" 14000 0 "a_n2749_n404#" 312 38064,868 "a_4373_n908#" 312 38064,868
+device msubckt nfet_03v3 -1418 100 -1417 101  "clock_generator_delay_cell_0.VSSD" "a_n4622_n806.t6" 800 0 "clock_generator_delay_cell_0.VSSD" 312 38064,868 "a_n1018_100#" 312 38064,868
+device msubckt nfet_03v3 -2627 -908 -2626 -907  "clock_generator_delay_cell_0.VSSD" "a_n4622_n806.t5" 14000 0 "clock_generator_delay_cell_0.VSSD" 312 38064,868 "a_4373_n908#" 312 38064,868
+device msubckt nfet_03v3 -4062 -806 -4061 -805  "clock_generator_delay_cell_0.VSSD" "CK1.t0" 112 0 "a_n4622_n806.t0" 312 38064,868 "clock_generator_delay_cell_0.VSSD" 312 38064,868
+device msubckt nfet_03v3 -1418 604 -1417 605  "clock_generator_delay_cell_0.VSSD" "a_n4622_n806.t4" 800 0 "a_n1540_604#" 312 38064,868 "a_n1018_100#" 312 38064,868

@@ -1,0 +1,247 @@
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/track_Dyn/track_Dyn.sch
+.subckt track_Dyn VDDA VSSA clks Vinp Vinn Vcom VDP VDN VDDD CK1 Valid A B C vocp
+*.PININFO VDDA:B VSSA:B clks:I Vinp:I Vinn:I Vcom:I VDP:B VDN:B VDDD:B CK1:I Valid:I A:I B:I C:I
+*+ vocp:B
+x3 VDP VDN VDDA VSSA clks Vinp Vinn Vcom tracking_switches
+x5 vocn vocp VDDD VSSA VDP VDN Valid clkc Dynamic_Comparator
+* noconn vocn
+x7 clkc VDDD VSSA clks CK1 Valid A B C clock_generator
+.ends
+
+* expanding   symbol:  PICO_contest/tracking_switches/xschem/tracking_switches.sym # of pins=8
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches.sch
+.subckt tracking_switches VDP VDN VDDA VSSA clks Vinp Vinn Vcom
+*.PININFO VDDA:B VSSA:B clks:I Vinp:I VDP:B Vinn:I VDN:B Vcom:I
+M2 net2 n_clks VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M4 net1 clks_in net2 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M3 net1 net3 net2 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M5 net1 clks_in VDDA VDDA pfet_03v3 L=0.28u W=4u nf=1 m=1
+M6 VDDA net3 net4 net4 pfet_03v3 L=0.28u W=4u nf=1 m=1
+M7 net3 net1 net4 net4 pfet_03v3 L=0.28u W=4u nf=1 m=1
+M1 Vinp net3 net2 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M9 net5 n_clks VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M8 net3 VDDA net5 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+x1 VDDA VSSA n_clks clks tracking_switches_inv_1x
+x2 VDDA VSSA clks_in n_clks tracking_switches_inv_1x
+MS2[1] VDP net3 Vinp VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS2[2] VDP net3 Vinp VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS2[3] VDP net3 Vinp VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS2[4] VDP net3 Vinp VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS2[5] VDP net3 Vinp VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+C12[1] net4 net2 cap_mim_2f0_m4m5_noshield W=10e-6 L=10e-6 m=1
+C12[2] net4 net2 cap_mim_2f0_m4m5_noshield W=10e-6 L=10e-6 m=1
+C12[3] net4 net2 cap_mim_2f0_m4m5_noshield W=10e-6 L=10e-6 m=1
+MS1[1] VDP VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS1[2] VDP VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS1[3] VDP VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS1[4] VDP VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS1[5] VDP VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+M10 net7 n_clks VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M11 net6 clks_in net7 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M12 net6 net8 net7 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M13 net6 clks_in VDDA VDDA pfet_03v3 L=0.28u W=4u nf=1 m=1
+M14 VDDA net8 net9 net9 pfet_03v3 L=0.28u W=4u nf=1 m=1
+M15 net8 net6 net9 net9 pfet_03v3 L=0.28u W=4u nf=1 m=1
+M16 Vinn net8 net7 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M17 net10 n_clks VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M18 net8 VDDA net10 VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+MS19[1] VDN net8 Vinn VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS19[2] VDN net8 Vinn VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS19[3] VDN net8 Vinn VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS19[4] VDN net8 Vinn VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS19[5] VDN net8 Vinn VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+C1[1] net9 net7 cap_mim_2f0_m4m5_noshield W=10e-6 L=10e-6 m=1
+C1[2] net9 net7 cap_mim_2f0_m4m5_noshield W=10e-6 L=10e-6 m=1
+C1[3] net9 net7 cap_mim_2f0_m4m5_noshield W=10e-6 L=10e-6 m=1
+MS20[1] VDN VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS20[2] VDN VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS20[3] VDN VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS20[4] VDN VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+MS20[5] VDN VSSA Vcom VSSA nfet_03v3 L=0.28u W=6u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator.sym # of pins=8
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator.sch
+.subckt Dynamic_Comparator vocp vocn VDDD VSSD VDP VDN Valid clkc
+*.PININFO VDDD:B VSSD:B VDP:I VDN:I clkc:I Valid:B vocn:B vocp:B
+x5 aN VDDD aP VSSD clkc VDP VDN Dynamic_Comparator_opamp
+x1 VDDD VSSD dN clkc dP aP aN Dynamic_Comparator_latch
+x2 VDDD VSSD Vocp dP Dynamic_Comparator_inv_1x
+x3 VDDD VSSD Vocn dN Dynamic_Comparator_inv_1x
+x4 VDDD VSSD Valid Vocp Vocn Dynamic_Comparator_nand_1x
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_clock/xschem/clock_generator.sym # of pins=9
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator.sch
+.subckt clock_generator OUT VDDD VSSD clks CK1 Valid A B C
+*.PININFO VDDD:B VSSD:B OUT:B clks:I CK1:I Valid:I A:I B:I C:I
+x4 VDDD aa VSSD clks CK1 Valid clock_generator_nor_3_1x
+x1 VDDD VSSD ab aa A B C clock_generator_delay_cell
+x2 VDDD OUT VSSD ab clock_generator_inv_1x
+.ends
+
+
+* expanding   symbol:  PICO_contest/tracking_switches/xschem/tracking_switches_inv_1x.sym # of
+*+ pins=4
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches_inv_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/tracking_switches_inv_1x.sch
+.subckt tracking_switches_inv_1x VDDA VSSA OUT IN
+*.PININFO VDDA:B VSSA:B OUT:B IN:I
+M1 OUT IN VSSA VSSA nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT IN VDDA VDDA pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_opamp.sym # of
+*+ pins=7
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_opamp.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_opamp.sch
+.subckt Dynamic_Comparator_opamp aN VDDD aP VSSD clkc VDP VDN
+*.PININFO VDDD:B VSSD:B clkc:I VDP:I VDN:I aN:B aP:B
+M0[1] x clkc VSSD VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M0[2] x clkc VSSD VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M0[3] x clkc VSSD VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M1[1] aN VDP x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M1[2] aN VDP x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M1[3] aN VDP x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M1[4] aN VDP x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M1[5] aN VDP x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M1[6] aN VDP x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M2[1] aP VDN x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M2[2] aP VDN x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M2[3] aP VDN x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M2[4] aP VDN x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M2[5] aP VDN x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M2[6] aP VDN x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M3[1] aN clkc VDDD VDDD pfet_03v3 L=0.28u W=2.35u nf=1 m=1
+M3[2] aN clkc VDDD VDDD pfet_03v3 L=0.28u W=2.35u nf=1 m=1
+M4[1] aP clkc VDDD VDDD pfet_03v3 L=0.28u W=2.35u nf=1 m=1
+M4[2] aP clkc VDDD VDDD pfet_03v3 L=0.28u W=2.35u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_latch.sym # of
+*+ pins=7
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_latch.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_latch.sch
+.subckt Dynamic_Comparator_latch VDDD VSSD dN clkc dP aP aN
+*.PININFO VDDD:B VSSD:B clkc:I aP:I aN:I dN:B dP:B
+M5[1] X dP VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M5[2] X dP VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M5[3] X dP VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M5[4] X dP VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M6[1] Y dN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M6[2] Y dN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M6[3] Y dN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M6[4] Y dN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M7[1] dN aP X VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M7[2] dN aP X VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M7[3] dN aP X VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M7[4] dN aP X VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M8[1] dP aN Y VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M8[2] dP aN Y VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M8[3] dP aN Y VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M8[4] dP aN Y VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M9 dN dP VSSD VSSD nfet_03v3 L=0.28u W=6.3u nf=1 m=1
+M10 dP dN VSSD VSSD nfet_03v3 L=0.28u W=6.3u nf=1 m=1
+M11 dN n_clkc VSSD VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M12 dP n_clkc VSSD VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+x1 VDDD VSSD n_clkc clkc Dynamic_Comparator_inv_1x
+.ends
+
+
+* expanding   symbol:  PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_inv_1x.sym # of
+*+ pins=4
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_inv_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_inv_1x.sch
+.subckt Dynamic_Comparator_inv_1x VDDD VSSD OUT IN
+*.PININFO VDDD:B VSSD:B IN:I OUT:B
+M1 OUT IN VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_nand_1x.sym # of
+*+ pins=5
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_nand_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_nand_1x.sch
+.subckt Dynamic_Comparator_nand_1x VDDD VSSD OUT A B
+*.PININFO VDDD:B VSSD:B A:I B:I OUT:B
+M1 net1 A VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT B net1 VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M3 OUT A VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M4 OUT B VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_clock/xschem/clock_generator_nor_3_1x.sym # of pins=6
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator_nor_3_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator_nor_3_1x.sch
+.subckt clock_generator_nor_3_1x VDDD OUT VSSD A B C
+*.PININFO VDDD:B VSSD:B OUT:B A:I B:I C:I
+M1 OUT B VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT A VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M3 OUT C VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M4 OUT C net1 VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M5 net1 B net2 VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M6 net2 A VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_clock/xschem/clock_generator_delay_cell.sym # of pins=7
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator_delay_cell.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator_delay_cell.sch
+.subckt clock_generator_delay_cell VDDD VSSD OUT IN A B C
+*.PININFO VDDD:B VSSD:B IN:I OUT:B A:I B:I C:I
+M1 net1 IN VSSD VSSD nfet_03v3 L=35u W=1.56u nf=1 m=1
+M2 OUT IN net1 VSSD nfet_03v3 L=35u W=1.56u nf=1 m=1
+M3 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M4 net2 IN VSSD VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M5 aa IN net2 VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M6 OUT A aa VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M7 net3 IN VSSD VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M8 ab IN net3 VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M9 OUT B ab VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M10 net4 IN VSSD VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M11 ac IN net4 VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+M12 OUT C ac VSSD nfet_03v3 L=2u W=1.56u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_clock/xschem/clock_generator_inv_1x.sym # of pins=4
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator_inv_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_clock/xschem/clock_generator_inv_1x.sch
+.subckt clock_generator_inv_1x VDDD OUT VSSD IN
+*.PININFO VDDD:B VSSD:B OUT:B IN:I
+M1 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M2 OUT IN VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+.ends
+
+.end

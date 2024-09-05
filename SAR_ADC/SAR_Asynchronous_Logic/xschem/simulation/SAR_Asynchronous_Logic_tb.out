@@ -1,0 +1,57 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: ** sch_path:
+
+Doing analysis at TEMP = 50.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+net1                                   1.64949
+vc                                      1.6495
+vddd                                       3.3
+vcm                                       1.65
+clks                                         0
+ck11                                         0
+vocp                                         0
+x2.vb                              -0.00072204
+x2.not_clk                             3.29978
+x2.va                                  3.29991
+x2.clk_in                         -0.000399393
+x2.x1.nclk                             3.29974
+x2.x1.clk_buf                     -0.000715186
+x2.x1.net1                        -0.000613565
+x2.x1.net2                             3.29979
+x2.x1.x4.net1                          3.29991
+x2.x1.net4                             3.29967
+x2.dn                             -0.000250376
+x2.x1.x7.net1                          3.30046
+x2.x1.net3                        -0.000623905
+x2.x1.net5                             3.30003
+x2.x1.x5.net1                         0.759373
+x2.x1.x8.net1                          3.30002
+x2.net1                                3.30037
+x2.x2.nclk                             3.29987
+x2.x2.clk_buf                     -0.000750177
+x2.x2.net1                         9.12484e-05
+x2.x2.net2                             3.30007
+x2.x2.x4.net1                          3.30008
+x2.x2.net4                             3.29969
+sar_output_11                     -0.000188203
+x2.x2.x7.net1                          3.30045
+x2.x2.net3                        -0.000621314
+x2.x2.net5                             3.30004
+x2.x2.x5.net1                         0.759398
+x2.x2.x8.net1                              3.3
+x2.net2                                3.30023
+vdd3#branch                         -5.424e-07
+vdd1#branch                        1.28708e-07
+vdd2#branch                        3.69769e-08
+vdd7#branch                        -2.3397e-07
+vdd6#branch                        3.21893e-06
+

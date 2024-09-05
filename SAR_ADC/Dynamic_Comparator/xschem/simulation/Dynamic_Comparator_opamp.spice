@@ -1,0 +1,24 @@
+** sch_path: /home/gmaranhao/Desktop/Juan_bracolin/PICO_contest/Dynamic_Comparator/xschem/Dynamic_Comparator_opamp.sch
+.subckt Dynamic_Comparator_opamp aN VDDD aP VSSD clkc VDP VDN
+*.PININFO VDDD:B VSSD:B clkc:I VDP:I VDN:I aN:B aP:B
+M0[1] x clkc VSSD VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M0[2] x clkc VSSD VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M0[3] x clkc VSSD VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M1[1] aN VDP x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M1[2] aN VDP x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M1[3] aN VDP x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M1[4] aN VDP x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M1[5] aN VDP x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M1[6] aN VDP x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M2[1] aP VDN x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M2[2] aP VDN x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M2[3] aP VDN x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M2[4] aP VDN x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M2[5] aP VDN x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M2[6] aP VDN x VSSD nfet_03v3 L=0.28u W=3.1u nf=1 m=1
+M3[1] aN clkc VDDD VDDD pfet_03v3 L=0.28u W=2.35u nf=1 m=1
+M3[2] aN clkc VDDD VDDD pfet_03v3 L=0.28u W=2.35u nf=1 m=1
+M4[1] aP clkc VDDD VDDD pfet_03v3 L=0.28u W=2.35u nf=1 m=1
+M4[2] aP clkc VDDD VDDD pfet_03v3 L=0.28u W=2.35u nf=1 m=1
+.ends
+.end

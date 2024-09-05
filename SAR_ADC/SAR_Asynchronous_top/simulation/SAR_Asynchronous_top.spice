@@ -1,0 +1,199 @@
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_top/SAR_Asynchronous_top.sch
+.subckt SAR_Asynchronous_top Bit_10 Bit_9 Bit_8 Bit_7 Bit_6 Bit_5 Bit_3 Bit_4 Bit_2 Bit_1 Bit_0
++ out_11 out_10 out_9 out_8 out_7 out_6 out_5 out_4 out_3 out_2 out_1 VDDD VSSD Set Reset VCM clks D Valid
++ D_C_11 D_C_10 D_C_9 D_C_8 D_C_7 D_C_6 D_C_5 D_C_4 D_C_3 D_C_2 D_C_1 CK11 CK10 CK9 CK8 CK7 CK6 CK5 CK4 CK3
++ CK2 CK1
+*.PININFO Bit_10:B Bit_9:B Bit_8:B Bit_7:B Bit_6:B Bit_5:B Bit_3:B Bit_4:B Bit_2:B Bit_1:B Bit_0:B
+*+ out_11:B out_10:B out_9:B out_8:B out_7:B out_6:B out_5:B out_4:B out_3:B out_2:B out_1:B VDDD:B VSSD:B
+*+ Set:I Reset:I VCM:B clks:I D:I Valid:I D_C_11:I D_C_10:I D_C_9:I D_C_8:I D_C_7:I D_C_6:I D_C_5:I D_C_4:I
+*+ D_C_3:I D_C_2:I D_C_1:I CK11:I CK10:I CK9:I CK8:I CK7:I CK6:I CK5:I CK4:I CK3:I CK2:I CK1:I
+x1 CK11 VDDD CK1 CK6 VSSD CK10 CK5 CK9 CK4 clks CK8 CK3 Valid CK2 CK7 Set D SAR_Logic
+x2 VDDD Bit_10 D_C_11 VSSD CK11 VCM out_11 Set Reset clks Bit_9 D_C_10 CK10 out_10 Bit_8 D_C_9 CK9
++ out_9 Bit_7 D_C_8 CK8 out_8 Bit_6 D_C_7 CK7 out_7 Bit_5 D_C_6 CK6 out_6 Bit_4 D_C_5 CK5 out_5 Bit_3 D_C_4
++ CK4 out_4 Bit_2 D_C_3 CK3 out_3 Bit_1 D_C_2 CK2 out_2 Bit_0 D_C_1 CK1 out_1
++ SAR_Asynchronous_Logic_integration
+.ends
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/SAR_Logic.sym # of pins=17
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/SAR_Logic.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/SAR_Logic.sch
+.subckt SAR_Logic CK11 VDDD CK1 CK6 VSSD CK10 CK5 CK9 CK4 clks CK8 CK3 Valid CK2 CK7 Set D
+*.PININFO VDDD:B VSSD:B CK11:B CK10:B CK9:B CK8:B CK7:B CK6:B CK5:B CK4:B CK3:B CK2:B CK1:B clks:I
+*+ Valid:I Set:I D:I
+* noconn #net1
+* noconn #net2
+* noconn #net3
+* noconn #net4
+* noconn #net5
+* noconn #net6
+* noconn #net7
+* noconn #net8
+* noconn #net9
+* noconn #net10
+* noconn #net11
+x1 VDDD CK11 Valid D net1 Set clks VSSD D_reset_FF
+x2 VDDD CK10 Valid CK11 net2 Set clks VSSD D_reset_FF
+x3 VDDD CK9 Valid CK10 net3 Set clks VSSD D_reset_FF
+x4 VDDD CK8 Valid CK9 net4 Set clks VSSD D_reset_FF
+x5 VDDD CK7 Valid CK8 net5 Set clks VSSD D_reset_FF
+x6 VDDD CK6 Valid CK7 net6 Set clks VSSD D_reset_FF
+x7 VDDD CK5 Valid CK6 net7 Set clks VSSD D_reset_FF
+x8 VDDD CK4 Valid CK5 net8 Set clks VSSD D_reset_FF
+x9 VDDD CK3 Valid CK4 net9 Set clks VSSD D_reset_FF
+x10 VDDD CK2 Valid CK3 net10 Set clks VSSD D_reset_FF
+x11 VDDD CK1 Valid CK2 net11 Set clks VSSD D_reset_FF
+.ends
+
+
+* expanding   symbol:
+*+  PICO_contest/SAR_Asynchronous_Logic_integration/SAR_Asynchronous_Logic_integration.sym # of pins=50
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic_integration/SAR_Asynchronous_Logic_integration.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic_integration/SAR_Asynchronous_Logic_integration.sch
+.subckt SAR_Asynchronous_Logic_integration VDDD Bit_10 D_C_11 VSSD CK11 VCM out_11 Set Reset clks
++ Bit_9 D_C_10 CK10 out_10 Bit_8 D_C_9 CK9 out_9 Bit_7 D_C_8 CK8 out_8 Bit_6 D_C_7 CK7 out_7 Bit_5 D_C_6
++ CK6 out_6 Bit_4 D_C_5 CK5 out_5 Bit_3 D_C_4 CK4 out_4 Bit_2 D_C_3 CK3 out_3 Bit_1 D_C_2 CK2 out_2 Bit_0
++ D_C_1 CK1 out_1
+*.PININFO VDDD:B VSSD:B Set:I Reset:I VCM:B Bit_10:B clks:I D_C_11:I CK11:I out_11:B Bit_9:B
+*+ D_C_10:I CK10:I out_10:B Bit_8:B D_C_9:I CK9:I out_9:B Bit_7:B D_C_8:I CK8:I out_8:B Bit_6:B D_C_7:I CK7:I
+*+ out_7:B Bit_5:B D_C_6:I CK6:I out_6:B Bit_4:B D_C_5:I CK5:I out_5:B Bit_3:B D_C_4:I CK4:I out_4:B Bit_2:B
+*+ D_C_3:I CK3:I out_3:B Bit_1:B D_C_2:I CK2:I out_2:B Bit_0:B D_C_1:I CK1:I out_1:B
+x12 VCM Bit_10 out_11 clks VDDD VSSD Set Reset D_C_11 CK11 SAR_Asynchronous_Logic
+x1 VCM Bit_9 out_10 clks VDDD VSSD Set Reset D_C_10 CK10 SAR_Asynchronous_Logic
+x2 VCM Bit_8 out_9 clks VDDD VSSD Set Reset D_C_9 CK9 SAR_Asynchronous_Logic
+x3 VCM Bit_7 out_8 clks VDDD VSSD Set Reset D_C_8 CK8 SAR_Asynchronous_Logic
+x4 VCM Bit_6 out_7 clks VDDD VSSD Set Reset D_C_7 CK7 SAR_Asynchronous_Logic
+x5 VCM Bit_5 out_6 clks VDDD VSSD Set Reset D_C_6 CK6 SAR_Asynchronous_Logic
+x6 VCM Bit_4 out_5 clks VDDD VSSD Set Reset D_C_5 CK5 SAR_Asynchronous_Logic
+x7 VCM Bit_3 out_4 clks VDDD VSSD Set Reset D_C_4 CK4 SAR_Asynchronous_Logic
+x8 VCM Bit_2 out_3 clks VDDD VSSD Set Reset D_C_3 CK3 SAR_Asynchronous_Logic
+x9 VCM Bit_1 out_2 clks VDDD VSSD Set Reset D_C_2 CK2 SAR_Asynchronous_Logic
+x10 VCM Bit_0 out_1 clks VDDD VSSD Set Reset D_C_1 CK1 SAR_Asynchronous_Logic
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/D_reset_FF.sym # of pins=8
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/D_reset_FF.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/D_reset_FF.sch
+.subckt D_reset_FF VDDD Q CLK D nQ Set Reset VSSD
+*.PININFO VDDD:B VSSD:B Q:B nQ:B CLK:I D:I Reset:I Set:I
+x11 VDDD CLK nCLK VSSD inv_1x
+x1 CLK_buf VDDD D net1 VSSD nCLK t_gate
+x2 VDDD Set net2 net1 VSSD nor_2_1x
+x4 nCLK VDDD net2 net4 VSSD CLK_buf t_gate
+x6 VDDD Reset Q net4 VSSD nor_2_1x
+x3 nCLK VDDD net3 net1 VSSD CLK_buf t_gate
+x5 VDDD net2 net3 Reset VSSD nor_2_1x
+x7 CLK_buf VDDD net5 net4 VSSD nCLK t_gate
+x8 VDDD Q net5 Set VSSD nor_2_1x
+x9 VDDD Q nQ VSSD inv_1x
+x10 VDDD nCLK CLK_buf VSSD inv_1x
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic.sym # of
+*+ pins=10
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic.sch
+.subckt SAR_Asynchronous_Logic VCM VC Q_R clks VDDD VSSD Set Reset D_C CLK
+*.PININFO VDDD:B VSSD:B Set:I Reset:I D_C:I CLK:I Q_R:B VCM:B VC:B clks:I
+M1 VB not_CLK VSSD VSSD nfet_03v3 L=1.1u W=1.56u nf=1 m=1
+M2 VA CLK_in VDDD VDDD pfet_03v3 L=1.1u W=3.9u nf=1 m=1
+* noconn #net1
+* noconn #net2
+x4 not_CLK VDDD Dn VA VSSD CLK_in SAR_Asynchronous_Logic_tgate
+x5 not_CLK VDDD Dn VB VSSD CLK_in SAR_Asynchronous_Logic_tgate
+M3 VC VA VDDD VDDD pfet_03v3 L=1.1u W=3.9u nf=1 m=1
+M4 VC VB VSSD VSSD nfet_03v3 L=1.1u W=1.56u nf=1 m=1
+x6 CLK_in VDDD VCM VC VSSD not_CLK SAR_Asynchronous_Logic_tgate
+x1 VDDD Dn CLK_in D_C net1 Set Reset VSSD SAR_Asynchronous_Logic_D_reset_FF
+x2 VDDD Q_R clks Dn net2 Set Reset VSSD SAR_Asynchronous_Logic_D_reset_FF
+x3 VDDD not_CLK VSSD CLK SAR_Asynchronous_Logic_inv_1x
+x7 VDDD CLK_in VSSD not_CLK SAR_Asynchronous_Logic_inv_1x
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/inv_1x.sym # of pins=4
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/inv_1x.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/inv_1x.sch
+.subckt inv_1x VDDD IN OUT VSSD
+*.PININFO IN:I VDDD:B VSSD:B OUT:B
+M1 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M2 OUT IN VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/t_gate.sym # of pins=6
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/t_gate.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/t_gate.sch
+.subckt t_gate p_CLK VDDD IN OUT VSSD n_CLK
+*.PININFO IN:B VDDD:B VSSD:B OUT:B n_CLK:I p_CLK:I
+M1 IN n_CLK OUT VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 IN p_CLK OUT VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/nor_2_1x.sym # of pins=5
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/nor_2_1x.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/nor_2_1x.sch
+.subckt nor_2_1x VDDD A OUT B VSSD
+*.PININFO A:I B:I VDDD:B VSSD:B OUT:B
+M1 OUT B VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT A VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M3 OUT B net1 VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M4 net1 A VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_tgate.sym #
+*+ of pins=6
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_tgate.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_tgate.sch
+.subckt SAR_Asynchronous_Logic_tgate p_CLK VDDD IN OUT VSSD n_CLK
+*.PININFO IN:B VDDD:B VSSD:B n_CLK:I p_CLK:I OUT:B
+M1 OUT n_CLK IN VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT p_CLK IN VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:
+*+  PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_D_reset_FF.sym # of pins=8
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_D_reset_FF.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_D_reset_FF.sch
+.subckt SAR_Asynchronous_Logic_D_reset_FF VDDD Q CLK D nQ Set Reset VSSD
+*.PININFO VDDD:B VSSD:B Q:B nQ:B CLK:I D:I Reset:I Set:I
+x1 VDDD CLK nCLK VSSD inv_1x
+x11 VDDD nCLK CLK_buf VSSD inv_1x
+x2 CLK_buf VDDD D net1 VSSD nCLK t_gate
+x4 VDDD Set net2 net1 VSSD nor_2_1x
+x6 nCLK VDDD net2 net4 VSSD CLK_buf t_gate
+x7 VDDD Reset Q net4 VSSD nor_2_1x
+x3 nCLK VDDD net3 net1 VSSD CLK_buf t_gate
+x9 CLK_buf VDDD net5 net4 VSSD nCLK t_gate
+x5 VDDD net2 net3 Reset VSSD nor_2_1x
+x8 VDDD Q net5 Set VSSD nor_2_1x
+x10 VDDD Q nQ VSSD inv_1x
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_inv_1x.sym
+*+ # of pins=4
+** sym_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_inv_1x.sym
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/SAR_Asynchronous_Logic_inv_1x.sch
+.subckt SAR_Asynchronous_Logic_inv_1x VDDD OUT VSSD IN
+*.PININFO VDDD:B VSSD:B OUT:B IN:I
+M1 OUT IN VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+.end

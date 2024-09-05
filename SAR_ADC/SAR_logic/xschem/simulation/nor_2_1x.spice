@@ -1,0 +1,9 @@
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/nor_2_1x.sch
+.subckt nor_2_1x A B VDDD VSSD OUT
+*.PININFO A:I B:I VDDD:B VSSD:B OUT:B
+M1 OUT B VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT A VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M3 OUT B net1 VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M4 net1 A VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+.end

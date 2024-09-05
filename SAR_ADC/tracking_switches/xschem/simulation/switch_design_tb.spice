@@ -1,0 +1,70 @@
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/switch_design_tb.sch
+**.subckt switch_design_tb
+XMS Vinn clks Vcap GND nfet_03v3 L=0.28u W=30u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+VDD4 VDDA GND 3.3
+.save i(vdd4)
+VDD8 Vinn Vcom SIN(0 1.3 0.994140625MEG)
+.save i(vdd8)
+VDD9 Vcom GND 1.65
+.save i(vdd9)
+VDD2 clks GND PULSE(0 3.3 0n 2n 2n 80n 500n)
+.save i(vdd2)
+XMS1 Vcom GND Vcap GND nfet_03v3 L=0.28u W=30u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+C1 Vcap GND 1p m=1
+**** begin user architecture code
+
+
+
+*Parameters
+
+.options TEMP = 50.0
+.lib /home/gf180/Documents/gf180/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.include /home/gf180/Documents/gf180/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /home/gf180/Documents/gf180/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /home/gf180/Documents/gf180/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_statistical
+
+*Data to save
+.save all
+
+
+* Simulation
+.control
+tran 1n 512u
+
+*reset
+*let start_w = 1u
+*let delta_w = 2u
+*let stop_w = 29u + delta_w/2.0
+*let w_act = start_w
+*while w_act le stop_w
+* alterparam Wn = $w_act
+* reset
+plot V(Vcap)
+* plot V(Vcap)
+ save all
+ set filetype = ascii
+ write switch_design_tb_tran.raw
+* let w_act = w_act + delta_w
+* set appendwrite
+*end
+
+reset
+unset filetype
+op
+save all
+write switch_design_tb.raw
+
+
+.endc
+.end
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

@@ -1,0 +1,32 @@
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_Asynchronous_Logic/xschem/neg_bottom_plate.sch
+.subckt neg_bottom_plate VDDD VSSD CK11 Bit Bit_n
+*.PININFO VDDD:B VSSD:B CK11:B Bit:B Bit_n:B
+x10 not_CK11 VDDD Bit net1 VSSD CK11_in t_gate
+x11 CK11_in VDDD Bit Bit_n VSSD not_CK11 t_gate
+x12 VDDD net1 net2 VSSD inv_1x
+x13 VDDD CK11 not_CK11 VSSD inv_1x
+x14 VDDD not_CK11 CK11_in VSSD inv_1x
+x15 not_CK11 VDDD net2 Bit_n VSSD CK11_in t_gate
+.ends
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/t_gate.sym # of pins=6
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/t_gate.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/t_gate.sch
+.subckt t_gate p_CLK VDDD IN OUT VSSD n_CLK
+*.PININFO IN:B VDDD:B VSSD:B OUT:B n_CLK:I p_CLK:I
+M1 IN n_CLK OUT VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 IN p_CLK OUT VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/inv_1x.sym # of pins=4
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/inv_1x.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/inv_1x.sch
+.subckt inv_1x VDDD IN OUT VSSD
+*.PININFO IN:I VDDD:B VSSD:B OUT:B
+M1 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M2 OUT IN VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+.ends
+
+.end

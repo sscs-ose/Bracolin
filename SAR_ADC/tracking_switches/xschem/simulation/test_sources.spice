@@ -1,0 +1,52 @@
+** sch_path:
+*+ /home/gf180/Documents/gf180/gf180_work/PICO_contest/tracking_switches/xschem/test_sources.sch
+**.subckt test_sources
+V1 net1 GND 3
+.save i(v1)
+V2 Vinp net1 SIN(0 1.4 1MEG 0)
+.save i(v2)
+V3 net1 Vinn SIN(0 1.4 1MEG 0)
+.save i(v3)
+**** begin user architecture code
+
+
+
+*Parameters
+
+.options TEMP = 50.0
+.lib /home/gf180/Documents/gf180/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.include /home/gf180/Documents/gf180/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /home/gf180/Documents/gf180/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /home/gf180/Documents/gf180/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_statistical
+
+*Data to save
+
+.save V(Vinp)
+.save V(Vinn)
+
+* Simulation
+.control
+tran 5n 10u
+.option method=gear reltol=1e-6 interp
+
+*setplot dc1
+let vin_diff = V(Vinp) - V(Vinn)
+plot vin_diff V(Vinp) V(Vinn)
+
+wrdata output.txt clks vin_diff vout_diff
+
+reset
+unset filetype
+op
+save all
+write tracking_switches_tb.raw
+
+
+.endc
+.end
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

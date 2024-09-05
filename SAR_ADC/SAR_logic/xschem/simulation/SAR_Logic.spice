@@ -1,0 +1,79 @@
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/SAR_Logic.sch
+.subckt SAR_Logic VDDD VSSD CK11 CK10 CK9 CK8 CK7 CK6 CK5 CK4 CK3 CK2 CK1 clks Valid Set D
+*.PININFO VDDD:B VSSD:B CK11:B CK10:B CK9:B CK8:B CK7:B CK6:B CK5:B CK4:B CK3:B CK2:B CK1:B clks:I
+*+ Valid:I Set:I D:I
+* noconn #net1
+* noconn #net2
+* noconn #net3
+* noconn #net4
+* noconn #net5
+* noconn #net6
+* noconn #net7
+* noconn #net8
+* noconn #net9
+* noconn #net10
+* noconn #net11
+x1 VDDD CK11 Valid D net1 Set clks VSSD D_reset_FF
+x2 VDDD CK10 Valid CK11 net2 Set clks VSSD D_reset_FF
+x3 VDDD CK9 Valid CK10 net3 Set clks VSSD D_reset_FF
+x4 VDDD CK8 Valid CK9 net4 Set clks VSSD D_reset_FF
+x5 VDDD CK7 Valid CK8 net5 Set clks VSSD D_reset_FF
+x6 VDDD CK6 Valid CK7 net6 Set clks VSSD D_reset_FF
+x7 VDDD CK5 Valid CK6 net7 Set clks VSSD D_reset_FF
+x8 VDDD CK4 Valid CK5 net8 Set clks VSSD D_reset_FF
+x9 VDDD CK3 Valid CK4 net9 Set clks VSSD D_reset_FF
+x10 VDDD CK2 Valid CK3 net10 Set clks VSSD D_reset_FF
+x11 VDDD CK1 Valid CK2 net11 Set clks VSSD D_reset_FF
+.ends
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/D_reset_FF.sym # of pins=8
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/D_reset_FF.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/D_reset_FF.sch
+.subckt D_reset_FF VDDD Q CLK D nQ Set Reset VSSD
+*.PININFO VDDD:B VSSD:B Q:B nQ:B CLK:I D:I Reset:I Set:I
+x11 VDDD CLK nCLK VSSD inv_1x
+x1 CLK_buf VDDD D net1 VSSD nCLK t_gate
+x2 VDDD Set net2 net1 VSSD nor_2_1x
+x4 nCLK VDDD net2 net4 VSSD CLK_buf t_gate
+x6 VDDD Reset Q net4 VSSD nor_2_1x
+x3 nCLK VDDD net3 net1 VSSD CLK_buf t_gate
+x5 VDDD net2 net3 Reset VSSD nor_2_1x
+x7 CLK_buf VDDD net5 net4 VSSD nCLK t_gate
+x8 VDDD Q net5 Set VSSD nor_2_1x
+x9 VDDD Q nQ VSSD inv_1x
+x10 VDDD nCLK CLK_buf VSSD inv_1x
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/inv_1x.sym # of pins=4
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/inv_1x.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/inv_1x.sch
+.subckt inv_1x VDDD IN OUT VSSD
+*.PININFO IN:I VDDD:B VSSD:B OUT:B
+M1 OUT IN VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M2 OUT IN VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/t_gate.sym # of pins=6
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/t_gate.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/t_gate.sch
+.subckt t_gate p_CLK VDDD IN OUT VSSD n_CLK
+*.PININFO IN:B VDDD:B VSSD:B OUT:B n_CLK:I p_CLK:I
+M1 IN n_CLK OUT VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 IN p_CLK OUT VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  PICO_contest/SAR_logic/xschem/nor_2_1x.sym # of pins=5
+** sym_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/nor_2_1x.sym
+** sch_path: /home/gf180/Documents/gf180/gf180_work/PICO_contest/SAR_logic/xschem/nor_2_1x.sch
+.subckt nor_2_1x VDDD A OUT B VSSD
+*.PININFO A:I B:I VDDD:B VSSD:B OUT:B
+M1 OUT B VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M2 OUT A VSSD VSSD nfet_03v3 L=0.28u W=1.56u nf=1 m=1
+M3 OUT B net1 VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+M4 net1 A VDDD VDDD pfet_03v3 L=0.28u W=3.9u nf=1 m=1
+.ends
+
+.end
